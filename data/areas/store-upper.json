@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "name": "store-upper",
+  "seed": 1,
+  "size": {
+    "w": 18,
+    "h": 14
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "stairs_down",
+      "kind": "furniture",
+      "x": -3.75,
+      "z": -1.5,
+      "w": 1.5,
+      "d": 3,
+      "rot": 0,
+      "height": 0.9
+    },
+    {
+      "mesh": "hearth",
+      "kind": "furniture",
+      "x": -0.2,
+      "z": -2.5,
+      "w": 2.4,
+      "d": 0.8,
+      "rot": 0,
+      "height": 2.6
+    },
+    {
+      "mesh": "desk",
+      "kind": "furniture",
+      "x": 2.1,
+      "z": -2.5,
+      "w": 2,
+      "d": 0.8,
+      "rot": 0,
+      "height": 0.78
+    },
+    {
+      "mesh": "bookshelf",
+      "kind": "furniture",
+      "x": -2.15,
+      "z": -2.62,
+      "w": 1.5,
+      "d": 0.55,
+      "rot": 0,
+      "height": 2.1
+    },
+    {
+      "mesh": "rug",
+      "kind": "furniture",
+      "x": -0.2,
+      "z": -0.65,
+      "w": 2.6,
+      "d": 1.8,
+      "rot": 0,
+      "height": 0.02
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "spellbook_open",
+      "x": -1.75,
+      "z": -1.88,
+      "collide": 0.3,
+      "flip": false
+    },
+    {
+      "prop": "armchair",
+      "x": 1.6,
+      "z": -0.23,
+      "collide": 0.45,
+      "flip": true
+    },
+    {
+      "prop": "candle_tall",
+      "x": 2.18,
+      "z": -2.45,
+      "y": 0.78,
+      "flip": false
+    },
+    {
+      "prop": "inkwell_quill",
+      "x": 1.96,
+      "z": -2.45,
+      "y": 0.78,
+      "flip": false
+    },
+    {
+      "prop": "chair_wood",
+      "x": 3.45,
+      "z": -2.33,
+      "collide": 0.3,
+      "flip": false
+    },
+    {
+      "prop": "globe_stand",
+      "x": 3.6,
+      "z": 2.6,
+      "collide": 0.3,
+      "flip": false
+    },
+    {
+      "prop": "telescope_stand",
+      "x": -4.05,
+      "z": 2.55,
+      "collide": 0.35,
+      "flip": true
+    },
+    {
+      "prop": "book_stack_1",
+      "x": 3.63,
+      "z": -0.86,
+      "collide": 0.25,
+      "flip": false
+    },
+    {
+      "prop": "cat_sleeping",
+      "x": 0.33,
+      "z": -0.19,
+      "y": 0.02,
+      "flip": false
+    },
+    {
+      "prop": "candle_0",
+      "x": -0.95,
+      "z": -2.2,
+      "y": 1.65
+    },
+    {
+      "prop": "candle_tall",
+      "x": 0.6,
+      "z": -2.2,
+      "y": 1.65
+    },
+    {
+      "prop": "herb_bundle_hanging",
+      "x": -4.32,
+      "z": 2.1,
+      "y": 2.45
+    },
+    {
+      "prop": "herb_bundle_hanging",
+      "x": -4.32,
+      "z": -0.15,
+      "y": 2.45,
+      "flip": true
+    },
+    {
+      "prop": "potted_geranium",
+      "x": 2.85,
+      "z": -2.5,
+      "y": 0.78
+    },
+    {
+      "prop": "scroll_pile",
+      "x": 1.75,
+      "z": -2.6,
+      "y": 0.78
+    },
+    {
+      "prop": "scroll_pile",
+      "x": 2.3,
+      "z": 0.45,
+      "collide": 0.2
+    },
+    {
+      "prop": "book_stack_0",
+      "x": -3.55,
+      "z": 2.0,
+      "collide": 0.25
+    },
+    {
+      "prop": "book_stack_1",
+      "x": -1.0,
+      "z": -0.1,
+      "y": 0.02
+    },
+    {
+      "prop": "oil_lamp",
+      "x": 3.55,
+      "z": -0.35,
+      "collide": 0.15
+    }
+  ],
+  "keepClear": [],
+  "spots": [
+    {
+      "name": "hearth",
+      "x": -0.2,
+      "z": -1.25,
+      "note": "stand here to use the hearth"
+    }
+  ],
+  "exits": [
+    {
+      "rect": [
+        -4.3,
+        -1.2,
+        -3.2,
+        -0.2
+      ],
+      "to": "store-ground",
+      "at": [
+        -3.75,
+        1.2
+      ],
+      "dir": 0
+    }
+  ],
+  "interior": {
+    "town": "green-frame",
+    "building": 2,
+    "storey": 1,
+    "scale": 1.7,
+    "source": {
+      "recipe": "store",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2
+            ],
+            [
+              2.5,
+              -2
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              -2.5,
+              1.5
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [
+      {
+        "id": "study",
+        "type": "study",
+        "rect": [
+          -4.5,
+          -3,
+          4,
+          3
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -4.5,
+          1
+        ],
+        "width": 0.75
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          2,
+          -3
+        ],
+        "width": 0.75
+      }
+    ],
+    "down": "store-ground",
+    "seed": 1,
+    "stairs": [
+      -4.5,
+      -3,
+      -3,
+      0
+    ]
+  },
+  "start": [
+    -3.75,
+    0.9
+  ]
+}

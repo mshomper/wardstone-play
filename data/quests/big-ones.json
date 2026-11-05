@@ -1,0 +1,89 @@
+{
+ "id": "big-ones",
+ "title": "The Big Ones",
+ "side": true,
+ "blurb": "Jonah Reed would like to hear that somebody shifted them. Not that Jonah is asking.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "A remark",
+   "objective": "",
+   "done": {
+    "flags": [
+     "bigones_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "townsfolk3"
+    }
+   ],
+   "sets": [
+    "bigones_asked"
+   ]
+  },
+  {
+   "id": "fight",
+   "title": "A remark",
+   "objective": "Beat the big ones in the bare glade, over the bridge in Alder Hollow.",
+   "done": {
+    "flags": [
+     "beat_road_tough"
+    ]
+   },
+   "skip": {
+    "area": "alder-hollow"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "go": "alder-hollow"
+    },
+    {
+     "fight": "road-tough"
+    }
+   ],
+   "sets": [
+    "beat_road_tough"
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "Shifted",
+   "objective": "Tell Jonah the hollow's quiet. Jonah is on the south lane.",
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Tell Jonah the hollow's quiet. Jonah is at the fair."
+    }
+   ],
+   "done": {
+    "flags": [
+     "bigones_done"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Jonah (day)"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "townsfolk3"
+    }
+   ],
+   "sets": [
+    "bigones_done"
+   ]
+  }
+ ]
+}

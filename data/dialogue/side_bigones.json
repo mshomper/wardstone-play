@@ -1,0 +1,84 @@
+{
+ "conversations": [
+  {
+   "id": "jonah_ask",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "You been down the south road? Then stay out of the bare glade, over the hollow bridge. There's two out there the size of calves. I've told everybody."
+    },
+    {
+     "who": "townsfolk3",
+     "text": "My granddad would've gone and had a word with them. He'd have been wrong to, mind. But he'd have gone."
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "Is that a request, Jonah?"
+    },
+    {
+     "who": "townsfolk3",
+     "text": "It's a remark. I wouldn't ask it of a man with your knee. Only, if somebody shifted them, I'd want to hear about it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bigones_asked"
+    }
+   ]
+  },
+  {
+   "id": "jonah_remind",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "Over the hollow bridge. You'll know them when you see them. They'll know you, too."
+    }
+   ]
+  },
+  {
+   "id": "jonah_done",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "Hollow's gone quiet. That was you?"
+    },
+    {
+     "who": "eldwin",
+     "face": "tired",
+     "text": "They've gone home. I only suggested it."
+    },
+    {
+     "who": "townsfolk3",
+     "text": "Hm."
+    },
+    {
+     "who": "townsfolk3",
+     "text": "You'd better have this. Granddad's. He carried it on the walls for forty years and swore it was for the cold."
+    },
+    {
+     "who": "townsfolk3",
+     "text": "It wasn't for the cold."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": [
+      "bigones_asked",
+      "bigones_done"
+     ]
+    },
+    {
+     "reward": {
+      "title": "The Big Ones",
+      "xp": 20,
+      "items": {
+       "reed_flask": 1,
+       "cold_iron_nail": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

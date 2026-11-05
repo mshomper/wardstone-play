@@ -1,0 +1,628 @@
+{
+  "version": 1,
+  "name": "green-a",
+  "seed": 3101,
+  "size": {
+    "w": 34,
+    "h": 28
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 2.2,
+    "edgeWidth": 3.5,
+    "roll": 0.35,
+    "pathMargin": 0.9,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.35,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.35,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.16,
+        "spacing": 1.8,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2",
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.04,
+        "spacing": 2.4,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.2,
+        "spacing": 0.9,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1",
+          "goldenrod_0",
+          "asters_0"
+        ],
+        "density": 0.08,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -7.5,
+          -5.5
+        ],
+        [
+          7.5,
+          -5.5
+        ],
+        [
+          7.5,
+          6.5
+        ],
+        [
+          -7.5,
+          6.5
+        ],
+        [
+          -7.5,
+          -5.5
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          7.5,
+          -5.5
+        ],
+        [
+          9.5,
+          -9
+        ],
+        [
+          10.5,
+          -14
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          0,
+          6.5
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "width": 1.4,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        17,
+        -7
+      ],
+      [
+        12.8,
+        -3
+      ],
+      [
+        12.6,
+        4
+      ],
+      [
+        17,
+        9
+      ]
+    ],
+    "width": 1.2,
+    "depth": 0.6
+  },
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "church",
+      "x": 0,
+      "z": -10,
+      "w": 5,
+      "d": 6,
+      "rot": 0,
+      "height": 7,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -3
+            ],
+            [
+              2.5,
+              -3
+            ],
+            [
+              2.5,
+              3
+            ],
+            [
+              -2.5,
+              3
+            ]
+          ]
+        }
+      ],
+      "landmarks": [
+        {
+          "kind": "steeple",
+          "at": [
+            0,
+            3.9
+          ],
+          "door": "door_panel_red"
+        }
+      ]
+    },
+    {
+      "mesh": "kit",
+      "recipe": "store",
+      "x": 13.2,
+      "z": -8.6,
+      "w": 6,
+      "d": 5,
+      "rot": 1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "signText": "Hale's General Store"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "colonial",
+      "x": -11,
+      "z": -2.2,
+      "w": 6,
+      "d": 5,
+      "rot": -1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "shutters": true,
+        "porchLight": true
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "cape",
+      "x": -11,
+      "z": 3.6,
+      "w": 6,
+      "d": 5,
+      "rot": -1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2
+            ],
+            [
+              2.5,
+              -2
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              -2.5,
+              2
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "dormers": 2
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "farmhouse",
+      "x": -5,
+      "z": 10.2,
+      "w": 6,
+      "d": 5,
+      "rot": 3.141592653589793,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ]
+        },
+        {
+          "footprint": [
+            [
+              -1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4.5
+            ],
+            [
+              -1,
+              4.5
+            ]
+          ],
+          "storeys": 1
+        }
+      ],
+      "variants": {
+        "porch": 3,
+        "porchLight": true
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "colonial",
+      "x": 5,
+      "z": 10.2,
+      "w": 6,
+      "d": 5,
+      "rot": 3.141592653589793,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "shutters": false,
+        "porch": 3
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "mill",
+      "x": 10.2,
+      "z": 1,
+      "w": 6,
+      "d": 5,
+      "rot": 1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              2.5
+            ],
+            [
+              -2.5,
+              2.5
+            ]
+          ]
+        }
+      ],
+      "landmarks": [
+        {
+          "kind": "waterwheel",
+          "side": "back",
+          "radius": 1.8
+        }
+      ]
+    },
+    {
+      "mesh": "bandstand",
+      "kind": "bandstand",
+      "x": 0,
+      "z": 0.5,
+      "w": 4,
+      "d": 4,
+      "rot": 0,
+      "height": 3
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "fair_stall_red",
+      "x": -3.8,
+      "z": 3.2,
+      "collide": 0.8
+    },
+    {
+      "prop": "fair_stall_green",
+      "x": 3.8,
+      "z": 3.2,
+      "collide": 0.8
+    },
+    {
+      "prop": "fair_stall_red",
+      "x": -3.8,
+      "z": -2.4,
+      "collide": 0.8
+    },
+    {
+      "prop": "hay_bale_0",
+      "x": -5,
+      "z": 4.2,
+      "collide": 0.5
+    },
+    {
+      "prop": "hay_bale_1",
+      "x": 5,
+      "z": -2.8,
+      "collide": 0.5
+    },
+    {
+      "prop": "pumpkin_0",
+      "x": -2.6,
+      "z": 4.4
+    },
+    {
+      "prop": "pumpkin_2",
+      "x": -2.2,
+      "z": 4.6
+    },
+    {
+      "prop": "pumpkin_1",
+      "x": 2.8,
+      "z": 4.4
+    },
+    {
+      "prop": "crate_apples",
+      "x": 4.9,
+      "z": 3.9,
+      "collide": 0.4
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 7.6,
+      "z": -7.6,
+      "collide": 0.4
+    },
+    {
+      "prop": "lamp_post",
+      "x": -6.4,
+      "z": -4.4,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": 6.4,
+      "z": -4.4,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": -6.4,
+      "z": 5.4,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": 6.4,
+      "z": 5.4,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "maple_red_0",
+      "x": -4.5,
+      "z": -2.9,
+      "collide": 0.45,
+      "tall": true
+    },
+    {
+      "prop": "maple_orange_1",
+      "x": 4.6,
+      "z": 4.2,
+      "collide": 0.45,
+      "tall": true
+    }
+  ],
+  "keepClear": [],
+  "frame": {
+    "kind": "green",
+    "green": [
+      [
+        -6,
+        -4
+      ],
+      [
+        6,
+        -4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        -6,
+        5
+      ]
+    ],
+    "fixed": [
+      0
+    ]
+  },
+  "start": [
+    0,
+    8.5
+  ]
+}

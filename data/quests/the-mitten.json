@@ -1,0 +1,99 @@
+{
+ "id": "the-mitten",
+ "title": "The Mitten",
+ "side": true,
+ "blurb": "Wren has one warm hand.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Lost",
+   "objective": "",
+   "done": {
+    "flags": [
+     "mitten_asked"
+    ]
+   },
+   "auto": [
+    {
+     "go": "orchard",
+     "if": {
+      "timeTo": 12
+     }
+    },
+    {
+     "talk": "wren"
+    }
+   ],
+   "sets": [
+    "mitten_asked"
+   ]
+  },
+  {
+   "id": "find",
+   "title": "Lost",
+   "objective": "Find Wren's mitten, somewhere along the orchard fence.",
+   "done": {
+    "flags": [
+     "has_mitten"
+    ]
+   },
+   "skip": {
+    "area": "orchard",
+    "spot": "Wren's mitten"
+   },
+   "auto": [
+    {
+     "go": "orchard"
+    },
+    {
+     "use": "mitten"
+    }
+   ],
+   "sets": [
+    "has_mitten"
+   ]
+  },
+  {
+   "id": "return",
+   "title": "Found",
+   "objective": "Give Wren the mitten. Mornings, Wren is in the orchard.",
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18
+     },
+     "text": "Give Wren the mitten. Wren is at the fair, in the front row."
+    },
+    {
+     "if": {
+      "timeFrom": 12
+     },
+     "text": "Give Wren the mitten. Afternoons, Wren is at the covered bridge."
+    }
+   ],
+   "done": {
+    "flags": [
+     "mitten_returned"
+    ]
+   },
+   "skip": {
+    "area": "orchard",
+    "spot": "Wren (morning)"
+   },
+   "auto": [
+    {
+     "go": "green-frame",
+     "if": {
+      "timeFrom": 18
+     }
+    },
+    {
+     "talk": "wren"
+    }
+   ],
+   "sets": [
+    "mitten_returned"
+   ]
+  }
+ ]
+}

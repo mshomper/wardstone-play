@@ -1,0 +1,554 @@
+{
+  "version": 1,
+  "name": "brook-woods",
+  "seed": 7021,
+  "size": {
+    "w": 40,
+    "h": 30
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3,
+    "edgeWidth": 5,
+    "roll": 0.7,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.3,
+        "spacing": 1.8,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.5,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.16,
+        "spacing": 2.6,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "wall",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.08,
+        "spacing": 2.4,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1",
+          "birch_0"
+        ],
+        "density": 0.22,
+        "spacing": 2.3,
+        "scale": [
+          0.9,
+          1.12
+        ],
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1",
+          "maple_yellow_0"
+        ],
+        "density": 0.08,
+        "spacing": 3,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.05,
+        "spacing": 4,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2",
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.06,
+        "spacing": 2.2,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "cattails_0",
+          "cattails_1"
+        ],
+        "density": 0.07,
+        "spacing": 0.9,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.35,
+        "spacing": 0.85,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2",
+          "mushrooms_0",
+          "mushrooms_1"
+        ],
+        "density": 0.18,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "edge"
+      },
+      {
+        "props": [
+          "asters_0",
+          "asters_1",
+          "goldenrod_0",
+          "goldenrod_1"
+        ],
+        "density": 0.08,
+        "spacing": 1,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -8.6,
+          15
+        ],
+        [
+          -8,
+          10.5
+        ],
+        [
+          -5.6,
+          7.6
+        ],
+        [
+          -4.8,
+          4.4
+        ],
+        [
+          -4.4,
+          1
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          2.6,
+          -8
+        ],
+        [
+          3.6,
+          -15
+        ]
+      ],
+      "width": 1.6,
+      "kind": "road"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        20,
+        2
+      ],
+      [
+        12,
+        4.6
+      ],
+      [
+        4,
+        3.2
+      ],
+      [
+        -4,
+        4.4
+      ],
+      [
+        -11,
+        5.2
+      ],
+      [
+        -20,
+        3.6
+      ]
+    ],
+    "width": 1.5,
+    "depth": 0.75
+  },
+  "walls": [
+    {
+      "points": [
+        [
+          -12.5,
+          15
+        ],
+        [
+          -11.8,
+          9.5
+        ],
+        [
+          -12.4,
+          5.4
+        ],
+        [
+          -10,
+          1
+        ],
+        [
+          -6.8,
+          -3.2
+        ],
+        [
+          -6.2,
+          -7
+        ],
+        [
+          -2.4,
+          -9.2
+        ],
+        [
+          0.6,
+          -15
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 10.13,
+          "width": 2.2
+        },
+        {
+          "at": 17.06,
+          "width": 1.4
+        },
+        {
+          "at": 22,
+          "width": 1.8
+        },
+        {
+          "at": 30.63,
+          "width": 1.3
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "bridge",
+      "kind": "bridge",
+      "x": -4.75,
+      "z": 4.3,
+      "w": 6,
+      "d": 2.4,
+      "rot": 1.6508,
+      "height": 2.3
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 12,
+      "z": -9,
+      "radius": 5,
+      "height": 1
+    },
+    {
+      "kind": "mound",
+      "x": -14,
+      "z": -11,
+      "radius": 4,
+      "height": 0.8
+    }
+  ],
+  "arenas": [
+    {
+      "x": 11,
+      "z": -3,
+      "radius": 3.2
+    },
+    {
+      "x": -13.4,
+      "z": -5,
+      "radius": 2.8
+    },
+    {
+      "x": 9,
+      "z": 9.4,
+      "radius": 3
+    },
+    {
+      "x": 0.8,
+      "z": 9.2,
+      "radius": 2.8
+    }
+  ],
+  "placements": [
+    {
+      "prop": "cairn",
+      "x": -2.4,
+      "z": -0.4,
+      "collide": 0.5
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": -1.7,
+      "z": -1.1,
+      "collide": 0.3,
+      "scale": 0.8
+    },
+    {
+      "prop": "boulder_mossy_2",
+      "x": -6,
+      "z": -5.9,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": -7.1,
+      "z": -4.6,
+      "collide": 0.3,
+      "scale": 0.9
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": 7.5,
+      "z": -10.5,
+      "collide": 0.3
+    },
+    {
+      "prop": "cattails_0",
+      "x": -7.4,
+      "z": 5.9
+    },
+    {
+      "prop": "cattails_1",
+      "x": -2.3,
+      "z": 4.9
+    },
+    {
+      "prop": "cattails_0",
+      "x": 1.8,
+      "z": 4
+    },
+    {
+      "prop": "cattails_1",
+      "x": -9.6,
+      "z": 4.4
+    },
+    {
+      "prop": "cattails_0",
+      "x": 6.4,
+      "z": 2.6
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -3.2,
+          0.4
+        ],
+        [
+          -1.6,
+          -1.2
+        ]
+      ],
+      "radius": 1
+    }
+  ],
+  "spots": [
+    {
+      "name": "Cairn hearth",
+      "x": -2.4,
+      "z": -0.4,
+      "note": "Wayside cairn at the woods' entrance: save, heal, change spells."
+    },
+    {
+      "name": "Fallen stones",
+      "x": -6.5,
+      "z": -5.2,
+      "note": "First fallen-stone gap; Earthen Invocation lifts the stones back (level 2)."
+    },
+    {
+      "name": "Burrbacks 1",
+      "x": 11,
+      "z": -3,
+      "note": "Encounter: burrbacks in the leaf litter."
+    },
+    {
+      "name": "Burrbacks 2",
+      "x": -13.4,
+      "z": -5,
+      "note": "Encounter: burrbacks by the wall."
+    },
+    {
+      "name": "Mixed",
+      "x": 9,
+      "z": 9.4,
+      "note": "Encounter: rimeling and burrback, by the brook."
+    },
+    {
+      "name": "Wren (afternoon)",
+      "x": -6.6,
+      "z": 8.6,
+      "note": "Wren waits at the south end of the bridge in the afternoon."
+    },
+    {
+      "name": "Bridge north",
+      "x": -4.6,
+      "z": 0.6,
+      "note": "Across the covered bridge (quest step 5)."
+    },
+    {
+      "name": "Tougher burrbacks",
+      "x": 0.8,
+      "z": 9.2,
+      "note": "Roaming group: tougher burrbacks south of the brook, off the road."
+    }
+  ],
+  "start": [
+    -8.1,
+    10
+  ],
+  "exits": [
+    {
+      "rect": [
+        -10.6,
+        11,
+        -6.6,
+        12
+      ],
+      "to": "orchard",
+      "at": [
+        -11.3,
+        -6.4
+      ],
+      "dir": 0
+    },
+    {
+      "rect": [
+        1.3,
+        -12,
+        5.3,
+        -11
+      ],
+      "to": "breach",
+      "at": [
+        0,
+        4
+      ],
+      "dir": 4
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "first-frost",
+  "title": "First Frost",
+  "_note": "One quest per file (docs/04-quest-first-frost.md). Each step: objective line, time target (the world eases there), and `done`: every key given must hold (talk / enter / interact are events; flags and time are checked any moment). `optional` steps are passed over if the next step completes first. `sets` are flags that finishing the step implies (used when skipping to a later step). `skip` is where debug skipTo puts Eldwin; `auto` is the autoplay route.",
+  "steps": [
+    {
+      "id": "frost", "title": "Frost on the pumpkins", "objective": "Something's wrong. Talk to Ada.", "time": 7.0,
+      "done": { "talk": "ada" }, "sets": ["talked_ada"],
+      "skip": { "area": "green-frame", "spot": "Eldwin's porch" },
+      "auto": [{ "go": "store-ground" }, { "go": "green-frame" }, { "talk": "ada" }]
+    },
+    {
+      "id": "press", "title": "The frozen press", "objective": "See to Silas's cider press.", "time": 7.5, "optional": true,
+      "done": { "flags": ["press_thawed"] }, "sets": ["press_thawed"],
+      "skip": { "area": "green-frame", "spot": "Ada (morning)" },
+      "auto": [{ "talk": "silas" }, { "use": "mill_door" }, { "use": "press" }]
+    },
+    {
+      "id": "north-road", "title": "Toward the orchard", "objective": "Follow the north road to the orchard wall.", "time": 9.0,
+      "done": { "enter": "orchard" },
+      "skip": { "area": "green-frame", "spot": "Noticeboard" },
+      "auto": [{ "go": "green-frame" }, { "go": "orchard" }]
+    },
+    {
+      "id": "first-gaps", "title": "The first gaps", "objective": "Settle the frost lights by the wall.", "time": 10.0,
+      "done": { "flags": ["settled_rime1", "settled_rime2"] }, "sets": ["seen_first_gap", "settled_rime1", "settled_rime2"],
+      "skip": { "area": "orchard", "spot": "Wren (morning)" },
+      "auto": [{ "use": "first_gap" }, { "fight": "rime1" }, { "fight": "rime2" }]
+    },
+    {
+      "id": "along-wall", "title": "Along the wall", "objective": "Follow the wall across the brook.", "time": 12.5,
+      "done": { "flags": ["crossed_bridge"] }, "sets": ["crossed_bridge"],
+      "skip": { "area": "brook-woods", "spot": "Wren (afternoon)" },
+      "auto": [{ "go": "brook-woods" }, { "use": "bridge_north" }]
+    },
+    {
+      "id": "fallen-stones", "title": "Fallen stones", "objective": "Mend the wall. (Earthen Invocation)", "time": 14.0,
+      "done": { "flags": ["lifted_stones_woods"] }, "sets": ["lifted_stones_woods", "gap:brook-woods:0:22"],
+      "grants": [{ "level": 2, "learn": "earth" }],
+      "skip": { "area": "brook-woods", "spot": "Cairn hearth" },
+      "auto": [{ "use": "stones_woods" }]
+    },
+    {
+      "id": "deeper", "title": "Deeper in", "objective": "Follow the wall toward the notch.", "time": 15.5,
+      "done": { "enter": "breach" },
+      "skip": { "area": "brook-woods", "spot": "Fallen stones" },
+      "auto": [{ "go": "breach" }]
+    },
+    {
+      "id": "breach", "title": "The breach", "objective": "The wardstone…", "time": 17.5,
+      "done": { "flags": ["breach_sealed"] }, "sets": ["breach_sealed", "gap:breach:0:9.83", "wardstone_whole", "ward_unlocked"],
+      "skip": { "area": "breach", "at": [0, 3.6] },
+      "auto": [{ "use": "wardstone" }]
+    },
+    {
+      "id": "home", "title": "Home for the fair", "objective": "Head home. The fair's starting.", "time": 19.0,
+      "done": { "enter": "green-frame" },
+      "skip": { "area": "breach", "at": [0, 1.5] },
+      "auto": [{ "go": "brook-woods" }, { "go": "orchard" }, { "go": "green-frame" }]
+    },
+    {
+      "id": "evening", "title": "Evening", "objective": "", "time": 19.5,
+      "done": { "flags": ["ending_seen"] },
+      "skip": { "area": "green-frame", "at": [9.6, -9.4] },
+      "auto": [{ "talk": "ada" }]
+    }
+  ]
+}

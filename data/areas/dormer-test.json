@@ -1,0 +1,256 @@
+{
+ "version": 1,
+ "name": "dormer-test",
+ "seed": 4242,
+ "size": {
+  "w": 36,
+  "h": 28
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.2,
+  "edgeWidth": 6,
+  "roll": 0.8,
+  "pathMargin": 0.6,
+  "tiles": {
+   "open": "grass",
+   "under": "moss_stone",
+   "road": "dirt",
+   "path": "dirt",
+   "cobble": "flagstone",
+   "brookBed": "moss_stone"
+  },
+  "species": []
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     0.5,
+     14
+    ],
+    [
+     0.2,
+     8
+    ],
+    [
+     -0.5,
+     4.5
+    ]
+   ],
+   "width": 1.6,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     1.5,
+     -4.2
+    ],
+    [
+     3.5,
+     -8
+    ],
+    [
+     2.5,
+     -14
+    ]
+   ],
+   "width": 1.3,
+   "kind": "path"
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    18,
+    -6
+   ],
+   [
+    12,
+    -3
+   ],
+   [
+    9.5,
+    3
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    8,
+    14
+   ]
+  ],
+  "width": 1.4,
+  "depth": 0.7
+ },
+ "walls": [
+  {
+   "points": [
+    [
+     -17,
+     -9
+    ],
+    [
+     -11,
+     -7.5
+    ],
+    [
+     -6,
+     -8.5
+    ],
+    [
+     -1,
+     -7.2
+    ],
+    [
+     6,
+     -9
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 11.5,
+     "width": 1.6
+    },
+    {
+     "at": 17.5,
+     "width": 1.8
+    }
+   ],
+   "ward": true
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "",
+   "recipe": "cape",
+   "x": -3,
+   "z": 0,
+   "w": 6,
+   "d": 7,
+   "height": 4,
+   "rot": 0,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2,
+       -3.5
+      ],
+      [
+       2,
+       -3.5
+      ],
+      [
+       2,
+       3.5
+      ],
+      [
+       -2,
+       3.5
+      ]
+     ]
+    },
+    {
+     "footprint": [
+      [
+       2,
+       0.5
+      ],
+      [
+       5,
+       0.5
+      ],
+      [
+       5,
+       3.5
+      ],
+      [
+       2,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "dormers": 2
+   }
+  },
+  {
+   "mesh": "",
+   "recipe": "cape",
+   "x": 6,
+   "z": 0,
+   "w": 6,
+   "d": 7,
+   "height": 4,
+   "rot": 0,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2,
+       -3.5
+      ],
+      [
+       2,
+       -3.5
+      ],
+      [
+       2,
+       3.5
+      ],
+      [
+       -2,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "dormers": 2,
+    "doorSide": "left"
+   }
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": -9,
+   "z": 3,
+   "radius": 3.5,
+   "height": 1.2
+  }
+ ],
+ "arenas": [
+  {
+   "x": 0,
+   "z": 0,
+   "radius": 4.5
+  }
+ ],
+ "placements": [],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -6,
+     6
+    ],
+    [
+     -3,
+     9
+    ]
+   ],
+   "radius": 1.2
+  }
+ ],
+ "exits": [],
+ "start": [
+  0,
+  6
+ ]
+}

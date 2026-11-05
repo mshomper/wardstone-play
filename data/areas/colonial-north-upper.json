@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "name": "colonial-north-upper",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [],
+  "interior": {
+    "town": "green-frame",
+    "building": 3,
+    "storey": 1,
+    "scale": 1.45,
+    "generated": true,
+    "lootMax": 1,
+    "source": {
+      "recipe": "colonial",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3.5,
+              -2.5
+            ],
+            [
+              3,
+              -2.5
+            ],
+            [
+              3,
+              2.5
+            ],
+            [
+              -3.5,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "down": "colonial-north"
+  }
+}

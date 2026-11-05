@@ -1,0 +1,114 @@
+{
+ "conversations": [
+  {
+   "id": "jasper_errand_ask",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "Since we never met, here's a thing I'm not asking you."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Rime shards. Those slivers the little frost lights leave lying about. I'll take any you've got at the going rate. But three, brought special, I'd pay proper for."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "You've a great appetite for something that won't melt."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "No questions. That's the arrangement."
+    },
+    {
+     "who": "eldwin",
+     "text": "I don't recall asking one."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "See? You're a natural."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "errand_asked"
+    }
+   ]
+  },
+  {
+   "id": "jasper_errand_turnin",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "Ah. I can feel those from here. Three, was it?"
+    },
+    {
+     "choice": [
+      {
+       "text": "Here. Three of them.",
+       "next": "jasper_errand_close",
+       "then": [
+        {
+         "take": {
+          "rime_shard": 3
+         }
+        },
+        {
+         "setFlag": "errand_done"
+        },
+        {
+         "reward": {
+          "title": "Jasper's Errand",
+          "xp": 5,
+          "items": {
+           "ward_chalk": 1,
+           "cold_iron_nail": 1
+          }
+         }
+        }
+       ]
+      },
+      {
+       "text": "Not just now.",
+       "next": "jasper_later"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jasper_errand_close",
+   "lines": [
+    {
+     "who": "",
+     "text": "He counts them into a flat tin without looking. The tin is nearly full. It ought to be white with frost, holding that much cold. It isn't."
+    },
+    {
+     "who": "eldwin",
+     "face": "quiet",
+     "text": "You've a lot of those."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "No questions, we said."
+    },
+    {
+     "who": "eldwin",
+     "text": "So we did."
+    },
+    {
+     "who": "",
+     "text": "Eldwin looks at the tin a moment longer than he needs to, and says nothing more."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Pleasure. We never met."
+    }
+   ]
+  }
+ ]
+}

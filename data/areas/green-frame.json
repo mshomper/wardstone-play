@@ -1,0 +1,905 @@
+{
+  "version": 1,
+  "name": "green-frame",
+  "seed": 3101,
+  "size": {
+    "w": 34,
+    "h": 28
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 2.2,
+    "edgeWidth": 3.5,
+    "roll": 0.35,
+    "pathMargin": 0.9,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.35,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.35,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.16,
+        "spacing": 1.8,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2",
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.04,
+        "spacing": 2.4,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.77,
+        "spacing": 0.8,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1",
+          "goldenrod_0",
+          "asters_0"
+        ],
+        "density": 0.08,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -7.5,
+          -5.5
+        ],
+        [
+          7.5,
+          -5.5
+        ],
+        [
+          7.5,
+          6.5
+        ],
+        [
+          -7.5,
+          6.5
+        ],
+        [
+          -7.5,
+          -5.5
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          7.5,
+          -5.5
+        ],
+        [
+          9.5,
+          -9
+        ],
+        [
+          10.5,
+          -14
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          0,
+          6.5
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "width": 1.4,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          -7.33,
+          -5.67
+        ],
+        [
+          -12.67,
+          -5.85
+        ],
+        [
+          -13.17,
+          -7.36
+        ],
+        [
+          -12.67,
+          -13.63
+        ]
+      ],
+      "width": 1.4,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        17.69,
+        -6.84
+      ],
+      [
+        14.25,
+        -5.89
+      ],
+      [
+        14.03,
+        4.25
+      ],
+      [
+        12.14,
+        10.13
+      ],
+      [
+        5.88,
+        10.96
+      ],
+      [
+        4.37,
+        11.85
+      ],
+      [
+        4.28,
+        14.32
+      ]
+    ],
+    "width": 1.4,
+    "depth": 0.7
+  },
+  "walls": [
+    {
+      "points": [
+        [
+          9.32,
+          -14.03
+        ],
+        [
+          8.75,
+          -10.52
+        ],
+        [
+          7.99,
+          -8.46
+        ],
+        [
+          6.04,
+          -7
+        ],
+        [
+          4.06,
+          -7.01
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 4.34,
+          "width": 1.6
+        }
+      ]
+    },
+    {
+      "points": [
+        [
+          0.89,
+          13.78
+        ],
+        [
+          0.88,
+          8.25
+        ]
+      ],
+      "gaps": []
+    },
+    {
+      "points": [
+        [
+          -1.34,
+          13.68
+        ],
+        [
+          -1.37,
+          8
+        ]
+      ],
+      "gaps": []
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "church",
+      "x": 0,
+      "z": -10,
+      "w": 5,
+      "d": 6,
+      "rot": 0,
+      "height": 7,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -3
+            ],
+            [
+              2.5,
+              -3
+            ],
+            [
+              2.5,
+              3
+            ],
+            [
+              -2.5,
+              3
+            ]
+          ]
+        }
+      ],
+      "landmarks": [
+        {
+          "kind": "steeple",
+          "at": [
+            3.3,
+            0.2
+          ],
+          "door": "door_panel_red"
+        }
+      ]
+    },
+    {
+      "mesh": "kit",
+      "recipe": "mill",
+      "x": 11,
+      "z": -0.5,
+      "w": 4.5,
+      "d": 8.5,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              -2.5,
+              3
+            ],
+            [
+              -2.5,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "footprint": [
+            [
+              0.5,
+              2.5
+            ],
+            [
+              0.5,
+              5
+            ],
+            [
+              -2.5,
+              5
+            ],
+            [
+              -2.5,
+              2.5
+            ]
+          ],
+          "storeys": 1
+        }
+      ],
+      "landmarks": [
+        {
+          "kind": "waterwheel",
+          "side": "right",
+          "radius": 2.2,
+          "offset": 0.3
+        }
+      ],
+      "variants": {
+        "doorSide": "left",
+        "sign": true,
+        "signText": "Pike's Cider Mill"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "store",
+      "x": 13.75,
+      "z": -10.5,
+      "w": 5,
+      "d": 3.5,
+      "rot": 1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2
+            ],
+            [
+              2.5,
+              -2
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              -2.5,
+              1.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "porch": 4,
+        "sign": true,
+        "porchLight": true,
+        "signText": "Hale's Store"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "colonial",
+      "x": -8,
+      "z": -9.5,
+      "w": 6.5,
+      "d": 5,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3.5,
+              -2.5
+            ],
+            [
+              3,
+              -2.5
+            ],
+            [
+              3,
+              2.5
+            ],
+            [
+              -3.5,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "variants": {
+        "shutters": false,
+        "porchLight": false
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "farmhouse",
+      "x": -12.5,
+      "z": -2,
+      "w": 6,
+      "d": 5,
+      "rot": -1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2.5
+            ],
+            [
+              3,
+              -2.5
+            ],
+            [
+              3,
+              2.5
+            ],
+            [
+              -3,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "variants": {
+        "shutters": true,
+        "porchLight": false,
+        "porch": 3.4
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "farmhouse",
+      "x": -5,
+      "z": 10,
+      "w": 5.5,
+      "d": 4,
+      "rot": -3.141592653589793,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              2.5,
+              -2
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "variants": {
+        "shutters": true,
+        "porchLight": false
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "colonial",
+      "x": -11,
+      "z": 5,
+      "w": 5,
+      "d": 7,
+      "rot": -1.5707963267948966,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              -2.5,
+              2
+            ]
+          ],
+          "storeys": 2
+        },
+        {
+          "footprint": [
+            [
+              0,
+              -5
+            ],
+            [
+              2.5,
+              -5
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "variants": {
+        "shutters": true,
+        "porchLight": true
+      }
+    },
+    {
+      "mesh": "bandstand",
+      "kind": "bandstand",
+      "x": -3.83,
+      "z": -2.62,
+      "w": 4.26,
+      "d": 4.26,
+      "rot": -0.708,
+      "height": 3
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "fair_stall_red",
+      "x": 2.98,
+      "z": 2.23,
+      "collide": 0.8,
+      "flip": false
+    },
+    {
+      "prop": "hay_bale_1",
+      "x": 0.93,
+      "z": 3.7,
+      "collide": 0.5,
+      "flip": false
+    },
+    {
+      "prop": "pumpkin_3",
+      "x": 2.96,
+      "z": 1.78,
+      "flip": true
+    },
+    {
+      "prop": "crate_0",
+      "x": 3.9,
+      "z": 4.15,
+      "collide": 0.4,
+      "flip": false
+    },
+    {
+      "prop": "fair_stall_green",
+      "x": -1.43,
+      "z": 3.42,
+      "collide": 0.8,
+      "flip": false
+    },
+    {
+      "prop": "hay_bale_1",
+      "x": -2.81,
+      "z": 2.76,
+      "collide": 0.5,
+      "flip": false
+    },
+    {
+      "prop": "pumpkin_2",
+      "x": -2.52,
+      "z": 4.28,
+      "flip": false
+    },
+    {
+      "prop": "pumpkin_2",
+      "x": -0.01,
+      "z": 2.73,
+      "flip": true
+    },
+    {
+      "prop": "fair_stall_red",
+      "x": 4.07,
+      "z": -0.79,
+      "collide": 0.8,
+      "flip": true
+    },
+    {
+      "prop": "pumpkin_2",
+      "x": 5.1,
+      "z": 1.16,
+      "flip": false
+    },
+    {
+      "prop": "pumpkin_1",
+      "x": 5.39,
+      "z": -0.83,
+      "flip": false
+    },
+    {
+      "prop": "pumpkin_0",
+      "x": 2.47,
+      "z": -0.07,
+      "flip": false
+    },
+    {
+      "prop": "maple_red_0",
+      "x": -4.87,
+      "z": -1.87,
+      "collide": 0.45,
+      "tall": true
+    },
+    {
+      "prop": "maple_yellow_0",
+      "x": 4.76,
+      "z": -3.04,
+      "collide": 0.45,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": -6.44,
+      "z": -4.33,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": 6.44,
+      "z": -4.33,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": 6.44,
+      "z": 5.33,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "lamp_post",
+      "x": -6.44,
+      "z": 5.33,
+      "collide": 0.2,
+      "tall": true
+    },
+    {
+      "prop": "noticeboard",
+      "x": 8.2,
+      "z": -7.1,
+      "collide": 0.6
+    }
+  ],
+  "keepClear": [],
+  "frame": {
+    "kind": "green",
+    "green": [
+      [
+        -6,
+        -4
+      ],
+      [
+        6,
+        -4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        -6,
+        5
+      ]
+    ],
+    "fixed": [
+      0
+    ],
+    "seed": 15381
+  },
+  "start": [
+    0,
+    8.5
+  ],
+  "exits": [
+    {
+      "rect": [
+        8.3,
+        -11.9,
+        10.6,
+        -10.9
+      ],
+      "to": "orchard",
+      "at": [
+        0,
+        5.2
+      ],
+      "dir": 4
+    },
+    {
+      "rect": [
+        -1.3,
+        11.4,
+        0.8,
+        12.4
+      ],
+      "to": "south-fields",
+      "at": [
+        0,
+        -9.6
+      ],
+      "dir": 0
+    }
+  ],
+  "spots": [{"name": "Martha (day)", "x": -3.0, "z": 4.6, "note": "Martha Combs at the quilt stall, setting up."},{"name": "Amos (day)", "x": -7.7, "z": 2.6, "note": "Amos Tuttle outside the Tuttle house door, listening for a clock."},{"name": "Jonah (day)", "x": 1.5, "z": 7.3, "note": "Jonah Reed on the south lane by the Reed farm."},{"name": "Biscuit (home)", "x": 11.8, "z": -8.2, "note": "Biscuit, home, on the store's front step."},
+    {
+      "name": "Eldwin's porch",
+      "x": 11.4,
+      "z": -10.5,
+      "note": "Opening: Eldwin steps out of the store onto the porch."
+    },
+    {
+      "name": "Ada (morning)",
+      "x": 4.9,
+      "z": 0.9,
+      "note": "Ada by the frosted pumpkins, morning."
+    },
+    {
+      "name": "Ada (evening)",
+      "x": 1.2,
+      "z": 1,
+      "note": "Ada at the fair with the cider, evening."
+    },
+    {
+      "name": "Silas",
+      "x": 7.4,
+      "z": 1.8,
+      "note": "Silas outside his mill, worried about the press."
+    },
+    {
+      "name": "Silas (evening)",
+      "x": 5.2,
+      "z": -0.4,
+      "note": "Silas by the cider stall at the fair."
+    },
+    {
+      "name": "Wren (evening)",
+      "x": 0.4,
+      "z": 2.2,
+      "note": "Wren, front row at the fair."
+    },
+    {
+      "name": "Townsfolk 1",
+      "x": -2.4,
+      "z": 1.6,
+      "note": "Fair crowd, evening."
+    },
+    {
+      "name": "Townsfolk 2",
+      "x": 3.6,
+      "z": 4.6,
+      "note": "Fair crowd, evening."
+    },
+    {
+      "name": "Townsfolk 3",
+      "x": -4.4,
+      "z": 4.8,
+      "note": "Fair crowd, evening."
+    },
+    {
+      "name": "Noticeboard",
+      "x": 8.2,
+      "z": -6.2,
+      "note": "Village noticeboard: fair schedule, lost cat, a Frostwarden note."
+    },
+    {
+      "name": "Stall (red)",
+      "x": 2.98,
+      "z": 3,
+      "note": "Fair stall: flavour text."
+    },
+    {
+      "name": "Stall (green)",
+      "x": -1.43,
+      "z": 4.2,
+      "note": "Fair stall: flavour text."
+    },
+    {
+      "name": "Church door",
+      "x": 0,
+      "z": -6.4,
+      "note": "The church door: E or a click goes inside."
+    },
+    {
+      "name": "Jasper",
+      "x": -3.9,
+      "z": -10.6,
+      "note": "Jasper Crane, half hidden in the gap between the church and the colonial house."
+    },
+    {
+      "name": "Ending view",
+      "x": 0,
+      "z": -2,
+      "note": "Ending: the camera rises over the green toward the mountain."
+    }
+  ]
+}

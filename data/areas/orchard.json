@@ -1,0 +1,582 @@
+{
+  "version": 1,
+  "name": "orchard",
+  "seed": 5150,
+  "size": {
+    "w": 32,
+    "h": 22
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 2.6,
+    "edgeWidth": 4.5,
+    "roll": 0.35,
+    "pathMargin": 0.7,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "apple_tree_0",
+          "apple_tree_1"
+        ],
+        "density": 0,
+        "spacing": 2.5,
+        "scale": [
+          0.9,
+          1.08
+        ],
+        "collide": 0.4,
+        "tall": true,
+        "rows": {
+          "region": [
+            [
+              -8.6,
+              1.4
+            ],
+            [
+              -2,
+              1.6
+            ],
+            [
+              3,
+              2.4
+            ],
+            [
+              13.6,
+              1.8
+            ],
+            [
+              13.6,
+              -4.6
+            ],
+            [
+              8,
+              -5.6
+            ],
+            [
+              0,
+              -4.8
+            ],
+            [
+              -7,
+              -5.9
+            ],
+            [
+              -9.8,
+              -3.6
+            ],
+            [
+              -9.6,
+              0
+            ]
+          ],
+          "spacing": 3.1,
+          "along": 2.5,
+          "angle": 0,
+          "jitter": 0.12,
+          "gaps": 0.08
+        }
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.5,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.1,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "apple_tree_0",
+          "apple_tree_1"
+        ],
+        "density": 0.05,
+        "spacing": 3.5,
+        "scale": [
+          0.85,
+          1
+        ],
+        "near": "open",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.02,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2"
+        ],
+        "density": 0.03,
+        "spacing": 2.6,
+        "scale": [
+          0.8,
+          1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "asters_0",
+          "asters_1",
+          "goldenrod_0",
+          "goldenrod_1"
+        ],
+        "density": 0.12,
+        "spacing": 1,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "goldenrod_0",
+          "goldenrod_1",
+          "asters_0",
+          "mushrooms_0"
+        ],
+        "density": 0.1,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.15,
+        "spacing": 0.9,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "edge"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          5.5
+        ],
+        [
+          -1.2,
+          3.4
+        ],
+        [
+          -7,
+          3
+        ],
+        [
+          -10.5,
+          1.5
+        ],
+        [
+          -11.5,
+          -3
+        ],
+        [
+          -11,
+          -11
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    }
+  ],
+  "walls": [
+    {
+      "points": [
+        [
+          16,
+          -6
+        ],
+        [
+          8,
+          -7.2
+        ],
+        [
+          0,
+          -6.4
+        ],
+        [
+          -7,
+          -7.4
+        ],
+        [
+          -9.6,
+          -11
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 6.5,
+          "width": 1.2
+        },
+        {
+          "at": 16.5,
+          "width": 1.4
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 2,
+      "z": -21,
+      "radius": 22,
+      "height": 2.6
+    }
+  ],
+  "arenas": [
+    {
+      "x": 7.6,
+      "z": -3.4,
+      "radius": 3
+    },
+    {
+      "x": -8.4,
+      "z": 7.2,
+      "radius": 2.6
+    },
+    {
+      "x": 10.6,
+      "z": 4.8,
+      "radius": 2.4
+    },
+    {
+      "x": -1.2,
+      "z": -2.2,
+      "radius": 2.4
+    }
+  ],
+  "placements": [
+    {
+      "prop": "apple_tree_0",
+      "x": 1.45,
+      "z": -1.25,
+      "collide": 0.4,
+      "tall": true,
+      "flip": false
+    },
+    {
+      "prop": "ladder",
+      "x": 1.85,
+      "z": -1.05,
+      "tall": true
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 0.85,
+      "z": -0.7
+    },
+    {
+      "prop": "apple_tree_0",
+      "x": 11.45,
+      "z": 1.85,
+      "collide": 0.4,
+      "tall": true,
+      "flip": true
+    },
+    {
+      "prop": "ladder",
+      "x": 11.05,
+      "z": 2.05,
+      "tall": true
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 12,
+      "z": 2.4
+    },
+    {
+      "prop": "apple_tree_0",
+      "x": 6.45,
+      "z": -4.35,
+      "collide": 0.4,
+      "tall": true,
+      "flip": false
+    },
+    {
+      "prop": "ladder",
+      "x": 6.85,
+      "z": -4.15,
+      "tall": true
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 5.85,
+      "z": -3.8
+    },
+    {
+      "prop": "apple_basket_1",
+      "x": -4.05,
+      "z": 2.45
+    },
+    {
+      "prop": "crate_apples",
+      "x": -2.35,
+      "z": 2.25,
+      "collide": 0.3
+    },
+    {
+      "prop": "apple_basket_1",
+      "x": 15.95,
+      "z": -0.65
+    },
+    {
+      "prop": "crate_apples",
+      "x": 17.65,
+      "z": -0.85,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -8.6,
+      "z": 1.95,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -6.6,
+      "z": 1.95,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -4.6,
+      "z": 1.95,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -2.6,
+      "z": 1.95,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -8.2,
+      "z": 4.45,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -6.2,
+      "z": 4.45,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -4.2,
+      "z": 4.45,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail_open",
+      "x": -2.2,
+      "z": 4.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_post_mitten",
+      "x": -3.6,
+      "z": -5.2,
+      "collide": 0.2
+    },
+    {
+      "prop": "hay_bale_0",
+      "x": 4.2,
+      "z": 8.6,
+      "collide": 0.5
+    },
+    {
+      "prop": "pumpkin_frozen_0",
+      "x": 3.3,
+      "z": 9.2
+    },
+    {
+      "prop": "crate_0",
+      "x": -4.5,
+      "z": 8.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": 4.1,
+      "z": 5.5,
+      "collide": 0.3,
+      "scale": 0.8
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -1.3,
+          1.85
+        ],
+        [
+          -0.4,
+          0.6
+        ]
+      ],
+      "radius": 0.8
+    },
+    {
+      "points": [
+        [
+          2.6,
+          6.6
+        ],
+        [
+          4.2,
+          5.2
+        ]
+      ],
+      "radius": 1
+    }
+  ],
+  "spots": [
+    {
+      "name": "Wren's mitten",
+      "x": -3.6,
+      "z": -5.2,
+      "note": "Frozen to the last post of the road fence; side moment."
+    },
+    {
+      "name": "Rimelings 1",
+      "x": 7.6,
+      "z": -3.4,
+      "note": "Encounter: rimelings drifting out of the rows."
+    },
+    {
+      "name": "Rimelings 2",
+      "x": -8.4,
+      "z": 7.2,
+      "note": "Encounter: rimelings by the lower fence."
+    },
+    {
+      "name": "Wren (morning)",
+      "x": 1.4,
+      "z": 4.4,
+      "note": "Wren on the orchard road, morning."
+    },
+    {
+      "name": "First gap",
+      "x": 9.6,
+      "z": -5.7,
+      "note": "Eldwin kneels at the first gap before the rimelings."
+    },
+    {
+      "name": "Rimelings 3",
+      "x": 10.6,
+      "z": 4.8,
+      "note": "Roaming group: rimelings in the open grass south of the rows."
+    },
+    {
+      "name": "Tougher rimelings",
+      "x": -1.2,
+      "z": -2.2,
+      "note": "Roaming group: tougher rimelings in a clearing among the rows, off the road."
+    }
+  ],
+  "start": [
+    0,
+    5.2
+  ],
+  "exits": [
+    {
+      "rect": [
+        -2.5,
+        7.3,
+        2.5,
+        8.3
+      ],
+      "to": "green-frame",
+      "at": [
+        9.6,
+        -9.4
+      ],
+      "dir": 0
+    },
+    {
+      "rect": [
+        -13.2,
+        -8.3,
+        -9.2,
+        -7.3
+      ],
+      "to": "brook-woods",
+      "at": [
+        -8.1,
+        10
+      ],
+      "dir": 4
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "conversations": [
+    {
+      "id": "ada_call",
+      "lines": [
+        { "who": "ada", "face": "worried", "text": "Eldwin! Eldwin, are you up? Come down and look at this!" }
+      ]
+    },
+    {
+      "id": "ada_morning",
+      "lines": [
+        { "who": "ada", "face": "worried", "text": "Eldwin! Frost on the pumpkins and the fair's tonight." },
+        { "who": "ada", "face": "teasing", "text": "If this is one of your 'old wall' things, fix it before the pie judging." },
+        { "who": "eldwin", "face": "concerned", "text": "Early. Far too early." },
+        { "choice": [
+          { "text": "I'll take a look at the walls.", "next": "ada_morning_walls" },
+          { "text": "Any cider before I go?", "next": "ada_morning_cider" }
+        ] }
+      ],
+      "onEnd": [{ "setFlag": "talked_ada" }]
+    },
+    {
+      "id": "ada_morning_walls",
+      "lines": [
+        { "who": "ada", "text": "Silas is in a state about his press, too. Maybe start there. Then the orchard: Wren swears she saw lights." }
+      ]
+    },
+    {
+      "id": "ada_morning_cider",
+      "lines": [
+        { "who": "ada", "face": "teasing", "text": "The cider's frozen, you old goose. That's rather the problem." },
+        { "who": "ada", "text": "Here. Two jugs from the cellar, warm from the stove. Now go on." }
+      ],
+      "onEnd": [{ "found": { "item": "warm_cider", "n": 2, "note": "From Ada's cellar" } }]
+    },
+    {
+      "id": "ada_gift",
+      "lines": [
+        { "who": "ada", "face": "teasing", "text": "Still here? Then you can make yourself useful and take these off my hands. The fair won't miss two." }
+      ],
+      "onEnd": [{ "setFlag": "gift_ada" }, { "found": { "item": "apple_fritter", "n": 2, "note": "Ada's fritters, still warm" } }]
+    },
+    {
+      "id": "ada_reminder",
+      "lines": [
+        { "who": "ada", "text": "Walls, Eldwin. Pie judging. In that order, if you please." }
+      ]
+    },
+    {
+      "id": "ada_dusk",
+      "lines": [
+        { "who": "ada", "text": "Nearly lantern time. Don't you dare miss it." }
+      ]
+    },
+    {
+      "id": "ada_after",
+      "lines": [
+        { "who": "ada", "text": "Sit down, Eldwin, before you fall down. The walls will keep till morning." }
+      ]
+    },
+    {
+      "id": "ada_evening",
+      "lines": [
+        { "who": "ada", "face": "teasing", "text": "You look like you wrestled a snowbank. Here. Cider. Hot." },
+        { "who": "eldwin", "face": "tired", "text": "Bless you, Ada." },
+        { "who": "wren", "text": "Mister Eldwin! Did you see the frost lights? Did you catch one?" },
+        { "who": "eldwin", "face": "smile", "text": "…" }
+      ],
+      "onEnd": [{ "scene": "ending" }]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "generator": "tools/spritegen/sprites.js",
+  "pixelsPerUnit": 32,
+  "sheets": [
+    {
+      "name": "npc_ada",
+      "json": "npc_ada.json",
+      "image": "npc_ada.png",
+      "emissive": "npc_ada_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_amos_tuttle",
+      "json": "npc_amos_tuttle.json",
+      "image": "npc_amos_tuttle.png",
+      "emissive": "npc_amos_tuttle_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "wizard_iso",
+      "json": "wizard_iso.json",
+      "image": "wizard_iso.png",
+      "emissive": "wizard_iso_emissive.png",
+      "size": [
+        457,
+        4417
+      ],
+      "anims": 64,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "wizard_side",
+      "json": "wizard_side.json",
+      "image": "wizard_side.png",
+      "emissive": "wizard_side_emissive.png",
+      "size": [
+        891,
+        1191
+      ],
+      "anims": 14,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_jasper_crane",
+      "json": "npc_jasper_crane.json",
+      "image": "npc_jasper_crane.png",
+      "emissive": "npc_jasper_crane_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_jonah_reed",
+      "json": "npc_jonah_reed.json",
+      "image": "npc_jonah_reed.png",
+      "emissive": "npc_jonah_reed_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_martha_combs",
+      "json": "npc_martha_combs.json",
+      "image": "npc_martha_combs.png",
+      "emissive": "npc_martha_combs_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_silas",
+      "json": "npc_silas.json",
+      "image": "npc_silas.png",
+      "emissive": "npc_silas_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "npc_wren",
+      "json": "npc_wren.json",
+      "image": "npc_wren.png",
+      "emissive": "npc_wren_emissive.png",
+      "size": [
+        343,
+        1657
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "biscuit_iso",
+      "json": "biscuit_iso.json",
+      "image": "biscuit_iso.png",
+      "emissive": "biscuit_iso_emissive.png",
+      "size": [
+        247,
+        529
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "burrback_iso",
+      "json": "burrback_iso.json",
+      "image": "burrback_iso.png",
+      "emissive": "burrback_iso_emissive.png",
+      "size": [
+        165,
+        297
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "burrback_side",
+      "json": "burrback_side.json",
+      "image": "burrback_side.png",
+      "emissive": "burrback_side_emissive.png",
+      "size": [
+        512,
+        206
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "latchpaw_iso",
+      "json": "latchpaw_iso.json",
+      "image": "latchpaw_iso.png",
+      "emissive": "latchpaw_iso_emissive.png",
+      "size": [
+        261,
+        425
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "latchpaw_side",
+      "json": "latchpaw_side.json",
+      "image": "latchpaw_side.png",
+      "emissive": "latchpaw_side_emissive.png",
+      "size": [
+        596,
+        306
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "rimeling_iso",
+      "json": "rimeling_iso.json",
+      "image": "rimeling_iso.png",
+      "emissive": "rimeling_iso_emissive.png",
+      "size": [
+        213,
+        329
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "rimeling_side",
+      "json": "rimeling_side.json",
+      "image": "rimeling_side.png",
+      "emissive": "rimeling_side_emissive.png",
+      "size": [
+        391,
+        246
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "shade_wolf_iso",
+      "json": "shade_wolf_iso.json",
+      "image": "shade_wolf_iso.png",
+      "emissive": "shade_wolf_iso_emissive.png",
+      "size": [
+        439,
+        1561
+      ],
+      "anims": 24,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "shade_wolf",
+      "json": "shade_wolf.json",
+      "image": "shade_wolf.png",
+      "emissive": "shade_wolf_emissive.png",
+      "size": [
+        568,
+        343
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "snickerkit_iso",
+      "json": "snickerkit_iso.json",
+      "image": "snickerkit_iso.png",
+      "emissive": "snickerkit_iso_emissive.png",
+      "size": [
+        261,
+        425
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "snickerkit_side",
+      "json": "snickerkit_side.json",
+      "image": "snickerkit_side.png",
+      "emissive": "snickerkit_side_emissive.png",
+      "size": [
+        596,
+        306
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "portraits",
+      "json": "portraits.json",
+      "image": "portraits.png",
+      "emissive": "portraits_emissive.png",
+      "size": [
+        456,
+        261
+      ],
+      "anims": 0,
+      "sprites": 25,
+      "tiles": 0
+    },
+    {
+      "name": "props",
+      "json": "props.json",
+      "image": "props.png",
+      "emissive": "props_emissive.png",
+      "size": [
+        488,
+        210
+      ],
+      "anims": 1,
+      "sprites": 19,
+      "tiles": 0
+    },
+    {
+      "name": "tiles",
+      "json": "tiles.json",
+      "image": "tiles.png",
+      "emissive": "tiles_emissive.png",
+      "size": [
+        133,
+        133
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 14
+    },
+    {
+      "name": "autumn_tiles",
+      "json": "autumn_tiles.json",
+      "image": "autumn_tiles.png",
+      "emissive": "autumn_tiles_emissive.png",
+      "size": [
+        892,
+        34
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 27
+    },
+    {
+      "name": "autumn_edges",
+      "json": "autumn_edges.json",
+      "image": "autumn_edges.png",
+      "emissive": "autumn_edges_emissive.png",
+      "size": [
+        1024,
+        298
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 252
+    },
+    {
+      "name": "autumn_trees",
+      "json": "autumn_trees.json",
+      "image": "autumn_trees.png",
+      "emissive": "autumn_trees_emissive.png",
+      "size": [
+        970,
+        299
+      ],
+      "anims": 0,
+      "sprites": 14,
+      "tiles": 0
+    },
+    {
+      "name": "autumn_props",
+      "json": "autumn_props.json",
+      "image": "autumn_props.png",
+      "emissive": "autumn_props_emissive.png",
+      "size": [
+        977,
+        364
+      ],
+      "anims": 0,
+      "sprites": 56,
+      "tiles": 0
+    },
+    {
+      "name": "mesh_textures",
+      "json": "mesh_textures.json",
+      "image": "mesh_textures.png",
+      "emissive": "mesh_textures_emissive.png",
+      "size": [
+        983,
+        131
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 21
+    },
+    {
+      "name": "interior_textures",
+      "json": "interior_textures.json",
+      "image": "interior_textures.png",
+      "emissive": "interior_textures_emissive.png",
+      "size": [
+        994,
+        131
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 22
+    },
+    {
+      "name": "interior_props",
+      "json": "interior_props.json",
+      "image": "interior_props.png",
+      "emissive": "interior_props_emissive.png",
+      "size": [
+        488,
+        46
+      ],
+      "anims": 0,
+      "sprites": 24,
+      "tiles": 0
+    },
+    {
+      "name": "house_props",
+      "json": "house_props.json",
+      "image": "house_props.png",
+      "emissive": "house_props_emissive.png",
+      "size": [
+        685,
+        217
+      ],
+      "anims": 0,
+      "sprites": 20,
+      "tiles": 2
+    }
+  ]
+}

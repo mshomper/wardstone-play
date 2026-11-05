@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "name": "breach",
+  "seed": 9090,
+  "size": {
+    "w": 18,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 2.8,
+    "edgeWidth": 3.5,
+    "roll": 0.25,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "bare_tree_0",
+          "bare_tree_1"
+        ],
+        "density": 0.5,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.35,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.05,
+        "spacing": 3.0,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.08,
+        "spacing": 2.6,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2"
+        ],
+        "density": 0.1,
+        "spacing": 1.6,
+        "scale": [
+          0.8,
+          1.15
+        ],
+        "near": "wall",
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_1",
+          "fern_autumn_2",
+          "mushrooms_1"
+        ],
+        "density": 0.12,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.0
+        ],
+        "near": "edge"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          0.4,
+          8
+        ],
+        [
+          0.2,
+          4.5
+        ],
+        [
+          0,
+          2.6
+        ]
+      ],
+      "width": 1.3,
+      "kind": "path"
+    }
+  ],
+  "walls": [
+    {
+      "points": [
+        [
+          -9,
+          -1.2
+        ],
+        [
+          -5,
+          -3.6
+        ],
+        [
+          -1.5,
+          -5.0
+        ],
+        [
+          1.5,
+          -5.0
+        ],
+        [
+          5,
+          -3.4
+        ],
+        [
+          9,
+          -1.6
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 9.83,
+          "width": 6.0
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 0,
+      "z": -10.5,
+      "radius": 6,
+      "height": 4
+    }
+  ],
+  "arenas": [
+    {
+      "x": 0,
+      "z": -0.6,
+      "radius": 3.2
+    }
+  ],
+  "placements": [
+    {
+      "prop": "wardstone_cracked",
+      "x": 0,
+      "z": -3.95,
+      "tall": true,
+      "collide": 0.6
+    },
+    {
+      "prop": "rock_face_1",
+      "x": -8.2,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": false
+    },
+    {
+      "prop": "rock_face_2",
+      "x": -4.6,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_0",
+      "x": -1.0,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": false
+    },
+    {
+      "prop": "rock_face_2",
+      "x": 2.6,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": false
+    },
+    {
+      "prop": "rock_face_1",
+      "x": 6.0,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_0",
+      "x": 9.0,
+      "z": -7.9,
+      "tall": true,
+      "collide": 1.2,
+      "flip": true
+    },
+    {
+      "prop": "rock_spire_0",
+      "x": -0.2,
+      "z": -7.2,
+      "tall": true,
+      "collide": 0.7
+    },
+    {
+      "prop": "rock_spire_0",
+      "x": 5.0,
+      "z": -6.9,
+      "tall": true,
+      "collide": 0.7,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_0",
+      "x": -6.6,
+      "z": -6.7,
+      "tall": true,
+      "collide": 1.2,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_1",
+      "x": -3.1,
+      "z": -6.5,
+      "tall": true,
+      "collide": 1.2,
+      "flip": false
+    },
+    {
+      "prop": "rock_face_1",
+      "x": 2.4,
+      "z": -6.5,
+      "tall": true,
+      "collide": 1.2,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_0",
+      "x": 7.4,
+      "z": -6.6,
+      "tall": true,
+      "collide": 1.2,
+      "flip": false
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -5.0,
+      "z": -5.6,
+      "collide": 0.8
+    },
+    {
+      "prop": "boulder_large_0",
+      "x": 4.1,
+      "z": -5.5,
+      "collide": 0.8,
+      "flip": true
+    },
+    {
+      "prop": "boulder_large_2",
+      "x": 6.4,
+      "z": -0.6,
+      "collide": 0.8
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": -2.2,
+      "z": -4.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_2",
+      "x": 2.4,
+      "z": -4.2,
+      "collide": 0.3,
+      "scale": 1.1
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": -2.9,
+      "z": -2.9,
+      "scale": 0.7
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": 3.1,
+      "z": -2.6,
+      "scale": 0.6,
+      "flip": true
+    },
+    {
+      "prop": "pumpkin_frozen_1",
+      "x": -5.6,
+      "z": 3.4
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -1.5,
+          -5.3
+        ],
+        [
+          1.5,
+          -5.3
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "Wardstone",
+      "x": 0,
+      "z": -3.95,
+      "note": "Cracked wardstone in the gap where the wall meets the rock face."
+    },
+    {
+      "name": "Breach battle",
+      "x": 0,
+      "z": -0.6,
+      "note": "Scripted battle in front of the stone."
+    }
+  ],
+  "start": [
+    0,
+    4.0
+  ],
+  "exits": [
+    {
+      "rect": [
+        -2,
+        4.9,
+        2,
+        5.9
+      ],
+      "to": "brook-woods",
+      "at": [
+        3.3,
+        -9.8
+      ],
+      "dir": 0
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+ "id": "quilt-squares",
+ "title": "Quilt Squares",
+ "side": true,
+ "blurb": "Martha Combs has a fair quilt with three holes in it.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Three short",
+   "objective": "",
+   "done": {
+    "flags": [
+     "quilt_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "townsfolk1"
+    }
+   ],
+   "sets": [
+    "quilt_asked"
+   ]
+  },
+  {
+   "id": "find",
+   "title": "Three short",
+   "objective": "Find the squares in the blanket chests: Whitcomb house, Tuttle house (upstairs), Reed farm.",
+   "count": {
+    "flags": [
+     "square_whitcomb",
+     "square_tuttle",
+     "square_reed"
+    ]
+   },
+   "done": {
+    "flags": [
+     "square_whitcomb",
+     "square_tuttle",
+     "square_reed"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "at": [
+     -6,
+     -5.5
+    ]
+   },
+   "auto": [
+    {
+     "use": "door_colonial_north",
+     "if": {
+      "notFlags": [
+       "square_whitcomb"
+      ]
+     }
+    },
+    {
+     "use": "quilt_whitcomb",
+     "if": {
+      "notFlags": [
+       "square_whitcomb"
+      ]
+     }
+    },
+    {
+     "go": "green-frame",
+     "if": {
+      "flags": [
+       "square_whitcomb"
+      ],
+      "notFlags": [
+       "square_tuttle"
+      ]
+     }
+    },
+    {
+     "use": "door_colonial_west",
+     "if": {
+      "flags": [
+       "square_whitcomb"
+      ],
+      "notFlags": [
+       "square_tuttle"
+      ]
+     }
+    },
+    {
+     "go": "colonial-west-upper",
+     "if": {
+      "flags": [
+       "square_whitcomb"
+      ],
+      "notFlags": [
+       "square_tuttle"
+      ]
+     }
+    },
+    {
+     "use": "quilt_tuttle",
+     "if": {
+      "flags": [
+       "square_whitcomb"
+      ],
+      "notFlags": [
+       "square_tuttle"
+      ]
+     }
+    },
+    {
+     "go": "colonial-west",
+     "if": {
+      "flags": [
+       "square_tuttle"
+      ],
+      "notFlags": [
+       "square_reed"
+      ]
+     }
+    },
+    {
+     "go": "green-frame",
+     "if": {
+      "flags": [
+       "square_tuttle"
+      ],
+      "notFlags": [
+       "square_reed"
+      ]
+     }
+    },
+    {
+     "use": "door_farmhouse_south",
+     "if": {
+      "flags": [
+       "square_tuttle"
+      ],
+      "notFlags": [
+       "square_reed"
+      ]
+     }
+    },
+    {
+     "use": "quilt_reed",
+     "if": {
+      "flags": [
+       "square_tuttle"
+      ],
+      "notFlags": [
+       "square_reed"
+      ]
+     }
+    }
+   ],
+   "sets": [
+    "square_whitcomb",
+    "square_tuttle",
+    "square_reed"
+   ]
+  },
+  {
+   "id": "return",
+   "title": "All three",
+   "objective": "Take the squares to Martha at the quilt stall.",
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Take the squares to Martha, at the fair."
+    }
+   ],
+   "done": {
+    "flags": [
+     "quilt_done"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Stall (green)"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "townsfolk1"
+    }
+   ],
+   "sets": [
+    "quilt_done"
+   ]
+  }
+ ]
+}

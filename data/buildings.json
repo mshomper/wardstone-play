@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "_note": "Building templates for the static mesh pass. Each part sits on the building's ground (y = 0) at 'at' (x, y, z). Roof sizes are [width, rise, depth] of the walls they cover, with the ridge along x unless 'turn' rotates it. Textures name a palette entry below or an atlas tile; the palette uses placeholder tiles until art batch 1 lands.",
+  "textures": {
+    "foundation": {
+      "tile": "moss_stone_1",
+      "tint": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "plaster": {
+      "tile": "flagstone_2",
+      "tint": [
+        1.25,
+        1.15,
+        0.95
+      ]
+    },
+    "stone": {
+      "tile": "flagstone_0",
+      "tint": [
+        0.95,
+        0.95,
+        1.0
+      ]
+    },
+    "timber": {
+      "tile": "dirt_0",
+      "tint": [
+        0.85,
+        0.62,
+        0.44
+      ]
+    },
+    "door": {
+      "tile": "dirt_1",
+      "tint": [
+        0.45,
+        0.28,
+        0.17
+      ]
+    },
+    "window": {
+      "tile": "dirt_1",
+      "tint": [
+        0.18,
+        0.15,
+        0.14
+      ]
+    },
+    "roof_red": {
+      "tile": "moss_stone_2",
+      "tint": [
+        1.05,
+        0.55,
+        0.42
+      ]
+    },
+    "roof_slate": {
+      "tile": "flagstone_3",
+      "tint": [
+        0.62,
+        0.66,
+        0.78
+      ]
+    },
+    "roof_thatch": {
+      "tile": "dirt_0",
+      "tint": [
+        1.2,
+        0.95,
+        0.6
+      ]
+    },
+    "wall_stone": {
+      "tile": "moss_stone_0",
+      "tint": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "wall_cap": {
+      "tile": "flagstone_1",
+      "tint": [
+        0.9,
+        0.92,
+        0.95
+      ]
+    }
+  },
+  "buildings": {
+    "cottage": {
+      "footprint": [
+        4.2,
+        3.2
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "size": [
+            4.2,
+            0.3,
+            3.2
+          ],
+          "tex": {
+            "side": "foundation"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.3,
+            0
+          ],
+          "size": [
+            4,
+            1.9,
+            3
+          ],
+          "tex": {
+            "side": "plaster"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.3,
+            1.5
+          ],
+          "size": [
+            0.8,
+            1.35,
+            0.08
+          ],
+          "tex": {
+            "side": "door"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.25,
+            1.0,
+            1.5
+          ],
+          "size": [
+            0.6,
+            0.6,
+            0.06
+          ],
+          "tex": {
+            "side": "window"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.25,
+            1.0,
+            1.5
+          ],
+          "size": [
+            0.6,
+            0.6,
+            0.06
+          ],
+          "tex": {
+            "side": "window"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.3,
+            1.52
+          ],
+          "size": [
+            4.04,
+            0.12,
+            0.04
+          ],
+          "tex": {
+            "side": "timber"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            1.96,
+            1.52
+          ],
+          "size": [
+            4.04,
+            0.1,
+            0.04
+          ],
+          "tex": {
+            "side": "timber"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.1,
+            2.0,
+            -0.55
+          ],
+          "size": [
+            0.5,
+            2.0,
+            0.5
+          ],
+          "tex": {
+            "side": "stone"
+          }
+        },
+        {
+          "shape": "gable",
+          "at": [
+            0,
+            2.2,
+            0
+          ],
+          "size": [
+            4,
+            1.4,
+            3
+          ],
+          "overhang": 0.3,
+          "thick": 0.14,
+          "tex": {
+            "roof": "roof_thatch",
+            "gable": "plaster",
+            "edge": "timber"
+          }
+        }
+      ]
+    },
+    "inn": {
+      "footprint": [
+        6.4,
+        4.4
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "size": [
+            6.4,
+            0.35,
+            4.4
+          ],
+          "tex": {
+            "side": "foundation"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.35,
+            0
+          ],
+          "size": [
+            6.2,
+            1.5,
+            4.2
+          ],
+          "tex": {
+            "side": "stone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            1.85,
+            0
+          ],
+          "size": [
+            6.4,
+            1.5,
+            4.4
+          ],
+          "tex": {
+            "side": "plaster"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.35,
+            2.1
+          ],
+          "size": [
+            1.0,
+            1.4,
+            0.08
+          ],
+          "tex": {
+            "side": "door"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.0,
+            2.3,
+            2.2
+          ],
+          "size": [
+            0.7,
+            0.7,
+            0.06
+          ],
+          "tex": {
+            "side": "window"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.0,
+            2.3,
+            2.2
+          ],
+          "size": [
+            0.7,
+            0.7,
+            0.06
+          ],
+          "tex": {
+            "side": "window"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.4,
+            2.6,
+            0.4
+          ],
+          "size": [
+            0.6,
+            2.4,
+            0.6
+          ],
+          "tex": {
+            "side": "stone"
+          }
+        },
+        {
+          "shape": "hip",
+          "at": [
+            0,
+            3.35,
+            0
+          ],
+          "size": [
+            6.4,
+            1.6,
+            4.4
+          ],
+          "overhang": 0.35,
+          "thick": 0.16,
+          "tex": {
+            "roof": "roof_red",
+            "edge": "timber"
+          }
+        }
+      ]
+    },
+    "shed": {
+      "footprint": [
+        2.4,
+        2.0
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "size": [
+            2.4,
+            1.5,
+            2.0
+          ],
+          "tex": {
+            "side": "timber"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            1.0
+          ],
+          "size": [
+            0.9,
+            1.2,
+            0.06
+          ],
+          "tex": {
+            "side": "door"
+          }
+        },
+        {
+          "shape": "shed",
+          "at": [
+            0,
+            1.5,
+            0
+          ],
+          "size": [
+            2.4,
+            0.6,
+            2.0
+          ],
+          "overhang": 0.2,
+          "thick": 0.1,
+          "tex": {
+            "roof": "roof_slate",
+            "gable": "timber",
+            "edge": "timber"
+          }
+        }
+      ]
+    },
+    "steeple": {
+      "footprint": [
+        2.2,
+        2.2
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "size": [
+            2.2,
+            4.5,
+            2.2
+          ],
+          "tex": {
+            "side": "stone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            3.3,
+            1.1
+          ],
+          "size": [
+            0.5,
+            0.8,
+            0.06
+          ],
+          "tex": {
+            "side": "window"
+          }
+        },
+        {
+          "shape": "spire",
+          "at": [
+            0,
+            4.5,
+            0
+          ],
+          "size": [
+            2.2,
+            3.0,
+            2.2
+          ],
+          "overhang": 0.15,
+          "thick": 0.12,
+          "tex": {
+            "roof": "roof_slate",
+            "edge": "timber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": {
+    "_note": "Building kit recipes (decision 0008): everything except the footprint. A kit building in an area names one and may override storeys, pitch, mainRoof and variants. Opened buildings (decision 0021) also list rooms per storey: type (rooms.json), share of the floor, public (by the entrance), and which room types connect.",
+    "cape": {
+      "storeys": 1,
+      "pitch": 1.3,
+      "mainRoof": "gable",
+      "chimney": "center",
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "shingle_cedar",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_shuttered",
+        "door": "door_panel_red",
+        "spacing": 1.9
+      }
+    },
+    "colonial": {
+      "storeys": 2,
+      "pitch": 0.9,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_panel_red",
+        "spacing": 1.6
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "parlor",
+              "share": 55,
+              "public": true
+            },
+            {
+              "type": "kitchen",
+              "share": 45
+            }
+          ],
+          "connect": [
+            [
+              "parlor",
+              "kitchen"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom",
+              "share": 55
+            },
+            {
+              "type": "bedroom",
+              "share": 45
+            }
+          ]
+        }
+      ]
+    },
+    "farmhouse": {
+      "storeys": 2,
+      "pitch": 1.1,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "tex": {
+        "wall": "clapboard_white_worn",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_plank",
+        "spacing": 2.1
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "kitchen",
+              "share": 42,
+              "public": true
+            },
+            {
+              "type": "parlor",
+              "share": 30
+            },
+            {
+              "type": "bedroom",
+              "share": 28
+            }
+          ]
+        }
+      ]
+    },
+    "barn": {
+      "storeys": 2,
+      "pitch": 1.2,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "barn_board_red",
+        "roof": "shingle_cedar",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_barn",
+        "spacing": 3
+      }
+    },
+    "store": {
+      "storeys": 2,
+      "pitch": 0.8,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "porch": {
+        "width": 4.4
+      },
+      "porchLight": true,
+      "sign": true,
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_panel_red",
+        "spacing": 1.6
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "shop",
+              "share": 65,
+              "public": true
+            },
+            {
+              "type": "storeroom",
+              "share": 35
+            }
+          ],
+          "connect": [
+            [
+              "shop",
+              "storeroom"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "study",
+              "share": 100
+            }
+          ]
+        }
+      ]
+    },
+    "church": {
+      "storeys": 2,
+      "pitch": 1.0,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_church",
+        "door": "door_panel_red",
+        "spacing": 2.0
+      }
+    },
+    "mill": {
+      "storeys": 2,
+      "pitch": 1.1,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "tex": {
+        "wall": "barn_board_red",
+        "roof": "shingle_cedar",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.4
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "press",
+              "share": 70,
+              "public": true
+            },
+            {
+              "type": "wing",
+              "share": 30
+            }
+          ],
+          "connect": [
+            [
+              "press",
+              "wing"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

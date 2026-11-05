@@ -1,0 +1,84 @@
+{
+ "id": "stopped-clock",
+ "title": "The Stopped Clock",
+ "side": true,
+ "blurb": "Amos Tuttle's clock stopped this morning, for the first time anyone remembers.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Eleven past six",
+   "objective": "",
+   "done": {
+    "flags": [
+     "clock_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "townsfolk2"
+    }
+   ],
+   "sets": [
+    "clock_asked"
+   ]
+  },
+  {
+   "id": "thaw",
+   "title": "Eleven past six",
+   "objective": "See to the clock in the Tuttle house.",
+   "done": {
+    "flags": [
+     "clock_thawed"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Amos (day)"
+   },
+   "auto": [
+    {
+     "use": "door_colonial_west"
+    },
+    {
+     "use": "tuttle_clock"
+    }
+   ],
+   "sets": [
+    "clock_thawed"
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "Going again",
+   "objective": "Tell Amos the clock is going. Amos is by the door of the Tuttle house.",
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Tell Amos the clock is going. Amos is at the fair."
+    }
+   ],
+   "done": {
+    "flags": [
+     "clock_done"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Amos (day)"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "townsfolk2"
+    }
+   ],
+   "sets": [
+    "clock_done"
+   ]
+  }
+ ]
+}

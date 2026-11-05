@@ -1,0 +1,5 @@
+{
+  "_note": "Every quest is its own file in this folder; list them here. `main` is the quest that drives the story, area unlocks and time of day.",
+  "main": "first-frost",
+  "quests": ["first-frost", "the-mitten", "lost-cat", "quilt-squares", "stopped-clock", "big-ones", "jaspers-errand"]
+}

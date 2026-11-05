@@ -1,0 +1,9 @@
+{
+ "generator": "tools/scenery",
+ "sheets": [
+  {
+   "name": "wardstone",
+   "json": "wardstone.json"
+  }
+ ]
+}

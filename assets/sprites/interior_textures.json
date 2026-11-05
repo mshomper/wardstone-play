@@ -1,0 +1,146 @@
+{
+ "image": "interior_textures.png",
+ "emissive": "interior_textures_emissive.png",
+ "size": [
+  994,
+  131
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {},
+ "tiles": {
+  "floor_planks": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "floor_flagstone": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "plaster_wall": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "wainscot": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "timber_beam": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 16
+  },
+  "shelf_goods": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "bookshelf_books": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "counter_front": {
+   "x": 456,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "counter_top": {
+   "x": 521,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "desk_top": {
+   "x": 586,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "drawer_front": {
+   "x": 651,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "hearth_stone": {
+   "x": 684,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "hearth_fire": {
+   "x": 749,
+   "y": 1,
+   "w": 48,
+   "h": 40
+  },
+  "stair_tread": {
+   "x": 798,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "stair_side": {
+   "x": 831,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "press_wood": {
+   "x": 864,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "press_basket": {
+   "x": 929,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "frost_ice": {
+   "x": 1,
+   "y": 66,
+   "w": 32,
+   "h": 32
+  },
+  "rug_red": {
+   "x": 34,
+   "y": 66,
+   "w": 64,
+   "h": 64
+  },
+  "window_inside": {
+   "x": 99,
+   "y": 66,
+   "w": 24,
+   "h": 32
+  },
+  "door_inside": {
+   "x": 124,
+   "y": 66,
+   "w": 28,
+   "h": 46
+  },
+  "doorway_dark": {
+   "x": 153,
+   "y": 66,
+   "w": 28,
+   "h": 46
+  }
+ }
+}

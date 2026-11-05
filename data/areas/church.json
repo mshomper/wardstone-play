@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "name": "church",
+  "seed": 1,
+  "size": {
+    "w": 24,
+    "h": 22
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "runner",
+      "kind": "furniture",
+      "x": 1,
+      "z": 0.7,
+      "w": 1.2,
+      "d": 12.2,
+      "rot": 0,
+      "height": 0.02
+    },
+    {
+      "mesh": "altar",
+      "kind": "furniture",
+      "x": 1,
+      "z": -6.75,
+      "w": 3,
+      "d": 1,
+      "rot": 0,
+      "height": 1.05
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": -3.6,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": -3.6,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": -2.3,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": -2.3,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": -1,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": -1,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": 0.3,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": 0.3,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": 1.6,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": 1.6,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": 2.9,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": 2.9,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": -1.2,
+      "z": 4.2,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "pew",
+      "kind": "furniture",
+      "x": 3.2,
+      "z": 4.2,
+      "w": 2.8,
+      "d": 0.75,
+      "rot": 0,
+      "height": 1
+    },
+    {
+      "mesh": "bookshelf",
+      "kind": "furniture",
+      "x": -4.6,
+      "z": -7.6,
+      "w": 2.6,
+      "d": 0.55,
+      "rot": 0,
+      "height": 2.1
+    },
+    {
+      "mesh": "table",
+      "kind": "furniture",
+      "x": -6.4,
+      "z": -5,
+      "w": 1.8,
+      "d": 0.8,
+      "rot": -1.5707963267948966,
+      "height": 0.75
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "pulpit",
+      "x": 4.1,
+      "z": -5.3,
+      "collide": 0.55
+    },
+    {
+      "prop": "candle_tall",
+      "x": -1.15,
+      "z": -6.8,
+      "collide": 0.15
+    },
+    {
+      "prop": "candle_tall",
+      "x": 3.15,
+      "z": -6.8,
+      "collide": 0.15
+    },
+    {
+      "prop": "candle_tall",
+      "x": -2.9,
+      "z": -6.9,
+      "collide": 0.15
+    },
+    {
+      "prop": "candle_tree",
+      "x": 5.05,
+      "z": -2.9,
+      "collide": 0.25
+    },
+    {
+      "prop": "candle_tree",
+      "x": 5.05,
+      "z": 2.4,
+      "collide": 0.25
+    },
+    {
+      "prop": "candle_tree",
+      "x": -3.05,
+      "z": 0.8,
+      "collide": 0.25
+    },
+    {
+      "prop": "pumpkin_0",
+      "x": -0.75,
+      "z": -5.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "pumpkin_1",
+      "x": -1.35,
+      "z": -5.3,
+      "collide": 0.25
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 2.4,
+      "z": -5.75,
+      "collide": 0.3
+    },
+    {
+      "prop": "crate_apples",
+      "x": 3,
+      "z": -6.5,
+      "collide": 0.35
+    },
+    {
+      "prop": "hay_bale_1",
+      "x": -2.2,
+      "z": -6.2,
+      "collide": 0.4
+    },
+    {
+      "prop": "book_stack_0",
+      "x": -2.1,
+      "z": -3.65,
+      "y": 0.5
+    },
+    {
+      "prop": "book_stack_1",
+      "x": 4.3,
+      "z": -1.05,
+      "y": 0.5
+    },
+    {
+      "prop": "book_stack_0",
+      "x": -0.2,
+      "z": 1.55,
+      "y": 0.5
+    },
+    {
+      "prop": "bell_rope",
+      "x": 4.95,
+      "z": 6.3,
+      "collide": 0.12
+    },
+    {
+      "prop": "broom",
+      "x": -3.05,
+      "z": 6.5,
+      "collide": 0.2
+    },
+    {
+      "prop": "chest",
+      "x": -5.6,
+      "z": -3.8,
+      "collide": 0.4
+    },
+    {
+      "prop": "candle_0",
+      "x": -6.4,
+      "z": -4.6,
+      "y": 0.75
+    },
+    {
+      "prop": "scroll_pile",
+      "x": -6.4,
+      "z": -5.3,
+      "y": 0.75
+    },
+    {
+      "prop": "chair_wood",
+      "x": -5.2,
+      "z": -5.2,
+      "collide": 0.3,
+      "flip": true
+    }
+  ],
+  "keepClear": [],
+  "spots": [
+    {
+      "name": "Nave",
+      "x": 1,
+      "z": -1.5,
+      "note": "Eldwin looks up at the great window, once."
+    }
+  ],
+  "start": [
+    1,
+    5.7
+  ],
+  "exits": [
+    {
+      "rect": [
+        -7.5,
+        7.45,
+        6,
+        9
+      ],
+      "to": "green-frame",
+      "at": [
+        0.975,
+        -5.6
+      ],
+      "dir": 0
+    }
+  ],
+  "interior": {
+    "town": "green-frame",
+    "building": 0,
+    "storey": 0,
+    "scale": 2.4,
+    "wallHeight": 5,
+    "source": {
+      "recipe": "church",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -3
+            ],
+            [
+              2.5,
+              -3
+            ],
+            [
+              2.5,
+              3
+            ],
+            [
+              -2.5,
+              3
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [
+      {
+        "id": "nave",
+        "type": "nave",
+        "rect": [
+          -3.5,
+          -8,
+          5.5,
+          7
+        ]
+      },
+      {
+        "id": "vestry",
+        "type": "vestry",
+        "rect": [
+          -7,
+          -8,
+          -3.5,
+          -3
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "kind": "entrance",
+        "side": "z1",
+        "at": [
+          1,
+          7
+        ],
+        "width": 1.8
+      },
+      {
+        "kind": "door",
+        "side": "x1",
+        "at": [
+          -3.5,
+          -5
+        ],
+        "width": 1.2
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          1,
+          -8
+        ],
+        "width": 4.1,
+        "tex": "window_great",
+        "sill": 1.15,
+        "tint": [
+          0.85,
+          0.6,
+          0.36
+        ]
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -3.5,
+          -0.6
+        ],
+        "width": 0.94,
+        "tex": "window_tall",
+        "sill": 1.5,
+        "tint": [
+          0.85,
+          0.92,
+          1
+        ]
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -3.5,
+          2.4
+        ],
+        "width": 0.94,
+        "tex": "window_tall",
+        "sill": 1.5,
+        "tint": [
+          0.85,
+          0.92,
+          1
+        ]
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -3.5,
+          5.2
+        ],
+        "width": 0.94,
+        "tex": "window_tall",
+        "sill": 1.5,
+        "tint": [
+          0.85,
+          0.92,
+          1
+        ]
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          -5.8,
+          -8
+        ],
+        "width": 0.75,
+        "sill": 1.2
+      }
+    ]
+  }
+}

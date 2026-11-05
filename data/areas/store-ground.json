@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "name": "store-ground",
+  "seed": 1,
+  "size": {
+    "w": 18,
+    "h": 14
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "stairs",
+      "kind": "furniture",
+      "x": -3.75,
+      "z": -1.5,
+      "w": 1.5,
+      "d": 3,
+      "rot": 0,
+      "height": 2.6,
+      "setpiece": true
+    },
+    {
+      "mesh": "shelf",
+      "kind": "furniture",
+      "x": -1.4,
+      "z": -2.6,
+      "w": 3,
+      "d": 0.6,
+      "rot": 0,
+      "height": 2,
+      "setpiece": true
+    },
+    {
+      "mesh": "counter",
+      "kind": "furniture",
+      "x": -1.4,
+      "z": -0.7,
+      "w": 3,
+      "d": 0.8,
+      "rot": 0,
+      "height": 0.95,
+      "setpiece": true
+    },
+    {
+      "mesh": "shelf",
+      "kind": "furniture",
+      "x": 2.35,
+      "z": -2.6,
+      "w": 3,
+      "d": 0.6,
+      "rot": 0,
+      "height": 2,
+      "setpiece": true
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "crate_stack",
+      "x": -4,
+      "z": 2.5,
+      "collide": 0.4,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "sack_flour_1",
+      "x": 0.08,
+      "z": -1.78,
+      "collide": 0.3,
+      "flip": true,
+      "setpiece": true
+    },
+    {
+      "prop": "sack_flour_0",
+      "x": 0.08,
+      "z": 0.77,
+      "collide": 0.3,
+      "flip": true,
+      "setpiece": true
+    },
+    {
+      "prop": "sack_flour_1",
+      "x": 0.08,
+      "z": 0.04,
+      "collide": 0.3,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "oil_lamp",
+      "x": -1.91,
+      "z": -0.65,
+      "y": 0.95,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "cider_jug",
+      "x": -2.13,
+      "z": -0.65,
+      "y": 0.95,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "broom",
+      "x": -3.29,
+      "z": 2.63,
+      "collide": 0.2,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "candle_tall",
+      "x": -4.13,
+      "z": 1.85,
+      "collide": 0.15,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "crate_stack",
+      "x": 3.5,
+      "z": 2.5,
+      "collide": 0.4,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "crate_pumpkins",
+      "x": 3.48,
+      "z": 1.6,
+      "collide": 0.4,
+      "flip": true,
+      "setpiece": true
+    },
+    {
+      "prop": "crate_0",
+      "x": 3.48,
+      "z": 0.02,
+      "collide": 0.4,
+      "flip": true,
+      "setpiece": true
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 0.97,
+      "z": 0.03,
+      "collide": 0.35,
+      "flip": true,
+      "setpiece": true
+    },
+    {
+      "prop": "sack_flour_0",
+      "x": 2.33,
+      "z": 2.58,
+      "collide": 0.3,
+      "flip": false,
+      "setpiece": true
+    },
+    {
+      "prop": "oil_lamp",
+      "x": 3.63,
+      "z": -1.39,
+      "collide": 0.15,
+      "flip": false,
+      "setpiece": true
+    }
+  ],
+  "keepClear": [],
+  "spots": [
+    {
+      "name": "counter",
+      "x": -1.4,
+      "z": 0.55,
+      "note": "stand here to use the counter"
+    }
+  ],
+  "exits": [
+    {
+      "rect": [
+        -5,
+        3.45,
+        4.5,
+        5
+      ],
+      "to": "green-frame",
+      "at": [
+        11,
+        -10.3
+      ],
+      "dir": 3
+    },
+    {
+      "rect": [
+        -4.4,
+        0.05,
+        -3.1,
+        0.55
+      ],
+      "to": "store-upper",
+      "at": [
+        -3.75,
+        0.9
+      ],
+      "dir": 0
+    }
+  ],
+  "interior": {
+    "town": "green-frame",
+    "building": 2,
+    "storey": 0,
+    "scale": 1.7,
+    "source": {
+      "recipe": "store",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2
+            ],
+            [
+              2.5,
+              -2
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              -2.5,
+              1.5
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [
+      {
+        "id": "shop",
+        "type": "shop",
+        "rect": [
+          -4.5,
+          -3,
+          0.5,
+          3
+        ],
+        "setpiece": true
+      },
+      {
+        "id": "storeroom",
+        "type": "storeroom",
+        "rect": [
+          0.5,
+          -3,
+          4,
+          3
+        ],
+        "setpiece": true
+      }
+    ],
+    "openings": [
+      {
+        "kind": "door",
+        "side": "x1",
+        "at": [
+          0.5,
+          2
+        ],
+        "width": 1.2,
+        "setpiece": true
+      },
+      {
+        "kind": "entrance",
+        "side": "z1",
+        "at": [
+          -2,
+          3
+        ],
+        "width": 1.4,
+        "setpiece": true
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -4.5,
+          1
+        ],
+        "width": 0.75,
+        "setpiece": true
+      }
+    ],
+    "up": "store-upper",
+    "seed": 1,
+    "stairs": [
+      -4.5,
+      -3,
+      -3,
+      0
+    ]
+  },
+  "start": [
+    -2,
+    1.7
+  ]
+}

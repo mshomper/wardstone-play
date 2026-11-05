@@ -1,0 +1,9 @@
+{
+  "_note": "Where the mountain (tools/scenery/mountain.py) stands in each area's sky. yaw: degrees round from north, east positive. scale: 1 is the view from town, bigger is nearer. lift: degrees raised above the horizon. An area not listed uses the default.",
+  "mountain": {
+    "default": { "yaw": 0, "scale": 1, "lift": 0 },
+    "areas": {
+      "breach": { "yaw": -8, "scale": 1.5, "lift": 0 }
+    }
+  }
+}

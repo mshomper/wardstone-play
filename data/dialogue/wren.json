@@ -1,0 +1,49 @@
+{
+  "conversations": [
+    {
+      "id": "wren_orchard",
+      "lines": [
+        { "who": "wren", "text": "There were little lights by the wall. Blue ones." },
+        { "who": "wren", "face": "cross", "text": "One of them stuck its tongue out at me. And I lost my mitten." }
+      ],
+      "onEnd": [{ "setFlag": ["met_wren", "mitten_asked"] }]
+    },
+    {
+      "id": "wren_bridge",
+      "lines": [
+        { "who": "wren", "text": "I'm not allowed past the bridge. I'm only looking." },
+        { "who": "wren", "face": "cross", "text": "And I still can't find my mitten. It's by the orchard fence somewhere. I looked. Not very hard." }
+      ],
+      "onEnd": [{ "setFlag": "mitten_asked" }]
+    },
+    {
+      "id": "wren_mitten",
+      "lines": [
+        { "who": "eldwin", "face": "smile", "text": "I believe this is yours. It was keeping a fence post warm." },
+        { "who": "wren", "text": "My mitten! You found it! Here, you can have my candy. I've got two." }
+      ],
+      "onEnd": [{ "setFlag": "mitten_returned" }, { "reward": { "title": "The Mitten", "xp": 5, "items": { "maple_candy": 1 } } }]
+    },
+    {
+      "id": "wren_button",
+      "lines": [
+        { "who": "wren", "text": "I found a button by the wall. It's old. You can have it, because you found my mitten. That's fair." }
+      ],
+      "onEnd": [{ "setFlag": "gift_wren" }, { "found": { "item": "copper_button", "note": "Wren thinks that's fair" } }]
+    },
+    {
+      "id": "wren_thanks",
+      "lines": [
+        { "who": "wren", "text": "My hand's warm now. The other one's still cold, though." }
+      ]
+    },
+    {
+      "id": "wren_evening",
+      "lines": [
+        { "who": "wren", "text": "I'm in the front row! You can stand behind me if you're quiet." },
+        { "who": "wren", "if": { "notFlags": ["mitten_returned"] }, "face": "cross", "text": "I've only got the one mitten, though. It's out by the orchard fence, in the cold, all by itself." }
+      ],
+      "onEnd": [{ "setFlag": "mitten_asked" }]
+    }
+  ]
+}

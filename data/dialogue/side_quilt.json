@@ -1,0 +1,167 @@
+{
+ "conversations": [
+  {
+   "id": "martha_quilt_ask",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "Every house on the Green gives a square for the fair quilt. Every year. Three of them said, 'I'll put it by for you, Martha,' and then the frost got in their pipes."
+    },
+    {
+     "who": "townsfolk1",
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "It's hanging up there with three holes in it, and everyone's too polite to say."
+    },
+    {
+     "who": "townsfolk1",
+     "text": "Whitcombs, Tuttles, Reeds. It'll be in the blanket chest. It's always in the blanket chest. And nobody's locking a door today."
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "You want me to go through their chests."
+    },
+    {
+     "who": "townsfolk1",
+     "text": "You were going to anyway, Eldwin. Folks talk."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "quilt_asked"
+    }
+   ]
+  },
+  {
+   "id": "martha_quilt_remind",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "Whitcombs, Tuttles, Reeds. Upstairs at the Tuttles'. I'll be right here, with a needle and a long memory."
+    }
+   ]
+  },
+  {
+   "id": "martha_quilt_done",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "Three squares. One's been mended twice."
+    },
+    {
+     "who": "townsfolk1",
+     "text": "They've all been mended. That's how you know they were used."
+    },
+    {
+     "who": "",
+     "text": "She has them in before he's finished looking for somewhere to sit. It takes no time at all, and then there are no holes, and it looks as though there never were."
+    },
+    {
+     "who": "townsfolk1",
+     "text": "Here. Ends from last year's, and a bite to eat. Keeps the neck warm and the mouth shut."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "quilt_done"
+    },
+    {
+     "reward": {
+      "title": "Quilt Squares",
+      "xp": 10,
+      "items": {
+       "wool_scarf": 1,
+       "johnnycake": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "martha_day",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "Go on, now. You're standing in my light."
+    }
+   ]
+  },
+  {
+   "id": "quilt_square_whitcomb",
+   "lines": [
+    {
+     "who": "",
+     "text": "Under the spare blankets, a square of blue wool, folded small. There's a note pinned to it: 'Martha. Same as last year. Don't start.'"
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "I wouldn't dream of it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "square_whitcomb"
+    },
+    {
+     "banner": [
+      "A quilt square",
+      "The Whitcombs' blue wool"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quilt_square_tuttle",
+   "lines": [
+    {
+     "who": "",
+     "text": "A square of brown corduroy, worn pale in the middle. It smells of pipe smoke and, faintly, of someone who hasn't been here for a good while."
+    },
+    {
+     "who": "eldwin",
+     "face": "quiet",
+     "text": "Hm. Yes. That'll do nicely."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "square_tuttle"
+    },
+    {
+     "banner": [
+      "A quilt square",
+      "The Tuttles' brown corduroy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quilt_square_reed",
+   "lines": [
+    {
+     "who": "",
+     "text": "Grey shirting, with a stain of stone dust that never did wash out."
+    },
+    {
+     "who": "eldwin",
+     "face": "quiet",
+     "text": "I knew this shirt. The man in it could set a wall stone one-handed, and he'd tell you it was easy."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "square_reed"
+    },
+    {
+     "banner": [
+      "A quilt square",
+      "The Reeds' grey shirting"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "id": "lost-cat",
+ "title": "Lost Cat",
+ "side": true,
+ "blurb": "A poster on the noticeboard. Apply to A. Hale, whose butter it was.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Lost",
+   "objective": "",
+   "done": {
+    "flags": [
+     "cat_asked"
+    ]
+   },
+   "auto": [
+    {
+     "use": "noticeboard"
+    }
+   ],
+   "sets": [
+    "cat_asked"
+   ]
+  },
+  {
+   "id": "lane",
+   "title": "The poster",
+   "objective": "Biscuit was last seen heading down the south road.",
+   "done": {
+    "flags": [
+     "cat_clue"
+    ]
+   },
+   "skip": {
+    "area": "south-fields"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "use": "butter_paper"
+    }
+   ],
+   "sets": [
+    "cat_clue"
+   ]
+  },
+  {
+   "id": "fields",
+   "title": "Butter paper",
+   "objective": "Follow the small prints across the south fields.",
+   "done": {
+    "flags": [
+     "cat_fled"
+    ]
+   },
+   "skip": {
+    "area": "south-fields",
+    "spot": "Butter paper"
+   },
+   "auto": [
+    {
+     "use": "cat_spotted"
+    }
+   ],
+   "sets": [
+    "cat_fled"
+   ]
+  },
+  {
+   "id": "hollow",
+   "title": "Seen, and gone",
+   "objective": "Biscuit bolted for Alder Hollow. Go after him.",
+   "done": {
+    "flags": [
+     "has_biscuit"
+    ]
+   },
+   "skip": {
+    "area": "alder-hollow"
+   },
+   "auto": [
+    {
+     "go": "alder-hollow"
+    },
+    {
+     "talk": "biscuit"
+    }
+   ],
+   "sets": [
+    "has_biscuit"
+   ]
+  },
+  {
+   "id": "home",
+   "title": "Caught, more or less",
+   "objective": "Take Biscuit home to Ada, on the Green.",
+   "done": {
+    "flags": [
+     "biscuit_home"
+    ]
+   },
+   "skip": {
+    "area": "alder-hollow"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "ada"
+    }
+   ],
+   "sets": [
+    "biscuit_home"
+   ]
+  }
+ ]
+}

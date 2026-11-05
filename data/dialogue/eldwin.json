@@ -1,0 +1,55 @@
+{
+  "conversations": [
+    {
+      "id": "intro",
+      "_note": "The game's opening words, shown over a dark screen (src/ui/intro.ts), one line to a page.",
+      "lines": [
+        { "who": "eldwin", "text": "Forty autumns I've kept the walls of Kettle Notch. Folk call it a hobby. Silas calls it a waste of good cider weather." },
+        { "who": "eldwin", "text": "It's a good town. Maples, cider, a fair every harvest, and not one soul in it wondering why anyone would build a farm wall halfway up a mountain." },
+        { "who": "eldwin", "text": "There were a great many of us, once. Now there's me, and I've a bad knee." },
+        { "who": "eldwin", "text": "Still, it's mostly lifting. Lift the stone, mumble over it, mind your back, and the winter stays up the mountain where it belongs." },
+        { "who": "eldwin", "text": "...Hm. That's frost on the glass. In September." }
+      ]
+    },
+    {
+      "id": "opening",
+      "lines": [
+        { "who": "eldwin", "face": "concerned", "text": "And on fair day, too." }
+      ]
+    },
+    {
+      "id": "first_gap",
+      "lines": [
+        { "who": "", "text": "Eldwin kneels at the wall and lays a hand on a stone. A faint rune glows, then gutters out." },
+        { "who": "eldwin", "face": "concerned", "text": "Hm. You're not meant to be on this side, little ones." }
+      ],
+      "onEnd": [{ "setFlag": "seen_first_gap" }]
+    },
+    {
+      "id": "lift_stones",
+      "lines": [
+        { "who": "eldwin", "text": "Up you come. Back where you belong." }
+      ],
+      "onEnd": [{ "ensureLevel": 2, "learn": "earth" }, { "lift": "stones_woods" }, { "setFlag": "lifted_stones_woods" }]
+    },
+    {
+      "id": "breach_arrive",
+      "lines": [
+        { "who": "", "text": "The wardstone's runes stutter. A crack runs through it, and cold mist spills from the gap." },
+        { "who": "eldwin", "face": "concerned", "text": "So this is where you've been bleeding, old friend." }
+      ]
+    },
+    {
+      "id": "breach_turn",
+      "lines": [
+        { "who": "eldwin", "face": "quiet", "text": "Old friend. Once more, then." }
+      ]
+    },
+    {
+      "id": "breach_after",
+      "lines": [
+        { "who": "eldwin", "face": "tired", "text": "That's done me in for the week." }
+      ]
+    }
+  ]
+}

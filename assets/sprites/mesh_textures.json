@@ -1,0 +1,140 @@
+{
+ "image": "mesh_textures.png",
+ "emissive": "mesh_textures_emissive.png",
+ "size": [
+  983,
+  131
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {},
+ "tiles": {
+  "clapboard_white": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "clapboard_white_worn": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "barn_board_red": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "shingle_cedar": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "shingle_cedar_mossy": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "slate_roof": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "fieldstone": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "fieldstone_cap": {
+   "x": 456,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "bridge_planks": {
+   "x": 521,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "bridge_siding_red": {
+   "x": 586,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "brick_chimney": {
+   "x": 651,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "brick_chimney_cap": {
+   "x": 684,
+   "y": 1,
+   "w": 32,
+   "h": 16
+  },
+  "steeple_trim": {
+   "x": 717,
+   "y": 1,
+   "w": 64,
+   "h": 16
+  },
+  "steeple_louver": {
+   "x": 782,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "window_white": {
+   "x": 815,
+   "y": 1,
+   "w": 24,
+   "h": 32
+  },
+  "window_shuttered": {
+   "x": 840,
+   "y": 1,
+   "w": 38,
+   "h": 32
+  },
+  "window_small": {
+   "x": 879,
+   "y": 1,
+   "w": 20,
+   "h": 20
+  },
+  "window_church": {
+   "x": 900,
+   "y": 1,
+   "w": 24,
+   "h": 44
+  },
+  "door_panel_red": {
+   "x": 925,
+   "y": 1,
+   "w": 28,
+   "h": 46
+  },
+  "door_plank": {
+   "x": 954,
+   "y": 1,
+   "w": 28,
+   "h": 44
+  },
+  "door_barn": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64
+  }
+ }
+}

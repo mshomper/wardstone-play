@@ -1,0 +1,38 @@
+{
+ "image": "wardstone.png",
+ "emissive": "wardstone_emissive.png",
+ "size": [
+  186,
+  88
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "wardstone_cracked": {
+   "x": 1,
+   "y": 1,
+   "w": 60,
+   "h": 86,
+   "ax": 30,
+   "ay": 84
+  },
+  "wardstone_broken": {
+   "x": 63,
+   "y": 1,
+   "w": 60,
+   "h": 86,
+   "ax": 30,
+   "ay": 84
+  },
+  "wardstone_whole": {
+   "x": 125,
+   "y": 1,
+   "w": 60,
+   "h": 86,
+   "ax": 30,
+   "ay": 84
+  }
+ },
+ "tiles": {}
+}

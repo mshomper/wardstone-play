@@ -1,0 +1,23 @@
+{
+  "_note": "Eldwin's slice progression (docs/05-combat.md). Each level's `xp` is the total needed to reach it. `afterWinMp` is the share of max MP a win gives back. `pointsPerLevel` is the upgrade points each level earns (ranks are in skills.json). `typicalFoeRes` is the foe the Upgrades page's rough damage figures assume. Icon names are drawn icons in src/ui/icons.ts.",
+  "hero": {
+    "id": "eldwin",
+    "levels": [
+      { "level": 1, "xp": 0, "hp": 90, "mp": 24, "atk": 10, "mag": 16, "def": 8, "res": 12, "spd": 9 },
+      { "level": 2, "xp": 40, "hp": 104, "mp": 28, "atk": 11, "mag": 19, "def": 9, "res": 14, "spd": 10 },
+      { "level": 3, "xp": 90, "hp": 120, "mp": 32, "atk": 12, "mag": 22, "def": 10, "res": 16, "spd": 10 },
+      { "level": 4, "xp": 170, "hp": 138, "mp": 36, "atk": 13, "mag": 25, "def": 11, "res": 18, "spd": 11 },
+      { "level": 5, "xp": 280, "hp": 158, "mp": 40, "atk": 14, "mag": 28, "def": 12, "res": 20, "spd": 11 }
+    ],
+    "slots": 4,
+    "start": { "level": 1, "known": ["glaze", "bolt", "rime", "channel"], "equipped": ["glaze", "bolt", "rime", "channel"], "ward": "frostward", "wards": ["frostward"], "items": { "warm_cider": 0, "maple_candy": 0 } },
+    "afterWinMp": 0.33,
+    "pointsPerLevel": 1,
+    "typicalFoeRes": 7
+  },
+  "defeat": {
+    "line": "Eldwin is too worn to go on.",
+    "back": ["Back at the hearth", "Rested and saved"],
+    "hint": "Spells can be swapped at a hearth, and a group he sees coming can be walked around."
+  }
+}

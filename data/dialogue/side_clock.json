@@ -1,0 +1,148 @@
+{
+ "conversations": [
+  {
+   "id": "amos_clock_ask",
+   "lines": [
+    {
+     "who": "townsfolk2",
+     "text": "Clock's stopped. Eleven minutes past six this morning. My father wound that clock, and his father, and it's never once stopped."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "There's rime on the case, and in the works too, I don't doubt. I can't get a hand in there without breaking something."
+    },
+    {
+     "who": "townsfolk2",
+     "if": {
+      "flags": [
+       "press_thawed"
+      ]
+     },
+     "text": "They say you got Silas's press going."
+    },
+    {
+     "who": "townsfolk2",
+     "if": {
+      "notFlags": [
+       "press_thawed"
+      ]
+     },
+     "text": "They say you've a way with cold."
+    },
+    {
+     "who": "eldwin",
+     "text": "I've had the practice."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "It's in the house. Door's open. Mind the stairs, they've got opinions."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "clock_asked"
+    }
+   ]
+  },
+  {
+   "id": "amos_clock_remind",
+   "lines": [
+    {
+     "who": "townsfolk2",
+     "text": "Still eleven past six in there. Feels later."
+    }
+   ]
+  },
+  {
+   "id": "clock_thaw",
+   "lines": [
+    {
+     "who": "",
+     "text": "The tall clock stands with rime across its face, stopped at eleven minutes past six."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "You too, then."
+    },
+    {
+     "who": "eldwin",
+     "text": "Easy, now. Nobody's asking you to hurry."
+    }
+   ],
+   "onEnd": [
+    {
+     "scene": "thaw"
+    },
+    {
+     "setFlag": [
+      "clock_thawed",
+      "clock_asked"
+     ]
+    },
+    {
+     "dialogue": "clock_strikes"
+    }
+   ]
+  },
+  {
+   "id": "clock_strikes",
+   "lines": [
+    {
+     "who": "",
+     "text": "Somewhere inside, a small wet tick. Then another. Then, very late and not at all sorry, it strikes."
+    },
+    {
+     "who": "eldwin",
+     "face": "quiet",
+     "text": "There. You've only lost a morning. There's worse to lose."
+    }
+   ]
+  },
+  {
+   "id": "clock_after",
+   "lines": [
+    {
+     "who": "",
+     "text": "Tick. Tick. Hours behind the church, and not troubled by it."
+    }
+   ]
+  },
+  {
+   "id": "amos_clock_done",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "Your clock's going."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "I know. I heard it strike, clear across the Green."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "It's wrong, of course. Lost a whole morning. I'll leave it wrong a day or two. Seems rude to correct it."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "Here. Spare key to the case, and a drop of tonic. You look as if you've been up since six yourself."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "clock_done"
+    },
+    {
+     "reward": {
+      "title": "The Stopped Clock",
+      "xp": 8,
+      "items": {
+       "birch_tonic": 1,
+       "brass_key": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

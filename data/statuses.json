@@ -1,0 +1,18 @@
+{
+  "_note": "What each battle status says on its card (ui/statuscard.ts). `until` replaces the rounds-left line for a status that doesn't count rounds. The numbers in `desc` are read from RULES in src/game/battle/rules.ts: keep them in step.",
+  "statuses": {
+    "sticky": { "name": "Sticky", "desc": "Stuck in candy-glass: a little slower, and it can't dodge, curl or bristle. Frost on top freezes it solid." },
+    "chilled": { "name": "Chilled", "desc": "Acts last in the round. An earth spell shatters the chill for half again the damage." },
+    "frozen": { "name": "Frozen", "desc": "Frozen solid: it loses its next turn, and can't be frozen again for a while after.", "until": "Until its next turn" },
+    "slow": { "name": "Slowed", "desc": "Acts last in the round." },
+    "curled": { "name": "Curled up", "desc": "Rolled into a ball: its defense is more than doubled. An earth spell breaks it open.", "until": "Until its next turn" },
+    "bristling": { "name": "Bristling", "desc": "Quills out. Hit it with a physical attack and about a third of the blow comes back at you. Spells are safe.", "until": "Until it's hit or its next turn" },
+    "burning": { "name": "Burning", "desc": "Loses a little health at the end of each round. Fire wears it down, but won't finish it." },
+    "hexed": { "name": "Hexed", "desc": "Under a hex. Something worse is coming." },
+    "rooted": { "name": "Rooted", "desc": "Held fast where it stands." },
+    "cracked": { "name": "Cracked", "desc": "Its guard has a crack in it, and blows land harder." },
+    "empowered": { "name": "Empowered", "desc": "Gathered power: your next damaging spell hits harder.", "until": "Until your next spell" },
+    "warded": { "name": "Warded", "desc": "Your ward is up: blows land much softer, and whoever hits you may be Chilled.", "until": "Until your next turn" },
+    "wrapped": { "name": "Wrapped up", "desc": "A wool scarf, wound twice: you can't be Chilled.", "until": "For the rest of this fight" }
+  }
+}

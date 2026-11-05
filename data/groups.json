@@ -1,0 +1,203 @@
+{
+  "_note": "Who roams where (docs/06-creatures.md). `circle` indexes the area's arenas. `roam` is how they behave (docs/05-combat.md): distances in units, times in seconds, `arc` in degrees, speeds in units a second, `keepFrom` how far wandering stays from hearths, people and story objects. `after` keeps a group out of the world until a flag is set; `banner` shows with the first win. `weak` and `tough` apply the rules in creatures.json. `xpCap` is the total XP past which the group gives none, so a road can be walked again without running ahead of the level curve.",
+  "roam": {
+    "wanderPast": 4,
+    "keepFrom": 3,
+    "sight": 5,
+    "arc": 120,
+    "hearing": 2,
+    "chaseSeconds": 7,
+    "chasePast": 8,
+    "ignoreSeconds": 4,
+    "quietAfterWin": 3,
+    "contact": 0.7,
+    "runOnSeconds": 2,
+    "speeds": {
+      "rimeling": {
+        "wander": 1.1,
+        "chase": 3.4,
+        "glow": 0.55
+      },
+      "burrback": {
+        "wander": 0.8,
+        "chase": 2.6
+      },
+      "latchpaw": {
+        "wander": 1.2,
+        "chase": 3
+      },
+      "snickerkit": {
+        "wander": 1.4,
+        "chase": 3.2
+      }
+    }
+  },
+  "groups": [
+    {
+      "id": "rime1",
+      "area": "orchard",
+      "circle": 0,
+      "creatures": [
+        "rimeling"
+      ],
+      "questFlag": "settled_rime1",
+      "holdsQuest": true,
+      "banner": [
+        "The frost lights settle",
+        "They drift home through the gap."
+      ],
+      "after": "seen_first_gap"
+    },
+    {
+      "id": "rime2",
+      "area": "orchard",
+      "circle": 1,
+      "creatures": [
+        "rimeling",
+        "rimeling"
+      ],
+      "questFlag": "settled_rime2",
+      "holdsQuest": true,
+      "banner": [
+        "The frost lights settle",
+        "They drift home through the gap."
+      ]
+    },
+    {
+      "id": "rime3",
+      "area": "orchard",
+      "circle": 2,
+      "creatures": [
+        "rimeling",
+        "rimeling"
+      ]
+    },
+    {
+      "id": "rime-tough",
+      "area": "orchard",
+      "circle": 3,
+      "creatures": [
+        "rimeling",
+        "rimeling"
+      ],
+      "tough": true,
+      "after": "settled_rime1"
+    },
+    {
+      "id": "burr1",
+      "area": "brook-woods",
+      "circle": 0,
+      "creatures": [
+        "burrback"
+      ],
+      "questFlag": "settled_burr1",
+      "banner": [
+        "The burrbacks settle",
+        "They scuttle off into the leaves."
+      ]
+    },
+    {
+      "id": "mixed",
+      "area": "brook-woods",
+      "circle": 2,
+      "creatures": [
+        "rimeling",
+        "rimeling",
+        "burrback"
+      ],
+      "questFlag": "settled_mixed",
+      "banner": [
+        "Settled",
+        "Frost light and burrback flee together."
+      ]
+    },
+    {
+      "id": "burr2",
+      "area": "brook-woods",
+      "circle": 1,
+      "creatures": [
+        "burrback",
+        "burrback"
+      ],
+      "questFlag": "settled_burr2",
+      "banner": [
+        "The burrbacks settle",
+        "They scuttle off into the leaves."
+      ]
+    },
+    {
+      "id": "burr-tough",
+      "area": "brook-woods",
+      "circle": 3,
+      "creatures": [
+        "burrback",
+        "burrback"
+      ],
+      "tough": true
+    },
+    {
+      "id": "road-rime",
+      "area": "south-fields",
+      "circle": 0,
+      "creatures": ["rimeling"],
+      "weak": true,
+      "xpCap": 48
+    },
+    {
+      "id": "road-patch",
+      "area": "south-fields",
+      "circle": 1,
+      "creatures": ["latchpaw"],
+      "weak": true,
+      "xpCap": 48
+    },
+    {
+      "id": "road-bales",
+      "area": "south-fields",
+      "circle": 2,
+      "creatures": ["snickerkit", "snickerkit"],
+      "weak": true,
+      "xpCap": 48
+    },
+    {
+      "id": "road-burr",
+      "area": "alder-hollow",
+      "circle": 0,
+      "creatures": ["burrback"],
+      "weak": true,
+      "xpCap": 48
+    },
+    {
+      "id": "road-brook",
+      "area": "alder-hollow",
+      "circle": 1,
+      "creatures": ["latchpaw"],
+      "weak": true,
+      "xpCap": 48
+    },
+    {
+      "id": "road-tough",
+      "area": "alder-hollow",
+      "circle": 2,
+      "creatures": ["burrback", "latchpaw"],
+      "tough": true,
+      "questFlag": "beat_road_tough",
+      "banner": ["The big ones move off", "The hollow goes quiet."],
+      "xpCap": 48
+    },
+    {
+      "id": "breach",
+      "area": "breach",
+      "circle": 0,
+      "creatures": [
+        "duskfang",
+        "gloamhorn",
+        "nightmaw"
+      ],
+      "holdsQuest": true,
+      "scripted": true,
+      "rounds": 4,
+      "xp": 80
+    }
+  ]
+}

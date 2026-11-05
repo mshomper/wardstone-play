@@ -1,0 +1,30 @@
+{
+  "highShare": {
+    "min": 0.8,
+    "max": 7
+  },
+  "lowShare": {
+    "min": 18,
+    "max": 66
+  },
+  "mud": {
+    "max": 3.2
+  },
+  "rms": {
+    "min": -34,
+    "max": -14
+  },
+  "peak": {
+    "max": -1
+  },
+  "noteRate": {
+    "min": 0.7,
+    "max": 9
+  },
+  "ring": {
+    "min": 0.35
+  },
+  "highSit": {
+    "max": 34
+  }
+}

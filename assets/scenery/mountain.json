@@ -1,0 +1,21 @@
+{
+  "_note": "Baked by tools/scenery/mountain.py. Degrees: az from north (east positive), el above the horizon.",
+  "texel": 0.075,
+  "azRange": 120.0,
+  "width": 1600,
+  "massifRows": 420,
+  "hillRows": 266,
+  "massifEl": [
+    -1.0,
+    30.5
+  ],
+  "hillsEl": [
+    -15.0,
+    5.0
+  ],
+  "glint": {
+    "az": 12.240198032602294,
+    "el": 15.360819614541434
+  },
+  "summitEl": 18.86451778238698
+}

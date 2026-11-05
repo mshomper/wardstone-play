@@ -1,0 +1,125 @@
+{
+  "_note": "Everyone who speaks. `sprite` is the anim prefix of the person's character sheet (tools/spritegen/characters, + _idle_/_talk_<dir>); `schedule` places them at an area spot during a clock window and while its `if` holds (first match wins); `talk` picks the first conversation whose condition holds.",
+  "people": [
+    {
+      "id": "eldwin", "name": "Eldwin", "title": "Frostwarden", "portrait": "#7f8fd8",
+      "schedule": [], "talk": []
+    },
+    {
+      "id": "ada", "name": "Ada Hale", "title": "Hale's Store", "portrait": "#d07a5a",
+      "sprite": "npc_ada_iso",
+      "schedule": [
+        { "to": 18, "area": "green-frame", "spot": "Ada (morning)", "dir": 2 },
+        { "from": 18, "area": "green-frame", "spot": "Ada (evening)", "dir": 0 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["talked_ada"] }, "dialogue": "ada_morning" },
+        { "if": { "flags": ["has_biscuit"], "notFlags": ["biscuit_home"] }, "dialogue": "ada_biscuit" },
+        { "if": { "quest": { "id": "first-frost", "is": "evening" } }, "dialogue": "ada_evening" },
+        { "if": { "flags": ["ending_seen"] }, "dialogue": "ada_after" },
+        { "if": { "notFlags": ["gift_ada"], "quest": { "id": "first-frost", "before": "breach" } }, "dialogue": "ada_gift" },
+        { "if": { "quest": { "id": "first-frost", "before": "breach" } }, "dialogue": "ada_reminder" },
+        { "dialogue": "ada_dusk" }
+      ]
+    },
+    {
+      "id": "silas", "name": "Silas Pike", "title": "Pike's Cider Mill", "portrait": "#8a6a3e",
+      "sprite": "npc_silas_iso",
+      "schedule": [
+        { "to": 18, "if": { "flags": ["asked_press", "visited:mill-press"] }, "area": "mill-press", "spot": "Silas (press)", "dir": 6 },
+        { "to": 18, "area": "green-frame", "spot": "Silas", "dir": 1 },
+        { "from": 18, "area": "green-frame", "spot": "Silas (evening)", "dir": 1 }
+      ],
+      "talk": [
+        { "if": { "flags": ["press_thawed"], "notFlags": ["gift_silas"] }, "dialogue": "silas_gift" },
+        { "if": { "flags": ["press_thawed"] }, "dialogue": "silas_thanks" },
+        { "dialogue": "silas_press" }
+      ]
+    },
+    {
+      "id": "wren", "name": "Wren", "title": "", "portrait": "#9fc06a",
+      "sprite": "npc_wren_iso",
+      "schedule": [
+        { "to": 12, "area": "orchard", "spot": "Wren (morning)", "dir": 7 },
+        { "from": 12, "to": 18, "area": "brook-woods", "spot": "Wren (afternoon)", "dir": 3 },
+        { "from": 18, "area": "green-frame", "spot": "Wren (evening)", "dir": 4 }
+      ],
+      "talk": [
+        { "if": { "flags": ["has_mitten"], "notFlags": ["mitten_returned"] }, "dialogue": "wren_mitten" },
+        { "if": { "flags": ["mitten_returned"], "notFlags": ["gift_wren"] }, "dialogue": "wren_button" },
+        { "if": { "quest": { "id": "first-frost", "atLeast": "evening" } }, "dialogue": "wren_evening" },
+        { "if": { "flags": ["mitten_returned"] }, "dialogue": "wren_thanks" },
+        { "if": { "timeFrom": 12 }, "dialogue": "wren_bridge" },
+        { "dialogue": "wren_orchard" }
+      ]
+    },
+    {
+      "id": "jasper_crane", "name": "Jasper Crane", "title": "Dealer in this and that", "portrait": "#5f6f86",
+      "sprite": "npc_jasper_crane_iso",
+      "schedule": [{ "area": "green-frame", "spot": "Jasper", "dir": 0 }],
+      "talk": [
+        { "if": { "notFlags": ["met_jasper"] }, "dialogue": "jasper_first" },
+        { "if": { "notFlags": ["errand_asked"] }, "dialogue": "jasper_errand_ask" },
+        { "if": { "notFlags": ["errand_done"], "has": { "rime_shard": 3 } }, "dialogue": "jasper_errand_turnin" },
+        { "dialogue": "jasper_again" }
+      ]
+    },
+    {
+      "id": "townsfolk1", "name": "Martha Combs", "title": "", "portrait": "#b08ab8",
+      "sprite": "npc_martha_combs_iso",
+      "schedule": [
+        { "from": 18.5, "area": "green-frame", "spot": "Townsfolk 1", "dir": 7 },
+        { "area": "green-frame", "spot": "Martha (day)", "dir": 2 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["quilt_asked"] }, "dialogue": "martha_quilt_ask" },
+        { "if": { "flags": ["square_whitcomb", "square_tuttle", "square_reed"], "notFlags": ["quilt_done"] }, "dialogue": "martha_quilt_done" },
+        { "if": { "notFlags": ["quilt_done"] }, "dialogue": "martha_quilt_remind" },
+        { "if": { "timeTo": 18.5 }, "dialogue": "martha_day" },
+        { "dialogue": "bark_abbott" }
+      ]
+    },
+    {
+      "id": "townsfolk2", "name": "Amos Tuttle", "title": "", "portrait": "#6a8ab0",
+      "sprite": "npc_amos_tuttle_iso",
+      "schedule": [
+        { "from": 18.5, "area": "green-frame", "spot": "Townsfolk 2", "dir": 1 },
+        { "area": "green-frame", "spot": "Amos (day)", "dir": 0 }
+      ],
+      "talk": [
+        { "if": { "flags": ["clock_thawed"], "notFlags": ["clock_done"] }, "dialogue": "amos_clock_done" },
+        { "if": { "notFlags": ["clock_asked"] }, "dialogue": "amos_clock_ask" },
+        { "if": { "notFlags": ["clock_done"] }, "dialogue": "amos_clock_remind" },
+        { "dialogue": "bark_weller" }
+      ]
+    },
+    {
+      "id": "townsfolk3", "name": "Jonah Reed", "title": "", "portrait": "#9a9a8a",
+      "sprite": "npc_jonah_reed_iso",
+      "schedule": [
+        { "from": 18.5, "area": "green-frame", "spot": "Townsfolk 3", "dir": 6 },
+        { "area": "green-frame", "spot": "Jonah (day)", "dir": 0 }
+      ],
+      "talk": [
+        { "if": { "flags": ["beat_road_tough"], "notFlags": ["bigones_done"] }, "dialogue": "jonah_done" },
+        { "if": { "notFlags": ["bigones_asked"] }, "dialogue": "jonah_ask" },
+        { "if": { "notFlags": ["bigones_done"] }, "dialogue": "jonah_remind" },
+        { "dialogue": "bark_jeb" }
+      ]
+    },
+    {
+      "id": "biscuit", "name": "Biscuit", "title": "", "portrait": "#8a8f98",
+      "sprite": "biscuit_iso", "low": true,
+      "schedule": [
+        { "if": { "flags": ["biscuit_home"] }, "area": "green-frame", "spot": "Biscuit (home)", "dir": 1 },
+        { "if": { "flags": ["has_biscuit"] }, "area": "in Eldwin's coat", "spot": "" },
+        { "if": { "flags": ["cat_fled"] }, "area": "alder-hollow", "spot": "Biscuit (hollow)", "dir": 5 },
+        { "if": { "flags": ["cat_asked"] }, "area": "south-fields", "spot": "Biscuit (fields)", "dir": 1 }
+      ],
+      "talk": [
+        { "if": { "flags": ["biscuit_home"] }, "dialogue": "cat_home" },
+        { "if": { "flags": ["cat_fled"], "notFlags": ["has_biscuit"] }, "dialogue": "cat_caught" }
+      ]
+    }
+  ]
+}

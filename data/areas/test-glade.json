@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "name": "test-glade",
+  "seed": 4242,
+  "size": {
+    "w": 36,
+    "h": 28
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3.2,
+    "edgeWidth": 6,
+    "roll": 0.8,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass",
+      "under": "moss_stone",
+      "road": "dirt",
+      "path": "dirt",
+      "cobble": "flagstone",
+      "brookBed": "moss_stone"
+    },
+    "species": [
+      {
+        "props": [
+          "pine_0",
+          "pine_1",
+          "pine_2"
+        ],
+        "density": 0.55,
+        "spacing": 1.6,
+        "scale": [
+          0.85,
+          1.25
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "pine_0",
+          "pine_1",
+          "pine_2"
+        ],
+        "density": 0.05,
+        "spacing": 3.5,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "rock_0",
+          "rock_1",
+          "rock_2"
+        ],
+        "density": 0.04,
+        "spacing": 2.2,
+        "scale": [
+          0.6,
+          1.1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_0",
+          "fern_1"
+        ],
+        "density": 0.22,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.15
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "fern_0",
+          "fern_1"
+        ],
+        "density": 0.06,
+        "spacing": 1.2,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "grass_tuft_0",
+          "grass_tuft_1",
+          "grass_tuft_2",
+          "grass_tuft_3"
+        ],
+        "density": 0.3,
+        "spacing": 0.55,
+        "scale": [
+          0.8,
+          1.3
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          0.5,
+          14
+        ],
+        [
+          0.2,
+          8
+        ],
+        [
+          -0.5,
+          4.5
+        ]
+      ],
+      "width": 1.6,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          1.5,
+          -4.2
+        ],
+        [
+          3.5,
+          -8
+        ],
+        [
+          2.5,
+          -14
+        ]
+      ],
+      "width": 1.3,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        18,
+        -6
+      ],
+      [
+        12,
+        -3
+      ],
+      [
+        9.5,
+        3
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        8,
+        14
+      ]
+    ],
+    "width": 1.4,
+    "depth": 0.7
+  },
+  "walls": [
+    {
+      "points": [
+        [
+          -17,
+          -9
+        ],
+        [
+          -11,
+          -7.5
+        ],
+        [
+          -6,
+          -8.5
+        ],
+        [
+          -1,
+          -7.2
+        ],
+        [
+          6,
+          -9
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 11.5,
+          "width": 1.6
+        },
+        {
+          "at": 17.5,
+          "width": 1.8
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "cottage",
+      "x": -8.5,
+      "z": 7.5,
+      "w": 4.4,
+      "d": 3.6,
+      "rot": 0.25,
+      "height": 3.5
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": -9,
+      "z": 3,
+      "radius": 3.5,
+      "height": 1.2
+    }
+  ],
+  "arenas": [
+    {
+      "x": 0,
+      "z": 0,
+      "radius": 4.5
+    }
+  ],
+  "placements": [
+    {
+      "prop": "ruin_pillar_0",
+      "x": -3.5,
+      "z": -3.2,
+      "collide": 0.45,
+      "tall": true
+    },
+    {
+      "prop": "broken_arch",
+      "x": 3.0,
+      "z": -5.6,
+      "collide": 1.0,
+      "tall": true
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -6,
+          6
+        ],
+        [
+          -3,
+          9
+        ]
+      ],
+      "radius": 1.2
+    }
+  ]
+}

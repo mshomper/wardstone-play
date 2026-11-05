@@ -1,0 +1,39 @@
+{
+  "conversations": [
+    {
+      "id": "silas_press",
+      "lines": [
+        { "who": "silas", "face": "worried", "text": "Press is froze solid. Forty years and never in September." },
+        { "who": "silas", "text": "You've got a way with cold, don't you? Coax it out of there." }
+      ],
+      "onEnd": [{ "setFlag": "asked_press" }]
+    },
+    {
+      "id": "silas_thanks",
+      "lines": [
+        { "who": "silas", "face": "gruff", "text": "Running sweet as June. Don't tell Ada I said thank you." },
+        { "who": "silas", "text": "Saw the frost come down off the hill this morning. Followed the old wall, near as I could tell." }
+      ]
+    },
+    {
+      "id": "silas_gift",
+      "lines": [
+        { "who": "silas", "face": "gruff", "text": "First pressing since you got her running. Mulled it myself. Don't go thinking it means anything." }
+      ],
+      "onEnd": [{ "setFlag": "gift_silas" }, { "found": { "item": "mulled_cider", "note": "From Silas, gruffly" } }]
+    },
+    {
+      "id": "press_thaw",
+      "lines": [
+        { "who": "eldwin", "face": "concerned", "text": "Rime right through the screw. That's no ordinary frost." },
+        { "who": "eldwin", "text": "Easy now. Let go of it, there's a good press." }
+      ],
+      "onEnd": [
+        { "scene": "thaw" },
+        { "setFlag": "press_thawed" },
+        { "found": { "item": "maple_candy", "note": "Silas presses one into your hand" } },
+        { "dialogue": "silas_thanks" }
+      ]
+    }
+  ]
+}

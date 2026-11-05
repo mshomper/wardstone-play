@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "name": "mill-press",
+  "seed": 1,
+  "size": {
+    "w": 24,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "press",
+      "kind": "furniture",
+      "x": -2.05,
+      "z": -2.9,
+      "w": 2.2,
+      "d": 2,
+      "rot": 0,
+      "height": 2.3
+    },
+    {
+      "mesh": "table",
+      "kind": "furniture",
+      "x": -7,
+      "z": -2.55,
+      "w": 2.2,
+      "d": 0.8,
+      "rot": -1.5707963267948966,
+      "height": 0.75
+    },
+    {
+      "mesh": "table",
+      "kind": "furniture",
+      "x": 1.2,
+      "z": -3.45,
+      "w": 2.0,
+      "d": 0.8,
+      "rot": 0,
+      "height": 0.75
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [
+    {
+      "prop": "cider_barrel_1",
+      "x": 1.34,
+      "z": 3.53,
+      "collide": 0.35,
+      "flip": false
+    },
+    {
+      "prop": "cider_barrel_1",
+      "x": -7.03,
+      "z": 3,
+      "collide": 0.35,
+      "flip": false
+    },
+    {
+      "prop": "crate_apples",
+      "x": 2.98,
+      "z": -3.57,
+      "collide": 0.4,
+      "flip": false
+    },
+    {
+      "prop": "hay_bale_0",
+      "x": 0.04,
+      "z": 3.48,
+      "collide": 0.4,
+      "flip": true
+    },
+    {
+      "prop": "crate_apples",
+      "x": 3,
+      "z": 3.5,
+      "collide": 0.4,
+      "flip": false
+    },
+    {
+      "prop": "apple_basket_1",
+      "x": -0.6,
+      "z": -2.42,
+      "collide": 0.3,
+      "flip": true
+    },
+    {
+      "prop": "apple_bucket",
+      "x": -0.6,
+      "z": -1.81,
+      "collide": 0.3,
+      "flip": false
+    },
+    {
+      "prop": "oil_lamp",
+      "x": -6.95,
+      "z": -1.81,
+      "y": 0.75,
+      "flip": false
+    },
+    {
+      "prop": "sack_grain",
+      "x": -4.14,
+      "z": -3.58,
+      "collide": 0.3,
+      "flip": false
+    },
+    {
+      "prop": "ladder",
+      "x": -5.7,
+      "z": -3.7,
+      "collide": 0.25,
+      "flip": true
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 5.69,
+      "z": 3.53,
+      "collide": 0.35,
+      "flip": false
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 6.53,
+      "z": -0.04,
+      "collide": 0.35,
+      "flip": false
+    },
+    {
+      "prop": "crate_stack",
+      "x": 6.5,
+      "z": 3.5,
+      "collide": 0.4,
+      "flip": false
+    },
+    {
+      "prop": "crate_0",
+      "x": 6.15,
+      "z": -0.98,
+      "collide": 0.4,
+      "flip": false
+    },
+    {
+      "prop": "cider_jug",
+      "x": 0.7,
+      "z": -3.45,
+      "y": 0.75
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 1.6,
+      "z": -3.45,
+      "y": 0.75
+    },
+    {
+      "prop": "cider_jug",
+      "x": -7.0,
+      "z": -0.9,
+      "y": 0.75
+    },
+    {
+      "prop": "pumpkin_frozen_0",
+      "x": -3.55,
+      "z": -1.75,
+      "collide": 0.3
+    },
+    {
+      "prop": "pumpkin_frozen_1",
+      "x": -3.6,
+      "z": -2.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "crate_apples",
+      "x": -4.2,
+      "z": -3.45,
+      "collide": 0.4
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 2.95,
+      "z": -1.0,
+      "collide": 0.35
+    },
+    {
+      "prop": "cider_barrel_1",
+      "x": 2.95,
+      "z": -1.75,
+      "collide": 0.35
+    },
+    {
+      "prop": "apple_bucket",
+      "x": -0.2,
+      "z": -1.3,
+      "collide": 0.25
+    },
+    {
+      "prop": "oil_lamp",
+      "x": 1.95,
+      "z": -3.45,
+      "y": 0.75
+    },
+    {
+      "prop": "oil_lamp",
+      "x": 4.0,
+      "z": 3.5,
+      "collide": 0.15
+    },
+    {
+      "prop": "candle_tall",
+      "x": -3.0,
+      "z": 3.55,
+      "collide": 0.15
+    }
+  ],
+  "keepClear": [],
+  "spots": [
+    {
+      "name": "press",
+      "x": -2.05,
+      "z": -1.05,
+      "note": "stand here to use the press"
+    },
+    {
+      "name": "Silas (press)",
+      "x": -0.2,
+      "z": -1.2,
+      "note": "Silas by his press, after he asks Eldwin to look at it."
+    }
+  ],
+  "exits": [
+    {
+      "rect": [
+        -8,
+        4.45,
+        7.5,
+        6
+      ],
+      "to": "green-frame",
+      "at": [
+        7.1,
+        -2.1
+      ],
+      "dir": 3
+    }
+  ],
+  "interior": {
+    "town": "green-frame",
+    "building": 1,
+    "storey": 0,
+    "scale": 1.7,
+    "source": {
+      "recipe": "mill",
+      "parts": [
+        {
+          "footprint": [
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              -2.5,
+              3
+            ],
+            [
+              -2.5,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "footprint": [
+            [
+              0.5,
+              2.5
+            ],
+            [
+              0.5,
+              5
+            ],
+            [
+              -2.5,
+              5
+            ],
+            [
+              -2.5,
+              2.5
+            ]
+          ],
+          "storeys": 1
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "left",
+      "wheelSide": "right"
+    },
+    "rooms": [
+      {
+        "id": "press",
+        "type": "press",
+        "rect": [
+          -7.5,
+          -4,
+          3.5,
+          4
+        ]
+      },
+      {
+        "id": "wing",
+        "type": "wing",
+        "rect": [
+          3.5,
+          -1.5,
+          7,
+          4
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "kind": "door",
+        "side": "x1",
+        "at": [
+          3.5,
+          -0.5
+        ],
+        "width": 1.2
+      },
+      {
+        "kind": "entrance",
+        "side": "z1",
+        "at": [
+          -1.5,
+          4
+        ],
+        "width": 1.4
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -7.5,
+          -1.5
+        ],
+        "width": 0.75
+      },
+      {
+        "kind": "window",
+        "side": "x0",
+        "at": [
+          -7.5,
+          1.5
+        ],
+        "width": 0.75
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          -5,
+          -4
+        ],
+        "width": 0.75
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          1,
+          -4
+        ],
+        "width": 0.75
+      },
+      {
+        "kind": "window",
+        "side": "z0",
+        "at": [
+          5.25,
+          -1.5
+        ],
+        "width": 0.75
+      }
+    ],
+    "seed": 1
+  },
+  "start": [
+    -1.5,
+    2.7
+  ]
+}

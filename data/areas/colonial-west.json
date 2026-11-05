@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "name": "colonial-west",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [
+    {
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "to": "green-frame",
+      "at": [
+        -7.9,
+        4.025
+      ],
+      "dir": 6
+    }
+  ],
+  "interior": {
+    "town": "green-frame",
+    "building": 6,
+    "storey": 0,
+    "scale": 1.5,
+    "generated": true,
+    "lootMax": 1,
+    "source": {
+      "recipe": "colonial",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              -2.5
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              -2.5,
+              2
+            ]
+          ],
+          "storeys": 2
+        },
+        {
+          "footprint": [
+            [
+              0,
+              -5
+            ],
+            [
+              2.5,
+              -5
+            ],
+            [
+              2.5,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "up": "colonial-west-upper"
+  }
+}

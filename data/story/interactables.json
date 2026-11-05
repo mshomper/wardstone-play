@@ -1,0 +1,227 @@
+{
+  "_note": "Things in the world. Each sits at an area spot (or a building's door). kind: use (press to use), door (press to enter area `to`), hearth (spellbook: save, rest, prepare spells), stones (lift fallen stones into the nearest wall gap), zone (fires when walked into). `if` hides it unless the condition holds; `once` hides it after first use. `find` gives an item and shows what it was (one-time, saved).",
+  "interactables": [
+    {
+      "id": "store_door", "kind": "door", "label": "Hale's Store", "to": "store-ground", "at": [-2, 1.7], "dir": 4,
+      "places": [{ "area": "green-frame", "building": 2 }]
+    },
+    {
+      "id": "mill_door", "kind": "door", "label": "Pike's Cider Mill", "to": "mill-press", "at": [-1.5, 2.7], "dir": 4,
+      "places": [{ "area": "green-frame", "building": 1 }]
+    },
+    {
+      "id": "church_door", "kind": "door", "label": "Church", "to": "church", "dir": 4,
+      "places": [{ "area": "green-frame", "building": 0 }]
+    },
+    {
+      "id": "door_colonial_north", "kind": "door", "label": "Whitcomb house", "to": "colonial-north", "dir": 4,
+      "places": [{ "area": "green-frame", "building": 3 }]
+    },
+    {
+      "id": "door_farmhouse_west", "kind": "door", "label": "Combs farm", "to": "farmhouse-west", "dir": 4,
+      "places": [{ "area": "green-frame", "building": 4 }]
+    },
+    {
+      "id": "door_farmhouse_south", "kind": "door", "label": "Reed farm", "to": "farmhouse-south", "dir": 4,
+      "places": [{ "area": "green-frame", "building": 5 }]
+    },
+    {
+      "id": "door_colonial_west", "kind": "door", "label": "Tuttle house", "to": "colonial-west", "dir": 4,
+      "places": [{ "area": "green-frame", "building": 6 }]
+    },
+    {
+      "id": "noticeboard", "kind": "use", "label": "Noticeboard", "dialogue": "noticeboard",
+      "places": [{ "area": "green-frame", "spot": "Noticeboard" }]
+    },
+    {
+      "id": "stall_red", "kind": "use", "label": "Fair stall", "dialogue": "stall_red",
+      "places": [{ "area": "green-frame", "spot": "Stall (red)" }]
+    },
+    {
+      "id": "stall_green", "kind": "use", "label": "Fair stall", "dialogue": "stall_green",
+      "places": [{ "area": "green-frame", "spot": "Stall (green)" }]
+    },
+    {
+      "id": "press", "kind": "use", "label": "Cider press",
+      "if": { "notFlags": ["press_thawed"] },
+      "dialogue": "press_thaw",
+      "places": [{ "area": "mill-press", "spot": "press" }]
+    },
+    {
+      "id": "study_hearth", "kind": "hearth", "label": "Spellbook",
+      "places": [{ "area": "store-upper", "spot": "hearth" }]
+    },
+    {
+      "id": "cairn_woods", "kind": "hearth", "label": "Wayside cairn",
+      "places": [{ "area": "brook-woods", "spot": "Cairn hearth" }]
+    },
+    {
+      "id": "mitten", "kind": "use", "label": "Mitten", "pickup": true,
+      "swap": { "from": "fence_post_mitten", "to": "fence_post" },
+      "if": { "notFlags": ["has_mitten"] },
+      "dialogue": "mitten_found",
+      "places": [{ "area": "orchard", "spot": "Wren's mitten" }]
+    },
+    {
+      "id": "find_fair_crate", "kind": "use", "label": "Crate", "pickup": true, "once": true,
+      "find": { "item": "apple_fritter", "note": "Behind the fair stall. Somebody's lunch." },
+      "places": [{ "area": "green-frame", "at": [3.9, 4.2] }]
+    },
+    {
+      "id": "find_hay_bale", "kind": "use", "label": "Hay bale", "pickup": true, "once": true,
+      "find": { "item": "silver_thimble", "note": "Pushed down into the hay, and forgotten." },
+      "places": [{ "area": "green-frame", "at": [-2.8, 2.8] }]
+    },
+    {
+      "id": "find_behind_mill", "kind": "use", "label": "Behind the mill", "pickup": true, "once": true,
+      "find": { "item": "birch_tonic", "note": "Tucked behind the mill wall. Silas's, no doubt." },
+      "places": [{ "area": "green-frame", "at": [10.6, -4.7] }]
+    },
+    {
+      "id": "find_orchard_basket", "kind": "use", "label": "Apple basket", "pickup": true, "once": true,
+      "find": { "item": "frost_bitten_apple", "n": 2, "note": "The whole basket is frozen, but these came loose." },
+      "places": [{ "area": "orchard", "at": [-4, 2.5] }]
+    },
+    {
+      "id": "find_orchard_hay", "kind": "use", "label": "Hay bale", "pickup": true, "once": true,
+      "find": { "item": "maple_candy", "note": "Tucked in the hay, where a picker hid it." },
+      "places": [{ "area": "orchard", "at": [4.2, 8.6] }]
+    },
+    {
+      "id": "find_orchard_old_crate", "kind": "use", "label": "Old crate", "pickup": true, "once": true,
+      "find": { "item": "mustard_plaster", "note": "Someone packed for the cold. Sensible." },
+      "places": [{ "area": "orchard", "at": [-4.5, 8.4] }]
+    },
+    {
+      "id": "find_woods_log", "kind": "use", "label": "Fallen log", "pickup": true, "once": true,
+      "find": { "item": "pine_pitch", "note": "Oozing from the split end, and still soft." },
+      "places": [{ "area": "brook-woods", "at": [5, -7.2] }]
+    },
+    {
+      "id": "find_woods_boulder", "kind": "use", "label": "Mossy boulder", "pickup": true, "once": true,
+      "find": { "item": "old_wall_stone", "note": "It came off the wall a long time ago." },
+      "places": [{ "area": "brook-woods", "at": [-7, 1.1] }]
+    },
+    {
+      "id": "find_church_chest", "kind": "use", "label": "Chest", "pickup": true, "once": true,
+      "swap": { "from": "chest", "to": "chest_open" },
+      "find": { "item": "old_almanac", "note": "Under the hymnals. Nobody has needed the weather since the last deacon." },
+      "places": [{ "area": "church", "at": [-5.6, -3.8] }]
+    },
+    {
+      "id": "church_window", "kind": "zone", "radius": 1.5, "once": true,
+      "dialogue": "church_window",
+      "places": [{ "area": "church", "spot": "Nave" }]
+    },
+    {
+      "id": "find_fields_mailbox", "kind": "use", "label": "Mailbox", "pickup": true, "once": true,
+      "find": { "item": "mustard_plaster", "note": "An order nobody came down the lane for." },
+      "places": [{ "area": "south-fields", "at": [1.4, -11.4] }]
+    },
+    {
+      "id": "find_fields_scarecrow", "kind": "use", "label": "Scarecrow", "pickup": true, "once": true,
+      "find": { "item": "tin_whistle", "note": "In the coat pocket, under the straw." },
+      "places": [{ "area": "south-fields", "at": [-14.2, 4.2] }]
+    },
+    {
+      "id": "find_fields_barn", "kind": "use", "label": "Crate behind the barn", "pickup": true, "once": true,
+      "find": { "item": "warm_cider", "note": "Set down to cool, and left there. Still warm, somehow." },
+      "places": [{ "area": "south-fields", "at": [-12.6, -12] }]
+    },
+    {
+      "id": "find_fields_bale", "kind": "use", "label": "Far hay bale", "pickup": true, "once": true,
+      "find": { "item": "maple_candy", "n": 2, "note": "Some child's hiding place. They won't miss two." },
+      "places": [{ "area": "south-fields", "at": [15.8, -9.6] }]
+    },
+    {
+      "id": "find_hollow_log", "kind": "use", "label": "Fallen log", "pickup": true, "once": true,
+      "find": { "item": "pine_pitch", "note": "Oozing from the split end, and still soft." },
+      "places": [{ "area": "alder-hollow", "at": [-15.2, 7.4] }]
+    },
+    {
+      "id": "find_hollow_boulder", "kind": "use", "label": "Old boulder", "pickup": true, "once": true,
+      "find": { "item": "rock_salt", "note": "A white crust on the shaded side. It comes off in a lump." },
+      "places": [{ "area": "alder-hollow", "at": [-15.4, -7] }]
+    },
+    {
+      "id": "find_hollow_crate", "kind": "use", "label": "Old crate", "pickup": true, "once": true,
+      "find": { "item": "lamp_oil", "note": "Where the path gives up. Someone meant to come back." },
+      "places": [{ "area": "alder-hollow", "at": [-3.9, 12] }]
+    },
+    {
+      "id": "find_hollow_glade", "kind": "use", "label": "Log in the bare glade", "pickup": true, "once": true,
+      "find": { "item": "brass_key", "note": "A burrback's idea of treasure. They do collect things." },
+      "places": [{ "area": "alder-hollow", "at": [16.4, -9.4] }]
+    },
+    {
+      "id": "butter_paper", "kind": "use", "label": "Butter paper", "pickup": true, "once": true,
+      "if": { "flags": ["cat_asked"] },
+      "dialogue": "butter_paper",
+      "places": [{ "area": "south-fields", "spot": "Butter paper" }]
+    },
+    {
+      "id": "cat_spotted", "kind": "zone", "radius": 3.2, "once": true,
+      "if": { "flags": ["cat_asked"], "notFlags": ["cat_fled"] },
+      "dialogue": "cat_spotted",
+      "then": [{ "scene": "cat_bolt" }, { "setFlag": "cat_fled" }],
+      "places": [{ "area": "south-fields", "spot": "Biscuit (fields)" }]
+    },
+    {
+      "id": "quilt_whitcomb", "kind": "use", "label": "Blanket chest", "pickup": true, "once": true,
+      "if": { "flags": ["quilt_asked"] },
+      "piece": { "prop": "chest", "opens": "chest_open", "collide": 0.4 },
+      "dialogue": "quilt_square_whitcomb",
+      "places": [{ "area": "colonial-north", "spot": "Blanket chest" }]
+    },
+    {
+      "id": "quilt_tuttle", "kind": "use", "label": "Blanket chest", "pickup": true, "once": true,
+      "if": { "flags": ["quilt_asked"] },
+      "piece": { "prop": "chest", "opens": "chest_open", "collide": 0.4 },
+      "dialogue": "quilt_square_tuttle",
+      "places": [{ "area": "colonial-west-upper", "spot": "Blanket chest" }]
+    },
+    {
+      "id": "quilt_reed", "kind": "use", "label": "Blanket chest", "pickup": true, "once": true,
+      "if": { "flags": ["quilt_asked"] },
+      "piece": { "prop": "chest", "opens": "chest_open", "collide": 0.4 },
+      "dialogue": "quilt_square_reed",
+      "places": [{ "area": "farmhouse-south", "spot": "Blanket chest" }]
+    },
+    {
+      "id": "tuttle_clock", "kind": "use", "label": "Tall clock",
+      "if": { "notFlags": ["clock_thawed"] },
+      "piece": { "prop": "tall_clock", "collide": 0.3, "tall": true },
+      "frost": { "notFlags": ["clock_thawed"] },
+      "dialogue": "clock_thaw",
+      "places": [{ "area": "colonial-west", "spot": "Tuttle clock" }]
+    },
+    {
+      "id": "tuttle_clock_going", "kind": "use", "label": "Tall clock",
+      "if": { "flags": ["clock_thawed"] },
+      "dialogue": "clock_after",
+      "places": [{ "area": "colonial-west", "spot": "Tuttle clock" }]
+    },
+    {
+      "id": "first_gap", "kind": "zone", "radius": 2.2, "once": true,
+      "dialogue": "first_gap",
+      "places": [{ "area": "orchard", "spot": "First gap" }]
+    },
+    {
+      "id": "bridge_north", "kind": "zone", "radius": 1.6, "once": true,
+      "then": [{ "setFlag": "crossed_bridge" }],
+      "places": [{ "area": "brook-woods", "spot": "Bridge north" }]
+    },
+    {
+      "id": "stones_woods", "kind": "stones", "label": "Fallen stones",
+      "if": { "quest": { "id": "first-frost", "atLeast": "fallen-stones" }, "notFlags": ["lifted_stones_woods"] },
+      "dialogue": "lift_stones",
+      "places": [{ "area": "brook-woods", "spot": "Fallen stones" }]
+    },
+    {
+      "id": "wardstone", "kind": "zone", "radius": 3.2, "once": true,
+      "if": { "quest": { "id": "first-frost", "is": "breach" } },
+      "then": [{ "scene": "breach" }],
+      "places": [{ "area": "breach", "spot": "Breach battle" }]
+    }
+  ]
+}

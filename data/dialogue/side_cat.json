@@ -1,0 +1,120 @@
+{
+ "conversations": [
+  {
+   "id": "butter_paper",
+   "lines": [
+    {
+     "who": "",
+     "text": "A square of butter paper, licked to a shine. Small prints lead off it through the frost, in no hurry."
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "A whole pound. He'll be walking it off."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "cat_clue"
+    }
+   ]
+  },
+  {
+   "id": "cat_spotted",
+   "lines": [
+    {
+     "who": "",
+     "text": "A grey cat sits in the middle of the field, washing one paw with great care. It stops, and looks at Eldwin."
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "Biscuit. Now then. There's a good—"
+    }
+   ]
+  },
+  {
+   "id": "cat_caught",
+   "lines": [
+    {
+     "who": "",
+     "text": "Biscuit has found the one flat stone in the hollow with any sun on it, and doesn't get up."
+    },
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "Forty autumns walking these walls, and you've picked the warmest stone on the lot in a morning."
+    },
+    {
+     "who": "eldwin",
+     "text": "Come on. Into the coat with you. There's a woman on the Green who'd like a word about her butter."
+    },
+    {
+     "who": "",
+     "text": "He allows it. He makes it clear that he is allowing it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "has_biscuit"
+    },
+    {
+     "banner": [
+      "Biscuit",
+      "Riding in Eldwin's coat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ada_biscuit",
+   "lines": [
+    {
+     "who": "eldwin",
+     "face": "smile",
+     "text": "I believe this is yours."
+    },
+    {
+     "who": "",
+     "text": "A grey head comes out of the front of his coat, and looks around as if it had arranged all this."
+    },
+    {
+     "who": "ada",
+     "face": "teasing",
+     "text": "That's him. That's the thief. A whole pound of butter, Eldwin, on fair day."
+    },
+    {
+     "who": "ada",
+     "text": "Look at him. Not one bit sorry."
+    },
+    {
+     "who": "ada",
+     "text": "Here. Take this cheddar, quick, before he finds out I've got it. And thank you, you old goose."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "biscuit_home"
+    },
+    {
+     "reward": {
+      "title": "Lost Cat",
+      "xp": 12,
+      "items": {
+       "sharp_cheddar": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "cat_home",
+   "lines": [
+    {
+     "who": "",
+     "text": "Biscuit opens one eye, finds nothing in it for him, and closes it again."
+    }
+   ]
+  }
+ ]
+}

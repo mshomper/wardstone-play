@@ -1,0 +1,7 @@
+{
+  "conversations": [
+    { "id": "bark_abbott", "lines": [{ "who": "townsfolk1", "text": "Third year running my pie's lost to Ada's. Third year!" }] },
+    { "id": "bark_weller", "lines": [{ "who": "townsfolk2", "text": "Strange cold this morning. Pipes froze clean through. Gone now, though." }] },
+    { "id": "bark_jeb", "lines": [{ "who": "townsfolk3", "text": "My granddad used to say the walls keep the winter honest. Never knew what he meant." }] }
+  ]
+}

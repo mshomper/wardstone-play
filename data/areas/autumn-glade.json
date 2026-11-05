@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "name": "autumn-glade",
+  "seed": 1017,
+  "size": {
+    "w": 36,
+    "h": 28
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0.6,
+    "edgeWidth": 6,
+    "roll": 2.56,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.5,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.12,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.16,
+        "spacing": 1.8,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_orange_0",
+          "maple_yellow_0",
+          "apple_tree_0"
+        ],
+        "density": 0.04,
+        "spacing": 4,
+        "scale": [
+          0.85,
+          1
+        ],
+        "near": "open",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2",
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.04,
+        "spacing": 2.4,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.2,
+        "spacing": 0.9,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "asters_0",
+          "asters_1",
+          "goldenrod_0",
+          "goldenrod_1"
+        ],
+        "density": 0.08,
+        "spacing": 1.1,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1",
+          "goldenrod_0",
+          "asters_0"
+        ],
+        "density": 0.08,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          0.5,
+          14
+        ],
+        [
+          0.2,
+          8
+        ],
+        [
+          -0.5,
+          4.5
+        ]
+      ],
+      "width": 1.6,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          1.5,
+          -4.2
+        ],
+        [
+          3.5,
+          -8
+        ],
+        [
+          2.5,
+          -14
+        ]
+      ],
+      "width": 1.3,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        18,
+        -6
+      ],
+      [
+        12,
+        -3
+      ],
+      [
+        9.5,
+        3
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        8,
+        14
+      ]
+    ],
+    "width": 1.4,
+    "depth": 0.7
+  },
+  "walls": [
+    {
+      "points": [
+        [
+          -17,
+          -9
+        ],
+        [
+          -11,
+          -7.5
+        ],
+        [
+          -6,
+          -8.5
+        ],
+        [
+          -1,
+          -7.2
+        ],
+        [
+          6,
+          -9
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 11.5,
+          "width": 1.6
+        },
+        {
+          "at": 17.5,
+          "width": 1.8
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "cottage",
+      "x": -8.5,
+      "z": 7.5,
+      "w": 4.4,
+      "d": 3.6,
+      "rot": 0.25,
+      "height": 3.5
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": -9,
+      "z": 3,
+      "radius": 3.5,
+      "height": 1.2
+    }
+  ],
+  "arenas": [
+    {
+      "x": 0.33,
+      "z": 0.56,
+      "radius": 4.5
+    }
+  ],
+  "placements": [
+    {
+      "prop": "pumpkin_0",
+      "x": -6.3,
+      "z": 9.7,
+      "scale": 1
+    },
+    {
+      "prop": "pumpkin_2",
+      "x": -5.8,
+      "z": 10.3,
+      "scale": 1
+    },
+    {
+      "prop": "hay_bale_0",
+      "x": -10.8,
+      "z": 9.8,
+      "collide": 0.5
+    },
+    {
+      "prop": "scarecrow",
+      "x": 4.2,
+      "z": 7.5,
+      "collide": 0.3,
+      "tall": true
+    },
+    {
+      "prop": "boulder_large_2",
+      "x": -5.54,
+      "z": -1.52
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -6,
+          6
+        ],
+        [
+          -3,
+          9
+        ]
+      ],
+      "radius": 1.2
+    }
+  ]
+}

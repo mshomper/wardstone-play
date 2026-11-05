@@ -1,0 +1,76 @@
+{
+  "conversations": [
+    {
+      "id": "noticeboard",
+      "lines": [
+        { "who": "", "text": "HARVEST FAIR — Tonight on the Green. Pie judging at six. Lanterns at dusk. Music by the Weller brothers." },
+        { "who": "", "if": { "notFlags": ["biscuit_home"] }, "text": "LOST: grey cat, answers to Biscuit (sometimes). Last seen eating somebody's butter. Apply to A. Hale, whose butter it was." },
+        { "who": "", "if": { "flags": ["biscuit_home"] }, "text": "LOST: grey cat. Someone has crossed out LOST and written, in Ada Hale's hand: UNFORTUNATELY NOT." },
+        { "who": "", "text": "Pinned beneath, nearly hidden: a faded card marked with a rune of three crossed lines." },
+        { "who": "eldwin", "face": "concerned", "text": "The old Warden's mark. 'When the stones go cold, walk the line.' I'd forgotten that was here." },
+        { "who": "eldwin", "face": "smile", "if": { "notFlags": ["cat_asked"] }, "text": "Biscuit, hm. I'd try the south road, if I'd eaten Ada's butter. I'll keep an eye out." }
+      ],
+      "onEnd": [{ "setFlag": "cat_asked" }]
+    },
+    {
+      "id": "stall_red",
+      "lines": [
+        { "who": "", "if": { "timeTo": 18 }, "text": "The awning is stiff with frost. A row of jam jars has frozen to the shelf." },
+        { "who": "", "if": { "timeFrom": 18 }, "text": "Cider doughnuts, still warm. Someone has drawn a pumpkin on the price board." }
+      ]
+    },
+    {
+      "id": "stall_green",
+      "lines": [
+        { "who": "", "if": { "timeTo": 18 }, "text": "Empty crates and a hand-painted sign: QUILTS — OPENING TONIGHT." },
+        { "who": "", "if": { "timeFrom": 18 }, "text": "Patchwork quilts in every colour of the maples. One has a little wizard stitched in the corner." },
+        { "who": "", "if": { "flags": ["quilt_done"] }, "text": "In the big one, a square of blue wool, a square of brown corduroy and a square of grey shirting. You'd never know they'd been late." }
+      ]
+    },
+    {
+      "id": "church_window",
+      "lines": [
+        { "who": "eldwin", "face": "concerned", "text": "That's a good likeness. Whoever leaded that glass had stood beside the stone itself, and didn't care to say so." }
+      ]
+    },
+    {
+      "id": "rummage_1",
+      "_note": "rummage_<n> plays when Eldwin opens his nth container in somebody's house (story/interact.ts). He may dodge, but he never lies outright.",
+      "lines": [
+        { "who": "eldwin", "text": "Forty autumns these people have trusted me with their walls. Nobody said a word about their dressers." }
+      ]
+    },
+    {
+      "id": "rummage_4",
+      "lines": [
+        { "who": "eldwin", "text": "You do learn a town this way. Mostly who's been meaning to darn what." }
+      ]
+    },
+    {
+      "id": "rummage_8",
+      "lines": [
+        { "who": "eldwin", "text": "If anyone asks, I was looking for frost. And I was. I looked while I was in there." }
+      ]
+    },
+    {
+      "id": "rummage_12",
+      "lines": [
+        { "who": "eldwin", "text": "They'd give it to me if I asked. That's rather the trouble with asking." }
+      ]
+    },
+    {
+      "id": "door_shut",
+      "lines": [
+        { "who": "", "text": "The door is shut for now." }
+      ]
+    },
+    {
+      "id": "mitten_found",
+      "lines": [
+        { "who": "", "text": "A small red mitten, frozen fast to the fence post." },
+        { "who": "eldwin", "face": "smile", "text": "Come here, you. Somebody's missing you." }
+      ],
+      "onEnd": [{ "setFlag": "has_mitten" }, { "banner": ["Wren's mitten", "Return it to its owner"] }]
+    }
+  ]
+}

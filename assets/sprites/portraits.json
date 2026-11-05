@@ -1,0 +1,214 @@
+{
+ "image": "portraits.png",
+ "emissive": "portraits_emissive.png",
+ "size": [
+  456,
+  261
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "portrait_ada_neutral": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_smile": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_teasing": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_worried": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_amos_tuttle_neutral": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_amos_tuttle_smile": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_neutral": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_smile": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_concerned": {
+   "x": 66,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_tired": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_quiet": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eldwin_determined": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jasper_crane_neutral": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jasper_crane_gruff": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jasper_crane_quiet": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jonah_reed_neutral": {
+   "x": 66,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jonah_reed_smile": {
+   "x": 131,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_martha_combs_neutral": {
+   "x": 196,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_martha_combs_smile": {
+   "x": 261,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_neutral": {
+   "x": 326,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_gruff": {
+   "x": 391,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_worried": {
+   "x": 1,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_neutral": {
+   "x": 66,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_smile": {
+   "x": 131,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_cross": {
+   "x": 196,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  }
+ },
+ "tiles": {}
+}

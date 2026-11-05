@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "hp": 140,
+    "mp": 18,
+    "maxMp": 32,
+    "mpRegen": 4
+  },
+  "beasts": [
+    {
+      "name": "Duskfang",
+      "hp": 46,
+      "pos": [
+        1.3,
+        0,
+        -1.5
+      ]
+    },
+    {
+      "name": "Gloamhorn",
+      "hp": 54,
+      "pos": [
+        4,
+        0,
+        -0.4
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Nightmaw",
+      "hp": 46,
+      "pos": [
+        2.3,
+        0,
+        1.7
+      ]
+    }
+  ],
+  "attack": [
+    16,
+    21
+  ],
+  "critChance": 0.15,
+  "critMul": 1.6,
+  "bolt": [
+    28,
+    33
+  ],
+  "earth": [
+    15,
+    19
+  ],
+  "bloom": [
+    40,
+    46
+  ],
+  "channelMp": 14,
+  "empowerMul": 1.5,
+  "lunge": [
+    8,
+    12
+  ],
+  "pounce": [
+    14,
+    18
+  ],
+  "walk": 2.4,
+  "run": 4.8
+}

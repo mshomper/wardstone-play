@@ -1,0 +1,52 @@
+{
+ "id": "jaspers-errand",
+ "title": "Jasper's Errand",
+ "side": true,
+ "blurb": "No questions asked. That was the arrangement.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The arrangement",
+   "objective": "",
+   "done": {
+    "flags": [
+     "errand_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "jasper_crane"
+    }
+   ],
+   "sets": [
+    "errand_asked"
+   ]
+  },
+  {
+   "id": "bring",
+   "title": "The arrangement",
+   "objective": "Bring Jasper three Rime Shards. Frost lights leave them behind.",
+   "count": {
+    "item": "rime_shard",
+    "of": 3
+   },
+   "done": {
+    "flags": [
+     "errand_done"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Jasper"
+   },
+   "auto": [
+    {
+     "talk": "jasper_crane"
+    }
+   ],
+   "sets": [
+    "errand_done"
+   ]
+  }
+ ]
+}

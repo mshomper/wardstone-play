@@ -1,0 +1,9 @@
+{
+  "cues": {
+    "title": { "play": "title", "fade": 2.5 },
+    "leave_title": { "stop": true, "fade": 2.5, "from": "title" },
+    "battle_start": { "push": "battle", "fade": 0.4 },
+    "battle_end": { "pop": true, "fade": 1.5, "from": "battle" }
+  },
+  "areas": {}
+}

@@ -1,0 +1,533 @@
+{
+  "version": 1,
+  "name": "alder-hollow",
+  "seed": 9241,
+  "size": {
+    "w": 42,
+    "h": 32
+  },
+  "mood": {
+    "baseHeight": -0.4,
+    "edgeRise": 3.4,
+    "edgeWidth": 6,
+    "roll": 0.75,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.34,
+        "spacing": 1.8,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.55,
+        "spacing": 1.9,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.1,
+        "spacing": 3,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.2,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.025,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2",
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.05,
+        "spacing": 2.4,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "cattails_0",
+          "cattails_1"
+        ],
+        "density": 0.4,
+        "spacing": 0.8,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.5,
+        "spacing": 0.85,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1",
+          "asters_0",
+          "fern_autumn_1"
+        ],
+        "density": 0.12,
+        "spacing": 0.9,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_2",
+          "mushrooms_1"
+        ],
+        "density": 0.08,
+        "spacing": 1.3,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -6,
+          -16
+        ],
+        [
+          -6,
+          -9.5
+        ],
+        [
+          -3.6,
+          -5
+        ],
+        [
+          -3.8,
+          -0.8
+        ],
+        [
+          -1,
+          3.4
+        ],
+        [
+          -2.6,
+          8.2
+        ],
+        [
+          -3.4,
+          11
+        ]
+      ],
+      "width": 1.4,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          -3.8,
+          -1
+        ],
+        [
+          1,
+          -1.6
+        ],
+        [
+          9.6,
+          -1.8
+        ],
+        [
+          12.2,
+          -3
+        ]
+      ],
+      "width": 1.2,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        8,
+        -16
+      ],
+      [
+        5.6,
+        -9
+      ],
+      [
+        5.4,
+        -1.7
+      ],
+      [
+        4,
+        5.4
+      ],
+      [
+        6.4,
+        11
+      ],
+      [
+        6,
+        16
+      ]
+    ],
+    "width": 1.7,
+    "depth": 0.75
+  },
+  "walls": [
+    {
+      "points": [
+        [
+          -21,
+          -3.4
+        ],
+        [
+          -14,
+          -2.6
+        ],
+        [
+          -9,
+          -3.2
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 6.6,
+          "width": 1.6
+        }
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "bridge",
+      "kind": "bridge",
+      "x": 5.4,
+      "z": -1.7,
+      "w": 5.2,
+      "d": 2.2,
+      "rot": 0,
+      "height": 2.3
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "hollow",
+      "x": -3,
+      "z": 2,
+      "radius": 12,
+      "height": 0.8
+    },
+    {
+      "kind": "mound",
+      "x": 15,
+      "z": -6,
+      "radius": 5.5,
+      "height": 0.7
+    }
+  ],
+  "arenas": [
+    {
+      "x": -11,
+      "z": 3,
+      "radius": 2.8
+    },
+    {
+      "x": 1,
+      "z": 8.6,
+      "radius": 2.4
+    },
+    {
+      "x": 15,
+      "z": -3,
+      "radius": 3.2
+    }
+  ],
+  "placements": [
+    {
+      "prop": "bare_tree_0",
+      "x": 10.4,
+      "z": -6.8,
+      "collide": 0.35,
+      "tall": true
+    },
+    {
+      "prop": "bare_tree_1",
+      "x": 17.4,
+      "z": -7.6,
+      "collide": 0.35,
+      "tall": true
+    },
+    {
+      "prop": "bare_tree_0",
+      "x": 18,
+      "z": 1.4,
+      "collide": 0.35,
+      "tall": true
+    },
+    {
+      "prop": "bare_tree_1",
+      "x": 10.6,
+      "z": 1.8,
+      "collide": 0.35,
+      "tall": true
+    },
+    {
+      "prop": "rock_spire_0",
+      "x": 12.6,
+      "z": -8.4,
+      "collide": 0.7
+    },
+    {
+      "prop": "boulder_large_0",
+      "x": 16,
+      "z": -8.2,
+      "collide": 0.8
+    },
+    {
+      "prop": "pumpkin_frozen_1",
+      "x": 9.2,
+      "z": -3.6
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": 16.4,
+      "z": -9.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "fallen_log_1",
+      "x": -15.2,
+      "z": 7.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -15.4,
+      "z": -7,
+      "collide": 0.8
+    },
+    {
+      "prop": "crate_0",
+      "x": -3.9,
+      "z": 12,
+      "collide": 0.35
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": -2.2,
+      "z": 12.5,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": -5.4,
+      "z": 12.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_2",
+      "x": 0.4,
+      "z": 12.9,
+      "collide": 0.3
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -15.4,
+          -5.8
+        ],
+        [
+          -13.6,
+          -5.2
+        ]
+      ],
+      "radius": 0.8
+    },
+    {
+      "points": [
+        [
+          -14.8,
+          6.2
+        ],
+        [
+          -13,
+          5.4
+        ]
+      ],
+      "radius": 0.8
+    },
+    {
+      "points": [
+        [
+          15,
+          -7.6
+        ],
+        [
+          15.6,
+          -9
+        ]
+      ],
+      "radius": 0.8
+    }
+  ],
+  "spots": [{"name": "Biscuit (hollow)", "x": -5.6, "z": 8.4, "note": "Lost Cat: on a flat stone, in the sun."},
+    {
+      "name": "Wanderer in the old wall",
+      "x": -11,
+      "z": 3,
+      "note": "A little burrback, west of the path."
+    },
+    {
+      "name": "Wanderer by the brook",
+      "x": 1,
+      "z": 8.6,
+      "note": "A little creature down by the water."
+    },
+    {
+      "name": "Group to stay away from",
+      "x": 15,
+      "z": -3,
+      "note": "Over the bridge in the bare glade: much too big for level 1, and in plain view from the near bank."
+    },
+    {
+      "name": "Far log",
+      "x": -15.2,
+      "z": 7.4,
+      "note": "Find: a log off to the west."
+    },
+    {
+      "name": "Boulder north of the wall",
+      "x": -15.4,
+      "z": -7,
+      "note": "Find: the far side of the old wall."
+    },
+    {
+      "name": "Path end",
+      "x": -3.9,
+      "z": 12,
+      "note": "Find: where the path gives up."
+    },
+    {
+      "name": "Behind the bare glade",
+      "x": 16.4,
+      "z": -9.4,
+      "note": "Find: the prize for getting past the big ones."
+    }
+  ],
+  "start": [
+    -6,
+    -9.8
+  ],
+  "exits": [
+    {
+      "rect": [
+        -8.2,
+        -12.6,
+        -3.8,
+        -11.6
+      ],
+      "to": "south-fields",
+      "at": [
+        -6,
+        9
+      ],
+      "dir": 4
+    }
+  ]
+}

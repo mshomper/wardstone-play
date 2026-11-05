@@ -1,0 +1,634 @@
+{
+  "version": 1,
+  "name": "south-fields",
+  "seed": 8123,
+  "size": {
+    "w": 42,
+    "h": 30
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 2.4,
+    "edgeWidth": 4.5,
+    "roll": 0.45,
+    "pathMargin": 0.8,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "pumpkin_0",
+          "pumpkin_1",
+          "pumpkin_2",
+          "pumpkin_3"
+        ],
+        "density": 0,
+        "spacing": 1.1,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "rows": {
+          "region": [
+            [
+              -16,
+              -1.6
+            ],
+            [
+              -5,
+              -2.2
+            ],
+            [
+              -3.4,
+              3
+            ],
+            [
+              -7,
+              6.4
+            ],
+            [
+              -9.4,
+              10
+            ],
+            [
+              -16,
+              10
+            ]
+          ],
+          "spacing": 1.7,
+          "along": 1.5,
+          "angle": 8,
+          "jitter": 0.18,
+          "gaps": 0.16
+        }
+      },
+      {
+        "props": [
+          "hay_bale_0",
+          "hay_bale_1"
+        ],
+        "density": 0,
+        "spacing": 3,
+        "scale": [
+          0.9,
+          1.05
+        ],
+        "collide": 0.5,
+        "rows": {
+          "region": [
+            [
+              12,
+              -9
+            ],
+            [
+              18,
+              -9
+            ],
+            [
+              18,
+              10
+            ],
+            [
+              12.5,
+              10
+            ]
+          ],
+          "spacing": 5.2,
+          "along": 4.6,
+          "angle": 0,
+          "jitter": 0.3,
+          "gaps": 0.3
+        }
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_0",
+          "maple_yellow_1"
+        ],
+        "density": 0.42,
+        "spacing": 2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.12,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "apple_tree_0",
+          "apple_tree_1"
+        ],
+        "density": 0.015,
+        "spacing": 6,
+        "scale": [
+          0.85,
+          1
+        ],
+        "near": "wall",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "boulder_mossy_2"
+        ],
+        "density": 0.03,
+        "spacing": 3,
+        "scale": [
+          0.8,
+          1
+        ],
+        "near": "wall",
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "goldenrod_0",
+          "goldenrod_1",
+          "asters_0",
+          "asters_1"
+        ],
+        "density": 0.2,
+        "spacing": 1,
+        "scale": [
+          0.85,
+          1.15
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "goldenrod_0",
+          "goldenrod_1",
+          "asters_0",
+          "fern_autumn_0"
+        ],
+        "density": 0.12,
+        "spacing": 1,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "goldenrod_1",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.02,
+        "spacing": 2,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          0,
+          -15
+        ],
+        [
+          0,
+          -8.5
+        ],
+        [
+          3.2,
+          -3.4
+        ],
+        [
+          1.6,
+          2.4
+        ],
+        [
+          -3,
+          6.6
+        ],
+        [
+          -6,
+          10.5
+        ],
+        [
+          -6,
+          15
+        ]
+      ],
+      "width": 1.5,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          0.2,
+          -7.2
+        ],
+        [
+          -4,
+          -6.4
+        ],
+        [
+          -8,
+          -5.2
+        ]
+      ],
+      "width": 1.1,
+      "kind": "path"
+    }
+  ],
+  "walls": [
+    {
+      "points": [
+        [
+          -20,
+          -2.4
+        ],
+        [
+          -12,
+          -1.9
+        ],
+        [
+          -5.4,
+          -2.8
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 11,
+          "width": 1.8
+        }
+      ]
+    },
+    {
+      "points": [
+        [
+          8.4,
+          -15
+        ],
+        [
+          9.4,
+          -7
+        ],
+        [
+          10.2,
+          0
+        ],
+        [
+          10.6,
+          7
+        ],
+        [
+          10.2,
+          15
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 11.6,
+          "width": 1.8
+        },
+        {
+          "at": 22,
+          "width": 1.6
+        }
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "barn",
+      "x": -11.5,
+      "z": -8.4,
+      "w": 8,
+      "d": 5,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -4,
+              -2.5
+            ],
+            [
+              4,
+              -2.5
+            ],
+            [
+              4,
+              2.5
+            ],
+            [
+              -4,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 15,
+      "z": -3,
+      "radius": 6,
+      "height": 0.7
+    }
+  ],
+  "arenas": [
+    {
+      "x": 5.8,
+      "z": -9.2,
+      "radius": 2.4
+    },
+    {
+      "x": -9.6,
+      "z": 3.6,
+      "radius": 2.8
+    },
+    {
+      "x": 15,
+      "z": 3.2,
+      "radius": 2.6
+    }
+  ],
+  "placements": [
+    {
+      "prop": "scarecrow",
+      "x": -14.2,
+      "z": 4.2,
+      "collide": 0.3
+    },
+    {
+      "prop": "mailbox",
+      "x": 1.4,
+      "z": -11.4,
+      "collide": 0.2
+    },
+    {
+      "prop": "fence_rail",
+      "x": 1.5,
+      "z": -5.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": 3.5,
+      "z": -5.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "crate_pumpkins",
+      "x": -5.2,
+      "z": 3.9,
+      "collide": 0.35
+    },
+    {
+      "prop": "pumpkin_3",
+      "x": -4.2,
+      "z": 2.9
+    },
+    {
+      "prop": "hay_bale_1",
+      "x": -14.4,
+      "z": -3.9,
+      "collide": 0.5
+    },
+    {
+      "prop": "crate_0",
+      "x": -12.6,
+      "z": -12,
+      "collide": 0.35
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": -9.4,
+      "z": -5.1,
+      "collide": 0.35
+    },
+    {
+      "prop": "ladder",
+      "x": -7.2,
+      "z": -6.2
+    },
+    {
+      "prop": "hay_bale_0",
+      "x": 15.8,
+      "z": -9.6,
+      "collide": 0.5
+    },
+    {
+      "prop": "pumpkin_frozen_0",
+      "x": 14.8,
+      "z": -9
+    },
+    {
+      "prop": "bare_tree_0",
+      "x": 13.4,
+      "z": 8.6,
+      "collide": 0.35,
+      "tall": true
+    },
+    {
+      "prop": "apple_tree_0",
+      "x": 3,
+      "z": 7.4,
+      "collide": 0.4,
+      "tall": true
+    },
+    {
+      "prop": "apple_tree_1",
+      "x": 6,
+      "z": 8.8,
+      "collide": 0.4,
+      "tall": true
+    },
+    {
+      "prop": "apple_tree_0",
+      "x": 3.4,
+      "z": 10.6,
+      "collide": 0.4,
+      "tall": true
+    },
+    {
+      "prop": "apple_basket_1",
+      "x": 4.4,
+      "z": 8.3
+    },
+    {
+      "prop": "ladder",
+      "x": 3.4,
+      "z": 7.7
+    },
+    {
+      "prop": "fence_rail",
+      "x": -3.8,
+      "z": 9.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_rail",
+      "x": -3,
+      "z": 7.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "maple_orange_0",
+      "x": -12.5,
+      "z": 11.4,
+      "collide": 0.45,
+      "tall": true
+    },
+    {
+      "prop": "maple_red_1",
+      "x": 7.6,
+      "z": 3,
+      "collide": 0.45,
+      "tall": true
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -13,
+          -5.5
+        ],
+        [
+          -8,
+          -4.6
+        ]
+      ],
+      "radius": 1
+    },
+    {
+      "points": [
+        [
+          -13.6,
+          -11.8
+        ],
+        [
+          -11.6,
+          -12.2
+        ]
+      ],
+      "radius": 0.9
+    }
+  ],
+  "spots": [{"name": "Butter paper", "x": -1.2, "z": -5.8, "note": "Lost Cat: the first clue, just off the lane."},{"name": "Biscuit (fields)", "x": 0.6, "z": 5.4, "note": "Lost Cat: where he's seen, and bolts."},{"name": "Biscuit (run 1)", "x": -3, "z": 7.2, "note": "Lost Cat: the way he runs."},{"name": "Biscuit (run 2)", "x": -6, "z": 10.8, "note": "Lost Cat: the way he runs, out to the hollow."},
+    {
+      "name": "Wanderers by the lane",
+      "x": 5.8,
+      "z": -9.2,
+      "note": "A little rimeling in the first clearing: the road says hello."
+    },
+    {
+      "name": "Wanderers in the patch",
+      "x": -9.6,
+      "z": 3.6,
+      "note": "A little creature raiding the pumpkin patch."
+    },
+    {
+      "name": "Wanderers in the far field",
+      "x": 15,
+      "z": 3.2,
+      "note": "Two snickerkits among the bales, through the wall gap."
+    },
+    {
+      "name": "Scarecrow",
+      "x": -14.2,
+      "z": 4.2,
+      "note": "Find: its coat pocket."
+    },
+    {
+      "name": "Behind the barn",
+      "x": -12.6,
+      "z": -12,
+      "note": "Find: a crate, out of sight behind the barn."
+    },
+    {
+      "name": "Far bale",
+      "x": 15.8,
+      "z": -9.6,
+      "note": "Find: the last bale in the far corner."
+    },
+    {
+      "name": "Mailbox",
+      "x": 1.4,
+      "z": -11.4,
+      "note": "Find: right by the lane, so the first one comes early."
+    }
+  ],
+  "start": [
+    0,
+    -9.6
+  ],
+  "exits": [
+    {
+      "rect": [
+        -2.4,
+        -12.4,
+        2.4,
+        -11.4
+      ],
+      "to": "green-frame",
+      "at": [
+        -0.2,
+        10.2
+      ],
+      "dir": 4
+    },
+    {
+      "rect": [
+        -8.4,
+        10.8,
+        -3.6,
+        11.8
+      ],
+      "to": "alder-hollow",
+      "at": [
+        -6,
+        -9.8
+      ],
+      "dir": 0
+    }
+  ]
+}

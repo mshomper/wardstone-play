@@ -1,0 +1,67 @@
+{
+  "_note": "Every item, and Jasper's barter (docs/05-combat.md, Items). `value` is what it's worth; Jasper takes it at `barter.takes` of that, rounded down, and sells at `barter.sells`, rounded up. `use`: quick (free, one a turn, he still acts), turn (takes his turn); no `use` means a trade good, which is only ever traded. `target`: self (default), one, all. `carry` is how many of each he can hold. `stock` is what Jasper has after each rest. All numbers are first drafts.",
+  "carry": { "usable": 9, "trade": 30 },
+  "barter": {
+    "person": "jasper_crane",
+    "takes": 0.6,
+    "sells": 1.5,
+    "stock": {
+      "apple_fritter": 3, "warm_cider": 3, "maple_candy": 3, "johnnycake": 2, "peppermint_drop": 2,
+      "mulled_cider": 1, "birch_tonic": 1, "hearth_stew": 1, "chicken_pie": 1,
+      "mustard_plaster": 2, "vinegar_rag": 1, "sassafras_tea": 1,
+      "pine_pitch": 2, "rock_salt": 2, "cold_iron_nail": 1, "ward_chalk": 1, "lamp_oil": 1, "cowbell": 1, "wool_scarf": 1
+    },
+    "lines": {
+      "empty": "Everything's for sale, friend. Everything's worth something. Show me.",
+      "short": "Oh, I couldn't. Not at that. My own mother would weep.",
+      "fair": "Now that's what I call a fair price. I always do.",
+      "over": "Generous. I don't make change, you understand. It upsets the books.",
+      "giveonly": "A gift? For me? Name something you want, friend, or I'll start to feel guilty.",
+      "done": "Pleasure. We never met.",
+      "soldout": "That's the last of it. More when the wind changes. Rest a while."
+    }
+  },
+  "items": [
+    { "id": "apple_fritter", "name": "Apple Fritter", "icon": "fritter", "kind": "heal", "use": "quick", "desc": "Restores 20 HP.", "value": 4, "hp": 20 },
+    { "id": "warm_cider", "name": "Warm Cider", "icon": "mug", "kind": "heal", "use": "quick", "desc": "Restores 30 HP.", "value": 6, "hp": 30 },
+    { "id": "maple_candy", "name": "Maple Candy", "icon": "candy", "kind": "heal", "use": "quick", "desc": "Restores 10 MP.", "value": 4, "mp": 10 },
+    { "id": "mulled_cider", "name": "Mulled Cider", "icon": "mulled", "kind": "heal", "use": "turn", "desc": "Restores 80 HP.", "value": 16, "hp": 80 },
+    { "id": "birch_tonic", "name": "Birch Tonic", "icon": "tonic", "kind": "heal", "use": "turn", "desc": "Restores 24 MP.", "value": 14, "mp": 24 },
+    { "id": "hearth_stew", "name": "Hearth Stew", "icon": "stew", "kind": "heal", "use": "turn", "desc": "Restores 60 HP and 16 MP.", "value": 20, "hp": 60, "mp": 16 },
+    { "id": "johnnycake", "name": "Johnnycake", "icon": "johnnycake", "kind": "heal", "use": "quick", "desc": "Restores 15 HP.", "value": 3, "hp": 15 },
+    { "id": "sharp_cheddar", "name": "Sharp Cheddar", "icon": "cheddar", "kind": "heal", "use": "quick", "desc": "Restores 15 HP and 5 MP.", "value": 5, "hp": 15, "mp": 5 },
+    { "id": "peppermint_drop", "name": "Peppermint Drop", "icon": "peppermint", "kind": "heal", "use": "quick", "desc": "Restores 6 MP.", "value": 3, "mp": 6 },
+    { "id": "chicken_pie", "name": "Chicken Pie", "icon": "pie", "kind": "heal", "use": "turn", "desc": "Restores 100 HP.", "value": 20, "hp": 100 },
+    { "id": "sugar_on_snow", "name": "Sugar on Snow", "icon": "snowtaffy", "kind": "heal", "use": "turn", "desc": "Restores 30 MP.", "value": 18, "mp": 30 },
+    { "id": "boiled_dinner", "name": "Boiled Dinner", "icon": "pot", "kind": "heal", "use": "turn", "desc": "Restores 90 HP and 24 MP.", "value": 30, "hp": 90, "mp": 24 },
+
+    { "id": "reed_flask", "name": "Old Reed's Flask", "icon": "tonic", "kind": "heal", "use": "quick", "desc": "Restores 60 HP and 20 MP. It wasn't for the cold.", "value": 24, "hp": 60, "mp": 20 },
+
+    { "id": "mustard_plaster", "name": "Mustard Plaster", "icon": "plaster", "kind": "cure", "use": "quick", "desc": "Cures chill and slow.", "value": 5, "cure": ["chilled", "slow"] },
+    { "id": "vinegar_rag", "name": "Vinegar Rag", "icon": "rag", "kind": "cure", "use": "quick", "desc": "Cures Sticky and burning.", "value": 4, "cure": ["sticky", "burning"] },
+    { "id": "witch_hazel", "name": "Witch Hazel", "icon": "witchhazel", "kind": "cure", "use": "quick", "desc": "Cures burning.", "value": 3, "cure": ["burning"] },
+    { "id": "sassafras_tea", "name": "Sassafras Tea", "icon": "teacup", "kind": "cure", "use": "turn", "desc": "Cures everything: chill, slow, Sticky and burning.", "value": 7, "cure": ["chilled", "slow", "sticky", "burning"] },
+
+    { "id": "pine_pitch", "name": "Pine Pitch", "icon": "pitch", "kind": "battle", "use": "turn", "target": "one", "element": "hearth", "desc": "Makes one foe Sticky for 2 turns. Never misses.", "value": 8, "status": [{ "id": "sticky", "turns": 2 }] },
+    { "id": "rock_salt", "name": "Rock Salt", "icon": "salt", "kind": "battle", "use": "turn", "target": "all", "element": "earth", "desc": "Earth damage to every foe.", "value": 12, "power": 0.8 },
+    { "id": "cold_iron_nail", "name": "Cold Iron Nail", "icon": "nail", "kind": "battle", "use": "turn", "desc": "Your next spell hits twice as hard.", "value": 10, "empower": 2 },
+    { "id": "ward_chalk", "name": "Ward Chalk", "icon": "chalk", "kind": "battle", "use": "turn", "desc": "A chalked ward, stronger than your own: takes off two thirds of the damage until your next turn, and attackers are Chilled.", "value": 10, "ward": { "damageMul": 0.33, "counterStatus": "chilled" } },
+    { "id": "lamp_oil", "name": "Lamp Oil", "icon": "oilcan", "kind": "battle", "use": "turn", "target": "one", "element": "hearth", "desc": "Sets one foe burning for 3 turns. Fire wears it down, but won't finish it.", "value": 9, "status": [{ "id": "burning", "turns": 2 }] },
+    { "id": "cowbell", "name": "Cowbell", "icon": "cowbell", "kind": "battle", "use": "turn", "target": "one", "element": "physical", "desc": "Rattles one foe. It's Slow for 2 turns, and goes last.", "value": 7, "status": [{ "id": "slow", "turns": 2 }] },
+    { "id": "wool_scarf", "name": "Wool Scarf", "icon": "scarf", "kind": "battle", "use": "turn", "desc": "You can't be Chilled for the rest of this fight.", "value": 8, "immune": "chilled" },
+
+    { "id": "rime_shard", "name": "Rime Shard", "icon": "shard", "kind": "trade", "desc": "A sliver of cold that won't melt. Left behind by a rimeling.", "value": 5 },
+    { "id": "burrback_quill", "name": "Burrback Quill", "icon": "quill", "kind": "trade", "desc": "Sharp, frost-tipped, and shed in a temper.", "value": 8 },
+    { "id": "frost_bitten_apple", "name": "Frost-Bitten Apple", "icon": "apple", "kind": "trade", "desc": "Too cold to eat. Somebody will press it.", "value": 3 },
+    { "id": "old_wall_stone", "name": "Old Wall Stone", "icon": "stone", "kind": "trade", "desc": "A chip off the old wall, faintly carved.", "value": 7 },
+    { "id": "copper_button", "name": "Copper Button", "icon": "button", "kind": "trade", "desc": "Older than the coat it fell from.", "value": 6 },
+    { "id": "silver_thimble", "name": "Silver Thimble", "icon": "thimble", "kind": "trade", "desc": "Real silver, and somebody misses it.", "value": 15 },
+    { "id": "kindling", "name": "Bundle of Kindling", "icon": "kindling", "kind": "trade", "desc": "Dry and tied with twine. Somebody always needs a fire.", "value": 6 },
+    { "id": "pewter_spoon", "name": "Pewter Spoon", "icon": "spoon", "kind": "trade", "desc": "Bent a little from a lifetime of porridge.", "value": 4 },
+    { "id": "brass_key", "name": "Brass Key", "icon": "brasskey", "kind": "trade", "desc": "It opens something. Nobody remembers what.", "value": 6 },
+    { "id": "old_almanac", "name": "Old Almanac", "icon": "almanac", "kind": "trade", "desc": "Last year's. It promised a mild autumn.", "value": 5 },
+    { "id": "darning_egg", "name": "Darning Egg", "icon": "darningegg", "kind": "trade", "desc": "Worn smooth inside a great many socks.", "value": 3 },
+    { "id": "tin_whistle", "name": "Tin Whistle", "icon": "whistle", "kind": "trade", "desc": "Plays one note well and the others bravely.", "value": 5 },
+    { "id": "lace_doily", "name": "Lace Doily", "icon": "doily", "kind": "trade", "desc": "Hours of somebody's winter, and it fits under a teacup.", "value": 4 }
+  ]
+}

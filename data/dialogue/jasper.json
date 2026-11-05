@@ -1,0 +1,46 @@
+{
+  "conversations": [
+    {
+      "id": "jasper_first",
+      "lines": [
+        { "who": "jasper_crane", "face": "quiet", "text": "Easy, easy. No need to shout. Folks might think we had business." },
+        { "who": "eldwin", "face": "concerned", "text": "I know everyone on this Green. I don't know you." },
+        { "who": "jasper_crane", "text": "Jasper Crane. Dealer in this and that. Mostly that." },
+        { "who": "jasper_crane", "text": "No coin, no questions. You bring me what the frost leaves lying about, and I find you something useful. Fair prices. Ask anyone." },
+        { "who": "eldwin", "face": "concerned", "text": "There's nobody back here to ask." },
+        { "who": "jasper_crane", "face": "gruff", "text": "Then you'll have to take my word. Most do." },
+        { "choice": [
+          { "text": "Show me what you've got.", "next": "jasper_open", "then": [{ "shop": true }] },
+          { "text": "Another time.", "next": "jasper_later" }
+        ] }
+      ],
+      "onEnd": [{ "setFlag": "met_jasper" }]
+    },
+    {
+      "id": "jasper_again",
+      "lines": [
+        { "who": "jasper_crane", "if": { "notFlags": ["traded_jasper"] }, "text": "Back again. Curiosity's a fine thing. It's kept me fed for years." },
+        { "who": "jasper_crane", "if": { "flags": ["traded_jasper"], "quest": { "id": "first-frost", "before": "home" } }, "text": "We never met, of course. But since we haven't, what can I do for you?" },
+        { "who": "jasper_crane", "face": "quiet", "if": { "flags": ["traded_jasper"], "quest": { "id": "first-frost", "before": "home" } }, "text": "Stones go cold, prices go up. I've seen it before. Not here, mind. Somewhere with worse manners." },
+        { "who": "jasper_crane", "face": "gruff", "if": { "quest": { "id": "first-frost", "atLeast": "home" } }, "text": "Heard something howled up at the wall. Bad for the village. Wonderful for trade." },
+        { "who": "jasper_crane", "face": "quiet", "if": { "flags": ["errand_done"] }, "text": "Tin's holding up nicely. Thanks for not asking." },
+        { "choice": [
+          { "text": "Show me what you've got.", "next": "jasper_open", "then": [{ "shop": true }] },
+          { "text": "Another time.", "next": "jasper_later" }
+        ] }
+      ]
+    },
+    {
+      "id": "jasper_open",
+      "lines": [
+        { "who": "jasper_crane", "text": "Spread it out, then. Don't mind the light. There isn't any." }
+      ]
+    },
+    {
+      "id": "jasper_later",
+      "lines": [
+        { "who": "jasper_crane", "face": "quiet", "text": "Course. I'll be right here. Or I won't." }
+      ]
+    }
+  ]
+}
