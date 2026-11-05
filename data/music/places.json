@@ -1,138 +1,1158 @@
 {
-  "harmony": {
-    "major": {
-      "A": [
-        "Imaj7 IVmaj9 vim9 Vsus4", "Iadd9 vim7 IVmaj7 V9sus4", "Imaj9 iiim7 IVmaj7 Vsus4", "I6 IVmaj9 iim9 Vsus4",
-        "Imaj7 iim9 IVadd9 Vsus2", "Isus2 IVmaj7 vim9 IVmaj9", "Imaj7 vim9 iim9 Vsus4", "Iadd9 Vsus4 vim7 IVmaj9",
-        "Imaj7 bVIIadd9 IVmaj7 Isus4", "I6 iiim7 vim9 IVmaj7"
-      ],
-      "B": [
-        "IVmaj9 Imaj7 vim9 Vsus4", "vim9 IVmaj7 Iadd9 Vsus4", "iim9 Vsus4 iiim7 vim9", "IVmaj7 iiim7 iim9 Vsus4",
-        "vim7 iiim7 IVmaj9 Vsus4", "IVadd9 Vsus2 vim9 iiim7", "bVIIadd9 IVmaj7 Imaj7 Vsus4", "iim7 vim9 IVmaj9 V9sus4"
-      ]
-    },
-    "minor": {
-      "A": [
-        "im9 bVImaj7 ivm9 vm7", "im7 ivm9 bVIIadd9 bIIImaj7", "im9 bVIIsus2 bVImaj7 vm7", "imadd9 ivm7 bVImaj9 bVIIsus4",
-        "im7 bIIImaj7 ivm9 bVIIsus2", "im9 vm7 bVImaj7 ivm9", "imadd9 bVIIadd9 ivm7 vm7", "im7 bVImaj9 bIIImaj7 bVIIsus4"
-      ],
-      "B": [
-        "bVImaj7 bIIImaj7 ivm9 vm7", "bIIImaj9 bVIIadd9 ivm9 im7", "ivm9 bVIIsus4 bIIImaj7 bVImaj7", "bVImaj9 vm7 ivm7 bVIIsus4",
-        "bVIIadd9 bVImaj7 vm7 im9", "ivm7 bVImaj7 bVIIsus2 vm7"
-      ]
-    }
+ "harmony": {
+  "major": {
+   "A": [
+    "Imaj7 IVmaj9 vim9 Vsus4",
+    "Iadd9 vim7 IVmaj7 V9sus4",
+    "Imaj9 iiim7 IVmaj7 Vsus4",
+    "I6 IVmaj9 iim9 Vsus4",
+    "Imaj7 iim9 IVadd9 Vsus2",
+    "Isus2 IVmaj7 vim9 IVmaj9",
+    "Imaj7 vim9 iim9 Vsus4",
+    "Iadd9 Vsus4 vim7 IVmaj9",
+    "Imaj7 bVIIadd9 IVmaj7 Isus4",
+    "I6 iiim7 vim9 IVmaj7"
+   ],
+   "B": [
+    "IVmaj9 Imaj7 vim9 Vsus4",
+    "vim9 IVmaj7 Iadd9 Vsus4",
+    "iim9 Vsus4 iiim7 vim9",
+    "IVmaj7 iiim7 iim9 Vsus4",
+    "vim7 iiim7 IVmaj9 Vsus4",
+    "IVadd9 Vsus2 vim9 iiim7",
+    "bVIIadd9 IVmaj7 Imaj7 Vsus4",
+    "iim7 vim9 IVmaj9 V9sus4"
+   ]
   },
-  "rhythm": {
-    "calm": {
-      "4": [[1.5, 0.5, 1, 1], [1, 1, 2], [2, 1, 1], [1, 0.5, 0.5, 2], [0.5, 0.5, 1, 2], [3, 1], [1, 2, 1], [-1, 1, 1, 1], [-0.5, 0.5, 1, 2], [1.5, 0.5, 2]],
-      "3": [[2, 1], [1, 1, 1], [1.5, 0.5, 1], [1, 2], [0.5, 0.5, 1, 1], [-1, 1, 1]]
-    },
-    "walk": {
-      "4": [[1, 0.5, 0.5, 1, 1], [0.5, 0.5, 1, 1, 1], [1.5, 0.5, 1, 1], [1, 1, 0.5, 0.5, 1], [0.5, 1, 0.5, 2], [-0.5, 0.5, 0.5, 0.5, 2], [1, 1, 2], [0.75, 0.25, 1, 2]],
-      "3": [[1, 0.5, 0.5, 1], [0.5, 0.5, 1, 1], [1.5, 0.5, 1], [1, 1, 1], [-1, 0.5, 0.5, 1]]
-    },
-    "sparse": {
-      "4": [[4], [2, 2], [3, 1], [-2, 2], [-1, 3], [2, -1, 1]],
-      "3": [[3], [2, 1], [-1, 2], [1, 2]]
-    },
-    "drive": {
-      "4": [[0.5, 0.5, 0.5, 0.5, 1, 1], [0.75, 0.75, 0.5, 1, 1], [1, 0.5, 0.5, 1, 1], [0.5, 0.5, 1, 0.5, 0.5, 1], [0.25, 0.25, 0.5, 1, 2], [-0.5, 0.5, 0.5, 0.5, 1, 1], [0.75, 0.75, 1.5, 1]],
-      "3": [[0.5, 0.5, 1, 1], [1, 0.5, 0.5, 1], [0.75, 0.75, 1.5]]
-    }
-  },
-  "cadence": {
-    "4": [[3, -1], [2, 1, -1], [1, 2, -1], [0.5, 0.5, 2, -1], [2, -2], [1.5, 0.5, 1, -1]],
-    "3": [[2, -1], [1, 1, -1], [0.5, 0.5, 1, -1]]
-  },
-  "contours": {
-    "fall": [0.9, 0.3, -0.2, -0.8],
-    "arch": [-0.4, 0.5, 0.9, -0.3],
-    "rise": [-0.8, -0.2, 0.7, 0.1],
-    "valley": [0.5, -0.6, -0.4, 0.4],
-    "wave": [0.2, 0.8, -0.3, 0.1],
-    "step": [-0.5, 0.0, 0.5, -0.4]
-  },
-  "places": {
-    "town": {
-      "name": "Town", "inDemo": true, "note": "major, easy walking pace",
-      "harmony": "major", "scale": "major", "keys": ["D", "G", "C", "A"], "bpm": [84, 96], "meters": [4, 4, 3],
-      "forms": [["A", "A2", "B", "A3"], ["A", "B", "A2", "C", "A3"]],
-      "lead": ["flute", "triangle"], "pad": ["pad"], "bass": "bass",
-      "backings": ["arpUp", "offbeat", "twoFour", "arpRoll", "pulse"], "bassStyles": ["rootFifth", "walkDots", "hold"], "perc": ["none", "shaker", "softWalk"],
-      "melody": { "low": 62, "high": 79, "rhythm": "walk", "contours": ["arch", "fall", "wave", "step", "valley"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.3, "size": 1.8 }, "echo": { "amount": 0.14, "beats": 0.75, "feedback": 0.22 }, "lowMid": -4.5, "presence": 3.5 }
-    },
-    "othertowns": {
-      "name": "Other towns", "inDemo": false, "note": "same family, different key and lead",
-      "harmony": "major", "scale": "mixolydian", "keys": ["F", "Bb", "E", "Eb"], "bpm": [80, 92], "meters": [4, 3],
-      "forms": [["A", "A2", "B", "A3"], ["A", "B", "A2", "C", "A3"]],
-      "lead": ["softsquare", "reed", "triangle"], "pad": ["pad"], "bass": "bass",
-      "backings": ["arpRoll", "twoFour", "offbeat", "pulse"], "bassStyles": ["rootFifth", "hold", "walkDots"], "perc": ["none", "shaker"],
-      "melody": { "low": 62, "high": 79, "rhythm": "walk", "contours": ["arch", "wave", "fall", "step"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.28, "size": 1.7 }, "lowMid": -4.5, "presence": 3.5 }
-    },
-    "route": {
-      "name": "Route", "inDemo": true, "note": "walking tempo, wandering melody, light backing",
-      "harmony": "major", "scale": "major", "keys": ["G", "D", "A", "E", "C"], "bpm": [92, 108], "meters": [4],
-      "forms": [["A", "A2", "B", "A3"], ["A", "B", "A2", "C", "A3"]],
-      "lead": ["triangle", "flute"], "pad": ["none", "pad"], "bass": "bass",
-      "backings": ["pulse", "arpRoll", "arpUp", "sparseHigh", "offbeat"], "bassStyles": ["rootFifth", "syncopated", "walkDots", "twoFeel"], "perc": ["none", "shaker", "softWalk"],
-      "melody": { "low": 62, "high": 81, "rhythm": "walk", "contours": ["wave", "rise", "step", "valley", "arch"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.24, "size": 1.6 }, "echo": { "amount": 0.16, "beats": 0.75, "feedback": 0.2 }, "lowMid": -4.5, "presence": 3.5 }
-    },
-    "woods": {
-      "name": "Woods", "inDemo": false, "note": "minor, a little slower, sine and held strings",
-      "harmony": "minor", "scale": "dorian", "keys": ["E", "A", "D", "B"], "bpm": [70, 82], "meters": [4, 3],
-      "forms": [["A", "A2", "B", "A3"]],
-      "lead": ["flute"], "pad": ["strings"], "bass": "bass",
-      "backings": ["arpRoll", "sparseHigh", "arpUp", "held"], "bassStyles": ["hold", "twoFeel"], "perc": ["none"],
-      "melody": { "low": 60, "high": 77, "rhythm": "calm", "contours": ["fall", "valley", "arch", "wave"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.38, "size": 2.4 }, "echo": { "amount": 0.2, "beats": 1, "feedback": 0.3 }, "lowMid": -4.5, "presence": 2.5 }
-    },
-    "cave": {
-      "name": "Cave", "inDemo": false, "note": "slow and sparse, lots of echo, bell and sine, no arpeggio",
-      "harmony": "minor", "scale": "minor", "keys": ["C", "F", "G", "A"], "bpm": [56, 66], "meters": [4], "chordBars": 2,
-      "forms": [["A", "B", "A2"]],
-      "lead": ["bell", "flute"], "pad": ["pad"], "bass": "bass",
-      "backings": ["sparseHigh", "held"], "bassStyles": ["hold"], "perc": ["none"],
-      "melody": { "low": 60, "high": 79, "rhythm": "sparse", "contours": ["fall", "valley", "wave"], "maxLeap": 9 },
-      "fx": { "room": { "amount": 0.55, "size": 3.2 }, "echo": { "amount": 0.42, "beats": 1.5, "feedback": 0.46 }, "lowMid": -4, "presence": 1 }
-    },
-    "mountain": {
-      "name": "Cold mountain", "inDemo": false, "note": "slow, open, high but quiet, slow strings, thin bass",
-      "harmony": "minor", "scale": "dorian", "keys": ["D", "E", "B", "F#"], "bpm": [60, 70], "meters": [4, 3], "chordBars": 2,
-      "forms": [["A", "B", "A2"]],
-      "lead": ["flute", "triangle"], "pad": ["strings"], "bass": "bass", "bassLevel": 0.55,
-      "backings": ["held", "sparseHigh"], "bassStyles": ["hold"], "perc": ["none"],
-      "melody": { "low": 67, "high": 84, "rhythm": "sparse", "contours": ["fall", "arch", "step"], "maxLeap": 9 },
-      "fx": { "room": { "amount": 0.46, "size": 3.0 }, "echo": { "amount": 0.24, "beats": 1, "feedback": 0.34 }, "lowMid": -5, "presence": 2 }
-    },
-    "indoors": {
-      "name": "Indoors", "inDemo": true, "note": "gentle and small, bell or music box",
-      "harmony": "major", "scale": "major", "keys": ["F", "C", "G", "Bb"], "bpm": [72, 88], "meters": [3, 4],
-      "forms": [["A", "A2", "B", "A3"]],
-      "lead": ["bell", "triangle"], "pad": ["none", "pad"], "bass": "bass", "bassLevel": 0.7,
-      "backings": ["arpUp", "pulse", "twoFour", "arpRoll"], "bassStyles": ["hold", "twoFeel"], "perc": ["none"],
-      "melody": { "low": 67, "high": 86, "rhythm": "calm", "contours": ["arch", "fall", "wave", "step"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.16, "size": 0.9 }, "lowMid": -4, "presence": 2.5 }
-    },
-    "battle": {
-      "name": "Battle", "inDemo": true, "note": "fast and driving, a little brighter",
-      "harmony": "minor", "scale": "minor", "keys": ["E", "A", "D", "G", "B"], "bpm": [138, 156], "meters": [4],
-      "forms": [["A", "B", "A2", "C", "A3"]],
-      "lead": ["softsquare", "reed"], "pad": ["none", "pad"], "bass": "bass", "bassLevel": 0.72,
-      "backings": ["drive8", "gallop", "arp16", "stabs"], "bassStyles": ["pulse8", "syncopated", "octaves"], "perc": ["drive", "driveLight", "shuffle"],
-      "melody": { "low": 62, "high": 81, "rhythm": "drive", "contours": ["arch", "rise", "wave", "step", "fall"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.14, "size": 1.0 }, "lowMid": -3.5, "presence": 4 }
-    },
-    "fair": {
-      "name": "Fair", "inDemo": true, "note": "evening on the Green, lively and warm",
-      "harmony": "major", "scale": "mixolydian", "keys": ["G", "D", "A", "C"], "bpm": [108, 124], "meters": [3, 4], "swing": 0.2,
-      "forms": [["A", "A2", "B", "A3"], ["A", "B", "A2", "C", "A3"]],
-      "lead": ["reed", "softsquare", "flute"], "pad": ["none", "pad"], "bass": "bass",
-      "backings": ["twoFour", "offbeat", "arpRoll"], "bassStyles": ["rootFifth", "walkDots"], "perc": ["softWalk", "shaker"],
-      "melody": { "low": 62, "high": 81, "rhythm": "walk", "contours": ["arch", "wave", "step", "rise"], "maxLeap": 7 },
-      "fx": { "room": { "amount": 0.24, "size": 1.6 }, "lowMid": -4, "presence": 3.5 }
-    }
+  "minor": {
+   "A": [
+    "im9 bVImaj7 ivm9 vm7",
+    "im7 ivm9 bVIIadd9 bIIImaj7",
+    "im9 bVIIsus2 bVImaj7 vm7",
+    "imadd9 ivm7 bVImaj9 bVIIsus4",
+    "im7 bIIImaj7 ivm9 bVIIsus2",
+    "im9 vm7 bVImaj7 ivm9",
+    "imadd9 bVIIadd9 ivm7 vm7",
+    "im7 bVImaj9 bIIImaj7 bVIIsus4"
+   ],
+   "B": [
+    "bVImaj7 bIIImaj7 ivm9 vm7",
+    "bIIImaj9 bVIIadd9 ivm9 im7",
+    "ivm9 bVIIsus4 bIIImaj7 bVImaj7",
+    "bVImaj9 vm7 ivm7 bVIIsus4",
+    "bVIIadd9 bVImaj7 vm7 im9",
+    "ivm7 bVImaj7 bVIIsus2 vm7"
+   ]
   }
+ },
+ "rhythm": {
+  "calm": {
+   "4": [
+    [
+     1.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     1
+    ],
+    [
+     1,
+     0.5,
+     0.5,
+     2
+    ],
+    [
+     0.5,
+     0.5,
+     1,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     -1,
+     1,
+     1,
+     1
+    ],
+    [
+     -0.5,
+     0.5,
+     1,
+     2
+    ],
+    [
+     1.5,
+     0.5,
+     2
+    ]
+   ],
+   "3": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1.5,
+     0.5,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     -1,
+     1,
+     1
+    ]
+   ]
+  },
+  "walk": {
+   "4": [
+    [
+     1,
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     0.5,
+     0.5,
+     1,
+     1,
+     1
+    ],
+    [
+     1.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0.5,
+     0.5,
+     1
+    ],
+    [
+     0.5,
+     1,
+     0.5,
+     2
+    ],
+    [
+     -0.5,
+     0.5,
+     0.5,
+     0.5,
+     2
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     0.75,
+     0.25,
+     1,
+     2
+    ]
+   ],
+   "3": [
+    [
+     1,
+     0.5,
+     0.5,
+     1
+    ],
+    [
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     1.5,
+     0.5,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     -1,
+     0.5,
+     0.5,
+     1
+    ]
+   ]
+  },
+  "sparse": {
+   "4": [
+    [
+     4
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     -2,
+     2
+    ],
+    [
+     -1,
+     3
+    ],
+    [
+     2,
+     -1,
+     1
+    ]
+   ],
+   "3": [
+    [
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     -1,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ]
+  },
+  "drive": {
+   "4": [
+    [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     0.75,
+     0.75,
+     0.5,
+     1,
+     1
+    ],
+    [
+     1,
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     0.5,
+     0.5,
+     1,
+     0.5,
+     0.5,
+     1
+    ],
+    [
+     0.25,
+     0.25,
+     0.5,
+     1,
+     2
+    ],
+    [
+     -0.5,
+     0.5,
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     0.75,
+     0.75,
+     1.5,
+     1
+    ]
+   ],
+   "3": [
+    [
+     0.5,
+     0.5,
+     1,
+     1
+    ],
+    [
+     1,
+     0.5,
+     0.5,
+     1
+    ],
+    [
+     0.75,
+     0.75,
+     1.5
+    ]
+   ]
+  }
+ },
+ "cadence": {
+  "4": [
+   [
+    3,
+    -1
+   ],
+   [
+    2,
+    1,
+    -1
+   ],
+   [
+    1,
+    2,
+    -1
+   ],
+   [
+    0.5,
+    0.5,
+    2,
+    -1
+   ],
+   [
+    2,
+    -2
+   ],
+   [
+    1.5,
+    0.5,
+    1,
+    -1
+   ]
+  ],
+  "3": [
+   [
+    2,
+    -1
+   ],
+   [
+    1,
+    1,
+    -1
+   ],
+   [
+    0.5,
+    0.5,
+    1,
+    -1
+   ]
+  ]
+ },
+ "contours": {
+  "fall": [
+   0.9,
+   0.3,
+   -0.2,
+   -0.8
+  ],
+  "arch": [
+   -0.4,
+   0.5,
+   0.9,
+   -0.3
+  ],
+  "rise": [
+   -0.8,
+   -0.2,
+   0.7,
+   0.1
+  ],
+  "valley": [
+   0.5,
+   -0.6,
+   -0.4,
+   0.4
+  ],
+  "wave": [
+   0.2,
+   0.8,
+   -0.3,
+   0.1
+  ],
+  "step": [
+   -0.5,
+   0.0,
+   0.5,
+   -0.4
+  ]
+ },
+ "places": {
+  "town": {
+   "name": "Town",
+   "inDemo": true,
+   "note": "major, easy walking pace",
+   "harmony": "major",
+   "scale": "major",
+   "keys": [
+    "D",
+    "G",
+    "C",
+    "A"
+   ],
+   "bpm": [
+    84,
+    96
+   ],
+   "meters": [
+    4,
+    4,
+    3
+   ],
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ],
+    [
+     "A",
+     "B",
+     "A2",
+     "C",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "flute",
+    "triangle"
+   ],
+   "pad": [
+    "pad"
+   ],
+   "bass": "bass",
+   "backings": [
+    "arpUp",
+    "offbeat",
+    "twoFour",
+    "arpRoll",
+    "pulse"
+   ],
+   "bassStyles": [
+    "rootFifth",
+    "walkDots",
+    "hold"
+   ],
+   "perc": [
+    "none",
+    "shaker",
+    "softWalk"
+   ],
+   "melody": {
+    "low": 62,
+    "high": 79,
+    "rhythm": "walk",
+    "contours": [
+     "arch",
+     "fall",
+     "wave",
+     "step",
+     "valley"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.5,
+     "size": 2.6,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2
+   }
+  },
+  "othertowns": {
+   "name": "Other towns",
+   "inDemo": false,
+   "note": "same family, different key and lead",
+   "harmony": "major",
+   "scale": "mixolydian",
+   "keys": [
+    "F",
+    "Bb",
+    "E",
+    "Eb"
+   ],
+   "bpm": [
+    80,
+    92
+   ],
+   "meters": [
+    4,
+    3
+   ],
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ],
+    [
+     "A",
+     "B",
+     "A2",
+     "C",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "softsquare",
+    "reed",
+    "triangle"
+   ],
+   "pad": [
+    "pad"
+   ],
+   "bass": "bass",
+   "backings": [
+    "arpRoll",
+    "twoFour",
+    "offbeat",
+    "pulse"
+   ],
+   "bassStyles": [
+    "rootFifth",
+    "hold",
+    "walkDots"
+   ],
+   "perc": [
+    "none",
+    "shaker"
+   ],
+   "melody": {
+    "low": 62,
+    "high": 79,
+    "rhythm": "walk",
+    "contours": [
+     "arch",
+     "wave",
+     "fall",
+     "step"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.5,
+     "size": 2.6,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2
+   }
+  },
+  "route": {
+   "name": "Route",
+   "inDemo": true,
+   "note": "walking tempo, wandering melody, light backing",
+   "harmony": "major",
+   "scale": "major",
+   "keys": [
+    "G",
+    "D",
+    "A",
+    "E",
+    "C"
+   ],
+   "bpm": [
+    92,
+    108
+   ],
+   "meters": [
+    4
+   ],
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ],
+    [
+     "A",
+     "B",
+     "A2",
+     "C",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "triangle",
+    "flute"
+   ],
+   "pad": [
+    "none",
+    "pad"
+   ],
+   "bass": "bass",
+   "backings": [
+    "pulse",
+    "arpRoll",
+    "arpUp",
+    "sparseHigh",
+    "offbeat"
+   ],
+   "bassStyles": [
+    "rootFifth",
+    "syncopated",
+    "walkDots",
+    "twoFeel"
+   ],
+   "perc": [
+    "none",
+    "shaker",
+    "softWalk"
+   ],
+   "melody": {
+    "low": 62,
+    "high": 81,
+    "rhythm": "walk",
+    "contours": [
+     "wave",
+     "rise",
+     "step",
+     "valley",
+     "arch"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.42,
+     "size": 2.2,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2
+   }
+  },
+  "woods": {
+   "name": "Woods",
+   "inDemo": false,
+   "note": "minor, a little slower, sine and held strings",
+   "harmony": "minor",
+   "scale": "dorian",
+   "keys": [
+    "E",
+    "A",
+    "D",
+    "B"
+   ],
+   "bpm": [
+    70,
+    82
+   ],
+   "meters": [
+    4,
+    3
+   ],
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "flute"
+   ],
+   "pad": [
+    "strings"
+   ],
+   "bass": "bass",
+   "backings": [
+    "arpRoll",
+    "sparseHigh",
+    "arpUp",
+    "held"
+   ],
+   "bassStyles": [
+    "hold",
+    "twoFeel"
+   ],
+   "perc": [
+    "none"
+   ],
+   "melody": {
+    "low": 60,
+    "high": 77,
+    "rhythm": "calm",
+    "contours": [
+     "fall",
+     "valley",
+     "arch",
+     "wave"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.6,
+     "size": 3,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2,
+    "echo": {
+     "amount": 0.14,
+     "beats": 1,
+     "feedback": 0.26
+    }
+   }
+  },
+  "cave": {
+   "name": "Cave",
+   "inDemo": false,
+   "note": "slow and sparse, lots of echo, bell and sine, no arpeggio",
+   "harmony": "minor",
+   "scale": "minor",
+   "keys": [
+    "C",
+    "F",
+    "G",
+    "A"
+   ],
+   "bpm": [
+    56,
+    66
+   ],
+   "meters": [
+    4
+   ],
+   "chordBars": 2,
+   "forms": [
+    [
+     "A",
+     "B",
+     "A2"
+    ]
+   ],
+   "lead": [
+    "bell",
+    "flute"
+   ],
+   "pad": [
+    "pad"
+   ],
+   "bass": "bass",
+   "backings": [
+    "sparseHigh",
+    "held"
+   ],
+   "bassStyles": [
+    "hold"
+   ],
+   "perc": [
+    "none"
+   ],
+   "melody": {
+    "low": 60,
+    "high": 79,
+    "rhythm": "sparse",
+    "contours": [
+     "fall",
+     "valley",
+     "wave"
+    ],
+    "maxLeap": 9
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.8,
+     "size": 3.2,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2,
+    "echo": {
+     "amount": 0.34,
+     "beats": 1.5,
+     "feedback": 0.42
+    }
+   }
+  },
+  "mountain": {
+   "name": "Cold mountain",
+   "inDemo": false,
+   "note": "slow, open, high but quiet, slow strings, thin bass",
+   "harmony": "minor",
+   "scale": "dorian",
+   "keys": [
+    "D",
+    "E",
+    "B",
+    "F#"
+   ],
+   "bpm": [
+    60,
+    70
+   ],
+   "meters": [
+    4,
+    3
+   ],
+   "chordBars": 2,
+   "forms": [
+    [
+     "A",
+     "B",
+     "A2"
+    ]
+   ],
+   "lead": [
+    "flute",
+    "triangle"
+   ],
+   "pad": [
+    "strings"
+   ],
+   "bass": "bass",
+   "bassLevel": 0.55,
+   "backings": [
+    "held",
+    "sparseHigh"
+   ],
+   "bassStyles": [
+    "hold"
+   ],
+   "perc": [
+    "none"
+   ],
+   "melody": {
+    "low": 67,
+    "high": 84,
+    "rhythm": "sparse",
+    "contours": [
+     "fall",
+     "arch",
+     "step"
+    ],
+    "maxLeap": 9
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.7,
+     "size": 3,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2,
+    "echo": {
+     "amount": 0.2,
+     "beats": 1,
+     "feedback": 0.3
+    }
+   }
+  },
+  "indoors": {
+   "name": "Indoors",
+   "inDemo": true,
+   "note": "gentle and small, bell or music box",
+   "harmony": "major",
+   "scale": "major",
+   "keys": [
+    "F",
+    "C",
+    "G",
+    "Bb"
+   ],
+   "bpm": [
+    72,
+    88
+   ],
+   "meters": [
+    3,
+    4
+   ],
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "bell",
+    "triangle"
+   ],
+   "pad": [
+    "none",
+    "pad"
+   ],
+   "bass": "bass",
+   "bassLevel": 0.7,
+   "backings": [
+    "arpUp",
+    "pulse",
+    "twoFour",
+    "arpRoll"
+   ],
+   "bassStyles": [
+    "hold",
+    "twoFeel"
+   ],
+   "perc": [
+    "none"
+   ],
+   "melody": {
+    "low": 67,
+    "high": 86,
+    "rhythm": "calm",
+    "contours": [
+     "arch",
+     "fall",
+     "wave",
+     "step"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.3,
+     "size": 1.2,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2
+   }
+  },
+  "battle": {
+   "name": "Battle",
+   "inDemo": true,
+   "note": "fast and driving, a little brighter",
+   "harmony": "minor",
+   "scale": "minor",
+   "keys": [
+    "E",
+    "A",
+    "D",
+    "G",
+    "B"
+   ],
+   "bpm": [
+    138,
+    156
+   ],
+   "meters": [
+    4
+   ],
+   "forms": [
+    [
+     "A",
+     "B",
+     "A2",
+     "C",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "softsquare",
+    "reed"
+   ],
+   "pad": [
+    "none",
+    "pad"
+   ],
+   "bass": "bass",
+   "bassLevel": 0.72,
+   "backings": [
+    "drive8",
+    "gallop",
+    "arp16",
+    "stabs"
+   ],
+   "bassStyles": [
+    "pulse8",
+    "syncopated",
+    "octaves"
+   ],
+   "perc": [
+    "drive",
+    "driveLight",
+    "shuffle"
+   ],
+   "melody": {
+    "low": 62,
+    "high": 81,
+    "rhythm": "drive",
+    "contours": [
+     "arch",
+     "rise",
+     "wave",
+     "step",
+     "fall"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "room": {
+     "amount": 0.14,
+     "size": 1.0
+    },
+    "lowMid": -3.5,
+    "presence": 4
+   }
+  },
+  "fair": {
+   "name": "Fair",
+   "inDemo": true,
+   "note": "evening on the Green, lively and warm",
+   "harmony": "major",
+   "scale": "mixolydian",
+   "keys": [
+    "G",
+    "D",
+    "A",
+    "C"
+   ],
+   "bpm": [
+    108,
+    124
+   ],
+   "meters": [
+    3,
+    4
+   ],
+   "swing": 0.2,
+   "forms": [
+    [
+     "A",
+     "A2",
+     "B",
+     "A3"
+    ],
+    [
+     "A",
+     "B",
+     "A2",
+     "C",
+     "A3"
+    ]
+   ],
+   "lead": [
+    "reed",
+    "softsquare",
+    "flute"
+   ],
+   "pad": [
+    "none",
+    "pad"
+   ],
+   "bass": "bass",
+   "backings": [
+    "twoFour",
+    "offbeat",
+    "arpRoll"
+   ],
+   "bassStyles": [
+    "rootFifth",
+    "walkDots"
+   ],
+   "perc": [
+    "softWalk",
+    "shaker"
+   ],
+   "melody": {
+    "low": 62,
+    "high": 81,
+    "rhythm": "walk",
+    "contours": [
+     "arch",
+     "wave",
+     "step",
+     "rise"
+    ],
+    "maxLeap": 7
+   },
+   "fx": {
+    "dry": 1,
+    "room": {
+     "amount": 0.42,
+     "size": 2.2,
+     "low": 0,
+     "high": 2500,
+     "q": 1,
+     "plain": true
+    },
+    "lowMid": -2
+   }
+  }
+ }
 }

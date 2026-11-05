@@ -1,18 +1,18 @@
 {
   "highShare": {
-    "min": 0.8,
+    "min": 0,
     "max": 7
   },
   "lowShare": {
-    "min": 18,
-    "max": 66
+    "min": 30,
+    "max": 88
   },
   "mud": {
-    "max": 3.2
+    "max": 6
   },
   "rms": {
-    "min": -34,
-    "max": -14
+    "min": -28,
+    "max": -10
   },
   "peak": {
     "max": -1

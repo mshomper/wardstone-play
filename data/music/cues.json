@@ -1,9 +1,84 @@
 {
   "cues": {
-    "title": { "play": "title", "fade": 2.5 },
-    "leave_title": { "stop": true, "fade": 2.5, "from": "title" },
-    "battle_start": { "push": "battle", "fade": 0.4 },
-    "battle_end": { "pop": true, "fade": 1.5, "from": "battle" }
+    "title": {
+      "play": "title",
+      "fade": 2.5
+    },
+    "leave_title": {
+      "stop": true,
+      "fade": 2.5,
+      "from": "title"
+    },
+    "battle_start": {
+      "push": "battle",
+      "fade": 0.4
+    },
+    "battle_end": {
+      "pop": true,
+      "fade": 1.5,
+      "from": "battle"
+    },
+    "breach_quiet": {
+      "stop": true,
+      "fade": 3
+    },
+    "boss_start": {
+      "play": "boss",
+      "fade": 1
+    },
+    "bloom_silence": {
+      "silence": true,
+      "from": "boss"
+    },
+    "bloom_resolve": {
+      "play": "glacial-bloom",
+      "fade": 0.01,
+      "from": "boss"
+    },
+    "ending": {
+      "play": "ending",
+      "fade": 2
+    },
+    "win": {
+      "jingle": "jingle-win",
+      "duck": 0.25
+    },
+    "lose": {
+      "jingle": "jingle-lose",
+      "duck": 0.25
+    },
+    "levelup": {
+      "jingle": "jingle-levelup",
+      "duck": 0.25
+    },
+    "item": {
+      "jingle": "jingle-item",
+      "duck": 0.5
+    },
+    "quest": {
+      "jingle": "jingle-quest",
+      "duck": 0.4
+    }
   },
-  "areas": {}
+  "areas": {
+    "green-frame": "town",
+    "green-a": "town",
+    "kit-street": "town",
+    "church": "indoors",
+    "colonial-north": "indoors",
+    "colonial-north-upper": "indoors",
+    "colonial-west": "indoors",
+    "colonial-west-upper": "indoors",
+    "farmhouse-south": "indoors",
+    "farmhouse-west": "indoors",
+    "mill-press": "indoors",
+    "store-ground": "indoors",
+    "store-upper": "indoors",
+    "orchard": "route",
+    "brook-woods": "route",
+    "south-fields": "route",
+    "alder-hollow": "route",
+    "autumn-glade": "route",
+    "green-frame:fair": "fair"
+  }
 }

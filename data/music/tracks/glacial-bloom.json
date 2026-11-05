@@ -1,0 +1,208 @@
+{
+ "version": 1,
+ "id": "glacial-bloom",
+ "name": "Glacial Bloom, the resolve",
+ "take": "glacial",
+ "bpm": 66,
+ "beats": 4,
+ "key": "D major",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.65,
+   "size": 2.6,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -2
+ },
+ "parts": {
+  "lead": {
+   "inst": "bell"
+  },
+  "bell": {
+   "inst": "bell"
+  }
+ },
+ "patterns": {
+  "pad": {
+   "inst": "pad",
+   "voicing": {
+    "range": [
+     50,
+     69
+    ],
+    "n": 4
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.85
+    ]
+   ]
+  },
+  "strings": {
+   "inst": "strings",
+   "voicing": {
+    "range": [
+     62,
+     74
+    ],
+    "n": 3
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.7
+    ]
+   ]
+  },
+  "bass": {
+   "inst": "bass",
+   "steps": [
+    [
+     "r",
+     0,
+     3.6,
+     0.6
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "resolve": {
+   "level": 0.95,
+   "ramp": 3,
+   "patterns": [
+    "pad",
+    "strings",
+    "bass"
+   ],
+   "bars": [
+    {
+     "c": "Asus4",
+     "n": {
+      "bell": [
+       [
+        81,
+        0,
+        4,
+        0.6
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dmaj7",
+     "n": {
+      "lead": [
+       [
+        81,
+        0,
+        1.5,
+        0.9
+       ],
+       [
+        79,
+        1.5,
+        0.5,
+        0.81
+       ],
+       [
+        76,
+        2,
+        1,
+        0.81
+       ],
+       [
+        74,
+        3,
+        1,
+        0.81
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Gmaj9",
+     "n": {
+      "lead": [
+       [
+        76,
+        0,
+        3.5,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "A",
+     "n": {
+      "lead": [
+       [
+        73,
+        0,
+        2,
+        0.9
+       ],
+       [
+        76,
+        2,
+        2,
+        0.81
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dadd9",
+     "n": {
+      "lead": [
+       [
+        74,
+        0,
+        4,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dadd9",
+     "n": {
+      "bell": [
+       [
+        78,
+        0,
+        3,
+        0.45
+       ],
+       [
+        81,
+        1,
+        3,
+        0.4
+       ],
+       [
+        86,
+        2,
+        3,
+        0.35
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "form": [
+  "resolve"
+ ]
+}

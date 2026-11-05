@@ -1,0 +1,90 @@
+{
+ "version": 1,
+ "id": "jingle-item",
+ "name": "Item found",
+ "take": "jingle-item",
+ "bpm": 120,
+ "beats": 4,
+ "key": "",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.5,
+   "size": 2.6,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -2
+ },
+ "parts": {
+  "lead": {
+   "inst": "bell"
+  },
+  "bell": {
+   "inst": "bell"
+  }
+ },
+ "patterns": {
+  "pad": {
+   "inst": "pad",
+   "voicing": {
+    "range": [
+     50,
+     67
+    ],
+    "n": 4
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.8
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "j": {
+   "level": 1,
+   "ramp": 0,
+   "patterns": [
+    "pad"
+   ],
+   "bars": [
+    {
+     "c": "Gadd9",
+     "n": {
+      "lead": [
+       [
+        71,
+        0,
+        0.5,
+        0.8
+       ],
+       [
+        74,
+        0.5,
+        2.5,
+        0.9
+       ]
+      ],
+      "bell": [
+       [
+        83,
+        0.5,
+        2.5,
+        0.6
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "form": [
+  "j"
+ ]
+}

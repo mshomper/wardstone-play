@@ -1847,5 +1847,188 @@
   "place": "battle",
   "seed": 2005,
   "note": "A minor, 139 beats a minute. Plays in every ordinary fight."
+ },
+ "sounds": {
+  "bass": {
+   "name": "Round sine bass",
+   "layers": [
+    {
+     "harmonics": [
+      1,
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "env": {
+    "attack": 0.02,
+    "decay": 0.5,
+    "sustain": 0.7,
+    "release": 0.22
+   },
+   "filters": [
+    {
+     "type": "highpass",
+     "freq": 36,
+     "q": 0.5
+    },
+    {
+     "type": "lowpass",
+     "freq": 620,
+     "q": 0.3
+    }
+   ],
+   "level": 0.2,
+   "send": 0.0,
+   "loose": 0.5
+  },
+  "pluck": {
+   "name": "Soft pluck",
+   "layers": [
+    {
+     "harmonics": [
+      1,
+      0.5,
+      0.32,
+      0.2,
+      0.13,
+      0.08,
+      0.05,
+      0.03
+     ]
+    }
+   ],
+   "env": {
+    "attack": 0.003,
+    "decay": 0.7,
+    "sustain": 0,
+    "release": 0.12
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 6500,
+     "q": 0.4,
+     "to": 2800,
+     "time": 0.3
+    }
+   ],
+   "level": 0.2,
+   "pan": -0.2,
+   "send": 0.36,
+   "echo": 0.1
+  },
+  "shaker": {
+   "name": "Light shaker",
+   "layers": [
+    {
+     "noise": true
+    }
+   ],
+   "env": {
+    "attack": 0.002,
+    "decay": 0.07,
+    "sustain": 0,
+    "release": 0.03
+   },
+   "filters": [
+    {
+     "type": "highpass",
+     "freq": 5200,
+     "q": 0.5
+    }
+   ],
+   "level": 0.035,
+   "pan": 0.15,
+   "send": 0.08,
+   "fixed": 60,
+   "loose": 0.5
+  },
+  "softsquare": {
+   "name": "Soft square",
+   "layers": [
+    {
+     "harmonics": [
+      1,
+      0,
+      0.2,
+      0,
+      0.08,
+      0,
+      0.035,
+      0,
+      0.012
+     ]
+    }
+   ],
+   "env": {
+    "attack": 0.01,
+    "decay": 0.25,
+    "sustain": 0.6,
+    "release": 0.16
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 3200,
+     "q": 0.3
+    }
+   ],
+   "vibrato": {
+    "rate": 5.4,
+    "cents": 9,
+    "delay": 0.38,
+    "rise": 0.35,
+    "minLen": 0.7
+   },
+   "level": 0.17,
+   "pan": 0.08,
+   "send": 0.24,
+   "echo": 0.14,
+   "loose": 1.1
+  },
+  "tap": {
+   "name": "Soft tap",
+   "layers": [
+    {
+     "noise": true
+    }
+   ],
+   "env": {
+    "attack": 0.002,
+    "decay": 0.13,
+    "sustain": 0,
+    "release": 0.04
+   },
+   "filters": [
+    {
+     "type": "bandpass",
+     "freq": 1900,
+     "q": 0.7
+    }
+   ],
+   "level": 0.11,
+   "send": 0.2,
+   "fixed": 60,
+   "loose": 0.5
+  },
+  "thump": {
+   "name": "Soft thump",
+   "layers": [
+    {
+     "pitchFrom": 2.2,
+     "pitchTime": 0.05
+    }
+   ],
+   "env": {
+    "attack": 0.002,
+    "decay": 0.2,
+    "sustain": 0,
+    "release": 0.04
+   },
+   "level": 0.22,
+   "fixed": 33,
+   "loose": 0.4
+  }
  }
 }

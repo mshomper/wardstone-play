@@ -1,0 +1,112 @@
+{
+ "version": 1,
+ "id": "jingle-quest",
+ "name": "Quest complete",
+ "take": "jingle-quest",
+ "bpm": 112,
+ "beats": 4,
+ "key": "",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.5,
+   "size": 2.6,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -2
+ },
+ "parts": {
+  "lead": {
+   "inst": "flute"
+  },
+  "bell": {
+   "inst": "bell"
+  }
+ },
+ "patterns": {
+  "pad": {
+   "inst": "pad",
+   "voicing": {
+    "range": [
+     50,
+     67
+    ],
+    "n": 4
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.8
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "j": {
+   "level": 1,
+   "ramp": 0,
+   "patterns": [
+    "pad"
+   ],
+   "bars": [
+    {
+     "c": "Dmaj7",
+     "n": {
+      "lead": [
+       [
+        69,
+        0,
+        1.5,
+        1
+       ],
+       [
+        67,
+        1.5,
+        0.5,
+        0.88
+       ],
+       [
+        64,
+        2,
+        1,
+        0.88
+       ],
+       [
+        62,
+        3,
+        1,
+        0.88
+       ],
+       [
+        74,
+        4,
+        3,
+        1
+       ]
+      ],
+      "bell": [
+       [
+        86,
+        4,
+        3,
+        0.5
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dadd9",
+     "n": {}
+    }
+   ]
+  }
+ },
+ "form": [
+  "j"
+ ]
+}

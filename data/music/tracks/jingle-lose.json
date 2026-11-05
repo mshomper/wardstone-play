@@ -1,0 +1,88 @@
+{
+ "version": 1,
+ "id": "jingle-lose",
+ "name": "Fight lost",
+ "take": "jingle-lose",
+ "bpm": 70,
+ "beats": 4,
+ "key": "",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.5,
+   "size": 2.6,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -2
+ },
+ "parts": {
+  "lead": {
+   "inst": "flute"
+  },
+  "bell": {
+   "inst": "bell"
+  }
+ },
+ "patterns": {
+  "pad": {
+   "inst": "pad",
+   "voicing": {
+    "range": [
+     50,
+     67
+    ],
+    "n": 4
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.8
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "j": {
+   "level": 1,
+   "ramp": 0,
+   "patterns": [
+    "pad"
+   ],
+   "bars": [
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        69,
+        0,
+        1.5,
+        0.9
+       ],
+       [
+        65,
+        1.5,
+        0.5,
+        0.85
+       ],
+       [
+        62,
+        2,
+        2,
+        0.85
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "form": [
+  "j"
+ ]
+}
