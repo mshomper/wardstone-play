@@ -1,0 +1,92 @@
+{
+ "id": "tin-whistle",
+ "title": "The Tin Whistle",
+ "side": true,
+ "blurb": "Pip Danforth had a whistle. It was tin. It was his.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "It was tin",
+   "objective": "",
+   "done": {
+    "flags": [
+     "whistle_asked"
+    ]
+   },
+   "auto": [
+    {
+     "go": "south-fields",
+     "if": {
+      "timeTo": 18.5
+     }
+    },
+    {
+     "talk": "pip"
+    }
+   ],
+   "sets": [
+    "whistle_asked"
+   ]
+  },
+  {
+   "id": "look",
+   "title": "It was tin",
+   "objective": "Look for Pip's whistle in the south fields stubble, over toward the wall.",
+   "done": {
+    "flags": [
+     "has_whistle"
+    ]
+   },
+   "skip": {
+    "area": "south-fields"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "use": "pip_whistle"
+    }
+   ],
+   "sets": [
+    "has_whistle"
+   ]
+  },
+  {
+   "id": "give",
+   "title": "A little flatter",
+   "objective": "Give Pip his whistle back. He is behind the ox.",
+   "done": {
+    "flags": [
+     "whistle_done"
+    ]
+   },
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Give Pip his whistle back. He is on the Green, up past his bedtime."
+    }
+   ],
+   "skip": {
+    "area": "south-fields",
+    "spot": "Pip's whistle"
+   },
+   "auto": [
+    {
+     "go": "green-frame",
+     "if": {
+      "timeFrom": 18.5
+     }
+    },
+    {
+     "talk": "pip"
+    }
+   ],
+   "sets": [
+    "whistle_done"
+   ]
+  }
+ ]
+}

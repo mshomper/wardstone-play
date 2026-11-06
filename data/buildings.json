@@ -603,7 +603,26 @@
         "window": "window_small",
         "door": "door_barn",
         "spacing": 3
-      }
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "stable",
+              "share": 100,
+              "public": true
+            }
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "loft",
+              "share": 100
+            }
+          ]
+        }
+      ]
     },
     "store": {
       "storeys": 2,
@@ -705,6 +724,69 @@
               "wing"
             ]
           ]
+        }
+      ]
+    },
+    "sugarhouse": {
+      "storeys": 1,
+      "pitch": 1.25,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "board_gray",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.2
+      },
+      "landmarks": [
+        {
+          "kind": "vent",
+          "length": 3.2
+        }
+      ],
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "sugaring",
+              "share": 100,
+              "public": true
+            }
+          ]
+        }
+      ]
+    },
+    "vault": {
+      "storeys": 1,
+      "pitch": 0.55,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "fieldstone",
+        "roof": "slate_roof",
+        "foundation": "fieldstone",
+        "gable": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 3,
+        "noWindows": true
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "vault",
+              "share": 100,
+              "public": true
+            }
+          ],
+          "windows": false
         }
       ]
     }

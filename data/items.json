@@ -5,6 +5,8 @@
     "person": "jasper_crane",
     "takes": 0.6,
     "sells": 1.5,
+    "buysGear": 0.25,
+    "gearWorth": { "homespun": 8, "stout": 20, "sunday": 50, "heirloom": 120, "oldwork": 300 },
     "stock": {
       "apple_fritter": 3, "warm_cider": 3, "maple_candy": 3, "johnnycake": 2, "peppermint_drop": 2,
       "mulled_cider": 1, "birch_tonic": 1, "hearth_stew": 1, "chicken_pie": 1,
@@ -18,10 +20,14 @@
       "over": "Generous. I don't make change, you understand. It upsets the books.",
       "giveonly": "A gift? For me? Name something you want, friend, or I'll start to feel guilty.",
       "done": "Pleasure. We never met.",
-      "soldout": "That's the last of it. More when the wind changes. Rest a while."
+      "soldout": "That's the last of it. More when the wind changes. Rest a while.",
+      "dear": "A piece like that doesn't come back, friend. Say so once more and it's mine."
     }
   },
   "items": [
+    {"id": "maple_sugar", "name": "Maple Sugar", "icon": "leaf", "kind": "trade", "desc": "Hard sugar in a twist of paper. It keeps, and it travels.", "value": 6},
+    {"id": "goose_down", "name": "Goose Down", "icon": "quill", "kind": "trade", "desc": "A handful of the softest thing in Kettle Notch, off the worst-tempered bird in it.", "value": 5},
+    {"id": "sermon_notes", "name": "Sermon Notes", "icon": "almanac", "kind": "trade", "desc": "The seventh page, cut. Nobody will miss it, and that's a pity.", "value": 5},
     { "id": "apple_fritter", "name": "Apple Fritter", "icon": "fritter", "kind": "heal", "use": "quick", "desc": "Restores 20 HP.", "value": 4, "hp": 20 },
     { "id": "warm_cider", "name": "Warm Cider", "icon": "mug", "kind": "heal", "use": "quick", "desc": "Restores 30 HP.", "value": 6, "hp": 30 },
     { "id": "maple_candy", "name": "Maple Candy", "icon": "candy", "kind": "heal", "use": "quick", "desc": "Restores 10 MP.", "value": 4, "mp": 10 },
@@ -50,6 +56,7 @@
     { "id": "cowbell", "name": "Cowbell", "icon": "cowbell", "kind": "battle", "use": "turn", "target": "one", "element": "physical", "desc": "Rattles one foe. It's Slow for 2 turns, and goes last.", "value": 7, "status": [{ "id": "slow", "turns": 2 }] },
     { "id": "wool_scarf", "name": "Wool Scarf", "icon": "scarf", "kind": "battle", "use": "turn", "desc": "You can't be Chilled for the rest of this fight.", "value": 8, "immune": "chilled" },
 
+    { "id": "old_thread", "name": "Hank of Old Thread", "icon": "thimble", "kind": "trade", "rare": true, "desc": "Nobody has spun thread like this in living memory. It only comes off old work.", "value": 150 },
     { "id": "rime_shard", "name": "Rime Shard", "icon": "shard", "kind": "trade", "desc": "A sliver of cold that won't melt. Left behind by a rimeling.", "value": 5 },
     { "id": "burrback_quill", "name": "Burrback Quill", "icon": "quill", "kind": "trade", "desc": "Sharp, frost-tipped, and shed in a temper.", "value": 8 },
     { "id": "frost_bitten_apple", "name": "Frost-Bitten Apple", "icon": "apple", "kind": "trade", "desc": "Too cold to eat. Somebody will press it.", "value": 3 },

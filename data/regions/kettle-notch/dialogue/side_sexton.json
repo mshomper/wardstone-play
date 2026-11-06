@@ -1,0 +1,202 @@
+{
+ "conversations": [
+  {
+   "id": "jasper_shards",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Slow week. You'd think a man who buys rime shards would be up to his collar in them, the way the walls have been."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "You've run out?"
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "Somebody's taking what the frost leaves. They aren't selling."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "I'd try the old burying ground. The ground's been turned over up there, and nobody's died."
+    },
+    {
+     "who": "eldwin",
+     "text": "I'll have a look."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "sexton_asked"
+    }
+   ]
+  },
+  {
+   "id": "mound_1",
+   "lines": [
+    {
+     "who": "",
+     "text": "A fresh mound, no bigger than a loaf. A rime shard sits in the top of it, pressed in neatly, still cold."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "Somebody's been careful with this."
+    }
+   ]
+  },
+  {
+   "id": "mound_2",
+   "lines": [
+    {
+     "who": "",
+     "text": "Another mound, packed down hard. Another shard. Something wide has been dragged through the grass between the two."
+    }
+   ]
+  },
+  {
+   "id": "mound_3",
+   "lines": [
+    {
+     "who": "",
+     "text": "A third, at the back of the ground. The drag marks go on past it, and in under a fall of old stone."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "Heavy, whatever it is. And it knows where it's going."
+    }
+   ]
+  },
+  {
+   "id": "rockfall_look",
+   "lines": [
+    {
+     "who": "",
+     "text": "A fall of old stone fills the cleft from side to side. Cold air comes through the gaps."
+    },
+    {
+     "who": "eldwin",
+     "text": "Earth remembers how it was stacked. Let's see if it'll unstack."
+    }
+   ]
+  },
+  {
+   "id": "heap_open",
+   "lines": [
+    {
+     "who": "",
+     "text": "Rime shards, hundreds of them, laid in rows with every point the same way. Under the last row, wrapped in oilcloth, a pair of old gloves, stiff with dirt."
+    },
+    {
+     "who": "eldwin",
+     "text": "Someone left these here on purpose. I'll take good care of them."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heap_opened"
+    }
+   ]
+  },
+  {
+   "id": "jasper_shards_done",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "A beetle the size of a calf. It's been burying your shards, in rows."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "Has it now."
+    },
+    {
+     "who": "eldwin",
+     "text": "There are hundreds left. Shall I bring them down?"
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "No. Leave them be."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "Let it work. It's cheaper than I am."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "You won't say why."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Fair prices, Eldwin. I said fair. I never said open."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "sexton_told"
+    }
+   ]
+  },
+  {
+   "id": "ledger_read",
+   "lines": [
+    {
+     "who": "",
+     "text": "A great flat slab, bigger than a door. No name at the head of it. Rows and rows of small strokes, then a ruled line, and nothing written under the line."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "A sum, left open."
+    },
+    {
+     "who": "",
+     "text": "Cold comes up around the edges. The slab begins to lift."
+    }
+   ]
+  },
+  {
+   "id": "ledger_after",
+   "lines": [
+    {
+     "who": "",
+     "text": "The slab lies flat again. Under the ruled line, one stroke is fresh."
+    }
+   ]
+  },
+  {
+   "id": "jasper_ledger",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "There's a slab in the old burying ground with a sum cut in it."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "Is it paid?"
+    },
+    {
+     "who": "eldwin",
+     "text": "It lay back down."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "Then somebody paid. Ask me who some other year."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ledger_told"
+    }
+   ]
+  }
+ ]
+}

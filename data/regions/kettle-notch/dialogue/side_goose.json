@@ -1,0 +1,132 @@
+{
+ "conversations": [
+  {
+   "id": "tilly_ask",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "Have you seen a goose? White. Mean. Answers to Mrs. Applegate."
+    },
+    {
+     "who": "tilly",
+     "text": "I was to bring her to the fair, to be shown. She showed me. She went up the orchard road with her neck out."
+    },
+    {
+     "who": "tilly",
+     "text": "She bit the minister. Mama says that's not a reason to lose her."
+    },
+    {
+     "who": "eldwin",
+     "text": "The orchard. I'll keep an eye out, Tilly.",
+     "face": "smile"
+    },
+    {
+     "who": "tilly",
+     "text": "I'm not crying. It's the wind. It's a very big wind."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "goose_asked"
+    }
+   ]
+  },
+  {
+   "id": "tilly_remind",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "The orchard, I think. Mind her. She goes for the knees."
+    }
+   ]
+  },
+  {
+   "id": "goose_found",
+   "lines": [
+    {
+     "who": "",
+     "text": "A large white goose stands in the windfalls, eating a rotten apple with an air of having paid for it. She looks up, and her neck comes out."
+    },
+    {
+     "who": "eldwin",
+     "text": "Mrs. Applegate. Forgive the intrusion. There's a young woman on the Green who is very much in want of you."
+    },
+    {
+     "who": "",
+     "text": "The goose hisses. Then, as though it were her own idea, she turns downhill."
+    },
+    {
+     "who": "eldwin",
+     "text": "I can see why the minister gave way.",
+     "face": "smile"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "goose_led"
+    },
+    {
+     "banner": [
+      "Mrs. Applegate",
+      "Walking home, on her own terms"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tilly_goose_done",
+   "lines": [
+    {
+     "who": "",
+     "text": "Mrs. Applegate is on the Green already, as if she had never been anywhere else. Tilly has both arms round her. The goose bears it."
+    },
+    {
+     "who": "tilly",
+     "text": "She came back! I knew she would. I told everybody."
+    },
+    {
+     "who": "eldwin",
+     "text": "She walked the whole way herself. I was only going in the same direction.",
+     "face": "smile"
+    },
+    {
+     "who": "tilly",
+     "text": "Here. These are my peppermints. I was saving them for if she died. And this is some of her. It came off by itself."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "goose_home"
+    },
+    {
+     "reward": {
+      "title": "Mrs. Applegate",
+      "xp": 8,
+      "items": {
+       "peppermint_drop": 2, "goose_down": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tilly_after",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "She didn't win. The judge said she has a poor attitude. Mrs. Applegate bit him, so now they're even.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "goose_home",
+   "lines": [
+    {
+     "who": "",
+     "text": "Mrs. Applegate looks Eldwin slowly up and down, and settles on the knee. He moves along."
+    }
+   ]
+  }
+ ]
+}

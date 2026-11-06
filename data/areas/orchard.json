@@ -501,7 +501,7 @@
       "radius": 1
     }
   ],
-  "spots": [
+  "spots": [{"name": "Mrs. Applegate (windfalls)", "x": -6.4, "z": 6.0, "note": "The goose among the windfalls."}, 
     {
       "name": "Wren's mitten",
       "x": -3.6,

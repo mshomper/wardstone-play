@@ -1,0 +1,195 @@
+{
+ "version": 1,
+ "name": "sugar-lane",
+ "seed": 2410,
+ "size": {
+  "w": 28,
+  "h": 20
+ },
+ "mood": {
+  "baseHeight": 0.0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.4,
+  "pathMargin": 0.7,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "maple_red_0",
+     "maple_red_1",
+     "maple_orange_0",
+     "maple_orange_1",
+     "maple_yellow_0",
+     "maple_yellow_1"
+    ],
+    "density": 0.42,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.45,
+    "tall": true
+   },
+   {
+    "props": [
+     "tree_stump_0",
+     "tree_stump_1"
+    ],
+    "density": 0.22,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "open",
+    "collide": 0.35
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2",
+     "goldenrod_0"
+    ],
+    "density": 0.3,
+    "spacing": 1.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "asters_0"
+    ],
+    "density": 0.1,
+    "spacing": 1.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -15,
+     0
+    ],
+    [
+     -8,
+     -0.6
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     7,
+     0.4
+    ],
+    [
+     15,
+     0
+    ]
+   ],
+   "width": 1.5,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [],
+ "landmarks": [],
+ "arenas": [
+  {
+   "x": 1,
+   "z": -5,
+   "radius": 2.3
+  }
+ ],
+ "placements": [
+  {
+   "prop": "cordwood",
+   "x": -5,
+   "z": 3.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "cordwood",
+   "x": 4.4,
+   "z": 3.8,
+   "collide": 0.9
+  },
+  {
+   "prop": "cordwood",
+   "x": 6.4,
+   "z": -3.4,
+   "collide": 0.9
+  },
+  {
+   "prop": "sap_sled",
+   "x": -2,
+   "z": -3.2,
+   "collide": 0.6
+  }
+ ],
+ "keepClear": [],
+ "spots": [{ "name": "Cart", "x": -1, "z": 5.8 }, { "name": "Tailor", "x": -2.8, "z": 5 }, 
+  {
+   "name": "Stack",
+   "x": 4.4,
+   "z": 4.6,
+   "note": "Find: on the near stack."
+  }
+ ],
+ "exits": [
+  {
+   "rect": [
+    -11.6,
+    -2.2,
+    -10.6,
+    2
+   ],
+   "to": "green-frame",
+   "at": [
+    14.2,
+    6.8
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    10.6,
+    -2,
+    11.6,
+    2
+   ],
+   "to": "sugarbush",
+   "at": [
+    -19,
+    6.4
+   ],
+   "dir": 6
+  }
+ ],
+ "start": [
+  -9.6,
+  -0.2
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "conversations": [
+  {
+   "id": "hester_first",
+   "lines": [
+    {
+     "who": "hester",
+     "text": "Mind the shears. The cart's narrower than it looks."
+    },
+    {
+     "who": "eldwin",
+     "text": "Jasper Crane said I might find you."
+    },
+    {
+     "who": "hester",
+     "text": "Did he. He owes me for a coat."
+    },
+    {
+     "who": "hester",
+     "text": "Here's how it goes. You bring me something plain, and something small that's been somewhere. A shard. A bit of wall. A button off somebody's shirt. I sew the one into the other, and after that it does a small thing, every time."
+    },
+    {
+     "who": "hester",
+     "text": "One charm to a piece, and that's all a cart can do. Finer needlework wants a proper shop, and a bigger town than this."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_hester"
+    },
+    {
+     "tailor": {
+      "cart": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "hester_again",
+   "lines": [
+    {
+     "who": "hester",
+     "text": "Back again. Let's see what you've got."
+    }
+   ],
+   "onEnd": [
+    {
+     "tailor": {
+      "cart": true
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -107,6 +107,70 @@
     {
      "who": "jasper_crane",
      "text": "Pleasure. We never met."
+    },
+    {
+     "choice": [
+      {
+       "text": "You look like you've something else not to tell me.",
+       "next": "jasper_cart_clue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jasper_cart_clue",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "face": "quiet",
+     "text": "There's a cart come up the notch road. A tailor, of a kind. Doesn't stay anywhere long, and doesn't ask where a thing has been."
+    },
+    {
+     "if": {
+      "flags": [
+       "cart_at:woodlot"
+      ]
+     },
+     "who": "jasper_crane",
+     "text": "Last I heard it had stopped in the Woodlot, on the way to the sugar trees."
+    },
+    {
+     "if": {
+      "flags": [
+       "cart_at:coffin-rest"
+      ]
+     },
+     "who": "jasper_crane",
+     "text": "Last I heard it had stopped by the Coffin Rest, on the old lane. Not a place folk linger, which would suit."
+    },
+    {
+     "if": {
+      "flags": [
+       "cart_at:south-fields"
+      ]
+     },
+     "who": "jasper_crane",
+     "text": "Last I heard it had stopped in the South Fields, off the lane."
+    },
+    {
+     "who": "eldwin",
+     "face": "concerned",
+     "text": "And why would you tell me that?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Those little things you carry about. They aren't only money, if you know who to ask."
+    },
+    {
+     "who": "jasper_crane",
+     "face": "gruff",
+     "text": "We never met. Neither did you and the cart."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "cart_told"
     }
    ]
   }

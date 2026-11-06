@@ -1,5 +1,5 @@
 {
-  "_note": "Room types for interiors (decision 0022): big pieces (furniture meshes, buildkit/furniture.ts) with an anchor, a length range and depth, then small props (sprites) with an anchor: corner, wall, floor, on:<piece> (on top of it) or near:<piece>. A spot names where a story interaction stands (keep: hearth, press, counter). A prop rule with `box` [width, depth] takes that much floor against a wall; one with `container` can be opened: `containers` below says what each kind is called, its chance of holding something, what it might hold, and the lines it shows.",
+  "_note": "Room types for interiors (decision 0022): big pieces (furniture meshes, buildkit/furniture.ts) with an anchor, a length range and depth, then small props (sprites) with an anchor: corner, wall, floor, on:<piece> (on top of it) or near:<piece>. A spot names where a story interaction stands (keep: hearth, press, counter). A prop rule with `box` [width, depth] takes that much floor against a wall; one with `container` can be opened: `containers` below says what each kind is called, its chance of holding something, what it might hold, and the lines it shows. Headwall: a long low piece (a bed) with its head to the back wall, else a side wall. Gear goes here when the gear branch lands: a find may then name gear instead of an item (see decision 0126).",
   "types": {
     "shop": {
       "pieces": [
@@ -838,6 +838,15 @@
     "bedroom": {
       "pieces": [
         {
+          "mesh": "bed",
+          "anchor": "headwall",
+          "len": [
+            1.7,
+            1.8
+          ],
+          "depth": 2.5
+        },
+        {
           "mesh": "rug",
           "anchor": "center",
           "len": [
@@ -846,25 +855,20 @@
           ],
           "depth": 1.5,
           "chance": 0.55
+        },
+        {
+          "mesh": "cradle",
+          "anchor": "wall",
+          "len": [
+            0.9,
+            0.9
+          ],
+          "depth": 0.65,
+          "chance": 0.3,
+          "prefer": "end"
         }
       ],
       "props": [
-        {
-          "props": [
-            "bed_0",
-            "bed_1",
-            "bed_2"
-          ],
-          "anchor": "back",
-          "count": [
-            1,
-            1
-          ],
-          "box": [
-            1.55,
-            1.9
-          ]
-        },
         {
           "props": [
             "dresser"
@@ -935,17 +939,6 @@
         },
         {
           "props": [
-            "cradle"
-          ],
-          "anchor": "corner",
-          "count": [
-            0,
-            1
-          ],
-          "collide": 0.4
-        },
-        {
-          "props": [
             "candle_tall"
           ],
           "anchor": "wall",
@@ -985,6 +978,375 @@
     "vestry": {
       "pieces": [],
       "props": []
+    },
+    "sugaring": {
+      "pieces": [
+        {
+          "mesh": "evaporator",
+          "anchor": "feature",
+          "len": [
+            3.2,
+            3.6
+          ],
+          "depth": 1.5,
+          "spot": "evaporator"
+        },
+        {
+          "mesh": "table",
+          "anchor": "wall",
+          "len": [
+            1.4,
+            1.8
+          ],
+          "depth": 0.7,
+          "chance": 0.7
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "cordwood"
+          ],
+          "anchor": "back",
+          "count": [
+            1,
+            2
+          ],
+          "box": [
+            2.2,
+            0.5
+          ]
+        },
+        {
+          "props": [
+            "barrel_lidded"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "box": [
+            0.7,
+            0.6
+          ],
+          "container": "sap_barrel"
+        },
+        {
+          "props": [
+            "crate_lid"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "box": [
+            0.9,
+            0.6
+          ],
+          "container": "crate"
+        },
+        {
+          "props": [
+            "sap_bucket"
+          ],
+          "anchor": "on:table",
+          "count": [
+            1,
+            2
+          ]
+        },
+        {
+          "props": [
+            "cider_jug",
+            "oil_lamp"
+          ],
+          "anchor": "on:table",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "sack_grain",
+            "broom"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "candle_tall"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.15
+        }
+      ]
+    },
+    "stable": {
+      "pieces": [
+        {
+          "mesh": "stall",
+          "anchor": "back",
+          "len": [
+            2.2,
+            2.4
+          ],
+          "depth": 2.2
+        },
+        {
+          "mesh": "stall",
+          "anchor": "back",
+          "len": [
+            2.2,
+            2.4
+          ],
+          "depth": 2.2,
+          "chance": 0.9
+        },
+        {
+          "mesh": "stall",
+          "anchor": "left",
+          "len": [
+            2.2,
+            2.4
+          ],
+          "depth": 2.2,
+          "chance": 0.6
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "crate_lid"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "box": [
+            0.9,
+            0.6
+          ],
+          "container": "crate"
+        },
+        {
+          "props": [
+            "barrel_lidded"
+          ],
+          "anchor": "wall",
+          "count": [
+            0,
+            1
+          ],
+          "box": [
+            0.7,
+            0.6
+          ],
+          "container": "barrel"
+        },
+        {
+          "props": [
+            "hay_bale_0",
+            "hay_bale_1"
+          ],
+          "anchor": "wall",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.5
+        },
+        {
+          "props": [
+            "apple_bucket",
+            "sack_grain"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "ladder"
+          ],
+          "anchor": "corner",
+          "count": [
+            0,
+            1
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.15
+        }
+      ]
+    },
+    "loft": {
+      "pieces": [],
+      "props": [
+        {
+          "props": [
+            "hay_bale_0",
+            "hay_bale_1"
+          ],
+          "anchor": "wall",
+          "count": [
+            4,
+            6
+          ],
+          "collide": 0.5
+        },
+        {
+          "props": [
+            "hay_bale_0",
+            "hay_bale_1"
+          ],
+          "anchor": "floor",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.5
+        },
+        {
+          "props": [
+            "chest"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "box": [
+            1.05,
+            0.6
+          ],
+          "container": "chest"
+        },
+        {
+          "props": [
+            "crate_lid"
+          ],
+          "anchor": "corner",
+          "count": [
+            0,
+            1
+          ],
+          "box": [
+            0.9,
+            0.6
+          ],
+          "container": "crate"
+        },
+        {
+          "props": [
+            "sack_grain",
+            "crate_0"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.35
+        }
+      ]
+    },
+    "vault": {
+      "pieces": [
+        {
+          "mesh": "slab",
+          "anchor": "left",
+          "len": [
+            2.2,
+            2.2
+          ],
+          "depth": 1.2
+        },
+        {
+          "mesh": "slab",
+          "anchor": "right",
+          "len": [
+            2.2,
+            2.2
+          ],
+          "depth": 1.2
+        },
+        {
+          "mesh": "slab",
+          "anchor": "back",
+          "len": [
+            2.2,
+            2.2
+          ],
+          "depth": 1.2,
+          "chance": 0.7
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "chest"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "box": [
+            1.05,
+            0.6
+          ],
+          "container": "coffer"
+        },
+        {
+          "props": [
+            "stone_old_2",
+            "stone_old_0"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "candle_tall",
+            "candle_0"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.15
+        }
+      ]
     }
   },
   "containers": {
@@ -1154,6 +1516,125 @@
         "Dry to the bottom. Smells of last year’s pickles.",
         "A little sawdust, and a spider who was here first.",
         "Empty, and the lid fits badly."
+      ]
+    },
+    "crate": {
+      "label": "Crate",
+      "openProp": {
+        "crate_lid": "crate_lid_open"
+      },
+      "chance": 0.45,
+      "finds": [
+        {
+          "item": "kindling",
+          "weight": 3
+        },
+        {
+          "item": "lamp_oil",
+          "weight": 2
+        },
+        {
+          "item": "johnnycake",
+          "weight": 2
+        },
+        {
+          "item": "rock_salt",
+          "weight": 1.5
+        },
+        {
+          "item": "pine_pitch",
+          "weight": 1.5
+        },
+        {
+          "item": "cold_iron_nail",
+          "weight": 1
+        },
+        {
+          "item": "mustard_plaster",
+          "weight": 0.7
+        }
+      ],
+      "notes": [
+        "Under the straw packing.",
+        "Nailed in, and worth the nails.",
+        "Somebody's idea of keeping it safe."
+      ],
+      "empty": [
+        "Straw packing, and the shape of something that isn't here now.",
+        "A few bent nails and no ambition.",
+        "Empty. It smells of apples from some other year."
+      ]
+    },
+    "sap_barrel": {
+      "label": "Barrel",
+      "openProp": {
+        "barrel_lidded": "barrel_lidded_open"
+      },
+      "chance": 0.5,
+      "finds": [
+        {
+          "item": "maple_candy",
+          "weight": 4,
+          "n": 2
+        },
+        {
+          "item": "sugar_on_snow",
+          "weight": 2
+        },
+        {
+          "item": "warm_cider",
+          "weight": 1.5
+        },
+        {
+          "item": "birch_tonic",
+          "weight": 1
+        }
+      ],
+      "notes": [
+        "Packed in the sugar sand at the bottom.",
+        "This year's first run, set by. In October.",
+        "Wrapped in a clean sack, away from the mice."
+      ],
+      "empty": [
+        "A sweet smell and nothing else.",
+        "Sticky to the elbow. No more than that.",
+        "Scoured clean and waiting for a spring that's early."
+      ]
+    },
+    "coffer": {
+      "label": "Coffer",
+      "chance": 0.8,
+      "finds": [
+        {
+          "item": "old_wall_stone",
+          "weight": 3
+        },
+        {
+          "item": "ward_chalk",
+          "weight": 2
+        },
+        {
+          "item": "brass_key",
+          "weight": 2
+        },
+        {
+          "item": "silver_thimble",
+          "weight": 1.5
+        },
+        {
+          "item": "cold_iron_nail",
+          "weight": 1.5
+        }
+      ],
+      "notes": [
+        "Under a folded cloth that goes to dust.",
+        "Set down with care, a long time ago.",
+        "It was left where someone would find it. You wonder who they meant."
+      ],
+      "empty": [
+        "A folded cloth, gone to dust.",
+        "Three flat stones in a row. You leave them in their row.",
+        "Nothing, and the lid shuts by itself."
       ]
     }
   }

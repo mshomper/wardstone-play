@@ -1,0 +1,556 @@
+{
+ "version": 1,
+ "name": "sugarbush",
+ "seed": 2303,
+ "size": {
+  "w": 48,
+  "h": 34
+ },
+ "mood": {
+  "baseHeight": 0.0,
+  "edgeRise": 3.0,
+  "edgeWidth": 5,
+  "roll": 0.5,
+  "pathMargin": 0.7,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "maple_red_0",
+     "maple_red_1",
+     "maple_orange_0",
+     "maple_orange_1",
+     "maple_yellow_0",
+     "maple_yellow_1"
+    ],
+    "density": 0.62,
+    "spacing": 2.6,
+    "scale": [
+     0.95,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.45,
+    "tall": true,
+    "within": [
+     [
+      -30,
+      -24
+     ],
+     [
+      1.2,
+      -24
+     ],
+     [
+      1.2,
+      24
+     ],
+     [
+      -30,
+      24
+     ]
+    ]
+   },
+   {
+    "props": [
+     "maple_red_0",
+     "maple_red_1",
+     "maple_orange_0",
+     "maple_orange_1",
+     "maple_yellow_0",
+     "maple_yellow_1"
+    ],
+    "density": 0.3,
+    "spacing": 3.4,
+    "scale": [
+     0.95,
+     1.1
+    ],
+    "near": "open",
+    "collide": 0.45,
+    "tall": true,
+    "within": [
+     [
+      -30,
+      -24
+     ],
+     [
+      1.2,
+      -24
+     ],
+     [
+      1.2,
+      24
+     ],
+     [
+      -30,
+      24
+     ]
+    ],
+    "attach": {
+     "prop": "sap_bucket",
+     "chance": 0.7,
+     "y": 0.72
+    }
+   },
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.34,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true,
+    "within": [
+     [
+      1.9,
+      -24
+     ],
+     [
+      30,
+      -24
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      1.9,
+      24
+     ]
+    ]
+   },
+   {
+    "props": [
+     "bare_tree_0",
+     "bare_tree_1"
+    ],
+    "density": 0.2,
+    "spacing": 3.4,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "open",
+    "collide": 0.35,
+    "tall": true,
+    "within": [
+     [
+      1.9,
+      -24
+     ],
+     [
+      30,
+      -24
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      1.9,
+      24
+     ]
+    ]
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "fallen_log_0",
+     "fallen_log_1"
+    ],
+    "density": 0.04,
+    "spacing": 3,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.35,
+    "spacing": 1.0,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "open",
+    "within": [
+     [
+      -30,
+      -24
+     ],
+     [
+      1.2,
+      -24
+     ],
+     [
+      1.2,
+      24
+     ],
+     [
+      -30,
+      24
+     ]
+    ]
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "mushrooms_1",
+     "asters_0"
+    ],
+    "density": 0.12,
+    "spacing": 1.1,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "path",
+    "shadow": false
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1"
+    ],
+    "density": 0.08,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "open",
+    "within": [
+     [
+      1.9,
+      -24
+     ],
+     [
+      30,
+      -24
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      1.9,
+      24
+     ]
+    ]
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -25,
+     7
+    ],
+    [
+     -17,
+     6
+    ],
+    [
+     -10,
+     6.8
+    ],
+    [
+     -4,
+     4
+    ],
+    [
+     1.4,
+     -1.4
+    ],
+    [
+     7,
+     -3
+    ],
+    [
+     13,
+     0
+    ],
+    [
+     15,
+     -5
+    ],
+    [
+     18.5,
+     -8
+    ]
+   ],
+   "width": 1.5,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -11,
+     6.5
+    ],
+    [
+     -11,
+     1.6
+    ]
+   ],
+   "width": 1.2,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     1.5,
+     -17
+    ],
+    [
+     2,
+     -9
+    ],
+    [
+     1.2,
+     -2
+    ],
+    [
+     2.2,
+     6
+    ],
+    [
+     1.6,
+     17
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 15.68,
+     "width": 2
+    }
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "sugarhouse",
+   "x": -11,
+   "z": -1.5,
+   "w": 7,
+   "d": 5,
+   "rot": 0,
+   "height": 3.2,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ],
+     "storeys": 1
+    }
+   ],
+   "opens": "Sugar shack",
+   "scale": 1.5,
+   "lootMax": 1
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "hollow",
+   "x": -10,
+   "z": 2,
+   "radius": 10,
+   "height": 0.6
+  },
+  {
+   "kind": "hollow",
+   "x": 13,
+   "z": -3,
+   "radius": 9,
+   "height": 0.7
+  }
+ ],
+ "arenas": [
+  {
+   "x": -18,
+   "z": 11.4,
+   "radius": 2.4
+  },
+  {
+   "x": 7,
+   "z": 10,
+   "radius": 2.6
+  },
+  {
+   "x": 13,
+   "z": -3,
+   "radius": 3.2
+  },
+  {
+   "x": -8.5,
+   "z": 11,
+   "radius": 3.3
+  },
+  {
+   "x": 18,
+   "z": 7.5,
+   "radius": 2.4
+  },
+  {
+   "x": -17,
+   "z": -10,
+   "radius": 2.4
+  }
+ ],
+ "placements": [
+  {
+   "prop": "cordwood",
+   "x": -17,
+   "z": -0.8,
+   "collide": 0.9
+  },
+  {
+   "prop": "cordwood",
+   "x": -16.8,
+   "z": 1.2,
+   "collide": 0.9
+  },
+  {
+   "prop": "cordwood",
+   "x": -5,
+   "z": -3,
+   "collide": 0.9
+  },
+  {
+   "prop": "sap_sled",
+   "x": -6.4,
+   "z": 2.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": -5.2,
+   "z": 0.5,
+   "collide": 0.3
+  },
+  {
+   "prop": "cider_barrel_0",
+   "x": -4.4,
+   "z": 1.3,
+   "collide": 0.3
+  },
+  {
+   "prop": "pumpkin_frozen_0",
+   "x": 12,
+   "z": 3.6
+  },
+  {
+   "prop": "rock_spire_0",
+   "x": 19.4,
+   "z": -9.2,
+   "collide": 0.7
+  },
+  {
+   "prop": "fallen_log_0",
+   "x": 18.4,
+   "z": -10.6,
+   "collide": 0.3
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -11.1,
+     0
+    ],
+    [
+     -10.9,
+     0
+    ]
+   ],
+   "radius": 6.8
+  }
+ ],
+ "spots": [
+  {
+   "name": "Sled",
+   "x": -6.4,
+   "z": 3.4,
+   "note": "Find: under the gathering sled."
+  },
+  {
+   "name": "Woodpile",
+   "x": -17,
+   "z": 0.2,
+   "note": "Find: behind the cordwood."
+  },
+  {
+   "name": "Far log",
+   "x": 18.2,
+   "z": -9.6,
+   "note": "Find: the prize for the bare bowl."
+  },
+  {
+   "name": "Tapped line",
+   "x": -14,
+   "z": 6.2,
+   "note": "Eldwin sees the buckets hung in October."
+  }
+ ],
+ "exits": [
+  {
+   "rect": [
+    -21,
+    4.2,
+    -20,
+    8.6
+   ],
+   "to": "sugar-lane",
+   "at": [
+    9.6,
+    0
+   ],
+   "dir": 2
+  }
+ ],
+ "start": [
+  -19,
+  6.4
+ ]
+}

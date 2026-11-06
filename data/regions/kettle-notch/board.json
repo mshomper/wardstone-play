@@ -1,0 +1,161 @@
+{
+  "_note": "The noticeboard on the Green (docs/15-regions.md, Noticeboards). The seed picks a writer's line and fills {where} from `spots` and {in} from `places`. Kinds: find, deliver, bring, thin (win 2 fights in a place), clear (win every fight listed for a place, 3 or more). `pay` is the least and most a notice of that kind may pay, in item worth; `npm run check` holds every payment to it. A place, a person or a spot joins by adding a row here. A writer must be in town at every hour, so the map's star is never wrong. A spot is an interactable that shows while its flag `spot:<id>` is set.",
+  "show": 3,
+  "hold": 3,
+  "pay": { "deliver": [4, 6], "find": [6, 10], "thin": [10, 15], "clear": [15, 20], "bring": [0, 18] },
+  "gear": { "if": { "flags": ["breach_sealed"] }, "chance": 0.2 },
+  "gearHint": "It's plain work, mind. There's a fellow in a dark coat on the Green who knows what can be done with plain work. Don't say I said so.",
+  "town": "the-green",
+  "words": {
+    "find": "Find {name}'s {thing}, {where}.",
+    "findBack": "Take the {thing} back to {name}.",
+    "found": "{name}'s {thing}, just where the notice said.",
+    "deliver": "Take the {thing} to {to}.",
+    "deliverBack": "Tell {name} it's delivered.",
+    "bring": "Bring {name} {of} {things}.",
+    "bringBack": "Hand {name} the {things}.",
+    "thin": "Clear two lots of creatures from {in}.",
+    "clear": "Clear every creature from {in}.",
+    "fightBack": "Tell {name} it's done.",
+    "short": "That isn't all of them. I said {of}.",
+    "blurb": "A notice on the Green, from {name}. Pays {pay}.",
+    "fightBlurb": "A notice on the Green, from {name}. Pays {pay}. Creatures already seen off come back after a rest."
+  },
+  "posted": [
+    { "text": "HARVEST FAIR. Tonight on the Green. Pie judging at six. Lanterns at dusk. Music by the Weller brothers." },
+    { "if": { "notFlags": ["biscuit_home"] }, "text": "LOST: grey cat, answers to Biscuit (sometimes). Last seen eating somebody's butter. Apply to A. Hale, whose butter it was." },
+    { "if": { "flags": ["biscuit_home"] }, "text": "LOST: grey cat. Someone has crossed out LOST and written, in Ada Hale's hand: UNFORTUNATELY NOT." },
+    { "text": "A faded card, marked with a rune of three crossed lines." }
+  ],
+  "places": {
+    "the-green": { "in": "the Green" },
+    "sugar-lane": { "in": "the woodlot" },
+    "sugarbush": { "in": "the sugarbush" },
+    "old-lane": { "in": "the old lane" },
+    "burying-ground": { "in": "the old burying ground" },
+    "orchard": { "in": "the orchard", "fights": ["rime2", "rime3", "rime1"] },
+    "brook-woods": { "in": "Brook Woods", "fights": ["burr1", "mixed", "burr2"] },
+    "south-fields": { "in": "the south fields", "fights": ["road-rime", "road-patch", "road-bales"] },
+    "alder-hollow": { "in": "Alder Hollow", "fights": ["road-burr", "road-brook"] }
+  },
+  "spots": [
+    { "id": "spot_church_steps", "place": "the-green", "where": "on the church steps" },
+    { "id": "spot_stall_hay", "place": "the-green", "where": "in the hay by the quilt stall" },
+    { "id": "spot_mill_wall", "place": "the-green", "where": "behind the mill wall" },
+    { "id": "spot_orchard_gap", "place": "orchard", "where": "by the gap in the orchard wall" },
+    { "id": "spot_orchard_crate", "place": "orchard", "where": "by the old crate in the orchard" },
+    { "id": "spot_woods_cairn", "place": "brook-woods", "where": "at the cairn in Brook Woods" },
+    { "id": "spot_woods_log", "place": "brook-woods", "where": "under the fallen log in Brook Woods" },
+    { "id": "spot_fields_mailbox", "place": "south-fields", "where": "by the mailbox on the south lane" },
+    { "id": "spot_fields_scarecrow", "place": "south-fields", "where": "at the scarecrow's feet in the south fields" },
+    { "id": "spot_hollow_path", "place": "alder-hollow", "where": "where the path gives out in Alder Hollow" }
+  ],
+  "writers": [
+    {
+      "person": "ada",
+      "signed": "A. Hale, at the store",
+      "thanks": ["That'll do. Don't let it go to your head.", "Good. Mind the step on your way out.", "Well. I've had worse help, and paid more for it."],
+      "pays": {
+        "deliver": [{ "peppermint_drop": 2 }, { "maple_candy": 1 }],
+        "find": [{ "sharp_cheddar": 2 }, { "johnnycake": 2 }],
+        "thin": [{ "sharp_cheddar": 3 }, { "mustard_plaster": 2 }],
+        "clear": [{ "hearth_stew": 1 }, { "sharp_cheddar": 4 }]
+      },
+      "notices": [
+        { "id": "belt", "kind": "thin", "title": "A Belt on Account", "gear": { "slot": "belt", "rarity": "homespun", "bare": true }, "payWords": "a good plain belt", "places": ["orchard", "brook-woods"], "text": "A belt came in against an account nobody has paid. See off two lots in {in} and it's yours, and I'll call the matter closed." },
+        { "id": "scoop", "kind": "find", "title": "Ada's Scoop", "thing": "good scoop", "text": "Lost the good scoop {where}. Don't ask me how it got there. Biscuit, I expect." },
+        { "id": "ledger", "kind": "find", "title": "An Account Book", "thing": "account book", "text": "My account book has turned up, I'm told, {where}. Bring it back and I won't read out what's in it." },
+        { "id": "parcel", "kind": "deliver", "title": "Paid For", "thing": "parcel", "to": "silas", "got": "From Ada? I've been busy. Tell her I've been busy.", "text": "Parcel for Silas Pike, paid for and not collected. He says he has been busy. He has not been busy. Walk it over and I'll call it square." },
+        { "id": "thread", "kind": "deliver", "title": "Two Weeks Late", "thing": "thread", "to": "townsfolk1", "got": "Two weeks. You may tell Ada I counted.", "text": "Martha Combs's thread came in. Two weeks late, so she'll say something. Take it over and let her say it to you." },
+        { "id": "shards", "kind": "bring", "title": "Butter Keeping", "good": "rime_shard", "of": 3, "things": "rime shards", "from": "orchard", "pays": [{ "sharp_cheddar": 3 }], "text": "Buying rime shards, three. They keep the butter better than the cellar does, and they don't eat any of it." },
+        { "id": "quills", "kind": "bring", "title": "Quills, Bought", "good": "burrback_quill", "of": 2, "things": "burrback quills", "from": "brook-woods", "pays": [{ "sharp_cheddar": 2, "warm_cider": 1 }], "text": "Buying burrback quills, two. They make a good pen and a better argument." },
+        { "id": "teeth", "kind": "thin", "title": "Teeth Marks", "text": "Something in {in} has been at my deliveries. I've had a crate left on the step with teeth marks in it. Two lots want seeing off." },
+        { "id": "safe", "kind": "clear", "title": "Not Safe, I'm Told", "text": "I've been told {in} isn't safe for a delivery. I would like to be told otherwise. All of it, mind. Then come and tell me." }
+      ]
+    },
+    {
+      "person": "silas",
+      "signed": "S. Pike, the mill",
+      "thanks": ["Hm. Don't tell Ada I paid you.", "Right. That's that, then.", "Took you long enough. Here."],
+      "at": [{ "if": { "flags": ["asked_press", "visited:mill-press"], "timeTo": 18 }, "words": "in the press room" }],
+      "pays": {
+        "deliver": [{ "maple_candy": 1 }, { "apple_fritter": 1 }],
+        "find": [{ "warm_cider": 1 }, { "warm_cider": 1, "apple_fritter": 1 }],
+        "thin": [{ "warm_cider": 2 }],
+        "clear": [{ "mulled_cider": 1 }, { "warm_cider": 3 }]
+      },
+      "notices": [
+        { "id": "pocket", "kind": "thin", "title": "Something for the Pocket", "gear": { "slot": "keepsake", "rarity": "homespun", "bare": true }, "payWords": "a thing for your pocket", "places": ["orchard", "brook-woods"], "text": "Two lots in {in} have been at my windfalls. See them off and you can have what I found in the press last fall. No idea what it's for. It has done me no harm." },
+        { "id": "apples", "kind": "bring", "title": "Frost-Bit", "good": "frost_bitten_apple", "of": 3, "things": "frost-bitten apples", "from": "south-fields", "pays": [{ "warm_cider": 2 }], "text": "Want three frost-bit apples. Yes, frost-bit. Don't ask what for and I won't tell Ada. Leave off any with worms." },
+        { "id": "pin", "kind": "find", "title": "The Press Pin", "thing": "press pin", "text": "Dropped the press pin {where}. Forty years I never lost one. Bring it back and we'll say no more." },
+        { "id": "bung", "kind": "find", "title": "A Cider Bung", "thing": "cider bung", "text": "My bung went off the last cart and landed {where}, the driver says. I want it. They don't make that size." },
+        { "id": "jug", "kind": "deliver", "title": "Don't Shake It", "thing": "jug", "to": "townsfolk1", "got": "Silas sent this? It's been shaken.", "text": "Jug to go to Martha Combs. Don't shake it. Don't sample it. I'll know." },
+        { "id": "bill", "kind": "deliver", "title": "Paid, In Full", "thing": "bill", "to": "ada", "got": "Paid, is it. We'll see about that.", "text": "Ada wants her bill paid. Here it is, paid. Put it in her hand and leave before she counts it." },
+        { "id": "windfalls", "kind": "thin", "title": "The Windfalls", "text": "Something in {in} keeps getting into the windfalls. Two lots, about. See them off and I'll stand you a cider or two." },
+        { "id": "reasons", "kind": "clear", "title": "My Own Reasons", "text": "I want {in} clear. All of it. I've told nobody why and I won't start now." }
+      ]
+    },
+    {
+      "person": "townsfolk1",
+      "signed": "M. Combs",
+      "thanks": ["There. That wasn't so hard, was it?", "Thank you. You've a hole in that sleeve, you know.", "I'd have done it myself, if I'd had the time. Take this."],
+      "pays": {
+        "deliver": [{ "johnnycake": 2 }, { "witch_hazel": 2 }],
+        "find": [{ "wool_scarf": 1 }, { "vinegar_rag": 2 }],
+        "thin": [{ "mustard_plaster": 2 }, { "wool_scarf": 1, "vinegar_rag": 1 }],
+        "clear": [{ "wool_scarf": 2 }, { "chicken_pie": 1 }]
+      },
+      "notices": [
+        { "id": "needles", "kind": "find", "title": "A Card of Needles", "thing": "needles", "text": "Dropped a card of needles {where}. They were my mother's, and I would know if you kept one." },
+        { "id": "shears", "kind": "find", "title": "My Good Shears", "thing": "good shears", "text": "My good shears have gone off and been left {where}. I don't ask who borrowed them. I will find out." },
+        { "id": "shirt", "kind": "deliver", "title": "One Shirt, Mended", "thing": "shirt", "to": "townsfolk2", "got": "Saved the collar, did she? Tell her my father wore that collar.", "text": "Amos Tuttle's shirt, mended. Tell him the collar was past saving and I saved it." },
+        { "id": "socks", "kind": "deliver", "title": "Socks, Again", "thing": "socks", "to": "townsfolk3", "got": "Socks. I didn't ask for socks. I'm glad of them, mind.", "text": "Jonah Reed's socks, darned. Again. Tell him a foot isn't meant to go through there." },
+        { "id": "buttons", "kind": "bring", "title": "Buttons, Any", "good": "copper_button", "of": 3, "things": "copper buttons", "from": "south-fields", "pays": [{ "wool_scarf": 1, "warm_cider": 1, "maple_candy": 1 }], "text": "Wanted: three copper buttons, for a coat. They needn't match. The coat doesn't." },
+        { "id": "line", "kind": "thin", "title": "The Drying Line", "places": ["orchard", "south-fields"], "text": "Something in {in} got at my drying line. I counted two lots before I came in. Frozen sheets stand up by themselves and I'd rather they didn't." },
+        { "id": "sunday", "kind": "clear", "title": "Of a Sunday", "text": "I used to walk to {in} of a Sunday, and I mean to again. Clear the lot, if you would. I'll know if you skipped any." },
+        { "id": "coat", "kind": "thin", "title": "My Brother's Coat", "gear": { "slot": "coat", "rarity": "homespun", "bare": true }, "payWords": "my brother's coat", "places": ["brook-woods", "alder-hollow"], "text": "My brother's coat is still on the peg. He isn't coming back for it and I've stopped mending it. See off two lots in {in}, where he cut wood, and it's yours." }
+      ]
+    },
+    {
+      "person": "townsfolk2",
+      "signed": "A. Tuttle, the house with the clock",
+      "thanks": ["Obliged. My father would've said so too, at more length.", "Well now. That's a thing done.", "Good. I'd have got to it. Here."],
+      "pays": {
+        "deliver": [{ "peppermint_drop": 2 }, { "maple_candy": 1 }],
+        "find": [{ "cold_iron_nail": 1 }, { "brass_key": 1 }],
+        "thin": [{ "cold_iron_nail": 1, "peppermint_drop": 1 }, { "ward_chalk": 1 }],
+        "clear": [{ "birch_tonic": 1, "peppermint_drop": 1 }, { "ward_chalk": 2 }]
+      },
+      "notices": [
+        { "id": "pipe", "kind": "find", "title": "A Good Pipe", "thing": "good pipe", "text": "Left my good pipe {where}. I'm not walking there twice for it. Somebody's legs are younger than mine." },
+        { "id": "spectacles", "kind": "find", "title": "My Spectacles", "thing": "spectacles", "text": "My spectacles are {where}. I set them down to look at something, and then I couldn't see what." },
+        { "id": "oil", "kind": "deliver", "title": "Exact Money", "thing": "clock oil money", "to": "ada", "got": "It's short. It's always short. Tell him I said so.", "text": "Clock oil money owed to Ada Hale. Exact. She can count it herself and tell me it's short, as her mother did." },
+        { "id": "wrench", "kind": "deliver", "title": "A Borrowed Wrench", "thing": "wrench", "to": "silas", "got": "His father had that off mine. I'd given it up.", "text": "Silas Pike's father lent my father a wrench. Here it is. I don't say it was quick." },
+        { "id": "works", "kind": "bring", "title": "For the Works", "good": "rime_shard", "of": 3, "things": "rime shards", "from": "orchard", "pays": [{ "birch_tonic": 1, "peppermint_drop": 1 }], "text": "Three rime shards, for a matter of the clock. It runs better cold than I like to admit." },
+        { "id": "autumn", "kind": "thin", "title": "Every Autumn", "text": "My father walked {in} every autumn and never met a thing. Now they tell me there's creatures in it. Two lots seen off would be a start." },
+        { "id": "walk", "kind": "clear", "title": "A Walk, Once", "text": "Time was you could walk all of {in} without stopping to fight something. It isn't much to want. I'd pay to have it back." },
+        { "id": "gloves", "kind": "thin", "title": "Father's Gloves", "gear": { "slot": "gloves", "rarity": "homespun", "bare": true }, "payWords": "my father's gloves", "places": ["orchard", "brook-woods"], "text": "My father's work gloves have hung by the clock a long while. They'd do more good on somebody's hands. See off two lots in {in} and they're yours." }
+      ]
+    },
+    {
+      "person": "townsfolk3",
+      "signed": "J. Reed",
+      "thanks": ["Is that so. I wasn't asking, mind.", "Hm. My granddad would've done it slower.", "I'll remark on it to somebody. Here."],
+      "pays": {
+        "deliver": [{ "apple_fritter": 1 }, { "johnnycake": 2 }],
+        "find": [{ "lamp_oil": 1 }, { "cowbell": 1 }],
+        "thin": [{ "rock_salt": 1 }],
+        "clear": [{ "rock_salt": 1, "pine_pitch": 1 }, { "rock_salt": 1, "cowbell": 1 }]
+      },
+      "notices": [
+        { "id": "bales", "kind": "thin", "title": "My Bales", "places": ["south-fields"], "text": "Things have got into my bales in {in}. Two lots, by my count. I'm not asking. I'm saying if they were gone I'd have no more use for the rock salt." },
+        { "id": "remark", "kind": "clear", "title": "A Remark", "text": "This isn't asking. There's creatures all over {in}, and if somebody cleared the lot I'd want to hear about it." },
+        { "id": "pick", "kind": "find", "title": "A Hoof Pick", "thing": "hoof pick", "text": "Granddad's hoof pick is {where}. I know where I left it. I'm not saying I couldn't go." },
+        { "id": "windfall", "kind": "deliver", "title": "Bruised, He'll Say", "thing": "sack of windfalls", "to": "silas", "got": "These are bruised.", "text": "Sack of windfalls for Silas Pike. He'll say they're bruised. They are." },
+        { "id": "eggs", "kind": "deliver", "title": "Eggs, Owed", "thing": "basket of eggs", "to": "ada", "got": "For the lamp glass? He could've come himself. I know why he didn't.", "text": "I owe Ada Hale for a lamp glass. Here's eggs. Mind them. I'd take them myself but she'd talk." },
+        { "id": "fence", "kind": "bring", "title": "For a Fence", "good": "burrback_quill", "of": 2, "things": "burrback quills", "from": "brook-woods", "pays": [{ "rock_salt": 1, "apple_fritter": 1 }], "text": "Wanted: two burrback quills. Don't ask. All right, it's a fence. It's for a fence." },
+        { "id": "boots", "kind": "thin", "title": "Father's Boots", "gear": { "slot": "boots", "rarity": "homespun", "bare": true }, "payWords": "my father's boots", "places": ["alder-hollow"], "text": "Clear two lots out of {in} and you can have my father's boots. Good boots. Been to Hardscrabble and back, which is more than he'd say for me." }
+      ]
+    }
+  ]
+}

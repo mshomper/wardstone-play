@@ -1,1 +1,1 @@
-{"_note": "Dialogue files, one per character or scene. Each holds { conversations: [...] } (or one conversation). Add new files here.", "files": ["ada", "silas", "wren", "eldwin", "world", "townsfolk", "jasper", "side_cat", "side_quilt", "side_clock", "side_bigones", "side_errand"]}
+{"_note": "Dialogue that belongs to no one region: Eldwin, Jasper and his errand. A region's own dialogue is listed in its region.json.", "files": ["eldwin", "jasper", "side_errand"]}

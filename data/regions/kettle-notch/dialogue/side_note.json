@@ -1,0 +1,122 @@
+{
+ "conversations": [
+  {
+   "id": "caleb_ask",
+   "lines": [
+    {
+     "who": "caleb",
+     "text": "Hat? Pipe. Fell asleep. Don't tell anybody."
+    },
+    {
+     "who": "caleb",
+     "text": "Do you know Abigail Ness? The fiddler? Her niece, I mean. Lydia. Not her. Well. Her niece."
+    },
+    {
+     "who": "caleb",
+     "text": "I wrote it down so I'd say it right. Now I can't say it at all. If somebody was to carry it to Mrs. Ness, she could pass it along. Somebody who wouldn't read it."
+    },
+    {
+     "who": "eldwin",
+     "text": "Give it here, Caleb. I've carried worse, and read none of it.",
+     "face": "smile"
+    },
+    {
+     "who": "",
+     "text": "The paper has been folded and unfolded so many times it has gone soft as cloth."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "note_asked"
+    },
+    {
+     "banner": [
+      "Folded note",
+      "From Caleb Stroud. Not to be read"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "caleb_remind",
+   "lines": [
+    {
+     "who": "caleb",
+     "text": "Mrs. Ness is on the Green. You didn't read it? You look like you read it."
+    }
+   ]
+  },
+  {
+   "id": "abigail_note",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "From Caleb Stroud. For Lydia, by way of you."
+    },
+    {
+     "who": "abigail",
+     "text": "That long boy with the hole in his hat? He's been walking past my house since haying. I thought he was simple."
+    },
+    {
+     "who": "",
+     "text": "She reads the note, without any shame, and tucks it into her shawl."
+    },
+    {
+     "who": "abigail",
+     "text": "She'll have it by supper. Tell him she says he's spelled \"Thursday\" wrong. And tell him she says yes.",
+     "face": "smile"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "note_given"
+    }
+   ]
+  },
+  {
+   "id": "caleb_note_done",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "Lydia Ness says you've spelled \"Thursday\" wrong.",
+     "face": "smile"
+    },
+    {
+     "who": "caleb",
+     "text": "Oh."
+    },
+    {
+     "who": "eldwin",
+     "text": "She also says yes."
+    },
+    {
+     "who": "caleb",
+     "text": "Oh. Oh! Yes to what? No. Don't tell me. I know what I wrote. Do I? Here, take this cider. I can't drink anything just now."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "note_done"
+    },
+    {
+     "reward": {
+      "title": "A Folded Note",
+      "xp": 8,
+      "items": {
+       "warm_cider": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "caleb_after",
+   "lines": [
+    {
+     "who": "caleb",
+     "text": "I've got to dance now. I never thought about that part."
+    }
+   ]
+  }
+ ]
+}

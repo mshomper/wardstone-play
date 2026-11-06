@@ -3,32 +3,6 @@
   "pixelsPerUnit": 32,
   "sheets": [
     {
-      "name": "npc_ada",
-      "json": "npc_ada.json",
-      "image": "npc_ada.png",
-      "emissive": "npc_ada_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "npc_amos_tuttle",
-      "json": "npc_amos_tuttle.json",
-      "image": "npc_amos_tuttle.png",
-      "emissive": "npc_amos_tuttle_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
       "name": "wizard_iso",
       "json": "wizard_iso.json",
       "image": "wizard_iso.png",
@@ -68,71 +42,6 @@
       "tiles": 0
     },
     {
-      "name": "npc_jonah_reed",
-      "json": "npc_jonah_reed.json",
-      "image": "npc_jonah_reed.png",
-      "emissive": "npc_jonah_reed_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "npc_martha_combs",
-      "json": "npc_martha_combs.json",
-      "image": "npc_martha_combs.png",
-      "emissive": "npc_martha_combs_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "npc_silas",
-      "json": "npc_silas.json",
-      "image": "npc_silas.png",
-      "emissive": "npc_silas_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "npc_wren",
-      "json": "npc_wren.json",
-      "image": "npc_wren.png",
-      "emissive": "npc_wren_emissive.png",
-      "size": [
-        343,
-        1657
-      ],
-      "anims": 24,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "biscuit_iso",
-      "json": "biscuit_iso.json",
-      "image": "biscuit_iso.png",
-      "emissive": "biscuit_iso_emissive.png",
-      "size": [
-        247,
-        529
-      ],
-      "anims": 16,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
       "name": "burrback_iso",
       "json": "burrback_iso.json",
       "image": "burrback_iso.png",
@@ -153,6 +62,136 @@
       "size": [
         512,
         206
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "chickaree_iso",
+      "json": "chickaree_iso.json",
+      "image": "chickaree_iso.png",
+      "emissive": "chickaree_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "chickaree_side",
+      "json": "chickaree_side.json",
+      "image": "chickaree_side.png",
+      "emissive": "chickaree_side_emissive.png",
+      "size": [
+        680,
+        346
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "cordling_iso",
+      "json": "cordling_iso.json",
+      "image": "cordling_iso.png",
+      "emissive": "cordling_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "cordling_side",
+      "json": "cordling_side.json",
+      "image": "cordling_side.png",
+      "emissive": "cordling_side_emissive.png",
+      "size": [
+        680,
+        415
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "effigy_iso",
+      "json": "effigy_iso.json",
+      "image": "effigy_iso.png",
+      "emissive": "effigy_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "effigy_side",
+      "json": "effigy_side.json",
+      "image": "effigy_side.png",
+      "emissive": "effigy_side_emissive.png",
+      "size": [
+        680,
+        346
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "footstone_iso",
+      "json": "footstone_iso.json",
+      "image": "footstone_iso.png",
+      "emissive": "footstone_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "footstone_side",
+      "json": "footstone_side.json",
+      "image": "footstone_side.png",
+      "emissive": "footstone_side_emissive.png",
+      "size": [
+        680,
+        415
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "hushwing_iso",
+      "json": "hushwing_iso.json",
+      "image": "hushwing_iso.png",
+      "emissive": "hushwing_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "hushwing_side",
+      "json": "hushwing_side.json",
+      "image": "hushwing_side.png",
+      "emissive": "hushwing_side_emissive.png",
+      "size": [
+        680,
+        346
       ],
       "anims": 5,
       "sprites": 0,
@@ -185,6 +224,71 @@
       "tiles": 0
     },
     {
+      "name": "ledger_iso",
+      "json": "ledger_iso.json",
+      "image": "ledger_iso.png",
+      "emissive": "ledger_iso_emissive.png",
+      "size": [
+        70,
+        329
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "ledger_side",
+      "json": "ledger_side.json",
+      "image": "ledger_side.png",
+      "emissive": "ledger_side_emissive.png",
+      "size": [
+        764,
+        1471
+      ],
+      "anims": 14,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "oldbucket_iso",
+      "json": "oldbucket_iso.json",
+      "image": "oldbucket_iso.png",
+      "emissive": "oldbucket_iso_emissive.png",
+      "size": [
+        469,
+        681
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "oldbucket_side",
+      "json": "oldbucket_side.json",
+      "image": "oldbucket_side.png",
+      "emissive": "oldbucket_side_emissive.png",
+      "size": [
+        960,
+        373
+      ],
+      "anims": 4,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "oldbucket_off_side",
+      "json": "oldbucket_off_side.json",
+      "image": "oldbucket_off_side.png",
+      "emissive": "oldbucket_off_side_emissive.png",
+      "size": [
+        960,
+        373
+      ],
+      "anims": 4,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "rimeling_iso",
       "json": "rimeling_iso.json",
       "image": "rimeling_iso.png",
@@ -205,6 +309,45 @@
       "size": [
         391,
         246
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "sexton_side",
+      "json": "sexton_side.json",
+      "image": "sexton_side.png",
+      "emissive": "sexton_side_emissive.png",
+      "size": [
+        876,
+        511
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "sextonling_iso",
+      "json": "sextonling_iso.json",
+      "image": "sextonling_iso.png",
+      "emissive": "sextonling_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "sextonling_side",
+      "json": "sextonling_side.json",
+      "image": "sextonling_side.png",
+      "emissive": "sextonling_side_emissive.png",
+      "size": [
+        680,
+        346
       ],
       "anims": 5,
       "sprites": 0,
@@ -263,16 +406,146 @@
       "tiles": 0
     },
     {
+      "name": "sugarling_iso",
+      "json": "sugarling_iso.json",
+      "image": "sugarling_iso.png",
+      "emissive": "sugarling_iso_emissive.png",
+      "size": [
+        213,
+        329
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "sugarling_side",
+      "json": "sugarling_side.json",
+      "image": "sugarling_side.png",
+      "emissive": "sugarling_side_emissive.png",
+      "size": [
+        391,
+        246
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tallowlight_iso",
+      "json": "tallowlight_iso.json",
+      "image": "tallowlight_iso.png",
+      "emissive": "tallowlight_iso_emissive.png",
+      "size": [
+        213,
+        329
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tallowlight_side",
+      "json": "tallowlight_side.json",
+      "image": "tallowlight_side.png",
+      "emissive": "tallowlight_side_emissive.png",
+      "size": [
+        391,
+        246
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tapbeak_iso",
+      "json": "tapbeak_iso.json",
+      "image": "tapbeak_iso.png",
+      "emissive": "tapbeak_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tapbeak_side",
+      "json": "tapbeak_side.json",
+      "image": "tapbeak_side.png",
+      "emissive": "tapbeak_side_emissive.png",
+      "size": [
+        680,
+        346
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tipplewasp_iso",
+      "json": "tipplewasp_iso.json",
+      "image": "tipplewasp_iso.png",
+      "emissive": "tipplewasp_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "tipplewasp_side",
+      "json": "tipplewasp_side.json",
+      "image": "tipplewasp_side.png",
+      "emissive": "tipplewasp_side_emissive.png",
+      "size": [
+        680,
+        346
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "whippoorwill_iso",
+      "json": "whippoorwill_iso.json",
+      "image": "whippoorwill_iso.png",
+      "emissive": "whippoorwill_iso_emissive.png",
+      "size": [
+        277,
+        457
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "whippoorwill_side",
+      "json": "whippoorwill_side.json",
+      "image": "whippoorwill_side.png",
+      "emissive": "whippoorwill_side_emissive.png",
+      "size": [
+        680,
+        346
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "portraits",
       "json": "portraits.json",
       "image": "portraits.png",
       "emissive": "portraits_emissive.png",
       "size": [
         456,
-        261
+        131
       ],
       "anims": 0,
-      "sprites": 25,
+      "sprites": 9,
       "tiles": 0
     },
     {
@@ -404,6 +677,194 @@
       "anims": 0,
       "sprites": 20,
       "tiles": 2
+    },
+    {
+      "name": "notch_kit",
+      "json": "notch_kit.json",
+      "image": "notch_kit.png",
+      "emissive": "notch_kit_emissive.png",
+      "size": [
+        792,
+        135
+      ],
+      "anims": 0,
+      "sprites": 21,
+      "tiles": 11
     }
-  ]
+  ],
+  "people": [
+    {
+      "sprite": "npc_abigail_ness_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_abigail_ness.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_ada_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_ada.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_amos_tuttle_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_amos_tuttle.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_caleb_stroud_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_caleb_stroud.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_hester_quimby_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_hester_quimby.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_jonah_reed_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_jonah_reed.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_martha_combs_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_martha_combs.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_nell_tibbetts_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_nell_tibbetts.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_obadiah_fenn_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_obadiah_fenn.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_pip_danforth_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_pip_danforth.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_rev_josiah_amsden_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_rev_josiah_amsden.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_silas_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_silas.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_thaddeus_rook_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_thaddeus_rook.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_tilly_marsh_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_tilly_marsh.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "npc_wren_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/npc_wren.json",
+      "size": [
+        343,
+        1657
+      ]
+    },
+    {
+      "sprite": "biscuit_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/biscuit_iso.json",
+      "size": [
+        247,
+        529
+      ]
+    },
+    {
+      "sprite": "deacon_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/deacon_iso.json",
+      "size": [
+        389,
+        1169
+      ]
+    },
+    {
+      "sprite": "mrs_applegate_iso",
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/mrs_applegate_iso.json",
+      "size": [
+        181,
+        721
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "region": "kettle-notch",
+      "json": "regions/kettle-notch/portraits_kettle-notch.json",
+      "size": [
+        456,
+        326
+      ]
+    }
+  ],
+  "bandHeight": 3316
 }

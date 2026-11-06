@@ -338,7 +338,7 @@
     }
   ],
   "keepClear": [],
-  "spots": [
+  "spots": [{"name": "Rev. Amsden (day)", "x": 1.7, "z": -4.8, "note": "The minister in the front pew, striking out paragraphs."}, 
     {
       "name": "Nave",
       "x": 1,

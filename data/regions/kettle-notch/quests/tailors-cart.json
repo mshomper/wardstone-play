@@ -1,0 +1,96 @@
+{
+ "id": "tailors-cart",
+ "title": "The Tailor's Cart",
+ "side": true,
+ "blurb": "Jasper never mentioned it.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "A word",
+   "objective": "",
+   "done": {
+    "flags": [
+     "cart_told"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "jasper_crane"
+    }
+   ],
+   "sets": [
+    "cart_told"
+   ]
+  },
+  {
+   "id": "find",
+   "title": "A word",
+   "objective": "Find the tailor's cart Jasper mentioned.",
+   "hints": [
+    {
+     "if": {
+      "flags": [
+       "cart_at:woodlot"
+      ]
+     },
+     "text": "Find the tailor's cart. Jasper says it has stopped in the Woodlot."
+    },
+    {
+     "if": {
+      "flags": [
+       "cart_at:coffin-rest"
+      ]
+     },
+     "text": "Find the tailor's cart. Jasper says it has stopped by the Coffin Rest."
+    },
+    {
+     "if": {
+      "flags": [
+       "cart_at:south-fields"
+      ]
+     },
+     "text": "Find the tailor's cart. Jasper says it has stopped in the South Fields."
+    }
+   ],
+   "done": {
+    "talk": "hester"
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Jasper"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "go": "sugar-lane",
+     "if": {
+      "flags": [
+       "cart_at:woodlot"
+      ]
+     }
+    },
+    {
+     "go": "old-lane",
+     "if": {
+      "flags": [
+       "cart_at:coffin-rest"
+      ]
+     }
+    },
+    {
+     "go": "south-fields",
+     "if": {
+      "flags": [
+       "cart_at:south-fields"
+      ]
+     }
+    },
+    {
+     "talk": "hester"
+    }
+   ]
+  }
+ ]
+}

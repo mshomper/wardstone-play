@@ -4,6 +4,8 @@ Play the demo: https://mshomper.github.io/wardstone-play/
 
 Best in a current desktop version of Chrome or Edge.
 
+This is an early test. **Saves are wiped when new areas open,** so nothing carries over to the next part of the game.
+
 This repository holds only the built game.
 
 ## Copyright

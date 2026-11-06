@@ -1,0 +1,146 @@
+{
+ "id": "sextons-share",
+ "title": "The Sexton's Share",
+ "side": true,
+ "blurb": "Somebody's taking what the frost leaves, and Jasper Crane would like to know who.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Slow week",
+   "objective": "",
+   "done": {
+    "flags": [
+     "sexton_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "jasper_crane"
+    }
+   ],
+   "sets": [
+    "sexton_asked"
+   ]
+  },
+  {
+   "id": "mounds",
+   "title": "Turned over",
+   "objective": "Look around the old burying ground. Something's been turning the ground.",
+   "done": {
+    "flags": [
+     "mound_3_seen"
+    ]
+   },
+   "skip": {
+    "area": "old-burying-ground"
+   },
+   "auto": [
+    {
+     "go": "old-burying-ground"
+    },
+    {
+     "use": "mound_1"
+    },
+    {
+     "use": "mound_2"
+    },
+    {
+     "use": "mound_3"
+    }
+   ],
+   "sets": [
+    "mound_1_seen",
+    "mound_2_seen",
+    "mound_3_seen"
+   ]
+  },
+  {
+   "id": "rockfall",
+   "title": "The cleft",
+   "objective": "The drag marks go under a rockfall. Earthen Invocation might shift it.",
+   "done": {
+    "flags": [
+     "rockfall_cleared"
+    ]
+   },
+   "skip": {
+    "area": "old-burying-ground"
+   },
+   "auto": [
+    {
+     "use": "rockfall"
+    }
+   ],
+   "sets": [
+    "rockfall_cleared"
+   ]
+  },
+  {
+   "id": "hollow",
+   "title": "The hollow",
+   "objective": "See what's in the hollow beyond the cleft.",
+   "done": {
+    "flags": [
+     "beat_sexton"
+    ]
+   },
+   "skip": {
+    "area": "old-burying-ground"
+   },
+   "auto": [
+    {
+     "fight": "bg-sexton"
+    }
+   ],
+   "sets": [
+    "beat_sexton"
+   ]
+  },
+  {
+   "id": "heap",
+   "title": "What it kept",
+   "objective": "Look under the heap.",
+   "done": {
+    "flags": [
+     "heap_opened"
+    ]
+   },
+   "skip": {
+    "area": "old-burying-ground"
+   },
+   "auto": [
+    {
+     "use": "sexton_heap"
+    }
+   ],
+   "sets": [
+    "heap_opened"
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "Cheaper than I am",
+   "objective": "Tell Jasper who has been taking his shards.",
+   "done": {
+    "flags": [
+     "sexton_told"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Jasper"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "jasper_crane"
+    }
+   ],
+   "sets": [
+    "sexton_told"
+   ]
+  }
+ ]
+}

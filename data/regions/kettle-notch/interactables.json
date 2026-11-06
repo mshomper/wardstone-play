@@ -1,6 +1,7 @@
 {
   "_note": "Things in the world. Each sits at an area spot (or a building's door). kind: use (press to use), door (press to enter area `to`), hearth (spellbook: save, rest, prepare spells), stones (lift fallen stones into the nearest wall gap), zone (fires when walked into). `if` hides it unless the condition holds; `once` hides it after first use. `find` gives an item and shows what it was (one-time, saved).",
   "interactables": [
+    { "id": "pip_whistle", "kind": "use", "label": "A glint in the stubble", "pickup": true, "once": true, "if": { "flags": ["whistle_asked"] }, "dialogue": "whistle_found", "places": [{ "area": "south-fields", "spot": "Pip's whistle" }] },
     {
       "id": "store_door", "kind": "door", "label": "Hale's Store", "to": "store-ground", "at": [-2, 1.7], "dir": 4,
       "places": [{ "area": "green-frame", "building": 2 }]
@@ -30,9 +31,19 @@
       "places": [{ "area": "green-frame", "building": 6 }]
     },
     {
-      "id": "noticeboard", "kind": "use", "label": "Noticeboard", "dialogue": "noticeboard",
+      "id": "noticeboard", "kind": "use", "label": "Noticeboard", "dialogue": "noticeboard", "board": "kettle-notch",
       "places": [{ "area": "green-frame", "spot": "Noticeboard" }]
     },
+    { "id": "spot_church_steps", "kind": "use", "label": "Church steps", "pickup": true, "if": { "flags": ["spot:spot_church_steps"] }, "places": [{ "area": "green-frame", "at": [1.2, -5.5] }] },
+    { "id": "spot_stall_hay", "kind": "use", "label": "Hay by the stall", "pickup": true, "if": { "flags": ["spot:spot_stall_hay"] }, "places": [{ "area": "green-frame", "at": [-2.4, 3.4] }] },
+    { "id": "spot_mill_wall", "kind": "use", "label": "Behind the mill", "pickup": true, "if": { "flags": ["spot:spot_mill_wall"] }, "places": [{ "area": "green-frame", "at": [10.2, -4] }] },
+    { "id": "spot_orchard_gap", "kind": "use", "label": "Gap in the wall", "pickup": true, "if": { "flags": ["spot:spot_orchard_gap"] }, "places": [{ "area": "orchard", "at": [8.6, -5] }] },
+    { "id": "spot_orchard_crate", "kind": "use", "label": "Old crate", "pickup": true, "if": { "flags": ["spot:spot_orchard_crate"] }, "places": [{ "area": "orchard", "at": [-3.8, 7.7] }] },
+    { "id": "spot_woods_cairn", "kind": "use", "label": "Wayside cairn", "pickup": true, "if": { "flags": ["spot:spot_woods_cairn"] }, "places": [{ "area": "brook-woods", "at": [-1.6, 0.6] }] },
+    { "id": "spot_woods_log", "kind": "use", "label": "Fallen log", "pickup": true, "if": { "flags": ["spot:spot_woods_log"] }, "places": [{ "area": "brook-woods", "at": [4.4, -6.6] }] },
+    { "id": "spot_fields_mailbox", "kind": "use", "label": "Mailbox", "pickup": true, "if": { "flags": ["spot:spot_fields_mailbox"] }, "places": [{ "area": "south-fields", "at": [2, -10.8] }] },
+    { "id": "spot_fields_scarecrow", "kind": "use", "label": "Scarecrow", "pickup": true, "if": { "flags": ["spot:spot_fields_scarecrow"] }, "places": [{ "area": "south-fields", "at": [-13.4, 4.6] }] },
+    { "id": "spot_hollow_path", "kind": "use", "label": "Where the path ends", "pickup": true, "if": { "flags": ["spot:spot_hollow_path"] }, "places": [{ "area": "alder-hollow", "at": [-3.4, 11.2] }] },
     {
       "id": "stall_red", "kind": "use", "label": "Fair stall", "dialogue": "stall_red",
       "places": [{ "area": "green-frame", "spot": "Stall (red)" }]
@@ -202,12 +213,12 @@
       "places": [{ "area": "colonial-west", "spot": "Tuttle clock" }]
     },
     {
-      "id": "first_gap", "kind": "zone", "radius": 2.2, "once": true,
+      "id": "first_gap", "kind": "zone", "radius": 4.8, "once": true,
       "dialogue": "first_gap",
       "places": [{ "area": "orchard", "spot": "First gap" }]
     },
     {
-      "id": "bridge_north", "kind": "zone", "radius": 1.6, "once": true,
+      "id": "bridge_north", "kind": "zone", "radius": 2.6, "once": true,
       "then": [{ "setFlag": "crossed_bridge" }],
       "places": [{ "area": "brook-woods", "spot": "Bridge north" }]
     },
@@ -222,6 +233,34 @@
       "if": { "quest": { "id": "first-frost", "is": "breach" } },
       "then": [{ "scene": "breach" }],
       "places": [{ "area": "breach", "spot": "Breach battle" }]
-    }
+    },
+    { "id": "gear_test_basket", "kind": "use", "label": "Test gear: the rest of the pieces", "pickup": true, "once": true, "gear": "test", "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [0.85, -0.7] }] },
+    { "id": "gear_test_tailor", "kind": "tailor", "label": "Test tailor", "radius": 1.2, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [1.85, -1.05] }] },
+    { "id": "gear_test_last_tailor", "kind": "tailor", "stitches": true, "label": "Test last tailor", "radius": 1.0, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [3.7, 0.4] }] },
+    { "id": "gear_test_merchant", "kind": "use", "label": "Test merchant", "radius": 1.0, "then": { "shop": true }, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [-0.2, 1.2] }] },
+    { "id": "sugarbush_frost", "kind": "zone", "radius": 2.4, "once": true, "dialogue": "sugarbush_frost", "places": [{ "area": "sugarbush", "spot": "Tapped line" }] },
+    { "id": "find_sugar_sled", "kind": "use", "label": "Gathering sled", "pickup": true, "once": true, "find": { "item": "maple_candy", "n": 2, "note": "Wedged under the tank, for whoever does the hauling." }, "places": [{ "area": "sugarbush", "spot": "Sled" }] },
+    { "id": "find_sugar_wood", "kind": "use", "label": "Woodpile", "pickup": true, "once": true, "find": { "item": "maple_sugar", "note": "A twist of paper tucked between the splits, for whoever comes back to stack." }, "places": [{ "area": "sugarbush", "spot": "Woodpile" }] },
+    { "id": "find_sugar_far", "kind": "use", "label": "Fallen log", "pickup": true, "once": true, "find": { "item": "sugar_on_snow", "note": "Set in the shade of the log, in a tin. It has not melted." }, "places": [{ "area": "sugarbush", "spot": "Far log" }] },
+    { "id": "find_woodlot_stack", "kind": "use", "label": "Cordwood", "pickup": true, "once": true, "find": { "item": "johnnycake", "note": "On the stack, in a cloth. Somebody's dinner, and somebody who forgot." }, "places": [{ "area": "sugar-lane", "spot": "Stack" }] },
+    { "id": "coffin_rest", "kind": "use", "label": "Flat stone", "once": true, "dialogue": "coffin_rest", "find": { "item": "ward_chalk", "note": "On the stone, under a pebble. It is fresher than the stone." }, "pickup": true, "places": [{ "area": "old-lane", "spot": "Rest stone" }] },
+    { "id": "stone_mercy", "kind": "use", "label": "Headstone", "dialogue": "stone_mercy", "places": [{ "area": "old-burying-ground", "spot": "Stone: Mercy Whitcomb" }] },
+    { "id": "stone_tuttle", "kind": "use", "label": "Headstone", "dialogue": "stone_tuttle", "places": [{ "area": "old-burying-ground", "spot": "Stone: Tuttle" }] },
+    { "id": "stone_thayer", "kind": "use", "label": "Old stone", "dialogue": "stone_thayer", "places": [{ "area": "old-burying-ground", "spot": "Stone: Thayer" }] },
+    { "id": "stone_silence", "kind": "use", "label": "Old stone", "dialogue": "stone_silence", "places": [{ "area": "old-burying-ground", "spot": "Stone: Silence" }] },
+    { "id": "stone_ring", "kind": "use", "label": "Old stone", "dialogue": "stone_ring", "places": [{ "area": "old-burying-ground", "spot": "Stone: the ring" }] },
+    { "id": "find_ground_crate", "kind": "use", "label": "Old crate", "pickup": true, "once": true, "find": { "item": "lamp_oil", "note": "For the sexton's lamp, when there was a sexton." }, "places": [{ "area": "old-burying-ground", "spot": "Far crate" }] },
+    { "id": "find_ground_boulder", "kind": "use", "label": "Mossy boulder", "pickup": true, "once": true, "find": { "item": "old_wall_stone", "note": "It came off this wall, and it is older than the wall." }, "places": [{ "area": "old-burying-ground", "spot": "North boulder" }] },
+    { "id": "door_old_burying_ground_old_vault", "kind": "door", "label": "Old vault", "to": "old-burying-ground-old-vault", "dir": 4, "places": [{ "area": "old-burying-ground", "building": 0 }] },
+    { "id": "door_south_fields_barn", "kind": "door", "label": "Barn", "to": "south-fields-barn", "dir": 4, "places": [{ "area": "south-fields", "building": 0 }] },
+    { "id": "door_sugarbush_sugar_shack", "kind": "door", "label": "Sugar shack", "to": "sugarbush-sugar-shack", "dir": 4, "places": [{ "area": "sugarbush", "building": 0 }] },
+    { "id": "mound_1", "kind": "use", "label": "Fresh mound", "once": true, "if": { "flags": ["sexton_asked"] }, "dialogue": "mound_1", "then": { "setFlag": "mound_1_seen" }, "places": [{ "area": "old-burying-ground", "spot": "Mound 1" }] },
+    { "id": "mound_2", "kind": "use", "label": "Fresh mound", "once": true, "if": { "flags": ["mound_1_seen"] }, "dialogue": "mound_2", "then": { "setFlag": "mound_2_seen" }, "places": [{ "area": "old-burying-ground", "spot": "Mound 2" }] },
+    { "id": "mound_3", "kind": "use", "label": "Fresh mound", "once": true, "if": { "flags": ["mound_2_seen"] }, "dialogue": "mound_3", "then": { "setFlag": "mound_3_seen" }, "places": [{ "area": "old-burying-ground", "spot": "Mound 3" }] },
+    { "id": "rockfall", "kind": "use", "label": "Fallen stone", "once": true, "if": { "flags": ["mound_3_seen"] }, "dialogue": "rockfall_look", "then": { "clear": true }, "places": [{ "area": "old-burying-ground", "spot": "Rockfall" }] },
+    { "id": "sexton_rises", "kind": "zone", "radius": 5, "if": { "flags": ["rockfall_cleared"], "notFlags": ["beat_sexton"] }, "then": { "fight": "bg-sexton" }, "places": [{ "area": "old-burying-ground", "spot": "Sexton's Heap" }] },
+    { "id": "sexton_heap", "kind": "use", "label": "The heap", "once": true, "if": { "flags": ["beat_sexton"] }, "dialogue": "heap_open", "then": { "gear": { "id": "sexton_gloves", "slot": "gloves", "rarity": "sunday", "seed": 227, "bare": true } }, "places": [{ "area": "old-burying-ground", "spot": "Sexton's Heap" }] },
+    { "id": "ledger_slab", "kind": "use", "label": "Old slab", "if": { "flags": ["breach_sealed"], "notFlags": ["beat_ledger"] }, "dialogue": "ledger_read", "then": { "fight": "bg-ledger" }, "places": [{ "area": "old-burying-ground", "at": [16, -11.7] }] },
+    { "id": "ledger_rest", "kind": "use", "label": "Old slab", "if": { "flags": ["beat_ledger"] }, "dialogue": "ledger_after", "places": [{ "area": "old-burying-ground", "at": [16, -11.7] }] }
   ]
 }

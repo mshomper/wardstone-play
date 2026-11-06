@@ -1,0 +1,286 @@
+{
+ "image": "portraits_kettle-notch.png",
+ "emissive": "portraits_kettle-notch_emissive.png",
+ "size": [
+  456,
+  326
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "portrait_abigail_ness_neutral": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_abigail_ness_smile": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_neutral": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_smile": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_teasing": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ada_worried": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_amos_tuttle_neutral": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_amos_tuttle_smile": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_caleb_stroud_neutral": {
+   "x": 66,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_caleb_stroud_smile": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hester_quimby_neutral": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hester_quimby_smile": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jonah_reed_neutral": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jonah_reed_smile": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_martha_combs_neutral": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_martha_combs_smile": {
+   "x": 66,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_nell_tibbetts_neutral": {
+   "x": 131,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_nell_tibbetts_smile": {
+   "x": 196,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obadiah_fenn_neutral": {
+   "x": 261,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obadiah_fenn_smile": {
+   "x": 326,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_pip_danforth_neutral": {
+   "x": 391,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_pip_danforth_smile": {
+   "x": 1,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_rev_josiah_amsden_neutral": {
+   "x": 66,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_rev_josiah_amsden_smile": {
+   "x": 131,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_neutral": {
+   "x": 196,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_gruff": {
+   "x": 261,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_silas_worried": {
+   "x": 326,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thaddeus_rook_neutral": {
+   "x": 391,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thaddeus_rook_smile": {
+   "x": 1,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tilly_marsh_neutral": {
+   "x": 66,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tilly_marsh_smile": {
+   "x": 131,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_neutral": {
+   "x": 196,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_smile": {
+   "x": 261,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_wren_cross": {
+   "x": 326,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  }
+ },
+ "tiles": {}
+}

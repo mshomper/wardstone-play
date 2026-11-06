@@ -1,0 +1,83 @@
+{
+ "id": "mrs-applegate",
+ "title": "Mrs. Applegate",
+ "side": true,
+ "blurb": "Tilly Marsh has lost a goose. The goose has not lost anything.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "White. Mean.",
+   "objective": "",
+   "done": {
+    "flags": [
+     "goose_asked"
+    ]
+   },
+   "auto": [
+    {
+     "talk": "tilly"
+    }
+   ],
+   "sets": [
+    "goose_asked"
+   ]
+  },
+  {
+   "id": "find",
+   "title": "White. Mean.",
+   "objective": "Tilly thinks the goose went up the orchard road.",
+   "done": {
+    "flags": [
+     "goose_led"
+    ]
+   },
+   "skip": {
+    "area": "orchard"
+   },
+   "auto": [
+    {
+     "go": "orchard"
+    },
+    {
+     "talk": "mrs_applegate"
+    }
+   ],
+   "sets": [
+    "goose_led"
+   ]
+  },
+  {
+   "id": "home",
+   "title": "Same direction",
+   "objective": "Tell Tilly on the Green.",
+   "done": {
+    "flags": [
+     "goose_home"
+    ]
+   },
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Tell Tilly. She is on the church steps."
+    }
+   ],
+   "skip": {
+    "area": "orchard",
+    "spot": "Mrs. Applegate (windfalls)"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "tilly"
+    }
+   ],
+   "sets": [
+    "goose_home"
+   ]
+  }
+ ]
+}

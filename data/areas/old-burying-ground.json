@@ -1,0 +1,622 @@
+{
+ "version": 1,
+ "name": "old-burying-ground",
+ "seed": 3202,
+ "size": {
+  "w": 48,
+  "h": 48
+ },
+ "mood": {
+  "baseHeight": -0.2,
+  "edgeRise": 2.4,
+  "edgeWidth": 5,
+  "roll": 0.4,
+  "pathMargin": 0.7,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.34,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "bare_tree_0",
+     "bare_tree_1"
+    ],
+    "density": 0.1,
+    "spacing": 4,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.35,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.05,
+    "spacing": 4,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "boulder_mossy_2"
+    ],
+    "density": 0.03,
+    "spacing": 4,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1",
+     "asters_0",
+     "asters_1"
+    ],
+    "density": 0.07,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_2"
+    ],
+    "density": 0.18,
+    "spacing": 1.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge"
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     0,
+     24
+    ],
+    [
+     0.6,
+     18.6
+    ],
+    [
+     5,
+     14
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     -1,
+     3.4
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "width": 1.2,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     -14,
+     17
+    ],
+    [
+     -16,
+     9
+    ],
+    [
+     -13,
+     -2
+    ],
+    [
+     -4,
+     -7
+    ],
+    [
+     7,
+     -7
+    ],
+    [
+     15,
+     -1
+    ],
+    [
+     16,
+     9
+    ],
+    [
+     13,
+     17
+    ],
+    [
+     6,
+     18.6
+    ],
+    [
+     -6,
+     18.6
+    ],
+    [
+     -14,
+     17
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 82.12,
+     "width": 2.4
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -4.8,
+     -6.6
+    ],
+    [
+     -6.2,
+     -13
+    ],
+    [
+     -5.5,
+     -22.6
+    ],
+    [
+     7.5,
+     -22.6
+    ],
+    [
+     8.6,
+     -13
+    ],
+    [
+     8,
+     -6.4
+    ]
+   ],
+   "gaps": []
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "vault",
+   "x": 0.5,
+   "z": -2.5,
+   "w": 5,
+   "d": 4,
+   "rot": 0,
+   "height": 2.4,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.5,
+       -2.0
+      ],
+      [
+       2.5,
+       -2.0
+      ],
+      [
+       2.5,
+       2.0
+      ],
+      [
+       -2.5,
+       2.0
+      ]
+     ],
+     "storeys": 1
+    }
+   ],
+   "opens": "Old vault",
+   "scale": 1.7,
+   "lootMax": 1
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 1,
+   "z": 3,
+   "radius": 13,
+   "height": 3.2
+  },
+  {
+   "kind": "hollow",
+   "x": 1,
+   "z": -13,
+   "radius": 7,
+   "height": 0.7
+  }
+ ],
+ "arenas": [
+  {
+   "x": -18,
+   "z": 16.6,
+   "radius": 2.3
+  },
+  {
+   "x": 18,
+   "z": 13.6,
+   "radius": 2.3
+  },
+  {
+   "x": 14,
+   "z": -12,
+   "radius": 3.4
+  },
+  {
+   "x": -12.5,
+   "z": -12.5,
+   "radius": 2.6
+  },
+  {
+   "x": 19,
+   "z": 5,
+   "radius": 2.4
+  },
+  {
+   "x": -19.2,
+   "z": 6,
+   "radius": 2.4
+  },
+  {
+   "x": -19,
+   "z": -6,
+   "radius": 2.3
+  },
+  {
+   "x": 1,
+   "z": -18.4,
+   "radius": 2.8
+  }
+ ],
+ "placements": [
+  {
+   "prop": "dirt_mound",
+   "x": -7,
+   "z": 1.5
+  },
+  {
+   "prop": "dirt_mound",
+   "x": -5.4,
+   "z": -3.6
+  },
+  {
+   "prop": "dirt_mound",
+   "x": -2.6,
+   "z": -5.5
+  },
+  {
+   "prop": "shard_heap",
+   "x": 1,
+   "z": -21.2,
+   "collide": 0.6
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 5,
+   "z": 0.6,
+   "collide": 0.5,
+   "tall": true,
+   "scale": 1.55
+  },
+  {
+   "prop": "stone_slate_1",
+   "x": 7.2,
+   "z": 12.8,
+   "collide": 0.28
+  },
+  {
+   "prop": "stone_granite_0",
+   "x": 3.4,
+   "z": 14.8,
+   "collide": 0.28
+  },
+  {
+   "prop": "stone_old_1",
+   "x": 4.6,
+   "z": 4.4,
+   "collide": 0.28
+  },
+  {
+   "prop": "stone_old_0",
+   "x": -3,
+   "z": 2.4,
+   "collide": 0.28
+  },
+  {
+   "prop": "stone_old_1",
+   "x": -1.9,
+   "z": -0.2,
+   "collide": 0.28
+  },
+  {
+   "prop": "crate_0",
+   "x": 18.2,
+   "z": 19.4,
+   "collide": 0.35
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -18.8,
+   "z": -3.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_large_0",
+   "x": 0.2,
+   "z": -6.35,
+   "collide": 0.55
+  },
+  {
+   "prop": "boulder_large_1",
+   "x": 1.9,
+   "z": -6.4,
+   "collide": 0.55
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 1,
+   "z": -5.9,
+   "collide": 0.3
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -7,
+     1.5
+    ],
+    [
+     -5.4,
+     -3.6
+    ],
+    [
+     -2.6,
+     -5.5
+    ],
+    [
+     3.4,
+     -5.5
+    ]
+   ],
+   "radius": 1
+  },
+  {
+   "points": [
+    [
+     -1,
+     -18.6
+    ],
+    [
+     3,
+     -18.6
+    ]
+   ],
+   "radius": 5.5
+  },
+  {
+   "points": [
+    [
+     -9,
+     23
+    ],
+    [
+     9,
+     23
+    ]
+   ],
+   "radius": 3.4
+  }
+ ],
+ "spots": [
+  {
+   "name": "Stone: Mercy Whitcomb",
+   "x": 7.2,
+   "z": 13.6,
+   "note": "One of the town's."
+  },
+  {
+   "name": "Stone: Tuttle",
+   "x": 3.4,
+   "z": 15.6,
+   "note": "One of the town's."
+  },
+  {
+   "name": "Stone: Thayer",
+   "x": 4.6,
+   "z": 5.2,
+   "note": "Old. Obed's people."
+  },
+  {
+   "name": "Stone: Silence",
+   "x": -3,
+   "z": 3.2,
+   "note": "Old."
+  },
+  {
+   "name": "Stone: the ring",
+   "x": -1.9,
+   "z": 0.6,
+   "note": "The oldest. No words."
+  },
+  {
+   "name": "Far crate",
+   "x": 18.2,
+   "z": 20,
+   "note": "Find: tucked outside the wall."
+  },
+  {
+   "name": "North boulder",
+   "x": -18.8,
+   "z": -2.6,
+   "note": "Find: behind the wall."
+  },
+  {
+   "name": "Mound 1",
+   "x": -7,
+   "z": 1.5,
+   "note": "The way round behind the vault."
+  },
+  {
+   "name": "Mound 2",
+   "x": -5.4,
+   "z": -3.6,
+   "note": "The way round behind the vault."
+  },
+  {
+   "name": "Mound 3",
+   "x": -2.6,
+   "z": -5.5,
+   "note": "The way round behind the vault."
+  },
+  {
+   "name": "Rockfall",
+   "x": 1,
+   "z": -5.3,
+   "note": "The blocked cleft in the wall behind the vault."
+  },
+  {
+   "name": "Sexton's Heap",
+   "x": 1,
+   "z": -21.2,
+   "note": "The middle of the hidden hollow."
+  },
+  {
+   "name": "Ledger slab",
+   "x": 14,
+   "z": -14.2,
+   "note": "The Ledger's stone, at its circle."
+  }
+ ],
+ "exits": [
+  {
+   "rect": [
+    -2.2,
+    20,
+    2.8,
+    21
+   ],
+   "to": "old-lane",
+   "at": [
+    0,
+    -8.6
+   ],
+   "dir": 0
+  }
+ ],
+ "rockfall": {
+  "wall": 0,
+  "at": 34.94,
+  "width": 2.2,
+  "remove": [
+   [
+    0.2,
+    -6.35
+   ],
+   [
+    1.9,
+    -6.4
+   ],
+   [
+    1,
+    -5.9
+   ]
+  ]
+ },
+ "plots": [
+  {
+   "layout": "rings",
+   "at": [
+    1,
+    3
+   ],
+   "rx": 12.6,
+   "rz": 10.4,
+   "spacing": 2.5,
+   "gap": 0.27,
+   "young": [
+    "stone_slate_0",
+    "stone_slate_1",
+    "stone_slate_2",
+    "stone_granite_0",
+    "stone_granite_1"
+   ],
+   "old": [
+    "stone_old_0",
+    "stone_old_1",
+    "stone_old_2"
+   ],
+   "oldAt": [
+    1,
+    1
+   ],
+   "oldWithin": 0.5,
+   "jitter": 0.3,
+   "missing": 0.14,
+   "collide": 0.28
+  }
+ ],
+ "start": [
+  0.4,
+  19.2
+ ]
+}

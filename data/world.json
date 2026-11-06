@@ -1,0 +1,13 @@
+{
+  "_note": "The world map: the ring of walls around the mountain (docs/future/F05-world-map.md). Towns sit on the ring at an angle in degrees, in road order, and ink in once a place in their region has been walked. `region` is blank until that region is built. `label` says which side the name sits.",
+  "mountain": "Old Sleeper",
+  "towns": [
+    { "id": "kettle-notch", "name": "Kettle Notch", "angle": -135, "region": "kettle-notch", "label": "left" },
+    { "id": "hardscrabble", "name": "Hardscrabble", "angle": 175, "region": "", "label": "below" },
+    { "id": "harlow-bridge", "name": "Harlow Bridge", "angle": 130, "region": "", "label": "below" },
+    { "id": "fallow-bend", "name": "Fallow Bend", "angle": 90, "region": "", "label": "below" },
+    { "id": "furnace-hollow", "name": "Furnace Hollow", "angle": 45, "region": "", "label": "right" },
+    { "id": "high-commons", "name": "The High Commons", "angle": -5, "region": "", "label": "right" },
+    { "id": "coldharbor", "name": "Coldharbor", "angle": -55, "region": "", "label": "right" }
+  ]
+}

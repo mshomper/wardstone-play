@@ -1,0 +1,3690 @@
+{
+ "_note": "Everything the gear generator and the game may use (docs/future/F06). Costs come from fights: see prices.json, written by tools/gear/sim/bench.mjs. Text templates: {pc:x} a share as a percent, {more:x} and {less:x} a multiplier as a percent, {pct:x} a share, {x} the value.",
+ "slots": {
+  "boots": {
+   "name": "Boots",
+   "verb": "Getting there first",
+   "stat": [
+    {
+     "stat": "spd",
+     "add": 1
+    }
+   ],
+   "statText": "speed",
+   "moments": [
+    "first_round",
+    "act_first",
+    "each_round"
+   ]
+  },
+  "gloves": {
+   "name": "Gloves",
+   "verb": "What your hands do to a move",
+   "stat": [
+    {
+     "stat": "atk",
+     "pct": 0.05
+    },
+    {
+     "stat": "mag",
+     "pct": 0.05
+    }
+   ],
+   "statText": "hit strength",
+   "moments": [
+    "on_hit",
+    "on_attack",
+    "passive"
+   ]
+  },
+  "coat": {
+   "name": "Coat",
+   "verb": "What happens when you get hit",
+   "stat": [
+    {
+     "stat": "def",
+     "pct": 0.1
+    },
+    {
+     "stat": "res",
+     "pct": 0.1
+    }
+   ],
+   "statText": "guard",
+   "moments": [
+    "when_hit",
+    "when_low",
+    "on_ward",
+    "passive"
+   ]
+  },
+  "belt": {
+   "name": "Belt",
+   "verb": "What you carry and how it lasts",
+   "stat": [
+    {
+     "stat": "mp",
+     "pct": 0.08
+    }
+   ],
+   "statText": "MP",
+   "moments": [
+    "on_item",
+    "low_pool",
+    "on_win",
+    "passive"
+   ]
+  },
+  "keepsake": {
+   "name": "Keepsake",
+   "verb": "One rule, at a price",
+   "stat": [],
+   "statText": "",
+   "moments": [
+    "always"
+   ]
+  }
+ },
+ "rarities": [
+  {
+   "id": "homespun",
+   "name": "Homespun",
+   "stitches": 0,
+   "points": 2,
+   "statUnits": 1,
+   "colour": "#a89878",
+   "note": "Made at home. Does its job."
+  },
+  {
+   "id": "stout",
+   "name": "Stout",
+   "stitches": 1,
+   "points": 5,
+   "statUnits": 1,
+   "colour": "#8fae7a",
+   "note": "Bought, and worth the goods."
+  },
+  {
+   "id": "sunday",
+   "name": "Sunday Best",
+   "stitches": 2,
+   "points": 9,
+   "statUnits": 1,
+   "colour": "#7fa6c9",
+   "note": "The good one. Kept for when it counts."
+  },
+  {
+   "id": "heirloom",
+   "name": "Heirloom",
+   "stitches": 3,
+   "points": 14,
+   "statUnits": 2,
+   "colour": "#c58fc0",
+   "note": "Handed down. Somebody looked after it."
+  },
+  {
+   "id": "oldwork",
+   "name": "Old Work",
+   "stitches": 4,
+   "points": 20,
+   "statUnits": 2,
+   "colour": "#e0b45a",
+   "note": "Nobody living could make this. Endgame only."
+  }
+ ],
+ "charms": {
+  "rime_shard": {
+   "flavor": "Doesn't melt in the hand.",
+   "name": "Rime Shard",
+   "craft": "frost",
+   "item": "rime_shard",
+   "colour": "#9fd6ea",
+   "status": "chilled",
+   "word": "Chilled",
+   "turns": 1
+  },
+  "pine_pitch": {
+   "flavor": "Comes off with butter, eventually.",
+   "name": "Pine Pitch",
+   "craft": "herbs",
+   "item": "pine_pitch",
+   "colour": "#c8913c",
+   "status": "sticky",
+   "word": "Sticky",
+   "turns": 2
+  },
+  "lamp_wick": {
+   "flavor": "Still smells of the last night it burned.",
+   "name": "Lamp Wick",
+   "craft": "iron",
+   "colour": "#e8783c",
+   "status": "burning",
+   "word": "Burning",
+   "turns": 2
+  },
+  "cow_bell": {
+   "flavor": "The cow is gone. The clapper hasn't noticed.",
+   "name": "Cowbell Clapper",
+   "craft": "paths",
+   "item": "cowbell",
+   "colour": "#c9b458",
+   "status": "slow",
+   "word": "Slowed",
+   "turns": 2
+  },
+  "bent_pin": {
+   "flavor": "Found in a hem. Found again in a thumb.",
+   "name": "Bent Pin",
+   "craft": "iron",
+   "colour": "#a8b0b8",
+   "status": "cracked",
+   "word": "Cracked",
+   "turns": 2
+  },
+  "hag_stone": {
+   "flavor": "Look through the hole if you must.",
+   "name": "Hag Stone",
+   "craft": "stone",
+   "colour": "#8e8a84",
+   "status": "hexed",
+   "word": "Hexed",
+   "turns": 2
+  },
+  "tansy": {
+   "flavor": "Hung in the pantry to keep the flies honest.",
+   "name": "Sprig of Tansy",
+   "craft": "herbs",
+   "colour": "#d8c848",
+   "family": "heal"
+  },
+  "maple_sugar": {
+   "flavor": "Scraped from the bottom of the pan. Worth the burn.",
+   "name": "Maple Sugar", "item": "maple_sugar",
+   "craft": "herbs",
+   "colour": "#b97a3c",
+   "family": "pool"
+  },
+  "wall_chip": {
+   "flavor": "Off the old wall. Nobody says which stretch.",
+   "name": "Chip of Wall Stone",
+   "craft": "stone",
+   "item": "old_wall_stone",
+   "colour": "#9a9488",
+   "family": "guard"
+  },
+  "cold_nail": {
+   "flavor": "Cold in August, too.",
+   "name": "Cold Iron Nail",
+   "craft": "iron",
+   "item": "cold_iron_nail",
+   "colour": "#6f8fa8",
+   "family": "hitup"
+  },
+  "burr_quill": {
+   "flavor": "Pulled with tongs, and a good deal of language.",
+   "name": "Burrback Quill",
+   "craft": "paths",
+   "item": "burrback_quill",
+   "colour": "#d8cdb0",
+   "family": "strike"
+  },
+  "sampler": {
+   "flavor": "Cross-stitched by a child who was told to.",
+   "name": "Sampler Verse",
+   "craft": "words",
+   "colour": "#d06a6a",
+   "family": "empower"
+  },
+  "red_thread": {
+   "flavor": "Tied on for a reason nobody remembers.",
+   "name": "Red Thread",
+   "craft": "words",
+   "colour": "#c8383c",
+   "family": "thread"
+  },
+  "copper_button": {
+   "flavor": "Off a better coat than this one.",
+   "name": "Copper Button",
+   "craft": "bargain",
+   "item": "copper_button",
+   "colour": "#c87a48",
+   "family": "trade"
+  },
+  "silver_thimble": {
+   "flavor": "Too good to sew with. She sewed with it.",
+   "name": "Silver Thimble",
+   "craft": "bargain",
+   "item": "silver_thimble",
+   "colour": "#d8dce0",
+   "family": "trade"
+  },
+  "brass_key": {
+   "flavor": "Fits nothing in this town.",
+   "name": "Brass Key",
+   "craft": "paths",
+   "item": "brass_key",
+   "colour": "#d8b048",
+   "family": "key"
+  },
+  "old_almanac": {
+   "flavor": "Predicts rain. It's usually right.",
+   "name": "Almanac Page",
+   "craft": "words",
+   "item": "old_almanac",
+   "colour": "#c8c0a0",
+   "family": "almanac"
+  },
+  "darning_egg": {
+   "flavor": "Smooth from three generations of socks.",
+   "name": "Darning Egg",
+   "craft": "herbs",
+   "item": "darning_egg",
+   "colour": "#b09878",
+   "family": "egg"
+  },
+  "pewter_spoon": {
+   "flavor": "Bent from stirring something it shouldn't have.",
+   "name": "Pewter Spoon",
+   "craft": "iron",
+   "item": "pewter_spoon",
+   "colour": "#9aa4a8",
+   "family": "spoon"
+  },
+  "tin_whistle": {
+   "flavor": "Two notes, and one of them's wrong.",
+   "name": "Tin Whistle",
+   "craft": "words",
+   "item": "tin_whistle",
+   "colour": "#b8c4c8",
+   "family": "whistle"
+  },
+  "pawn_ticket": {
+   "flavor": "Redeemable. Nobody has.",
+   "name": "Pawn Ticket",
+   "craft": "bargain",
+   "colour": "#d8a878",
+   "family": "ticket"
+  },
+  "foxglove": {
+   "flavor": "Pressed flat. Wash your hands.",
+   "name": "Foxglove",
+   "craft": "herbs",
+   "colour": "#a860b0",
+   "status": "poison",
+   "word": "Poisoned",
+   "turns": 3
+  },
+  "lightning_splinter": {
+   "flavor": "The rest of the tree is still arguing about it.",
+   "name": "Lightning-Struck Splinter",
+   "craft": "paths",
+   "colour": "#e8d850",
+   "status": "shocked",
+   "word": "Shocked",
+   "turns": 2
+  },
+  "lampblack": {
+   "flavor": "Gets on everything. It's on you now.",
+   "name": "Pinch of Lampblack",
+   "craft": "iron",
+   "colour": "#4a4a52",
+   "status": "blind",
+   "word": "Blinded",
+   "turns": 2
+  },
+  "scarecrow_button": {
+   "flavor": "It fell off. The crows still won't touch it.",
+   "name": "Scarecrow's Button",
+   "craft": "words",
+   "colour": "#c8a870",
+   "status": "afraid",
+   "word": "Frightened",
+   "turns": 2
+  },
+  "sermon_notes": {
+   "flavor": "Forty minutes on patience, in very small writing.",
+   "name": "Sermon Notes", "item": "sermon_notes",
+   "craft": "words",
+   "colour": "#e0d8c0",
+   "status": "drowsy",
+   "word": "Drowsy",
+   "turns": 2
+  },
+  "cider_dregs": {
+   "flavor": "The bottom of the barrel, and proud of it.",
+   "name": "Hard Cider Dregs",
+   "craft": "herbs",
+   "colour": "#b08838",
+   "status": "confused",
+   "word": "Muddled",
+   "turns": 2
+  },
+  "horseshoe_nail": {
+   "flavor": "Keep it pointing up, they say.",
+   "name": "Horseshoe Nail",
+   "craft": "iron",
+   "colour": "#8a94a0",
+   "family": "luck"
+  },
+  "wishbone": {
+   "flavor": "Nobody pulled it. That's the trouble.",
+   "name": "Wishbone",
+   "craft": "bargain",
+   "colour": "#e8dcc0",
+   "family": "wild"
+  },
+  "smelling_salts": {
+   "flavor": "One sniff and you're up, whether you like it or not.",
+   "name": "Smelling Salts",
+   "craft": "herbs",
+   "colour": "#70b080",
+   "family": "revive"
+  },
+  "goose_down": {
+   "flavor": "The goose had opinions.",
+   "name": "Goose Down", "item": "goose_down",
+   "craft": "paths",
+   "colour": "#f0ece0",
+   "family": "barrier"
+  },
+  "hare_foot": {
+   "flavor": "Didn't help the hare.",
+   "name": "Hare's Foot",
+   "craft": "paths",
+   "colour": "#b09880",
+   "family": "rush"
+  },
+  "crow_feather": {
+   "flavor": "A crow left it on purpose. Crows do.",
+   "name": "Crow Feather",
+   "craft": "paths",
+   "colour": "#3a3a4a",
+   "family": "crow"
+  },
+  "grindstone_grit": {
+   "flavor": "Takes an edge off, puts an edge on.",
+   "name": "Grindstone Grit",
+   "craft": "stone",
+   "colour": "#a09a90",
+   "family": "finisher"
+  },
+  "bellows_leather": {
+   "flavor": "Still breathes a little when you fold it.",
+   "name": "Bellows Leather",
+   "craft": "iron",
+   "colour": "#8a5a3a",
+   "family": "echo"
+  },
+  "hearth_ash": {
+   "flavor": "From a fire that never quite went out.",
+   "name": "Hearth Ash",
+   "craft": "stone",
+   "colour": "#b0a8a0",
+   "family": "ash"
+  },
+  "crock_starter": {
+   "flavor": "Older than the house. Still hungry.",
+   "name": "Crock of Starter",
+   "craft": "herbs",
+   "colour": "#d8c8a0",
+   "family": "pack"
+  },
+  "bottle_cork": {
+   "flavor": "Smells of something better than you'll ever drink.",
+   "name": "Bottle Cork",
+   "craft": "bargain",
+   "colour": "#c0a070",
+   "family": "cork"
+  },
+  "snuff_tin": {
+   "flavor": "Empty. Keeps the sneeze.",
+   "name": "Snuff Tin",
+   "craft": "words",
+   "colour": "#90a0a8",
+   "family": "combo"
+  },
+  "looking_glass": {
+   "flavor": "Shows you from a bit too close.",
+   "name": "Sliver of Looking Glass",
+   "craft": "bargain",
+   "colour": "#c8e0e8",
+   "family": "glass"
+  },
+  "hornet_paper": {
+   "flavor": "Nobody home. Probably.",
+   "name": "Hornet Paper",
+   "craft": "stone",
+   "colour": "#9a9488",
+   "family": "hornet"
+  }
+ },
+ "seamBonus": 0.2,
+ "blocks": [
+  {
+   "id": "rail_fence",
+   "name": "Rail Fence",
+   "n": 2,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "weights": [
+    1,
+    1
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ]
+   ],
+   "note": "Two even strips. Match them and both grow."
+  },
+  {
+   "id": "broken_dishes",
+   "name": "Broken Dishes",
+   "n": 2,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "weights": [
+    1.35,
+    0.65
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ]
+   ],
+   "note": "One strong corner and one weak one. Your best charm goes on top."
+  },
+  {
+   "id": "flying_geese",
+   "name": "Flying Geese",
+   "n": 3,
+   "cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "weights": [
+    0.75,
+    1,
+    1.25
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "note": "A line that climbs. The lead goose flies strongest, and turning the piece reverses the line."
+  },
+  {
+   "id": "churn_dash",
+   "name": "Churn Dash",
+   "n": 3,
+   "cells": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "weights": [
+    0.92,
+    0.92,
+    0.92
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "note": "A triangle. Every stitch shares two seams, so it pays most for one craft."
+  },
+  {
+   "id": "shoo_fly",
+   "name": "Shoo Fly",
+   "n": 3,
+   "cells": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "weights": [
+    1.5,
+    0.75,
+    0.75
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "note": "A centre with two corners. The centre carries it, and the corners feed it."
+  },
+  {
+   "id": "wild_goose_chase",
+   "name": "Wild Goose Chase",
+   "n": 4,
+   "cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "weights": [
+    0.65,
+    0.85,
+    1.15,
+    1.35
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "note": "A long climbing line. Turning it reverses the whole order."
+  },
+  {
+   "id": "log_cabin",
+   "name": "Log Cabin",
+   "n": 4,
+   "cells": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "weights": [
+    0.95,
+    0.95,
+    0.95,
+    0.95
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "note": "A ring. Even, patient, and very strong in one craft."
+  },
+  {
+   "id": "bears_paw",
+   "name": "Bear's Paw",
+   "n": 4,
+   "cells": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "weights": [
+    1.75,
+    0.75,
+    0.75,
+    0.75
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "note": "A pad and three toes. All your hopes in one charm."
+  },
+  {
+   "id": "barn_door",
+   "name": "Hole in the Barn Door",
+   "n": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "weights": [
+    1.05,
+    1.05,
+    1.05,
+    1.05
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "note": "Two pairs with a gap between. Strongest plain, and lets you run two crafts."
+  },
+  {
+   "id": "jacobs_ladder",
+   "name": "Jacob's Ladder",
+   "n": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "weights": [
+    0.88,
+    0.88,
+    0.88,
+    0.88
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "note": "Five seams and the weakest plain. All one craft, and nothing else comes close."
+  },
+  {
+   "id": "ohio_star",
+   "name": "Ohio Star",
+   "n": 5,
+   "cells": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "weights": [
+    1.6,
+    0.85,
+    0.85,
+    0.85,
+    0.85
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "note": "A centre and four points. Added stitches only."
+  },
+  {
+   "id": "courthouse_steps",
+   "name": "Courthouse Steps",
+   "n": 5,
+   "cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ]
+   ],
+   "weights": [
+    0.6,
+    0.8,
+    1,
+    1.2,
+    1.4
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "note": "Five steps up. Added stitches only."
+  },
+  {
+   "id": "monkey_wrench",
+   "name": "Monkey Wrench",
+   "n": 6,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "weights": [
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "note": "Six stitches and seven seams. Added stitches only."
+  },
+  {
+   "id": "old_maids_puzzle",
+   "name": "Old Maid's Puzzle",
+   "n": 6,
+   "cells": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "weights": [
+    1.35,
+    1.35,
+    0.78,
+    0.78,
+    0.78,
+    0.78
+   ],
+   "seams": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     5
+    ]
+   ],
+   "note": "Two strong centres and four weak corners. Added stitches only."
+  }
+ ],
+ "threads": [
+  {
+   "id": "cotton",
+   "tag": "Same craft +20%",
+   "name": "Plain Cotton",
+   "colour": "#b8b0a0",
+   "same": 0.2,
+   "cost": 1,
+   "rule": "Same craft: both grow 20%."
+  },
+  {
+   "id": "linen",
+   "tag": "Same craft +40%",
+   "name": "Waxed Linen",
+   "colour": "#e8d890",
+   "same": 0.4,
+   "cost": 10,
+   "rule": "Same craft: both grow 40%."
+  },
+  {
+   "id": "horsehair",
+   "tag": "Any two +15%",
+   "name": "Horsehair",
+   "colour": "#8a7058",
+   "any": 0.15,
+   "cost": 8,
+   "rule": "Any two charms: both grow 15%."
+  },
+  {
+   "id": "indigo",
+   "tag": "Different crafts +25%",
+   "name": "Indigo Yarn",
+   "colour": "#6078d0",
+   "diff": 0.25,
+   "cost": 12,
+   "rule": "Different crafts: both grow 25%. Same craft: nothing."
+  },
+  {
+   "id": "rawhide",
+   "tag": "Stronger spot +30%, weaker -10%",
+   "name": "Rawhide Lace",
+   "colour": "#c88a50",
+   "pull": [
+    0.3,
+    -0.1
+   ],
+   "cost": 8,
+   "rule": "Pulls tight: the stronger spot grows 30%, the weaker shrinks 10%."
+  },
+  {
+   "id": "wool",
+   "tag": "Spots at least 100",
+   "name": "Darning Wool",
+   "colour": "#d08ab0",
+   "floor": 1,
+   "cost": 8,
+   "rule": "Mends a weak spot: neither charm on this seam can stand below 100 from its spot. Nothing for a strong one."
+  },
+  {
+   "id": "silk",
+   "tag": "+6% per silk seam",
+   "name": "Silk Floss",
+   "colour": "#a0e0d8",
+   "silk": 0.06,
+   "cost": 20,
+   "rule": "Both grow 6% for every silk seam on this piece. Weak alone, strong when the whole block is silk."
+  }
+ ],
+ "unpick": { "homespun": 3,
+  "stout": 6,
+  "sunday": 15,
+  "heirloom": 30,
+  "oldwork": 60
+ },
+ "addStitch": [
+  {
+   "goods": 600,
+   "points": 5,
+   "rare": "old_thread",
+   "rareN": 1
+  },
+  {
+   "goods": 1800,
+   "points": 5,
+   "rare": "old_thread",
+   "rareN": 3
+  }
+ ],
+ "addStitchWords": {
+  "far": "Old Work can take one more stitch for {goods} goods and {rare}, then one more for {goods2} and {rare2}. They say there's one tailor left who can do it.",
+  "next": "Another stitch",
+  "notOld": "Only Old Work takes another stitch.",
+  "full": "This piece holds all it ever will.",
+  "lost": "Its threads are lost, and its charms go back to their first order.",
+  "button": "Add a stitch",
+  "short": "Not enough goods",
+  "shortRare": "You need {rare}"
+ },
+ "maxStrength": 2.75,
+ "treatments": [
+  {
+   "id": "moonlit",
+   "name": "Moonlit",
+   "gate": "even",
+   "k": 1.7,
+   "cond": "on even rounds"
+  },
+  {
+   "id": "blessed",
+   "name": "Church-Blessed",
+   "gate": "first",
+   "k": 2.2,
+   "cond": "in the first round"
+  },
+  {
+   "id": "rainwashed",
+   "name": "Rain-Washed",
+   "gate": "high",
+   "k": 1.5,
+   "cond": "while you're above 70% health"
+  },
+  {
+   "id": "smoked",
+   "name": "Smoke-Cured",
+   "gate": "low",
+   "k": 1.9,
+   "cond": "while you're under half health"
+  },
+  {
+   "id": "lastapple",
+   "name": "Last-Apple",
+   "gate": "alone",
+   "k": 1.7,
+   "cond": "against the last foe standing"
+  },
+  {
+   "id": "flockfed",
+   "name": "Flock-Fed",
+   "gate": "crowd",
+   "k": 1.6,
+   "cond": "against three foes or more"
+  },
+  {
+   "id": "seasoned",
+   "name": "Well-Seasoned",
+   "gate": null,
+   "k": 1.25,
+   "cond": "",
+   "priceMul": 1.4
+  }
+ ],
+ "shortTags": {
+  "status.always": "All {word}, {turns} rounds",
+  "status": "{pc:chance} {word}",
+  "status.all": "{pc:chance} all {word}",
+  "status.el": "{pc:chance} {word} ({el})",
+  "status.all.el": "{pc:chance} all {word} ({el})",
+  "heal": "Heal {pc:pct}",
+  "pool": "{pc:pct} MP back",
+  "guard": "Next blow {less:mul} softer",
+  "flat_guard": "Blows {less:mul} softer",
+  "ward_mul": "Ward {less:mul} stronger",
+  "hitup": "Next hit {plus:mul}",
+  "vs_status": "{plus:mul} vs afflicted",
+  "attack_up": "Attack {plus:mul}",
+  "healthy": "{plus:mul} above 70% health",
+  "hurt": "{plus:mul} under half health",
+  "finisher": "{plus:mul} vs foes under a third",
+  "strike": "Extra hit, {hund:power} power",
+  "strike.back": "Hit back, {hund:power} power",
+  "strike_all": "Hit all, {hund:power} power",
+  "empower": "Next spell {plus:mul}",
+  "empower.every": "Next spell {plus:mul}, every third round",
+  "cleanse": "{pc:chance} shake off",
+  "endure": "Survive one felling blow",
+  "barrier": "Cushion {pc:pct}",
+  "rush": "{pc:chance} act first",
+  "rush.always": "Act first next round",
+  "luck": "+{luck} Luck",
+  "wild": "Swings {hund:lo} to {hund:hi}%",
+  "revive": "Get back up, {pc:pct}",
+  "echo": "Repeat every fourth move, {hund:power}%",
+  "echo.third": "Repeat every third move, {hund:power}%",
+  "heal_up": "Healing {plus:mul}",
+  "pack": "{n} johnnycake a fight",
+  "item_save": "{pc:chance} item kept",
+  "item_up": "Food and drink {plus:mul}",
+  "quick2": "Two quick items a turn",
+  "find": "{pc:chance} extra find",
+  "pool_win": "{pc:pct} more MP back",
+  "mp_trade": "Moves +{mpAdd} MP, {plus:mul}",
+  "single": "One foe {plus:mul}, all foes -{less:downMul}",
+  "first_free": "First move free",
+  "long_status": "Afflictions +1 round",
+  "repeat": "Same move twice {plus:mul}",
+  "turn_swap": "First in round one, last after",
+  "no_items": "No items, {plus:mul}",
+  "pay_hp": "Pay moves in health, {rate} for 1",
+  "reflect": "{pc:chance} pass it back",
+  "spread": "{pc:chance} it spreads",
+  "lean": "{up} {plus:mul}, {down} -{less:downMul}",
+  "attack_element": "Attack strikes as {element}"
+ },
+ "statWords": { "hp": "max health", "mp": "max MP", "def": "defense", "res": "resist", "atk": "hits", "mag": "hits", "spd": "speed" },
+ "gateWords": { "even": "even rounds", "first": "round one", "high": "above 70% health", "low": "under half health", "alone": "last foe", "crowd": "3+ foes" },
+ "moments": {
+  "first_round": "First round",
+  "act_first": "Acting first",
+  "each_round": "Each round",
+  "on_hit": "Move lands",
+  "on_attack": "Plain Attack",
+  "on_area": "All-foe moves",
+  "on_fell": "Foe felled",
+  "on_element": "Move lands",
+  "on_combo": "Combo",
+  "when_hit": "When hit",
+  "when_low": "Under half",
+  "on_ward": "Ward hit",
+  "on_item": "Item used",
+  "low_pool": "Low MP",
+  "on_win": "After a win",
+  "passive": "Always",
+  "always": "Always"
+ },
+ "statusWays": [
+  {
+   "slot": "boots",
+   "when": "first_round",
+   "grid": [
+    {
+     "chance": 0.12
+    },
+    {
+     "chance": 0.25
+    },
+    {
+     "chance": 0.45
+    }
+   ],
+   "all": true,
+   "text": "In the first round, a {pc:chance} chance every foe starts {word}."
+  },
+  {
+   "slot": "boots",
+   "when": "act_first",
+   "grid": [
+    {
+     "chance": 0.12
+    },
+    {
+     "chance": 0.25
+    },
+    {
+     "chance": 0.45
+    }
+   ],
+   "text": "Act before every foe in a round: {pc:chance} chance one of them is {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_hit",
+   "grid": [
+    {
+     "chance": 0.12
+    },
+    {
+     "chance": 0.25
+    },
+    {
+     "chance": 0.45
+    }
+   ],
+   "text": "Your moves have a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_attack",
+   "grid": [
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    },
+    {
+     "chance": 1
+    }
+   ],
+   "text": "Your plain Attack has a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_area",
+   "all": true,
+   "grid": [
+    {
+     "chance": 0.1
+    },
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.35
+    }
+   ],
+   "text": "Moves on every foe have a {pc:chance} chance to leave them all {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_fell",
+   "all": true,
+   "grid": [
+    {
+     "chance": 0.3
+    },
+    {
+     "chance": 0.6
+    },
+    {
+     "chance": 1
+    }
+   ],
+   "text": "Fell a foe: {pc:chance} chance the rest are {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_element",
+   "el": "frost",
+   "grid": [
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    }
+   ],
+   "text": "Your {el} moves have a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_element",
+   "el": "earth",
+   "grid": [
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    }
+   ],
+   "text": "Your {el} moves have a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_element",
+   "el": "arcane",
+   "grid": [
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    }
+   ],
+   "text": "Your {el} moves have a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "gloves",
+   "when": "on_element",
+   "el": "hearth",
+   "grid": [
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    }
+   ],
+   "text": "Your {el} moves have a {pc:chance} chance to leave the foe {word}."
+  },
+  {
+   "slot": "coat",
+   "when": "when_hit",
+   "grid": [
+    {
+     "chance": 0.2
+    },
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    }
+   ],
+   "text": "Whoever first hits you in a round has a {pc:chance} chance to be {word}."
+  },
+  {
+   "slot": "coat",
+   "when": "when_low",
+   "once": true,
+   "all": true,
+   "grid": [
+    {
+     "turnsAdd": 0
+    },
+    {
+     "turnsAdd": 1
+    },
+    {
+     "turnsAdd": 2
+    }
+   ],
+   "text": "First time you fall under half health, every foe is {word} for {turns} rounds."
+  },
+  {
+   "slot": "coat",
+   "when": "on_ward",
+   "ward": true,
+   "grid": [
+    {
+     "chance": 0.5
+    },
+    {
+     "chance": 0.75
+    },
+    {
+     "chance": 1
+    }
+   ],
+   "text": "Whoever hits your ward has a {pc:chance} chance to be {word}."
+  },
+  {
+   "slot": "belt",
+   "when": "on_item",
+   "items": true,
+   "grid": [
+    {
+     "chance": 0.4
+    },
+    {
+     "chance": 0.7
+    },
+    {
+     "chance": 1
+    }
+   ],
+   "text": "Using an item has a {pc:chance} chance to leave a foe {word}."
+  },
+  {
+   "slot": "belt",
+   "when": "low_pool",
+   "once": true,
+   "all": true,
+   "grid": [
+    {
+     "turnsAdd": 0
+    },
+    {
+     "turnsAdd": 1
+    },
+    {
+     "turnsAdd": 2
+    }
+   ],
+   "text": "When your resource first runs low in a fight, every foe is {word} for {turns} rounds."
+  }
+ ],
+ "otherWays": {
+  "heal": [
+   {
+    "slot": "boots",
+    "when": "act_first",
+    "does": "heal",
+    "grid": [
+     {
+      "pct": 0.01
+     },
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.04
+     }
+    ],
+    "text": "Act before every foe in a round: heal {pc:pct}."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_hit",
+    "does": "heal",
+    "grid": [
+     {
+      "pct": 0.01
+     },
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.03
+     }
+    ],
+    "text": "Your moves heal you {pc:pct} when they land."
+   },
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "heal",
+    "grid": [
+     {
+      "pct": 0.015
+     },
+     {
+      "pct": 0.03
+     },
+     {
+      "pct": 0.05
+     }
+    ],
+    "text": "First hit taken each round heals you {pc:pct} afterwards."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "heal",
+    "once": true,
+    "grid": [
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.15
+     },
+     {
+      "pct": 0.25
+     }
+    ],
+    "text": "First time you fall under half health, heal {pc:pct}."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "heal",
+    "items": true,
+    "grid": [
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.07
+     }
+    ],
+    "text": "Using an item also heals {pc:pct}."
+   },
+   {
+    "slot": "belt",
+    "when": "low_pool",
+    "does": "heal",
+    "once": true,
+    "grid": [
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.15
+     },
+     {
+      "pct": 0.25
+     }
+    ],
+    "text": "When your resource first runs low in a fight, heal {pc:pct}."
+   },
+   {
+    "slot": "keepsake",
+    "when": "each_round",
+    "does": "heal",
+    "grid": [
+     {
+      "pct": 0.01
+     },
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.03
+     }
+    ],
+    "price": {
+     "stat": "hp",
+     "pct": -0.04
+    },
+    "text": "Heal {pc:pct} each round, but your most health is 4% lower."
+   }
+  ],
+  "pool": [
+   {
+    "slot": "boots",
+    "when": "act_first",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.07
+     }
+    ],
+    "text": "Act before every foe in a round: {pc:pct} of your resource back."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_attack",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.14
+     }
+    ],
+    "text": "Your plain Attack gives {pc:pct} of your resource back."
+   },
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.03
+     },
+     {
+      "pct": 0.06
+     },
+     {
+      "pct": 0.1
+     }
+    ],
+    "text": "First hit taken each round gives {pc:pct} of your resource back."
+   },
+   {
+    "slot": "belt",
+    "when": "low_pool",
+    "does": "pool",
+    "once": true,
+    "grid": [
+     {
+      "pct": 0.2
+     },
+     {
+      "pct": 0.35
+     },
+     {
+      "pct": 0.5
+     }
+    ],
+    "text": "When your resource first runs low in a fight, get {pc:pct} of it back."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "pool",
+    "items": true,
+    "grid": [
+     {
+      "pct": 0.05
+     },
+     {
+      "pct": 0.1
+     },
+     {
+      "pct": 0.18
+     }
+    ],
+    "text": "Using an item also gives {pc:pct} of your resource back."
+   },
+   {
+    "slot": "keepsake",
+    "when": "each_round",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.07
+     }
+    ],
+    "price": {
+     "stat": "def",
+     "pct": -0.05
+    },
+    "text": "{pc:pct} of your resource back each round, but your defense is 5% lower."
+   }
+  ],
+  "guard": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "guard",
+    "grid": [
+     {
+      "mul": 0.85
+     },
+     {
+      "mul": 0.7
+     },
+     {
+      "mul": 0.5
+     }
+    ],
+    "text": "The first blow of a fight lands {less:mul} softer."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_attack",
+    "does": "guard",
+    "grid": [
+     {
+      "mul": 0.85
+     },
+     {
+      "mul": 0.7
+     },
+     {
+      "mul": 0.5
+     }
+    ],
+    "text": "Your plain Attack makes the next blow on you {less:mul} softer."
+   },
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "guard",
+    "grid": [
+     {
+      "mul": 0.92
+     },
+     {
+      "mul": 0.82
+     },
+     {
+      "mul": 0.7
+     }
+    ],
+    "text": "After the first hit in a round, the next one lands {less:mul} softer."
+   },
+   {
+    "slot": "coat",
+    "when": "passive",
+    "does": "flat_guard",
+    "grid": [
+     {
+      "mul": 0.98
+     },
+     {
+      "mul": 0.95
+     },
+     {
+      "mul": 0.91
+     }
+    ],
+    "text": "Every blow lands {less:mul} softer."
+   },
+   {
+    "slot": "coat",
+    "when": "passive",
+    "does": "ward_mul",
+    "ward": true,
+    "grid": [
+     {
+      "mul": 0.9
+     },
+     {
+      "mul": 0.8
+     },
+     {
+      "mul": 0.65
+     }
+    ],
+    "text": "Your ward holds {less:mul} better."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "guard",
+    "items": true,
+    "grid": [
+     {
+      "mul": 0.7
+     },
+     {
+      "mul": 0.5
+     },
+     {
+      "mul": 0.3
+     }
+    ],
+    "text": "Using an item makes the next blow on you {less:mul} softer."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "flat_guard",
+    "grid": [
+     {
+      "mul": 0.94
+     },
+     {
+      "mul": 0.88
+     },
+     {
+      "mul": 0.8
+     }
+    ],
+    "price": {
+     "stat": "mag",
+     "pct": -0.05,
+     "also": "atk"
+    },
+    "text": "Every blow lands {less:mul} softer, but you hit 5% softer too."
+   }
+  ],
+  "hitup": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "hitup",
+    "grid": [
+     {
+      "mul": 1.12
+     },
+     {
+      "mul": 1.25
+     },
+     {
+      "mul": 1.5
+     }
+    ],
+    "text": "Your first hit of a fight lands {more:mul} harder."
+   },
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "vs_status",
+    "grid": [
+     {
+      "mul": 1.05
+     },
+     {
+      "mul": 1.1
+     },
+     {
+      "mul": 1.18
+     }
+    ],
+    "text": "You hit {more:mul} harder against a foe with any status on it."
+   },
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "attack_up",
+    "grid": [
+     {
+      "mul": 1.25
+     },
+     {
+      "mul": 1.6
+     },
+     {
+      "mul": 2
+     }
+    ],
+    "text": "Your plain Attack lands {more:mul} harder."
+   },
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "hitup",
+    "grid": [
+     {
+      "mul": 1.08
+     },
+     {
+      "mul": 1.18
+     },
+     {
+      "mul": 1.35
+     }
+    ],
+    "text": "Take a hit, and your next one lands {more:mul} harder."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "hitup",
+    "once": true,
+    "grid": [
+     {
+      "mul": 1.5
+     },
+     {
+      "mul": 2
+     },
+     {
+      "mul": 2.6
+     }
+    ],
+    "text": "First time you fall under half health, your next hit lands {more:mul} harder."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "hitup",
+    "items": true,
+    "grid": [
+     {
+      "mul": 1.2
+     },
+     {
+      "mul": 1.4
+     },
+     {
+      "mul": 1.7
+     }
+    ],
+    "text": "Using an item makes your next hit land {more:mul} harder."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "healthy",
+    "grid": [
+     {
+      "mul": 1.06
+     },
+     {
+      "mul": 1.12
+     },
+     {
+      "mul": 1.2
+     }
+    ],
+    "price": {
+     "stat": "hp",
+     "pct": -0.04
+    },
+    "text": "Above 70% health you hit {more:mul} harder, but your most health is 4% lower."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "hurt",
+    "grid": [
+     {
+      "mul": 1.1
+     },
+     {
+      "mul": 1.2
+     },
+     {
+      "mul": 1.35
+     }
+    ],
+    "price": {
+     "stat": "def",
+     "pct": -0.04
+    },
+    "text": "Below half health you hit {more:mul} harder, but your defense is 4% lower."
+   }
+  ],
+  "strike": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "strike",
+    "grid": [
+     {
+      "power": 0.12
+     },
+     {
+      "power": 0.25
+     },
+     {
+      "power": 0.5
+     }
+    ],
+    "text": "Before the first round, kick a foe for a hit of {power} power."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_hit",
+    "does": "strike",
+    "grid": [
+     {
+      "power": 0.08
+     },
+     {
+      "power": 0.15
+     },
+     {
+      "power": 0.25
+     }
+    ],
+    "text": "Your moves add a small blow of {power} power."
+   },
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "strike",
+    "grid": [
+     {
+      "power": 0.15
+     },
+     {
+      "power": 0.3
+     },
+     {
+      "power": 0.5
+     }
+    ],
+    "text": "Whoever first hits you in a round takes a blow of {power} power."
+   },
+   {
+    "slot": "coat",
+    "when": "on_ward",
+    "does": "strike",
+    "ward": true,
+    "grid": [
+     {
+      "power": 0.3
+     },
+     {
+      "power": 0.6
+     },
+     {
+      "power": 1
+     }
+    ],
+    "text": "Whoever hits your ward takes a blow of {power} power."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "strike",
+    "items": true,
+    "grid": [
+     {
+      "power": 0.3
+     },
+     {
+      "power": 0.6
+     },
+     {
+      "power": 1
+     }
+    ],
+    "text": "Using an item adds a blow of {power} power on a foe."
+   }
+  ],
+  "empower": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "empower",
+    "grid": [
+     {
+      "mul": 1.08
+     },
+     {
+      "mul": 1.15
+     },
+     {
+      "mul": 1.3
+     }
+    ],
+    "text": "You start each fight with your next spell {more:mul} stronger."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "empower",
+    "once": true,
+    "grid": [
+     {
+      "mul": 1.4
+     },
+     {
+      "mul": 1.8
+     },
+     {
+      "mul": 2.4
+     }
+    ],
+    "text": "First time you fall under half health, your next spell is {more:mul} stronger."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "empower",
+    "items": true,
+    "grid": [
+     {
+      "mul": 1.15
+     },
+     {
+      "mul": 1.3
+     },
+     {
+      "mul": 1.5
+     }
+    ],
+    "text": "Using an item makes your next spell {more:mul} stronger."
+   },
+   {
+    "slot": "keepsake",
+    "when": "each_round",
+    "does": "empower",
+    "every": 3,
+    "grid": [
+     {
+      "mul": 1.2
+     },
+     {
+      "mul": 1.4
+     },
+     {
+      "mul": 1.7
+     }
+    ],
+    "price": {
+     "stat": "spd",
+     "add": -1
+    },
+    "text": "Every third round your next spell is {more:mul} stronger, but you're a step slower."
+   }
+  ],
+  "thread": [
+   {
+    "slot": "boots",
+    "when": "each_round",
+    "does": "cleanse",
+    "grid": [
+     {
+      "chance": 0.3
+     },
+     {
+      "chance": 0.6
+     },
+     {
+      "chance": 1
+     }
+    ],
+    "text": "Each round, a {pc:chance} chance to shake off whatever's on you."
+   },
+   {
+    "slot": "coat",
+    "when": "first_round",
+    "does": "endure",
+    "once": true,
+    "grid": [
+     {
+      "hp": 1
+     }
+    ],
+    "text": "Once a fight, a felling blow leaves you standing with 1 health."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "cleanse",
+    "items": true,
+    "grid": [
+     {
+      "chance": 0.5
+     },
+     {
+      "chance": 0.75
+     },
+     {
+      "chance": 1
+     }
+    ],
+    "text": "Using an item has a {pc:chance} chance to shake off whatever's on you."
+   },
+   {
+    "slot": "keepsake",
+    "when": "first_round",
+    "does": "endure",
+    "once": true,
+    "grid": [
+     {
+      "hp": 1
+     }
+    ],
+    "price": {
+     "stat": "hp",
+     "pct": -0.05
+    },
+    "text": "Once a fight, a felling blow leaves you standing with 1 health, but your most health is 5% lower."
+   }
+  ],
+  "trade": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "mp_trade",
+    "grid": [
+     {
+      "mpAdd": 1,
+      "mul": 1.12
+     },
+     {
+      "mpAdd": 2,
+      "mul": 1.25
+     },
+     {
+      "mpAdd": 3,
+      "mul": 1.4
+     }
+    ],
+    "text": "Every move costs {mpAdd} more, and hits {more:mul} harder."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "single",
+    "grid": [
+     {
+      "mul": 1.1,
+      "downMul": 0.9
+     },
+     {
+      "mul": 1.2,
+      "downMul": 0.85
+     },
+     {
+      "mul": 1.32,
+      "downMul": 0.75
+     }
+    ],
+    "text": "Moves aimed at one foe hit {more:mul} harder, moves on every foe {less:downMul} softer."
+   },
+   {
+    "slot": "belt",
+    "when": "passive",
+    "does": "item_up",
+    "items": true,
+    "grid": [
+     {
+      "mul": 1.2
+     },
+     {
+      "mul": 1.4
+     },
+     {
+      "mul": 1.7
+     }
+    ],
+    "text": "Food and drink do {more:mul} more for you."
+   },
+   {
+    "slot": "belt",
+    "when": "passive",
+    "does": "quick2",
+    "items": true,
+    "grid": [
+     {
+      "n": 2
+     }
+    ],
+    "text": "You may use two quick items a turn, instead of one."
+   },
+   {
+    "slot": "belt",
+    "when": "on_win",
+    "does": "find",
+    "outside": true,
+    "grid": [
+     {
+      "chance": 0.1
+     },
+     {
+      "chance": 0.2
+     },
+     {
+      "chance": 0.3
+     }
+    ],
+    "text": "After a win, a {pc:chance} chance to find one more thing."
+   },
+   {
+    "slot": "belt",
+    "when": "on_win",
+    "does": "pool_win",
+    "outside": true,
+    "grid": [
+     {
+      "pct": 0.05
+     },
+     {
+      "pct": 0.1
+     },
+     {
+      "pct": 0.15
+     }
+    ],
+    "text": "After a win, {pc:pct} more of your resource comes back."
+   }
+  ],
+  "key": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "first_free",
+    "grid": [
+     {
+      "n": 1
+     }
+    ],
+    "text": "The first move you make in a fight costs nothing."
+   }
+  ],
+  "almanac": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "long_status",
+    "grid": [
+     {
+      "add": 1
+     }
+    ],
+    "text": "Whatever you put on a foe lasts a round longer."
+   }
+  ],
+  "egg": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "repeat",
+    "grid": [
+     {
+      "mul": 1.15
+     },
+     {
+      "mul": 1.3
+     },
+     {
+      "mul": 1.5
+     }
+    ],
+    "text": "The same move twice running lands {more:mul} harder the second time."
+   }
+  ],
+  "spoon": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "turn_swap",
+    "grid": [
+     {
+      "n": 1
+     }
+    ],
+    "text": "You always act first in the first round of a fight, and last in every round after."
+   }
+  ],
+  "whistle": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "no_items",
+    "items": true,
+    "grid": [
+     {
+      "mul": 1.08
+     },
+     {
+      "mul": 1.15
+     },
+     {
+      "mul": 1.25
+     }
+    ],
+    "text": "You can't use items in a fight, and you hit {more:mul} harder."
+   }
+  ],
+  "ticket": [
+   {
+    "slot": "keepsake",
+    "when": "always",
+    "does": "pay_hp",
+    "grid": [
+     {
+      "rate": 3
+     },
+     {
+      "rate": 2
+     }
+    ],
+    "text": "When you can't afford a move, you may pay for it in health, {rate} for 1."
+   }
+  ],
+  "luck": [
+   {
+    "slot": "boots",
+    "when": "passive",
+    "does": "luck",
+    "grid": [
+     {
+      "luck": 3
+     },
+     {
+      "luck": 6
+     },
+     {
+      "luck": 10
+     }
+    ],
+    "text": "+{luck} Luck: harder hits land more often, and blows miss you more."
+   },
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "luck",
+    "grid": [
+     {
+      "luck": 2
+     },
+     {
+      "luck": 4
+     },
+     {
+      "luck": 7
+     }
+    ],
+    "text": "+{luck} Luck: harder hits land more often, and blows miss you more."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "luck",
+    "grid": [
+     {
+      "luck": 8
+     },
+     {
+      "luck": 15
+     },
+     {
+      "luck": 25
+     }
+    ],
+    "price": {
+     "stat": "def",
+     "pct": -0.05
+    },
+    "text": "+{luck} Luck, but your defense is 5% lower."
+   }
+  ],
+  "wild": [
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "wild",
+    "grid": [
+     {
+      "lo": 0.75,
+      "hi": 1.35
+     },
+     {
+      "lo": 0.65,
+      "hi": 1.55
+     },
+     {
+      "lo": 0.5,
+      "hi": 1.75
+     }
+    ],
+    "text": "Your hits swing wild, from {pct:lo} to {pct:hi}."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "wild",
+    "grid": [
+     {
+      "lo": 0.6,
+      "hi": 1.6
+     },
+     {
+      "lo": 0.5,
+      "hi": 1.9
+     },
+     {
+      "lo": 0.4,
+      "hi": 2.2
+     }
+    ],
+    "text": "Everything you do swings wild, from {pct:lo} to {pct:hi}."
+   }
+  ],
+  "revive": [
+   {
+    "slot": "coat",
+    "when": "passive",
+    "does": "revive",
+    "grid": [
+     {
+      "pct": 0.12
+     },
+     {
+      "pct": 0.22
+     },
+     {
+      "pct": 0.35
+     }
+    ],
+    "text": "Felled for the first time in a fight, you get back up with {pc:pct} health."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "revive",
+    "grid": [
+     {
+      "pct": 0.25
+     },
+     {
+      "pct": 0.4
+     },
+     {
+      "pct": 0.6
+     }
+    ],
+    "price": {
+     "stat": "hp",
+     "pct": -0.08
+    },
+    "text": "Felled for the first time in a fight, you get back up with {pc:pct} health, but your most health is 8% lower."
+   }
+  ],
+  "barrier": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "barrier",
+    "grid": [
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.15
+     }
+    ],
+    "text": "Start each fight with a cushion worth {pc:pct} of your health."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "barrier",
+    "once": true,
+    "grid": [
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.15
+     },
+     {
+      "pct": 0.25
+     }
+    ],
+    "text": "First time you fall under half health, gain a cushion worth {pc:pct} of your health."
+   },
+   {
+    "slot": "belt",
+    "when": "on_item",
+    "does": "barrier",
+    "items": true,
+    "grid": [
+     {
+      "pct": 0.03
+     },
+     {
+      "pct": 0.06
+     },
+     {
+      "pct": 0.1
+     }
+    ],
+    "text": "Using an item adds a cushion worth {pc:pct} of your health."
+   }
+  ],
+  "rush": [
+   {
+    "slot": "boots",
+    "when": "each_round",
+    "does": "rush",
+    "grid": [
+     {
+      "chance": 0.12
+     },
+     {
+      "chance": 0.25
+     },
+     {
+      "chance": 0.45
+     }
+    ],
+    "text": "Each round, a {pc:chance} chance you act before anyone."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "rush",
+    "once": true,
+    "grid": [
+     {
+      "n": 1
+     }
+    ],
+    "text": "First time you fall under half health, you act first next round."
+   }
+  ],
+  "crow": [
+   {
+    "slot": "gloves",
+    "when": "on_fell",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.08
+     },
+     {
+      "pct": 0.15
+     }
+    ],
+    "text": "Fell a foe: {pc:pct} of your resource back."
+   },
+   {
+    "slot": "boots",
+    "when": "on_fell",
+    "does": "rush",
+    "grid": [
+     {
+      "chance": 0.3
+     },
+     {
+      "chance": 0.6
+     },
+     {
+      "chance": 1
+     }
+    ],
+    "text": "Fell a foe: a {pc:chance} chance you act first next round."
+   },
+   {
+    "slot": "belt",
+    "when": "on_fell",
+    "does": "barrier",
+    "grid": [
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.05
+     },
+     {
+      "pct": 0.1
+     }
+    ],
+    "text": "Fell a foe: gain a cushion worth {pc:pct} of your health."
+   }
+  ],
+  "finisher": [
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "finisher",
+    "grid": [
+     {
+      "mul": 1.2
+     },
+     {
+      "mul": 1.5
+     },
+     {
+      "mul": 2
+     }
+    ],
+    "text": "You hit {more:mul} harder against a foe under a third of its health."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "finisher",
+    "grid": [
+     {
+      "mul": 1.4
+     },
+     {
+      "mul": 1.9
+     },
+     {
+      "mul": 2.6
+     }
+    ],
+    "price": {
+     "stat": "mag",
+     "pct": -0.05,
+     "also": "atk"
+    },
+    "text": "You hit {more:mul} harder against a foe under a third of its health, and 5% softer otherwise."
+   }
+  ],
+  "echo": [
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "echo",
+    "every": 4,
+    "grid": [
+     {
+      "power": 0.2
+     },
+     {
+      "power": 0.35
+     },
+     {
+      "power": 0.55
+     }
+    ],
+    "text": "Every fourth move repeats itself at {pc:power} strength."
+   },
+   {
+    "slot": "keepsake",
+    "when": "passive",
+    "does": "echo",
+    "every": 3,
+    "grid": [
+     {
+      "power": 0.25
+     },
+     {
+      "power": 0.45
+     },
+     {
+      "power": 0.7
+     }
+    ],
+    "text": "Every third move repeats itself at {pc:power} strength."
+   }
+  ],
+  "ash": [
+   {
+    "slot": "gloves",
+    "when": "passive",
+    "does": "heal_up",
+    "grid": [
+     {
+      "mul": 1.15
+     },
+     {
+      "mul": 1.3
+     },
+     {
+      "mul": 1.5
+     }
+    ],
+    "text": "Your healing moves heal {more:mul} more."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_fell",
+    "does": "heal",
+    "grid": [
+     {
+      "pct": 0.02
+     },
+     {
+      "pct": 0.04
+     },
+     {
+      "pct": 0.07
+     }
+    ],
+    "text": "Fell a foe: heal {pc:pct}."
+   }
+  ],
+  "pack": [
+   {
+    "slot": "belt",
+    "when": "passive",
+    "does": "pack",
+    "grid": [
+     {
+      "n": 1
+     },
+     {
+      "n": 2
+     },
+     {
+      "n": 3
+     }
+    ],
+    "text": "Each fight you find {n} johnnycake{s:n} in your pocket."
+   }
+  ],
+  "cork": [
+   {
+    "slot": "belt",
+    "when": "passive",
+    "does": "item_save",
+    "items": true,
+    "grid": [
+     {
+      "chance": 0.15
+     },
+     {
+      "chance": 0.3
+     },
+     {
+      "chance": 0.5
+     }
+    ],
+    "text": "A {pc:chance} chance an item isn't used up."
+   }
+  ],
+  "combo": [
+   {
+    "slot": "gloves",
+    "when": "on_combo",
+    "does": "strike",
+    "grid": [
+     {
+      "power": 0.3
+     },
+     {
+      "power": 0.6
+     },
+     {
+      "power": 1
+     }
+    ],
+    "text": "Land a combo: add a blow of {power} power."
+   },
+   {
+    "slot": "belt",
+    "when": "on_combo",
+    "does": "pool",
+    "grid": [
+     {
+      "pct": 0.05
+     },
+     {
+      "pct": 0.1
+     },
+     {
+      "pct": 0.2
+     }
+    ],
+    "text": "Land a combo: {pc:pct} of your resource back."
+   }
+  ],
+  "glass": [
+   {
+    "slot": "coat",
+    "when": "when_hit",
+    "does": "reflect",
+    "grid": [
+     {
+      "chance": 0.3
+     },
+     {
+      "chance": 0.6
+     },
+     {
+      "chance": 1
+     }
+    ],
+    "text": "Whoever first hits you in a round has a {pc:chance} chance to take whatever's on you."
+   },
+   {
+    "slot": "gloves",
+    "when": "on_fell",
+    "does": "spread",
+    "grid": [
+     {
+      "chance": 0.3
+     },
+     {
+      "chance": 0.6
+     },
+     {
+      "chance": 1
+     }
+    ],
+    "text": "Fell a foe: {pc:chance} chance what was on it jumps to another."
+   }
+  ],
+  "hornet": [
+   {
+    "slot": "boots",
+    "when": "first_round",
+    "does": "strike_all",
+    "grid": [
+     {
+      "power": 0.08
+     },
+     {
+      "power": 0.16
+     },
+     {
+      "power": 0.3
+     }
+    ],
+    "text": "Before the first round, every foe takes a blow of {power} power."
+   },
+   {
+    "slot": "coat",
+    "when": "when_low",
+    "does": "strike_all",
+    "once": true,
+    "grid": [
+     {
+      "power": 0.3
+     },
+     {
+      "power": 0.6
+     },
+     {
+      "power": 1
+     }
+    ],
+    "text": "First time you fall under half health, every foe takes a blow of {power} power."
+   }
+  ]
+ },
+ "lean": {
+  "rime_shard": {
+   "up": "frost",
+   "down": "hearth",
+   "word": "frost",
+   "other": "hearth"
+  },
+  "lamp_wick": {
+   "up": "hearth",
+   "down": "frost",
+   "word": "hearth",
+   "other": "frost"
+  },
+  "wall_chip": {
+   "up": "earth",
+   "down": "arcane",
+   "word": "earth",
+   "other": "arcane"
+  },
+  "sampler": {
+   "up": "arcane",
+   "down": "earth",
+   "word": "arcane",
+   "other": "earth"
+  }
+ },
+ "leanWay": {
+  "slot": "keepsake",
+  "when": "passive",
+  "grid": [
+   {
+    "mul": 1.1,
+    "downMul": 0.9
+   },
+   {
+    "mul": 1.2,
+    "downMul": 0.8
+   },
+   {
+    "mul": 1.35,
+    "downMul": 0.7
+   }
+  ],
+  "text": "Your {up} moves hit {more:mul} harder, your {down} moves {less:downMul} softer."
+ },
+ "attackElementWay": {
+  "slot": "gloves",
+  "when": "passive",
+  "grid": [
+   {
+    "strike": 1
+   }
+  ],
+  "text": "Your plain Attack strikes as {element}, from your magic."
+ },
+ "shapeNames": {
+  "boots": {
+   "tall_boots": "Tall Boots",
+   "work_boots": "Work Boots",
+   "hobnails": "Hobnails",
+   "moccasins": "Moccasins",
+   "gaiters": "Gaiters",
+   "snowshoes": "Snowshoes",
+   "clogs": "Clogs",
+   "muck_boots": "Muck Boots",
+   "felt_boots": "Felt Boots",
+   "brogans": "Brogans",
+   "ice_creepers": "Ice Creepers",
+   "overshoes": "Overshoes"
+  },
+  "gloves": {
+   "work_gloves": "Work Gloves",
+   "mittens": "Mittens",
+   "thrummed_mittens": "Thrummed Mittens",
+   "gauntlets": "Gauntlets",
+   "fingerless": "Fingerless Gloves",
+   "driving_gloves": "Driving Gloves",
+   "choppers": "Choppers",
+   "wristers": "Wristers",
+   "husking_gloves": "Husking Gloves",
+   "sunday_gloves": "Sunday Gloves",
+   "bee_gloves": "Bee Gloves",
+   "long_cuffs": "Long Cuffs"
+  },
+  "coat": {
+   "frock_coat": "Frock Coat",
+   "barn_coat": "Barn Coat",
+   "oilskin": "Oilskin",
+   "sheepskin": "Sheepskin",
+   "waistcoat": "Waistcoat",
+   "cape_coat": "Cape Coat",
+   "shawl": "Shawl",
+   "smock": "Smock",
+   "mackinaw": "Mackinaw",
+   "duster": "Duster",
+   "pea_coat": "Pea Coat",
+   "hooded_cloak": "Hooded Cloak"
+  },
+  "belt": {
+   "buckled_belt": "Belt",
+   "rope_belt": "Rope Belt",
+   "sash": "Sash",
+   "pouch_belt": "Pouch Belt",
+   "bottle_bandolier": "Bandolier",
+   "tool_belt": "Tool Belt",
+   "braces": "Braces",
+   "chatelaine": "Chatelaine",
+   "harness_strap": "Harness Strap",
+   "apron_strings": "Apron Strings",
+   "herb_girdle": "Herb Girdle",
+   "braided_cord": "Braided Cord"
+  },
+  "keepsake": {
+   "locket": "Locket",
+   "pocket_watch": "Pocket Watch",
+   "hag_stone": "Holed Stone",
+   "horseshoe": "Horseshoe",
+   "lantern": "Dark Lantern",
+   "brass_key": "Brass Key",
+   "tin_whistle": "Tin Whistle",
+   "thimble_on_cord": "Thimble on a Cord",
+   "spyglass": "Spyglass",
+   "small_book": "Pocket Book",
+   "corn_dolly": "Corn Dolly",
+   "bone_comb": "Bone Comb"
+  }
+ },
+ "names": {
+  "plain": {
+   "homespun": [
+    "Homespun",
+    "Plain",
+    "Everyday",
+    "Patched",
+    "Hired Man's",
+    "Barn",
+    "Second-Best",
+    "Chore",
+    "Kitchen",
+    "Cast-Off",
+    "Hand-Me-Down",
+    "Workaday",
+    "Back-Door",
+    "Dooryard",
+    "Hayloft",
+    "Woodshed",
+    "Rough",
+    "Common",
+    "Spare",
+    "Odd",
+    "Threadbare",
+    "Scuffed",
+    "Borrowed",
+    "Hand-Sewn"
+   ],
+   "stout": [
+    "Stout",
+    "Well-Oiled",
+    "Double-Stitched",
+    "Good Wool",
+    "Town-Bought",
+    "Square-Toed",
+    "Hard-Wearing",
+    "Peddler's",
+    "Sturdy",
+    "Well-Made",
+    "Waxed",
+    "Close-Woven",
+    "Copper-Riveted",
+    "Brass-Fitted",
+    "Oak-Tanned",
+    "Fulled",
+    "Good Leather",
+    "Mill-Made",
+    "Sound",
+    "Honest",
+    "Well-Kept",
+    "Hard-Twist",
+    "Tight-Knit",
+    "Sensible"
+   ]
+  },
+  "season": [
+   "Mud-Season",
+   "Stick-Season",
+   "Sugaring",
+   "Haying",
+   "Ice-Cutting",
+   "First-Snow",
+   "Cider-Press",
+   "Town-Meeting",
+   "Go-to-Meeting",
+   "Thaw-Time",
+   "Shearing",
+   "Husking-Bee",
+   "Lambing",
+   "Planting",
+   "Hoeing",
+   "Berrying",
+   "Apple-Picking",
+   "Butchering",
+   "Wood-Hauling",
+   "Fence-Mending",
+   "Barn-Raising",
+   "Quilting-Bee",
+   "Sap-Run",
+   "Freshet",
+   "Blackfly",
+   "Frost-Heave",
+   "Hard-Frost",
+   "Deep-Snow",
+   "Snow-Rolling",
+   "Sleighing",
+   "Logging",
+   "River-Drive",
+   "Muster-Day",
+   "Fair-Day",
+   "Market-Day",
+   "Sabbath",
+   "Wash-Day",
+   "Candle-Dipping",
+   "Soap-Making",
+   "Spinning",
+   "Threshing",
+   "Ox-Pull",
+   "Corn-Shelling",
+   "Line-Storm",
+   "Dog-Day"
+  ],
+  "worked": [
+   "Twice-Turned",
+   "Thrice-Mended",
+   "Salt-Stiff",
+   "Moth-Et",
+   "Smoke-Cured",
+   "Rain-Shrunk",
+   "Darned",
+   "Tallow-Soaked",
+   "Pitch-Sealed",
+   "Resoled",
+   "Let-Out",
+   "Taken-In",
+   "Sun-Bleached",
+   "Frost-Cracked",
+   "Mud-Caked",
+   "Soot-Stained",
+   "Cedar-Kept",
+   "Attic-Kept",
+   "Trunk-Folded",
+   "Cellar-Damp",
+   "Thumb-Worn",
+   "Weather-Beaten",
+   "Wind-Scoured",
+   "Rust-Flecked",
+   "Lye-Scrubbed",
+   "Beeswaxed",
+   "Re-Stitched",
+   "Walnut-Dyed",
+   "Madder-Dyed",
+   "Indigo-Dipped",
+   "Mouse-Nibbled",
+   "Burr-Caught",
+   "Briar-Torn",
+   "Creek-Soaked",
+   "Horse-Chewed",
+   "Dog-Worried",
+   "Snow-Buried",
+   "Flood-Saved",
+   "Fire-Saved",
+   "Ash-Dusted",
+   "Pine-Tarred",
+   "Goose-Greased",
+   "Lanolin-Soft",
+   "Road-Worn",
+   "Long-Lost",
+   "Dug-Up",
+   "Fence-Hung",
+   "Thrice-Sold",
+   "Twice-Stolen",
+   "Patched-Over"
+  ],
+  "trades": [
+   "Drover's",
+   "Tinker's",
+   "Teamster's",
+   "Ferryman's",
+   "Sexton's",
+   "Cobbler's",
+   "Selectman's",
+   "Schoolmaster's",
+   "Midwife's",
+   "Ice-Cutter's",
+   "Lamplighter's",
+   "Chimney Sweep's",
+   "Toll Keeper's",
+   "Charcoal Burner's",
+   "Sheep-Shearer's",
+   "Blacksmith's",
+   "Farrier's",
+   "Wheelwright's",
+   "Cooper's",
+   "Tanner's",
+   "Miller's",
+   "Weaver's",
+   "Fuller's",
+   "Dyer's",
+   "Chandler's",
+   "Saddler's",
+   "Stonemason's",
+   "Shingle-Splitter's",
+   "Sawyer's",
+   "Logger's",
+   "River Driver's",
+   "Beekeeper's",
+   "Orchardman's",
+   "Dairymaid's",
+   "Shepherd's",
+   "Ox Driver's",
+   "Stage Driver's",
+   "Postrider's",
+   "Innkeeper's",
+   "Storekeeper's",
+   "Constable's",
+   "Town Clerk's",
+   "Parson's",
+   "Doctor's",
+   "Apothecary's",
+   "Herb Wife's",
+   "Seamstress's",
+   "Tailor's",
+   "Hatter's",
+   "Clockmaker's",
+   "Tinsmith's",
+   "Potter's",
+   "Basket Maker's",
+   "Broom Maker's",
+   "Quarryman's",
+   "Surveyor's",
+   "Ropemaker's",
+   "Well Digger's",
+   "Gravedigger's",
+   "Bell Ringer's"
+  ],
+  "people": [
+   "Aunt Mehitable",
+   "Uncle Increase",
+   "Deacon Tuttle",
+   "Goody Wadleigh",
+   "Old Pettingill",
+   "Widow Bascom",
+   "Cousin Thankful",
+   "Hepzibah Cutts",
+   "Squire Whitcomb",
+   "Ebenezer Goodhue",
+   "Patience Hobart",
+   "Grandfather Sewall",
+   "Experience Tilton",
+   "Mercy Peabody",
+   "Asa Knowlton",
+   "Submit Dunham",
+   "Aunt Prudence",
+   "Aunt Tabitha",
+   "Aunt Keziah",
+   "Aunt Dorcas",
+   "Aunt Lovina",
+   "Uncle Obadiah",
+   "Uncle Zebulon",
+   "Uncle Hezekiah",
+   "Uncle Eliphalet",
+   "Uncle Amos",
+   "Deacon Hale",
+   "Deacon Merrill",
+   "Deacon Fogg",
+   "Deacon Lamson",
+   "Goody Stickney",
+   "Goody Marston",
+   "Goody Varney",
+   "Old Bartlett",
+   "Old Sanborn",
+   "Old Nutting",
+   "Old Colby",
+   "Old Gilman",
+   "Widow Treadwell",
+   "Widow Hoyt",
+   "Widow Cheney",
+   "Widow Emery",
+   "Cousin Desire",
+   "Cousin Remember",
+   "Cousin Hopestill",
+   "Cousin Silence",
+   "Squire Lovejoy",
+   "Squire Prescott",
+   "Squire Wentworth",
+   "Grandfather Ames",
+   "Grandmother Ordway",
+   "Grandmother Leavitt",
+   "Granny Beal",
+   "Granny Quimby",
+   "Captain Pease",
+   "Captain Drown",
+   "Parson Tenney",
+   "Parson Lund",
+   "Miss Tarbox",
+   "Mistress Eastman",
+   "Jedediah Clough",
+   "Zerubbabel Fifield",
+   "Thankful Sawtelle",
+   "Temperance Moody",
+   "Obedience Rand",
+   "Deliverance Towle",
+   "Hannah Philbrick",
+   "Abigail Chase",
+   "Lydia Pillsbury",
+   "Tryphena Morse",
+   "Achsah Brackett",
+   "Huldah Weeks",
+   "Jerusha Pratt",
+   "Mindwell Howe",
+   "Seth Kimball",
+   "Caleb Dow",
+   "Josiah Perley",
+   "Nathaniel Poor",
+   "Levi Sargent",
+   "Enoch Tewksbury",
+   "Moses Varnum",
+   "Ichabod Swett",
+   "Gideon Batchelder",
+   "Micah Lunt",
+   "Reuben Heath",
+   "Silas Noyes",
+   "Elihu Proctor",
+   "Barnabas Lull",
+   "Thaddeus Wiggin",
+   "Hosea Blodgett",
+   "Preserved Tibbetts",
+   "Waitstill Hobbs",
+   "Comfort Ladd",
+   "Rhoda Nason",
+   "Sarah Ann Foss",
+   "Lois Gage",
+   "Tirzah Bean",
+   "Eunice Shaw",
+   "Philander Cobb",
+   "Orrin Dodge"
+  ],
+  "places": [
+   "Hardscrabble",
+   "Harlow Bridge",
+   "Fallow Bend",
+   "Furnace Hollow",
+   "High Commons",
+   "Tern Harbor",
+   "Kettle Notch",
+   "Saltmarsh",
+   "Hobble Hill",
+   "Tanner's Row",
+   "Company Row",
+   "the Oxbow",
+   "the Quarry",
+   "Alder Hollow",
+   "Sugarbush",
+   "Brook Woods",
+   "South Fields",
+   "Pike's Mill",
+   "Thayer's Yard",
+   "Market Square",
+   "Grange Hall",
+   "Herb Terraces",
+   "Charcoal Woods",
+   "Widow's Orchard",
+   "Shepherd's Bothy"
+  ],
+  "understate": [
+   "Not Bad",
+   "Fair to Middling",
+   "Could Be Worse",
+   "Serviceable",
+   "It'll Do",
+   "No Complaints",
+   "Passable",
+   "Not the Worst",
+   "Good Enough",
+   "Tolerable",
+   "Middling",
+   "Adequate",
+   "Not Terrible",
+   "Decent",
+   "Not Half Bad",
+   "Seen Worse",
+   "Nothing Special",
+   "Ordinary Enough",
+   "Fair Enough",
+   "Workable",
+   "Modest",
+   "Nothing Fancy",
+   "Can't Complain",
+   "Might Do",
+   "Well Enough",
+   "Sufficient",
+   "Presentable",
+   "Respectable",
+   "Not So Bad",
+   "Not Altogether Useless",
+   "Still Going",
+   "Holds Up",
+   "Gets By",
+   "Not Unpleasant",
+   "Not Unreasonable",
+   "All Right",
+   "About Right",
+   "Reasonable",
+   "More or Less",
+   "So-So",
+   "Plain Enough",
+   "Better Than Nothing",
+   "Better Than Some",
+   "Good for Its Age",
+   "Not Much to Look At",
+   "Not Too Bad",
+   "Close Enough",
+   "Will Serve",
+   "Does the Job",
+   "Hardly Worth Mentioning"
+  ],
+  "tags": [
+   "So-Called",
+   "As They Say",
+   "They Say",
+   "Supposedly",
+   "Or So It's Told",
+   "By All Accounts",
+   "Or Thereabouts",
+   "If You Ask Them",
+   "As Some Have It",
+   "Near Enough",
+   "Or Near It",
+   "They Tell Me"
+  ]
+ },
+ "lines": {
+  "any": [
+   "The left one always did run tight",
+   "Somebody cared for it longer than anyone remembers",
+   "Traded twice at the same fair",
+   "Smells faintly of the last person's pipe",
+   "Won at a husking bee, or so the story went",
+   "Came out of a cellar hole with the cellar still on it",
+   "Left on a fence post one spring and never claimed",
+   "Mended with whatever was in the house that winter",
+   "The stitching is better than the cloth",
+   "Bought from a peddler who never came back through",
+   "Three families claim it was theirs",
+   "Kept in cedar, and it shows",
+   "Too good to wear, according to everybody who wore it"
+  ],
+  "boots": [
+   "Walked to the coast and back on one pair of soles",
+   "Greased every fall whether it needed it or not",
+   "Muddy from a road nobody can place"
+  ],
+  "gloves": [
+   "Worn through at the thumb by one particular job",
+   "Knit by someone who was counting under her breath",
+   "Too warm for the work, and the work got done anyway"
+  ],
+  "coat": [
+   "Turned once already, and it could stand turning again",
+   "Has a pocket that wasn't in the pattern",
+   "Hung behind one door for most of a lifetime"
+  ],
+  "belt": [
+   "Has been let out four notches and taken in two",
+   "Holds more than it looks like it should",
+   "The buckle came off something else"
+  ],
+  "keepsake": [
+   "Nobody can say what it opened or who it was for",
+   "Passed along at a graveside, the way they do",
+   "Found in a wall when the wall came down",
+   "Worn smooth where a thumb goes"
+  ]
+ },
+ "banned": "\\b(warden|wardstone|payment|debt|loan|owed|asleep|sleeping|ledger|old friend|under the mountain|eldwin|jasper|winter itself|cage|\\d{3,4}|eighteen|seventeen|century|decade)\\b",
+ "look": {
+  "cloth": {
+   "boots": [
+    "#6e4a2e",
+    "#4e3a2c",
+    "#7d5c3a",
+    "#5a4638",
+    "#8a6a44"
+   ],
+   "gloves": [
+    "#8a6a44",
+    "#a0543c",
+    "#5e6e54",
+    "#6a5a78",
+    "#b08e5a",
+    "#4e5a6a"
+   ],
+   "coat": [
+    "#4e5a6a",
+    "#6e3e34",
+    "#4a5a44",
+    "#7a6a4c",
+    "#3e4658",
+    "#6a4e5e",
+    "#8a7a58"
+   ],
+   "belt": [
+    "#6e4a2e",
+    "#8a6a44",
+    "#a04838",
+    "#4e5a4a",
+    "#5a4638"
+   ],
+   "keepsake": [
+    "#8a7a58",
+    "#6e6a64",
+    "#7a5a3a",
+    "#7e8a90"
+   ]
+  },
+  "metal": [
+   "#b8a070",
+   "#a8b0b8",
+   "#b87a48",
+   "#8e8a7c"
+  ]
+ }
+}

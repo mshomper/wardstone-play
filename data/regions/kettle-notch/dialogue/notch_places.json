@@ -1,0 +1,96 @@
+{
+  "conversations": [
+    {
+      "id": "sugarbush_frost",
+      "lines": [
+        {
+          "who": "",
+          "text": "Every maple on the near side has a bucket on it. It is October."
+        },
+        {
+          "who": "eldwin",
+          "face": "concerned",
+          "text": "Sap runs when it freezes at night and thaws by day. Six weeks of that, come March. Not now."
+        },
+        {
+          "who": "eldwin",
+          "face": "concerned",
+          "text": "Somebody up here has noticed the nights, and hung their buckets. Good for them. I wish they hadn't needed to."
+        }
+      ]
+    },
+    {
+      "id": "coffin_rest",
+      "lines": [
+        {
+          "who": "",
+          "text": "A long flat stone, worn hollow in the middle. Bearers set the coffin down here and got their breath before the last climb."
+        },
+        {
+          "who": "eldwin",
+          "face": "neutral",
+          "text": "That's a long way to carry anyone, when there's a good churchyard on the Green. They must have wanted to lie near something."
+        }
+      ]
+    },
+    {
+      "id": "stone_mercy",
+      "lines": [
+        {
+          "who": "",
+          "text": "MERCY WHITCOMB. Beloved wife. Gone before the frost."
+        }
+      ]
+    },
+    {
+      "id": "stone_tuttle",
+      "lines": [
+        {
+          "who": "",
+          "text": "JOTHAM TUTTLE. He wound the church clock for sixty years. The rest has worn away."
+        }
+      ]
+    },
+    {
+      "id": "stone_thayer",
+      "lines": [
+        {
+          "who": "",
+          "text": "OBADIAH THAYER. He set the last course, and was paid."
+        },
+        {
+          "who": "eldwin",
+          "face": "concerned",
+          "text": "Thayer. There are Thayers at Hardscrabble still. I'd like to know in what coin."
+        }
+      ]
+    },
+    {
+      "id": "stone_silence",
+      "lines": [
+        {
+          "who": "",
+          "text": "SILENCE, WHO KEPT THE GAP."
+        },
+        {
+          "who": "",
+          "text": "No family name. No dates. Someone has left a stone on top, and it isn't old."
+        }
+      ]
+    },
+    {
+      "id": "stone_ring",
+      "lines": [
+        {
+          "who": "",
+          "text": "No words at all. A ring cut deep, and three strokes under it."
+        },
+        {
+          "who": "eldwin",
+          "face": "concerned",
+          "text": "Three crossed lines is the Warden's mark. This isn't that. This is what that was copied from."
+        }
+      ]
+    }
+  ]
+}

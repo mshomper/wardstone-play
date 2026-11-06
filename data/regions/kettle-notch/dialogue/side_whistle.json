@@ -1,0 +1,109 @@
+{
+ "conversations": [
+  {
+   "id": "pip_ask",
+   "lines": [
+    {
+     "who": "pip",
+     "text": "I had a whistle. It was tin. It was mine."
+    },
+    {
+     "who": "pip",
+     "text": "It fell out somewhere when Deacon stepped on my foot. He said sorry. Not with words."
+    },
+    {
+     "who": "pip",
+     "text": "I'm going to play at the dance. After I find my whistle. After."
+    },
+    {
+     "who": "eldwin",
+     "text": "I'll keep my eyes on the stubble, Pip. They're nearer the ground than they used to be.",
+     "face": "smile"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "whistle_asked"
+    }
+   ]
+  },
+  {
+   "id": "pip_remind",
+   "lines": [
+    {
+     "who": "pip",
+     "text": "It's in the field somewhere. Over toward the wall. I looked there. I looked everywhere there."
+    }
+   ]
+  },
+  {
+   "id": "whistle_found",
+   "lines": [
+    {
+     "who": "",
+     "text": "Something glints in the stubble, pressed in deep by a very large hoof. A tin whistle, a little flatter on one side than it started."
+    },
+    {
+     "who": "eldwin",
+     "text": "One note better than it was, or one worse. We'll let him decide.",
+     "face": "smile"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "has_whistle"
+    }
+   ]
+  },
+  {
+   "id": "pip_done",
+   "lines": [
+    {
+     "who": "",
+     "text": "Pip takes the whistle in both hands, turns it over, and blows. It makes one note, with great conviction."
+    },
+    {
+     "who": "pip",
+     "text": "It's better now."
+    },
+    {
+     "who": "pip",
+     "text": "You can have this. It's been in my pocket. It's got some pocket on it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "whistle_done"
+    },
+    {
+     "reward": {
+      "title": "The Tin Whistle",
+      "xp": 8,
+      "items": {
+       "maple_candy": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "pip_after",
+   "lines": [
+    {
+     "who": "",
+     "text": "Pip plays his note at Eldwin, then at the ox, then at Eldwin again, in case he missed it."
+    }
+   ]
+  },
+  {
+   "id": "pip_evening",
+   "lines": [
+    {
+     "who": "pip",
+     "text": "Mrs. Ness says I can play after the dance. When everyone's gone home. She says that's the best time.",
+     "face": "smile"
+    }
+   ]
+  }
+ ]
+}

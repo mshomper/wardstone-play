@@ -1,0 +1,38 @@
+{
+  "_note": "One region. `places` are what the regional map shows: each claims the areas that count as being there, and sits at a spot on the 640 by 540 parchment. `paths` join places. `leads` are ways out of the region. `quests` and `dialogue` name files in this folder.",
+  "id": "kettle-notch",
+  "name": "Kettle Notch",
+  "places": [
+    {
+      "id": "the-green", "name": "The Green", "town": true, "note": "the store, mill, church, houses", "at": [340, 290],
+      "areas": ["green-frame", "store-ground", "store-upper", "mill-press", "church", "colonial-north", "colonial-north-upper", "colonial-west", "colonial-west-upper", "farmhouse-south", "farmhouse-west"]
+    },
+    { "id": "orchard", "name": "The Orchard", "at": [330, 165], "areas": ["orchard"] },
+    { "id": "brook-woods", "name": "Brook Woods", "at": [150, 175], "label": "below", "areas": ["brook-woods"] },
+    { "id": "breach", "name": "The Breach", "at": [95, 90], "areas": ["breach"], "stone": { "mended": "breach_sealed" } },
+    { "id": "south-fields", "name": "South Fields", "at": [330, 405], "areas": ["south-fields", "south-fields-barn", "south-fields-barn-upper"] },
+    { "id": "alder-hollow", "name": "Alder Hollow", "at": [150, 425], "label": "above", "areas": ["alder-hollow"] },
+    { "id": "sugar-lane", "name": "The Woodlot", "at": [430, 240], "label": "above", "areas": ["sugar-lane"] },
+    { "id": "sugarbush", "name": "Sugarbush", "at": [560, 225], "label": "below", "areas": ["sugarbush", "sugarbush-sugar-shack"] },
+    { "id": "old-lane", "name": "The Coffin Rest", "at": [230, 268], "label": "above", "areas": ["old-lane"] },
+    { "id": "burying-ground", "name": "Old Burying Ground", "at": [120, 300], "label": "below", "areas": ["old-burying-ground", "old-burying-ground-old-vault"] }
+  ],
+  "paths": [
+    ["the-green", "orchard"],
+    ["orchard", "brook-woods"],
+    ["brook-woods", "breach"],
+    ["the-green", "south-fields"],
+    ["south-fields", "alder-hollow"],
+    ["the-green", "sugar-lane"],
+    ["sugar-lane", "sugarbush"],
+    ["the-green", "old-lane"],
+    ["old-lane", "burying-ground"]
+  ],
+  "leads": [
+    { "from": "alder-hollow", "to": [105, 495], "name": "the road to Hardscrabble" }
+  ],
+  "board": "board",
+  "cart": [{ "id": "woodlot", "area": "sugar-lane" }, { "id": "coffin-rest", "area": "old-lane" }, { "id": "south-fields", "area": "south-fields" }],
+  "quests": ["tailors-cart", "the-mitten", "lost-cat", "quilt-squares", "stopped-clock", "big-ones", "mrs-applegate", "folded-note", "tin-whistle", "sextons-share"],
+  "dialogue": ["hester", "ada", "silas", "wren", "townsfolk", "world", "side_cat", "side_quilt", "side_clock", "side_bigones", "residents", "side_goose", "side_note", "side_whistle", "notch_places", "side_sexton"]
+}

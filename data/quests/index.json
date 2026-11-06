@@ -1,5 +1,8 @@
 {
-  "_note": "Every quest is its own file in this folder; list them here. `main` is the quest that drives the story, area unlocks and time of day.",
+  "_note": "Quests that belong to no one region. `main` drives the story, area unlocks and time of day. A region's own quests are listed in its region.json.",
   "main": "first-frost",
-  "quests": ["first-frost", "the-mitten", "lost-cat", "quilt-squares", "stopped-clock", "big-ones", "jaspers-errand"]
+  "quests": [
+    "first-frost",
+    "jaspers-errand"
+  ]
 }

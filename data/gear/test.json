@@ -1,0 +1,127 @@
+{
+ "_note": "The playable gear test (docs/future/F06): which rolls it starts with and which are in the basket. Written by tools/gear/testpieces.mjs. Never in the demo.",
+ "starter": [
+  {
+   "id": "boots_stout",
+   "slot": "boots",
+   "rarity": "stout",
+   "seed": 100
+  },
+  {
+   "id": "coat_stout",
+   "slot": "coat",
+   "rarity": "stout",
+   "seed": 100
+  },
+  {
+   "id": "keepsake_stout",
+   "slot": "keepsake",
+   "rarity": "stout",
+   "seed": 100
+  },
+  {
+   "id": "gloves_sunday",
+   "slot": "gloves",
+   "rarity": "sunday",
+   "seed": 100
+  },
+  {
+   "id": "belt_sunday",
+   "slot": "belt",
+   "rarity": "sunday",
+   "seed": 103
+  }
+ ],
+ "basket": [
+  {
+   "id": "gloves_stout",
+   "slot": "gloves",
+   "rarity": "stout",
+   "seed": 100
+  },
+  {
+   "id": "belt_stout",
+   "slot": "belt",
+   "rarity": "stout",
+   "seed": 101
+  },
+  {
+   "id": "boots_sunday",
+   "slot": "boots",
+   "rarity": "sunday",
+   "seed": 101
+  },
+  {
+   "id": "coat_sunday",
+   "slot": "coat",
+   "rarity": "sunday",
+   "seed": 102
+  },
+  {
+   "id": "keepsake_sunday",
+   "slot": "keepsake",
+   "rarity": "sunday",
+   "seed": 102
+  },
+  {
+   "id": "boots_heirloom",
+   "slot": "boots",
+   "rarity": "heirloom",
+   "seed": 124
+  },
+  {
+   "id": "gloves_heirloom",
+   "slot": "gloves",
+   "rarity": "heirloom",
+   "seed": 111
+  },
+  {
+   "id": "coat_heirloom",
+   "slot": "coat",
+   "rarity": "heirloom",
+   "seed": 106
+  },
+  {
+   "id": "belt_heirloom",
+   "slot": "belt",
+   "rarity": "heirloom",
+   "seed": 144
+  },
+  {
+   "id": "keepsake_heirloom",
+   "slot": "keepsake",
+   "rarity": "heirloom",
+   "seed": 104
+  },
+  {
+   "id": "boots_oldwork",
+   "slot": "boots",
+   "rarity": "oldwork",
+   "seed": 192
+  },
+  {
+   "id": "gloves_oldwork",
+   "slot": "gloves",
+   "rarity": "oldwork",
+   "seed": 104
+  },
+  {
+   "id": "coat_oldwork",
+   "slot": "coat",
+   "rarity": "oldwork",
+   "seed": 100
+  },
+  {
+   "id": "belt_oldwork",
+   "slot": "belt",
+   "rarity": "oldwork",
+   "seed": 102
+  },
+  {
+   "id": "keepsake_oldwork",
+   "slot": "keepsake",
+   "rarity": "oldwork",
+   "seed": 109
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "folded-note",
+ "title": "A Folded Note",
+ "side": true,
+ "blurb": "Caleb Stroud wrote it down so he'd say it right. Now he can't say it at all.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Not to be read",
+   "objective": "",
+   "done": {
+    "flags": [
+     "note_asked"
+    ]
+   },
+   "auto": [
+    {
+     "go": "south-fields",
+     "if": {
+      "timeTo": 18.5
+     }
+    },
+    {
+     "talk": "caleb"
+    }
+   ],
+   "sets": [
+    "note_asked"
+   ]
+  },
+  {
+   "id": "carry",
+   "title": "Not to be read",
+   "objective": "Take Caleb's note to Abigail Ness, the fiddler, on the Green.",
+   "done": {
+    "flags": [
+     "note_given"
+    ]
+   },
+   "skip": {
+    "area": "green-frame",
+    "spot": "Abigail (day)"
+   },
+   "auto": [
+    {
+     "go": "green-frame"
+    },
+    {
+     "talk": "abigail"
+    }
+   ],
+   "sets": [
+    "note_given"
+   ]
+  },
+  {
+   "id": "back",
+   "title": "Spelled wrong",
+   "objective": "Tell Caleb what she said. He is mowing in the south fields.",
+   "done": {
+    "flags": [
+     "note_done"
+    ]
+   },
+   "hints": [
+    {
+     "if": {
+      "timeFrom": 18.5
+     },
+     "text": "Tell Caleb what she said. He is at the edge of the dance."
+    }
+   ],
+   "skip": {
+    "area": "green-frame",
+    "spot": "Abigail (day)"
+   },
+   "auto": [
+    {
+     "go": "south-fields",
+     "if": {
+      "timeTo": 18.5
+     }
+    },
+    {
+     "talk": "caleb"
+    }
+   ],
+   "sets": [
+    "note_done"
+   ]
+  }
+ ]
+}

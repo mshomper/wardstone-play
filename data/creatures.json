@@ -1,5 +1,6 @@
 {
   "_note": "Creature data (docs/06-creatures.md). Stats come from that doc. Move powers and how often each is picked are tuned against the table in docs/05-combat.md with `npm run sim`. Tougher groups double their drop chances; weaker groups (the south road) halve them. `sprites` are anim prefixes.",
+  "xpFalloff": [1, 0.85, 0.6, 0.3, 0.15, 0.05],
   "tougher": {
     "hp": 1.6,
     "atk": 1.2,
@@ -128,6 +129,225 @@
         "id": "slow",
         "turns": 1
       }
+    },
+    {
+      "id": "drill",
+      "name": "Drill",
+      "element": "physical",
+      "power": 0.8,
+      "target": "one"
+    },
+    {
+      "id": "sap_flick",
+      "name": "Sap Flick",
+      "element": "physical",
+      "power": 0.4,
+      "target": "one",
+      "status": {
+        "id": "sticky",
+        "turns": 2
+      }
+    },
+    {
+      "id": "sting",
+      "name": "Sting",
+      "element": "physical",
+      "power": 0.7,
+      "target": "one"
+    },
+    {
+      "id": "wobble",
+      "name": "Sugar-Drunk",
+      "element": "physical",
+      "power": 0,
+      "target": "self"
+    },
+    {
+      "id": "whirligig",
+      "name": "Whirligig",
+      "element": "physical",
+      "power": 0.6,
+      "target": "one"
+    },
+    {
+      "id": "log_slam",
+      "name": "Log Slam",
+      "element": "physical",
+      "power": 1.2,
+      "target": "one"
+    },
+    {
+      "id": "stack_up",
+      "name": "Stack Up",
+      "element": "physical",
+      "power": 0,
+      "target": "self",
+      "status": {
+        "id": "curled",
+        "turns": 1
+      },
+      "telegraph": true
+    },
+    {
+      "id": "hot_syrup",
+      "name": "Hot Syrup",
+      "element": "hearth",
+      "power": 0.4,
+      "target": "one",
+      "status": {
+        "id": "burning",
+        "turns": 1
+      }
+    },
+    {
+      "id": "topple",
+      "name": "Topple",
+      "element": "physical",
+      "power": 1.2,
+      "target": "one"
+    },
+    {
+      "id": "settle_in",
+      "name": "Settle In",
+      "element": "physical",
+      "power": 0,
+      "target": "self",
+      "status": {
+        "id": "curled",
+        "turns": 1
+      },
+      "telegraph": true
+    },
+    {
+      "id": "dust",
+      "name": "Slate Dust",
+      "element": "arcane",
+      "power": 0.4,
+      "target": "one",
+      "status": {
+        "id": "blind",
+        "turns": 1
+      }
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "element": "physical",
+      "power": 0.6,
+      "target": "one"
+    },
+    {
+      "id": "night_call",
+      "name": "Night Call",
+      "element": "arcane",
+      "power": 0.7,
+      "target": "one",
+      "status": {
+        "id": "slow",
+        "turns": 1
+      }
+    },
+    {
+      "id": "swoop",
+      "name": "Swoop",
+      "element": "physical",
+      "power": 0.9,
+      "target": "one"
+    },
+    {
+      "id": "hush",
+      "name": "Hush",
+      "element": "arcane",
+      "power": 0.2,
+      "target": "one",
+      "status": {
+        "id": "drowsy",
+        "turns": 1
+      }
+    },
+    {
+      "id": "shove",
+      "name": "Shove",
+      "element": "physical",
+      "power": 0.9,
+      "target": "one"
+    },
+    {
+      "id": "grit",
+      "name": "Grit Spray",
+      "element": "earth",
+      "power": 0.5,
+      "target": "one",
+      "status": {
+        "id": "blind",
+        "turns": 1
+      }
+    },
+    {
+      "id": "flicker",
+      "name": "Cold Flicker",
+      "element": "frost",
+      "power": 0.7,
+      "target": "one"
+    },
+    {
+      "id": "bucket_swing",
+      "name": "Bucket Swing",
+      "element": "physical",
+      "power": 1.2,
+      "target": "one"
+    },
+    {
+      "id": "maul",
+      "name": "Maul",
+      "element": "physical",
+      "power": 1.15,
+      "target": "one"
+    },
+    {
+      "id": "yawn",
+      "name": "Great Yawn",
+      "element": "physical",
+      "power": 0,
+      "target": "self"
+    },
+    {
+      "id": "tally",
+      "name": "Cuts a Mark",
+      "element": "physical",
+      "power": 0,
+      "target": "self"
+    },
+    {
+      "id": "chip",
+      "name": "Flung Chip",
+      "element": "physical",
+      "power": 0.6,
+      "target": "one"
+    },
+    {
+      "id": "reckon",
+      "name": "The Sum",
+      "element": "arcane",
+      "power": 0.7,
+      "target": "one",
+      "telegraph": true
+    },
+    {
+      "id": "burrow",
+      "name": "Digs In",
+      "element": "physical",
+      "power": 0,
+      "target": "self",
+      "telegraph": true
+    },
+    {
+      "id": "erupt",
+      "name": "Up Through the Sod",
+      "element": "earth",
+      "power": 1.7,
+      "target": "one",
+      "telegraph": true
     }
   ],
   "creatures": [
@@ -463,6 +683,683 @@
         "map": "beast_iso"
       },
       "settle": "retreat_into_mist"
+    },
+    {
+      "id": "tapbeak",
+      "name": "Tapbeak",
+      "level": 3,
+      "stats": {
+        "hp": 46,
+        "mp": 0,
+        "atk": 16,
+        "mag": 6,
+        "def": 7,
+        "res": 7,
+        "spd": 13
+      },
+      "element": {
+        "weak": [
+          "frost"
+        ],
+        "resist": []
+      },
+      "moves": [
+        {
+          "id": "drill",
+          "weight": 3
+        },
+        {
+          "id": "sap_flick",
+          "weight": 2
+        }
+      ],
+      "ai": "",
+      "xp": 20,
+      "drops": [
+        {
+          "item": "maple_candy",
+          "chance": 0.2
+        },
+        {
+          "item": "copper_button",
+          "chance": 0.3
+        }
+      ],
+      "sprites": {
+        "side": "tapbeak_side",
+        "map": "tapbeak_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "feather"
+    },
+    {
+      "id": "tipplewasp",
+      "name": "Tipplewasps",
+      "level": 3,
+      "stats": {
+        "hp": 34,
+        "mp": 0,
+        "atk": 15,
+        "mag": 6,
+        "def": 4,
+        "res": 6,
+        "spd": 14
+      },
+      "element": {
+        "weak": [
+          "frost"
+        ],
+        "resist": [
+          "earth"
+        ]
+      },
+      "moves": [
+        {
+          "id": "sting",
+          "weight": 4
+        },
+        {
+          "id": "wobble",
+          "weight": 1
+        }
+      ],
+      "ai": "nimble",
+      "xp": 20,
+      "drops": [
+        {
+          "item": "pine_pitch",
+          "chance": 0.15
+        },
+        {
+          "item": "maple_candy",
+          "chance": 0.2
+        }
+      ],
+      "sprites": {
+        "side": "tipplewasp_side",
+        "map": "tipplewasp_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "spark"
+    },
+    {
+      "id": "chickaree",
+      "name": "Chickaree",
+      "level": 3,
+      "stats": {
+        "hp": 46,
+        "mp": 0,
+        "atk": 15,
+        "mag": 6,
+        "def": 6,
+        "res": 7,
+        "spd": 15
+      },
+      "element": {
+        "weak": [
+          "earth"
+        ],
+        "resist": []
+      },
+      "moves": [
+        {
+          "id": "swipe",
+          "weight": 3
+        },
+        {
+          "id": "whirligig",
+          "weight": 2
+        },
+        {
+          "id": "snicker",
+          "weight": 1
+        }
+      ],
+      "ai": "nimble",
+      "xp": 20,
+      "drops": [
+        {
+          "item": "johnnycake",
+          "chance": 0.25
+        },
+        {
+          "item": "darning_egg",
+          "chance": 0.3
+        }
+      ],
+      "sprites": {
+        "side": "chickaree_side",
+        "map": "chickaree_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "claw"
+    },
+    {
+      "id": "cordling",
+      "name": "Cordling",
+      "level": 3,
+      "stats": {
+        "hp": 68,
+        "mp": 0,
+        "atk": 18,
+        "mag": 6,
+        "def": 14,
+        "res": 5,
+        "spd": 5
+      },
+      "element": {
+        "weak": [
+          "hearth",
+          "earth"
+        ],
+        "resist": [
+          "physical"
+        ]
+      },
+      "moves": [
+        {
+          "id": "log_slam",
+          "weight": 3
+        },
+        {
+          "id": "stack_up",
+          "weight": 0.5
+        }
+      ],
+      "ai": "burrback",
+      "xp": 26,
+      "drops": [
+        {
+          "item": "kindling",
+          "chance": 0.4
+        }
+      ],
+      "sprites": {
+        "side": "cordling_side",
+        "map": "cordling_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "kindling"
+    },
+    {
+      "id": "sugarling",
+      "name": "Sugarling",
+      "level": 3,
+      "stats": {
+        "hp": 30,
+        "mp": 0,
+        "atk": 6,
+        "mag": 14,
+        "def": 4,
+        "res": 9,
+        "spd": 12
+      },
+      "element": {
+        "weak": [
+          "frost"
+        ],
+        "resist": [
+          "hearth"
+        ]
+      },
+      "moves": [
+        {
+          "id": "hot_syrup",
+          "weight": 2
+        },
+        {
+          "id": "nip",
+          "weight": 3
+        }
+      ],
+      "ai": "rimeling",
+      "xp": 20,
+      "drops": [
+        {
+          "item": "maple_candy",
+          "chance": 0.25
+        },
+        {
+          "item": "sugar_on_snow",
+          "chance": 0.05
+        }
+      ],
+      "sprites": {
+        "side": "sugarling_side",
+        "map": "sugarling_iso"
+      },
+      "settle": "pop_to_amber",
+      "icon": "drop"
+    },
+    {
+      "id": "footstone",
+      "name": "Footstone",
+      "level": 3,
+      "stats": {
+        "hp": 64,
+        "mp": 0,
+        "atk": 19,
+        "mag": 6,
+        "def": 16,
+        "res": 7,
+        "spd": 4
+      },
+      "element": {
+        "weak": [
+          "earth"
+        ],
+        "resist": [
+          "physical",
+          "frost"
+        ]
+      },
+      "moves": [
+        {
+          "id": "topple",
+          "weight": 3
+        },
+        {
+          "id": "settle_in",
+          "weight": 0.5
+        }
+      ],
+      "ai": "burrback",
+      "xp": 26,
+      "drops": [
+        {
+          "item": "old_wall_stone",
+          "chance": 0.35
+        }
+      ],
+      "sprites": {
+        "side": "footstone_side",
+        "map": "footstone_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "stone"
+    },
+    {
+      "id": "effigy",
+      "name": "Effigy Moth",
+      "level": 3,
+      "stats": {
+        "hp": 38,
+        "mp": 0,
+        "atk": 11,
+        "mag": 17,
+        "def": 5,
+        "res": 13,
+        "spd": 11
+      },
+      "element": {
+        "weak": [
+          "hearth"
+        ],
+        "resist": []
+      },
+      "moves": [
+        {
+          "id": "dust",
+          "weight": 2
+        },
+        {
+          "id": "flutter",
+          "weight": 3
+        }
+      ],
+      "ai": "nimble",
+      "xp": 22,
+      "drops": [
+        {
+          "item": "lace_doily",
+          "chance": 0.3
+        },
+        {
+          "item": "mustard_plaster",
+          "chance": 0.12
+        }
+      ],
+      "sprites": {
+        "side": "effigy_side",
+        "map": "effigy_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "moon"
+    },
+    {
+      "id": "whippoorwill",
+      "name": "Whippoorwill",
+      "level": 3,
+      "stats": {
+        "hp": 46,
+        "mp": 0,
+        "atk": 19,
+        "mag": 17,
+        "def": 7,
+        "res": 9,
+        "spd": 13
+      },
+      "element": {
+        "weak": [
+          "arcane"
+        ],
+        "resist": []
+      },
+      "moves": [
+        {
+          "id": "swoop",
+          "weight": 3
+        },
+        {
+          "id": "night_call",
+          "weight": 2
+        }
+      ],
+      "ai": "",
+      "xp": 22,
+      "drops": [
+        {
+          "item": "old_almanac",
+          "chance": 0.25
+        }
+      ],
+      "sprites": {
+        "side": "whippoorwill_side",
+        "map": "whippoorwill_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "feather"
+    },
+    {
+      "id": "hushwing",
+      "name": "Hushwing",
+      "level": 3,
+      "stats": {
+        "hp": 50,
+        "mp": 0,
+        "atk": 20,
+        "mag": 15,
+        "def": 8,
+        "res": 9,
+        "spd": 12
+      },
+      "element": {
+        "weak": [
+          "hearth"
+        ],
+        "resist": [
+          "frost"
+        ]
+      },
+      "moves": [
+        {
+          "id": "swoop",
+          "weight": 4
+        },
+        {
+          "id": "hush",
+          "weight": 1
+        }
+      ],
+      "ai": "",
+      "xp": 22,
+      "drops": [
+        {
+          "item": "peppermint_drop",
+          "chance": 0.3
+        }
+      ],
+      "sprites": {
+        "side": "hushwing_side",
+        "map": "hushwing_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "feather"
+    },
+    {
+      "id": "sextonling",
+      "name": "Sextonling",
+      "level": 3,
+      "stats": {
+        "hp": 50,
+        "mp": 0,
+        "atk": 16,
+        "mag": 6,
+        "def": 12,
+        "res": 7,
+        "spd": 7
+      },
+      "element": {
+        "weak": [
+          "frost"
+        ],
+        "resist": [
+          "earth"
+        ]
+      },
+      "moves": [
+        {
+          "id": "shove",
+          "weight": 3
+        },
+        {
+          "id": "grit",
+          "weight": 2
+        }
+      ],
+      "ai": "",
+      "xp": 22,
+      "drops": [
+        {
+          "item": "rime_shard",
+          "chance": 0.4
+        },
+        {
+          "item": "brass_key",
+          "chance": 0.12
+        }
+      ],
+      "sprites": {
+        "side": "sextonling_side",
+        "map": "sextonling_iso"
+      },
+      "settle": "scamper_off",
+      "icon": "shard"
+    },
+    {
+      "id": "tallowlight",
+      "name": "Tallowlight",
+      "level": 3,
+      "stats": {
+        "hp": 30,
+        "mp": 0,
+        "atk": 6,
+        "mag": 18,
+        "def": 4,
+        "res": 11,
+        "spd": 12
+      },
+      "element": {
+        "weak": [
+          "hearth"
+        ],
+        "resist": [
+          "frost"
+        ]
+      },
+      "moves": [
+        {
+          "id": "flicker",
+          "weight": 3
+        },
+        {
+          "id": "nip",
+          "weight": 1
+        }
+      ],
+      "ai": "rimeling",
+      "xp": 20,
+      "drops": [
+        {
+          "item": "rime_shard",
+          "chance": 0.35
+        },
+        {
+          "item": "witch_hazel",
+          "chance": 0.12
+        }
+      ],
+      "sprites": {
+        "side": "tallowlight_side",
+        "map": "tallowlight_iso"
+      },
+      "settle": "pop_to_pale",
+      "icon": "flame"
+    },
+    {
+      "id": "oldbucket",
+      "name": "Old Bucket",
+      "level": 4,
+      "stats": {
+        "hp": 250,
+        "mp": 0,
+        "atk": 33,
+        "mag": 6,
+        "def": 10,
+        "res": 7,
+        "spd": 8
+      },
+      "element": {
+        "weak": [
+          "frost",
+          "earth"
+        ],
+        "resist": []
+      },
+      "moves": [
+        {
+          "id": "bucket_swing",
+          "weight": 1
+        }
+      ],
+      "ai": "",
+      "xp": 70,
+      "drops": [
+        {
+          "item": "sugar_on_snow",
+          "chance": 0.5
+        },
+        {
+          "item": "maple_candy",
+          "chance": 1
+        }
+      ],
+      "sprites": {
+        "side": "oldbucket_side",
+        "map": "oldbucket_iso"
+      },
+      "settle": "amble_off",
+      "icon": "pot"
+    },
+    {
+      "id": "ledger",
+      "name": "The Ledger",
+      "level": 4,
+      "stats": {
+        "hp": 250,
+        "mp": 0,
+        "atk": 16,
+        "mag": 36,
+        "def": 14,
+        "res": 13,
+        "spd": 6
+      },
+      "element": {
+        "weak": [
+          "earth",
+          "hearth"
+        ],
+        "resist": [
+          "frost"
+        ]
+      },
+      "moves": [
+        {
+          "id": "tally",
+          "weight": 2
+        },
+        {
+          "id": "chip",
+          "weight": 1
+        }
+      ],
+      "ai": "",
+      "xp": 90,
+      "drops": [
+        {
+          "item": "old_wall_stone",
+          "chance": 1
+        },
+        {
+          "item": "old_almanac",
+          "chance": 0.5
+        }
+      ],
+      "sprites": {
+        "side": "ledger_side",
+        "map": "ledger_iso"
+      },
+      "settle": "lie_down",
+      "icon": "stone",
+      "rises": true
+    },
+    {
+      "id": "sexton",
+      "name": "The Sexton",
+      "level": 4,
+      "stats": {
+        "hp": 125,
+        "mp": 0,
+        "atk": 23,
+        "mag": 8,
+        "def": 14,
+        "res": 9,
+        "spd": 7
+      },
+      "element": {
+        "weak": [
+          "frost",
+          "hearth"
+        ],
+        "resist": [
+          "earth"
+        ]
+      },
+      "moves": [
+        {
+          "id": "shove",
+          "weight": 3
+        },
+        {
+          "id": "grit",
+          "weight": 1
+        }
+      ],
+      "ai": "",
+      "xp": 90,
+      "drops": [
+        {
+          "item": "rime_shard",
+          "chance": 1
+        }
+      ],
+      "sprites": {
+        "side": "sexton_side",
+        "map": "sextonling_iso"
+      },
+      "settle": "sink_away",
+      "icon": "shard",
+      "rises": true
     }
   ]
 }

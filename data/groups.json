@@ -29,7 +29,19 @@
       "snickerkit": {
         "wander": 1.4,
         "chase": 3.2
-      }
+      },
+      "tapbeak": { "wander": 1.3, "chase": 3.2 },
+      "tipplewasp": { "wander": 1.5, "chase": 3.4 },
+      "chickaree": { "wander": 1.4, "chase": 3.3 },
+      "cordling": { "wander": 0.7, "chase": 2.4 },
+      "sugarling": { "wander": 1.1, "chase": 3.4, "glow": 0.55 },
+      "footstone": { "wander": 0.6, "chase": 2.2 },
+      "effigy": { "wander": 1.1, "chase": 3 },
+      "whippoorwill": { "wander": 1.2, "chase": 3.2 },
+      "hushwing": { "wander": 1, "chase": 3 },
+      "sextonling": { "wander": 0.9, "chase": 2.7 },
+      "tallowlight": { "wander": 1, "chase": 3.2, "glow": 0.55 },
+      "oldbucket": { "wander": 0.7, "chase": 2.3 }
     }
   },
   "groups": [
@@ -198,6 +210,27 @@
       "scripted": true,
       "rounds": 4,
       "xp": 80
-    }
+    },
+    { "id": "sb-kits", "until": "breach_sealed", "area": "sugarbush", "circle": 0, "creatures": ["snickerkit", "snickerkit"], "weak": true, "xpCap": 48 },
+    { "id": "sb-burr", "until": "breach_sealed", "area": "sugarbush", "circle": 1, "creatures": ["burrback"], "weak": true, "xpCap": 48 },
+    { "id": "sb-tough", "until": "breach_sealed", "area": "sugarbush", "circle": 2, "creatures": ["burrback", "latchpaw"], "tough": true, "xpCap": 48 },
+    { "id": "bg-rime", "until": "breach_sealed", "area": "old-burying-ground", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 48 },
+    { "id": "bg-patch", "until": "breach_sealed", "area": "old-burying-ground", "circle": 1, "creatures": ["latchpaw"], "weak": true, "xpCap": 48 },
+    { "id": "wl-kit", "area": "sugar-lane", "circle": 0, "creatures": ["snickerkit"], "weak": true, "xpCap": 48 },
+    { "id": "cr-rime", "area": "old-lane", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 48 },
+    { "id": "sb-taps", "area": "sugarbush", "circle": 5, "after": "breach_sealed", "creatures": ["tapbeak", "tapbeak"] },
+    { "id": "sb-wild", "area": "sugarbush", "circle": 1, "after": "breach_sealed", "creatures": ["chickaree", "tipplewasp"] },
+    { "id": "sb-wood", "area": "sugarbush", "circle": 4, "after": "breach_sealed", "creatures": ["cordling", "sugarling"] },
+    { "id": "sb-shack", "area": "sugarbush", "circle": 0, "after": "breach_sealed", "creatures": ["sugarling", "sugarling", "tipplewasp"] },
+    { "id": "sb-cords", "area": "sugarbush", "circle": 2, "after": "breach_sealed", "creatures": ["cordling", "cordling"], "tough": true },
+    { "id": "bg-lights", "area": "old-burying-ground", "circle": 0, "after": "breach_sealed", "creatures": ["tallowlight", "tallowlight", "tallowlight"] },
+    { "id": "bg-stones", "area": "old-burying-ground", "circle": 1, "after": "breach_sealed", "creatures": ["footstone", "footstone"] },
+    { "id": "bg-dusk", "area": "old-burying-ground", "circle": 4, "after": "breach_sealed", "creatures": ["effigy", "whippoorwill"] },
+    { "id": "bg-owl", "area": "old-burying-ground", "circle": 5, "after": "breach_sealed", "creatures": ["hushwing", "effigy"] },
+    { "id": "bg-dig", "area": "old-burying-ground", "circle": 3, "after": "breach_sealed", "creatures": ["sextonling", "sextonling", "footstone"] },
+    { "id": "bg-hush", "area": "old-burying-ground", "circle": 6, "after": "breach_sealed", "creatures": ["hushwing", "hushwing"], "tough": true },
+    { "id": "sb-bucket", "area": "sugarbush", "circle": 3, "after": "breach_sealed", "until": "beat_bucket", "creatures": ["oldbucket"], "questFlag": "beat_bucket", "banner": ["Old Bucket", "He shakes his head, finds it free, and walks off to bed."] },
+    { "id": "bg-ledger", "area": "old-burying-ground", "circle": 2, "after": "breach_sealed", "still": true, "creatures": ["ledger"], "questFlag": "beat_ledger", "banner": ["Settled", "The slab lies back down. The sum stays cut."] },
+    { "id": "bg-sexton", "area": "old-burying-ground", "circle": 7, "hidden": true, "until": "beat_sexton", "creatures": ["sexton", "sextonling"], "questFlag": "beat_sexton", "banner": ["The Sexton", "It sinks back into the ground, and doesn't come up."] }
   ]
 }

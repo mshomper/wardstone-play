@@ -1,0 +1,231 @@
+{
+ "conversations": [
+  {
+   "id": "amsden_day",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "Seven pages. I have cut it to six. Progress."
+    },
+    {
+     "who": "amsden",
+     "text": "A goose bit me this morning. I have decided to take it as a sign of something."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_amsden"
+    }, {"found": {"item": "sermon_notes", "note": "He hands you the page he cut. He would rather someone had it."}}
+   ]
+  },
+  {
+   "id": "amsden_day2",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "The Lord gives the harvest. The Notch gives me forty minutes to bless it. Less if it turns cold."
+    }
+   ]
+  },
+  {
+   "id": "amsden_evening",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "Four pages. They were very good about it. Only Thaddeus Rook slept, and he went home first to do it."
+    },
+    {
+     "who": "amsden",
+     "text": "There are three pies left, Eldwin, and I am a shepherd to all of them.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "amsden_after",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "I gave thanks for a mild autumn, as I do every year. I have been wondering lately who I ought to be thanking."
+    }
+   ]
+  },
+  {
+   "id": "abigail_day",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "Thirty years of \"Soldier's Joy\". They'd riot if I didn't. I might riot if I do."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_abigail"
+    }
+   ]
+  },
+  {
+   "id": "abigail_day2",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "Got a new one. No name yet. It goes like wind down a chimney."
+    },
+    {
+     "who": "abigail",
+     "text": "Came to me up by the old wall, of all places. You ever hear a tune in a wall, Eldwin?",
+     "face": "smile"
+    },
+    {
+     "who": "eldwin",
+     "text": "I've heard a great many things in that wall.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "abigail_evening",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "They want \"Soldier's Joy\" again. I'll give it to them twice, and slip the new one in between while they're catching their breath."
+    }
+   ]
+  },
+  {
+   "id": "abigail_after",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "Played the new one last night. Nobody danced. Nobody left, either. They just stood and listened, like it owed them something."
+    }
+   ]
+  },
+  {
+   "id": "obadiah_day",
+   "lines": [
+    {
+     "who": "obadiah",
+     "text": "Deacon don't like to be hurried. Neither do I. We get along."
+    },
+    {
+     "who": "obadiah",
+     "text": "He pulled a stump out of the north road this spring. Nobody asked him to. He just leaned."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_obadiah"
+    }
+   ]
+  },
+  {
+   "id": "obadiah_day2",
+   "lines": [
+    {
+     "who": "obadiah",
+     "text": "Twelve years old. Same as a man of seventy, near enough. Still leans, though."
+    },
+    {
+     "who": "obadiah",
+     "text": "The Danforth boy follows us about. Deacon stepped on him once. They came to an understanding."
+    }
+   ]
+  },
+  {
+   "id": "obadiah_evening",
+   "lines": [
+    {
+     "who": "obadiah",
+     "text": "Pulling match is in the morning. I told him. He didn't say anything. That's how you know he heard."
+    }
+   ]
+  },
+  {
+   "id": "deacon",
+   "lines": [
+    {
+     "who": "",
+     "text": "Deacon considers Eldwin for some time. He does not hurry about it, and when he has finished he goes back to chewing."
+    }
+   ]
+  },
+  {
+   "id": "nell_day",
+   "lines": [
+    {
+     "who": "nell",
+     "text": "It's not finished. It needs to be worse."
+    },
+    {
+     "who": "nell",
+     "text": "Crows don't care about scary. Judges do. I'm building for judges."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_nell"
+    }
+   ]
+  },
+  {
+   "id": "nell_day2",
+   "lines": [
+    {
+     "who": "nell",
+     "text": "That's Pa's coat on it. He doesn't know. Now you know. Now we both know."
+    }
+   ]
+  },
+  {
+   "id": "nell_evening",
+   "lines": [
+    {
+     "who": "nell",
+     "text": "Mrs. Combs looked at it and went straight home. That's the best anyone's said about it.",
+     "face": "smile"
+    },
+    {
+     "who": "nell",
+     "text": "Don't laugh. The last one who laughed, I made one of him."
+    }
+   ]
+  },
+  {
+   "id": "thaddeus_day",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "Muffler? It's autumn, ain't it. Autumn's when it starts."
+    },
+    {
+     "who": "thaddeus",
+     "text": "Sit if you like. Bench don't mind. I'm used to it. Well, there's no bench. There was. I've outlasted it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_thaddeus"
+    }
+   ]
+  },
+  {
+   "id": "thaddeus_day2",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "When I was a boy the frost came down off the mountain like a dog let off its rope. Hasn't done that in a long while. Somebody's been minding it, I expect."
+    },
+    {
+     "who": "eldwin",
+     "text": "Have they, now.",
+     "face": "smile"
+    },
+    {
+     "who": "thaddeus",
+     "text": "I'm home by dark, all the same. The night air's got teeth this year."
+    }
+   ]
+  }
+ ]
+}
