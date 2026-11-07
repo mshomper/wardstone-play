@@ -3,7 +3,7 @@
  "emissive": "portraits_emissive.png",
  "size": [
   456,
-  131
+  196
  ],
  "cell": null,
  "pixelsPerUnit": 32,
@@ -76,6 +76,62 @@
   "portrait_jasper_crane_quiet": {
    "x": 66,
    "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_neutral": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_smile": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_gruff": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_concerned": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_tired": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_quiet": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_obed_determined": {
+   "x": 66,
+   "y": 131,
    "w": 64,
    "h": 64,
    "ax": 32,

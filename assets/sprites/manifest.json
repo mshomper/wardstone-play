@@ -42,6 +42,33 @@
       "tiles": 0
     },
     {
+      "standby": true,
+      "name": "obed_iso",
+      "json": "obed_iso.json",
+      "image": "obed_iso.png",
+      "emissive": "obed_iso_emissive.png",
+      "size": [
+        457,
+        3313
+      ],
+      "anims": 48,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "obed_side",
+      "json": "obed_side.json",
+      "image": "obed_side.png",
+      "emissive": "obed_side_emissive.png",
+      "size": [
+        891,
+        2003
+      ],
+      "anims": 22,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "burrback_iso",
       "json": "burrback_iso.json",
       "image": "burrback_iso.png",
@@ -484,6 +511,19 @@
       "tiles": 0
     },
     {
+      "name": "thayer_wall_side",
+      "json": "thayer_wall_side.json",
+      "image": "thayer_wall_side.png",
+      "emissive": "thayer_wall_side_emissive.png",
+      "size": [
+        680,
+        220
+      ],
+      "anims": 3,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "tipplewasp_iso",
       "json": "tipplewasp_iso.json",
       "image": "tipplewasp_iso.png",
@@ -542,10 +582,10 @@
       "emissive": "portraits_emissive.png",
       "size": [
         456,
-        131
+        196
       ],
       "anims": 0,
-      "sprites": 9,
+      "sprites": 16,
       "tiles": 0
     },
     {

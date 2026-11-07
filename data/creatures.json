@@ -1,6 +1,15 @@
 {
   "_note": "Creature data (docs/06-creatures.md). Stats come from that doc. Move powers and how often each is picked are tuned against the table in docs/05-combat.md with `npm run sim`. Tougher groups double their drop chances; weaker groups (the south road) halve them. `sprites` are anim prefixes.",
   "xpFalloff": [1, 0.85, 0.6, 0.3, 0.15, 0.05],
+  "forParty": {
+    "_note": "How foes grow with the heroes who start the fight: docs/05-combat.md. No single blow in such a fight takes more than blowCap of a hero's most health. Eldwin alone is untouched.",
+    "blowCap": 0.7,
+    "sizes": {
+      "2": { "hp": 2, "damage": 1.8 },
+      "3": { "hp": 2.5, "damage": 2.9 },
+      "4": { "hp": 3, "damage": 3 }
+    }
+  },
   "tougher": {
     "hp": 1.6,
     "atk": 1.2,
@@ -40,7 +49,7 @@
       "name": "Frost Puff",
       "element": "frost",
       "power": 0.6,
-      "target": "one",
+      "target": "all",
       "status": {
         "id": "slow",
         "turns": 1
@@ -223,7 +232,7 @@
       "name": "Slate Dust",
       "element": "arcane",
       "power": 0.4,
-      "target": "one",
+      "target": "all",
       "status": {
         "id": "blind",
         "turns": 1
@@ -241,7 +250,7 @@
       "name": "Night Call",
       "element": "arcane",
       "power": 0.7,
-      "target": "one",
+      "target": "all",
       "status": {
         "id": "slow",
         "turns": 1
@@ -259,7 +268,7 @@
       "name": "Hush",
       "element": "arcane",
       "power": 0.2,
-      "target": "one",
+      "target": "all",
       "status": {
         "id": "drowsy",
         "turns": 1
@@ -330,7 +339,7 @@
       "name": "The Sum",
       "element": "arcane",
       "power": 0.7,
-      "target": "one",
+      "target": "all",
       "telegraph": true
     },
     {
@@ -346,7 +355,7 @@
       "name": "Up Through the Sod",
       "element": "earth",
       "power": 1.7,
-      "target": "one",
+      "target": "all",
       "telegraph": true
     }
   ],

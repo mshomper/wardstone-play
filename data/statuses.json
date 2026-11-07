@@ -1,6 +1,13 @@
 {
   "_note": "What each battle status says on its card (ui/statuscard.ts). `until` replaces the rounds-left line for a status that doesn't count rounds. The numbers in `desc` are read from RULES in src/game/battle/rules.ts: keep them in step.",
   "statuses": {
+    "regen": { "name": "Warming", "desc": "Gets back a little health at the end of each round." },
+    "marked": { "name": "Marked", "desc": "Every hero hits it harder, and its weaknesses show." },
+    "deepcold": { "name": "Deep Cold", "desc": "Slower each round it holds." },
+    "shielded": { "name": "Shielded", "desc": "Blows spend this first. {n} left." },
+    "drawing": { "name": "Drawing the blows", "desc": "Foes aiming at one hero aim here.", "until": "Until their next turn" },
+    "covered": { "name": "Covered", "desc": "Someone is taking the blows meant for them.", "until": "Until that hero's next turn" },
+    "immune": { "name": "Shrugging it off", "desc": "What would hurt or hinder can't land for now.", "until": "For a little while" },
     "sticky": { "name": "Sticky", "desc": "Stuck in candy-glass: a little slower, and it can't dodge. If it tries to curl or bristle, it just struggles and loses the turn. Frost on top freezes it solid." },
     "chilled": { "name": "Chilled", "desc": "Acts last in the round. An earth spell shatters the chill for half again the damage." },
     "frozen": { "name": "Frozen", "desc": "Frozen solid: it loses its next turn, and can't be frozen again for a while after.", "until": "Until its next turn" },

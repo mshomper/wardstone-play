@@ -2,7 +2,7 @@
   {
     "id": "glaze", "name": "Maple Glaze", "mp": 2, "target": "one", "icon": "leaf",
     "desc": "A ribbon of hot cider sets into candy-glass. Light damage; the foe is Sticky.",
-    "kind": "skill", "element": "hearth", "power": 0.6, "learn": { "level": 1 }, "slice": true,
+    "kind": "skill", "element": "hearth", "power": 0.95, "learn": { "level": 1 }, "slice": true,
     "effects": [{ "status": "sticky", "turns": 2 }], "anim": "pour",
     "ranks": [
       { "points": 1, "power": 0.15 },
@@ -13,7 +13,7 @@
   {
     "id": "bolt", "name": "Arcane Bolt", "mp": 4, "target": "one", "icon": "bolt",
     "desc": "A lance of starlight strikes one foe.",
-    "kind": "skill", "element": "arcane", "power": 1.6, "learn": { "level": 1 }, "slice": true,
+    "kind": "skill", "element": "arcane", "power": 1.4, "learn": { "level": 1 }, "slice": true,
     "effects": [], "anim": "cast",
     "ranks": [
       { "points": 1, "power": 0.2 },
@@ -23,28 +23,28 @@
   },
   {
     "id": "rime", "name": "Rime Touch", "mp": 3, "target": "one", "icon": "snow",
-    "desc": "Light frost damage; the foe is Chilled and acts last next round.",
-    "kind": "skill", "element": "frost", "power": 0.8, "learn": { "level": 1 }, "slice": true,
+    "desc": "Frost damage; the foe is Chilled and acts last next round.",
+    "kind": "skill", "element": "frost", "power": 1.0, "learn": { "level": 1 }, "slice": true,
     "effects": [{ "status": "chilled", "turns": 1 }], "anim": "cast",
     "ranks": [
       { "points": 1, "power": 0.15 },
       { "points": 1, "mp": -1 },
-      { "points": 2, "power": 0.15, "turns": 1, "desc": "Light frost damage; the foe is Chilled and acts last for two rounds." }
+      { "points": 2, "power": 0.15, "turns": 1, "desc": "Frost damage; the foe is Chilled and acts last for two rounds." }
     ]
   },
   {
     "id": "channel", "name": "Arcane Channel", "mp": 0, "target": "self", "icon": "channel",
-    "desc": "Restore 10 MP. The next skill is empowered.",
+    "desc": "Restore 10 MP, and take less harm while gathering it. The next skill is empowered.",
     "kind": "skill", "element": "arcane", "power": 0, "learn": { "level": 1 }, "slice": true,
-    "effects": [{ "restoreMp": 10 }, { "status": "empowered", "mul": 1.5 }], "anim": "arcane_channel",
+    "effects": [{ "restoreMp": 10 }, { "status": "empowered", "mul": 1.5 }, { "damageMul": 0.6 }], "anim": "arcane_channel",
     "ranks": [
       { "points": 1, "mul": 0.1 },
       { "points": 1, "mul": 0.1 },
-      { "points": 2, "restoreMp": 5, "mul": 0.1, "desc": "Restore 15 MP. The next skill is empowered." }
+      { "points": 2, "restoreMp": 5, "mul": 0.1, "desc": "Restore 15 MP, and take less harm while gathering it. The next skill is empowered." }
     ]
   },
   {
-    "id": "earth", "name": "Earthen Invocation", "mp": 8, "target": "all", "icon": "earth",
+    "id": "earth", "name": "Earthen Invocation", "mp": 10, "target": "all", "icon": "earth",
     "desc": "Stone spikes under every foe. Also lifts fallen wall stones.",
     "kind": "skill", "element": "earth", "power": 0.9, "learn": { "level": 2, "story": true }, "slice": true,
     "effects": [], "anim": "ground_invocation", "fieldAnim": "field_cast",
@@ -55,20 +55,20 @@
     ]
   },
   {
-    "id": "hearthlight", "name": "Hearthlight", "mp": 6, "target": "self", "icon": "flame",
-    "desc": "Heal about a third of his health and shake off the chill.",
+    "id": "hearthlight", "name": "Hearthlight", "mp": 6, "target": "friend", "icon": "flame",
+    "desc": "Heal about a third of someone's health and shake off the chill.",
     "kind": "skill", "element": "hearth", "power": 0, "learn": { "level": 3 }, "slice": true,
     "effects": [{ "healPct": 0.35 }, { "cure": ["chilled"] }], "anim": "arcane_channel",
     "ranks": [
-      { "points": 1, "healPct": 0.05, "desc": "Heal 40% of his health and shake off the chill." },
+      { "points": 1, "healPct": 0.05, "desc": "Heal 40% of someone's health and shake off the chill." },
       { "points": 1, "mp": -1 },
-      { "points": 2, "healPct": 0.08, "desc": "Heal nearly half his health and shake off the chill." }
+      { "points": 2, "healPct": 0.08, "desc": "Heal nearly half of someone's health and shake off the chill." }
     ]
   },
   {
     "id": "hoarfrost", "name": "Hoarfrost", "mp": 7, "target": "all", "icon": "snow", "iconWanted": "hoarfrost",
     "desc": "Frost races across the ground. Light damage; every foe is Chilled.",
-    "kind": "skill", "element": "frost", "power": 0.6, "learn": { "level": 4 }, "slice": false,
+    "kind": "skill", "element": "frost", "power": 0.6, "learn": { "level": 4 }, "slice": true,
     "effects": [{ "status": "chilled", "turns": 1 }], "anim": "ground_invocation",
     "ranks": [
       { "points": 1, "power": 0.1 },
@@ -79,7 +79,7 @@
   {
     "id": "icicle", "name": "Icicle Lance", "mp": 6, "target": "one", "icon": "snow", "iconWanted": "icicle",
     "desc": "A heavy spear of ice. Lands critical hits far more often on a Chilled foe.",
-    "kind": "skill", "element": "frost", "power": 2.0, "learn": { "level": 5, "fork": "f5", "else": "tome" }, "slice": false,
+    "kind": "skill", "element": "frost", "power": 2.0, "learn": { "level": 5 }, "slice": true,
     "effects": [{ "critBonusVs": "chilled", "chance": 0.4 }], "anim": "cast",
     "ranks": [
       { "points": 1, "power": 0.25 },
@@ -90,7 +90,7 @@
   {
     "id": "starfall", "name": "Starfall", "mp": 9, "target": "all", "icon": "star",
     "desc": "Three falling stars strike foes at random.",
-    "kind": "skill", "element": "arcane", "power": 0.8, "hits": 3, "learn": { "level": 5, "fork": "f5", "else": "tome" }, "slice": false,
+    "kind": "skill", "element": "arcane", "power": 0.8, "hits": 3, "learn": { "level": 10 }, "slice": true,
     "effects": [], "anim": "arcane_channel",
     "ranks": [
       { "points": 1, "power": 0.1 },
@@ -99,10 +99,10 @@
     ]
   },
   {
-    "id": "frostheave", "name": "Frost Heave", "mp": 7, "target": "one", "icon": "earth", "iconWanted": "frostheave",
-    "desc": "Frozen ground bursts upward under one foe. Heavy earth damage.",
-    "kind": "skill", "element": "earth", "power": 1.7, "learn": { "level": 7 }, "slice": false,
-    "effects": [], "anim": "ground_invocation",
+    "id": "frostheave", "name": "Frost Heave", "mp": 6, "target": "one", "icon": "earth", "iconWanted": "frostheave",
+    "desc": "Frozen ground bursts upward under one foe. A Chilled foe is flung clear and loses its next turn.", "choice": "For the fight",
+    "kind": "skill", "element": "earth", "power": 1.2, "learn": { "level": 7, "fork": "f7" }, "slice": true,
+    "effects": [{ "flings": "chilled" }], "anim": "ground_invocation",
     "ranks": [
       { "points": 1, "power": 0.2 },
       { "points": 1, "mp": -1 },
@@ -110,43 +110,54 @@
     ]
   },
   {
-    "id": "mulled", "name": "Mulled Warmth", "mp": 8, "target": "self", "icon": "drop", "iconWanted": "mug",
-    "desc": "Spiced steam wraps him: he heals a little each turn for 3 turns and can't be Chilled.",
-    "kind": "skill", "element": "hearth", "power": 0, "learn": { "level": 9, "fork": "f9", "else": "tome" }, "slice": false,
-    "effects": [{ "regenPct": 0.15, "turns": 3 }, { "immune": ["chilled"], "turns": 3 }], "anim": "arcane_channel",
+    "id": "rimecoat", "name": "Rime Coat", "mp": 5, "target": "friend", "icon": "shield", "iconWanted": "rimecoat",
+    "desc": "Frost hardens over someone: blows spend the coat first, and whoever strikes it is Chilled.", "choice": "For the party",
+    "kind": "skill", "element": "frost", "power": 0, "learn": { "level": 7, "fork": "f7" }, "slice": true,
+    "effects": [{ "shieldPct": 0.2, "turns": 2, "counterStatus": "chilled" }], "anim": "arcane_channel",
     "ranks": [
-      { "points": 1, "regenPct": 0.03 },
+      { "points": 1, "shieldPct": 0.04 },
       { "points": 1, "mp": -1 },
-      { "points": 2, "turns": 1, "desc": "Spiced steam wraps him: he heals a little each turn for 4 turns and can't be Chilled." }
+      { "points": 2, "shieldPct": 0.06 }
+    ]
+  },
+  {
+    "id": "mulled", "name": "Mulled Warmth", "mp": 8, "target": "friend", "icon": "drop", "iconWanted": "mug",
+    "desc": "Spiced steam wraps someone: they heal a little each turn for 3 turns and can't be Chilled.", "choice": "For the party",
+    "kind": "skill", "element": "hearth", "power": 0, "learn": { "level": 9, "fork": "f9" }, "slice": true,
+    "effects": [{ "regenPct": 0.1, "turns": 3 }, { "immune": ["chilled"], "turns": 3 }], "anim": "arcane_channel",
+    "ranks": [
+      { "points": 1, "regenPct": 0.02 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "turns": 1, "desc": "Spiced steam wraps someone: they heal a little each turn for 4 turns and can't be Chilled." }
     ]
   },
   {
     "id": "leyline", "name": "Leyline Sigil", "mp": 5, "target": "one", "icon": "orn", "iconWanted": "sigil",
-    "desc": "Marks a foe for 3 turns: its weaknesses show, and his skills on it are empowered.",
-    "kind": "skill", "element": "arcane", "power": 0, "learn": { "level": 9, "fork": "f9", "else": "tome" }, "slice": false,
+    "desc": "Marks a foe for 3 turns: its weaknesses show, and every hero hits it harder.", "choice": "For the fight",
+    "kind": "skill", "element": "arcane", "power": 0, "learn": { "level": 9, "fork": "f9" }, "slice": true,
     "effects": [{ "status": "marked", "turns": 3, "mul": 1.3, "reveal": true }], "anim": "cast",
     "ranks": [
-      { "points": 1, "turns": 1, "desc": "Marks a foe for 4 turns: its weaknesses show, and his skills on it are empowered." },
+      { "points": 1, "turns": 1, "desc": "Marks a foe for 4 turns: its weaknesses show, and every hero hits it harder." },
       { "points": 1, "mp": -1 },
       { "points": 2, "mul": 0.1 }
     ]
   },
   {
     "id": "frostward", "name": "Frost Ward", "mp": 0, "target": "self", "icon": "shield",
-    "desc": "Cut damage by 60% until his next turn. Attackers are Chilled.",
+    "desc": "Cut damage by 60% until his next turn, and gather 4 MP. Attackers are Chilled.",
     "kind": "defend", "element": "frost", "power": 0, "learn": { "level": 1 }, "slice": true,
-    "effects": [{ "damageMul": 0.4 }, { "counterStatus": "chilled", "turns": 1 }], "anim": "defend",
+    "effects": [{ "damageMul": 0.4 }, { "counterStatus": "chilled", "turns": 1 }, { "restoreMp": 4 }], "anim": "defend",
     "ranks": [
-      { "points": 1, "damageMul": -0.07, "desc": "Cut damage by two thirds until his next turn. Attackers are Chilled." },
-      { "points": 1, "damageMul": -0.03, "turns": 1, "desc": "Cut damage by 70% until his next turn. Attackers are Chilled for longer." },
-      { "points": 2, "damageMul": -0.05, "desc": "Cut damage by three quarters until his next turn. Attackers are Chilled for longer." }
+      { "points": 1, "damageMul": -0.07, "desc": "Cut damage by two thirds until his next turn, and gather 4 MP. Attackers are Chilled." },
+      { "points": 1, "damageMul": -0.03, "turns": 1, "desc": "Cut damage by 70% until his next turn, and gather 4 MP. Attackers are Chilled for longer." },
+      { "points": 2, "damageMul": -0.05, "desc": "Cut damage by three quarters until his next turn, and gather 4 MP. Attackers are Chilled for longer." }
     ]
   },
   {
     "id": "stoneward", "name": "Stone Ward", "mp": 0, "target": "self", "icon": "shield", "iconWanted": "stoneward",
-    "desc": "Cut damage by three quarters until his next turn.",
-    "kind": "defend", "element": "earth", "power": 0, "learn": { "level": 6 }, "slice": false,
-    "effects": [{ "damageMul": 0.25 }], "anim": "defend",
+    "desc": "Cut damage by three quarters until his next turn, and gather 4 MP.",
+    "kind": "defend", "element": "earth", "power": 0, "learn": { "level": 6 }, "slice": true,
+    "effects": [{ "damageMul": 0.25 }, { "restoreMp": 4 }], "anim": "defend",
     "ranks": [
       { "points": 1, "damageMul": -0.03 },
       { "points": 1, "damageMul": -0.03 },
@@ -155,9 +166,9 @@
   },
   {
     "id": "hearthward", "name": "Hearth Ward", "mp": 0, "target": "self", "icon": "shield", "iconWanted": "hearthward",
-    "desc": "Cut damage by 60%. At the start of his next turn he heals a little and shakes off Sticky and chill.",
-    "kind": "defend", "element": "hearth", "power": 0, "learn": { "level": 8 }, "slice": false,
-    "effects": [{ "damageMul": 0.4 }, { "healPctNextTurn": 0.1 }, { "cure": ["chilled", "sticky"] }], "anim": "defend",
+    "desc": "Cut damage by 60%, and gather 4 MP. At the start of his next turn he heals a little and shakes off Sticky and chill.",
+    "kind": "defend", "element": "hearth", "power": 0, "learn": { "level": 8 }, "slice": true,
+    "effects": [{ "damageMul": 0.4 }, { "healPctNextTurn": 0.1 }, { "cure": ["chilled", "sticky"] }, { "restoreMp": 4 }], "anim": "defend",
     "ranks": [
       { "points": 1, "damageMul": -0.05 },
       { "points": 1, "healPctNextTurn": 0.04 },
@@ -169,5 +180,149 @@
     "desc": "Ward move. Frost blossoms, then shatters every foe. Ready when the Ward gauge is full.",
     "kind": "ward", "element": "frost", "power": 2.4, "learn": { "story": "breach" }, "slice": true,
     "effects": [{ "status": "chilled", "turns": 1 }], "anim": "arcane_channel+cast"
+  },
+  {
+    "id": "footing_stone", "name": "Footing Stone", "owner": "obed", "mp": 5, "target": "one", "icon": "stone",
+    "desc": "\"Come on, then. I'm the one standing here.\" A stone blow, and foes aim at him until his next turn.",
+    "kind": "skill", "element": "earth", "power": 1.25, "learn": { "level": 1 }, "slice": true,
+    "effects": [{ "draws": true }], "anim": "stamp",
+    "ranks": [
+      { "points": 1, "power": 0.15 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.2 }
+    ]
+  },
+  {
+    "id": "fill_grit", "name": "Fill Grit", "owner": "obed", "mp": 3, "target": "one", "icon": "stone",
+    "desc": "Small stuff first. Always the small stuff first. Light damage; the foe is Sticky.",
+    "kind": "skill", "element": "earth", "power": 0.8, "learn": { "level": 1 }, "slice": true,
+    "effects": [{ "status": "sticky", "turns": 2 }], "anim": "scatter",
+    "ranks": [
+      { "points": 1, "power": 0.15 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.2 }
+    ]
+  },
+  {
+    "id": "thayer_wall", "name": "Thayer Wall", "owner": "obed", "mp": 8, "target": "self", "icon": "shield",
+    "desc": "Four generations of fieldstone rise, crooked and gapped, each laid by a Thayer hand. Holds 3 blows or 3 rounds; once a fight.",
+    "kind": "skill", "element": "earth", "power": 0, "learn": { "level": 1 }, "slice": true,
+    "effects": [{ "wall": 3, "turns": 3 }], "anim": "haulup",
+    "ranks": [
+      { "points": 1, "turns": 1 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "wall": 1, "desc": "Four generations of fieldstone rise, crooked and gapped, each laid by a Thayer hand. Holds 4 blows or 4 rounds; once a fight." }
+    ]
+  },
+  {
+    "id": "catch_breath", "name": "Catch Breath", "owner": "obed", "mp": 0, "target": "self", "icon": "channel",
+    "desc": "Sixty-one winters. A man's allowed a breather. Gets 10 stamina back, and his next move is stronger.",
+    "kind": "skill", "element": "physical", "power": 0, "learn": { "level": 1 }, "slice": true,
+    "effects": [{ "restoreMp": 10 }, { "status": "empowered", "mul": 1.5 }], "anim": "focus",
+    "ranks": [
+      { "points": 1, "mul": 0.1 },
+      { "points": 1, "mul": 0.1 },
+      { "points": 2, "restoreMp": 5, "mul": 0.1 }
+    ]
+  },
+  {
+    "id": "capstone", "name": "Capstone", "owner": "obed", "mp": 5, "target": "one", "icon": "stone",
+    "desc": "\"Somebody's half-done job. I'll finish it proper.\" Much harder on a Chilled foe, and ends the Chill.",
+    "kind": "skill", "element": "earth", "power": 1.4, "learn": { "level": 2 }, "slice": true,
+    "effects": [{ "payoff": "chilled", "mul": 1.5 }], "anim": "overhead",
+    "ranks": [
+      { "points": 1, "power": 0.15 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.2 }
+    ]
+  },
+  {
+    "id": "tumbled_course", "name": "Tumbled Course", "owner": "obed", "mp": 7, "target": "all", "icon": "stone",
+    "desc": "Never a straight line. Not even coming down. Stone falls on every foe.",
+    "kind": "skill", "element": "earth", "power": 0.8, "learn": { "level": 3 }, "slice": true,
+    "effects": [], "anim": "settrap",
+    "ranks": [
+      { "points": 1, "power": 0.06 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.09 }
+    ]
+  },
+  {
+    "id": "let_it_settle", "name": "Let It Settle", "owner": "obed", "mp": 3, "target": "one", "icon": "stone",
+    "desc": "\"Everything settles, given a knock.\" A plain blow; the foe is Chilled and acts last next round.",
+    "kind": "skill", "element": "physical", "power": 0.9, "learn": { "level": 4 }, "slice": true,
+    "effects": [{ "status": "chilled", "turns": 1 }], "anim": "stamp",
+    "ranks": [
+      { "points": 1, "power": 0.15 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.2 }
+    ]
+  },
+  {
+    "id": "pin_and_wedge", "name": "Pin and Wedge", "owner": "obed", "mp": 5, "target": "one", "icon": "stone",
+    "desc": "One to set it, one to keep it set. Hits one foe twice.",
+    "kind": "skill", "element": "earth", "power": 0.9, "hits": 2, "learn": { "level": 5 }, "slice": true,
+    "effects": [], "anim": "twoblows",
+    "ranks": [
+      { "points": 1, "power": 0.1 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.15 }
+    ]
+  },
+  {
+    "id": "step_in", "name": "Step In", "owner": "obed", "mp": 2, "target": "ally", "icon": "shield",
+    "desc": "\"Behind me. Mind your feet.\" Takes the blows aimed at one friend until his next turn.", "choice": "For the party",
+    "kind": "skill", "element": "physical", "power": 0, "learn": { "level": 7, "fork": "f7" }, "slice": true,
+    "effects": [{ "cover": true }], "anim": "shelter"
+  },
+  {
+    "id": "long_sledge", "name": "Long Sledge", "owner": "obed", "mp": 6, "target": "one", "icon": "stone",
+    "desc": "Four generations swung it. Heavier every one. A huge plain blow.", "choice": "For the fight",
+    "kind": "skill", "element": "physical", "power": 1.9, "learn": { "level": 7, "fork": "f7" }, "slice": true,
+    "effects": [], "anim": "overhead",
+    "ranks": [
+      { "points": 1, "power": 0.2 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.25 }
+    ]
+  },
+  {
+    "id": "frost_crack", "name": "Frost Crack", "owner": "obed", "mp": 6, "target": "all", "icon": "stone",
+    "desc": "\"Cold gets in the joints. Always has.\" A crack runs through every foe; all are Chilled.", "choice": "For the fight",
+    "kind": "skill", "element": "earth", "power": 0.5, "learn": { "level": 9, "fork": "f9" }, "slice": true,
+    "effects": [{ "status": "chilled", "turns": 1 }], "anim": "stamp",
+    "ranks": [
+      { "points": 1, "power": 0.06 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.09 }
+    ]
+  },
+  {
+    "id": "through_stone", "name": "Through-Stone", "owner": "obed", "mp": 3, "target": "ally", "icon": "shield",
+    "desc": "Set square across the gap, like a through-stone holding both faces. A shield on one friend.", "choice": "For the party",
+    "kind": "skill", "element": "earth", "power": 0, "learn": { "level": 9, "fork": "f9" }, "slice": true,
+    "effects": [{ "shieldPct": 0.2, "turns": 2 }], "anim": "haulup",
+    "ranks": [
+      { "points": 1, "shieldPct": 0.04 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "shieldPct": 0.06 }
+    ]
+  },
+  {
+    "id": "no_mortar", "name": "No Mortar", "owner": "obed", "mp": 0, "target": "self", "icon": "shield",
+    "desc": "Mortar cracks. Dry stone just settles. Cut damage by 70% until his next turn.",
+    "kind": "defend", "element": "earth", "power": 0, "learn": { "level": 1 }, "slice": true,
+    "effects": [{ "damageMul": 0.3 }], "anim": "defend",
+    "ranks": [
+      { "points": 1, "damageMul": -0.03 },
+      { "points": 1, "damageMul": -0.03 },
+      { "points": 2, "damageMul": -0.04 }
+    ]
+  },
+  {
+    "id": "hands_gap", "name": "Hand's Gap", "owner": "obed", "mp": 0, "target": "party", "icon": "shield",
+    "desc": "A stone set just so, which he can't explain and which shouldn't work. Everyone gets a shield worth a quarter of their health. Ready when the Ward gauge is full.",
+    "kind": "ward", "element": "earth", "power": 0, "learn": { "story": "join" }, "slice": true,
+    "effects": [{ "shieldPct": 0.25, "turns": 2 }], "anim": "haulup"
   }
 ]

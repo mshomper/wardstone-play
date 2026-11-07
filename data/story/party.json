@@ -1,5 +1,5 @@
 {
-  "_note": "The party (docs/05-combat.md, docs/future/F08). Everyone shares one level and one pool of experience: each entry in `levels` has the total `xp` needed to reach it. Each member has a stat line for every level. `resources` holds what each class spends: its name on screen, and what it gets back for an Attack, at the start of a round after the first, and as a share of its most after a win. A resource can also say `onHit`, what each damaging hit brings back, and `startsAt`, the share of its most every fight starts with in place of what was carried in. `fallenBack` is the share of their most health someone down at the end of a won fight gets back. `signature` is the move a full Ward gauge gives. `combos` are what a member's own hits set off: a hit of element `by` on a foe under status `on` (results are in rules.ts). `pointsPerLevel` is the upgrade points each level earns each member (ranks are in skills.json). `typicalFoeRes` is the foe the Upgrades page's rough damage figures assume. Icon names are drawn icons in src/ui/icons.ts.",
+  "_note": "The party (docs/05-combat.md, docs/future/F08). Everyone shares one level and one pool of experience: each entry in `levels` has the total `xp` needed to reach it. Each member has a stat line for every level. `resources` holds what each class spends: its name on screen, and what it gets back for an Attack, at the start of a round after the first, and as a share of its most after a win. A resource can also say `onHit`, what each damaging hit brings back, and `startsAt`, the share of its most every fight starts with in place of what was carried in. `fallenBack` is the share of their most health someone down at the end of a won fight gets back. `words` are what the menus and books call a member's own things. A resource can give its `icon` and `colour` (two ends of its bar). `signature` is the move a full Ward gauge gives. `combos` are what a member's own hits set off: a hit of element `by` on a foe under status `on` (results are in rules.ts). `pointsPerLevel` is the upgrade points each level earns each member (ranks are in skills.json). `typicalFoeRes` is the foe the Upgrades page's rough damage figures assume. Icon names are drawn icons in src/ui/icons.ts.",
   "levels": [
     { "level": 1, "xp": 0 },
     { "level": 2, "xp": 40 },
@@ -17,11 +17,13 @@
   "typicalFoeRes": 7,
   "fallenBack": 0.1,
   "resources": {
-    "mp": { "name": "Magic", "short": "MP", "onAttack": 2, "onRound": 1, "afterWin": 0.33 }
+    "mp": { "name": "Magic", "short": "MP", "icon": "drop", "onAttack": 2, "onRound": 1, "afterWin": 0.33 },
+    "stamina": { "name": "Stamina", "short": "Stamina", "icon": "drop", "colour": ["#8a5a24", "#e6b35c"], "onAttack": 4, "onRound": 3, "onStruck": 3, "startsAt": 0.5, "afterWin": 1 }
   },
   "members": {
     "eldwin": {
-      "name": "Eldwin", "title": "Frostwarden", "resource": "mp", "slots": 4, "signature": "bloom",
+      "name": "Eldwin", "title": "Frostwarden", "icon": "hat", "resource": "mp", "slots": 4, "signature": "bloom",
+      "words": { "attack": "Strike one foe with the staff.", "skills": "Skills", "skillsDesc": "Weave arcane and elemental magic.", "move": "spell", "moves": "spells" },
       "combos": [
         { "id": "frozen", "name": "Frozen", "by": "frost", "on": "sticky", "result": "lose_turn", "lock": 2 },
         { "id": "shatter", "name": "Shatter", "by": "earth", "on": "chilled", "result": "bonus_damage", "mul": 1.5 }
@@ -39,6 +41,29 @@
         { "level": 10, "hp": 280, "mp": 60, "atk": 19, "mag": 43, "def": 17, "res": 30, "spd": 14 }
       ],
       "start": { "known": ["glaze","bolt","rime","channel"], "equipped": ["glaze","bolt","rime","channel"], "ward": "frostward", "wards": ["frostward"] }
+    },
+    "obed": {
+      "_note": "Drafted by tools/movegen (decision 0151, Draft B). Every name and line of his, here and in skills.json, is a draft for Matt's friend to replace.",
+      "name": "Obed", "title": "Stonemason", "icon": "stone", "resource": "stamina", "slots": 4, "signature": "hands_gap",
+      "look": { "side": "obed_side_" },
+      "words": { "attack": "Swing the sledge at one foe.", "skills": "Stonework", "skillsDesc": "What four generations of walling taught him.", "move": "move", "moves": "moves" },
+      "combos": [
+        { "id": "frozen_course", "name": "Frozen Course", "by": "earth", "on": "chilled", "result": "lose_turn", "lock": 2 },
+        { "id": "double_rap", "name": "Double Rap", "by": "physical", "on": "sticky", "result": "second_hit", "amount": 0.5 }
+      ],
+      "stats": [
+        { "level": 1, "hp": 117, "mp": 17, "atk": 14, "mag": 14, "def": 10, "res": 16, "spd": 8 },
+        { "level": 2, "hp": 135, "mp": 20, "atk": 16, "mag": 16, "def": 12, "res": 18, "spd": 9 },
+        { "level": 3, "hp": 156, "mp": 22, "atk": 19, "mag": 19, "def": 13, "res": 21, "spd": 9 },
+        { "level": 4, "hp": 179, "mp": 25, "atk": 21, "mag": 21, "def": 14, "res": 23, "spd": 10 },
+        { "level": 5, "hp": 205, "mp": 28, "atk": 24, "mag": 24, "def": 16, "res": 26, "spd": 10 },
+        { "level": 6, "hp": 234, "mp": 31, "atk": 26, "mag": 26, "def": 17, "res": 29, "spd": 11 },
+        { "level": 7, "hp": 263, "mp": 34, "atk": 29, "mag": 29, "def": 18, "res": 31, "spd": 11 },
+        { "level": 8, "hp": 294, "mp": 36, "atk": 31, "mag": 31, "def": 20, "res": 34, "spd": 12 },
+        { "level": 9, "hp": 328, "mp": 39, "atk": 34, "mag": 34, "def": 21, "res": 36, "spd": 12 },
+        { "level": 10, "hp": 364, "mp": 42, "atk": 37, "mag": 37, "def": 22, "res": 39, "spd": 13 }
+      ],
+      "start": { "known": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "equipped": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "ward": "no_mortar", "wards": ["no_mortar"] }
     }
   },
   "defeat": {

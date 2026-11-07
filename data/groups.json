@@ -230,7 +230,7 @@
     { "id": "bg-dig", "area": "old-burying-ground", "circle": 3, "after": "breach_sealed", "creatures": ["sextonling", "sextonling", "footstone"] },
     { "id": "bg-hush", "area": "old-burying-ground", "circle": 6, "after": "breach_sealed", "creatures": ["hushwing", "hushwing"], "tough": true },
     { "id": "sb-bucket", "area": "sugarbush", "circle": 3, "after": "breach_sealed", "until": "beat_bucket", "creatures": ["oldbucket"], "questFlag": "beat_bucket", "banner": ["Old Bucket", "He shakes his head, finds it free, and walks off to bed."] },
-    { "id": "bg-ledger", "area": "old-burying-ground", "circle": 2, "after": "breach_sealed", "still": true, "creatures": ["ledger"], "questFlag": "beat_ledger", "banner": ["Settled", "The slab lies back down. The sum stays cut."] },
+    { "id": "bg-ledger", "area": "old-burying-ground", "circle": 2, "after": "breach_sealed", "still": true, "creatures": ["ledger"], "forParty": { "2": { "hp": 1.5, "damage": 1.2 }, "3": { "hp": 2, "damage": 1.5 }, "4": { "hp": 2.5, "damage": 1.5 } }, "questFlag": "beat_ledger", "banner": ["Settled", "The slab lies back down. The sum stays cut."] },
     { "id": "bg-sexton", "area": "old-burying-ground", "circle": 7, "hidden": true, "until": "beat_sexton", "creatures": ["sexton", "sextonling"], "questFlag": "beat_sexton", "banner": ["The Sexton", "It sinks back into the ground, and doesn't come up."] }
   ]
 }
