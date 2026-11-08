@@ -62,6 +62,7 @@
     { "id": "frost_bitten_apple", "name": "Frost-Bitten Apple", "icon": "apple", "kind": "trade", "desc": "Too cold to eat. Somebody will press it.", "value": 3 },
     { "id": "old_wall_stone", "name": "Old Wall Stone", "icon": "stone", "kind": "trade", "desc": "A chip off the old wall, faintly carved.", "value": 7 },
     { "id": "copper_button", "name": "Copper Button", "icon": "button", "kind": "trade", "desc": "Older than the coat it fell from.", "value": 6 },
+    { "id": "brass_button", "name": "Brass Button", "icon": "button", "kind": "trade", "desc": "Off a good dark coat. It fits nobody's.", "value": 2 },
     { "id": "silver_thimble", "name": "Silver Thimble", "icon": "thimble", "kind": "trade", "desc": "Real silver, and somebody misses it.", "value": 15 },
     { "id": "kindling", "name": "Bundle of Kindling", "icon": "kindling", "kind": "trade", "desc": "Dry and tied with twine. Somebody always needs a fire.", "value": 6 },
     { "id": "pewter_spoon", "name": "Pewter Spoon", "icon": "spoon", "kind": "trade", "desc": "Bent a little from a lifetime of porridge.", "value": 4 },

@@ -1,0 +1,19 @@
+{
+  "_note": "The Old Post Road, Kettle Notch to Hardscrabble (docs/regions/old-post-road.md). A route of four stops in a line. Only the first is built; `leads` point on to the next until it exists.",
+  "id": "old-post-road",
+  "name": "The Old Post Road",
+  "overheard": "overheard",
+  "places": [
+    { "id": "old-post-road", "name": "Old Post Road", "note": "the Half-Way House", "at": [110, 330], "label": "below", "areas": ["old-post-road", "old-post-road-half-way-house", "old-post-road-half-way-house-upper"] },
+    { "id": "coopers-ford", "name": "Cooper's Ford", "at": [230, 300], "label": "below", "areas": ["coopers-ford", "coopers-ford-cooper-s-shop"] },
+    { "id": "sawyers-clearing", "name": "Sawyer's Clearing", "at": [345, 262], "label": "below", "areas": ["sawyers-clearing", "sawyers-clearing-bunk-shanty"] },
+    { "id": "long-wall", "name": "The Long Wall", "at": [450, 215], "label": "below", "areas": ["long-wall"] }
+  ],
+  "paths": [["old-post-road", "coopers-ford"], ["coopers-ford", "sawyers-clearing"], ["sawyers-clearing", "long-wall"]],
+  "leads": [
+    { "from": "old-post-road", "to": [45, 410], "name": "back to Kettle Notch" },
+    { "from": "long-wall", "to": [415, 120], "name": "down to Hardscrabble" }
+  ],
+  "quests": ["the-tolls", "the-wardens-pine", "one-short"],
+  "dialogue": ["coopers_ford", "road_people", "road_quests"]
+}

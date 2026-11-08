@@ -1,0 +1,39 @@
+{
+ "image": "tollgoose_hat_side.png",
+ "emissive": "tollgoose_hat_side_emissive.png",
+ "size": [
+  34,
+  22
+ ],
+ "cell": [
+  32,
+  20
+ ],
+ "pixelsPerUnit": 32,
+ "anims": {
+  "tollgoose_hat_side_idle": {
+   "fps": 1,
+   "loop": true,
+   "frames": [
+    {
+     "x": 1,
+     "y": 1,
+     "w": 32,
+     "h": 20,
+     "ax": 16,
+     "ay": 15,
+     "trim": {
+      "x": 1,
+      "y": 1,
+      "w": 32,
+      "h": 20,
+      "ax": 16,
+      "ay": 15
+     }
+    }
+   ]
+  }
+ },
+ "sprites": {},
+ "tiles": {}
+}

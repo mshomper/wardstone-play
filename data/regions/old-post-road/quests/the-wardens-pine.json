@@ -1,0 +1,107 @@
+{
+ "id": "the-wardens-pine",
+ "title": "The Warden's Pine",
+ "side": true,
+ "blurb": "Gideon Strand won't cut the marked pine. A beaver might.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Ninety feet",
+   "objective": "",
+   "done": {
+    "flags": [
+     "pine_asked"
+    ]
+   },
+   "sets": [
+    "pine_asked"
+   ],
+   "auto": [
+    {
+     "go": "sawyers-clearing"
+    },
+    {
+     "talk": "gideon_strand"
+    },
+    {
+     "talk": "gideon_strand"
+    }
+   ]
+  },
+  {
+   "id": "look",
+   "title": "Ninety feet",
+   "objective": "Gideon says the beaver has started on the Warden's pine. Have a look.",
+   "done": {
+    "flags": [
+     "pine_seen"
+    ]
+   },
+   "sets": [
+    "pine_seen"
+   ],
+   "skip": {
+    "area": "sawyers-clearing",
+    "spot": "Gideon"
+   },
+   "auto": [
+    {
+     "go": "sawyers-clearing"
+    },
+    {
+     "use": "pine_marks"
+    }
+   ]
+  },
+  {
+   "id": "foreman",
+   "title": "The Foreman",
+   "objective": "Settle the beaver, down at the pond.",
+   "done": {
+    "flags": [
+     "beat_foreman"
+    ]
+   },
+   "sets": [
+    "beat_foreman"
+   ],
+   "skip": {
+    "area": "sawyers-clearing",
+    "spot": "The Warden's pine"
+   },
+   "auto": [
+    {
+     "go": "sawyers-clearing"
+    },
+    {
+     "fight": "sc-foreman"
+    }
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "Left standing",
+   "objective": "Tell Gideon.",
+   "done": {
+    "flags": [
+     "pine_done"
+    ]
+   },
+   "sets": [
+    "pine_done"
+   ],
+   "skip": {
+    "area": "sawyers-clearing",
+    "spot": "The Foreman's dam"
+   },
+   "auto": [
+    {
+     "go": "sawyers-clearing"
+    },
+    {
+     "talk": "gideon_strand"
+    }
+   ]
+  }
+ ]
+}

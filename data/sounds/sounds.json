@@ -1,0 +1,734 @@
+{
+ "_note": "Sound effects made from data (src/core/sfxsynth.ts). `picked` holds the take Matt chose on the sound page. `fallback` is what a sound plays until then. Anything in neither stays silent.",
+ "picked": {
+  "door_open": {
+   "take": "Quiet",
+   "room": 0.18,
+   "layers": [
+    {
+     "type": "strike",
+     "at": 0,
+     "vol": 0.08,
+     "click": 0.04,
+     "clickHz": 4000,
+     "modes": [
+      [
+       2350,
+       0.035,
+       1
+      ],
+      [
+       3600,
+       0.025,
+       0.6
+      ],
+      [
+       5200,
+       0.015,
+       0.3
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.01,
+     "vol": 0.07,
+     "click": 0.0126,
+     "clickHz": 1800,
+     "modes": [
+      [
+       240,
+       0.05,
+       1
+      ],
+      [
+       528,
+       0.03,
+       0.5
+      ],
+      [
+       1128,
+       0.015,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "creak",
+     "at": 0.08,
+     "dur": 0.3,
+     "from": 70,
+     "to": 100,
+     "jitter": 0.15,
+     "res": [
+      [
+       620,
+       7,
+       1
+      ]
+     ],
+     "vol": 0.08
+    },
+    {
+     "type": "noise",
+     "at": 0.06,
+     "dur": 0.4,
+     "filter": "lowpass",
+     "f": 600,
+     "f2": 260,
+     "vol": 0.06
+    }
+   ]
+  },
+  "door_close": {
+   "take": "Soft",
+   "room": 0.25,
+   "layers": [
+    {
+     "type": "strike",
+     "vol": 0.2,
+     "modes": [
+      [
+       120,
+       0.18,
+       1
+      ],
+      [
+       260,
+       0.1,
+       0.35
+      ]
+     ]
+    },
+    {
+     "type": "noise",
+     "dur": 0.1,
+     "filter": "lowpass",
+     "f": 400,
+     "f2": 200,
+     "vol": 0.05
+    }
+   ]
+  },
+  "door_shut": {
+   "take": "Two hard tugs",
+   "room": 0.18,
+   "layers": [
+    {
+     "type": "strike",
+     "at": 0,
+     "vol": 0.26,
+     "click": 0.0468,
+     "clickHz": 1800,
+     "modes": [
+      [
+       140,
+       0.09,
+       1
+      ],
+      [
+       308,
+       0.054,
+       0.5
+      ],
+      [
+       658,
+       0.027,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.012,
+     "vol": 0.14,
+     "click": 0.07,
+     "clickHz": 4000,
+     "modes": [
+      [
+       2350,
+       0.035,
+       1
+      ],
+      [
+       3600,
+       0.025,
+       0.6
+      ],
+      [
+       5200,
+       0.015,
+       0.3
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.26,
+     "vol": 0.24,
+     "click": 0.0432,
+     "clickHz": 1800,
+     "modes": [
+      [
+       140,
+       0.09,
+       1
+      ],
+      [
+       308,
+       0.054,
+       0.5
+      ],
+      [
+       658,
+       0.027,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.272,
+     "vol": 0.12,
+     "click": 0.06,
+     "clickHz": 4000,
+     "modes": [
+      [
+       2350,
+       0.035,
+       1
+      ],
+      [
+       3600,
+       0.025,
+       0.6
+      ],
+      [
+       5200,
+       0.015,
+       0.3
+      ]
+     ]
+    }
+   ]
+  },
+  "chest_open": {
+   "take": "Hollow box",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "strike",
+     "vol": 0.2,
+     "click": 0.03,
+     "clickHz": 1800,
+     "modes": [
+      [
+       190,
+       0.16,
+       1
+      ],
+      [
+       310,
+       0.1,
+       0.6
+      ],
+      [
+       640,
+       0.04,
+       0.2
+      ]
+     ]
+    },
+    {
+     "type": "creak",
+     "at": 0.04,
+     "dur": 0.3,
+     "from": 110,
+     "to": 150,
+     "jitter": 0.15,
+     "res": [
+      [
+       900,
+       9,
+       1
+      ]
+     ],
+     "vol": 0.13
+    },
+    {
+     "type": "noise",
+     "at": 0.2,
+     "dur": 0.22,
+     "filter": "bandpass",
+     "f": 2400,
+     "f2": 1500,
+     "q": 0.7,
+     "vol": 0.025
+    }
+   ]
+  },
+  "crate_open": {
+   "take": "Slid off",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "creak",
+     "dur": 0.4,
+     "from": 500,
+     "to": 340,
+     "jitter": 0.7,
+     "res": [
+      [
+       650,
+       2.5,
+       1
+      ],
+      [
+       1500,
+       3,
+       0.4
+      ]
+     ],
+     "vol": 0.14
+    },
+    {
+     "type": "strike",
+     "at": 0.4,
+     "vol": 0.2,
+     "click": 0.036,
+     "clickHz": 1800,
+     "modes": [
+      [
+       280,
+       0.07,
+       1
+      ],
+      [
+       616,
+       0.042,
+       0.5
+      ],
+      [
+       1316,
+       0.021,
+       0.22
+      ]
+     ]
+    }
+   ]
+  },
+  "board": {
+   "take": "Paper flutter",
+   "room": 0.05,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.4,
+     "rate": 35,
+     "f": [
+      2500,
+      7000
+     ],
+     "vol": 0.16,
+     "len": [
+      0.01,
+      0.04
+     ]
+    },
+    {
+     "type": "noise",
+     "dur": 0.3,
+     "filter": "bandpass",
+     "f": 3000,
+     "vol": 0.02
+    }
+   ]
+  },
+  "dig": {
+   "take": "Hands in the heap",
+   "room": 0.08,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.5,
+     "rate": 80,
+     "f": [
+      600,
+      2200
+     ],
+     "vol": 0.16
+    },
+    {
+     "type": "strike",
+     "at": 0.05,
+     "vol": 0.06,
+     "modes": [
+      [
+       120,
+       0.1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "hay_search": {
+   "take": "Two handfuls",
+   "room": 0.06,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.28,
+     "rate": 90,
+     "f": [
+      1200,
+      4000
+     ],
+     "vol": 0.2
+    },
+    {
+     "type": "grains",
+     "at": 0.34,
+     "dur": 0.3,
+     "rate": 80,
+     "f": [
+      1200,
+      4000
+     ],
+     "vol": 0.18
+    },
+    {
+     "type": "strike",
+     "at": 0.02,
+     "vol": 0.06,
+     "modes": [
+      [
+       110,
+       0.08,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "mailbox": {
+   "take": "Tin door",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "creak",
+     "dur": 0.22,
+     "from": 180,
+     "to": 120,
+     "jitter": 0.15,
+     "res": [
+      [
+       1800,
+       10,
+       1
+      ],
+      [
+       2900,
+       12,
+       0.5
+      ]
+     ],
+     "vol": 0.1
+    },
+    {
+     "type": "strike",
+     "at": 0.22,
+     "vol": 0.12,
+     "click": 0.036,
+     "clickHz": 4500,
+     "modes": [
+      [
+       620,
+       0.25,
+       1
+      ],
+      [
+       1450,
+       0.18,
+       0.6
+      ],
+      [
+       2630,
+       0.1,
+       0.3
+      ],
+      [
+       3900,
+       0.06,
+       0.2
+      ]
+     ]
+    }
+   ]
+  },
+  "stairs": {
+   "take": "Wooden steps",
+   "room": 0.18,
+   "layers": [
+    {
+     "type": "strike",
+     "at": 0,
+     "vol": 0.16,
+     "click": 0.0288,
+     "clickHz": 1800,
+     "modes": [
+      [
+       170,
+       0.07,
+       1
+      ],
+      [
+       374,
+       0.042,
+       0.5
+      ],
+      [
+       799,
+       0.021,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.22,
+     "vol": 0.14,
+     "click": 0.0252,
+     "clickHz": 1800,
+     "modes": [
+      [
+       175,
+       0.07,
+       1
+      ],
+      [
+       385,
+       0.042,
+       0.5
+      ],
+      [
+       822.5,
+       0.021,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.44,
+     "vol": 0.12,
+     "click": 0.0216,
+     "clickHz": 1800,
+     "modes": [
+      [
+       170,
+       0.07,
+       1
+      ],
+      [
+       374,
+       0.042,
+       0.5
+      ],
+      [
+       799,
+       0.021,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "creak",
+     "at": 0.25,
+     "dur": 0.2,
+     "from": 60,
+     "to": 90,
+     "jitter": 0.15,
+     "res": [
+      [
+       600,
+       7,
+       1
+      ]
+     ],
+     "vol": 0.08
+    }
+   ]
+  },
+  "stone_search": {
+   "take": "Tipped",
+   "room": 0.12,
+   "layers": [
+    {
+     "type": "creak",
+     "dur": 0.18,
+     "from": 300,
+     "to": 200,
+     "jitter": 0.7,
+     "res": [
+      [
+       500,
+       2,
+       1
+      ]
+     ],
+     "vol": 0.1
+    },
+    {
+     "type": "strike",
+     "at": 0.18,
+     "vol": 0.2,
+     "click": 0.04,
+     "clickHz": 2500,
+     "modes": [
+      [
+       160,
+       0.12,
+       1
+      ],
+      [
+       430,
+       0.05,
+       0.4
+      ]
+     ]
+    },
+    {
+     "type": "grains",
+     "at": 0.2,
+     "dur": 0.25,
+     "rate": 40,
+     "f": [
+      2500,
+      6000
+     ],
+     "vol": 0.05
+    }
+   ]
+  },
+  "wood_search": {
+   "take": "Bark and moss",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.4,
+     "rate": 50,
+     "f": [
+      900,
+      3000
+     ],
+     "vol": 0.1
+    },
+    {
+     "type": "strike",
+     "at": 0.3,
+     "vol": 0.1,
+     "click": 0.018,
+     "clickHz": 1800,
+     "modes": [
+      [
+       190,
+       0.08,
+       1
+      ],
+      [
+       418,
+       0.048,
+       0.5
+      ],
+      [
+       893,
+       0.024,
+       0.22
+      ]
+     ]
+    }
+   ]
+  },
+  "ice": {
+   "take": "Glass chime",
+   "room": 0.2,
+   "layers": [
+    {
+     "type": "strike",
+     "vol": 0.05,
+     "click": 0.02,
+     "clickHz": 6000,
+     "modes": [
+      [
+       2700,
+       0.25,
+       1
+      ],
+      [
+       4100,
+       0.16,
+       0.5
+      ],
+      [
+       6300,
+       0.08,
+       0.25
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.05,
+     "vol": 0.04,
+     "modes": [
+      [
+       3150,
+       0.22,
+       1
+      ],
+      [
+       4800,
+       0.14,
+       0.5
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.11,
+     "vol": 0.035,
+     "modes": [
+      [
+       2450,
+       0.24,
+       1
+      ],
+      [
+       3900,
+       0.15,
+       0.5
+      ]
+     ]
+    },
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.15,
+     "rate": 40,
+     "f": [
+      4000,
+      9000
+     ],
+     "vol": 0.03
+    }
+   ]
+  }
+ },
+ "fallback": {}
+}

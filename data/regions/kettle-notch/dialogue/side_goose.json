@@ -127,6 +127,200 @@
      "text": "Mrs. Applegate looks Eldwin slowly up and down, and settles on the knee. He moves along."
     }
    ]
+  },
+  {
+   "id": "tilly_goodbye",
+   "lines": [
+    {
+     "who": "",
+     "text": "Tilly is sitting on the mossy stones where the path goes out to the road, with something wound round her hand."
+    },
+    {
+     "who": "tilly",
+     "text": "She went up the road this morning. With her neck out."
+    },
+    {
+     "who": "tilly",
+     "text": "Geese go south. I told her. She went the other way."
+    },
+    {
+     "who": "eldwin",
+     "text": "She does like to make up her own mind.",
+     "face": "smile"
+    },
+    {
+     "who": "tilly",
+     "text": "Mama says you're going that way."
+    },
+    {
+     "who": "eldwin",
+     "text": "I am."
+    },
+    {
+     "who": "tilly",
+     "text": "Then this is for her. It was on my Sunday dress. I'll tell Mama after."
+    },
+    {
+     "who": "",
+     "text": "A blue ribbon, still creased where it was tied."
+    },
+    {
+     "who": "tilly",
+     "text": "She likes the left side of the road. Don't let her have cheese. She'll want it."
+    },
+    {
+     "who": "eldwin",
+     "text": "Left side. No cheese."
+    },
+    {
+     "who": "tilly",
+     "text": "Will you bring her back?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Mrs. Applegate goes where she likes. I'll be glad of the company while she does."
+    },
+    {
+     "who": "tilly",
+     "text": "Go on, then. She'll be miles ahead."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tilly_ribbon"
+    },
+    {
+     "setFlag": "tilly_bye"
+    },
+    {
+     "gear": {
+      "slot": "keepsake",
+      "rarity": "homespun",
+      "seed": 1107,
+      "id": "tilly_ribbon",
+      "name": "Tilly's Ribbon",
+      "line": "Blue, off a Sunday dress. Still creased where it was tied.",
+          "shape": "ribbon",
+          "main": "#3f6fb0"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tilly_goodbye_late",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "She went up the road this morning. With her neck out."
+    },
+    {
+     "who": "tilly",
+     "text": "Geese go south. I told her. She went the other way."
+    },
+    {
+     "who": "eldwin",
+     "text": "She does like to make up her own mind.",
+     "face": "smile"
+    },
+    {
+     "who": "tilly",
+     "text": "Mama says you're going that way."
+    },
+    {
+     "who": "eldwin",
+     "text": "I am."
+    },
+    {
+     "who": "tilly",
+     "text": "Then this is for her. It was on my Sunday dress. I'll tell Mama after."
+    },
+    {
+     "who": "",
+     "text": "A blue ribbon, still creased where it was tied."
+    },
+    {
+     "who": "tilly",
+     "text": "She likes the left side of the road. Don't let her have cheese. She'll want it."
+    },
+    {
+     "who": "eldwin",
+     "text": "Left side. No cheese."
+    },
+    {
+     "who": "tilly",
+     "text": "Will you bring her back?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Mrs. Applegate goes where she likes. I'll be glad of the company while she does."
+    },
+    {
+     "who": "tilly",
+     "text": "Go on, then. She'll be miles ahead."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tilly_ribbon"
+    },
+    {
+     "setFlag": "tilly_bye"
+    },
+    {
+     "gear": {
+      "slot": "keepsake",
+      "rarity": "homespun",
+      "seed": 1107,
+      "id": "tilly_ribbon",
+      "name": "Tilly's Ribbon",
+      "line": "Blue, off a Sunday dress. Still creased where it was tied.",
+          "shape": "ribbon",
+          "main": "#3f6fb0"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tilly_goodbye_missing",
+   "lines": [
+    {
+     "who": "",
+     "text": "Tilly is sitting on the mossy stones where the path goes out to the road, watching the road."
+    },
+    {
+     "who": "tilly",
+     "text": "Mama says she'll come home when she's hungry."
+    },
+    {
+     "who": "tilly",
+     "text": "She's always hungry. So."
+    },
+    {
+     "who": "tilly",
+     "text": "If you see a goose, she's white, and she bites. That's her."
+    },
+    {
+     "who": "eldwin",
+     "text": "I'll know her."
+    },
+    {
+     "who": "tilly",
+     "text": "Tell her I left the gate open."
+    },
+    {
+     "who": "eldwin",
+     "text": "If I see her, I'll tell her."
+    },
+    {
+     "who": "",
+     "text": "She goes back to watching the road."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tilly_bye"
+    }
+   ]
   }
  ]
 }

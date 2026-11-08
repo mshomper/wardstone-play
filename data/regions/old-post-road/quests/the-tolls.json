@@ -1,0 +1,85 @@
+{
+ "id": "the-tolls",
+ "title": "The Tolls",
+ "side": true,
+ "blurb": "The Toll Goose's takings, in a heap on the gravel bar. They belong to people.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The goose's takings",
+   "objective": "",
+   "done": {
+    "flags": [
+     "tolls_found"
+    ]
+   },
+   "sets": [
+    "tolls_found"
+   ],
+   "auto": [
+    {
+     "go": "coopers-ford"
+    },
+    {
+     "use": "tolls_heap"
+    }
+   ]
+  },
+  {
+   "id": "give",
+   "title": "The goose's takings",
+   "objective": "Give back what the goose took.",
+   "count": {
+    "flags": [
+     "tolls_hat",
+     "tolls_specs",
+     "tolls_thimble",
+     "tolls_mallet",
+     "tolls_crusts"
+    ]
+   },
+   "done": {
+    "flags": [
+     "tolls_hat",
+     "tolls_specs",
+     "tolls_thimble",
+     "tolls_mallet",
+     "tolls_crusts"
+    ]
+   },
+   "sets": [
+    "tolls_hat",
+    "tolls_specs",
+    "tolls_thimble",
+    "tolls_mallet",
+    "tolls_crusts"
+   ],
+   "skip": {
+    "area": "coopers-ford"
+   },
+   "auto": [
+    {
+     "go": "coopers-ford"
+    },
+    {
+     "talk": "dorcas_brigham"
+    },
+    {
+     "talk": "lem_cooper"
+    },
+    {
+     "talk": "reuben_cooper"
+    },
+    {
+     "go": "old-post-road"
+    },
+    {
+     "talk": "lavinia_dunn"
+    },
+    {
+     "talk": "asa_kimball"
+    }
+   ]
+  }
+ ]
+}

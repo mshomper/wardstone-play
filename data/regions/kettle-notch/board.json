@@ -47,7 +47,7 @@
     { "id": "spot_woods_cairn", "place": "brook-woods", "where": "at the cairn in Brook Woods" },
     { "id": "spot_woods_log", "place": "brook-woods", "where": "under the fallen log in Brook Woods" },
     { "id": "spot_fields_mailbox", "place": "south-fields", "where": "by the mailbox on the south lane" },
-    { "id": "spot_fields_scarecrow", "place": "south-fields", "where": "at the scarecrow's feet in the south fields" },
+    { "id": "spot_fields_scarecrow", "if": { "notFlags": ["scarecrow:step:1"] }, "place": "south-fields", "where": "at the scarecrow's feet in the south fields" },
     { "id": "spot_hollow_path", "place": "alder-hollow", "where": "where the path gives out in Alder Hollow" }
   ],
   "writers": [

@@ -13,6 +13,7 @@
     "frozen": { "name": "Frozen", "desc": "Frozen solid: it loses its next turn, and can't be frozen again for a while after.", "until": "Until its next turn" },
     "slow": { "name": "Slowed", "desc": "Acts last in the round." },
     "curled": { "name": "Curled up", "desc": "Rolled into a ball: its defense is more than doubled. An earth spell breaks it open.", "until": "Until its next turn" },
+    "wingspread": { "name": "Wings spread", "desc": "Wings out, wide as a door. Hit it with a physical attack and about a third of the blow comes back at you. Spells are safe. Sticky wings stick, and the turn is lost.", "until": "Until it's hit or its next turn" },
     "bristling": { "name": "Bristling", "desc": "Quills out. Hit it with a physical attack and about a third of the blow comes back at you. Spells are safe.", "until": "Until it's hit or its next turn" },
     "burning": { "name": "Burning", "desc": "Loses a little health at the end of each round. Fire wears it down, but won't finish it." },
     "hexed": { "name": "Hexed", "desc": "Under a hex. Something worse is coming." },

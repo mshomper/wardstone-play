@@ -1,13 +1,13 @@
 {
-  "_note": "The party (docs/05-combat.md, docs/future/F08). Everyone shares one level and one pool of experience: each entry in `levels` has the total `xp` needed to reach it. Each member has a stat line for every level. `resources` holds what each class spends: its name on screen, and what it gets back for an Attack, at the start of a round after the first, and as a share of its most after a win. A resource can also say `onHit`, what each damaging hit brings back, and `startsAt`, the share of its most every fight starts with in place of what was carried in. `fallenBack` is the share of their most health someone down at the end of a won fight gets back. `words` are what the menus and books call a member's own things. A resource can give its `icon` and `colour` (two ends of its bar). `signature` is the move a full Ward gauge gives. `combos` are what a member's own hits set off: a hit of element `by` on a foe under status `on` (results are in rules.ts). `pointsPerLevel` is the upgrade points each level earns each member (ranks are in skills.json). `typicalFoeRes` is the foe the Upgrades page's rough damage figures assume. Icon names are drawn icons in src/ui/icons.ts.",
+  "_note": "The party (docs/05-combat.md, docs/future/F08). Everyone shares one level and one pool of experience: each entry in `levels` has the total `xp` needed to reach it. Each member has a stat line for every level. `resources` holds what each class spends: its name on screen, and what it gets back for an Attack, at the start of a round after the first, and as a share of its most after a win. A resource can also say `onHit`, what each damaging hit brings back, and `startsAt`, the share of its most every fight starts with in place of what was carried in, and `onAllyStruck`, what each blow on someone else in the party brings back. `bitesBack` on a member is the goose's own rule (decision 0180). `fallenBack` is the share of their most health someone down at the end of a won fight gets back. `words` are what the menus and books call a member's own things. A resource can give its `icon` and `colour` (two ends of its bar). `signature` is the move a full Ward gauge gives. `combos` are what a member's own hits set off: a hit of element `by` on a foe under status `on` (results are in rules.ts). `pointsPerLevel` is the upgrade points each level earns each member (ranks are in skills.json). `typicalFoeRes` is the foe the Upgrades page's rough damage figures assume. Icon names are drawn icons in src/ui/icons.ts.",
   "levels": [
     { "level": 1, "xp": 0 },
     { "level": 2, "xp": 40 },
     { "level": 3, "xp": 90 },
-    { "level": 4, "xp": 170 },
-    { "level": 5, "xp": 280 },
-    { "level": 6, "xp": 430 },
-    { "level": 7, "xp": 630 },
+    { "level": 4, "xp": 240 },
+    { "level": 5, "xp": 360 },
+    { "level": 6, "xp": 500 },
+    { "level": 7, "xp": 680 },
     { "level": 8, "xp": 890 },
     { "level": 9, "xp": 1220 },
     { "level": 10, "xp": 1630 }
@@ -18,7 +18,8 @@
   "fallenBack": 0.1,
   "resources": {
     "mp": { "name": "Magic", "short": "MP", "icon": "drop", "onAttack": 2, "onRound": 1, "afterWin": 0.33 },
-    "stamina": { "name": "Stamina", "short": "Stamina", "icon": "drop", "colour": ["#8a5a24", "#e6b35c"], "onAttack": 4, "onRound": 3, "onStruck": 3, "startsAt": 0.5, "afterWin": 1 }
+    "stamina": { "name": "Stamina", "short": "Stamina", "icon": "drop", "colour": ["#8a5a24", "#e6b35c"], "onAttack": 4, "onRound": 3, "onStruck": 3, "startsAt": 0.5, "afterWin": 1 },
+    "temper": {"name": "Temper", "short": "Temper", "icon": "feather", "colour": ["#7a2a1a", "#e0703a"], "onAttack": 3, "onRound": 0, "onStruck": 4, "onAllyStruck": 2, "startsAt": 0, "afterWin": 0}
   },
   "members": {
     "eldwin": {
@@ -64,6 +65,29 @@
         { "level": 10, "hp": 364, "mp": 42, "atk": 37, "mag": 37, "def": 22, "res": 39, "spd": 13 }
       ],
       "start": { "known": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "equipped": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "ward": "no_mortar", "wards": ["no_mortar"] }
+    },
+    "applegate": {
+      "_note": "Mrs. Applegate (decision 0180). She joins at the Toll Goose, for players who carry Tilly's ribbon (flag tilly_ribbon, set at Tilly's goodbye). Every name and line of hers is a draft. Her battle sheet is mrs_applegate_side (decision 0200).",
+      "name": "Mrs. Applegate", "title": "Goose", "icon": "feather", "resource": "temper", "slots": 4, "signature": "pecking_order", "look": {"side": "mrs_applegate_side_"},
+      "words": {"attack": "Peck one foe, hard.", "skills": "Temper", "skillsDesc": "What she does when she's had enough, which is often.", "move": "move", "moves": "moves"},
+      "bitesBack": {"power": 0.5, "othersFrom": 0.5},
+      "combos": [
+        {"id": "sweet_tooth", "name": "Sweet Tooth", "by": "physical", "on": "sticky", "result": "heal_user", "amount": 0.12},
+        {"id": "second_peck", "name": "Second Peck", "by": "physical", "on": "afraid", "result": "second_hit", "amount": 0.5, "keep": true}
+      ],
+      "stats": [
+        {"level": 1, "hp": 103, "mp": 20, "atk": 16, "mag": 6, "def": 9, "res": 11, "spd": 12},
+        {"level": 2, "hp": 120, "mp": 20, "atk": 18, "mag": 7, "def": 10, "res": 13, "spd": 13},
+        {"level": 3, "hp": 138, "mp": 20, "atk": 19, "mag": 8, "def": 11, "res": 15, "spd": 13},
+        {"level": 4, "hp": 159, "mp": 22, "atk": 21, "mag": 9, "def": 12, "res": 17, "spd": 14},
+        {"level": 5, "hp": 182, "mp": 22, "atk": 22, "mag": 10, "def": 13, "res": 19, "spd": 14},
+        {"level": 6, "hp": 207, "mp": 24, "atk": 24, "mag": 11, "def": 14, "res": 21, "spd": 15},
+        {"level": 7, "hp": 232, "mp": 24, "atk": 26, "mag": 12, "def": 15, "res": 23, "spd": 15},
+        {"level": 8, "hp": 260, "mp": 26, "atk": 27, "mag": 13, "def": 16, "res": 25, "spd": 16},
+        {"level": 9, "hp": 290, "mp": 26, "atk": 29, "mag": 14, "def": 18, "res": 27, "spd": 16},
+        {"level": 10, "hp": 322, "mp": 28, "atk": 30, "mag": 15, "def": 19, "res": 28, "spd": 17}
+      ],
+      "start": {"known": ["honk", "wing_buffet", "goose_chase", "nip_awake"], "equipped": ["honk", "wing_buffet", "goose_chase", "nip_awake"], "ward": "hiss", "wards": ["hiss"]}
     }
   },
   "defeat": {

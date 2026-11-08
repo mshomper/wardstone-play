@@ -1,0 +1,868 @@
+{
+ "people": [
+  {
+   "id": "applegate_bar",
+   "name": "Mrs. Applegate",
+   "title": "",
+   "portrait": "#e8e4da",
+   "sprite": "mrs_applegate_iso",
+   "low": true,
+   "schedule": [
+    {
+     "if": {
+      "flags": [
+       "beat_toll_goose",
+       "goose_home"
+      ],
+      "notFlags": [
+       "joined:applegate"
+      ]
+     },
+     "area": "coopers-ford",
+     "spot": "Mrs. Applegate (gravel bar)",
+     "dir": 2
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "tilly_ribbon"
+      ]
+     },
+     "dialogue": "applegate_bar_ribbon"
+    },
+    {
+     "dialogue": "applegate_bar_wait"
+    }
+   ]
+  },
+  {
+   "id": "lavinia_dunn",
+   "name": "Lavinia Dunn",
+   "title": "The Half-Way House",
+   "portrait": "#6b3a5c",
+   "sprite": "npc_lavinia_dunn_iso",
+   "schedule": [
+    {
+     "area": "old-post-road",
+     "spot": "Lavinia",
+     "dir": 0,
+     "rounds": {
+      "speed": 0.9,
+      "stay": [
+       8,
+       16
+      ],
+      "stops": [
+       {
+        "spot": "Lavinia"
+       },
+       {
+        "spot": "Round: the trough"
+       },
+       {
+        "spot": "Round: the inn yard"
+       }
+      ]
+     }
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "tolls_found"
+      ],
+      "notFlags": [
+       "tolls_thimble"
+      ]
+     },
+     "dialogue": "tolls_lavinia"
+    },
+    {
+     "dialogue": "lavinia_first",
+     "if": {
+      "notFlags": [
+       "met_lavinia"
+      ]
+     }
+    },
+    {
+     "dialogue": "lavinia_bitten",
+     "if": {
+      "flags": [
+       "goose_home"
+      ],
+      "notFlags": [
+       "joined:applegate",
+       "beat_toll_goose",
+       "heard:LV0"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_lv1",
+     "if": {
+      "flags": [
+       "talks:lavinia_dunn:3"
+      ],
+      "notFlags": [
+       "heard:LV1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_lv3",
+     "if": {
+      "flags": [
+       "talks:lavinia_dunn:5",
+       "heard:LV1"
+      ],
+      "notFlags": [
+       "heard:LV3"
+      ]
+     }
+    },
+    {
+     "dialogue": "lavinia_after"
+    }
+   ],
+   "potter": 0.8
+  },
+  {
+   "id": "asa_kimball",
+   "name": "Asa Kimball",
+   "title": "Post rider",
+   "portrait": "#a8862e",
+   "sprite": "npc_asa_kimball_iso",
+   "schedule": [
+    {
+     "if": {
+      "notFlags": [
+       "tolls_specs"
+      ]
+     },
+     "area": "old-post-road",
+     "spot": "Asa and Patience",
+     "dir": 2,
+     "rounds": {
+      "speed": 1,
+      "stay": [
+       7,
+       15
+      ],
+      "stops": [
+       {
+        "spot": "Asa and Patience"
+       },
+       {
+        "spot": "Round: the milestone"
+       },
+       {
+        "spot": "Round: the road east"
+       }
+      ]
+     }
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "tolls_found"
+      ],
+      "notFlags": [
+       "tolls_specs"
+      ]
+     },
+     "dialogue": "tolls_asa"
+    },
+    {
+     "dialogue": "asa_first",
+     "if": {
+      "notFlags": [
+       "met_asa"
+      ]
+     }
+    },
+    {
+     "dialogue": "asa_shied",
+     "if": {
+      "flags": [
+       "goose_home"
+      ],
+      "notFlags": [
+       "joined:applegate",
+       "heard:AS0"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_as1",
+     "if": {
+      "flags": [
+       "talks:asa_kimball:3"
+      ],
+      "notFlags": [
+       "heard:AS1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_as2",
+     "if": {
+      "flags": [
+       "talks:asa_kimball:5",
+       "heard:AS1"
+      ],
+      "notFlags": [
+       "heard:AS2"
+      ]
+     }
+    },
+    {
+     "dialogue": "asa_after"
+    }
+   ],
+   "potter": 0.6
+  },
+  {
+   "id": "reuben_cooper",
+   "name": "Reuben Cooper",
+   "title": "Cooper",
+   "portrait": "#4a6a94",
+   "sprite": "npc_reuben_cooper_iso",
+   "schedule": [
+    {
+     "area": "coopers-ford",
+     "spot": "Reuben",
+     "dir": 0,
+     "rounds": {
+      "speed": 0.9,
+      "stay": [
+       7,
+       15
+      ],
+      "stops": [
+       {
+        "spot": "Reuben"
+       },
+       {
+        "spot": "Round: the barrel wall"
+       },
+       {
+        "spot": "Round: the shop door"
+       }
+      ]
+     }
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "tolls_found"
+      ],
+      "notFlags": [
+       "tolls_mallet"
+      ]
+     },
+     "dialogue": "tolls_reuben"
+    },
+    {
+     "dialogue": "reuben_first",
+     "if": {
+      "notFlags": [
+       "met_reuben",
+       "beat_toll_goose"
+      ]
+     }
+    },
+    {
+     "dialogue": "reuben_staff",
+     "if": {
+      "flags": [
+       "beat_toll_goose"
+      ],
+      "notFlags": [
+       "heard:RCF"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_rc1",
+     "if": {
+      "flags": [
+       "talks:reuben_cooper:3"
+      ],
+      "notFlags": [
+       "heard:RC1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_rc2",
+     "if": {
+      "flags": [
+       "talks:reuben_cooper:5",
+       "heard:RC1",
+       "beat_toll_goose"
+      ],
+      "notFlags": [
+       "heard:RC2"
+      ]
+     }
+    },
+    {
+     "dialogue": "reuben_plates",
+     "if": {
+      "flags": [
+       "beat_toll_goose"
+      ]
+     }
+    },
+    {
+     "dialogue": "reuben_market"
+    }
+   ],
+   "potter": 0.8
+  },
+  {
+   "id": "lem_cooper",
+   "name": "Lem Cooper",
+   "title": "",
+   "portrait": "#5a8a3a",
+   "sprite": "npc_lem_cooper_iso",
+   "schedule": [
+    {
+     "area": "coopers-ford",
+     "spot": "Lem",
+     "dir": 1
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "lem_first",
+     "if": {
+      "notFlags": [
+       "met_lem",
+       "beat_toll_goose"
+      ]
+     }
+    },
+    {
+     "if": {
+      "flags": [
+       "tolls_found"
+      ],
+      "notFlags": [
+       "tolls_crusts"
+      ]
+     },
+     "dialogue": "tolls_lem"
+    },
+    {
+     "dialogue": "lem_white",
+     "if": {
+      "flags": [
+       "beat_toll_goose",
+       "goose_home"
+      ],
+      "notFlags": [
+       "heard:LCF"
+      ]
+     }
+    },
+    {
+     "dialogue": "lem_still",
+     "if": {
+      "flags": [
+       "beat_toll_goose"
+      ],
+      "notFlags": [
+       "heard:LCF"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_lc1",
+     "if": {
+      "flags": [
+       "talks:lem_cooper:3"
+      ],
+      "notFlags": [
+       "heard:LC1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_lc2",
+     "if": {
+      "flags": [
+       "talks:lem_cooper:5",
+       "heard:LC1",
+       "joined:applegate"
+      ],
+      "notFlags": [
+       "heard:LC2"
+      ]
+     }
+    },
+    {
+     "dialogue": "lem_sign"
+    }
+   ],
+   "potter": 1.2
+  },
+  {
+   "id": "dorcas_brigham",
+   "name": "Dorcas Brigham",
+   "title": "Carter",
+   "portrait": "#9a5a2a",
+   "sprite": "npc_dorcas_brigham_iso",
+   "schedule": [
+    {
+     "area": "coopers-ford",
+     "spot": "Dorcas",
+     "dir": 1
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "tolls_found"
+      ],
+      "notFlags": [
+       "tolls_hat"
+      ]
+     },
+     "dialogue": "tolls_dorcas"
+    },
+    {
+     "dialogue": "dorcas_first",
+     "if": {
+      "notFlags": [
+       "met_dorcas",
+       "beat_toll_goose"
+      ]
+     }
+    },
+    {
+     "dialogue": "dorcas_open",
+     "if": {
+      "flags": [
+       "beat_toll_goose"
+      ],
+      "notFlags": [
+       "heard:DBF"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_db1",
+     "if": {
+      "flags": [
+       "talks:dorcas_brigham:3"
+      ],
+      "notFlags": [
+       "heard:DB1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_db2",
+     "if": {
+      "flags": [
+       "talks:dorcas_brigham:5",
+       "heard:DB1"
+      ],
+      "notFlags": [
+       "heard:DB2"
+      ]
+     }
+    },
+    {
+     "dialogue": "dorcas_hat",
+     "if": {
+      "flags": [
+       "beat_toll_goose"
+      ]
+     }
+    },
+    {
+     "dialogue": "dorcas_shins"
+    }
+   ],
+   "potter": 0.5
+  },
+  {
+   "id": "gideon_strand",
+   "name": "Gideon Strand",
+   "title": "Boss sawyer",
+   "portrait": "#a83a2a",
+   "sprite": "npc_gideon_strand_iso",
+   "schedule": [
+    {
+     "area": "sawyers-clearing",
+     "spot": "Gideon",
+     "dir": 3
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "gideon_first",
+     "if": {
+      "notFlags": [
+       "met_gideon"
+      ]
+     }
+    },
+    {
+     "if": {
+      "flags": [
+       "beat_foreman"
+      ],
+      "notFlags": [
+       "pine_done"
+      ]
+     },
+     "dialogue": "pine_done"
+    },
+    {
+     "if": {
+      "flags": [
+       "met_gideon"
+      ],
+      "notFlags": [
+       "pine_asked"
+      ]
+     },
+     "dialogue": "pine_ask"
+    },
+    {
+     "dialogue": "open_gs1",
+     "if": {
+      "flags": [
+       "talks:gideon_strand:3"
+      ],
+      "notFlags": [
+       "heard:GS1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_gs2",
+     "if": {
+      "flags": [
+       "talks:gideon_strand:5",
+       "heard:GS1"
+      ],
+      "notFlags": [
+       "heard:GS2"
+      ]
+     }
+    },
+    {
+     "dialogue": "gideon_after"
+    }
+   ],
+   "potter": 1.0
+  },
+  {
+   "id": "toby_fisk",
+   "name": "Toby Fisk",
+   "title": "Pit man",
+   "portrait": "#b8a888",
+   "sprite": "npc_toby_fisk_iso",
+   "schedule": [
+    {
+     "area": "sawyers-clearing",
+     "spot": "Toby",
+     "dir": 1
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "toby_first",
+     "if": {
+      "notFlags": [
+       "met_toby"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_tf1",
+     "if": {
+      "flags": [
+       "talks:toby_fisk:3"
+      ],
+      "notFlags": [
+       "heard:TF1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_tf2",
+     "if": {
+      "flags": [
+       "talks:toby_fisk:5",
+       "heard:TF1"
+      ],
+      "notFlags": [
+       "heard:TF2"
+      ]
+     }
+    },
+    {
+     "dialogue": "toby_after"
+    }
+   ]
+  },
+  {
+   "id": "hosea_lamb",
+   "name": "Hosea Lamb",
+   "title": "Drover",
+   "portrait": "#4a7ab0",
+   "sprite": "npc_hosea_lamb_iso",
+   "schedule": [
+    {
+     "area": "long-wall",
+     "spot": "Hosea",
+     "dir": 0
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "hosea_first",
+     "if": {
+      "notFlags": [
+       "met_hosea"
+      ]
+     }
+    },
+    {
+     "if": {
+      "flags": [
+       "has_ewe"
+      ],
+      "notFlags": [
+       "oneshort_done"
+      ]
+     },
+     "dialogue": "oneshort_done"
+    },
+    {
+     "if": {
+      "flags": [
+       "met_hosea"
+      ],
+      "notFlags": [
+       "oneshort_asked"
+      ]
+     },
+     "dialogue": "oneshort_ask"
+    },
+    {
+     "dialogue": "open_hl1",
+     "if": {
+      "flags": [
+       "talks:hosea_lamb:3"
+      ],
+      "notFlags": [
+       "heard:HL1"
+      ]
+     }
+    },
+    {
+     "dialogue": "open_hl2",
+     "if": {
+      "flags": [
+       "talks:hosea_lamb:5",
+       "heard:HL1"
+      ],
+      "notFlags": [
+       "heard:HL2"
+      ]
+     }
+    },
+    {
+     "dialogue": "hosea_after"
+    }
+   ],
+   "potter": 1.8
+  },
+  {
+   "id": "patience",
+   "name": "Patience",
+   "title": "",
+   "portrait": "#8a6a4a",
+   "sprite": "patience_iso",
+   "radius": 0.9,
+   "schedule": [
+    {
+     "if": {
+      "notFlags": [
+       "tolls_specs"
+      ]
+     },
+     "area": "old-post-road",
+     "spot": "Asa and Patience",
+     "dir": 2,
+     "rounds": {
+      "speed": 1.1,
+      "follow": "asa_kimball",
+      "gap": 1.4,
+      "stops": []
+     }
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "patience_look"
+    }
+   ]
+  },
+  {
+   "id": "gyp",
+   "name": "Gyp",
+   "title": "",
+   "portrait": "#6a6a6e",
+   "sprite": "gyp_iso",
+   "low": true,
+   "schedule": [
+    {
+     "area": "long-wall",
+     "spot": "Hosea",
+     "dir": 1,
+     "rounds": {
+      "speed": 1.1,
+      "follow": "hosea_lamb",
+      "gap": 1.2,
+      "stops": []
+     }
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "gyp_look"
+    }
+   ]
+  },
+  {
+   "id": "stray_ewe",
+   "name": "The stray",
+   "title": "",
+   "portrait": "#e6e2d6",
+   "sprite": "ewe_iso",
+   "low": true,
+   "schedule": [
+    {
+     "if": {
+      "notFlags": [
+       "has_ewe"
+      ]
+     },
+     "area": "long-wall",
+     "spot": "The stray ewe",
+     "dir": 1,
+     "potter": 0.6
+    },
+    {
+     "area": "long-wall",
+     "spot": "Sheep (the ewe)",
+     "dir": 2,
+     "potter": 1.4
+    }
+   ],
+   "talk": [
+    {
+     "if": {
+      "flags": [
+       "oneshort_asked"
+      ],
+      "notFlags": [
+       "has_ewe"
+      ]
+     },
+     "dialogue": "ewe_found"
+    },
+    {
+     "if": {
+      "flags": [
+       "has_ewe"
+      ]
+     },
+     "dialogue": "ewe_back"
+    },
+    {
+     "dialogue": "sheep_look"
+    }
+   ]
+  },
+  {
+   "id": "sheep_white",
+   "name": "A sheep",
+   "title": "",
+   "portrait": "#e8e4d8",
+   "sprite": "sheep_white_iso",
+   "low": true,
+   "potter": 1.6,
+   "schedule": [
+    {
+     "area": "long-wall",
+     "spot": "Sheep (white)",
+     "dir": 1
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "sheep_look"
+    }
+   ]
+  },
+  {
+   "id": "sheep_grey",
+   "name": "A sheep",
+   "title": "",
+   "portrait": "#9a9a96",
+   "sprite": "sheep_grey_iso",
+   "low": true,
+   "potter": 1.6,
+   "schedule": [
+    {
+     "area": "long-wall",
+     "spot": "Sheep (grey)",
+     "dir": 3
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "sheep_look"
+    }
+   ]
+  },
+  {
+   "id": "sheep_black",
+   "name": "A sheep",
+   "title": "",
+   "portrait": "#3a3836",
+   "sprite": "sheep_black_iso",
+   "low": true,
+   "potter": 1.6,
+   "schedule": [
+    {
+     "area": "long-wall",
+     "spot": "Sheep (black)",
+     "dir": 2
+    }
+   ],
+   "talk": [
+    {
+     "dialogue": "sheep_look"
+    }
+   ]
+  }
+ ]
+}

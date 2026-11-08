@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "name": "sawyers-clearing",
+  "seed": 3303,
+  "size": {
+    "w": 64,
+    "h": 48
+  },
+  "mood": {
+    "baseHeight": 0.0,
+    "edgeRise": 3.2,
+    "edgeWidth": 5,
+    "roll": 0.5,
+    "pathMargin": 0.8,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.4,
+        "spacing": 2.2,
+        "scale": [
+          0.95,
+          1.2
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_red_0",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_1"
+        ],
+        "density": 0.4,
+        "spacing": 2.1,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1"
+        ],
+        "density": 0.07,
+        "spacing": 2.0,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "water",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "tree_stump_0",
+          "tree_stump_1"
+        ],
+        "density": 0.16,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "collide": 0.35,
+        "within": [
+          [
+            -20,
+            -13
+          ],
+          [
+            19,
+            -13
+          ],
+          [
+            21,
+            9
+          ],
+          [
+            -21,
+            10
+          ]
+        ]
+      },
+      {
+        "props": [
+          "fallen_log_0",
+          "fallen_log_1"
+        ],
+        "density": 0.025,
+        "spacing": 4,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "collide": 0.3,
+        "within": [
+          [
+            -20,
+            -13
+          ],
+          [
+            19,
+            -13
+          ],
+          [
+            21,
+            9
+          ],
+          [
+            -21,
+            10
+          ]
+        ]
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_red_0",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_1"
+        ],
+        "density": 0.04,
+        "spacing": 5,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1"
+        ],
+        "density": 0.02,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.05
+        ],
+        "near": "edge",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "cattails_0",
+          "cattails_1"
+        ],
+        "density": 0.4,
+        "spacing": 0.8,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "water"
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.3,
+        "spacing": 1.0,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "edge"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1",
+          "fern_autumn_1"
+        ],
+        "density": 0.1,
+        "spacing": 1.2,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "goldenrod_1",
+          "asters_1",
+          "fern_autumn_0"
+        ],
+        "density": 0.08,
+        "spacing": 1.4,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -32,
+          1
+        ],
+        [
+          -22,
+          0.4
+        ],
+        [
+          -12,
+          1.8
+        ],
+        [
+          0,
+          0.6
+        ],
+        [
+          12,
+          -0.6
+        ],
+        [
+          22,
+          0.2
+        ],
+        [
+          32,
+          -1
+        ]
+      ],
+      "width": 2.2,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          -12,
+          -6.8
+        ],
+        [
+          -11.6,
+          1.4
+        ]
+      ],
+      "width": 1.3,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          12,
+          -0.4
+        ],
+        [
+          13.4,
+          -4.6
+        ]
+      ],
+      "width": 1.1,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          1,
+          0.5
+        ],
+        [
+          1.6,
+          -5
+        ],
+        [
+          2,
+          -8.8
+        ]
+      ],
+      "width": 1.2,
+      "kind": "path"
+    }
+  ],
+  "brook": {
+    "points": [
+      [
+        -32,
+        16
+      ],
+      [
+        -18,
+        14.6
+      ],
+      [
+        -4,
+        15.8
+      ],
+      [
+        8,
+        14.2
+      ],
+      [
+        20,
+        15.4
+      ],
+      [
+        32,
+        14
+      ]
+    ],
+    "width": 2.6,
+    "depth": 0.7
+  },
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "sugarhouse",
+      "x": -12,
+      "z": -9.6,
+      "w": 6,
+      "d": 4,
+      "rot": 0,
+      "height": 5,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ],
+          "storeys": 1
+        }
+      ],
+      "opens": "Bunk shanty",
+      "scale": 1.6,
+      "lootMax": 2
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "hollow",
+      "x": -4,
+      "z": -4,
+      "radius": 4,
+      "height": 0.35
+    },
+    {
+      "kind": "mound",
+      "x": 2,
+      "z": -11,
+      "radius": 4.5,
+      "height": 0.7
+    }
+  ],
+  "arenas": [
+    {
+      "x": 9,
+      "z": 9.6,
+      "radius": 3
+    },
+    {
+      "x": -19,
+      "z": 7,
+      "radius": 2.6
+    },
+    {
+      "x": 20,
+      "z": -9,
+      "radius": 2.6
+    },
+    {
+      "x": -21,
+      "z": -12,
+      "radius": 2.4
+    }
+  ],
+  "placements": [
+    {
+      "prop": "white_pine_0",
+      "x": 2,
+      "z": -11,
+      "scale": 2.3,
+      "collide": 0.8,
+      "tall": true
+    },
+    {
+      "prop": "dirt_mound",
+      "x": -4,
+      "z": -4.2,
+      "collide": 0.8
+    },
+    {
+      "prop": "cordwood",
+      "x": -7.2,
+      "z": -4.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "cordwood",
+      "x": -1.0,
+      "z": -5.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "cordwood",
+      "x": 5.6,
+      "z": -6.4,
+      "collide": 0.9
+    },
+    {
+      "prop": "cordwood",
+      "x": -16.4,
+      "z": -8.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": -6,
+      "z": -7.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "fallen_log_1",
+      "x": -2.4,
+      "z": -2.0,
+      "collide": 0.3
+    },
+    {
+      "prop": "crate_0",
+      "x": -8.6,
+      "z": -8.2,
+      "collide": 0.35
+    },
+    {
+      "prop": "rest_stone",
+      "x": -6.4,
+      "z": 3.6,
+      "collide": 0.35
+    },
+    {
+      "prop": "rest_stone",
+      "x": -4.6,
+      "z": 4.6,
+      "collide": 0.35
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": 7.4,
+      "z": 14.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "fallen_log_1",
+      "x": 8.6,
+      "z": 14.0,
+      "collide": 0.3
+    },
+    {
+      "prop": "cordwood",
+      "x": 11.6,
+      "z": 17.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": 12.8,
+      "z": 18.2,
+      "collide": 0.3
+    },
+    {
+      "prop": "camp_tent",
+      "x": 14.6,
+      "z": -6.6,
+      "collide": 1.2,
+      "scale": 1.3
+    },
+    {
+      "prop": "campfire",
+      "x": 12.0,
+      "z": -3.2,
+      "collide": 0.45
+    },
+    {
+      "prop": "crate_0",
+      "x": 16.8,
+      "z": -5.0,
+      "collide": 0.35
+    },
+    {
+      "prop": "crate_lid",
+      "x": 17.4,
+      "z": -4.2,
+      "collide": 0.3
+    },
+    {
+      "prop": "campfire",
+      "x": -5.4,
+      "z": 2.6,
+      "collide": 0.45
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -6,
+          4
+        ],
+        [
+          -4,
+          4.8
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          13,
+          -4.6
+        ],
+        [
+          16,
+          -4.6
+        ]
+      ],
+      "radius": 1.2
+    },
+    {
+      "points": [
+        [
+          2,
+          -11
+        ],
+        [
+          2,
+          -11
+        ]
+      ],
+      "radius": 3.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "The Warden's pine",
+      "x": 2,
+      "z": -8.8,
+      "note": "The biggest tree for miles, three crossed lines cut in its bark. The Foreman has started on it (The Warden's Pine)."
+    },
+    {
+      "name": "The sawpit",
+      "x": -4,
+      "z": -2.6,
+      "note": "Gideon above, Toby down in the pit (later step). A mound stands in for the pit."
+    },
+    {
+      "name": "Cook fire",
+      "x": -5.4,
+      "z": 3.0,
+      "note": "The sawyers' fire by the road, between the benches."
+    },
+    {
+      "name": "Jasper's camp",
+      "x": 14,
+      "z": -3.6,
+      "note": "A canvas lean-to and a fire with the kettle on, at the clearing's edge. Rest at his fire, on account (later step)."
+    },
+    {
+      "name": "The Foreman's dam",
+      "x": 8,
+      "z": 13,
+      "note": "Logs across the stream: the pond and the Foreman's lodge beyond. His circle is on this bank (later step)."
+    },
+    {
+      "name": "On to the Long Wall",
+      "x": 27,
+      "z": -0.8,
+      "note": "The way east to the Long Wall."
+    },
+    {
+      "name": "Gideon",
+      "x": -2.4,
+      "z": -2.6
+    },
+    {
+      "name": "Toby",
+      "x": -5.4,
+      "z": -2.8
+    },
+    {
+      "name": "Jasper (camp)",
+      "x": 14,
+      "z": -3.4
+    },
+    {
+      "name": "Jasper's fire",
+      "x": 12.0,
+      "z": -2.2,
+      "note": "Sit by the fire, then rest at it (The Long Way Round)."
+    }
+  ],
+  "start": [
+    -25.6,
+    0.6
+  ],
+  "exits": [
+    {
+      "rect": [
+        -28.4,
+        -1.4,
+        -27.4,
+        3.2
+      ],
+      "to": "coopers-ford",
+      "at": [
+        21.6,
+        1.6
+      ],
+      "dir": 2
+    },
+    {
+      "rect": [
+        27.4,
+        -3.2,
+        28.4,
+        1.4
+      ],
+      "to": "long-wall",
+      "at": [
+        -41.6,
+        4.2
+      ],
+      "dir": 6
+    }
+  ]
+}

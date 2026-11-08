@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "name": "old-post-road",
+  "seed": 3101,
+  "size": {
+    "w": 64,
+    "h": 36
+  },
+  "mood": {
+    "baseHeight": 0.0,
+    "edgeRise": 3.0,
+    "edgeWidth": 5,
+    "roll": 0.55,
+    "pathMargin": 0.8,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_yellow_0",
+          "maple_yellow_1",
+          "maple_yellow_0",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_1",
+          "maple_orange_0",
+          "maple_red_0"
+        ],
+        "density": 0.5,
+        "spacing": 2.0,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.14,
+        "spacing": 2.4,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "apple_tree_0",
+          "apple_tree_1"
+        ],
+        "density": 0,
+        "spacing": 2.6,
+        "scale": [
+          0.85,
+          1.05
+        ],
+        "collide": 0.45,
+        "tall": true,
+        "rows": {
+          "region": [
+            [
+              8,
+              -12.5
+            ],
+            [
+              25,
+              -12.5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              8,
+              -5
+            ]
+          ],
+          "spacing": 3.4,
+          "along": 3.2,
+          "angle": 6,
+          "jitter": 0.35,
+          "gaps": 0.3
+        }
+      },
+      {
+        "props": [
+          "maple_yellow_0",
+          "maple_yellow_1",
+          "maple_yellow_0",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_yellow_1",
+          "maple_orange_0",
+          "maple_red_0"
+        ],
+        "density": 0.09,
+        "spacing": 4.5,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.025,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.05
+        ],
+        "near": "open",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.02,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.05
+        ],
+        "near": "edge",
+        "collide": 0.8
+      },
+      {
+        "props": [
+          "goldenrod_0",
+          "goldenrod_1",
+          "asters_0",
+          "asters_1",
+          "fern_autumn_1"
+        ],
+        "density": 0.45,
+        "spacing": 0.9,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "fallen_log_0"
+        ],
+        "density": 0.03,
+        "spacing": 3,
+        "scale": [
+          0.8,
+          1.0
+        ],
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "asters_0",
+          "goldenrod_0"
+        ],
+        "density": 0.1,
+        "spacing": 1.1,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_2",
+          "goldenrod_1",
+          "asters_1"
+        ],
+        "density": 0.24,
+        "spacing": 1.3,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -32,
+          2.2
+        ],
+        [
+          -22,
+          1.6
+        ],
+        [
+          -12,
+          2.6
+        ],
+        [
+          -2,
+          1.4
+        ],
+        [
+          8,
+          0.6
+        ],
+        [
+          18,
+          1.4
+        ],
+        [
+          26,
+          0.4
+        ],
+        [
+          32,
+          -0.4
+        ]
+      ],
+      "width": 2.4,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          -2,
+          1.2
+        ],
+        [
+          -2.2,
+          -1.6
+        ],
+        [
+          -2,
+          -4.4
+        ]
+      ],
+      "width": 1.6,
+      "kind": "path"
+    }
+  ],
+  "walls": [
+    {
+      "points": [
+        [
+          -27,
+          -1.4
+        ],
+        [
+          -17,
+          -1.0
+        ],
+        [
+          -8.6,
+          -1.8
+        ]
+      ],
+      "gaps": []
+    },
+    {
+      "points": [
+        [
+          4.6,
+          -2.4
+        ],
+        [
+          14,
+          -1.6
+        ],
+        [
+          23,
+          -2.2
+        ],
+        [
+          27.5,
+          -2.6
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 7.2,
+          "width": 1.8
+        }
+      ]
+    },
+    {
+      "points": [
+        [
+          -27,
+          5.8
+        ],
+        [
+          -14,
+          6.4
+        ],
+        [
+          -2,
+          5.4
+        ],
+        [
+          10,
+          4.8
+        ],
+        [
+          20,
+          5.8
+        ],
+        [
+          27.5,
+          4.8
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 42.5,
+          "width": 1.8
+        }
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "colonial",
+      "x": -2,
+      "z": -8.4,
+      "w": 9,
+      "d": 5,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -4.5,
+              -2.5
+            ],
+            [
+              4.5,
+              -2.5
+            ],
+            [
+              4.5,
+              2.5
+            ],
+            [
+              -4.5,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "variants": {
+        "shutters": true,
+        "porch": 5,
+        "porchLight": true,
+        "sign": true,
+        "signText": "Half-Way House",
+        "chimney": "center"
+      },
+      "opens": "Half-Way House",
+      "scale": 1.6,
+      "lootMax": 2
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 15,
+      "z": 10.5,
+      "radius": 6,
+      "height": 0.6
+    },
+    {
+      "kind": "mound",
+      "x": -19,
+      "z": -8.5,
+      "radius": 5,
+      "height": 0.5
+    }
+  ],
+  "arenas": [
+    {
+      "x": -19,
+      "z": 9.4,
+      "radius": 2.6
+    },
+    {
+      "x": 15,
+      "z": 10,
+      "radius": 3
+    },
+    {
+      "x": -18,
+      "z": -7.6,
+      "radius": 2.6
+    }
+  ],
+  "placements": [
+    {
+      "prop": "stone_granite_0",
+      "x": -15,
+      "z": 4.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "stone_trough",
+      "x": 3.4,
+      "z": -3.6,
+      "collide": 0.55
+    },
+    {
+      "prop": "rest_stone",
+      "x": 0.6,
+      "z": -4.6,
+      "collide": 0.35
+    },
+    {
+      "prop": "fence_rail",
+      "x": -6.4,
+      "z": -3.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "fence_post",
+      "x": -7.8,
+      "z": -3.6,
+      "collide": 0.15
+    },
+    {
+      "prop": "lamp_post",
+      "x": -3.6,
+      "z": -4.6,
+      "collide": 0.2
+    },
+    {
+      "prop": "cordwood",
+      "x": -8.8,
+      "z": -9.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "crate_0",
+      "x": -8.4,
+      "z": -6.8,
+      "collide": 0.35
+    },
+    {
+      "prop": "cider_barrel_0",
+      "x": 2.2,
+      "z": -5.2,
+      "collide": 0.35
+    },
+    {
+      "prop": "fallen_log_1",
+      "x": 22,
+      "z": 10.6,
+      "collide": 0.3
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -6.6,
+          -4.4
+        ],
+        [
+          4.6,
+          -4.4
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "Milestone",
+      "x": -15,
+      "z": 4.4,
+      "note": "KETTLE NOTCH 5 toward home; KETTLE NOTCH, distance scratched out, on the far face (decision 0171). Stand-in stone until it has its own art."
+    },
+    {
+      "name": "Lavinia",
+      "x": -1,
+      "z": -5.2,
+      "note": "On the porch of the Half-Way House (later step)."
+    },
+    {
+      "name": "Asa and Patience",
+      "x": -5.6,
+      "z": -2.8,
+      "note": "At the hitching rail, one of his round's stops (later step)."
+    },
+    {
+      "name": "Coachmen's orchard",
+      "x": 16,
+      "z": -8.6,
+      "note": "The nook: the inn's orchard, gone wild, through the gate in the north wall."
+    },
+    {
+      "name": "South meadow",
+      "x": 15,
+      "z": 10,
+      "note": "Through the gap in the south wall: a fight circle for later."
+    },
+    {
+      "name": "On to Cooper's Ford",
+      "x": 27,
+      "z": 0.4,
+      "note": "The way east to Cooper's Ford."
+    },
+    {
+      "name": "Round: the trough",
+      "x": 4.8,
+      "z": -2.6
+    },
+    {
+      "name": "Round: the inn yard",
+      "x": -4.4,
+      "z": -3.6
+    },
+    {
+      "name": "Round: the milestone",
+      "x": -13.6,
+      "z": 3.4
+    },
+    {
+      "name": "Round: the road east",
+      "x": 20,
+      "z": 1.4
+    }
+  ],
+  "start": [
+    -25.6,
+    1.8
+  ],
+  "exits": [
+    {
+      "rect": [
+        -28.4,
+        -0.8,
+        -27.4,
+        4.6
+      ],
+      "to": "alder-hollow",
+      "at": [
+        -1.0,
+        10.4
+      ],
+      "dir": 4
+    },
+    {
+      "rect": [
+        27.4,
+        -2.2,
+        28.4,
+        2.6
+      ],
+      "to": "coopers-ford",
+      "at": [
+        -21.6,
+        0.6
+      ],
+      "dir": 6
+    }
+  ]
+}

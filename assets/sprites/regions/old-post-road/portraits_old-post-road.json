@@ -1,0 +1,142 @@
+{
+ "image": "portraits_old-post-road.png",
+ "emissive": "portraits_old-post-road_emissive.png",
+ "size": [
+  456,
+  196
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "portrait_asa_kimball_neutral": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asa_kimball_smile": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_dorcas_brigham_neutral": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_dorcas_brigham_smile": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_gideon_strand_neutral": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_gideon_strand_smile": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hosea_lamb_neutral": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hosea_lamb_smile": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lavinia_dunn_neutral": {
+   "x": 66,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lavinia_dunn_smile": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lem_cooper_neutral": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lem_cooper_smile": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_reuben_cooper_neutral": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_reuben_cooper_smile": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_toby_fisk_neutral": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_toby_fisk_smile": {
+   "x": 66,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  }
+ },
+ "tiles": {}
+}

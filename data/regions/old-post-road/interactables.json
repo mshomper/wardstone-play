@@ -1,0 +1,17 @@
+{
+  "interactables": [
+    { "id": "door_old_post_road_half_way_house", "kind": "door", "label": "Half-Way House", "to": "old-post-road-half-way-house", "dir": 4, "places": [{ "area": "old-post-road", "building": 0 }] },
+    { "id": "door_coopers_ford_cooper_s_shop", "kind": "door", "label": "Cooper's shop", "to": "coopers-ford-cooper-s-shop", "dir": 4, "places": [{ "area": "coopers-ford", "building": 0 }] },
+    { "id": "door_sawyers_clearing_bunk_shanty", "kind": "door", "label": "Bunk shanty", "to": "sawyers-clearing-bunk-shanty", "dir": 4, "places": [{ "area": "sawyers-clearing", "building": 0 }] },
+    {"id": "road_milestone", "kind": "use", "label": "Milestone", "dialogue": "road_milestone", "places": [{"area": "old-post-road", "spot": "Milestone"}]},
+    {"id": "tolls_heap", "kind": "use", "label": "The goose's takings", "once": true, "if": {"flags": ["beat_toll_goose"]}, "dialogue": "tolls_heap", "then": [{"setFlag": "tolls_found"}, {"give": {"brass_button": 1}}], "places": [{"area": "coopers-ford", "spot": "The toll heap"}]},
+    {"id": "camp_sit", "kind": "use", "label": "Sit by the fire", "once": true, "if": {"flags": ["met_jasper_road"], "notFlags": ["rested_camp"]}, "dialogue": "camp_night", "then": [{"sleep": 6.5}, {"setFlag": "rested_camp"}, {"dialogue": "camp_morning"}], "places": [{"area": "sawyers-clearing", "spot": "Jasper's fire"}]},
+    {"id": "camp_hearth", "kind": "hearth", "label": "Jasper's fire", "if": {"flags": ["rested_camp"]}, "places": [{"area": "sawyers-clearing", "spot": "Jasper's fire"}]},
+    {"id": "pine_marks", "kind": "use", "label": "The Warden's pine", "once": true, "if": {"flags": ["pine_asked"]}, "dialogue": "pine_marks", "then": [{"setFlag": "pine_seen"}], "places": [{"area": "sawyers-clearing", "spot": "The Warden's pine"}]},
+    {"id": "lw_rise", "kind": "zone", "radius": 3, "once": true, "if": {"quest": {"id": "long-way-round", "atLeast": "walk-wall"}, "notFlags": ["beat_tumbledown"]}, "dialogue": "wall_rise", "places": [{"area": "long-wall", "spot": "The rise"}]},
+    {"id": "lw_gap", "kind": "zone", "radius": 2, "once": true, "if": {"quest": {"id": "long-way-round", "is": "walk-wall"}}, "dialogue": "wall_gap", "places": [{"area": "long-wall", "spot": "The gap (coming up to it)"}]},
+    {"id": "lw_hands_gap", "kind": "zone", "radius": 2.2, "once": true, "if": {"flags": ["beat_tumbledown"]}, "dialogue": "wall_hands_gap", "then": [{"setFlag": "saw_hands_gap"}], "places": [{"area": "long-wall", "spot": "The hand's gap"}]},
+    {"id": "lw_wardstone", "kind": "use", "label": "Wardstone", "dialogue": "wall_wardstone", "places": [{"area": "long-wall", "spot": "The wardstone"}]},
+    {"id": "lw_mended", "kind": "zone", "radius": 4.5, "once": true, "if": {"flags": ["beat_tumbledown"]}, "dialogue": "gap_mended", "places": [{"area": "long-wall", "spot": "The gap (coming up to it)"}]}
+  ]
+}

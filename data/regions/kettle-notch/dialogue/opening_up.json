@@ -1,0 +1,838 @@
+{
+ "_note": "People opening up (decision 0155). Each line plays once, when its condition in people.json holds. Stories behind them: docs/regions/kettle-notch.md.",
+ "conversations": [
+  {
+   "id": "open_j1",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "You check the weight twice. Your kind always did."
+    },
+    {
+     "who": "eldwin",
+     "text": "My kind?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Old men. What did you think I meant?"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J1"
+    }
+   ]
+  },
+  {
+   "id": "open_j2",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Hester Quimby tell you I owe her for a coat?"
+    },
+    {
+     "who": "eldwin",
+     "text": "She mentioned it."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "I've paid for that coat three times. She keeps sending it back."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J2"
+    }
+   ]
+  },
+  {
+   "id": "open_j3",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "That wall of yours is running up quite a bill."
+    },
+    {
+     "who": "eldwin",
+     "text": "What bill?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Figure of speech. Are you buying that or just holding it?"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J3"
+    }
+   ]
+  },
+  {
+   "id": "open_j4",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "You've ink on your cuff."
+    },
+    {
+     "text": "Eldwin looks. There is nothing on his cuff."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "My mistake. Light's poor back here."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J4"
+    }
+   ]
+  },
+  {
+   "id": "open_j5",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "That beetle still at it?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Every time I look."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Good. I'd hate to have to do it myself."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J5"
+    }
+   ]
+  },
+  {
+   "id": "open_j6",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "You've traded with me long enough that I ought to warn you about me."
+    },
+    {
+     "who": "eldwin",
+     "text": "Go on, then."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "That was it. That was the warning."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:J6"
+    }
+   ]
+  },
+  {
+   "id": "open_th1",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "You're by here more than you used to be. Knees or conscience?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Both, I should think."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TH1"
+    }
+   ]
+  },
+  {
+   "id": "open_th2",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "Ruth liked this spot. Had me sit here with her every evening for thirty-one years. I never cared for it."
+    },
+    {
+     "who": "eldwin",
+     "text": "And now?"
+    },
+    {
+     "who": "thaddeus",
+     "text": "Now I've got the habit. Don't make anything of it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TH2"
+    }
+   ]
+  },
+  {
+   "id": "open_th3",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "My father said there was a warden before you. Went up the mountain one winter and the frost stopped coming down."
+    },
+    {
+     "who": "eldwin",
+     "text": "Did he say that."
+    },
+    {
+     "who": "thaddeus",
+     "text": "Nobody thought to ask after him till spring. You'd think we'd have asked."
+    },
+    {
+     "who": "eldwin",
+     "text": "He wouldn't have wanted the fuss."
+    },
+    {
+     "who": "thaddeus",
+     "text": "Knew him, did you?"
+    },
+    {
+     "text": "Eldwin looks up at the wall for a while, and doesn't answer."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TH3"
+    }
+   ]
+  },
+  {
+   "id": "open_th4",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "Forty years I've watched you go up that road. You've looked the same the whole time, near enough."
+    },
+    {
+     "who": "eldwin",
+     "text": "It's the beard."
+    },
+    {
+     "who": "thaddeus",
+     "text": "It is not the beard."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TH4"
+    }
+   ]
+  },
+  {
+   "id": "open_a1",
+   "lines": [
+    {
+     "who": "ada",
+     "text": "Have you eaten? Don't answer. You've got the look of a man about to lie to me."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:A1"
+    }
+   ]
+  },
+  {
+   "id": "open_a2",
+   "lines": [
+    {
+     "who": "ada",
+     "text": "Twenty autumns I've told you that step wants mending. You'll be dead before you see to it."
+    },
+    {
+     "who": "eldwin",
+     "text": "Very likely."
+    },
+    {
+     "who": "ada",
+     "text": "Well, don't be. Who would I shout at?"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:A2"
+    }
+   ]
+  },
+  {
+   "id": "open_a3",
+   "lines": [
+    {
+     "who": "ada",
+     "text": "Silas says your lamp was lit till morning."
+    },
+    {
+     "who": "ada",
+     "text": "You'd tell me, wouldn't you? If it was the sort of thing a person ought to be told."
+    },
+    {
+     "who": "eldwin",
+     "text": "You'd be the first, Ada."
+    },
+    {
+     "text": "She looks at him a moment longer than she needs to. Then she goes back to the pies."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:A3"
+    }
+   ]
+  },
+  {
+   "id": "open_a4",
+   "lines": [
+    {
+     "who": "ada",
+     "text": "He sits at the top of your stairs when you're up at the walls. Won't eat till you're back. Then he eats everything."
+    },
+    {
+     "who": "eldwin",
+     "text": "He's a cat, Ada."
+    },
+    {
+     "who": "ada",
+     "text": "I know what he is. I'm telling you what he does."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:A4"
+    }
+   ]
+  },
+  {
+   "id": "open_s1",
+   "lines": [
+    {
+     "who": "silas",
+     "text": "Ada's crust is too thick. You can tell her I said so."
+    },
+    {
+     "who": "silas",
+     "text": "No. Don't."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:S1"
+    }
+   ]
+  },
+  {
+   "id": "open_s2",
+   "lines": [
+    {
+     "who": "silas",
+     "text": "Asked her once, you know. Nineteen years back. She said ask again when that press stops leaking."
+    },
+    {
+     "who": "eldwin",
+     "text": "It's running sweet as June."
+    },
+    {
+     "who": "silas",
+     "text": "I know it is. I've been meaning to loosen something."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:S2"
+    }
+   ]
+  },
+  {
+   "id": "open_s3",
+   "lines": [
+    {
+     "who": "silas",
+     "text": "Went over there this morning. Had the whole thing worked out."
+    },
+    {
+     "who": "eldwin",
+     "text": "And?"
+    },
+    {
+     "who": "silas",
+     "text": "I've got a lot of pie."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:S3"
+    }
+   ]
+  },
+  {
+   "id": "open_ab1",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "My mother played \"Soldier's Joy\" at her own wedding. Said it beat listening to my father."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AB1"
+    }
+   ]
+  },
+  {
+   "id": "open_ab2",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "I go up and play to the wall some mornings. Don't tell the minister."
+    },
+    {
+     "who": "abigail",
+     "text": "It doesn't clap. It doesn't ask for \"Soldier's Joy\", either."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AB2"
+    }
+   ]
+  },
+  {
+   "id": "open_ab3",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "That tune from the wall won't finish. Gets near the end and I can't find how it goes."
+    },
+    {
+     "text": "Eldwin hums four notes."
+    },
+    {
+     "who": "abigail",
+     "text": "That's it. That's how it goes. I haven't played that for a soul. Where did you hear it?"
+    },
+    {
+     "who": "eldwin",
+     "text": "It's an old tune, Abigail."
+    },
+    {
+     "text": "She looks up toward the wall, and doesn't ask him anything else."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AB3"
+    }
+   ]
+  },
+  {
+   "id": "open_ab4",
+   "lines": [
+    {
+     "who": "abigail",
+     "text": "That long boy brings Lydia apples now. He brings them to my door and stands there holding them."
+    },
+    {
+     "who": "abigail",
+     "text": "I've started taking them. We can't have him standing there all winter."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AB4"
+    }
+   ]
+  },
+  {
+   "id": "open_tl1",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "She slept on my feet last night. I couldn't feel them, and I didn't move."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TL1"
+    }
+   ]
+  },
+  {
+   "id": "open_tl2",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "I asked Mama how long geese live. She said long enough. That's what she said about Grandpa."
+    },
+    {
+     "who": "eldwin",
+     "text": "Mrs. Applegate strikes me as someone who will decide that for herself."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TL2"
+    }
+   ]
+  },
+  {
+   "id": "open_tl3",
+   "lines": [
+    {
+     "who": "tilly",
+     "text": "Mrs. Applegate laid an egg. I'm not allowed to say where."
+    },
+    {
+     "who": "eldwin",
+     "text": "I shan't ask."
+    },
+    {
+     "who": "tilly",
+     "text": "It was in the minister's hat."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TL3"
+    }
+   ]
+  },
+  {
+   "id": "open_am1",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "Between ourselves, Eldwin, I have been giving the same sermon for nineteen years. I move the harvest about."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AM1"
+    }
+   ]
+  },
+  {
+   "id": "open_am2",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "I have forgiven the goose. I told her so. She bit me again, so we will need to go over it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AM2"
+    }
+   ]
+  },
+  {
+   "id": "open_am3",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "The man before me left the sermon book and one note. 'Give thanks for the autumn and do not ask.' I took it for a joke."
+    },
+    {
+     "who": "eldwin",
+     "text": "Did you ask?"
+    },
+    {
+     "who": "amsden",
+     "text": "Who would I ask?"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AM3"
+    }
+   ]
+  },
+  {
+   "id": "open_mc1",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "My mother stitched that little wizard in the corner. I've mended him twice. He's worn better than you."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:MC1"
+    }
+   ]
+  },
+  {
+   "id": "open_mc2",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "That brown square was Amos Tuttle's boy's. Every year Amos gives it and says nothing, and I sew it in and say nothing."
+    },
+    {
+     "who": "eldwin",
+     "text": "You do have a long memory, Martha."
+    },
+    {
+     "who": "townsfolk1",
+     "text": "That's what the needle's for."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:MC2"
+    }
+   ]
+  },
+  {
+   "id": "open_at1",
+   "lines": [
+    {
+     "who": "townsfolk2",
+     "text": "Still wrong. I keep meaning to fix it. It's a comfort, having an hour nobody else has got."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AT1"
+    }
+   ]
+  },
+  {
+   "id": "open_at2",
+   "lines": [
+    {
+     "who": "townsfolk2",
+     "text": "My boy used to wind it. Stood on a chair to reach."
+    },
+    {
+     "who": "eldwin",
+     "text": "I remember. He had a good hand."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "He did, didn't he."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AT2"
+    }
+   ]
+  },
+  {
+   "id": "open_jr1",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "Granddad said he set every stone from the church to the mill. You've seen the walls. Would you say he was lying?"
+    },
+    {
+     "who": "eldwin",
+     "text": "I'd say he set a good many."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JR1"
+    }
+   ]
+  },
+  {
+   "id": "open_jr2",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "That flask I gave you's got a bend in it. Forty years on his hip. You can't drink from it without leaning."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JR2"
+    }
+   ]
+  },
+  {
+   "id": "open_cs1",
+   "lines": [
+    {
+     "who": "caleb",
+     "text": "I can't write to her now. She reads them for spelling."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:CS1"
+    }
+   ]
+  },
+  {
+   "id": "open_cs2",
+   "lines": [
+    {
+     "who": "caleb",
+     "text": "We danced. I counted out loud. She said she liked it. I don't think she did. I think she likes me anyway. Is that allowed?"
+    },
+    {
+     "who": "eldwin",
+     "text": "It's the usual arrangement."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:CS2"
+    }
+   ]
+  },
+  {
+   "id": "open_nt1",
+   "lines": [
+    {
+     "who": "nell",
+     "text": "Pa asked if I'd seen his coat. I said no. It was standing right behind him."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:NT1"
+    }
+   ]
+  },
+  {
+   "id": "open_nt2",
+   "lines": [
+    {
+     "who": "nell",
+     "text": "Somebody's moved my scarecrow over by the wall. I asked Pa. I asked Caleb."
+    },
+    {
+     "who": "nell",
+     "text": "I don't like asking people things."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:NT2"
+    }
+   ]
+  },
+  {
+   "id": "open_of1",
+   "lines": [
+    {
+     "who": "obadiah",
+     "text": "Deacon came second in the pull. There were two oxen. He doesn't know. I'd thank you not to say."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:OF1"
+    }
+   ]
+  },
+  {
+   "id": "open_of2",
+   "lines": [
+    {
+     "who": "obadiah",
+     "text": "He'll be done in a year or two. I've been thinking what I'd say to him."
+    },
+    {
+     "who": "obadiah",
+     "text": "Haven't got anything. We never needed it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:OF2"
+    }
+   ]
+  },
+  {
+   "id": "open_wr1",
+   "lines": [
+    {
+     "who": "wren",
+     "text": "Mister Rook says you're older than the church."
+    },
+    {
+     "who": "eldwin",
+     "text": "Mister Rook says a great many things."
+    },
+    {
+     "who": "wren",
+     "text": "That's not no."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:WR1"
+    }
+   ]
+  },
+  {
+   "id": "open_wr2",
+   "lines": [
+    {
+     "who": "wren",
+     "text": "Mama says I can go past the bridge when I'm bigger. How big were you?"
+    },
+    {
+     "who": "eldwin",
+     "text": "About your size, I should think. I went anyway."
+    },
+    {
+     "who": "wren",
+     "text": "I'm not telling her you said that."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:WR2"
+    }
+   ]
+  },
+  {
+   "id": "open_pd1",
+   "lines": [
+    {
+     "who": "pip",
+     "text": "I know two notes now. One's an accident."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:PD1"
+    }
+   ]
+  },
+  {
+   "id": "open_hq1",
+   "lines": [
+    {
+     "who": "hester",
+     "text": "He tell you he paid for that coat?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Three times, he says."
+    },
+    {
+     "who": "hester",
+     "text": "Three times, yes. Three different things, and none of them his to give."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:HQ1"
+    }
+   ]
+  }
+ ]
+}

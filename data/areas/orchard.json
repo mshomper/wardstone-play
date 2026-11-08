@@ -501,7 +501,10 @@
       "radius": 1
     }
   ],
-  "spots": [{"name": "Mrs. Applegate (windfalls)", "x": -6.4, "z": 6.0, "note": "The goose among the windfalls."}, 
+  "spots": [
+   {"name": "Round: windfalls east", "x": -2.2, "z": 4.4, "note": "A stop on someone's rounds."},
+   {"name": "Round: under the trees", "x": -4.8, "z": 3.0, "note": "A stop on someone's rounds."},
+   {"name": "Round: orchard road", "x": -0.6, "z": 1.2, "note": "A stop on someone's rounds."},{"name": "Mrs. Applegate (windfalls)", "x": -6.4, "z": 6.0, "note": "The goose among the windfalls."}, 
     {
       "name": "Wren's mitten",
       "x": -3.6,

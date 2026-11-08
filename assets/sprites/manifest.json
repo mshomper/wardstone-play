@@ -8,8 +8,8 @@
       "image": "wizard_iso.png",
       "emissive": "wizard_iso_emissive.png",
       "size": [
-        457,
-        4417
+        1996,
+        829
       ],
       "anims": 64,
       "sprites": 0,
@@ -21,8 +21,8 @@
       "image": "wizard_side.png",
       "emissive": "wizard_side_emissive.png",
       "size": [
-        891,
-        1191
+        2048,
+        341
       ],
       "anims": 14,
       "sprites": 0,
@@ -34,8 +34,8 @@
       "image": "npc_jasper_crane.png",
       "emissive": "npc_jasper_crane_emissive.png",
       "size": [
-        343,
-        1657
+        1996,
+        277
       ],
       "anims": 24,
       "sprites": 0,
@@ -48,8 +48,8 @@
       "image": "obed_iso.png",
       "emissive": "obed_iso_emissive.png",
       "size": [
-        457,
-        3313
+        1996,
+        622
       ],
       "anims": 48,
       "sprites": 0,
@@ -61,140 +61,10 @@
       "image": "obed_side.png",
       "emissive": "obed_side_emissive.png",
       "size": [
-        891,
-        2003
+        2048,
+        547
       ],
       "anims": 22,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "burrback_iso",
-      "json": "burrback_iso.json",
-      "image": "burrback_iso.png",
-      "emissive": "burrback_iso_emissive.png",
-      "size": [
-        165,
-        297
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "burrback_side",
-      "json": "burrback_side.json",
-      "image": "burrback_side.png",
-      "emissive": "burrback_side_emissive.png",
-      "size": [
-        512,
-        206
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "chickaree_iso",
-      "json": "chickaree_iso.json",
-      "image": "chickaree_iso.png",
-      "emissive": "chickaree_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "chickaree_side",
-      "json": "chickaree_side.json",
-      "image": "chickaree_side.png",
-      "emissive": "chickaree_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "cordling_iso",
-      "json": "cordling_iso.json",
-      "image": "cordling_iso.png",
-      "emissive": "cordling_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "cordling_side",
-      "json": "cordling_side.json",
-      "image": "cordling_side.png",
-      "emissive": "cordling_side_emissive.png",
-      "size": [
-        680,
-        415
-      ],
-      "anims": 6,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "effigy_iso",
-      "json": "effigy_iso.json",
-      "image": "effigy_iso.png",
-      "emissive": "effigy_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "effigy_side",
-      "json": "effigy_side.json",
-      "image": "effigy_side.png",
-      "emissive": "effigy_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "footstone_iso",
-      "json": "footstone_iso.json",
-      "image": "footstone_iso.png",
-      "emissive": "footstone_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "footstone_side",
-      "json": "footstone_side.json",
-      "image": "footstone_side.png",
-      "emissive": "footstone_side_emissive.png",
-      "size": [
-        680,
-        415
-      ],
-      "anims": 6,
       "sprites": 0,
       "tiles": 0
     },
@@ -204,8 +74,8 @@
       "image": "hushwing_iso.png",
       "emissive": "hushwing_iso_emissive.png",
       "size": [
-        277,
-        457
+        553,
+        58
       ],
       "anims": 8,
       "sprites": 0,
@@ -217,166 +87,36 @@
       "image": "hushwing_side.png",
       "emissive": "hushwing_side_emissive.png",
       "size": [
-        680,
-        346
+        2038,
+        139
       ],
       "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
     {
-      "name": "latchpaw_iso",
-      "json": "latchpaw_iso.json",
-      "image": "latchpaw_iso.png",
-      "emissive": "latchpaw_iso_emissive.png",
+      "name": "mrs_applegate_iso",
+      "json": "mrs_applegate_iso.json",
+      "image": "mrs_applegate_iso.png",
+      "emissive": "mrs_applegate_iso_emissive.png",
       "size": [
-        261,
-        425
+        785,
+        44
       ],
-      "anims": 8,
+      "anims": 16,
       "sprites": 0,
       "tiles": 0
     },
     {
-      "name": "latchpaw_side",
-      "json": "latchpaw_side.json",
-      "image": "latchpaw_side.png",
-      "emissive": "latchpaw_side_emissive.png",
+      "name": "mrs_applegate_side",
+      "json": "mrs_applegate_side.json",
+      "image": "mrs_applegate_side.png",
+      "emissive": "mrs_applegate_side_emissive.png",
       "size": [
-        596,
-        306
+        1989,
+        142
       ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "ledger_iso",
-      "json": "ledger_iso.json",
-      "image": "ledger_iso.png",
-      "emissive": "ledger_iso_emissive.png",
-      "size": [
-        70,
-        329
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "ledger_side",
-      "json": "ledger_side.json",
-      "image": "ledger_side.png",
-      "emissive": "ledger_side_emissive.png",
-      "size": [
-        764,
-        1471
-      ],
-      "anims": 14,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "oldbucket_iso",
-      "json": "oldbucket_iso.json",
-      "image": "oldbucket_iso.png",
-      "emissive": "oldbucket_iso_emissive.png",
-      "size": [
-        469,
-        681
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "oldbucket_side",
-      "json": "oldbucket_side.json",
-      "image": "oldbucket_side.png",
-      "emissive": "oldbucket_side_emissive.png",
-      "size": [
-        960,
-        373
-      ],
-      "anims": 4,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "oldbucket_off_side",
-      "json": "oldbucket_off_side.json",
-      "image": "oldbucket_off_side.png",
-      "emissive": "oldbucket_off_side_emissive.png",
-      "size": [
-        960,
-        373
-      ],
-      "anims": 4,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "rimeling_iso",
-      "json": "rimeling_iso.json",
-      "image": "rimeling_iso.png",
-      "emissive": "rimeling_iso_emissive.png",
-      "size": [
-        213,
-        329
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "rimeling_side",
-      "json": "rimeling_side.json",
-      "image": "rimeling_side.png",
-      "emissive": "rimeling_side_emissive.png",
-      "size": [
-        391,
-        246
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "sexton_side",
-      "json": "sexton_side.json",
-      "image": "sexton_side.png",
-      "emissive": "sexton_side_emissive.png",
-      "size": [
-        876,
-        511
-      ],
-      "anims": 6,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "sextonling_iso",
-      "json": "sextonling_iso.json",
-      "image": "sextonling_iso.png",
-      "emissive": "sextonling_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "sextonling_side",
-      "json": "sextonling_side.json",
-      "image": "sextonling_side.png",
-      "emissive": "sextonling_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
+      "anims": 13,
       "sprites": 0,
       "tiles": 0
     },
@@ -386,8 +126,8 @@
       "image": "shade_wolf_iso.png",
       "emissive": "shade_wolf_iso_emissive.png",
       "size": [
-        439,
-        1561
+        2045,
+        326
       ],
       "anims": 24,
       "sprites": 0,
@@ -399,114 +139,10 @@
       "image": "shade_wolf.png",
       "emissive": "shade_wolf_emissive.png",
       "size": [
-        568,
-        343
+        2026,
+        115
       ],
       "anims": 6,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "snickerkit_iso",
-      "json": "snickerkit_iso.json",
-      "image": "snickerkit_iso.png",
-      "emissive": "snickerkit_iso_emissive.png",
-      "size": [
-        261,
-        425
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "snickerkit_side",
-      "json": "snickerkit_side.json",
-      "image": "snickerkit_side.png",
-      "emissive": "snickerkit_side_emissive.png",
-      "size": [
-        596,
-        306
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "sugarling_iso",
-      "json": "sugarling_iso.json",
-      "image": "sugarling_iso.png",
-      "emissive": "sugarling_iso_emissive.png",
-      "size": [
-        213,
-        329
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "sugarling_side",
-      "json": "sugarling_side.json",
-      "image": "sugarling_side.png",
-      "emissive": "sugarling_side_emissive.png",
-      "size": [
-        391,
-        246
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tallowlight_iso",
-      "json": "tallowlight_iso.json",
-      "image": "tallowlight_iso.png",
-      "emissive": "tallowlight_iso_emissive.png",
-      "size": [
-        213,
-        329
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tallowlight_side",
-      "json": "tallowlight_side.json",
-      "image": "tallowlight_side.png",
-      "emissive": "tallowlight_side_emissive.png",
-      "size": [
-        391,
-        246
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tapbeak_iso",
-      "json": "tapbeak_iso.json",
-      "image": "tapbeak_iso.png",
-      "emissive": "tapbeak_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tapbeak_side",
-      "json": "tapbeak_side.json",
-      "image": "tapbeak_side.png",
-      "emissive": "tapbeak_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -516,62 +152,10 @@
       "image": "thayer_wall_side.png",
       "emissive": "thayer_wall_side_emissive.png",
       "size": [
-        680,
-        220
+        1068,
+        74
       ],
       "anims": 3,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tipplewasp_iso",
-      "json": "tipplewasp_iso.json",
-      "image": "tipplewasp_iso.png",
-      "emissive": "tipplewasp_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "tipplewasp_side",
-      "json": "tipplewasp_side.json",
-      "image": "tipplewasp_side.png",
-      "emissive": "tipplewasp_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "whippoorwill_iso",
-      "json": "whippoorwill_iso.json",
-      "image": "whippoorwill_iso.png",
-      "emissive": "whippoorwill_iso_emissive.png",
-      "size": [
-        277,
-        457
-      ],
-      "anims": 8,
-      "sprites": 0,
-      "tiles": 0
-    },
-    {
-      "name": "whippoorwill_side",
-      "json": "whippoorwill_side.json",
-      "image": "whippoorwill_side.png",
-      "emissive": "whippoorwill_side_emissive.png",
-      "size": [
-        680,
-        346
-      ],
-      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -730,6 +314,19 @@
       "anims": 0,
       "sprites": 21,
       "tiles": 11
+    },
+    {
+      "name": "road_kit",
+      "json": "road_kit.json",
+      "image": "road_kit.png",
+      "emissive": "road_kit_emissive.png",
+      "size": [
+        117,
+        56
+      ],
+      "anims": 0,
+      "sprites": 2,
+      "tiles": 0
     }
   ],
   "people": [
@@ -738,8 +335,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_abigail_ness.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -747,8 +344,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_ada.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -756,8 +353,17 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_amos_tuttle.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_asa_kimball_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_asa_kimball.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -765,8 +371,26 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_caleb_stroud.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_dorcas_brigham_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_dorcas_brigham.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_gideon_strand_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_gideon_strand.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -774,8 +398,17 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_hester_quimby.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_hosea_lamb_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_hosea_lamb.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -783,8 +416,26 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_jonah_reed.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_lavinia_dunn_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_lavinia_dunn.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_lem_cooper_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_lem_cooper.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -792,8 +443,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_martha_combs.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -801,8 +452,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_nell_tibbetts.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -810,8 +461,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_obadiah_fenn.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -819,8 +470,17 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_pip_danforth.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_reuben_cooper_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_reuben_cooper.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -828,8 +488,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_rev_josiah_amsden.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -837,8 +497,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_silas.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -846,8 +506,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_thaddeus_rook.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -855,8 +515,17 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_tilly_marsh.json",
       "size": [
-        343,
-        1657
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_toby_fisk_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/npc_toby_fisk.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -864,8 +533,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_wren.json",
       "size": [
-        343,
-        1657
+        970,
+        484
       ]
     },
     {
@@ -873,8 +542,8 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/biscuit_iso.json",
       "size": [
-        247,
-        529
+        821,
+        34
       ]
     },
     {
@@ -882,17 +551,62 @@
       "region": "kettle-notch",
       "json": "regions/kettle-notch/deacon_iso.json",
       "size": [
-        389,
-        1169
+        1011,
+        131
       ]
     },
     {
-      "sprite": "mrs_applegate_iso",
-      "region": "kettle-notch",
-      "json": "regions/kettle-notch/mrs_applegate_iso.json",
+      "sprite": "ewe_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/ewe_iso.json",
       "size": [
-        181,
-        721
+        687,
+        31
+      ]
+    },
+    {
+      "sprite": "gyp_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/gyp_iso.json",
+      "size": [
+        785,
+        33
+      ]
+    },
+    {
+      "sprite": "patience_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/patience_iso.json",
+      "size": [
+        1002,
+        119
+      ]
+    },
+    {
+      "sprite": "sheep_black_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/sheep_black_iso.json",
+      "size": [
+        687,
+        31
+      ]
+    },
+    {
+      "sprite": "sheep_grey_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/sheep_grey_iso.json",
+      "size": [
+        687,
+        31
+      ]
+    },
+    {
+      "sprite": "sheep_white_iso",
+      "region": "old-post-road",
+      "json": "regions/old-post-road/sheep_white_iso.json",
+      "size": [
+        687,
+        31
       ]
     }
   ],
@@ -904,7 +618,760 @@
         456,
         326
       ]
+    },
+    {
+      "region": "old-post-road",
+      "json": "regions/old-post-road/portraits_old-post-road.json",
+      "size": [
+        456,
+        196
+      ]
     }
   ],
-  "bandHeight": 3316
+  "creatures": [
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "alder-hollow",
+        "brook-woods",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/burrback_iso.json",
+      "size": [
+        944,
+        38
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "alder-hollow",
+        "brook-woods",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/burrback_side.json",
+      "size": [
+        950,
+        83
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/chickaree_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/chickaree_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/cordling_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/cordling_side.json",
+      "size": [
+        971,
+        139
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "green-frame",
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/effigy_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "green-frame",
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/effigy_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/footstone_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/footstone_side.json",
+      "size": [
+        971,
+        139
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/foreman_iso.json",
+      "size": [
+        918,
+        183
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/foreman_side.json",
+      "size": [
+        907,
+        506
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/frostheave_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/frostheave_side.json",
+      "size": [
+        971,
+        139
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "old-post-road",
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/gleaner_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "old-post-road",
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/gleaner_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/gnawling_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/gnawling_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/hoarling_iso.json",
+      "size": [
+        1002,
+        184
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/hoarling_side.json",
+      "size": [
+        931,
+        214
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "alder-hollow",
+        "old-burying-ground",
+        "south-fields",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/latchpaw_iso.json",
+      "size": [
+        521,
+        54
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "alder-hollow",
+        "old-burying-ground",
+        "south-fields",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/latchpaw_side.json",
+      "size": [
+        936,
+        184
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/ledger_iso.json",
+      "size": [
+        139,
+        42
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/ledger_side.json",
+      "size": [
+        982,
+        421
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/oldbucket_iso.json",
+      "size": [
+        889,
+        56
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/oldbucket_side.json",
+      "size": [
+        904,
+        172
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/oldbucket_off_side.json",
+      "size": [
+        904,
+        172
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/quillpig_iso.json",
+      "size": [
+        689,
+        24
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "sawyers-clearing"
+      ],
+      "json": "regions/old-post-road/quillpig_side.json",
+      "size": [
+        977,
+        55
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "brook-woods",
+        "old-burying-ground",
+        "old-lane",
+        "orchard",
+        "south-fields"
+      ],
+      "json": "regions/kettle-notch/rimeling_iso.json",
+      "size": [
+        1008,
+        83
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "brook-woods",
+        "old-burying-ground",
+        "old-lane",
+        "orchard",
+        "south-fields"
+      ],
+      "json": "regions/kettle-notch/rimeling_side.json",
+      "size": [
+        976,
+        99
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/sexton_side.json",
+      "size": [
+        1001,
+        341
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/sextonling_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/sextonling_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/snapjaw_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/snapjaw_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "south-fields",
+        "sugar-lane",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/snickerkit_iso.json",
+      "size": [
+        521,
+        54
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "south-fields",
+        "sugar-lane",
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/snickerkit_side.json",
+      "size": [
+        936,
+        184
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/staveling_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/staveling_side.json",
+      "size": [
+        971,
+        139
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/stilt_iso.json",
+      "size": [
+        585,
+        70
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/stilt_side.json",
+      "size": [
+        946,
+        232
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/sugarling_iso.json",
+      "size": [
+        1008,
+        83
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/sugarling_side.json",
+      "size": [
+        976,
+        99
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/tallowlight_iso.json",
+      "size": [
+        1008,
+        83
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/tallowlight_side.json",
+      "size": [
+        976,
+        99
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/tapbeak_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/tapbeak_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/tipplewasp_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "sugarbush"
+      ],
+      "json": "regions/kettle-notch/tipplewasp_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/tollgoose_iso.json",
+      "size": [
+        977,
+        64
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/tollgoose_side.json",
+      "size": [
+        980,
+        326
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/tollgoose_bare_side.json",
+      "size": [
+        980,
+        196
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "coopers-ford"
+      ],
+      "json": "regions/old-post-road/tollgoose_hat_side.json",
+      "size": [
+        34,
+        22
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/tumbledown_iso.json",
+      "size": [
+        851,
+        94
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/tumbledown_side.json",
+      "size": [
+        904,
+        486
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/tumbledown_1_side.json",
+      "size": [
+        904,
+        389
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/tumbledown_2_side.json",
+      "size": [
+        904,
+        389
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/tumbledown_3_side.json",
+      "size": [
+        904,
+        389
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/whippoorwill_iso.json",
+      "size": [
+        415,
+        58
+      ]
+    },
+    {
+      "region": "kettle-notch",
+      "areas": [
+        "old-burying-ground"
+      ],
+      "json": "regions/kettle-notch/whippoorwill_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall",
+        "old-post-road"
+      ],
+      "json": "regions/old-post-road/whistlepig_iso.json",
+      "size": [
+        553,
+        58
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall",
+        "old-post-road"
+      ],
+      "json": "regions/old-post-road/whistlepig_side.json",
+      "size": [
+        971,
+        208
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/whitecoat_iso.json",
+      "size": [
+        421,
+        33
+      ]
+    },
+    {
+      "region": "old-post-road",
+      "areas": [
+        "long-wall"
+      ],
+      "json": "regions/old-post-road/whitecoat_side.json",
+      "size": [
+        919,
+        36
+      ]
+    }
+  ],
+  "bandHeight": 2674
 }

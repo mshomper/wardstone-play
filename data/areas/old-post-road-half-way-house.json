@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "name": "old-post-road-half-way-house",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [
+    {
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "to": "old-post-road",
+      "at": [
+        -2,
+        -4.8
+      ],
+      "dir": 0
+    }
+  ],
+  "interior": {
+    "town": "old-post-road",
+    "building": 0,
+    "storey": 0,
+    "scale": 1.6,
+    "generated": true,
+    "lootMax": 2,
+    "source": {
+      "recipe": "colonial",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -4.5,
+              -2.5
+            ],
+            [
+              4.5,
+              -2.5
+            ],
+            [
+              4.5,
+              2.5
+            ],
+            [
+              -4.5,
+              2.5
+            ]
+          ],
+          "storeys": 2
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "up": "old-post-road-half-way-house-upper"
+  }
+}

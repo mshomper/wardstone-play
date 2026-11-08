@@ -1439,7 +1439,7 @@
       ]
     },
     "chest": {
-      "label": "Chest",
+      "label": "Chest", "sound": "chest_open",
       "chance": 0.3,
       "finds": [
         {
@@ -1519,7 +1519,7 @@
       ]
     },
     "crate": {
-      "label": "Crate",
+      "label": "Crate", "sound": "crate_open",
       "openProp": {
         "crate_lid": "crate_lid_open"
       },
@@ -1602,7 +1602,7 @@
       ]
     },
     "coffer": {
-      "label": "Coffer",
+      "label": "Coffer", "sound": "chest_open",
       "chance": 0.8,
       "finds": [
         {

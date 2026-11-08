@@ -25,7 +25,7 @@
     "frost": {
       "color": [0.55, 0.88, 1], "accent": [0.85, 0.95, 1],
       "light": { "intensity": 2.6, "radius": 2.6 },
-      "sfx": { "charge": "crackle", "release": "whoosh", "impact": "crackle" },
+      "sfx": { "charge": "ice", "release": "whoosh", "impact": "ice" },
       "gather": [{ "n": 12, "kind": 4, "life": [0.25, 0.4], "size": [0.03, 0.05], "color": [1.6, 2.3, 2.8, 1] }],
       "trail": [
         { "n": 2, "kind": 0, "spread": [0.05, 0.05, 0.05], "speed": [0.05, 0.25], "drag": 2, "life": [0.14, 0.3], "size": [0.08, 0.16], "sizeEnd": 0.3, "color": [1.3, 2, 2.4, 0.9], "colorEnd": [0.55, 0.88, 1, 0] },
@@ -91,6 +91,14 @@
   },
   "moves": {
     "attack": { "delivery": "strike", "look": "physical", "pose": "wiz_side_attack", "release": 4 },
+    "honk": { "delivery": "groundBurst", "look": "physical", "pose": "wiz_side_cast", "release": 4 },
+    "wing_buffet": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_stamp", "release": 5 },
+    "goose_chase": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_twoblows", "release": 3 },
+    "nip_awake": { "delivery": "strike", "look": "physical", "pose": "wiz_side_attack", "release": 4 },
+    "pecking_order": { "delivery": "groundBurst", "look": "physical", "pose": "mrs_applegate_side_haulup", "release": 5 },
+    "toll_peck": { "delivery": "strike", "look": "physical", "release": 3 },
+    "wing_clout": { "delivery": "strike", "look": "physical", "pose": "tollgoose_side_wing", "release": 3 },
+    "preen": { "delivery": "strike", "look": "physical", "pose": "tollgoose_side_preen", "release": 6 },
     "glaze": { "delivery": "ribbon", "look": "hearth", "pose": "wiz_side_pour", "release": 3 },
     "bolt": { "delivery": "lance", "look": "arcane", "pose": "wiz_side_cast", "release": 5 },
     "rime": { "delivery": "bolt", "look": "frost", "pose": "wiz_side_cast", "release": 5 },

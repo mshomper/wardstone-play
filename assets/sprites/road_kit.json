@@ -1,0 +1,30 @@
+{
+ "image": "road_kit.png",
+ "emissive": "road_kit_emissive.png",
+ "size": [
+  117,
+  56
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "camp_tent": {
+   "x": 1,
+   "y": 1,
+   "w": 80,
+   "h": 54,
+   "ax": 40,
+   "ay": 52
+  },
+  "campfire": {
+   "x": 82,
+   "y": 1,
+   "w": 34,
+   "h": 32,
+   "ax": 17,
+   "ay": 30
+  }
+ },
+ "tiles": {}
+}

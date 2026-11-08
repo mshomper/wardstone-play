@@ -1,0 +1,1232 @@
+{
+ "version": 1,
+ "id": "burying-ground",
+ "name": "Old Burying Ground",
+ "bpm": 80,
+ "beats": 4,
+ "key": "A minor",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.7,
+   "size": 3,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -5,
+  "echo": {
+   "amount": 0.34,
+   "beats": 1.5,
+   "feedback": 0.42
+  }
+ },
+ "parts": {
+  "lead": {
+   "inst": "triangle"
+  },
+  "far": {
+   "inst": "farflute"
+  }
+ },
+ "patterns": {
+  "bass": {
+   "inst": "bass",
+   "steps": [
+    [
+     "r",
+     0,
+     1.9,
+     0.46
+    ],
+    [
+     "r",
+     2,
+     1.9,
+     0.34
+    ]
+   ]
+  },
+  "bassHold": {
+   "inst": "bass",
+   "steps": [
+    [
+     "r",
+     0,
+     3.6,
+     0.45
+    ]
+   ]
+  },
+  "chords": {
+   "inst": "strings",
+   "voicing": {
+    "range": [
+     65,
+     84
+    ],
+    "n": 3,
+    "rootless": true
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.9
+    ]
+   ]
+  },
+  "backing": {
+   "inst": "pluck",
+   "voicing": {
+    "range": [
+     50,
+     67
+    ],
+    "n": 3
+   },
+   "bars": 2,
+   "steps": [
+    [
+     0,
+     0,
+     1,
+     0.5
+    ],
+    [
+     1,
+     1.5,
+     1,
+     0.36
+    ],
+    [
+     2,
+     3,
+     1,
+     0.34
+    ],
+    [
+     1,
+     5,
+     1,
+     0.34
+    ]
+   ]
+  },
+  "backing2": {
+   "inst": "bell",
+   "voicing": {
+    "range": [
+     52,
+     69
+    ],
+    "n": 3
+   },
+   "bars": 2,
+   "steps": [
+    [
+     0,
+     0,
+     3,
+     0.42
+    ],
+    [
+     1,
+     4,
+     3,
+     0.3
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "intro": {
+   "level": 0.72,
+   "bright": 0.92,
+   "ramp": 2,
+   "patterns": [
+    "chords",
+    "bassHold"
+   ],
+   "bars": [
+    {
+     "c": "Amadd9",
+     "patterns": [
+      "chords"
+     ],
+     "n": {
+      "far": [
+       [
+        69,
+        0,
+        1.5,
+        1
+       ],
+       [
+        67,
+        1.5,
+        0.5,
+        0.92
+       ],
+       [
+        64,
+        2,
+        1,
+        0.94
+       ],
+       [
+        62,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "far": [
+       [
+        64,
+        0,
+        2,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "A": {
+   "level": 0.84,
+   "bright": 1,
+   "ramp": 4,
+   "patterns": [
+    "chords",
+    "bass",
+    "backing2"
+   ],
+   "bars": [
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        3,
+        1
+       ],
+       [
+        69,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        59,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        1
+       ],
+       [
+        67,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        2,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "C": {
+   "level": 0.8,
+   "bright": 0.96,
+   "ramp": 4,
+   "patterns": [
+    "chords",
+    "bassHold",
+    "backing2"
+   ],
+   "bars": [
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        2,
+        1
+       ],
+       [
+        62,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        64,
+        2,
+        2,
+        0.94
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        2,
+        1
+       ],
+       [
+        65,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        1.5,
+        0.88
+       ],
+       [
+        60,
+        1.5,
+        0.5,
+        0.88
+       ],
+       [
+        59,
+        2,
+        1,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Fmaj7",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        2,
+        1
+       ],
+       [
+        62,
+        3,
+        1,
+        0.86
+       ]
+      ],
+      "far": [
+       [
+        69,
+        0,
+        1.5,
+        1
+       ],
+       [
+        67,
+        1.5,
+        0.5,
+        0.92
+       ],
+       [
+        64,
+        2,
+        1,
+        0.94
+       ],
+       [
+        62,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Fmaj7",
+     "n": {
+      "lead": [
+       [
+        60,
+        2,
+        2,
+        0.89
+       ]
+      ],
+      "far": [
+       [
+        64,
+        0,
+        2,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Esus4",
+     "n": {
+      "lead": [
+       [
+        59,
+        0,
+        2,
+        1
+       ],
+       [
+        55,
+        3,
+        1,
+        0.86
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Esus4",
+     "n": {
+      "lead": [
+       [
+        57,
+        0,
+        0.5,
+        0.88
+       ],
+       [
+        59,
+        0.5,
+        0.5,
+        0.88
+       ],
+       [
+        59,
+        1,
+        2,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "A2": {
+   "level": 0.9,
+   "bright": 1.05,
+   "ramp": 4,
+   "patterns": [
+    "chords",
+    "bass",
+    "backing"
+   ],
+   "bars": [
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        3,
+        1
+       ],
+       [
+        69,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        59,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        1
+       ],
+       [
+        67,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        2,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "B": {
+   "level": 1,
+   "bright": 1.18,
+   "ramp": 4,
+   "patterns": [
+    "chords",
+    "bass",
+    "backing"
+   ],
+   "bars": [
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        65,
+        2,
+        2,
+        0.94
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        2,
+        1
+       ],
+       [
+        62,
+        3,
+        1,
+        0.89
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        62,
+        2,
+        2,
+        0.94
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        0.5,
+        0.88
+       ],
+       [
+        65,
+        0.5,
+        0.5,
+        0.88
+       ],
+       [
+        62,
+        1,
+        2,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Fmaj7",
+     "n": {
+      "lead": [
+       [
+        65,
+        2,
+        2,
+        0.94
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Fmaj7",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        2,
+        1
+       ],
+       [
+        62,
+        3,
+        1,
+        0.89
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        67,
+        2,
+        2,
+        0.94
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        3,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "A3": {
+   "level": 0.92,
+   "bright": 1.08,
+   "ramp": 4,
+   "patterns": [
+    "chords",
+    "bass",
+    "backing"
+   ],
+   "bars": [
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        64,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        3,
+        1
+       ],
+       [
+        69,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Dm9",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        0.92
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        59,
+        0,
+        3,
+        1
+       ],
+       [
+        64,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Bm7b5",
+     "n": {
+      "lead": [
+       [
+        65,
+        0,
+        4,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Em7",
+     "n": {
+      "lead": [
+       [
+        62,
+        0,
+        3,
+        1
+       ],
+       [
+        67,
+        3,
+        1,
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "c": "Amadd9",
+     "n": {
+      "lead": [
+       [
+        60,
+        0,
+        2,
+        0.92
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "form": [
+  "intro",
+  "A",
+  "C",
+  "A2",
+  "B",
+  "A3"
+ ],
+ "loopFrom": 1,
+ "drafted": {
+  "place": "burying-ground",
+  "seed": 1002,
+  "note": "A minor, 80 beats a minute, triangle, slow low pluck, motif far off at the opening and halfway through C"
+ },
+ "sounds": {
+  "bass": {
+   "name": "Round sine bass",
+   "layers": [
+    {}
+   ],
+   "env": {
+    "attack": 0.03,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.05
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0.03,
+    "before": 0.25,
+    "after": 0.05
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 400,
+     "q": 1
+    }
+   ],
+   "level": 0.32,
+   "jitter": {
+    "time": 0,
+    "vel": 0
+   },
+   "plainTone": true
+  },
+  "strings": {
+   "name": "Slow strings",
+   "layers": [
+    {
+     "harmonics": [
+      1,
+      0.34,
+      0.2,
+      0.12,
+      0.07,
+      0.04,
+      0.02
+     ],
+     "detune": -7,
+     "gain": 0.7
+    },
+    {
+     "harmonics": [
+      1,
+      0.34,
+      0.2,
+      0.12,
+      0.07,
+      0.04,
+      0.02
+     ],
+     "detune": 6,
+     "gain": 0.7
+    }
+   ],
+   "env": {
+    "attack": 1.3,
+    "decay": 0.6,
+    "sustain": 0.9,
+    "release": 1.5
+   },
+   "filters": [
+    {
+     "type": "highpass",
+     "freq": 340,
+     "q": 0.5
+    },
+    {
+     "type": "lowpass",
+     "freq": 3800,
+     "q": 0.3
+    }
+   ],
+   "vibrato": {
+    "rate": 4.6,
+    "cents": 7,
+    "delay": 0.9,
+    "rise": 1,
+    "minLen": 1.2
+   },
+   "level": 0.058,
+   "pan": -0.12,
+   "send": 0.42,
+   "loose": 0.5
+  },
+  "pluck": {
+   "name": "Soft pluck",
+   "layers": [
+    {
+     "type": "triangle"
+    }
+   ],
+   "env": {
+    "attack": 0.012,
+    "decay": 2,
+    "sustain": 0,
+    "release": 0.05
+   },
+   "curve": {
+    "kind": "fade",
+    "attack": 0.012,
+    "floor": 0.0005,
+    "time": 2
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 1500,
+     "q": 1
+    }
+   ],
+   "level": 0.16,
+   "send": 1,
+   "jitter": {
+    "time": 0.03,
+    "vel": 0.333333
+   },
+   "plainTone": true
+  },
+  "bell": {
+   "name": "Bell",
+   "layers": [
+    {
+     "ratio": 1,
+     "gain": 1,
+     "decay": 2
+    },
+    {
+     "ratio": 2.01,
+     "gain": 0.3,
+     "decay": 0.9
+    },
+    {
+     "ratio": 3.02,
+     "gain": 0.16,
+     "decay": 0.45
+    },
+    {
+     "ratio": 5.04,
+     "gain": 0.06,
+     "decay": 0.16
+    }
+   ],
+   "env": {
+    "attack": 0.003,
+    "decay": 2.2,
+    "sustain": 0,
+    "release": 0.3
+   },
+   "level": 0.13,
+   "pan": 0.22,
+   "send": 0.5,
+   "echo": 0.26
+  },
+  "triangle": {
+   "name": "Soft triangle",
+   "layers": [
+    {
+     "harmonics": [
+      1,
+      0,
+      0.07,
+      0,
+      0.02
+     ]
+    }
+   ],
+   "env": {
+    "attack": 0.07,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.22
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0.07,
+    "before": 0.16,
+    "after": 0.22
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 2200,
+     "q": 1
+    }
+   ],
+   "vibrato": {
+    "rate": 4.6,
+    "cents": 7,
+    "delay": 0,
+    "rise": 0.5,
+    "minLen": 0.9,
+    "firstOnly": false
+   },
+   "level": 0.17,
+   "send": 1,
+   "jitter": {
+    "time": 0.024,
+    "vel": 0.153846
+   },
+   "plainTone": true
+  },
+  "farflute": {
+   "name": "Flute, far off",
+   "layers": [
+    {},
+    {
+     "ratio": 2,
+     "gain": 0.07
+    }
+   ],
+   "env": {
+    "attack": 0.07,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.22
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0.07,
+    "before": 0.16,
+    "after": 0.22
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 1500,
+     "q": 0.7
+    }
+   ],
+   "vibrato": {
+    "rate": 4.6,
+    "cents": 7,
+    "delay": 0,
+    "rise": 0.5,
+    "minLen": 0.9,
+    "firstOnly": true
+   },
+   "level": 0.085,
+   "send": 1,
+   "jitter": {
+    "time": 0.024,
+    "vel": 0.153846
+   },
+   "plainTone": true,
+   "pan": 0.2,
+   "echo": 0.7
+  }
+ }
+}

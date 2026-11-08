@@ -1,0 +1,82 @@
+{
+ "id": "one-short",
+ "title": "One Short",
+ "side": true,
+ "blurb": "Hosea Lamb counts forty-two, and should count forty-three.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Forty-two",
+   "objective": "",
+   "done": {
+    "flags": [
+     "oneshort_asked"
+    ]
+   },
+   "sets": [
+    "oneshort_asked"
+   ],
+   "auto": [
+    {
+     "go": "long-wall"
+    },
+    {
+     "talk": "hosea_lamb"
+    },
+    {
+     "talk": "hosea_lamb"
+    }
+   ]
+  },
+  {
+   "id": "fetch",
+   "title": "Forty-two",
+   "objective": "Fetch Hosea's ewe from over the wall. There's a stile.",
+   "done": {
+    "flags": [
+     "has_ewe"
+    ]
+   },
+   "sets": [
+    "has_ewe"
+   ],
+   "skip": {
+    "area": "long-wall",
+    "spot": "Hosea"
+   },
+   "auto": [
+    {
+     "go": "long-wall"
+    },
+    {
+     "talk": "stray_ewe"
+    }
+   ]
+  },
+  {
+   "id": "bring",
+   "title": "Forty-three",
+   "objective": "Bring her back to Hosea.",
+   "done": {
+    "flags": [
+     "oneshort_done"
+    ]
+   },
+   "sets": [
+    "oneshort_done"
+   ],
+   "skip": {
+    "area": "long-wall",
+    "spot": "The stile"
+   },
+   "auto": [
+    {
+     "go": "long-wall"
+    },
+    {
+     "talk": "hosea_lamb"
+    }
+   ]
+  }
+ ]
+}

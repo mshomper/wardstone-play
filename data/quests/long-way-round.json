@@ -1,0 +1,208 @@
+{
+ "id": "long-way-round",
+ "title": "The Long Way Round",
+ "chapter": true,
+ "after": "ending_seen",
+ "_note": "The main story's second chapter (decision 0194): the Old Post Road, from the end of the fair to the lane down to Hardscrabble. Its steps drive the clock as First Frost's do.",
+ "steps": [
+  {
+   "id": "long-way",
+   "title": "The long way round",
+   "objective": "The breach is shut behind you. Go the long way round, by the south road.",
+   "done": {
+    "enter": "old-post-road"
+   },
+   "skip": {
+    "area": "alder-hollow"
+   },
+   "auto": [
+    {
+     "go": "south-fields"
+    },
+    {
+     "go": "alder-hollow"
+    },
+    {
+     "go": "old-post-road"
+    }
+   ]
+  },
+  {
+   "id": "post-road",
+   "title": "The Old Post Road",
+   "objective": "Follow the old Post Road east.",
+   "time": 8.5,
+   "onStart": [
+    {
+     "dialogue": "road_arrive"
+    }
+   ],
+   "done": {
+    "enter": "coopers-ford"
+   },
+   "skip": {
+    "area": "old-post-road"
+   },
+   "auto": [
+    {
+     "go": "coopers-ford"
+    }
+   ]
+  },
+  {
+   "id": "ford",
+   "title": "Cooper's Ford",
+   "objective": "Get across Cooper's Ford. Something is holding it.",
+   "time": 11.5,
+   "done": {
+    "flags": [
+     "beat_toll_goose"
+    ]
+   },
+   "sets": [
+    "beat_toll_goose"
+   ],
+   "skip": {
+    "area": "coopers-ford"
+   },
+   "auto": [
+    {
+     "fight": "cf-toll"
+    }
+   ]
+  },
+  {
+   "id": "camp",
+   "title": "The sawyers' camp",
+   "objective": "Follow the road to the sawyers' camp.",
+   "time": 15.0,
+   "done": {
+    "flags": [
+     "met_jasper_road"
+    ]
+   },
+   "sets": [
+    "met_jasper_road"
+   ],
+   "skip": {
+    "area": "sawyers-clearing"
+   },
+   "auto": [
+    {
+     "go": "sawyers-clearing"
+    },
+    {
+     "talk": "jasper_crane"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "title": "Jasper's fire",
+   "objective": "Night's coming. Rest at Jasper's fire.",
+   "time": 19.5,
+   "done": {
+    "flags": [
+     "rested_camp"
+    ]
+   },
+   "sets": [
+    "rested_camp"
+   ],
+   "skip": {
+    "area": "sawyers-clearing",
+    "spot": "Jasper's fire"
+   },
+   "auto": [
+    {
+     "use": "camp_sit"
+    }
+   ]
+  },
+  {
+   "id": "first-light",
+   "title": "First light",
+   "objective": "Go on at first light.",
+   "time": 6.5,
+   "done": {
+    "enter": "long-wall"
+   },
+   "skip": {
+    "area": "sawyers-clearing",
+    "spot": "Jasper's fire"
+   },
+   "auto": [
+    {
+     "go": "long-wall"
+    }
+   ]
+  },
+  {
+   "id": "walk-wall",
+   "title": "The Long Wall",
+   "objective": "Walk the wall.",
+   "time": 7.0,
+   "done": {
+    "flags": [
+     "beat_tumbledown"
+    ]
+   },
+   "sets": [
+    "beat_tumbledown",
+    "gap:long-wall:0:43.81"
+   ],
+   "onDone": [
+    {
+     "setFlag": "gap:long-wall:0:43.81"
+    }
+   ],
+   "skip": {
+    "area": "long-wall",
+    "spot": "The rise"
+   },
+   "auto": [
+    {
+     "fight": "lw-tumbledown"
+    }
+   ]
+  },
+  {
+   "id": "east",
+   "title": "Along the wall",
+   "objective": "Follow the wall east.",
+   "time": 8.0,
+   "done": {
+    "flags": [
+     "saw_hands_gap"
+    ]
+   },
+   "sets": [
+    "saw_hands_gap"
+   ],
+   "skip": {
+    "area": "long-wall",
+    "spot": "The gap"
+   },
+   "auto": [
+    {
+     "use": "lw_hands_gap"
+    }
+   ]
+  },
+  {
+   "id": "lane",
+   "title": "Hardscrabble",
+   "objective": "Down the lane to Hardscrabble.",
+   "done": {
+    "flags": [
+     "reached_hardscrabble"
+    ]
+   },
+   "skip": {
+    "area": "long-wall",
+    "spot": "The hand's gap"
+   },
+   "auto": []
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "conversations": [
+  {
+   "id": "applegate_bar_wait",
+   "lines": [
+    {
+     "who": "",
+     "text": "Mrs. Applegate stands on the gravel bar among the tolls. She doesn't come when called. She looks past Eldwin, back up the road."
+    },
+    {
+     "who": "eldwin",
+     "text": "Waiting for someone, are you. It isn't me."
+    }
+   ]
+  },
+  {
+   "id": "applegate_bar_ribbon",
+   "lines": [
+    {
+     "who": "",
+     "text": "Eldwin holds out Tilly's ribbon. Mrs. Applegate considers it for some time."
+    },
+    {
+     "who": "",
+     "text": "She lowers her head an inch, which is as far as she means to go, and lets him tie it on."
+    },
+    {
+     "who": "eldwin",
+     "text": "There. The left side of the road, Tilly said, and no cheese.",
+     "face": "smile"
+    },
+    {
+     "who": "",
+     "text": "Mrs. Applegate sets off along the left side of the road, ahead of him, as if it had been her idea."
+    }
+   ],
+   "onEnd": [
+    {
+     "join": "applegate"
+    }
+   ]
+  }
+ ]
+}

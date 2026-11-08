@@ -556,7 +556,12 @@
       "radius": 0.9
     }
   ],
-  "spots": [{ "name": "Cart", "x": 13.8, "z": -6.8 }, { "name": "Tailor", "x": 12.2, "z": -6 }, {"name": "Obadiah (day)", "x": 2.8, "z": -1.6, "note": "Obadiah Fenn walking Deacon up and down the stubble."}, {"name": "Deacon (day)", "x": 5.0, "z": -2.4, "note": "Deacon the ox."}, {"name": "Pip (day)", "x": 3.7, "z": -0.3, "note": "Pip Danforth, three steps behind the ox."}, {"name": "Caleb (day)", "x": -8.6, "z": -0.4, "note": "Caleb Stroud mowing along the wall, stopping to read a folded paper."}, {"name": "Nell (day)", "x": -12.6, "z": 3.4, "note": "Nell Tibbetts stuffing a scarecrow."}, {"name": "Pip's whistle", "x": -3.0, "z": 1.6, "note": "Tin Whistle: a glint in the stubble."}, {"name": "Butter paper", "x": -1.2, "z": -5.8, "note": "Lost Cat: the first clue, just off the lane."},{"name": "Biscuit (fields)", "x": 0.6, "z": 5.4, "note": "Lost Cat: where he's seen, and bolts."},{"name": "Biscuit (run 1)", "x": -3, "z": 7.2, "note": "Lost Cat: the way he runs."},{"name": "Biscuit (run 2)", "x": -6, "z": 10.8, "note": "Lost Cat: the way he runs, out to the hollow."},
+  "spots": [
+   {"name": "Round: stubble north", "x": 6.4, "z": -5.6, "note": "A stop on someone's rounds."},
+   {"name": "Round: stubble far", "x": 9.0, "z": -2.6, "note": "A stop on someone's rounds."},
+   {"name": "Round: stubble south", "x": 5.6, "z": 2.8, "note": "A stop on someone's rounds."},
+   {"name": "Round: wall east", "x": -5.6, "z": -0.6, "note": "A stop on someone's rounds."},
+   {"name": "Round: wall west", "x": -11.0, "z": -0.4, "note": "A stop on someone's rounds."},{ "name": "Cart", "x": 13.8, "z": -6.8 }, { "name": "Tailor", "x": 12.2, "z": -6 }, {"name": "Obadiah (day)", "x": 2.8, "z": -1.6, "note": "Obadiah Fenn walking Deacon up and down the stubble."}, {"name": "Deacon (day)", "x": 5.0, "z": -2.4, "note": "Deacon the ox."}, {"name": "Pip (day)", "x": 3.7, "z": -0.3, "note": "Pip Danforth, three steps behind the ox."}, {"name": "Caleb (day)", "x": -8.6, "z": -0.4, "note": "Caleb Stroud mowing along the wall, stopping to read a folded paper."}, {"name": "Nell (day)", "x": -12.6, "z": 3.4, "note": "Nell Tibbetts stuffing a scarecrow."}, {"name": "Pip's whistle", "x": -3.0, "z": 1.6, "note": "Tin Whistle: a glint in the stubble."}, {"name": "Butter paper", "x": -1.2, "z": -5.8, "note": "Lost Cat: the first clue, just off the lane."},{"name": "Biscuit (fields)", "x": 0.6, "z": 5.4, "note": "Lost Cat: where he's seen, and bolts."},{"name": "Biscuit (run 1)", "x": -3, "z": 7.2, "note": "Lost Cat: the way he runs."},{"name": "Biscuit (run 2)", "x": -6, "z": 10.8, "note": "Lost Cat: the way he runs, out to the hollow."},
     {
       "name": "Wanderers by the lane",
       "x": 5.8,

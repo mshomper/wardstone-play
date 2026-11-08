@@ -1,5 +1,5 @@
 {
-  "_note": "Who roams where (docs/06-creatures.md). `circle` indexes the area's arenas. `roam` is how they behave (docs/05-combat.md): distances in units, times in seconds, `arc` in degrees, speeds in units a second, `keepFrom` how far wandering stays from hearths, people and story objects. `after` keeps a group out of the world until a flag is set; `banner` shows with the first win. `weak` and `tough` apply the rules in creatures.json. `xpCap` is the total XP past which the group gives none, so a road can be walked again without running ahead of the level curve.",
+  "_note": "Who roams where (docs/06-creatures.md). `circle` indexes the area's arenas. `roam` is how they behave (docs/05-combat.md): distances in units, times in seconds, `arc` in degrees, speeds in units a second, `keepFrom` how far wandering stays from hearths, people and story objects. `after` keeps a group out of the world until a flag is set; `banner` shows with the first win. `weak` and `tough` apply the rules in creatures.json. `xpCap` is the total XP past which the group gives none, so a road can be walked again without running ahead of the level curve. `planned` holds fights for areas not built yet (the simulator plays them; the game doesn't load them): move one into `groups` when its area exists. `arrives` is a hero who walks in partway (decision 0180).",
   "roam": {
     "wanderPast": 4,
     "keepFrom": 3,
@@ -44,6 +44,7 @@
       "oldbucket": { "wander": 0.7, "chase": 2.3 }
     }
   },
+  "planned": [],
   "groups": [
     {
       "id": "rime1",
@@ -153,7 +154,7 @@
       "circle": 0,
       "creatures": ["rimeling"],
       "weak": true,
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "road-patch",
@@ -161,7 +162,7 @@
       "circle": 1,
       "creatures": ["latchpaw"],
       "weak": true,
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "road-bales",
@@ -169,7 +170,7 @@
       "circle": 2,
       "creatures": ["snickerkit", "snickerkit"],
       "weak": true,
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "road-burr",
@@ -177,7 +178,7 @@
       "circle": 0,
       "creatures": ["burrback"],
       "weak": true,
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "road-brook",
@@ -185,7 +186,7 @@
       "circle": 1,
       "creatures": ["latchpaw"],
       "weak": true,
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "road-tough",
@@ -195,7 +196,7 @@
       "tough": true,
       "questFlag": "beat_road_tough",
       "banner": ["The big ones move off", "The hollow goes quiet."],
-      "xpCap": 48
+      "xpCap": 240
     },
     {
       "id": "breach",
@@ -211,13 +212,13 @@
       "rounds": 4,
       "xp": 80
     },
-    { "id": "sb-kits", "until": "breach_sealed", "area": "sugarbush", "circle": 0, "creatures": ["snickerkit", "snickerkit"], "weak": true, "xpCap": 48 },
-    { "id": "sb-burr", "until": "breach_sealed", "area": "sugarbush", "circle": 1, "creatures": ["burrback"], "weak": true, "xpCap": 48 },
-    { "id": "sb-tough", "until": "breach_sealed", "area": "sugarbush", "circle": 2, "creatures": ["burrback", "latchpaw"], "tough": true, "xpCap": 48 },
-    { "id": "bg-rime", "until": "breach_sealed", "area": "old-burying-ground", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 48 },
-    { "id": "bg-patch", "until": "breach_sealed", "area": "old-burying-ground", "circle": 1, "creatures": ["latchpaw"], "weak": true, "xpCap": 48 },
-    { "id": "wl-kit", "area": "sugar-lane", "circle": 0, "creatures": ["snickerkit"], "weak": true, "xpCap": 48 },
-    { "id": "cr-rime", "area": "old-lane", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 48 },
+    { "id": "sb-kits", "until": "breach_sealed", "area": "sugarbush", "circle": 0, "creatures": ["snickerkit", "snickerkit"], "weak": true, "xpCap": 240 },
+    { "id": "sb-burr", "until": "breach_sealed", "area": "sugarbush", "circle": 1, "creatures": ["burrback"], "weak": true, "xpCap": 240 },
+    { "id": "sb-tough", "until": "breach_sealed", "area": "sugarbush", "circle": 2, "creatures": ["burrback", "latchpaw"], "tough": true, "xpCap": 240 },
+    { "id": "bg-rime", "until": "breach_sealed", "area": "old-burying-ground", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 240 },
+    { "id": "bg-patch", "until": "breach_sealed", "area": "old-burying-ground", "circle": 1, "creatures": ["latchpaw"], "weak": true, "xpCap": 240 },
+    { "id": "wl-kit", "area": "sugar-lane", "circle": 0, "creatures": ["snickerkit"], "weak": true, "xpCap": 240 },
+    { "id": "cr-rime", "area": "old-lane", "circle": 0, "creatures": ["rimeling"], "weak": true, "xpCap": 240 },
     { "id": "sb-taps", "area": "sugarbush", "circle": 5, "after": "breach_sealed", "creatures": ["tapbeak", "tapbeak"] },
     { "id": "sb-wild", "area": "sugarbush", "circle": 1, "after": "breach_sealed", "creatures": ["chickaree", "tipplewasp"] },
     { "id": "sb-wood", "area": "sugarbush", "circle": 4, "after": "breach_sealed", "creatures": ["cordling", "sugarling"] },
@@ -231,6 +232,25 @@
     { "id": "bg-hush", "area": "old-burying-ground", "circle": 6, "after": "breach_sealed", "creatures": ["hushwing", "hushwing"], "tough": true },
     { "id": "sb-bucket", "area": "sugarbush", "circle": 3, "after": "breach_sealed", "until": "beat_bucket", "creatures": ["oldbucket"], "questFlag": "beat_bucket", "banner": ["Old Bucket", "He shakes his head, finds it free, and walks off to bed."] },
     { "id": "bg-ledger", "area": "old-burying-ground", "circle": 2, "after": "breach_sealed", "still": true, "creatures": ["ledger"], "forParty": { "2": { "hp": 1.5, "damage": 1.2 }, "3": { "hp": 2, "damage": 1.5 }, "4": { "hp": 2.5, "damage": 1.5 } }, "questFlag": "beat_ledger", "banner": ["Settled", "The slab lies back down. The sum stays cut."] },
-    { "id": "bg-sexton", "area": "old-burying-ground", "circle": 7, "hidden": true, "until": "beat_sexton", "creatures": ["sexton", "sextonling"], "questFlag": "beat_sexton", "banner": ["The Sexton", "It sinks back into the ground, and doesn't come up."] }
+    { "id": "gf-effigy", "area": "green-frame", "circle": 0, "hidden": true, "until": "beat_effigy", "creatures": ["effigy", "effigy"], "questFlag": "beat_effigy", "banner": ["Effigy Moths", "Pa's coat hangs empty on the scarecrow."] },
+    { "id": "bg-sexton", "area": "old-burying-ground", "circle": 7, "hidden": true, "until": "beat_sexton", "creatures": ["sexton", "sextonling"], "questFlag": "beat_sexton", "banner": ["The Sexton", "It sinks back into the ground, and doesn't come up."] },
+    { "id": "cf-toll", "area": "coopers-ford", "circle": 0, "still": true, "blocks": true, "until": "beat_toll_goose", "creatures": ["tollgoose"], "questFlag": "beat_toll_goose", "arrives": { "who": "applegate", "flag": "tilly_ribbon", "on": "lower_head", "aloneHp": 0.84 }, "forParty": { "2": { "hp": 1.5, "damage": 1.2 }, "3": { "hp": 2, "damage": 1.5 }, "4": { "hp": 2.5, "damage": 1.5 } }, "banner": ["Settled", "He lowers his neck to her, and steps off the road."] },
+    {"id": "op-chucks", "area": "old-post-road", "circle": 0, "creatures": ["whistlepig", "whistlepig"], "questFlag": "beat_op_chucks"},
+    {"id": "op-crows", "area": "old-post-road", "circle": 1, "creatures": ["gleaner", "gleaner"], "questFlag": "beat_op_crows"},
+    {"id": "op-wood", "area": "old-post-road", "circle": 2, "creatures": ["whistlepig", "gleaner"], "tough": true, "questFlag": "beat_op_wood"},
+    {"id": "cf-snap", "area": "coopers-ford", "circle": 1, "creatures": ["snapjaw", "stilt"], "questFlag": "beat_cf_snap"},
+    {"id": "cf-staves", "area": "coopers-ford", "circle": 2, "creatures": ["staveling", "staveling"], "questFlag": "beat_cf_staves"},
+    {"id": "cf-reeds", "area": "coopers-ford", "circle": 3, "creatures": ["stilt", "stilt"], "questFlag": "beat_cf_reeds"},
+    {"id": "sc-kits", "area": "sawyers-clearing", "circle": 1, "creatures": ["gnawling", "gnawling"], "questFlag": "beat_sc_kits"},
+    {"id": "sc-quills", "area": "sawyers-clearing", "circle": 2, "creatures": ["quillpig", "gnawling"], "questFlag": "beat_sc_quills"},
+    {"id": "sc-owls", "area": "sawyers-clearing", "circle": 3, "creatures": ["hushwing", "hushwing", "gleaner"], "tough": true, "questFlag": "beat_sc_owls"},
+    {"id": "lw-heave", "area": "long-wall", "circle": 1, "creatures": ["frostheave", "frostheave"], "questFlag": "beat_lw_heave"},
+    {"id": "lw-chuck", "area": "long-wall", "circle": 2, "creatures": ["whistlepig", "frostheave"], "questFlag": "beat_lw_chuck"},
+    {"id": "lw-mixed", "area": "long-wall", "circle": 3, "creatures": ["hoarling", "whistlepig"], "questFlag": "beat_lw_mixed"},
+    {"id": "lw-tough", "area": "long-wall", "circle": 4, "creatures": ["frostheave", "frostheave"], "tough": true, "questFlag": "beat_lw_tough"},
+    {"id": "lw-hares", "area": "long-wall", "circle": 5, "creatures": ["whitecoat", "whitecoat"], "questFlag": "beat_lw_hares"},
+    {"id": "lw-hoar", "area": "long-wall", "circle": 6, "creatures": ["hoarling", "whitecoat"], "questFlag": "beat_lw_hoar"},
+    {"id": "sc-foreman", "area": "sawyers-clearing", "circle": 0, "after": "pine_asked", "until": "beat_foreman", "creatures": ["foreman", "gnawling"], "questFlag": "beat_foreman", "banner": ["The Foreman", "He slaps the water once, and goes back to his dam."]},
+    {"id": "lw-tumbledown", "area": "long-wall", "circle": 0, "still": true, "blocks": true, "until": "beat_tumbledown", "creatures": ["tumbledown"], "questFlag": "beat_tumbledown", "banner": ["The gap is shut", "The last stone sits crooked, and the frost behind it stops."]}
   ]
 }

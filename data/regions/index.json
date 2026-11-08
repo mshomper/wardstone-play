@@ -1,6 +1,7 @@
 {
   "_note": "Every region has a folder here holding its map, people, things, dialogue and local quests.",
   "regions": [
-    "kettle-notch"
+    "kettle-notch",
+    "old-post-road"
   ]
 }

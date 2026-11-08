@@ -209,6 +209,10 @@
         [
           -3.4,
           11
+        ],
+        [
+          -0.9,
+          12.4
         ]
       ],
       "width": 1.4,
@@ -504,6 +508,12 @@
       "note": "Find: where the path gives up."
     },
     {
+      "name": "Tilly (the way out)",
+      "x": -3.0,
+      "z": 9.0,
+      "note": "Tilly on the mossy stones beside the path, after the ending, until she has said goodbye (decision 0181). Clear of the road's exit."
+    },
+    {
       "name": "Behind the bare glade",
       "x": 16.4,
       "z": -9.4,
@@ -528,6 +538,21 @@
         9
       ],
       "dir": 4
+    },
+    {
+      "rect": [
+        -2.0,
+        11.8,
+        0.0,
+        12.6
+      ],
+      "to": "old-post-road",
+      "after": "ending_seen",
+      "at": [
+        -25.6,
+        1.8
+      ],
+      "dir": 6
     }
   ]
 }

@@ -1,0 +1,112 @@
+{
+ "_note": "Two people talking as Eldwin passes, when they happen to be close together (story/overheard.ts). Each is heard once.",
+ "overheard": [
+  {
+   "id": "o1",
+   "a": "thaddeus",
+   "b": "amsden",
+   "lines": [
+    {
+     "who": "thaddeus",
+     "text": "That goose has sat through more of your sermons than I have."
+    },
+    {
+     "who": "amsden",
+     "text": "And stayed awake for them."
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "a": "silas",
+   "b": "ada",
+   "lines": [
+    {
+     "who": "silas",
+     "text": "That's the same pie as last year."
+    },
+    {
+     "who": "ada",
+     "text": "It won last year."
+    },
+    {
+     "who": "silas",
+     "text": "I'm only saying."
+    },
+    {
+     "who": "ada",
+     "text": "You're only standing in my light, Silas."
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "a": "townsfolk3",
+   "b": "thaddeus",
+   "lines": [
+    {
+     "who": "townsfolk3",
+     "text": "You knew my granddad. He ever say what he meant about the walls?"
+    },
+    {
+     "who": "thaddeus",
+     "text": "He said a lot of things. Owed me a ham."
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "a": "townsfolk1",
+   "b": "tilly",
+   "lines": [
+    {
+     "who": "townsfolk1",
+     "text": "There's no goose under my quilts."
+    },
+    {
+     "who": "tilly",
+     "text": "You didn't look."
+    }
+   ],
+   "if": {
+    "notFlags": [
+     "goose_led"
+    ]
+   }
+  },
+  {
+   "id": "o5",
+   "a": "townsfolk2",
+   "b": "silas",
+   "lines": [
+    {
+     "who": "townsfolk2",
+     "text": "What time do you make it?"
+    },
+    {
+     "who": "silas",
+     "text": "Ask your clock."
+    },
+    {
+     "who": "townsfolk2",
+     "text": "I did. It says it's still this morning."
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "a": "amsden",
+   "b": "abigail",
+   "lines": [
+    {
+     "who": "amsden",
+     "text": "You might play something for the service, Abigail. Something solemn."
+    },
+    {
+     "who": "abigail",
+     "text": "It's all \"Soldier's Joy\" if you play it slow."
+    }
+   ]
+  }
+ ]
+}

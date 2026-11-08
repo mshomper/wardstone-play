@@ -1,4 +1,10 @@
 {
+  "fallback": {
+    "battle-b": "battle",
+    "burying-ground": "town",
+    "road": "route",
+    "long-wall": "route"
+  },
   "cues": {
     "title": {
       "play": "title",
@@ -11,12 +17,16 @@
     },
     "battle_start": {
       "push": "battle",
-      "fade": 0.4
+      "fade": 0.4,
+      "inArea": {
+        "sugarbush": "battle-b",
+        "old-burying-ground": "battle-b"
+      }
     },
     "battle_end": {
       "pop": true,
       "fade": 1.5,
-      "from": "battle"
+      "fromPush": true
     },
     "breach_quiet": {
       "stop": true,
@@ -78,7 +88,17 @@
     "brook-woods": "route",
     "south-fields": "route",
     "alder-hollow": "route",
+    "old-post-road": "road",
+    "old-post-road-half-way-house": "indoors",
+    "old-post-road-half-way-house-upper": "indoors",
+    "coopers-ford": "road",
+    "coopers-ford-cooper-s-shop": "indoors",
+    "sawyers-clearing": "road",
+    "sawyers-clearing-bunk-shanty": "indoors",
+    "long-wall": "long-wall",
     "autumn-glade": "route",
+    "old-burying-ground": "burying-ground",
+    "old-burying-ground-old-vault": "burying-ground",
     "green-frame:fair": "fair"
   }
 }

@@ -1,0 +1,681 @@
+{
+  "version": 1,
+  "name": "long-wall",
+  "seed": 3404,
+  "size": {
+    "w": 96,
+    "h": 44
+  },
+  "mood": {
+    "baseHeight": 0.0,
+    "edgeRise": 3.4,
+    "edgeWidth": 5,
+    "roll": 0.7,
+    "pathMargin": 0.9,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "bare_tree_0",
+          "bare_tree_1"
+        ],
+        "density": 0.12,
+        "spacing": 3.2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "collide": 0.35,
+        "tall": true,
+        "within": [
+          [
+            -48,
+            -22
+          ],
+          [
+            48,
+            -22
+          ],
+          [
+            48,
+            -5.9
+          ],
+          [
+            36,
+            -4.3
+          ],
+          [
+            24,
+            -5.300000000000001
+          ],
+          [
+            10,
+            -3.6999999999999997
+          ],
+          [
+            -4,
+            -5.1000000000000005
+          ],
+          [
+            -18,
+            -3.1
+          ],
+          [
+            -34,
+            -4.4
+          ],
+          [
+            -48,
+            -1.9
+          ]
+        ]
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.1,
+        "spacing": 3,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "collide": 0.4,
+        "tall": true,
+        "within": [
+          [
+            -48,
+            -22
+          ],
+          [
+            48,
+            -22
+          ],
+          [
+            48,
+            -5.9
+          ],
+          [
+            36,
+            -4.3
+          ],
+          [
+            24,
+            -5.300000000000001
+          ],
+          [
+            10,
+            -3.6999999999999997
+          ],
+          [
+            -4,
+            -5.1000000000000005
+          ],
+          [
+            -18,
+            -3.1
+          ],
+          [
+            -34,
+            -4.4
+          ],
+          [
+            -48,
+            -1.9
+          ]
+        ]
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2",
+          "boulder_mossy_0"
+        ],
+        "density": 0.04,
+        "spacing": 3.5,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "collide": 0.6,
+        "within": [
+          [
+            -48,
+            -22
+          ],
+          [
+            48,
+            -22
+          ],
+          [
+            48,
+            -5.9
+          ],
+          [
+            36,
+            -4.3
+          ],
+          [
+            24,
+            -5.300000000000001
+          ],
+          [
+            10,
+            -3.6999999999999997
+          ],
+          [
+            -4,
+            -5.1000000000000005
+          ],
+          [
+            -18,
+            -3.1
+          ],
+          [
+            -34,
+            -4.4
+          ],
+          [
+            -48,
+            -1.9
+          ]
+        ]
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_0"
+        ],
+        "density": 0.3,
+        "spacing": 2.4,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.12,
+        "spacing": 2.6,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_red_0",
+          "maple_red_1",
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_0"
+        ],
+        "density": 0.035,
+        "spacing": 6,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1"
+        ],
+        "density": 0.015,
+        "spacing": 6,
+        "scale": [
+          0.8,
+          1.0
+        ],
+        "near": "open",
+        "collide": 0.7
+      },
+      {
+        "props": [
+          "goldenrod_0",
+          "goldenrod_1",
+          "asters_0",
+          "asters_1"
+        ],
+        "density": 0.35,
+        "spacing": 1.0,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "wall"
+      },
+      {
+        "props": [
+          "goldenrod_1",
+          "asters_1",
+          "fern_autumn_1",
+          "goldenrod_0"
+        ],
+        "density": 0.18,
+        "spacing": 1.4,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "open"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "asters_0"
+        ],
+        "density": 0.08,
+        "spacing": 1.4,
+        "scale": [
+          0.8,
+          1.0
+        ],
+        "near": "path",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -48,
+          4
+        ],
+        [
+          -38,
+          4.6
+        ],
+        [
+          -28,
+          3.6
+        ],
+        [
+          -16,
+          5.2
+        ],
+        [
+          -4,
+          4.4
+        ],
+        [
+          8,
+          5.6
+        ],
+        [
+          20,
+          4.4
+        ],
+        [
+          32,
+          5.4
+        ],
+        [
+          48,
+          4.2
+        ]
+      ],
+      "width": 2.2,
+      "kind": "road"
+    }
+  ],
+  "walls": [
+    {
+      "points": [
+        [
+          -48,
+          -1
+        ],
+        [
+          -34,
+          -3.5
+        ],
+        [
+          -18,
+          -2.2
+        ],
+        [
+          -4,
+          -4.2
+        ],
+        [
+          10,
+          -2.8
+        ],
+        [
+          24,
+          -4.4
+        ],
+        [
+          36,
+          -3.4
+        ],
+        [
+          48,
+          -5
+        ]
+      ],
+      "gaps": [
+        {
+          "at": 43.81,
+          "width": 2.4
+        },
+        {
+          "at": 80.61,
+          "width": 0.45
+        },
+        {
+          "at": 64.53,
+          "width": 1.2
+        }
+      ],
+      "ward": true
+    }
+  ],
+  "buildings": [],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": -30,
+      "z": 6,
+      "radius": 9,
+      "height": 1.4
+    },
+    {
+      "kind": "mound",
+      "x": 20,
+      "z": 11,
+      "radius": 7,
+      "height": 0.8
+    },
+    {
+      "kind": "hollow",
+      "x": -8,
+      "z": 13,
+      "radius": 6,
+      "height": 0.4
+    }
+  ],
+  "arenas": [
+    {
+      "x": -4.6,
+      "z": 1.6,
+      "radius": 3
+    },
+    {
+      "x": -32,
+      "z": 11,
+      "radius": 2.8
+    },
+    {
+      "x": -16,
+      "z": 12,
+      "radius": 2.6
+    },
+    {
+      "x": 14,
+      "z": 12,
+      "radius": 2.8
+    },
+    {
+      "x": 34,
+      "z": 11,
+      "radius": 2.6
+    },
+    {
+      "x": -10,
+      "z": -12,
+      "radius": 2.6
+    },
+    {
+      "x": 14,
+      "z": -12,
+      "radius": 2.6
+    }
+  ],
+  "placements": [
+    {
+      "prop": "wardstone_whole",
+      "x": 10,
+      "z": -1.9,
+      "tall": true,
+      "collide": 0.6
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": -7.6,
+      "z": -2.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": -2.2,
+      "z": -2.0,
+      "collide": 0.3
+    },
+    {
+      "prop": "boulder_mossy_2",
+      "x": -6.4,
+      "z": -1.2,
+      "collide": 0.3
+    },
+    {
+      "prop": "stone_old_0",
+      "x": 15.2,
+      "z": -2.6,
+      "scale": 0.8
+    },
+    {
+      "prop": "stone_old_0",
+      "x": 16.8,
+      "z": -2.6,
+      "scale": 0.8
+    }
+  ],
+  "frost": {
+    "within": [
+      [
+        -48,
+        -22
+      ],
+      [
+        48,
+        -22
+      ],
+      [
+        48,
+        -5.9
+      ],
+      [
+        36,
+        -4.3
+      ],
+      [
+        24,
+        -5.300000000000001
+      ],
+      [
+        10,
+        -3.6999999999999997
+      ],
+      [
+        -4,
+        -5.1000000000000005
+      ],
+      [
+        -18,
+        -3.1
+      ],
+      [
+        -34,
+        -4.4
+      ],
+      [
+        -48,
+        -1.9
+      ]
+    ],
+    "spacing": 2.6
+  },
+  "keepClear": [
+    {
+      "points": [
+        [
+          9,
+          -1.2999999999999998
+        ],
+        [
+          11,
+          -1.314285714285714
+        ]
+      ],
+      "radius": 1.2
+    },
+    {
+      "points": [
+        [
+          -4.6,
+          -6
+        ],
+        [
+          -4.6,
+          -8
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "The rise",
+      "x": -30,
+      "z": 4,
+      "note": "Top of the road's climb: from here the wall runs across the whole area and on out of sight."
+    },
+    {
+      "name": "The gap",
+      "x": -4.6,
+      "z": -1.2,
+      "note": "Where the cold comes through: the Tumbledown (decision 0173), and the way onto the mountain side (One Short)."
+    },
+    {
+      "name": "The wardstone",
+      "x": 10,
+      "z": -0.8,
+      "note": "Cold, and won't answer. Proposed: the first stone to travel back to once Obed's rule opens stone travel."
+    },
+    {
+      "name": "The hand's gap",
+      "x": 32,
+      "z": -2.33,
+      "note": "The kept stretch near Hardscrabble: a hand's gap facing north. 'Somebody's been keeping this. Properly.'"
+    },
+    {
+      "name": "Hosea's flock",
+      "x": 22,
+      "z": 9,
+      "note": "Hosea Lamb, Gyp and the sheep, one short (later step)."
+    },
+    {
+      "name": "The mountain side",
+      "x": -4.6,
+      "z": -10,
+      "note": "Frost on the grass, bare trees, white hares: what the wall holds back."
+    },
+    {
+      "name": "Down to Hardscrabble",
+      "x": 43,
+      "z": 4.4,
+      "note": "The lane down to Hardscrabble, the next region. No exit yet."
+    },
+    {
+      "name": "Hosea",
+      "x": 22,
+      "z": 8.2
+    },
+    {
+      "name": "The gap (coming up to it)",
+      "x": -3.8,
+      "z": 3.2,
+      "note": "Where the cold coming through the gap is first felt."
+    },
+    {
+      "name": "The stile",
+      "x": 16.0,
+      "z": -2.0,
+      "note": "Stone steps built into the wall, for whoever used to walk it (One Short)."
+    },
+    {
+      "name": "The stray ewe",
+      "x": 19.0,
+      "z": -10.6,
+      "note": "Hosea's ewe, on the mountain side, until Eldwin fetches her (One Short)."
+    },
+    {
+      "name": "Sheep (white)",
+      "x": 24.6,
+      "z": 9.6
+    },
+    {
+      "name": "Sheep (grey)",
+      "x": 19.8,
+      "z": 10.6
+    },
+    {
+      "name": "Sheep (black)",
+      "x": 23.2,
+      "z": 11.8
+    },
+    {
+      "name": "Sheep (the ewe)",
+      "x": 21.4,
+      "z": 11.2
+    }
+  ],
+  "start": [
+    -41.6,
+    4.2
+  ],
+  "exits": [
+    {
+      "rect": [
+        -44.4,
+        1.8,
+        -43.4,
+        6.6
+      ],
+      "to": "sawyers-clearing",
+      "at": [
+        25.6,
+        -0.6
+      ],
+      "dir": 2
+    }
+  ]
+}

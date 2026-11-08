@@ -1,0 +1,476 @@
+{
+ "conversations": [
+  {
+   "id": "road_arrive",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "The long way round, then."
+    }
+   ]
+  },
+  {
+   "id": "road_milestone",
+   "lines": [
+    {
+     "who": "",
+     "text": "KETTLE NOTCH 5, cut deep in the face toward home."
+    },
+    {
+     "who": "",
+     "text": "The far face says KETTLE NOTCH too. The number under it has been scratched out."
+    },
+    {
+     "who": "eldwin",
+     "text": "Well. It isn't wrong."
+    }
+   ]
+  },
+  {
+   "id": "camp_night",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Sit. It's free."
+    },
+    {
+     "who": "",
+     "text": "Eldwin sleeps by the fire. Once in the night he wakes, and Jasper is still sitting up, watching the road they came by, humming something under his breath. It has a lantern in it, somewhere."
+    }
+   ]
+  },
+  {
+   "id": "camp_morning",
+   "lines": [
+    {
+     "who": "",
+     "text": "When he wakes again it's first light, the kettle's on, and Jasper looks as if he never slept."
+    }
+   ]
+  },
+  {
+   "id": "wall_rise",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "There you are."
+    }
+   ]
+  },
+  {
+   "id": "wall_gap",
+   "lines": [
+    {
+     "who": "",
+     "text": "The cold is coming through the gap like water through a split barrel."
+    },
+    {
+     "who": "eldwin",
+     "text": "That's not right. Easy, now. Easy."
+    },
+    {
+     "who": "",
+     "text": "The stones lying in the gap stand up."
+    }
+   ]
+  },
+  {
+   "id": "gap_mended",
+   "lines": [
+    {
+     "who": "",
+     "text": "The last stone grinds back into its place. It sits crooked, and the frost behind it stops."
+    },
+    {
+     "who": "eldwin",
+     "text": "That'll keep until someone who knows what he's doing has a look at it."
+    }
+   ]
+  },
+  {
+   "id": "wall_hands_gap",
+   "lines": [
+    {
+     "who": "",
+     "text": "Here the wall is laid tight and true, every stone hearted, and one small gap left low, facing north."
+    },
+    {
+     "who": "eldwin",
+     "text": "Somebody's been keeping this. Properly."
+    }
+   ]
+  },
+  {
+   "id": "wall_wardstone",
+   "lines": [
+    {
+     "who": "",
+     "text": "The stone is cold, and doesn't answer."
+    },
+    {
+     "who": "eldwin",
+     "text": "Asleep. Well. You've earned it."
+    }
+   ]
+  },
+  {
+   "id": "tolls_heap",
+   "lines": [
+    {
+     "who": "",
+     "text": "The goose's takings, in a heap on the gravel: a battered felt hat, a pair of spectacles, a silver thimble, a cooper's mallet, a great many crusts, and one brass button."
+    },
+    {
+     "who": "eldwin",
+     "text": "He did well for himself."
+    }
+   ]
+  },
+  {
+   "id": "tolls_dorcas",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "That's my hat."
+    },
+    {
+     "who": "",
+     "text": "She puts it on, and for once says nothing about anything."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tolls_hat"
+    },
+    {
+     "reward": {
+      "title": "The Tolls",
+      "xp": 10,
+      "items": {
+       "johnnycake": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tolls_asa",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "There. Now I can see who I'm talking to."
+    },
+    {
+     "who": "",
+     "text": "He looks at Eldwin for a while."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "Thought you'd be younger, from the voice."
+    },
+    {
+     "who": "eldwin",
+     "text": "Most people do."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "Come on, Patience. Letters won't carry themselves."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tolls_specs"
+    },
+    {
+     "reward": {
+      "title": "The Tolls",
+      "xp": 10,
+      "items": {
+       "peppermint_drop": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tolls_lavinia",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "My mother's thimble. I'd turned the house over twice."
+    },
+    {
+     "who": "",
+     "text": "She puts it on at once, though she has nothing to sew."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tolls_thimble"
+    },
+    {
+     "reward": {
+      "title": "The Tolls",
+      "xp": 10,
+      "items": {
+       "chicken_pie": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tolls_reuben",
+   "lines": [
+    {
+     "who": "",
+     "text": "Reuben goes down the barrel wall tapping each barrel with it, and listening."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Sound. Every one."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tolls_mallet"
+    },
+    {
+     "reward": {
+      "title": "The Tolls",
+      "xp": 10,
+      "items": {
+       "pine_pitch": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tolls_lem",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "He's still a goose.",
+     "if": {
+      "notFlags": [
+       "heard:LCF"
+      ]
+     }
+    },
+    {
+     "who": "eldwin",
+     "text": "I'm afraid so.",
+     "if": {
+      "notFlags": [
+       "heard:LCF"
+      ]
+     }
+    },
+    {
+     "who": "lem_cooper",
+     "text": "Then it's the other one. The white one. She's the one who's enchanted.",
+     "if": {
+      "flags": [
+       "goose_home"
+      ],
+      "notFlags": [
+       "heard:LCF"
+      ]
+     }
+    },
+    {
+     "who": "lem_cooper",
+     "text": "Did he leave any of my crusts?"
+    },
+    {
+     "who": "eldwin",
+     "text": "I'm afraid not."
+    },
+    {
+     "who": "lem_cooper",
+     "text": "Good. Then he liked them."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "tolls_crusts"
+    },
+    {
+     "setFlag": "heard:LCF"
+    },
+    {
+     "setFlag": "met_lem"
+    }
+   ]
+  },
+  {
+   "id": "tolls_jasper_button",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Not mine. I don't lose buttons."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JBT"
+    }
+   ]
+  },
+  {
+   "id": "pine_ask",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "That beaver's started on her. Down by the roots, south side."
+    },
+    {
+     "who": "gideon_strand",
+     "text": "If he drops her, nobody broke any rule. That's how I'd look at it, if I were a worse man."
+    },
+    {
+     "who": "eldwin",
+     "text": "And are you?"
+    },
+    {
+     "who": "gideon_strand",
+     "text": "I'm thinking about it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "pine_asked"
+    }
+   ]
+  },
+  {
+   "id": "pine_marks",
+   "lines": [
+    {
+     "who": "",
+     "text": "Fresh tooth marks round the foot of the pine, and chips everywhere. Eldwin lays a hand on the bark, and feels the wall go thin, a long way off."
+    },
+    {
+     "who": "eldwin",
+     "text": "Not this one."
+    }
+   ]
+  },
+  {
+   "id": "pine_done",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "He's gone back to his dam. Took a birch with him, out of spite."
+    },
+    {
+     "who": "gideon_strand",
+     "text": "I'll leave her standing. I'll tell my boy to leave her standing."
+    },
+    {
+     "who": "eldwin",
+     "text": "Will you tell him why?"
+    },
+    {
+     "who": "gideon_strand",
+     "text": "I'll tell him I don't know. That's what I was told."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "pine_done"
+    },
+    {
+     "reward": {
+      "title": "The Warden's Pine",
+      "xp": 60,
+      "items": {
+       "pine_pitch": 2,
+       "hearth_stew": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "oneshort_ask",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "Forty-two. She's gone over the wall. Gyp's been looking at that stile all morning."
+    },
+    {
+     "who": "eldwin",
+     "text": "Shall I fetch her?"
+    },
+    {
+     "who": "hosea_lamb",
+     "text": "I'd not go over there myself. That side's not mine."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "oneshort_asked"
+    }
+   ]
+  },
+  {
+   "id": "ewe_found",
+   "lines": [
+    {
+     "who": "",
+     "text": "The ewe is standing in the frost with her back to the wind, as if she'd been waiting for somebody sensible."
+    },
+    {
+     "who": "eldwin",
+     "text": "Come on, then. Home."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "has_ewe"
+    }
+   ]
+  },
+  {
+   "id": "oneshort_done",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "Forty-three."
+    },
+    {
+     "who": "",
+     "text": "Gyp sits down, which is the most she'll say."
+    },
+    {
+     "who": "hosea_lamb",
+     "text": "You went right over. Was it cold?"
+    },
+    {
+     "who": "eldwin",
+     "text": "Colder than this side."
+    },
+    {
+     "who": "hosea_lamb",
+     "text": "My father always said."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "oneshort_done"
+    },
+    {
+     "reward": {
+      "title": "One Short",
+      "xp": 50,
+      "items": {
+       "wool_scarf": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

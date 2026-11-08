@@ -1,0 +1,81 @@
+{
+ "_note": "Two people talking as Eldwin passes, when they happen to be close together (story/overheard.ts). Each is heard once.",
+ "overheard": [
+  {
+   "id": "opr1",
+   "a": "asa_kimball",
+   "b": "lavinia_dunn",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "Patience says it'll be a hard winter."
+    },
+    {
+     "who": "lavinia_dunn",
+     "text": "Patience says that every year."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "She's been right a good few years lately."
+    }
+   ]
+  },
+  {
+   "id": "opr2",
+   "a": "lem_cooper",
+   "b": "reuben_cooper",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "Pa, can enchanted people be geese?"
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Ask your mother."
+    },
+    {
+     "who": "lem_cooper",
+     "text": "She's on the other side."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Then you'll have to wait, won't you."
+    }
+   ]
+  },
+  {
+   "id": "opr3",
+   "a": "gideon_strand",
+   "b": "toby_fisk",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "You'd like the sky today, Toby."
+    },
+    {
+     "who": "toby_fisk",
+     "text": "Tell me about it later."
+    }
+   ]
+  },
+  {
+   "id": "opr4",
+   "a": "toby_fisk",
+   "b": "gideon_strand",
+   "lines": [
+    {
+     "who": "toby_fisk",
+     "text": "Is it raining?"
+    },
+    {
+     "who": "gideon_strand",
+     "text": "No."
+    },
+    {
+     "who": "toby_fisk",
+     "text": "Shame. I like hearing it on the boards."
+    }
+   ]
+  }
+ ]
+}

@@ -357,7 +357,32 @@
       "power": 1.7,
       "target": "all",
       "telegraph": true
-    }
+    },
+    {"id": "toll_peck", "name": "Toll Peck", "element": "physical", "power": 0.9, "target": "one"},
+    {"id": "wing_clout", "name": "Wing Clout", "element": "physical", "power": 1.15, "target": "one"},
+    {"id": "spread_wings", "name": "Spreads His Wings", "element": "physical", "power": 0, "target": "self", "status": {"id": "wingspread", "turns": 1}},
+    {"id": "preen", "name": "Preens, Then Pecks", "element": "physical", "power": 0.9, "target": "one", "telegraph": true},
+    {"id": "lower_head", "name": "Lowers His Head", "element": "physical", "power": 0, "target": "self", "telegraph": true},
+    {"id": "toll_charge", "name": "Runs at You", "element": "physical", "power": 1.9, "target": "one"},
+    {"id": "chomp", "name": "Chomp", "element": "physical", "power": 0.9, "target": "one"},
+    {"id": "hunker", "name": "Hunker Down", "element": "physical", "power": 0, "target": "self", "status": {"id": "curled", "turns": 1}, "telegraph": true},
+    {"id": "peck", "name": "Peck", "element": "physical", "power": 0.7, "target": "one"},
+    {"id": "caw", "name": "Caw", "element": "arcane", "power": 0.3, "target": "all", "status": {"id": "afraid", "turns": 1}},
+    {"id": "clamp", "name": "Clamp", "element": "physical", "power": 1.25, "target": "one", "status": {"id": "slow", "turns": 1}},
+    {"id": "shell_up", "name": "Into the Shell", "element": "physical", "power": 0, "target": "self", "status": {"id": "curled", "turns": 1}, "telegraph": true},
+    {"id": "spear", "name": "Spear", "element": "physical", "power": 1.35, "target": "one"},
+    {"id": "jab", "name": "Jab", "element": "physical", "power": 0.7, "target": "one"},
+    {"id": "hoop_roll", "name": "Hoop Roll", "element": "physical", "power": 1.1, "target": "one"},
+    {"id": "fall_apart", "name": "Fall Apart", "element": "physical", "power": 0, "target": "self", "status": {"id": "curled", "turns": 1}, "telegraph": true},
+    {"id": "gnaw", "name": "Gnaw", "element": "physical", "power": 0.9, "target": "one"},
+    {"id": "tail_slap", "name": "Tail Slap", "element": "physical", "power": 0.45, "target": "all"},
+    {"id": "kick", "name": "Kick", "element": "physical", "power": 1.0, "target": "one"},
+    {"id": "frost_breath", "name": "Frost Breath", "element": "frost", "power": 0.5, "target": "all", "status": {"id": "chilled", "turns": 1}},
+    {"id": "heave", "name": "Heave", "element": "physical", "power": 0, "target": "self", "status": {"id": "curled", "turns": 1}, "telegraph": true},
+    {"id": "creak", "name": "A Tree Creaks", "element": "physical", "power": 0, "target": "self", "telegraph": true},
+    {"id": "fell_tree", "name": "Fells a Tree", "element": "physical", "power": 2.4, "target": "one", "telegraph": true},
+    {"id": "propped", "name": "Shoves at the Propped Tree", "element": "physical", "power": 0, "target": "self"},
+    {"id": "cracks_cold", "name": "Cold from the Cracks", "element": "frost", "power": 0.55, "target": "all", "status": {"id": "chilled", "turns": 1}}
   ],
   "creatures": [
     {
@@ -365,7 +390,7 @@
       "name": "Rimeling",
       "level": 1,
       "stats": {
-        "hp": 22,
+        "hp": 25,
         "mp": 0,
         "atk": 6,
         "mag": 9,
@@ -414,7 +439,7 @@
       "name": "Burrback",
       "level": 2,
       "stats": {
-        "hp": 48,
+        "hp": 56,
         "mp": 0,
         "atk": 14,
         "mag": 6,
@@ -468,7 +493,7 @@
       "name": "Latchpaw",
       "level": 1,
       "stats": {
-        "hp": 38,
+        "hp": 44,
         "mp": 0,
         "atk": 9,
         "mag": 6,
@@ -519,7 +544,7 @@
       "name": "Snickerkit",
       "level": 1,
       "stats": {
-        "hp": 32,
+        "hp": 37,
         "mp": 0,
         "atk": 8,
         "mag": 6,
@@ -698,7 +723,7 @@
       "name": "Tapbeak",
       "level": 3,
       "stats": {
-        "hp": 46,
+        "hp": 54,
         "mp": 0,
         "atk": 16,
         "mag": 6,
@@ -746,7 +771,7 @@
       "name": "Tipplewasps",
       "level": 3,
       "stats": {
-        "hp": 34,
+        "hp": 40,
         "mp": 0,
         "atk": 15,
         "mag": 6,
@@ -796,7 +821,7 @@
       "name": "Chickaree",
       "level": 3,
       "stats": {
-        "hp": 46,
+        "hp": 54,
         "mp": 0,
         "atk": 15,
         "mag": 6,
@@ -848,7 +873,7 @@
       "name": "Cordling",
       "level": 3,
       "stats": {
-        "hp": 68,
+        "hp": 80,
         "mp": 0,
         "atk": 18,
         "mag": 6,
@@ -895,7 +920,7 @@
       "name": "Sugarling",
       "level": 3,
       "stats": {
-        "hp": 30,
+        "hp": 35,
         "mp": 0,
         "atk": 6,
         "mag": 14,
@@ -945,7 +970,7 @@
       "name": "Footstone",
       "level": 3,
       "stats": {
-        "hp": 64,
+        "hp": 75,
         "mp": 0,
         "atk": 19,
         "mag": 6,
@@ -992,7 +1017,7 @@
       "name": "Effigy Moth",
       "level": 3,
       "stats": {
-        "hp": 38,
+        "hp": 45,
         "mp": 0,
         "atk": 11,
         "mag": 17,
@@ -1040,7 +1065,7 @@
       "name": "Whippoorwill",
       "level": 3,
       "stats": {
-        "hp": 46,
+        "hp": 54,
         "mp": 0,
         "atk": 19,
         "mag": 17,
@@ -1084,7 +1109,7 @@
       "name": "Hushwing",
       "level": 3,
       "stats": {
-        "hp": 50,
+        "hp": 57,
         "mp": 0,
         "atk": 20,
         "mag": 15,
@@ -1130,7 +1155,7 @@
       "name": "Sextonling",
       "level": 3,
       "stats": {
-        "hp": 50,
+        "hp": 59,
         "mp": 0,
         "atk": 16,
         "mag": 6,
@@ -1180,7 +1205,7 @@
       "name": "Tallowlight",
       "level": 3,
       "stats": {
-        "hp": 30,
+        "hp": 35,
         "mp": 0,
         "atk": 6,
         "mag": 18,
@@ -1230,7 +1255,7 @@
       "name": "Old Bucket",
       "level": 4,
       "stats": {
-        "hp": 250,
+        "hp": 295,
         "mp": 0,
         "atk": 33,
         "mag": 6,
@@ -1275,7 +1300,7 @@
       "name": "The Ledger",
       "level": 4,
       "stats": {
-        "hp": 250,
+        "hp": 288,
         "mp": 0,
         "atk": 16,
         "mag": 36,
@@ -1327,7 +1352,7 @@
       "name": "The Sexton",
       "level": 4,
       "stats": {
-        "hp": 125,
+        "hp": 145,
         "mp": 0,
         "atk": 23,
         "mag": 8,
@@ -1369,6 +1394,19 @@
       "settle": "sink_away",
       "icon": "shard",
       "rises": true
-    }
+    },
+    {"id": "tollgoose", "name": "The Toll Goose", "level": 5, "scale": 1.45, "stats": {"hp": 330, "mp": 0, "atk": 36, "mag": 8, "def": 14, "res": 12, "spd": 13}, "element": {"weak": ["earth"], "resist": ["frost"]}, "moves": [{"id": "toll_peck", "weight": 3}, {"id": "wing_clout", "weight": 1.5}, {"id": "spread_wings", "weight": 0.6}], "ai": "", "xp": 120, "drops": [{"item": "goose_down", "chance": 1}, {"item": "johnnycake", "chance": 0.5}], "sprites": {"side": "tollgoose_side", "map": "tollgoose_iso"}, "settle": "goose_bow", "gap": 0.8, "icon": "feather", "_art": "A big grey gander in Dorcas Brigham's hat (decision 0200). Beaten, the hat comes off (tollgoose_bare_side, tollgoose_hat_side) and he walks off the road."},
+    {"id": "whistlepig", "name": "Whistlepig", "level": 5, "stats": {"hp": 84, "mp": 0, "atk": 21, "mag": 6, "def": 9, "res": 8, "spd": 11}, "element": {"weak": ["frost"], "resist": []}, "moves": [{"id": "chomp", "weight": 3}, {"id": "hunker", "weight": 0.6}], "ai": "burrback", "xp": 34, "drops": [{"item": "johnnycake", "chance": 0.25}, {"item": "copper_button", "chance": 0.3}], "sprites": {"side": "whistlepig_side", "map": "whistlepig_iso"}, "settle": "scamper_off", "icon": "claw"},
+    {"id": "gleaner", "name": "Gleaner", "level": 5, "stats": {"hp": 80, "mp": 0, "atk": 22, "mag": 12, "def": 7, "res": 9, "spd": 15}, "element": {"weak": ["arcane"], "resist": []}, "moves": [{"id": "peck", "weight": 3}, {"id": "caw", "weight": 1}], "ai": "", "xp": 32, "drops": [{"item": "copper_button", "chance": 0.35}], "sprites": {"side": "gleaner_side", "map": "gleaner_iso"}, "settle": "scamper_off", "icon": "feather"},
+    {"id": "snapjaw", "name": "Snapjaw", "level": 5, "stats": {"hp": 104, "mp": 0, "atk": 23, "mag": 6, "def": 15, "res": 8, "spd": 5}, "element": {"weak": ["earth", "hearth"], "resist": ["physical"]}, "moves": [{"id": "clamp", "weight": 3}, {"id": "shell_up", "weight": 0.6}], "ai": "burrback", "xp": 40, "drops": [{"item": "old_wall_stone", "chance": 0.3}], "sprites": {"side": "snapjaw_side", "map": "snapjaw_iso"}, "settle": "trundle_off", "icon": "stone"},
+    {"id": "stilt", "name": "Stilt", "level": 5, "stats": {"hp": 72, "mp": 0, "atk": 24, "mag": 6, "def": 7, "res": 9, "spd": 13}, "element": {"weak": ["arcane"], "resist": []}, "moves": [{"id": "jab", "weight": 3}, {"id": "spear", "weight": 1.5}], "ai": "", "xp": 34, "drops": [{"item": "peppermint_drop", "chance": 0.25}], "sprites": {"side": "stilt_side", "map": "stilt_iso"}, "settle": "scamper_off", "icon": "feather"},
+    {"id": "staveling", "name": "Staveling", "level": 5, "stats": {"hp": 88, "mp": 0, "atk": 21, "mag": 6, "def": 14, "res": 6, "spd": 6}, "element": {"weak": ["hearth"], "resist": ["physical"]}, "moves": [{"id": "hoop_roll", "weight": 3}, {"id": "fall_apart", "weight": 0.6}], "ai": "burrback", "xp": 38, "drops": [{"item": "kindling", "chance": 0.4}], "sprites": {"side": "staveling_side", "map": "staveling_iso"}, "settle": "scamper_off", "icon": "kindling"},
+    {"id": "gnawling", "name": "Gnawling", "level": 6, "stats": {"hp": 90, "mp": 0, "atk": 23, "mag": 6, "def": 9, "res": 8, "spd": 12}, "element": {"weak": ["frost"], "resist": []}, "moves": [{"id": "gnaw", "weight": 3}, {"id": "tail_slap", "weight": 1}], "ai": "", "xp": 40, "drops": [{"item": "kindling", "chance": 0.3}, {"item": "johnnycake", "chance": 0.2}], "sprites": {"side": "gnawling_side", "map": "gnawling_iso"}, "settle": "scamper_off", "icon": "claw"},
+    {"id": "quillpig", "name": "Quillpig", "level": 6, "scale": 1.4, "stats": {"hp": 108, "mp": 0, "atk": 25, "mag": 6, "def": 13, "res": 7, "spd": 6}, "element": {"weak": ["earth"], "resist": ["physical"]}, "moves": [{"id": "shove", "weight": 3}, {"id": "bristle", "weight": 1}], "ai": "burrback", "xp": 42, "drops": [{"item": "burrback_quill", "chance": 0.4}], "sprites": {"side": "quillpig_side", "map": "quillpig_iso"}, "settle": "trundle_off", "icon": "claw", "_art": "A porcupine whose quills lie back, half rise for a shove, and stand straight up when hit or bristling; curls into a ball (decision 0202)."},
+    {"id": "whitecoat", "name": "Whitecoat", "level": 7, "scale": 1.4, "stats": {"hp": 92, "mp": 0, "atk": 25, "mag": 6, "def": 9, "res": 9, "spd": 17}, "element": {"weak": ["hearth"], "resist": []}, "moves": [{"id": "kick", "weight": 3}, {"id": "snicker", "weight": 0.6}], "ai": "nimble", "xp": 46, "drops": [{"item": "peppermint_drop", "chance": 0.25}, {"item": "darning_egg", "chance": 0.2}], "sprites": {"side": "whitecoat_side", "map": "whitecoat_iso"}, "settle": "scamper_off", "icon": "claw", "_art": "A snowshoe hare, white already, black ear tips and big hind feet; kicks with both (decision 0202)."},
+    {"id": "hoarling", "name": "Hoarling", "level": 7, "stats": {"hp": 104, "mp": 0, "atk": 8, "mag": 35, "def": 7, "res": 13, "spd": 12}, "element": {"weak": ["hearth"], "resist": ["frost"]}, "moves": [{"id": "frost_breath", "weight": 2}, {"id": "nip", "weight": 3}], "ai": "rimeling", "xp": 46, "drops": [{"item": "rime_shard", "chance": 0.45}, {"item": "maple_candy", "chance": 0.15}], "sprites": {"side": "hoarling_side", "map": "hoarling_iso"}, "settle": "pop_to_motes", "icon": "drop"},
+    {"id": "frostheave", "name": "Frostheave", "level": 7, "stats": {"hp": 118, "mp": 0, "atk": 26, "mag": 6, "def": 18, "res": 9, "spd": 4}, "element": {"weak": ["earth"], "resist": ["physical", "frost"]}, "moves": [{"id": "topple", "weight": 3}, {"id": "heave", "weight": 0.6}], "ai": "burrback", "xp": 48, "drops": [{"item": "old_wall_stone", "chance": 0.4}], "sprites": {"side": "frostheave_side", "map": "frostheave_iso"}, "settle": "scamper_off", "icon": "stone"},
+    {"id": "foreman", "name": "The Foreman", "level": 6, "stats": {"hp": 310, "mp": 0, "atk": 35, "mag": 8, "def": 14, "res": 11, "spd": 9}, "element": {"weak": [], "resist": []}, "moves": [{"id": "gnaw", "weight": 3}, {"id": "tail_slap", "weight": 1}], "ai": "", "xp": 140, "drops": [{"item": "kindling", "chance": 1}, {"item": "johnnycake", "chance": 0.5}], "sprites": {"side": "foreman_side", "map": "foreman_iso"}, "settle": "amble_off", "icon": "kindling"},
+    {"id": "tumbledown", "name": "The Tumbledown", "level": 7, "stats": {"hp": 270, "mp": 0, "atk": 30, "mag": 28, "def": 28, "res": 32, "spd": 5}, "element": {"weak": ["earth"], "resist": ["physical", "frost", "arcane"]}, "moves": [{"id": "topple", "weight": 3}, {"id": "cracks_cold", "weight": 1.5}, {"id": "settle_in", "weight": 0.6}], "ai": "", "xp": 160, "drops": [{"item": "old_wall_stone", "chance": 1}, {"item": "rime_shard", "chance": 0.5}], "sprites": {"side": "tumbledown_side", "map": "tumbledown_iso"}, "settle": "lie_down", "icon": "stone"}
   ]
 }

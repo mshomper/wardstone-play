@@ -59,6 +59,13 @@
       ]
     },
     {
+      "id": "scarecrow_coat",
+      "lines": [
+        { "who": "", "text": "Pa's coat, buttoned to the chin. It stands facing the church, the way it has all week." },
+        { "who": "", "text": "The coat is moving. There isn't any wind." }
+      ]
+    },
+    {
       "id": "door_shut",
       "lines": [
         { "who": "", "text": "The door is shut for now." }

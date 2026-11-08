@@ -1,6 +1,7 @@
 {
   "_note": "One region. `places` are what the regional map shows: each claims the areas that count as being there, and sits at a spot on the 640 by 540 parchment. `paths` join places. `leads` are ways out of the region. `quests` and `dialogue` name files in this folder.",
   "id": "kettle-notch",
+  "overheard": "overheard",
   "name": "Kettle Notch",
   "places": [
     {
@@ -32,7 +33,8 @@
     { "from": "alder-hollow", "to": [105, 495], "name": "the road to Hardscrabble" }
   ],
   "board": "board",
+  "scarecrow": {"prop": "scarecrow", "after": "ending_seen", "done": "scarecrow_moved", "home": {"area": "south-fields", "at": [-14.2, 4.2]}, "steps": [{"area": "south-fields", "at": [-8.2, 1.2]}, {"area": "south-fields", "at": [-3.6, -8.4]}, {"area": "green-frame", "at": [-3.6, 6.0]}, {"area": "green-frame", "at": [5.6, -5.3]}]},
   "cart": [{ "id": "woodlot", "area": "sugar-lane" }, { "id": "coffin-rest", "area": "old-lane" }, { "id": "south-fields", "area": "south-fields" }],
   "quests": ["tailors-cart", "the-mitten", "lost-cat", "quilt-squares", "stopped-clock", "big-ones", "mrs-applegate", "folded-note", "tin-whistle", "sextons-share"],
-  "dialogue": ["hester", "ada", "silas", "wren", "townsfolk", "world", "side_cat", "side_quilt", "side_clock", "side_bigones", "residents", "side_goose", "side_note", "side_whistle", "notch_places", "side_sexton"]
+  "dialogue": ["opening_up", "hester", "ada", "silas", "wren", "townsfolk", "world", "side_cat", "side_quilt", "side_clock", "side_bigones", "residents", "side_goose", "side_note", "side_whistle", "notch_places", "side_sexton"]
 }

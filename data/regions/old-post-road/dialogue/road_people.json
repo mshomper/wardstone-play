@@ -1,0 +1,854 @@
+{
+ "conversations": [
+  {
+   "id": "lavinia_first",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "You'll want a room. The Judge's room is aired. So is the one the bishop was sick in, but I don't put people in that one."
+    },
+    {
+     "who": "eldwin",
+     "text": "I'm only passing, I'm afraid."
+    },
+    {
+     "who": "lavinia_dunn",
+     "text": "Everyone's only passing. That's what a coaching house is for."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_lavinia"
+    }
+   ]
+  },
+  {
+   "id": "lavinia_after",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "Noon bell's at twelve. Somebody has to ring it."
+    }
+   ]
+  },
+  {
+   "id": "lavinia_bitten",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "Something white went by at dawn and bit me on the ankle. Didn't stop and didn't pay. I've had guests like that."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LV0"
+    }
+   ]
+  },
+  {
+   "id": "open_lv1",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "My mother kept this house, and her mother. Neither of them let a bed go unturned, and I don't see why I should start."
+    },
+    {
+     "who": "eldwin",
+     "text": "I don't either."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LV1"
+    }
+   ]
+  },
+  {
+   "id": "open_lv3",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "The stage goes by the river now. Has done for twenty-six years. I'm not simple. I know where the road goes."
+    },
+    {
+     "who": "eldwin",
+     "text": "Then why ring the bell?"
+    },
+    {
+     "who": "lavinia_dunn",
+     "text": "It's noon. What else would I do at noon?"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LV3"
+    }
+   ]
+  },
+  {
+   "id": "asa_first",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "Afternoon. This is Patience. She doesn't care for strangers, and she hasn't made an exception yet."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "We turned back at the ford, didn't we. We don't argue with geese."
+    },
+    {
+     "who": "eldwin",
+     "text": "A goose?"
+    },
+    {
+     "who": "asa_kimball",
+     "text": "Big grey one, taking tolls. Patience wouldn't look at it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_asa"
+    }
+   ]
+  },
+  {
+   "id": "asa_after",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "Three letters for Harlow Bridge, and one for Hardscrabble that nobody wants. We'll get there."
+    }
+   ]
+  },
+  {
+   "id": "asa_shied",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "Patience shied at something white in the road this morning. She won't say what it was."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AS0"
+    }
+   ]
+  },
+  {
+   "id": "open_as1",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "Forty years on this road, and I've never opened a letter."
+    },
+    {
+     "who": "eldwin",
+     "text": "But you know what's in them."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "Most of them. You can tell from the hand. People press harder when it's bad news."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AS1"
+    }
+   ]
+  },
+  {
+   "id": "open_as2",
+   "lines": [
+    {
+     "who": "asa_kimball",
+     "text": "There's one for Obed Thayer at Hardscrabble, from his boy at the mills. Postage due on it, a dozen eggs. He's turned me away at the door three times."
+    },
+    {
+     "who": "eldwin",
+     "text": "Perhaps he doesn't want to read it."
+    },
+    {
+     "who": "asa_kimball",
+     "text": "He wants to read it. He doesn't want to pay for it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:AS2"
+    }
+   ]
+  },
+  {
+   "id": "reuben_first",
+   "lines": [
+    {
+     "who": "",
+     "text": "Reuben raps a knuckle on the nearest barrel and listens."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Hear that? That's a sound barrel."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "A week of barrels and nowhere to send them. Goose won't let a cart across."
+    },
+    {
+     "who": "eldwin",
+     "text": "So you built a wall."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Seemed to be the custom round here."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_reuben"
+    }
+   ]
+  },
+  {
+   "id": "reuben_market",
+   "lines": [
+    {
+     "who": "reuben_cooper",
+     "text": "My wife went over to market Tuesday. She's still over there. So's the market."
+    }
+   ]
+  },
+  {
+   "id": "reuben_staff",
+   "lines": [
+    {
+     "who": "",
+     "text": "Reuben taps Eldwin's staff, and listens."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Good wood. Bit of a crack near the top. I'd not lean on it."
+    },
+    {
+     "who": "eldwin",
+     "text": "I've been leaning on it for forty years."
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Then it's used to you."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_reuben"
+    },
+    {
+     "setFlag": "heard:RCF"
+    }
+   ]
+  },
+  {
+   "id": "reuben_plates",
+   "lines": [
+    {
+     "who": "reuben_cooper",
+     "text": "Hepzibah'll be back across by supper. I'd best find where Lem put the plates."
+    }
+   ]
+  },
+  {
+   "id": "open_rc1",
+   "lines": [
+    {
+     "who": "reuben_cooper",
+     "text": "I've been sleeping in the shop. House is too quiet with her gone."
+    },
+    {
+     "who": "eldwin",
+     "text": "And Lem?"
+    },
+    {
+     "who": "reuben_cooper",
+     "text": "Lem sleeps in the shop too. Says it's to keep me company."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:RC1"
+    }
+   ]
+  },
+  {
+   "id": "open_rc2",
+   "lines": [
+    {
+     "who": "reuben_cooper",
+     "text": "My father made barrels for the coaching house up the road. Every one of them's still sound. Nobody's put anything in them for twenty years."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:RC2"
+    }
+   ]
+  },
+  {
+   "id": "lem_first",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "You have to pay him. It's on the sign."
+    },
+    {
+     "who": "eldwin",
+     "text": "Pay whom?"
+    },
+    {
+     "who": "lem_cooper",
+     "text": "The goose. He's a toll keeper really. He's under a spell. If enough people pay, it breaks."
+    },
+    {
+     "who": "eldwin",
+     "text": "How much have you paid?"
+    },
+    {
+     "who": "lem_cooper",
+     "text": "All my crusts since Monday."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_lem"
+    }
+   ]
+  },
+  {
+   "id": "lem_sign",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "I did the sign myself. TOLL is the hard word."
+    }
+   ]
+  },
+  {
+   "id": "lem_white",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "He's still a goose."
+    },
+    {
+     "who": "eldwin",
+     "text": "I'm afraid so."
+    },
+    {
+     "who": "lem_cooper",
+     "text": "Then it's the other one. The white one. She's the one who's enchanted."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_lem"
+    },
+    {
+     "setFlag": "heard:LCF"
+    }
+   ]
+  },
+  {
+   "id": "lem_still",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "He's still a goose. I'm keeping the sign anyway."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_lem"
+    },
+    {
+     "setFlag": "heard:LCF"
+    }
+   ]
+  },
+  {
+   "id": "open_lc1",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "Pa sleeps in the shop now. I go too, so he doesn't get frightened."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LC1"
+    }
+   ]
+  },
+  {
+   "id": "open_lc2",
+   "lines": [
+    {
+     "who": "lem_cooper",
+     "text": "If she turns into a lady, you have to bring her back here. I want to see."
+    },
+    {
+     "who": "eldwin",
+     "text": "You'll be the first to know.",
+     "face": "smile"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LC2"
+    }
+   ]
+  },
+  {
+   "id": "dorcas_first",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "Three days. That's three marks on the tailboard. I'll make it four if I have to, but I won't be happy about it."
+    },
+    {
+     "who": "dorcas_brigham",
+     "text": "I've tried bread. I've tried cabbage. I sang to it. It took my hat."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_dorcas"
+    }
+   ]
+  },
+  {
+   "id": "dorcas_shins",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "If you're thinking of walking straight at it, I did that Tuesday. Ask my shins."
+    }
+   ]
+  },
+  {
+   "id": "dorcas_open",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "Well. Somebody's done it. It's still got my hat, mind."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_dorcas"
+    },
+    {
+     "setFlag": "heard:DBF"
+    }
+   ]
+  },
+  {
+   "id": "dorcas_hat",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "It's still got my hat, mind."
+    }
+   ]
+  },
+  {
+   "id": "open_db1",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "It's slate for a church roof at Harlow Bridge. Sixty squares of it. I've never been inside a church."
+    },
+    {
+     "who": "eldwin",
+     "text": "You'll soon have been on top of one."
+    },
+    {
+     "who": "dorcas_brigham",
+     "text": "That's as close as I need."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:DB1"
+    }
+   ]
+  },
+  {
+   "id": "open_db2",
+   "lines": [
+    {
+     "who": "dorcas_brigham",
+     "text": "I keep the count in chalk so I can wipe it off when I get home. Nobody needs to know how long anything took."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:DB2"
+    }
+   ]
+  },
+  {
+   "id": "gideon_first",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "Ninety feet if she's an inch, and not a knot in her. Six thousand board feet, standing there doing nothing."
+    },
+    {
+     "who": "eldwin",
+     "text": "The pine?"
+    },
+    {
+     "who": "gideon_strand",
+     "text": "My father wouldn't cut her. His father wouldn't. I'm not going to be the one."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_gideon"
+    }
+   ]
+  },
+  {
+   "id": "gideon_after",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "You'd go about four hundred board feet, yourself. Dry."
+    }
+   ]
+  },
+  {
+   "id": "open_gs1",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "Somebody cut those marks in her bark before any of us were here. Three lines, crossed. My grandfather said leave her be, and didn't say why."
+    },
+    {
+     "who": "eldwin",
+     "text": "Did you ask him?"
+    },
+    {
+     "who": "gideon_strand",
+     "text": "You didn't ask my grandfather things."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:GS1"
+    }
+   ]
+  },
+  {
+   "id": "open_gs2",
+   "lines": [
+    {
+     "who": "gideon_strand",
+     "text": "My boy's twelve. Next year he'll want to know why we don't cut her, and I'll have nothing to tell him."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:GS2"
+    }
+   ]
+  },
+  {
+   "id": "toby_first",
+   "lines": [
+    {
+     "who": "toby_fisk",
+     "text": "Mind the edge! Oh. You're not Gideon."
+    },
+    {
+     "who": "eldwin",
+     "text": "No."
+    },
+    {
+     "who": "toby_fisk",
+     "text": "Thought not. He's louder."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_toby"
+    }
+   ]
+  },
+  {
+   "id": "toby_after",
+   "lines": [
+    {
+     "who": "toby_fisk",
+     "text": "Nothing falls on you down here that you didn't saw yourself."
+    }
+   ]
+  },
+  {
+   "id": "open_tf1",
+   "lines": [
+    {
+     "who": "toby_fisk",
+     "text": "Haven't seen the sky proper since spring. Gideon tells me about it. Says it's mostly still there."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TF1"
+    }
+   ]
+  },
+  {
+   "id": "open_tf2",
+   "lines": [
+    {
+     "who": "toby_fisk",
+     "text": "There's a beaver been at the trees by the pond. Gideon says it's done more work this month than I have. He's not wrong. He didn't have to say it."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:TF2"
+    }
+   ]
+  },
+  {
+   "id": "jasper_road_first",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "You took the long way. Most people do."
+    },
+    {
+     "who": "eldwin",
+     "text": "I didn't see you on the road."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "I came the short way."
+    },
+    {
+     "who": "eldwin",
+     "text": "There isn't one."
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Not for you."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_jasper_road"
+    }
+   ]
+  },
+  {
+   "id": "jasper_road_fire",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Fire's free. I'll put it on account."
+    },
+    {
+     "who": "eldwin",
+     "text": "Whose account?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Kettle's boiled. Do you want tea or not?"
+    },
+    {
+     "choice": [
+      {
+       "text": "Show me what you've got.",
+       "next": "jasper_open",
+       "then": [
+        {
+         "shop": true
+        }
+       ]
+      },
+      {
+       "text": "Another time.",
+       "next": "jasper_later"
+      }
+     ]
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JRF"
+    }
+   ]
+  },
+  {
+   "id": "jasper_road_goose",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "I don't sell to geese. They don't pay, and they don't forget."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JRG"
+    }
+   ]
+  },
+  {
+   "id": "open_jroad1",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Roads round here are longer than they look. That one more than most."
+    },
+    {
+     "who": "eldwin",
+     "text": "Longer how?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Mind your feet on the wall stones up there. They're loose."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JR1"
+    }
+   ]
+  },
+  {
+   "id": "open_jroad2",
+   "lines": [
+    {
+     "who": "jasper_crane",
+     "text": "Gideon offered me the pine, if I could find him a buyer. I said I'd ask around. I won't."
+    },
+    {
+     "who": "eldwin",
+     "text": "Why not?"
+    },
+    {
+     "who": "jasper_crane",
+     "text": "Bad for business."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:JR2"
+    }
+   ]
+  },
+  {
+   "id": "hosea_first",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "Forty-one. Forty-two. Forty... Forty-two. Should be forty-three."
+    },
+    {
+     "who": "eldwin",
+     "text": "One short?"
+    },
+    {
+     "who": "hosea_lamb",
+     "text": "One short. Gyp knows which one. Gyp's not saying."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_hosea"
+    }
+   ]
+  },
+  {
+   "id": "hosea_after",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "I've walked this wall since I was smaller than the sheep. Never once looked over it."
+    },
+    {
+     "who": "eldwin",
+     "text": "Never?"
+    },
+    {
+     "who": "hosea_lamb",
+     "text": "No call to. Nothing of mine over there."
+    }
+   ]
+  },
+  {
+   "id": "open_hl1",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "Gyp's fourteen. She does the counting now. I only say the numbers out loud so she knows I'm still with her."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:HL1"
+    }
+   ]
+  },
+  {
+   "id": "open_hl2",
+   "lines": [
+    {
+     "who": "hosea_lamb",
+     "text": "Cold comes off that wall, mornings. My father said keep the flock this side of it, and I do. He was usually right about cold."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:HL2"
+    }
+   ]
+  },
+  {
+   "id": "patience_look",
+   "lines": [
+    {
+     "who": "",
+     "text": "Patience looks at Eldwin with one eye, then the other, and goes back to thinking about something else."
+    }
+   ]
+  },
+  {
+   "id": "gyp_look",
+   "lines": [
+    {
+     "who": "",
+     "text": "Gyp gives Eldwin a short look and goes back to watching the flock. She has a job."
+    }
+   ]
+  },
+  {
+   "id": "sheep_look",
+   "lines": [
+    {
+     "who": "",
+     "text": "The sheep chews, and looks at Eldwin as if he were weather."
+    }
+   ]
+  },
+  {
+   "id": "ewe_back",
+   "lines": [
+    {
+     "who": "",
+     "text": "The ewe is back with the others, and acting as if she never left."
+    }
+   ]
+  }
+ ]
+}
