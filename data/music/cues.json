@@ -3,10 +3,7 @@
     "battle-b": "battle",
     "burying-ground": "town",
     "hill": "hill-take1",
-    "deep-cut": "deep-cut-take3",
-    "woods": "route",
-    "hemlock": "route",
-    "lookoff": "route"
+    "deep-cut": "deep-cut-take3"
   },
   "turns": {
     "indoors": [
@@ -44,7 +41,9 @@
         "sc-foreman": "battle-b",
         "lw-tumbledown": "battle-b",
         "hh-hart": "battle-b",
-        "ch-applejack": "battle-b"
+        "ch-applejack": "battle-b",
+        "mw-bull": "battle-b",
+        "hw-catamount": "battle-b"
       }
     },
     "battle_end": {
@@ -104,7 +103,10 @@
     "camp_end": {
       "play": "road",
       "fade": 3,
-      "from": "camp"
+      "from": "camp",
+      "inArea": {
+        "hemlock-wall": "fiddle-woods"
+      }
     }
   },
   "areas": {
@@ -164,8 +166,8 @@
     "ox-road": "hill",
     "hemlock-brook": "hill",
     "deep-cut": "deep-cut",
-    "bark-road": "woods",
-    "mast-wood": "woods",
+    "bark-road": "tanbark-woods",
+    "mast-wood": "tanbark-woods",
     "hemlock-wall": "hemlock",
     "the-lookoff": "lookoff"
   }

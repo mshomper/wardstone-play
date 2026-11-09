@@ -162,6 +162,9 @@
       "objective": "Go on at first light, to where the woods end.",
       "onStart": [
         {
+          "music": "area:hemlock-wall"
+        },
+        {
           "dialogue": "tb_fiddle_back"
         },
         {
