@@ -130,7 +130,7 @@
     { "id": "hs_tamsin_table", "lines": [
       { "who": "tamsin_gove", "if": { "notFlags": ["joined:obed"] }, "text": "Let's see it, then. Hold still. Not you. The coat." },
       { "who": "tamsin_gove", "if": { "flags": ["joined:obed"] }, "text": "Put it on the table. And tell Obed Thayer to stop looking at my seams like that." }
-    ], "onEnd": [{ "tailor": { "table": "Tamsin's table", "upTo": "stout", "threads": ["cotton", "linen", "horsehair"], "notCrafts": ["words"], "finer": "Not that one. That's {tier}. It wants finer hands than mine. Harlow Bridge." } }] },
+    ], "onEnd": [{ "tailor": { "table": "Tamsin's table", "upTo": "sunday", "threads": ["cotton", "linen", "horsehair"], "notCrafts": ["words"], "finer": "Not that one. That's {tier}. It wants finer hands than mine. Harlow Bridge." } }] },
     { "id": "hs_open_tg1", "lines": [
       { "who": "tamsin_gove", "text": "Everything I sew into a coat is something to bring a person home. A nail out of the doorframe. Ash from their own hearth." },
       { "who": "eldwin", "text": "Has it ever worked?" },

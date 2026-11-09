@@ -131,6 +131,18 @@
    "note": "Handed down. Somebody looked after it."
   },
   {
+   "id": "master",
+   "name": "Master's Make",
+   "stitches": 3,
+   "points": 17,
+   "statUnits": 2.25,
+   "extras": 3,
+   "extraSize": 2.25,
+   "colour": "#7fc4b8",
+   "note": "Made to measure, by someone who knew.",
+   "madeOnly": true
+  },
+  {
    "id": "oldwork",
    "name": "Old Work",
    "stitches": 4,
@@ -1238,12 +1250,13 @@
    "rule": "Both grow 6% for every silk seam on this piece. Weak alone, strong when the whole block is silk."
   }
  ],
- "growth": { "note": "Grows with you (F10 D4, decision 0397): `fights` worn through at a tier before a tailor can raise the piece one tier, and `cost` in goods to raise it from that tier (half what a piece of the next tier is worth). Every fight counts, won or lost, for every piece worn by anyone who fought (Matt, 9 Nov 2026). Heirloom is the top; Old Work is only found.", "fights": { "homespun": 15, "stout": 25, "sunday": 40 }, "cost": { "homespun": 10, "stout": 25, "sunday": 60 } },
+ "growth": { "note": "Grows with you (F10 D4, decision 0397): `fights` worn through at a tier before a tailor can raise the piece one tier, and `cost` in goods to raise it from that tier (half what a piece of the next tier is worth). Every fight counts, won or lost, for every piece worn by anyone who fought (Matt, 9 Nov 2026). Heirloom is the top; Old Work is only found.", "fights": { "homespun": 15, "stout": 25, "sunday": 40, "heirloom": 60 }, "cost": { "homespun": 10, "stout": 25, "sunday": 60, "heirloom": 125 } },
  "moveFee": 3,
  "unpick": { "homespun": 3,
   "stout": 6,
   "sunday": 15,
   "heirloom": 30,
+  "master": 45,
   "oldwork": 60
  },
  "addStitch": [

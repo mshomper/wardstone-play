@@ -6,7 +6,7 @@
     "takes": 0.6,
     "sells": 1.5,
     "buysGear": 0.25,
-    "gearWorth": { "homespun": 8, "stout": 20, "sunday": 50, "heirloom": 120, "oldwork": 300 },
+    "gearWorth": { "homespun": 8, "stout": 20, "sunday": 50, "heirloom": 120, "master": 250, "oldwork": 500 },
     "_gear": "What the frost leaves behind (F06 §12, decision 0386). Each piece at its full worth before `sells`: Jasper is no Benoni. His pieces follow the region he's trading in: `gearByRegion` names a region's own list, anywhere else has `gear`.",
     "gear": [
       { "slot": "keepsake", "rarity": "homespun", "value": 8 },

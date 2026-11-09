@@ -1,0 +1,17 @@
+{
+  "_note": "The masters (docs/future/F11-masters.md, decision 0411): the only makers of Master's Make, each for one slot (`any` for the test master). A master commissions a piece (`commission`: goods, plus one of `material` from their region) and raises a broken-in Heirloom of their slot, and signs both with their `touch`, an effect found on nothing else, shaped like an extra (parts.json `extras`). Neither works until `opens` holds (their favour, done); before that the bench shows the price. `placed: false`: a proposal from F11, not in the game until its region places the person, writes their favour and settles their touch. The test master is the gear test's ladder tailor.",
+  "commission": { "goods": 250 },
+  "masters": [
+    { "id": "test_master", "name": "A test master", "town": "kettle-notch", "slot": "any", "test": true, "placed": true },
+    { "id": "harlow_master", "name": "The market's tailor", "town": "harlow-bridge", "slot": "coat", "material": null, "placed": false,
+      "touch": { "id": "cut_close", "name": "Cut close", "does": "cut_close", "when": "passive", "field": "mul", "as": "less", "lo": 0.3, "hi": 0.3, "cap": 0.5, "points": 0, "tag": "First heavy blow {less:mul} softer", "text": "The first blow each fight that would take a quarter of your health lands {less:mul} softer." } },
+    { "id": "fallow_master", "name": "The pouch-maker on the terraces", "town": "fallow-bend", "slot": "belt", "material": null, "placed": false,
+      "touch": { "id": "pouch_holds", "name": "A pouch that holds", "does": "pouch_holds", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "First item each fight: kept", "text": "The first item you use each fight isn't used up." } },
+    { "id": "furnace_master", "name": "The smith", "town": "furnace-hollow", "slot": "gloves", "material": null, "placed": false,
+      "touch": { "id": "smiths_grip", "name": "A smith's grip", "does": "smiths_grip", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "First strike each fight: sure", "text": "Your first strike each fight can't miss or be dodged." } },
+    { "id": "commons_master", "name": "The drovers' cobbler", "town": "high-commons", "slot": "boots", "material": null, "placed": false,
+      "touch": { "id": "drovers_footing", "name": "Sure-footed", "does": "drovers_footing", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "Round one: can't be slowed or stopped", "text": "In the first round of a fight, you can't be slowed and you don't lose your turn." } },
+    { "id": "coldharbor_master", "name": "The keepsake carver", "town": "coldharbor", "slot": "keepsake", "material": null, "placed": false,
+      "touch": { "id": "kept_close", "name": "Kept close", "does": "kept_close", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "Keepsake fires twice, once a fight", "text": "The first time your keepsake's charm works each fight, it works once more." } }
+  ]
+}

@@ -239,7 +239,7 @@
       "places": [{ "area": "breach", "spot": "Breach battle" }]
     },
     { "id": "gear_test_basket", "kind": "use", "label": "Test gear: the rest of the pieces", "pickup": true, "once": true, "gear": "test", "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [0.85, -0.7] }] },
-    { "id": "gear_test_tailor", "kind": "tailor", "label": "Test tailor", "radius": 1.2, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [1.85, -1.05] }] },
+    { "id": "gear_test_tailor", "kind": "tailor", "master": "test_master", "label": "Test tailor", "radius": 1.2, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [1.85, -1.05] }] },
     { "id": "gear_test_last_tailor", "kind": "tailor", "stitches": true, "label": "Test last tailor", "radius": 1.0, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [3.7, 0.4] }] },
     { "id": "gear_test_merchant", "kind": "use", "label": "Test merchant", "radius": 1.0, "then": { "shop": true }, "if": { "flags": ["gear_test"] }, "places": [{ "area": "orchard", "at": [-0.2, 1.2] }] },
     { "id": "sugarbush_frost", "kind": "zone", "radius": 2.4, "once": true, "dialogue": "sugarbush_frost", "places": [{ "area": "sugarbush", "spot": "Tapped line" }] },
