@@ -42,7 +42,6 @@
       "tiles": 0
     },
     {
-      "standby": true,
       "name": "obed_iso",
       "json": "obed_iso.json",
       "image": "obed_iso.png",
@@ -65,6 +64,84 @@
         547
       ],
       "anims": 22,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "thadeous_iso",
+      "json": "thadeous_iso.json",
+      "image": "thadeous_iso.png",
+      "emissive": "thadeous_iso_emissive.png",
+      "size": [
+        1996,
+        622
+      ],
+      "anims": 48,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "thadeous_side",
+      "json": "thadeous_side.json",
+      "image": "thadeous_side.png",
+      "emissive": "thadeous_side_emissive.png",
+      "size": [
+        2048,
+        456
+      ],
+      "anims": 20,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "frostheave_iso",
+      "json": "frostheave_iso.json",
+      "image": "frostheave_iso.png",
+      "emissive": "frostheave_iso_emissive.png",
+      "size": [
+        415,
+        58
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "frostheave_side",
+      "json": "frostheave_side.json",
+      "image": "frostheave_side.png",
+      "emissive": "frostheave_side_emissive.png",
+      "size": [
+        1747,
+        70
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "hoarling_iso",
+      "json": "hoarling_iso.json",
+      "image": "hoarling_iso.png",
+      "emissive": "hoarling_iso_emissive.png",
+      "size": [
+        2003,
+        123
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "hoarling_side",
+      "json": "hoarling_side.json",
+      "image": "hoarling_side.png",
+      "emissive": "hoarling_side_emissive.png",
+      "size": [
+        2047,
+        143
+      ],
+      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -114,9 +191,35 @@
       "emissive": "mrs_applegate_side_emissive.png",
       "size": [
         1989,
-        142
+        189
       ],
-      "anims": 13,
+      "anims": 18,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "quillpig_iso",
+      "json": "quillpig_iso.json",
+      "image": "quillpig_iso.png",
+      "emissive": "quillpig_iso_emissive.png",
+      "size": [
+        689,
+        24
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "quillpig_side",
+      "json": "quillpig_side.json",
+      "image": "quillpig_side.png",
+      "emissive": "quillpig_side_emissive.png",
+      "size": [
+        1526,
+        28
+      ],
+      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -147,6 +250,19 @@
       "tiles": 0
     },
     {
+      "name": "sheep_white_iso",
+      "json": "sheep_white_iso.json",
+      "image": "sheep_white_iso.png",
+      "emissive": "sheep_white_iso_emissive.png",
+      "size": [
+        687,
+        31
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "thayer_wall_side",
       "json": "thayer_wall_side.json",
       "image": "thayer_wall_side.png",
@@ -160,16 +276,68 @@
       "tiles": 0
     },
     {
+      "name": "whistlepig_iso",
+      "json": "whistlepig_iso.json",
+      "image": "whistlepig_iso.png",
+      "emissive": "whistlepig_iso_emissive.png",
+      "size": [
+        553,
+        58
+      ],
+      "anims": 8,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "whistlepig_side",
+      "json": "whistlepig_side.json",
+      "image": "whistlepig_side.png",
+      "emissive": "whistlepig_side_emissive.png",
+      "size": [
+        2038,
+        139
+      ],
+      "anims": 6,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "whitecoat_iso",
+      "json": "whitecoat_iso.json",
+      "image": "whitecoat_iso.png",
+      "emissive": "whitecoat_iso_emissive.png",
+      "size": [
+        421,
+        33
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "whitecoat_side",
+      "json": "whitecoat_side.json",
+      "image": "whitecoat_side.png",
+      "emissive": "whitecoat_side_emissive.png",
+      "size": [
+        919,
+        36
+      ],
+      "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "portraits",
       "json": "portraits.json",
       "image": "portraits.png",
       "emissive": "portraits_emissive.png",
       "size": [
         456,
-        196
+        261
       ],
       "anims": 0,
-      "sprites": 16,
+      "sprites": 23,
       "tiles": 0
     },
     {
@@ -327,6 +495,45 @@
       "anims": 0,
       "sprites": 2,
       "tiles": 0
+    },
+    {
+      "name": "hardscrabble_kit",
+      "json": "hardscrabble_kit.json",
+      "image": "hardscrabble_kit.png",
+      "emissive": "hardscrabble_kit_emissive.png",
+      "size": [
+        1015,
+        424
+      ],
+      "anims": 0,
+      "sprites": 53,
+      "tiles": 0
+    },
+    {
+      "name": "hardscrabble_textures",
+      "json": "hardscrabble_textures.json",
+      "image": "hardscrabble_textures.png",
+      "emissive": "hardscrabble_textures_emissive.png",
+      "size": [
+        995,
+        143
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 43
+    },
+    {
+      "name": "tanbark_kit",
+      "json": "tanbark_kit.json",
+      "image": "tanbark_kit.png",
+      "emissive": "tanbark_kit_emissive.png",
+      "size": [
+        555,
+        170
+      ],
+      "anims": 0,
+      "sprites": 8,
+      "tiles": 0
     }
   ],
   "people": [
@@ -334,6 +541,15 @@
       "sprite": "npc_abigail_ness_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_abigail_ness.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_abner_coyle_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_abner_coyle.json",
       "size": [
         970,
         484
@@ -361,6 +577,15 @@
       "sprite": "npc_asa_kimball_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_asa_kimball.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_benoni_fogg_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_benoni_fogg.json",
       "size": [
         970,
         484
@@ -439,6 +664,15 @@
       ]
     },
     {
+      "sprite": "npc_lucy_shattuck_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_lucy_shattuck.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_martha_combs_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_martha_combs.json",
@@ -502,6 +736,24 @@
       ]
     },
     {
+      "sprite": "npc_sukey_varnum_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_sukey_varnum.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_tamsin_gove_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_tamsin_gove.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_thaddeus_rook_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_thaddeus_rook.json",
@@ -529,6 +781,15 @@
       ]
     },
     {
+      "sprite": "npc_truman_shattuck_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/npc_truman_shattuck.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_wren_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_wren.json",
@@ -541,6 +802,15 @@
       "sprite": "biscuit_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/biscuit_iso.json",
+      "size": [
+        821,
+        34
+      ]
+    },
+    {
+      "sprite": "cat_lowells_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/cat_lowells_iso.json",
       "size": [
         821,
         34
@@ -565,6 +835,24 @@
       ]
     },
     {
+      "sprite": "goat_dows_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/goat_dows_iso.json",
+      "size": [
+        721,
+        42
+      ]
+    },
+    {
+      "sprite": "goat_pikes_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/goat_pikes_iso.json",
+      "size": [
+        721,
+        42
+      ]
+    },
+    {
       "sprite": "gyp_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/gyp_iso.json",
@@ -574,12 +862,39 @@
       ]
     },
     {
+      "sprite": "hen_abbotts_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/hen_abbotts_iso.json",
+      "size": [
+        497,
+        28
+      ]
+    },
+    {
+      "sprite": "horse_merrills_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/horse_merrills_iso.json",
+      "size": [
+        936,
+        127
+      ]
+    },
+    {
       "sprite": "patience_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/patience_iso.json",
       "size": [
         1002,
         119
+      ]
+    },
+    {
+      "sprite": "pig_holts_iso",
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/pig_holts_iso.json",
+      "size": [
+        785,
+        32
       ]
     },
     {
@@ -595,15 +910,6 @@
       "sprite": "sheep_grey_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/sheep_grey_iso.json",
-      "size": [
-        687,
-        31
-      ]
-    },
-    {
-      "sprite": "sheep_white_iso",
-      "region": "old-post-road",
-      "json": "regions/old-post-road/sheep_white_iso.json",
       "size": [
         687,
         31
@@ -626,9 +932,39 @@
         456,
         196
       ]
+    },
+    {
+      "region": "hardscrabble",
+      "json": "regions/hardscrabble/portraits_hardscrabble.json",
+      "size": [
+        456,
+        196
+      ]
     }
   ],
   "creatures": [
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "cellar-holes"
+      ],
+      "json": "regions/hardscrabble/applejack_iso.json",
+      "size": [
+        1011,
+        115
+      ]
+    },
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "cellar-holes"
+      ],
+      "json": "regions/hardscrabble/applejack_side.json",
+      "size": [
+        969,
+        326
+      ]
+    },
     {
       "region": "kettle-notch",
       "areas": [
@@ -724,6 +1060,32 @@
       ]
     },
     {
+      "region": "hardscrabble",
+      "areas": [
+        "deep-cut",
+        "ox-road",
+        "the-quarry"
+      ],
+      "json": "regions/hardscrabble/fisher_iso.json",
+      "size": [
+        799,
+        38
+      ]
+    },
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "deep-cut",
+        "ox-road",
+        "the-quarry"
+      ],
+      "json": "regions/hardscrabble/fisher_side.json",
+      "size": [
+        950,
+        83
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "old-burying-ground"
@@ -765,28 +1127,6 @@
       "size": [
         907,
         506
-      ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall"
-      ],
-      "json": "regions/old-post-road/frostheave_iso.json",
-      "size": [
-        415,
-        58
-      ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall"
-      ],
-      "json": "regions/old-post-road/frostheave_side.json",
-      "size": [
-        971,
-        139
       ]
     },
     {
@@ -836,25 +1176,29 @@
       ]
     },
     {
-      "region": "old-post-road",
+      "region": "hardscrabble",
       "areas": [
-        "long-wall"
+        "deep-cut",
+        "ox-road",
+        "the-quarry"
       ],
-      "json": "regions/old-post-road/hoarling_iso.json",
+      "json": "regions/hardscrabble/grit_swallow_iso.json",
       "size": [
-        1002,
-        184
+        493,
+        42
       ]
     },
     {
-      "region": "old-post-road",
+      "region": "hardscrabble",
       "areas": [
-        "long-wall"
+        "deep-cut",
+        "ox-road",
+        "the-quarry"
       ],
-      "json": "regions/old-post-road/hoarling_side.json",
+      "json": "regions/hardscrabble/grit_swallow_side.json",
       "size": [
-        931,
-        214
+        981,
+        99
       ]
     },
     {
@@ -908,6 +1252,30 @@
       ]
     },
     {
+      "region": "hardscrabble",
+      "areas": [
+        "hobble-hill",
+        "sheep-walk"
+      ],
+      "json": "regions/hardscrabble/old_tup_iso.json",
+      "size": [
+        977,
+        50
+      ]
+    },
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "hobble-hill",
+        "sheep-walk"
+      ],
+      "json": "regions/hardscrabble/old_tup_side.json",
+      "size": [
+        950,
+        115
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "sugarbush"
@@ -941,25 +1309,49 @@
       ]
     },
     {
-      "region": "old-post-road",
+      "region": "hardscrabble",
       "areas": [
-        "sawyers-clearing"
+        "hobble-hill"
       ],
-      "json": "regions/old-post-road/quillpig_iso.json",
+      "json": "regions/hardscrabble/pale_hart_iso.json",
       "size": [
-        689,
-        24
+        971,
+        195
       ]
     },
     {
-      "region": "old-post-road",
+      "region": "hardscrabble",
       "areas": [
-        "sawyers-clearing"
+        "hobble-hill"
       ],
-      "json": "regions/old-post-road/quillpig_side.json",
+      "json": "regions/hardscrabble/pale_hart_side.json",
       "size": [
-        977,
-        55
+        969,
+        526
+      ]
+    },
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "cellar-holes",
+        "hemlock-brook"
+      ],
+      "json": "regions/hardscrabble/pewling_iso.json",
+      "size": [
+        785,
+        44
+      ]
+    },
+    {
+      "region": "hardscrabble",
+      "areas": [
+        "cellar-holes",
+        "hemlock-brook"
+      ],
+      "json": "regions/hardscrabble/pewling_side.json",
+      "size": [
+        970,
+        99
       ]
     },
     {
@@ -1325,53 +1717,7 @@
         971,
         208
       ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall",
-        "old-post-road"
-      ],
-      "json": "regions/old-post-road/whistlepig_iso.json",
-      "size": [
-        553,
-        58
-      ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall",
-        "old-post-road"
-      ],
-      "json": "regions/old-post-road/whistlepig_side.json",
-      "size": [
-        971,
-        208
-      ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall"
-      ],
-      "json": "regions/old-post-road/whitecoat_iso.json",
-      "size": [
-        421,
-        33
-      ]
-    },
-    {
-      "region": "old-post-road",
-      "areas": [
-        "long-wall"
-      ],
-      "json": "regions/old-post-road/whitecoat_side.json",
-      "size": [
-        919,
-        36
-      ]
     }
   ],
-  "bandHeight": 2674
+  "bandHeight": 2698
 }

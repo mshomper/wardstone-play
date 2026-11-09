@@ -64,6 +64,46 @@
    ]
   },
   {
+   "id": "open_lv2",
+   "lines": [
+    {
+     "who": "lavinia_dunn",
+     "text": "There's a book on the desk inside. Everyone who stopped here wrote in it. You can look, if you wipe your hands first."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:LV2"
+    }
+   ]
+  },
+  {
+   "id": "guest_book",
+   "lines": [
+    {
+     "who": "",
+     "text": "The guest book is as thick as a family Bible, and every page of it is full."
+    },
+    {
+     "who": "",
+     "text": "Forty years back, in the same hand he writes with now, is Eldwin's name."
+    },
+    {
+     "who": "",
+     "text": "Further back there's a column of names, each a lifetime from the next, each with three crossed lines beside it. The last of them has written \"bound: up\", and never signed out."
+    },
+    {
+     "who": "eldwin",
+     "text": "He had a good hand."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "read_guest_book"
+    }
+   ]
+  },
+  {
    "id": "open_lv3",
    "lines": [
     {
@@ -161,7 +201,7 @@
    "lines": [
     {
      "who": "asa_kimball",
-     "text": "There's one for Obed Thayer at Hardscrabble, from his boy at the mills. Postage due on it, a dozen eggs. He's turned me away at the door three times."
+     "text": "There's one for Obed Thayer at Hardscrabble, from his boy at the ironworks. Postage due on it, a dozen eggs. He's turned me away at the door three times."
     },
     {
      "who": "eldwin",

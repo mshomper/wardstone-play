@@ -1,0 +1,214 @@
+{
+  "_note": "Hardscrabble's people (decision 0340, docs/regions/hardscrabble.md). Asa and Patience, Hosea and Gyp keep their entries in the road's people.json and Jasper his in story/people.json, each with a Hardscrabble line first. Sukey's left-behind animals are people with creature bodies, as Patience and Gyp are. Obed is here until he joins; the quests session stages the first meeting, the wall and the lesson. Every line is a draft.",
+  "people": [
+    {
+      "id": "obed",
+      "name": "Obed Thayer",
+      "title": "Stonemason",
+      "portrait": "#6b6a4a",
+      "sprite": "obed_iso",
+      "potter": 0.8,
+      "schedule": [
+        { "if": { "flags": ["heard_of_obed"], "notFlags": ["met_obed", "joined:obed"] }, "area": "stone-lane", "spot": "Obed (at the patch)", "dir": 0, "potter": 0 },
+        { "if": { "flags": ["obed_on_hill"], "notFlags": ["hardscrabble_stone_woke", "joined:obed"] }, "area": "hobble-hill", "spot": "Obed (laying the wall)", "dir": 0, "potter": 0 },
+        { "if": { "flags": ["obed_wall_laid"], "notFlags": ["obed_lesson_done", "joined:obed"] }, "area": "stone-lane", "spot": "Obed (at the patch)", "dir": 0, "potter": 0 },
+        { "if": { "flags": ["obed_lesson_done"], "notFlags": ["joined:obed"] }, "area": "hardscrabble", "spot": "Obed (trough)", "dir": 1, "potter": 0 },
+        { "if": { "notFlags": ["joined:obed"] }, "area": "thayers-yard", "spot": "Obed (yard)", "dir": 0,
+          "rounds": { "speed": 0.8, "stay": [9, 20], "stops": [{ "spot": "Obed (yard)" }, { "spot": "Obed (bench)" }, { "spot": "The stone rows" }, { "spot": "The sample walls" }] } }
+      ],
+      "talk": [
+        { "if": { "flags": ["heard_of_obed"], "notFlags": ["met_obed"] }, "dialogue": "hs_obed_patch" },
+        { "if": { "notFlags": ["met_obed"] }, "dialogue": "hs_obed_early" },
+        { "if": { "flags": ["obed_lesson_done"] }, "dialogue": "hs_obed_trough" },
+        { "if": { "flags": ["hardscrabble_stone_woke"] }, "dialogue": "hs_obed_lesson" },
+        { "if": { "flags": ["obed_on_hill"], "notFlags": ["obed_wall_laid"] }, "dialogue": "hs_obed_wall" },
+        { "if": { "flags": ["obed_wall_laid"] }, "dialogue": "hs_obed_after_stone" },
+        { "if": { "flags": ["beat_pale_hart"] }, "dialogue": "hs_obed_hart" },
+        { "if": { "flags": ["talks:obed:3"], "notFlags": ["heard:OB1"] }, "dialogue": "hs_open_ob1" },
+        { "if": { "flags": ["talks:obed:5", "heard:OB1"], "notFlags": ["heard:OB2"] }, "dialogue": "hs_open_ob2" },
+        { "dialogue": "hs_obed_yard" }
+      ]
+    },
+    {
+      "id": "abner_coyle",
+      "name": "Abner Coyle",
+      "title": "Land agent",
+      "portrait": "#2e3a52",
+      "sprite": "npc_abner_coyle_iso",
+      "potter": 0.7,
+      "schedule": [
+        { "if": { "flags": ["obed_wall_laid"] }, "area": "hobble-hill", "spot": "Coyle (hill)", "dir": 0, "potter": 1.2 },
+        { "area": "hardscrabble", "spot": "Coyle (village)", "dir": 2,
+          "rounds": { "speed": 1.05, "stay": [8, 16], "stops": [{ "spot": "Coyle (village)" }, { "spot": "Round: Coyle at the trough" }, { "spot": "Round: Coyle by the pens" }, { "spot": "Noticeboard" }] } }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_coyle"] }, "dialogue": "hs_coyle_first" },
+        { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_coyle" },
+        { "if": { "flags": ["bound:wall"], "notFlags": ["bounds_done"] }, "dialogue": "hs_coyle_bounds_done" },
+        { "if": { "flags": ["obed_wall_laid", "heard:AC9"], "notFlags": ["bounds_asked"] }, "dialogue": "hs_coyle_bounds" },
+        { "if": { "flags": ["obed_wall_laid"], "notFlags": ["heard:AC9"] }, "dialogue": "hs_coyle_after" },
+        { "if": { "notFlags": ["obed_wall_laid", "heard:AC2"] }, "dialogue": "hs_coyle_wall" },
+        { "if": { "flags": ["talks:abner_coyle:3"], "notFlags": ["heard:AC1"] }, "dialogue": "hs_open_ac1" },
+        { "if": { "flags": ["talks:abner_coyle:5", "heard:AC1"], "notFlags": ["heard:AC3"] }, "dialogue": "hs_open_ac3" },
+        { "if": { "flags": ["obed_wall_laid"] }, "dialogue": "hs_coyle_hill" },
+        { "dialogue": "hs_coyle_again" }
+      ]
+    },
+    {
+      "id": "benoni_fogg",
+      "name": "Benoni Fogg",
+      "title": "Cobbler",
+      "portrait": "#8a5a32",
+      "sprite": "npc_benoni_fogg_iso",
+      "potter": 0.6,
+      "schedule": [
+        { "area": "hardscrabble", "spot": "Benoni (doorway)", "dir": 6 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_benoni"] }, "dialogue": "hs_benoni_first" },
+        { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_benoni" },
+        { "if": { "flags": ["beat_applejack", "applejack_asked"], "notFlags": ["applejack_done"] }, "dialogue": "hs_benoni_bear_done" },
+        { "if": { "notFlags": ["applejack_asked", "beat_applejack"] }, "dialogue": "hs_benoni_bear" },
+        { "if": { "flags": ["joined:obed"], "notFlags": ["heard:BFO"] }, "dialogue": "hs_benoni_obed" },
+        { "if": { "flags": ["talks:benoni_fogg:3"], "notFlags": ["heard:BF1"] }, "dialogue": "hs_open_bf1" },
+        { "if": { "flags": ["talks:benoni_fogg:5", "heard:BF1"], "notFlags": ["heard:BF2"] }, "dialogue": "hs_open_bf2" },
+        { "dialogue": "hs_benoni_shop" }
+      ]
+    },
+    {
+      "id": "tamsin_gove",
+      "name": "Tamsin Gove",
+      "title": "Seamstress",
+      "portrait": "#5a7a5a",
+      "sprite": "npc_tamsin_gove_iso",
+      "potter": 0.3,
+      "schedule": [
+        { "area": "hardscrabble-meetinghouse", "spot": "sewing", "dir": 0 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_tamsin"] }, "dialogue": "hs_tamsin_first" },
+        { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_tamsin" },
+        { "if": { "flags": ["has_fleece"], "notFlags": ["mending_done"] }, "dialogue": "hs_tamsin_fleece" },
+        { "if": { "notFlags": ["mending_asked"] }, "dialogue": "hs_tamsin_wool" },
+        { "if": { "flags": ["joined:obed"], "notFlags": ["heard:TGO"] }, "dialogue": "hs_tamsin_obed" },
+        { "if": { "flags": ["talks:tamsin_gove:3"], "notFlags": ["heard:TG1"] }, "dialogue": "hs_open_tg1" },
+        { "dialogue": "hs_tamsin_table" }
+      ]
+    },
+    {
+      "id": "truman_shattuck",
+      "name": "Truman Shattuck",
+      "title": "",
+      "portrait": "#5a6a82",
+      "sprite": "npc_truman_shattuck_iso",
+      "potter": 0.5,
+      "schedule": [
+        { "area": "hardscrabble", "spot": "Truman and Lucy", "dir": 1 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_truman"] }, "dialogue": "hs_truman_first" },
+        { "if": { "flags": ["talks:truman_shattuck:3"], "notFlags": ["heard:TS1"] }, "dialogue": "hs_open_ts1" },
+        { "dialogue": "hs_truman_again" }
+      ]
+    },
+    {
+      "id": "lucy_shattuck",
+      "name": "Lucy Shattuck",
+      "title": "",
+      "portrait": "#8a3a32",
+      "sprite": "npc_lucy_shattuck_iso",
+      "potter": 0.5,
+      "schedule": [
+        { "area": "hardscrabble", "spot": "The Shattucks' wagon", "dir": 5 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_lucy"] }, "dialogue": "hs_lucy_first" },
+        { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_lucy" },
+        { "if": { "flags": ["hardscrabble_stone_woke"], "notFlags": ["wagon_asked"] }, "dialogue": "hs_lucy_wagon" },
+        { "if": { "flags": ["talks:lucy_shattuck:3"], "notFlags": ["heard:LS1"] }, "dialogue": "hs_open_ls1" },
+        { "dialogue": "hs_lucy_again" }
+      ]
+    },
+    {
+      "id": "sukey_varnum",
+      "name": "Sukey Varnum",
+      "title": "Pound keeper",
+      "portrait": "#c8a040",
+      "sprite": "npc_sukey_varnum_iso",
+      "potter": 1.2,
+      "schedule": [
+        { "if": { "flags": ["pound_done"] }, "area": "hobble-hill", "spot": "Sukey (pound)", "dir": 0, "potter": 1.4 },
+        { "area": "hardscrabble", "spot": "Sukey (village)", "dir": 2 }
+      ],
+      "talk": [
+        { "if": { "notFlags": ["met_sukey"] }, "dialogue": "hs_sukey_first" },
+        { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_sukey" },
+        { "if": { "flags": ["postage_asked"], "notFlags": ["has_eggs", "postage_paid"] }, "dialogue": "hs_sukey_eggs" },
+        { "if": { "flags": ["penned:holts", "penned:pikes", "penned:dows", "penned:merrills", "penned:abbotts", "penned:lowells"], "notFlags": ["pound_done"] }, "dialogue": "hs_sukey_pound_full" },
+        { "if": { "flags": ["joined:obed"], "notFlags": ["heard:SVO"] }, "dialogue": "hs_sukey_obed" },
+        { "if": { "flags": ["obed_wall_laid"], "notFlags": ["pound_done", "pound_asked"] }, "dialogue": "hs_sukey_gone" },
+        { "if": { "flags": ["talks:sukey_varnum:3"], "notFlags": ["heard:SV1"] }, "dialogue": "hs_open_sv1" },
+        { "if": { "flags": ["talks:sukey_varnum:5", "heard:SV1"], "notFlags": ["heard:SV2"] }, "dialogue": "hs_open_sv2" },
+        { "if": { "notFlags": ["obed_wall_laid"] }, "dialogue": "hs_sukey_pound" },
+        { "dialogue": "hs_sukey_again" }
+      ]
+    },
+    {
+      "id": "pale_hart", "name": "The Pale Hart", "title": "", "portrait": "#cfd8e2", "sprite": "pale_hart_iso", "scale": 1.25, "radius": 0.8,
+      "schedule": [{ "if": { "flags": ["beat_pale_hart"], "notFlags": ["hart_home"] }, "area": "hobble-hill", "spot": "The Pale Hart (at the wall)", "dir": 0, "potter": 0 }],
+      "talk": [{ "dialogue": "hs_hart_look" }]
+    },
+    {
+      "id": "coyle_sheep", "name": "A sheep", "title": "", "portrait": "#d8d2c0", "sprite": "sheep_white_iso", "low": true, "radius": 0.6, "potter": 0.8,
+      "schedule": [
+        { "if": { "flags": ["sheep_ran"] }, "area": "sheep-walk", "spot": "Coyle's sheep (up the lane)", "dir": 2 },
+        { "area": "sheep-walk", "spot": "Coyle's sheep", "dir": 6 }
+      ],
+      "talk": [
+        { "if": { "flags": ["mending_asked", "sheep_ran"], "notFlags": ["has_fleece", "mending_done"] }, "dialogue": "hs_sheep_caught" },
+        { "if": { "flags": ["mending_asked"], "notFlags": ["has_fleece", "mending_done"] }, "dialogue": "hs_sheep_run" },
+        { "dialogue": "hs_sheep_look" }
+      ]
+    },
+    {
+      "id": "goat_pikes", "name": "The Pikes", "title": "", "portrait": "#2a2a2e", "sprite": "goat_pikes_iso", "sound": "hs_goat", "low": true, "potter": 1.1,
+      "schedule": [{ "if": { "flags": ["penned:pikes"] }, "area": "hobble-hill", "spot": "Pound: the Pikes", "dir": 2 }, { "area": "hardscrabble", "spot": "The Pikes", "dir": 2 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:pikes"] }, "dialogue": "hs_herd_pikes" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:pikes"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_pikes" }]
+    },
+    {
+      "id": "goat_dows", "name": "The Dows", "title": "", "portrait": "#a8824a", "sprite": "goat_dows_iso", "sound": "hs_goat", "low": true, "potter": 1.1,
+      "schedule": [{ "if": { "flags": ["penned:dows"] }, "area": "hobble-hill", "spot": "Pound: the Dows", "dir": 6 }, { "area": "hardscrabble", "spot": "The Dows", "dir": 6 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:dows"] }, "dialogue": "hs_herd_dows" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:dows"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_dows" }]
+    },
+    {
+      "id": "pig_holts", "name": "The Holts", "title": "", "portrait": "#c08a86", "sprite": "pig_holts_iso", "sound": "hs_pig", "low": true, "potter": 0.9,
+      "schedule": [{ "if": { "flags": ["penned:holts"] }, "area": "hobble-hill", "spot": "Pound: the Holts", "dir": 2 }, { "area": "hardscrabble", "spot": "The Holts", "dir": 2 }],
+      "talk": [{ "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_holts" }, { "if": { "flags": ["penned:holts"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_holts" }]
+    },
+    {
+      "id": "horse_merrills", "name": "The Merrills", "title": "", "portrait": "#9a5a2a", "sprite": "horse_merrills_iso", "sound": "hs_horse", "radius": 0.9, "potter": 0.6,
+      "schedule": [{ "if": { "flags": ["penned:merrills"] }, "area": "hobble-hill", "spot": "Pound: the Merrills", "dir": 6 }, { "area": "hardscrabble", "spot": "The Merrills", "dir": 6 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:merrills"] }, "dialogue": "hs_herd_merrills" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:merrills"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_merrills" }]
+    },
+    {
+      "id": "hen_abbotts_1", "name": "The Abbotts", "title": "", "portrait": "#8a3a22", "sprite": "hen_abbotts_iso", "sound": "hs_hen", "low": true, "potter": 1.3,
+      "schedule": [{ "if": { "flags": ["penned:abbotts"] }, "area": "hobble-hill", "spot": "Pound: the Abbotts", "dir": 2 }, { "area": "hardscrabble", "spot": "The Abbotts", "dir": 2 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:abbotts"] }, "dialogue": "hs_herd_abbotts" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:abbotts"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_abbotts" }]
+    },
+    {
+      "id": "hen_abbotts_2", "name": "The Abbotts", "title": "", "portrait": "#8a3a22", "sprite": "hen_abbotts_iso", "sound": "hs_hen", "low": true, "potter": 1.3,
+      "schedule": [{ "if": { "flags": ["penned:abbotts"] }, "area": "hobble-hill", "spot": "Pound: the Abbotts (2)", "dir": 6 }, { "area": "hardscrabble", "spot": "The Abbotts (2)", "dir": 6 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:abbotts"] }, "dialogue": "hs_herd_abbotts" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:abbotts"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_abbotts" }]
+    },
+    {
+      "id": "hen_abbotts_3", "name": "The Abbotts", "title": "", "portrait": "#8a3a22", "sprite": "hen_abbotts_iso", "sound": "hs_hen", "low": true, "potter": 1.3,
+      "schedule": [{ "if": { "flags": ["penned:abbotts"] }, "area": "hobble-hill", "spot": "Pound: the Abbotts (3)", "dir": 1 }, { "area": "hardscrabble", "spot": "The Abbotts (3)", "dir": 1 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:abbotts"] }, "dialogue": "hs_herd_abbotts" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:abbotts"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_abbotts" }]
+    },
+    {
+      "id": "cat_lowells", "name": "The Lowells", "title": "", "portrait": "#8e6a48", "sprite": "cat_lowells_iso", "sound": "hs_cat", "low": true, "potter": 1.4,
+      "schedule": [{ "if": { "flags": ["penned:lowells"] }, "area": "hobble-hill", "spot": "Pound: the Lowells", "dir": 2 }, { "area": "hardscrabble", "spot": "The Lowells", "dir": 2 }],
+      "talk": [{ "if": { "flags": ["pound_asked", "penned:holts"], "notFlags": ["penned:lowells"] }, "dialogue": "hs_herd_lowells" }, { "if": { "flags": ["pound_asked"], "notFlags": ["penned:holts"] }, "dialogue": "hs_herd_wait" }, { "if": { "flags": ["penned:lowells"] }, "dialogue": "hs_look_pound" }, { "dialogue": "hs_look_lowells" }]
+    }
+  ]
+}

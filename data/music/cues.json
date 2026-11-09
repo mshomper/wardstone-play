@@ -2,8 +2,25 @@
   "fallback": {
     "battle-b": "battle",
     "burying-ground": "town",
-    "road": "route",
-    "long-wall": "route"
+    "hill": "hill-take1",
+    "deep-cut": "deep-cut-take3",
+    "woods": "route",
+    "hemlock": "route",
+    "lookoff": "route"
+  },
+  "turns": {
+    "indoors": [
+      "indoors",
+      "indoors-b"
+    ],
+    "route": [
+      "route",
+      "route-b"
+    ],
+    "hill": [
+      "hill-take1",
+      "hill-take2"
+    ]
   },
   "cues": {
     "title": {
@@ -21,6 +38,13 @@
       "inArea": {
         "sugarbush": "battle-b",
         "old-burying-ground": "battle-b"
+      },
+      "inFight": {
+        "cf-toll": "toll-goose",
+        "sc-foreman": "battle-b",
+        "lw-tumbledown": "battle-b",
+        "hh-hart": "battle-b",
+        "ch-applejack": "battle-b"
       }
     },
     "battle_end": {
@@ -68,6 +92,19 @@
     "quest": {
       "jingle": "jingle-quest",
       "duck": 0.4
+    },
+    "joins": {
+      "jingle": "jingle-joins",
+      "duck": 0.4
+    },
+    "camp": {
+      "play": "camp",
+      "fade": 2.5
+    },
+    "camp_end": {
+      "play": "road",
+      "fade": 3,
+      "from": "camp"
     }
   },
   "areas": {
@@ -99,6 +136,37 @@
     "autumn-glade": "route",
     "old-burying-ground": "burying-ground",
     "old-burying-ground-old-vault": "burying-ground",
-    "green-frame:fair": "fair"
+    "green-frame:fair": "fair",
+    "hardscrabble": "hardscrabble",
+    "hardscrabble-boarding-house": "indoors",
+    "hardscrabble-east-farmhouse": "indoors",
+    "hardscrabble-varnums-house": "indoors",
+    "hardscrabble-varnums-house-upper": "indoors",
+    "hardscrabble-house-for-sale": "indoors",
+    "hardscrabble-shattucks-house": "indoors",
+    "hardscrabble-pike-house": "indoors",
+    "hardscrabble-farmhouse-by-the-lane": "indoors",
+    "hardscrabble-holt-house": "indoors",
+    "hardscrabble-house-by-the-common": "indoors",
+    "hardscrabble-house-by-the-common-upper": "indoors",
+    "hardscrabble-fogg-s-shop": "indoors",
+    "hardscrabble-fogg-s-shop-upper": "indoors",
+    "hardscrabble-meetinghouse": "indoors",
+    "stone-lane": "hill",
+    "thayers-yard": "hardscrabble",
+    "thayers-yard-tool-shed": "indoors",
+    "thayers-yard-thayer-house": "indoors",
+    "sheep-walk": "hill",
+    "hobble-hill": "hill",
+    "the-quarry": "hill",
+    "the-quarry-cutters-shanty": "indoors",
+    "cellar-holes": "hill",
+    "ox-road": "hill",
+    "hemlock-brook": "hill",
+    "deep-cut": "deep-cut",
+    "bark-road": "woods",
+    "mast-wood": "woods",
+    "hemlock-wall": "hemlock",
+    "the-lookoff": "lookoff"
   }
 }

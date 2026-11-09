@@ -1,0 +1,64 @@
+{
+  "_note": "Hardscrabble's small finds (decision 0340): a look, and a word from Obed once he's in the party. Drafts.",
+  "conversations": [
+    { "id": "hs_find_milestone", "lines": [
+      { "who": "", "text": "A milestone: HARDSCRABBLE 1 on the face toward the village. The face toward the hill is blank, dressed smooth and never cut." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Blank side faces up the hill. Nobody was going that way." }
+    ] },
+    { "id": "hs_find_gate_bar", "lines": [
+      { "who": "", "text": "Initials cut into the top bar, pair after pair, each in a different hand: O.T., H.T., N.T., O.T. The last pair is sharper than the rest. E.T." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "That bar's oak. Good for another hundred years." }
+    ] },
+    { "id": "hs_find_sheep_bell", "lines": [
+      { "who": "", "text": "A sheep bell in the grass, its strap rotted through. It still rings, flat." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Tin. Somebody went cheap on that. Brass rings truer." }
+    ] },
+    { "id": "hs_find_marked_stone", "lines": [
+      { "who": "", "text": "A boundary stone sunk to its shoulders in the turf, with three lines cut across each other on its face. Coyle's stakes go straight past it, a stride away." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Old bound. Older than any deed. Fence man walked right by it." }
+    ] },
+    { "id": "hs_find_fallen_block", "lines": [
+      { "who": "", "text": "A squared granite block lying where it slid off a load, long ago. There's a mason's mark on one end." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Good square work. Shame about the ditch." }
+    ] },
+    { "id": "hs_find_lunch_pail", "lines": [
+      { "who": "", "text": "A cutter's lunch pail by the boulder, the tin gone brown. The lid's still on. Inside there's nothing but a little dust." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Ate his dinner first. Sensible." }
+    ] },
+    { "id": "hs_find_school_step", "lines": [
+      { "who": "", "text": "A granite step at the top of the bank, with no school behind it. Children's initials are cut all over its top, deep and crooked. O.T. is near the middle. Lower down, smaller: E.T." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Master caught me at that. Made me stay and finish it properly." },
+      { "who": "obed", "face": "quiet", "if": { "flags": ["joined:obed"] }, "text": "That one's not mine." }
+    ] },
+    { "id": "hs_find_culvert", "lines": [
+      { "who": "", "text": "The culvert's arch, laid dry over the brook, every stone tight. Not one has slipped. There's a mark cut in the keystone." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "My grandfather's mark. Laid dry, over a brook that floods every spring. Still holding." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Fair work." }
+    ] },
+    { "id": "hs_find_quarry_block", "lines": [
+      { "who": "", "text": "A block on the top ledge, squared on five faces, the sixth still rough. Three lines are cut across each other on top, and there's a mason's mark at the corner. Nobody ever came to move it." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "That's my great-grandfather's mark." }
+    ] },
+    { "id": "hs_find_tally", "lines": [
+      { "who": "", "text": "The cutters' tally board, the chalk gone grey under the grease. Every block counted in fives, row after row." },
+      { "who": "", "text": "At the bottom, in a different hand: last course, paid." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Paid up. Good." }
+    ] },
+    { "id": "hs_find_sale_holt", "lines": [
+      { "who": "", "text": "FOR SALE, in the land company's black paint. Under it, in chalk, somebody has written HOLT." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Holts were here a hundred and ten years. Chalk'll last till it rains." }
+    ] },
+    { "id": "hs_find_sale_pike", "lines": [
+      { "who": "", "text": "FOR SALE. Under it, in chalk: PIKE. The letters have been gone over more than once." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Somebody keeps doing that. Nobody owns up." }
+    ] },
+    { "id": "hs_find_sale_step", "lines": [
+      { "who": "", "text": "FOR SALE. There was chalk under it once. It's been wiped off with a sleeve." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Crane's sleeve, I'd say." }
+    ] },
+    { "id": "hs_find_lasts", "lines": [
+      { "who": "", "text": "A shelf of wooden lasts, a pair to each family, with a paper tag tied on each: Pike. Holt. Merrill. Dow. Abbott. Lowell. And more behind. They've been dusted." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Mine's not up there. I'm not leaving. I'm going." }
+    ] }
+  ]
+}

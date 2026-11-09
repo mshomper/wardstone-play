@@ -427,7 +427,7 @@
   ],
   "placements": [
     {
-      "prop": "stone_granite_0",
+      "prop": "milestone",
       "x": -15,
       "z": 4.4,
       "collide": 0.3
@@ -507,7 +507,7 @@
       "name": "Milestone",
       "x": -15,
       "z": 4.4,
-      "note": "KETTLE NOTCH 5 toward home; KETTLE NOTCH, distance scratched out, on the far face (decision 0171). Stand-in stone until it has its own art."
+      "note": "KETTLE NOTCH 5 toward home; KETTLE NOTCH, distance scratched out, on the far face (decision 0171)."
     },
     {
       "name": "Lavinia",

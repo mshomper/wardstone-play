@@ -4,6 +4,10 @@
   {
    "name": "wardstone",
    "json": "wardstone.json"
+  },
+  {
+   "name": "milestone",
+   "json": "milestone.json"
   }
  ]
 }

@@ -1,0 +1,823 @@
+{
+ "version": 1,
+ "name": "thayers-yard",
+ "seed": 3103,
+ "size": {
+  "w": 40,
+  "h": 32
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3,
+  "edgeWidth": 5,
+  "roll": 0.35,
+  "pathMargin": 0.7,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.28,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "maple_orange_0",
+     "birch_1"
+    ],
+    "density": 0.45,
+    "spacing": 2.1,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "maple_yellow_1",
+     "maple_orange_1"
+    ],
+    "density": 0.25,
+    "spacing": 2.4,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "within": [
+     [
+      -20,
+      6.5
+     ],
+     [
+      20,
+      6
+     ],
+     [
+      20,
+      16
+     ],
+     [
+      -20,
+      16
+     ]
+    ],
+    "collide": 0.38,
+    "tall": true
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1",
+     "asters_0",
+     "asters_1"
+    ],
+    "density": 0.35,
+    "spacing": 1,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "wall"
+   },
+   {
+    "props": [
+     "fern_autumn_1",
+     "asters_1"
+    ],
+    "density": 0.06,
+    "spacing": 1.8,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "mushrooms_0"
+    ],
+    "density": 0.04,
+    "spacing": 1.8,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -20,
+     3
+    ],
+    [
+     -12,
+     3.6
+    ],
+    [
+     -5,
+     3
+    ],
+    [
+     2,
+     3.4
+    ],
+    [
+     10,
+     2.6
+    ],
+    [
+     20,
+     2.2
+    ]
+   ],
+   "width": 1.9,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     -5,
+     3.2
+    ],
+    [
+     -5,
+     -5
+    ]
+   ],
+   "width": 1.2,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -5,
+     -4.8
+    ],
+    [
+     2,
+     -5.2
+    ],
+    [
+     8,
+     -6.6
+    ]
+   ],
+   "width": 1,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -5,
+     -2.2
+    ],
+    [
+     -9.4,
+     -2.6
+    ],
+    [
+     -11,
+     -3
+    ]
+   ],
+   "width": 0.9,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     -18,
+     0.6
+    ],
+    [
+     -11,
+     0.2
+    ],
+    [
+     -6.6,
+     0.5
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     -3.4,
+     0.5
+    ],
+    [
+     3,
+     0.1
+    ],
+    [
+     10,
+     0.4
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     -18,
+     0.6
+    ],
+    [
+     -18.4,
+     -6
+    ],
+    [
+     -17.6,
+     -13
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     11.6,
+     -4
+    ],
+    [
+     13.6,
+     -4.6
+    ],
+    [
+     15.6,
+     -3.8
+    ],
+    [
+     17.4,
+     -4.4
+    ]
+   ],
+   "gaps": [],
+   "handGap": 2.6
+  },
+  {
+   "points": [
+    [
+     10.4,
+     -13.2
+    ],
+    [
+     13,
+     -13.6
+    ],
+    [
+     15.6,
+     -12.8
+    ],
+    [
+     18,
+     -13.4
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     -17.4,
+     -5.2
+    ],
+    [
+     -11,
+     -5.2
+    ],
+    [
+     -11,
+     -1.4
+    ],
+    [
+     -17.4,
+     -1.4
+    ],
+    [
+     -17.4,
+     -5.2
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 8.4,
+     "width": 1.4
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -20,
+     6
+    ],
+    [
+     -18,
+     6.2
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     -6,
+     6.4
+    ],
+    [
+     4,
+     5.8
+    ],
+    [
+     20,
+     5.6
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 10,
+     "width": 2
+    }
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -5,
+   "z": -8,
+   "w": 8,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4,
+       -2.5
+      ],
+      [
+       4,
+       -2.5
+      ],
+      [
+       4,
+       2.5
+      ],
+      [
+       -4,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true,
+    "chimney": "center"
+   },
+   "opens": "Thayer house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shed",
+   "x": 8,
+   "z": -9,
+   "w": 5,
+   "d": 4,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.5,
+       -2
+      ],
+      [
+       2.5,
+       -2
+      ],
+      [
+       2.5,
+       2
+      ],
+      [
+       -2.5,
+       2
+      ]
+     ]
+    }
+   ],
+   "variants": {},
+   "opens": "Tool shed"
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 0,
+   "z": -18,
+   "radius": 18,
+   "height": 1
+  }
+ ],
+ "arenas": [],
+ "placements": [
+  {
+   "prop": "stone_rows_0",
+   "x": 0.6,
+   "z": -3.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 2.6,
+   "z": -3.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 4.6,
+   "z": -3.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 6.6,
+   "z": -3.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 8.6,
+   "z": -3.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 0.6,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 2.6,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 4.6,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 6.6,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 8.6,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_2",
+   "x": 12.4,
+   "z": -8.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_2",
+   "x": 15,
+   "z": -8.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_2",
+   "x": 17.6,
+   "z": -8.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 12.4,
+   "z": -6.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 15,
+   "z": -6.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_0",
+   "x": 17.6,
+   "z": -6.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 12.4,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 14.7,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": 17,
+   "z": -1.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "mason_bench",
+   "x": 11.6,
+   "z": -10.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "stone_barrow",
+   "x": 4.2,
+   "z": -6.4,
+   "collide": 0.35
+  },
+  {
+   "prop": "cordwood",
+   "x": -10.6,
+   "z": -9.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "granite_block_0",
+   "x": 14.8,
+   "z": -11.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "granite_block_1",
+   "x": 17.2,
+   "z": -11.2,
+   "collide": 0.45
+  },
+  {
+   "prop": "herbs_0",
+   "x": -16.2,
+   "z": -4.2
+  },
+  {
+   "prop": "herbs_0",
+   "x": -15,
+   "z": -4.4,
+   "flip": true
+  },
+  {
+   "prop": "herbs_0",
+   "x": -16,
+   "z": -3,
+   "scale": 0.9
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -13.6,
+   "z": -4.2
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -12.4,
+   "z": -3.4,
+   "flip": true
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -13.8,
+   "z": -2.4
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -12,
+   "z": -2.2,
+   "scale": 0.9
+  },
+  {
+   "prop": "bean_poles",
+   "x": -14.6,
+   "z": -2.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "lilac_0",
+   "x": -1.4,
+   "z": -6.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "apple_old_0",
+   "x": -15,
+   "z": -9.6,
+   "collide": 0.4,
+   "tall": true
+  },
+  {
+   "prop": "windfall_apples",
+   "x": -14.2,
+   "z": -8.6
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 1.8,
+   "z": -13.4,
+   "collide": 0.45,
+   "tall": true
+  },
+  {
+   "prop": "maple_yellow_0",
+   "x": -17.4,
+   "z": 3.4,
+   "collide": 0.45,
+   "tall": true
+  },
+  {
+   "prop": "fence_post",
+   "x": -6.8,
+   "z": 1,
+   "collide": 0.15
+  },
+  {
+   "prop": "fence_post",
+   "x": -3.2,
+   "z": 1,
+   "collide": 0.15
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -18,
+     -3.2
+    ],
+    [
+     18,
+     -3.2
+    ]
+   ],
+   "radius": 2.8
+  },
+  {
+   "points": [
+    [
+     -5,
+     0
+    ],
+    [
+     -5,
+     -5
+    ]
+   ],
+   "radius": 1.6
+  },
+  {
+   "points": [
+    [
+     2,
+     -7
+    ],
+    [
+     16,
+     -9
+    ]
+   ],
+   "radius": 3
+  }
+ ],
+ "spots": [
+  {
+   "name": "Obed (yard)",
+   "x": -2.8,
+   "z": -3.4,
+   "note": "Obed in his yard, among the rows."
+  },
+  {
+   "name": "Obed (bench)",
+   "x": 11.6,
+   "z": -9.2,
+   "note": "At the bench by the shed."
+  },
+  {
+   "name": "The letter wall",
+   "x": -4.8,
+   "z": 1.4,
+   "note": "The yard wall by the gate, where Eldwin leaves the letter (Postage Due)."
+  },
+  {
+   "name": "Phebe's garden",
+   "x": -14.2,
+   "z": -3.4,
+   "note": "Gone to seed except the herbs."
+  },
+  {
+   "name": "The stone rows",
+   "x": 4.6,
+   "z": -2.4,
+   "note": "Stone stacked in rows only Obed understands."
+  },
+  {
+   "name": "The sample walls",
+   "x": 14.6,
+   "z": -2.8,
+   "note": "Each wall in the yard is a different kind of wall; he'll name any of them."
+  },
+  {
+   "name": "Thayer house door",
+   "x": -5,
+   "z": -4.4
+  },
+  {
+   "name": "From the village",
+   "x": -14.5,
+   "z": 3.2
+  },
+  {
+   "name": "East to the Ox Road",
+   "x": 15.5,
+   "z": 2.4,
+   "note": "The old haul road on toward the Quarry, where the Ox Road begins."
+  }
+ ],
+ "start": [
+  -14.5,
+  3.2
+ ],
+ "exits": [
+  {
+   "rect": [
+    -17,
+    0.8,
+    -16,
+    5.4
+   ],
+   "to": "hardscrabble",
+   "at": [
+    38.5,
+    3.2
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    16,
+    0,
+    17,
+    4.6
+   ],
+   "to": "ox-road",
+   "at": [
+    -22.5,
+    1
+   ],
+   "dir": 6
+  }
+ ]
+}

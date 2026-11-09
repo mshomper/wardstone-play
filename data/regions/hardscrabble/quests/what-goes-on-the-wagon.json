@@ -1,0 +1,90 @@
+{
+ "id": "what-goes-on-the-wagon",
+ "title": "What Goes on the Wagon",
+ "side": true,
+ "blurb": "Lucy Shattuck wants the wagon loaded, once and properly.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Loading",
+   "objective": "",
+   "done": {
+    "flags": [
+     "wagon_asked"
+    ]
+   },
+   "sets": [
+    "wagon_asked"
+   ],
+   "auto": [
+    {
+     "talk": "lucy_shattuck"
+    },
+    {
+     "talk": "lucy_shattuck"
+    }
+   ]
+  },
+  {
+   "id": "load",
+   "title": "Loading",
+   "objective": "Help the Shattucks load the wagon: the churn, the clock, the cradle.",
+   "count": {
+    "flags": [
+     "wagon:churn",
+     "wagon:clock",
+     "wagon:cradle"
+    ]
+   },
+   "done": {
+    "flags": [
+     "wagon:churn",
+     "wagon:clock",
+     "wagon:cradle"
+    ]
+   },
+   "sets": [
+    "wagon:churn",
+    "wagon:clock",
+    "wagon:cradle"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "The Shattucks' wagon"
+   },
+   "auto": [
+    {
+     "use": "hs_wagon"
+    },
+    {
+     "use": "hs_wagon"
+    },
+    {
+     "use": "hs_wagon"
+    }
+   ]
+  },
+  {
+   "id": "chair",
+   "title": "The chair",
+   "objective": "And Truman's father's chair.",
+   "done": {
+    "flags": [
+     "wagon_empty"
+    ]
+   },
+   "sets": [
+    "wagon_empty"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "The Shattucks' wagon"
+   },
+   "auto": [
+    {
+     "use": "hs_wagon"
+    }
+   ]
+  }
+ ]
+}

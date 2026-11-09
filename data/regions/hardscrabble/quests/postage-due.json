@@ -1,0 +1,115 @@
+{
+ "id": "postage-due",
+ "title": "Postage Due",
+ "side": true,
+ "blurb": "Asa has a letter for Obed Thayer from Furnace Hollow. Postage due, a dozen eggs.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Postage due",
+   "objective": "",
+   "done": {
+    "flags": [
+     "postage_asked"
+    ]
+   },
+   "sets": [
+    "postage_asked"
+   ],
+   "auto": [
+    {
+     "talk": "asa_kimball"
+    },
+    {
+     "talk": "asa_kimball"
+    }
+   ]
+  },
+  {
+   "id": "eggs",
+   "title": "A dozen eggs",
+   "objective": "The postage on Obed's letter is a dozen eggs. Sukey Varnum has hens.",
+   "hints": [
+    {
+     "if": {
+      "flags": [
+       "eggs_asked"
+      ]
+     },
+     "text": "Sukey will trade a dozen eggs for a mustard plaster, for the Merrills' leg. Benoni sells them."
+    }
+   ],
+   "done": {
+    "flags": [
+     "has_eggs"
+    ]
+   },
+   "sets": [
+    "has_eggs"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Sukey (village)"
+   },
+   "auto": [
+    {
+     "talk": "sukey_varnum"
+    },
+    {
+     "talk": "sukey_varnum"
+    }
+   ]
+  },
+  {
+   "id": "pay",
+   "title": "Paid",
+   "objective": "Pay Asa the dozen eggs, at the trough.",
+   "done": {
+    "flags": [
+     "postage_paid"
+    ]
+   },
+   "sets": [
+    "postage_paid",
+    "has_letter"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Asa and Patience"
+   },
+   "auto": [
+    {
+     "talk": "asa_kimball"
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "title": "On the wall",
+   "objective": "Obed won't open it with anybody looking. Leave the letter on the wall at Thayer's Yard.",
+   "done": {
+    "flags": [
+     "letter_left"
+    ]
+   },
+   "sets": [
+    "letter_left"
+   ],
+   "skip": {
+    "area": "thayers-yard",
+    "spot": "From the village"
+   },
+   "auto": [
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "go": "thayers-yard"
+    },
+    {
+     "use": "hs_letter_wall"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "mending-for-the-road",
+ "title": "Mending for the Road",
+ "side": true,
+ "blurb": "Tamsin Gove is short of good wool for the Shattucks' coat.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Good wool",
+   "objective": "",
+   "done": {
+    "flags": [
+     "mending_asked"
+    ]
+   },
+   "sets": [
+    "mending_asked"
+   ],
+   "auto": [
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "use": "door_hardscrabble_meetinghouse"
+    },
+    {
+     "talk": "tamsin_gove"
+    },
+    {
+     "talk": "tamsin_gove"
+    }
+   ]
+  },
+  {
+   "id": "fleece",
+   "title": "A fleece",
+   "objective": "Tamsin needs a fleece. Coyle's sheep graze on the Sheep Walk, and they're due for shearing.",
+   "hints": [
+    {
+     "if": {
+      "flags": [
+       "oneshort_done"
+      ]
+     },
+     "text": "Tamsin needs a fleece. Hosea might spare one, at the pens. Or catch one of Coyle's sheep on the Sheep Walk."
+    }
+   ],
+   "done": {
+    "flags": [
+     "has_fleece"
+    ]
+   },
+   "sets": [
+    "has_fleece"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Meetinghouse door"
+   },
+   "auto": [
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "talk": "hosea_lamb",
+     "if": {
+      "flags": [
+       "oneshort_done"
+      ]
+     }
+    },
+    {
+     "go": "sheep-walk",
+     "if": {
+      "notFlags": [
+       "oneshort_done"
+      ]
+     }
+    },
+    {
+     "talk": "coyle_sheep",
+     "if": {
+      "notFlags": [
+       "oneshort_done"
+      ]
+     }
+    },
+    {
+     "talk": "coyle_sheep",
+     "if": {
+      "notFlags": [
+       "oneshort_done"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "bring",
+   "title": "For the road",
+   "objective": "Bring the fleece to Tamsin, at her table in the meetinghouse.",
+   "done": {
+    "flags": [
+     "mending_done"
+    ]
+   },
+   "sets": [
+    "mending_done"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Meetinghouse door"
+   },
+   "auto": [
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "use": "door_hardscrabble_meetinghouse"
+    },
+    {
+     "talk": "tamsin_gove"
+    }
+   ]
+  }
+ ]
+}

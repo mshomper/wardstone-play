@@ -143,6 +143,61 @@
     ]
   },
   {
+    "id": "wallofrime", "name": "Wall of Rime", "mp": 12, "target": "party", "icon": "shield", "iconWanted": "wallofrime",
+    "desc": "Frost climbs into a low wall before the whole party: a shield worth 15% of each one's health for a round, and whoever breaks through it is Chilled.",
+    "kind": "skill", "element": "frost", "power": 0, "learn": { "level": 11 }, "slice": true,
+    "effects": [{ "shieldPct": 0.15, "turns": 1, "counterStatus": "chilled" }], "anim": "arcane_channel",
+    "ranks": [
+      { "points": 1, "shieldPct": 0.03, "desc": "Frost climbs into a low wall before the whole party: a shield worth 18% of each one's health for a round, and whoever breaks through it is Chilled." },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "shieldPct": 0.04, "desc": "Frost climbs into a low wall before the whole party: a shield worth 22% of each one's health for a round, and whoever breaks through it is Chilled." }
+    ]
+  },
+  {
+    "id": "thaw", "name": "Thaw", "mp": 6, "target": "one", "icon": "flame", "iconWanted": "thaw",
+    "desc": "Hearth damage on one foe. Once learned, any hearth hit on a Chilled foe, Maple Glaze too, bursts into steam: half the blow scalds every other foe.",
+    "kind": "skill", "element": "hearth", "power": 1.1, "learn": { "level": 13 }, "slice": true,
+    "effects": [], "anim": "pour",
+    "ranks": [
+      { "points": 1, "power": 0.15 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.2 }
+    ]
+  },
+  {
+    "id": "blackice", "name": "Black Ice", "mp": 11, "target": "all", "icon": "snow", "iconWanted": "blackice",
+    "desc": "The ground under every foe glazes black. Frost damage, much heavier on a Chilled foe, and the Chill holds.", "choice": "For the fight",
+    "kind": "skill", "element": "frost", "power": 0.7, "learn": { "level": 16, "fork": "f16" }, "slice": true,
+    "effects": [{ "payoff": "chilled", "mul": 1.6, "keep": true }], "anim": "ground_invocation",
+    "ranks": [
+      { "points": 1, "power": 0.08 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.1 }
+    ]
+  },
+  {
+    "id": "bankedfire", "name": "Banked Fire", "mp": 12, "target": "party", "icon": "flame", "iconWanted": "bankedfire",
+    "desc": "Embers banked under everyone's feet: the whole party heals a little each turn for 4 turns.", "choice": "For the party",
+    "kind": "skill", "element": "hearth", "power": 0, "learn": { "level": 16, "fork": "f16" }, "slice": true,
+    "effects": [{ "regenPct": 0.06, "turns": 4 }], "anim": "arcane_channel",
+    "ranks": [
+      { "points": 1, "regenPct": 0.01 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "turns": 1, "desc": "Embers banked under everyone's feet: the whole party heals a little each turn for 5 turns." }
+    ]
+  },
+  {
+    "id": "hardfrost", "name": "Hard Frost", "mp": 14, "target": "all", "icon": "snow", "iconWanted": "hardfrost",
+    "desc": "A deep frost falls on the field. Frost damage to every foe, and every Chilled foe freezes in place and loses its next turn.",
+    "kind": "skill", "element": "frost", "power": 0.8, "learn": { "level": 19 }, "slice": true,
+    "effects": [{ "flings": "chilled" }], "anim": "ground_invocation",
+    "ranks": [
+      { "points": 1, "power": 0.1 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.12 }
+    ]
+  },
+  {
     "id": "frostward", "name": "Frost Ward", "mp": 0, "target": "self", "icon": "shield",
     "desc": "Cut damage by 60% until his next turn, and gather 4 MP. Attackers are Chilled.",
     "kind": "defend", "element": "frost", "power": 0, "learn": { "level": 1 }, "slice": true,
@@ -309,6 +364,61 @@
     ]
   },
   {
+    "id": "crooked_course", "name": "Crooked Course", "owner": "obed", "mp": 9, "target": "all", "icon": "stone",
+    "desc": "\"Never a straight line. Let's see it follow that.\" Stone across every foe, and all are Muddled for a round: blows aimed at one hero may land on another foe.",
+    "kind": "skill", "element": "earth", "power": 0.7, "learn": { "level": 11 }, "slice": true,
+    "effects": [{ "status": "confused", "turns": 1 }], "anim": "settrap",
+    "ranks": [
+      { "points": 1, "power": 0.08 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.1 }
+    ]
+  },
+  {
+    "id": "hearting", "name": "Hearting", "owner": "obed", "mp": 4, "target": "self", "icon": "channel",
+    "desc": "\"The small stones in the middle. Nobody sees them. They're what holds it.\" He shakes off whatever is wrong with him, and his next two moves are stronger.",
+    "kind": "skill", "element": "physical", "power": 0, "learn": { "level": 13 }, "slice": true,
+    "effects": [{ "cure": ["drowsy", "blind", "afraid", "confused", "sticky", "chilled", "slow", "poison", "burning"] }, { "status": "empowered", "mul": 1.4, "uses": 2 }], "anim": "focus",
+    "ranks": [
+      { "points": 1, "mul": 0.05 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "mul": 0.1 }
+    ]
+  },
+  {
+    "id": "coping_stones", "name": "Coping Stones", "owner": "obed", "mp": 10, "target": "all", "icon": "stone",
+    "desc": "\"Last on, and heaviest. That's what keeps the rest down.\" The top course comes down on every foe, heavy, and harder on a Sticky one.", "choice": "For the fight",
+    "kind": "skill", "element": "earth", "power": 1.0, "learn": { "level": 16, "fork": "f16" }, "slice": true,
+    "effects": [{ "payoff": "sticky", "mul": 1.4, "keep": true }], "anim": "settrap",
+    "ranks": [
+      { "points": 1, "power": 0.1 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.12 }
+    ]
+  },
+  {
+    "id": "batter", "name": "Batter", "owner": "obed", "mp": 8, "target": "party", "icon": "shield",
+    "desc": "\"Lean it in at the top. It'll stand a hundred years.\" A shield on everyone, worth 15% of their health, for 2 rounds.", "choice": "For the party",
+    "kind": "skill", "element": "earth", "power": 0, "learn": { "level": 16, "fork": "f16" }, "slice": true,
+    "effects": [{ "shieldPct": 0.15, "turns": 2 }], "anim": "haulup",
+    "ranks": [
+      { "points": 1, "shieldPct": 0.03, "desc": "\"Lean it in at the top. It'll stand a hundred years.\" A shield on everyone, worth 18% of their health, for 2 rounds." },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "shieldPct": 0.04, "desc": "\"Lean it in at the top. It'll stand a hundred years.\" A shield on everyone, worth 22% of their health, for 2 rounds." }
+    ]
+  },
+  {
+    "id": "four_generations", "name": "Four Generations", "owner": "obed", "mp": 14, "target": "all", "icon": "stone",
+    "desc": "\"Great-grandfather. Grandfather. Father. Me.\" Four great blows of the old sledge, each on a foe at random.",
+    "kind": "skill", "element": "physical", "power": 0.85, "hits": 4, "learn": { "level": 19 }, "slice": true,
+    "effects": [], "anim": "overhead",
+    "ranks": [
+      { "points": 1, "power": 0.08 },
+      { "points": 1, "mp": -1 },
+      { "points": 2, "power": 0.1 }
+    ]
+  },
+  {
     "id": "no_mortar", "name": "No Mortar", "owner": "obed", "mp": 0, "target": "self", "icon": "shield",
     "desc": "Mortar cracks. Dry stone just settles. Cut damage by 70% until his next turn.",
     "kind": "defend", "element": "earth", "power": 0, "learn": { "level": 1 }, "slice": true,
@@ -326,9 +436,39 @@
     "effects": [{ "shieldPct": 0.25, "turns": 2 }], "anim": "haulup"
   },
   {"id": "honk", "name": "Honk", "owner": "applegate", "mp": 4, "target": "all", "icon": "spark", "desc": "One flat, enormous blare. A light blow on every foe, and all are Slowed: they act last next round.", "kind": "skill", "element": "physical", "power": 0.4, "learn": {"level": 1}, "slice": true, "effects": [{"status": "slow", "turns": 1}], "anim": "cast", "ranks": [{"points": 1, "power": 0.1}, {"points": 1, "mp": -1}, {"points": 2, "power": 0.1}]},
-  {"id": "wing_buffet", "name": "Wing Buffet", "owner": "applegate", "mp": 6, "target": "one", "icon": "feather", "desc": "Both wings, full swing. A Chilled foe is knocked flat and loses its next turn.", "kind": "skill", "element": "physical", "power": 1.1, "learn": {"level": 1}, "slice": true, "effects": [{"flings": "chilled"}], "anim": "stamp", "ranks": [{"points": 1, "power": 0.15}, {"points": 1, "mp": -1}, {"points": 2, "power": 0.2}]},
-  {"id": "goose_chase", "name": "Goose Chase", "owner": "applegate", "mp": 10, "target": "one", "icon": "feather", "desc": "She runs it down: three pecks that find the soft spots, so armor and curling up don't help it, and it's Frightened for 2 rounds. Badly hurt and frightened, it runs home.", "kind": "skill", "element": "physical", "power": 0.5, "hits": 3, "learn": {"level": 1}, "slice": true, "effects": [{"status": "afraid", "turns": 2}, {"gaps": true}], "anim": "twoblows", "ranks": [{"points": 1, "power": 0.05}, {"points": 1, "mp": -1}, {"points": 2, "power": 0.08}]},
   {"id": "nip_awake", "name": "Nip Awake", "owner": "applegate", "mp": 0, "target": "ally", "icon": "spark", "desc": "A nip to the back of the leg. They lose a little health, shake off Drowsy, Blinded, Frightened and Muddled, and their next move hits harder.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"nipPct": 0.05}, {"cure": ["drowsy", "blind", "afraid", "confused"]}, {"status": "empowered", "mul": 1.3}], "anim": "focus", "ranks": [{"points": 1, "mul": 0.05}, {"points": 1, "nipPct": -0.02}, {"points": 2, "mul": 0.1}]},
-  {"id": "hiss", "name": "Hiss", "owner": "applegate", "mp": 0, "target": "self", "icon": "shield", "desc": "Neck out, low. Blows aimed at one hero come to her until her next turn and land 40% softer, and whoever hits her is Frightened.", "kind": "defend", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"damageMul": 0.6}, {"counterStatus": "afraid", "turns": 2}, {"draws": true}, {"restoreMp": 4}], "anim": "defend", "ranks": [{"points": 1, "damageMul": -0.05}, {"points": 1, "restoreMp": 2}, {"points": 2, "damageMul": -0.05}]},
-  {"id": "pecking_order", "name": "Pecking Order", "owner": "applegate", "mp": 0, "target": "all", "icon": "feather", "desc": "Wings to full span, at everything. Every foe is hit and Frightened for 2 rounds, and her Temper fills. Ready when the Ward gauge is full.", "kind": "ward", "element": "physical", "power": 0.9, "learn": {"story": "join"}, "slice": true, "effects": [{"status": "afraid", "turns": 2}, {"restoreMp": 99}], "anim": "haulup"}
+  {"id": "won_t_let_go", "name": "Won't Let Go", "owner": "applegate", "mp": 0, "target": "one", "icon": "feather", "desc": "A peck. On the same foe turn after turn it hits harder each time, up to two and a half times the first. From the second in a row armor and curling up don't help, from the third it Hexes, and the fourth Cracks its guard so everyone hits it harder. Anything else, or another foe, starts it over.", "kind": "skill", "element": "physical", "power": 0.9, "learn": {"level": 1}, "slice": true, "effects": [{"builds": 0.5, "max": 4, "hexAt": 3, "crackAt": 4}], "anim": "attack", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "bites_back", "name": "Bites Back", "owner": "applegate", "mp": 4, "target": "self", "icon": "claw", "desc": "She settles low and watches. Until her next turn, the first foe to strike anyone in the party is bitten: pulled out of its shell, paid back part of its own blow past any armor, and Hexed.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"biteNext": 0.6, "payback": 0.5}], "anim": "defend", "ranks": [{"points": 1, "biteNext": 0.15}, {"points": 1, "mp": -1}, {"points": 2, "payback": 0.1}]},
+  {"id": "hold_a_grudge", "name": "Hold a Grudge", "owner": "applegate", "mp": 5, "target": "one", "icon": "pin", "desc": "She fixes one foe with a look it won't forget. For 3 rounds, any blow it lands on a hero Hexes it, however small.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 4}, "slice": true, "effects": [{"status": "grudge", "turns": 3}], "anim": "cast", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "turns": 1}, {"points": 2, "mp": -1, "turns": 1, "desc": "She fixes one foe with a look it won't forget. For 5 rounds, any blow it lands on a hero Hexes it, however small."}]},
+  {"id": "pass_it_on", "name": "Pass It On", "owner": "applegate", "mp": 8, "target": "one", "icon": "moon", "desc": "Whatever's wrong with one foe, the rest catch: its hexes spread to every other foe.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 5}, "slice": true, "effects": [{"spreadHex": true}], "anim": "cast", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "mp": -1}, {"points": 2, "mp": -2}]},
+  {"id": "bad_luck", "name": "Bad Luck", "owner": "applegate", "mp": 8, "target": "all", "icon": "moon", "choice": "For the fight", "desc": "Every Hexed foe is Muddled for 2 rounds: its blows aimed at one target may land on another foe.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 7, "fork": "f7"}, "slice": true, "effects": [{"muddleHexed": 2}], "anim": "cast", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "mp": -1}, {"points": 2, "muddleHexed": 1, "desc": "Every Hexed foe is Muddled for 3 rounds: its blows aimed at one target may land on another foe."}]},
+  {"id": "under_my_wing", "name": "Under My Wing", "owner": "applegate", "mp": 10, "target": "ally", "icon": "shield", "choice": "For the party", "desc": "One friend goes under her wing: until her next turn, nothing can hurt them.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 7, "fork": "f7"}, "slice": true, "effects": [{"shelter": true}], "anim": "haulup", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "mp": -1}, {"points": 2, "mp": -2}]},
+  {"id": "last_straw", "name": "Last Straw", "owner": "applegate", "mp": 6, "target": "one", "icon": "feather", "choice": "For the fight", "desc": "One hard peck that finds the soft spots, much harder for every hex on the foe, and the hexes are spent.", "kind": "skill", "element": "physical", "power": 0.6, "learn": {"level": 9, "fork": "f9"}, "slice": true, "effects": [{"perHex": 0.6}, {"gaps": true}], "anim": "stamp", "ranks": [{"points": 1, "perHex": 0.08}, {"points": 1, "mp": -1}, {"points": 2, "perHex": 0.12}]},
+  {"id": "fuss", "name": "Fuss", "owner": "applegate", "mp": 8, "target": "party", "icon": "spark", "choice": "For the party", "desc": "She fusses round everyone: they shake off Frightened and Drowsy, and their next move hits harder.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 9, "fork": "f9"}, "slice": true, "effects": [{"cure": ["afraid", "drowsy"]}, {"status": "empowered", "mul": 1.25}], "anim": "cast", "ranks": [{"points": 1, "mul": 0.05}, {"points": 1, "mp": -1}, {"points": 2, "mul": 0.1}]},
+  {"id": "hiss", "name": "Hiss", "owner": "applegate", "mp": 7, "target": "all", "icon": "spark", "desc": "Head down, neck out, a hiss like a kettle. Every foe is Frightened for 2 rounds: it may cower instead of acting, and one badly hurt runs off.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 11}, "slice": true, "effects": [{"status": "afraid", "turns": 2}], "anim": "cast", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "mp": -1}, {"points": 2, "turns": 1, "desc": "Head down, neck out, a hiss like a kettle. Every foe is Frightened for 3 rounds: it may cower instead of acting, and one badly hurt runs off."}]},
+  {"id": "evil_eye", "name": "Evil Eye", "owner": "applegate", "mp": 9, "target": "all", "icon": "moon", "desc": "She looks at each of them in turn. Every foe is Hexed.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 13}, "slice": true, "effects": [{"status": "hexed", "turns": 2}], "anim": "cast", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "turns": 1}, {"points": 2, "mp": -2}]},
+  {"id": "feathers_fly", "name": "Feathers Fly", "owner": "applegate", "mp": 10, "target": "all", "icon": "feather", "choice": "For the fight", "desc": "Wings, beak and feet: four pecks on foes at random, each finding the soft spots: resisting and curling up don't help.", "kind": "skill", "element": "physical", "power": 0.6, "hits": 4, "learn": {"level": 16, "fork": "f16"}, "slice": true, "effects": [{"gaps": true}], "anim": "stamp", "ranks": [{"points": 1, "power": 0.06}, {"points": 1, "mp": -1}, {"points": 2, "power": 0.08}]},
+  {"id": "not_while_watching", "name": "Not While I'm Watching", "owner": "applegate", "mp": 9, "target": "party", "icon": "shield", "choice": "For the party", "desc": "The party shakes off everything harmful, and nothing new can land on them for 2 rounds.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 16, "fork": "f16"}, "slice": true, "effects": [{"immune": ["all"], "turns": 2}], "anim": "haulup", "ranks": [{"points": 1, "mp": -1}, {"points": 1, "mp": -1}, {"points": 2, "turns": 1, "desc": "The party shakes off everything harmful, and nothing new can land on them for 3 rounds."}]},
+  {"id": "calls_the_flock", "name": "Calls the Flock", "owner": "applegate", "mp": 14, "target": "all", "icon": "feather", "desc": "She honks once, and every goose for a mile answers. Six pecks land on foes at random, each one Hexing.", "kind": "skill", "element": "physical", "power": 0.4, "hits": 6, "learn": {"level": 19}, "slice": true, "effects": [{"status": "hexed", "turns": 2}], "anim": "cast", "ranks": [{"points": 1, "power": 0.05}, {"points": 1, "mp": -1}, {"points": 2, "power": 0.05}]},
+  {"id": "preen", "name": "Preen", "owner": "applegate", "mp": 0, "target": "self", "icon": "shield", "desc": "She tidies herself. Blows land 40% softer until her next turn, which matters once she can be hurt, and when it comes she shakes off whatever was wrong with her.", "kind": "defend", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"damageMul": 0.6}, {"restoreMp": 4}, {"cure": ["drowsy", "blind", "afraid", "confused", "sticky", "chilled", "slow", "poison", "burning"]}], "anim": "defend", "ranks": [{"points": 1, "damageMul": -0.05}, {"points": 1, "restoreMp": 2}, {"points": 2, "damageMul": -0.05}]},
+  {"id": "fair_swap", "name": "Fair Swap", "owner": "applegate", "mp": 0, "target": "ally", "icon": "feather", "desc": "Her share of health and one friend's trade places: she at full and they nearly down becomes the other way round. Ready when the Ward gauge is full.", "kind": "ward", "element": "physical", "power": 0, "learn": {"story": "join"}, "slice": true, "effects": [{"swapHealth": true}], "anim": "haulup"},
+  {"id": "old_country_air", "name": "Old Country Air", "owner": "thadeous", "mp": 0, "target": "one", "icon": "note", "desc": "\"This one's older than the town.\" A light hit, and the friend who hits hardest has their next move stronger.", "kind": "skill", "element": "arcane", "power": 0.65, "song": true, "learn": {"level": 1}, "slice": true, "effects": [{"cheer": 1.25}], "anim": "playit", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "cheer": 0.05}, {"points": 2, "power": 0.1, "cheer": 0.05}]},
+  {"id": "nonsense_verse", "name": "The Nonsense Verse", "owner": "thadeous", "mp": 0, "target": "one", "icon": "note", "desc": "\"Nobody knows what it means. Hum along anyway.\" A light hit, and the foe is Muddled for 2 rounds: its blows aimed at one hero may land on another foe.", "kind": "skill", "element": "arcane", "power": 0.55, "song": true, "learn": {"level": 1}, "slice": true, "effects": [{"status": "confused", "turns": 2}], "anim": "sing", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "kitchen_reel", "name": "Kitchen Reel", "owner": "thadeous", "mp": 0, "target": "one", "icon": "flame", "desc": "\"Fast enough to warm the room.\" A hearth hit on one foe.", "kind": "skill", "element": "hearth", "power": 0.7, "song": true, "learn": {"level": 1}, "slice": true, "effects": [], "anim": "playit", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "played_for_the_governor", "name": "Played for the Governor", "owner": "thadeous", "mp": 0, "target": "self", "icon": "bust", "desc": "\"I'll have you know I sang for the Governor!\" Foes aim at him until his next turn, and his next move hits half again as hard. Not a song: it breaks the tune.", "kind": "skill", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"draws": true}, {"status": "empowered", "mul": 1.5}], "anim": "sing", "ranks": [{"points": 1, "mul": 0.1}, {"points": 1, "mul": 0.1}, {"points": 2, "mul": 0.15}]},
+  {"id": "cold_wind_blows", "name": "The Cold Wind Blows", "owner": "thadeous", "mp": 0, "target": "one", "icon": "snow", "desc": "\"Wrap up. It's that kind of song.\" A frost hit; the foe is Chilled and acts last next round.", "kind": "skill", "element": "frost", "power": 0.65, "song": true, "learn": {"level": 2}, "slice": true, "effects": [{"status": "chilled", "turns": 1}], "anim": "playit", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "lantern_man", "name": "The Lantern Man", "owner": "thadeous", "mp": 0, "target": "one", "icon": "pin", "desc": "\"Mind the lantern man. He keeps the count.\" The foe is Marked: everyone's hits on it land a quarter harder for 3 rounds.", "kind": "skill", "element": "arcane", "power": 0, "song": true, "learn": {"level": 3}, "slice": true, "effects": [{"status": "marked", "turns": 3, "mul": 1.25}], "anim": "mark", "ranks": [{"points": 1, "mul": 0.05}, {"points": 1, "turns": 1, "desc": "\"Mind the lantern man. He keeps the count.\" The foe is Marked: everyone's hits on it land harder for 4 rounds."}, {"points": 2, "mul": 0.1}]},
+  {"id": "harvest_reel", "name": "Harvest Reel", "owner": "thadeous", "mp": 0, "target": "all", "icon": "cowbell", "desc": "\"On your feet! It's a fair, isn't it?\" Every foe is Slowed: they act last next round, so the party goes first.", "kind": "skill", "element": "arcane", "power": 0, "song": true, "learn": {"level": 4}, "slice": true, "effects": [{"status": "slow", "turns": 1}], "anim": "jig", "ranks": [{"points": 2, "turns": 1, "desc": "\"On your feet! It's a fair, isn't it?\" Every foe is Slowed for 2 rounds: they act last, so the party goes first."}]},
+  {"id": "great_fire", "name": "The Great Fire", "owner": "thadeous", "mp": 1, "target": "all", "icon": "flame", "desc": "\"Everyone knows how this one ends.\" Finale: spends every Verse. Fire on every foe, stronger for each Verse spent.", "kind": "skill", "element": "hearth", "power": 0.15, "song": true, "finale": {"power": 0.33}, "learn": {"level": 5}, "slice": true, "effects": [], "anim": "flourish", "ranks": [{"points": 1, "power": 0.1}, {"points": 1, "power": 0.1}, {"points": 2, "power": 0.15}]},
+  {"id": "thunder_on_the_hills", "name": "Thunder on the Hills", "owner": "thadeous", "mp": 0, "target": "all", "icon": "storm", "desc": "\"Hear that? That's the chorus.\" A light storm hit on every foe; all are Shocked, so the next hurt each takes lands harder.", "choice": "For the fight", "kind": "skill", "element": "storm", "power": 0.4, "song": true, "learn": {"level": 7, "fork": "f7"}, "slice": true, "effects": [{"status": "shocked", "turns": 2}], "anim": "jig", "ranks": [{"points": 1, "power": 0.05}, {"points": 1, "power": 0.05}, {"points": 2, "power": 0.08}]},
+  {"id": "drinking_song", "name": "Drinking Song", "owner": "thadeous", "mp": 0, "target": "party", "icon": "mug", "desc": "\"One more verse. Then home. Probably.\" The party heals a little and shakes off Drowsy and Frightened.", "choice": "For the party", "kind": "skill", "element": "hearth", "power": 0, "song": true, "learn": {"level": 7, "fork": "f7"}, "slice": true, "effects": [{"healPct": 0.08}, {"cure": ["drowsy", "afraid"]}], "anim": "playit", "ranks": [{"points": 1, "healPct": 0.02}, {"points": 1, "healPct": 0.02}, {"points": 2, "healPct": 0.03}]},
+  {"id": "long_winter", "name": "The Long Winter", "owner": "thadeous", "mp": 1, "target": "one", "icon": "snow", "desc": "\"It went on, that winter. It went on.\" Finale: spends every Verse. One foe, very hard for each Verse spent, and it's Chilled.", "choice": "For the fight", "kind": "skill", "element": "frost", "power": 0.3, "song": true, "finale": {"power": 0.75}, "learn": {"level": 9, "fork": "f9"}, "slice": true, "effects": [{"status": "chilled", "turns": 1}], "anim": "flourish", "ranks": [{"points": 1, "power": 0.1}, {"points": 1, "power": 0.1}, {"points": 2, "power": 0.15}]},
+  {"id": "gather_round", "name": "Gather Round", "owner": "thadeous", "mp": 1, "target": "party", "icon": "star", "desc": "\"All of you. Closer. You'll want to hear this.\" Finale: spends every Verse. Every friend's next move is stronger, and they're shielded a little, more for each Verse spent.", "choice": "For the party", "kind": "skill", "element": "arcane", "power": 0, "song": true, "finale": {"mul": 0.06, "shieldPct": 0.03}, "learn": {"level": 9, "fork": "f9"}, "slice": true, "effects": [{"status": "empowered", "mul": 1.1}, {"shieldPct": 0.03, "turns": 2}], "anim": "flourish", "ranks": [{"points": 1, "mul": 0.05}, {"points": 1, "shieldPct": 0.02}, {"points": 2, "mul": 0.08}]},
+  {"id": "freshet", "name": "The Freshet", "owner": "thadeous", "mp": 0, "target": "one", "icon": "wave", "desc": "\"Spring comes down the river all at once.\" A tide hit; the foe is knocked back and acts last next round.", "kind": "skill", "element": "tide", "power": 0.7, "song": true, "learn": {"level": 11}, "slice": true, "effects": [{"status": "slow", "turns": 1}], "anim": "playit", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "verse_no_sense", "name": "The Verse That Makes No Sense", "owner": "thadeous", "mp": 0, "target": "one", "icon": "spark", "desc": "\"Every old song has a verse that makes no sense. I always thought it was the best part.\" It strikes with whichever element this foe is weak to; if it has none, arcane.", "kind": "skill", "element": "arcane", "power": 0.7, "song": true, "learn": {"level": 13}, "slice": true, "effects": [{"findsWeak": true}], "anim": "flourish", "ranks": [{"points": 1, "power": 0.08}, {"points": 1, "power": 0.08}, {"points": 2, "power": 0.12}]},
+  {"id": "every_verse_at_once", "name": "Every Verse at Once", "owner": "thadeous", "mp": 1, "target": "all", "icon": "spark", "desc": "\"All of it. The silly bits too.\" Finale: spends every Verse. One hit for each Verse spent, each on a foe at random and each in a different element, so every foe meets its weakness sooner or later.", "choice": "For the fight", "kind": "skill", "element": "arcane", "power": 0.82, "song": true, "finale": {"hits": 1}, "learn": {"level": 16, "fork": "f16"}, "slice": true, "effects": [{"ring": true}], "anim": "flourish", "ranks": [{"points": 1, "power": 0.06}, {"points": 1, "power": 0.06}, {"points": 2, "power": 0.09}]},
+  {"id": "old_hundredth", "name": "Old Hundredth", "owner": "thadeous", "mp": 1, "target": "party", "icon": "heart", "desc": "\"Everyone knows this one. Sing up.\" Finale: spends every Verse. The party heals for each Verse spent and shakes off everything harmful.", "choice": "For the party", "kind": "skill", "element": "hearth", "power": 0, "song": true, "finale": {"healPct": 0.05}, "learn": {"level": 16, "fork": "f16"}, "slice": true, "effects": [{"healPct": 0.04}, {"immune": ["all"]}], "anim": "flourish", "ranks": [{"points": 1, "healPct": 0.02}, {"points": 1, "healPct": 0.02}, {"points": 2, "healPct": 0.03}]},
+  {"id": "whole_song", "name": "The Whole Song", "owner": "thadeous", "mp": 1, "target": "all", "icon": "note", "desc": "\"Start to finish. No skipping.\" Finale: spends every Verse. Every foe, very hard for each Verse spent; anyone Marked, Shocked or Muddled takes it twice.", "kind": "skill", "element": "arcane", "power": 0.2, "song": true, "finale": {"power": 0.4}, "learn": {"level": 19}, "slice": true, "effects": [{"twiceVs": ["marked", "shocked", "confused"]}], "anim": "flourish", "ranks": [{"points": 1, "power": 0.1}, {"points": 1, "power": 0.1}, {"points": 2, "power": 0.15}]},
+  {"id": "tune_up", "name": "Tune Up", "owner": "thadeous", "mp": 0, "target": "self", "icon": "shield", "desc": "\"Hold on. She's gone flat.\" Blows land half as hard until his next turn, and the tune doesn't break.", "kind": "defend", "element": "physical", "power": 0, "learn": {"level": 1}, "slice": true, "effects": [{"damageMul": 0.5}], "anim": "tuneup", "ranks": [{"points": 1, "damageMul": -0.03}, {"points": 1, "damageMul": -0.03}, {"points": 2, "damageMul": -0.04}]},
+  {"id": "lullaby", "name": "The Lullaby", "owner": "thadeous", "mp": 0, "target": "all", "icon": "moon", "desc": "\"Hush now. That's the one she liked.\" Every foe is Drowsy for 3 rounds: they nod off and lose turns, until something hits them. Ready when the Ward gauge is full.", "kind": "ward", "element": "arcane", "power": 0, "song": true, "learn": {"story": "join"}, "slice": true, "effects": [{"status": "drowsy", "turns": 3}], "anim": "lullaby"}
 ]

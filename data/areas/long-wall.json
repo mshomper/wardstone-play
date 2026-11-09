@@ -610,9 +610,9 @@
     },
     {
       "name": "Down to Hardscrabble",
-      "x": 43,
+      "x": 42.5,
       "z": 4.4,
-      "note": "The lane down to Hardscrabble, the next region. No exit yet."
+      "note": "The lane down to Hardscrabble: the exit onto the Stone Lane (decision 0310)."
     },
     {
       "name": "Hosea",
@@ -676,6 +676,21 @@
         -0.6
       ],
       "dir": 2
+    },
+    {
+      "rect": [
+        44,
+        1.8,
+        45,
+        6.8
+      ],
+      "to": "stone-lane",
+      "after": "saw_hands_gap",
+      "at": [
+        -24.5,
+        0.6
+      ],
+      "dir": 6
     }
   ]
 }

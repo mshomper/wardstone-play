@@ -113,6 +113,18 @@
      }
     },
     {
+     "dialogue": "open_lv2",
+     "if": {
+      "flags": [
+       "talks:lavinia_dunn:4",
+       "heard:LV1"
+      ],
+      "notFlags": [
+       "heard:LV2"
+      ]
+     }
+    },
+    {
      "dialogue": "open_lv3",
      "if": {
       "flags": [
@@ -137,6 +149,16 @@
    "portrait": "#a8862e",
    "sprite": "npc_asa_kimball_iso",
    "schedule": [
+    {
+     "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ]
+     },
+     "area": "hardscrabble",
+     "spot": "Asa and Patience",
+     "dir": 2
+    },
     {
      "if": {
       "notFlags": [
@@ -177,6 +199,47 @@
       ]
      },
      "dialogue": "tolls_asa"
+    },
+    {
+     "if": {
+      "flags": [
+       "has_eggs"
+      ],
+      "notFlags": [
+       "postage_paid"
+      ]
+     },
+     "dialogue": "hs_asa_paid"
+    },
+    {
+     "if": {
+      "flags": [
+       "heard:ASH1"
+      ],
+      "notFlags": [
+       "postage_asked"
+      ]
+     },
+     "dialogue": "hs_asa_postage"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ],
+      "notFlags": [
+       "heard:ASH1"
+      ]
+     },
+     "dialogue": "hs_asa_trough"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ]
+     },
+     "dialogue": "hs_asa_wait"
     },
     {
      "dialogue": "asa_first",
@@ -628,12 +691,45 @@
    "sprite": "npc_hosea_lamb_iso",
    "schedule": [
     {
+     "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ]
+     },
+     "area": "hardscrabble",
+     "spot": "Hosea (pens)",
+     "dir": 0,
+     "potter": 1.2
+    },
+    {
      "area": "long-wall",
      "spot": "Hosea",
      "dir": 0
     }
    ],
    "talk": [
+    {
+     "if": {
+      "flags": [
+       "mending_asked",
+       "oneshort_done"
+      ],
+      "notFlags": [
+       "has_fleece",
+       "mending_done"
+      ]
+     },
+     "dialogue": "hs_hosea_fleece"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_hardscrabble",
+       "met_hosea"
+      ]
+     },
+     "dialogue": "hs_hosea_pens"
+    },
     {
      "dialogue": "hosea_first",
      "if": {
@@ -703,6 +799,22 @@
    "schedule": [
     {
      "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ]
+     },
+     "area": "hardscrabble",
+     "spot": "Asa and Patience",
+     "dir": 2,
+     "rounds": {
+      "speed": 1.1,
+      "follow": "asa_kimball",
+      "gap": 1.4,
+      "stops": []
+     }
+    },
+    {
+     "if": {
       "notFlags": [
        "tolls_specs"
       ]
@@ -732,6 +844,22 @@
    "sprite": "gyp_iso",
    "low": true,
    "schedule": [
+    {
+     "if": {
+      "flags": [
+       "reached_hardscrabble"
+      ]
+     },
+     "area": "hardscrabble",
+     "spot": "Hosea (pens)",
+     "dir": 1,
+     "rounds": {
+      "speed": 1.1,
+      "follow": "hosea_lamb",
+      "gap": 1.2,
+      "stops": []
+     }
+    },
     {
      "area": "long-wall",
      "spot": "Hosea",

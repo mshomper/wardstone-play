@@ -550,5 +550,561 @@
     "plainTone": true,
     "pan": 0.2,
     "echo": 0.7
+  },
+  "fiddle": {
+    "name": "Fiddle",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.333,
+          0.25,
+          0.2,
+          0.167,
+          0.143,
+          0.125,
+          0.111,
+          0.1
+        ],
+        "pitchFrom": 0.985,
+        "pitchTime": 0.07
+      },
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.333,
+          0.25,
+          0.2,
+          0.167,
+          0.143,
+          0.125
+        ],
+        "detune": 4,
+        "gain": 0.35,
+        "pitchFrom": 0.985,
+        "pitchTime": 0.07
+      }
+    ],
+    "env": {
+      "attack": 0.06,
+      "decay": 0.2,
+      "sustain": 0.85,
+      "release": 0.15
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 190,
+        "q": 0.6
+      },
+      {
+        "type": "peaking",
+        "freq": 450,
+        "q": 1.2,
+        "gain": 3
+      },
+      {
+        "type": "peaking",
+        "freq": 2800,
+        "q": 1.5,
+        "gain": 4
+      },
+      {
+        "type": "lowpass",
+        "freq": 4200,
+        "q": 0.5
+      }
+    ],
+    "vibrato": {
+      "rate": 5.6,
+      "cents": 14,
+      "delay": 0.22,
+      "rise": 0.3,
+      "minLen": 0.45
+    },
+    "air": {
+      "freq": 3200,
+      "q": 1,
+      "gain": 0.05
+    },
+    "level": 0.1,
+    "pan": 0.05,
+    "send": 0.3,
+    "echo": 0.08,
+    "loose": 0.9
+  },
+  "oldfiddle": {
+    "name": "Old fiddle",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.333,
+          0.25,
+          0.2,
+          0.167,
+          0.143,
+          0.125,
+          0.111
+        ],
+        "detune": -6,
+        "pitchFrom": 0.98,
+        "pitchTime": 0.09
+      },
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.333,
+          0.25,
+          0.2,
+          0.167,
+          0.143,
+          0.125,
+          0.111
+        ],
+        "detune": 7,
+        "gain": 0.55,
+        "pitchFrom": 0.98,
+        "pitchTime": 0.09
+      }
+    ],
+    "env": {
+      "attack": 0.08,
+      "decay": 0.25,
+      "sustain": 0.8,
+      "release": 0.2
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 200,
+        "q": 0.6
+      },
+      {
+        "type": "peaking",
+        "freq": 300,
+        "q": 1,
+        "gain": 2
+      },
+      {
+        "type": "peaking",
+        "freq": 1100,
+        "q": 2,
+        "gain": 5
+      },
+      {
+        "type": "lowpass",
+        "freq": 3000,
+        "q": 0.5
+      }
+    ],
+    "vibrato": {
+      "rate": 5,
+      "cents": 18,
+      "delay": 0.3,
+      "rise": 0.4,
+      "minLen": 0.5
+    },
+    "air": {
+      "freq": 2600,
+      "q": 0.9,
+      "gain": 0.08
+    },
+    "level": 0.09,
+    "pan": 0.05,
+    "send": 0.35,
+    "echo": 0.08,
+    "loose": 1.1
+  },
+  "woodflute": {
+    "name": "Wooden flute",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.18,
+          0.1,
+          0.04
+        ],
+        "pitchFrom": 0.99,
+        "pitchTime": 0.05
+      }
+    ],
+    "env": {
+      "attack": 0.06,
+      "decay": 0.15,
+      "sustain": 0.9,
+      "release": 0.18
+    },
+    "filters": [
+      {
+        "type": "lowpass",
+        "freq": 2400,
+        "q": 0.7
+      }
+    ],
+    "vibrato": {
+      "rate": 5,
+      "cents": 6,
+      "delay": 0.35,
+      "rise": 0.4,
+      "minLen": 0.8
+    },
+    "air": {
+      "freq": 1500,
+      "q": 0.7,
+      "gain": 0.12
+    },
+    "level": 0.15,
+    "pan": -0.05,
+    "send": 0.5,
+    "echo": 0.1,
+    "loose": 0.9
+  },
+  "whistle": {
+    "name": "Whistle",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.06,
+          0.12,
+          0.03
+        ],
+        "ratio": 2
+      }
+    ],
+    "env": {
+      "attack": 0.025,
+      "decay": 0.1,
+      "sustain": 0.9,
+      "release": 0.1
+    },
+    "filters": [
+      {
+        "type": "lowpass",
+        "freq": 5000,
+        "q": 0.5
+      }
+    ],
+    "vibrato": {
+      "rate": 5.8,
+      "cents": 9,
+      "delay": 0.3,
+      "rise": 0.3,
+      "minLen": 0.6
+    },
+    "air": {
+      "freq": 3500,
+      "q": 1,
+      "gain": 0.06
+    },
+    "level": 0.085,
+    "pan": 0.1,
+    "send": 0.4,
+    "echo": 0.12,
+    "loose": 0.8
+  },
+  "melodeon": {
+    "name": "Melodeon",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.55,
+          0.7,
+          0.35,
+          0.4,
+          0.2,
+          0.18,
+          0.1,
+          0.08
+        ],
+        "detune": -9
+      },
+      {
+        "harmonics": [
+          1,
+          0.55,
+          0.7,
+          0.35,
+          0.4,
+          0.2,
+          0.18,
+          0.1,
+          0.08
+        ],
+        "detune": 9
+      }
+    ],
+    "env": {
+      "attack": 0.025,
+      "decay": 0.1,
+      "sustain": 0.9,
+      "release": 0.08
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 200,
+        "q": 0.5
+      },
+      {
+        "type": "peaking",
+        "freq": 1300,
+        "q": 1,
+        "gain": 2
+      },
+      {
+        "type": "lowpass",
+        "freq": 3000,
+        "q": 0.5
+      }
+    ],
+    "level": 0.07,
+    "pan": -0.08,
+    "send": 0.25,
+    "echo": 0.06,
+    "loose": 0.7
+  },
+  "pumporgan": {
+    "name": "Pump organ",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.45,
+          0.3,
+          0.22,
+          0.12,
+          0.08,
+          0.05
+        ],
+        "detune": -4
+      },
+      {
+        "harmonics": [
+          1,
+          0.45,
+          0.3,
+          0.22,
+          0.12,
+          0.08,
+          0.05
+        ],
+        "detune": 4
+      },
+      {
+        "ratio": 2,
+        "gain": 0.15
+      }
+    ],
+    "env": {
+      "attack": 0.09,
+      "decay": 0.2,
+      "sustain": 0.9,
+      "release": 0.25
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 120,
+        "q": 0.5
+      },
+      {
+        "type": "lowpass",
+        "freq": 2000,
+        "q": 0.5
+      }
+    ],
+    "air": {
+      "freq": 900,
+      "q": 0.6,
+      "gain": 0.03
+    },
+    "level": 0.065,
+    "send": 0.5,
+    "loose": 0.4
+  },
+  "dulcimer": {
+    "name": "Hammered dulcimer",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.35,
+          0.2,
+          0.12
+        ],
+        "detune": -5,
+        "decay": 2.2
+      },
+      {
+        "harmonics": [
+          1,
+          0.5,
+          0.35,
+          0.2,
+          0.12
+        ],
+        "detune": 5,
+        "decay": 2.2,
+        "gain": 0.8
+      },
+      {
+        "ratio": 3,
+        "gain": 0.12,
+        "decay": 0.25
+      },
+      {
+        "noise": true,
+        "gain": 0.03,
+        "decay": 0.015
+      }
+    ],
+    "env": {
+      "attack": 0.002,
+      "decay": 2.4,
+      "sustain": 0,
+      "release": 0.3
+    },
+    "filters": [
+      {
+        "type": "lowpass",
+        "freq": 5200,
+        "q": 0.5,
+        "to": 2400,
+        "time": 0.4
+      }
+    ],
+    "level": 0.12,
+    "pan": -0.1,
+    "send": 0.5,
+    "echo": 0.15,
+    "loose": 0.8
+  },
+  "cittern": {
+    "name": "Plucked strings",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.6,
+          0.42,
+          0.3,
+          0.2,
+          0.14,
+          0.1,
+          0.06
+        ]
+      },
+      {
+        "harmonics": [
+          1,
+          0.6,
+          0.42,
+          0.3,
+          0.2,
+          0.14,
+          0.1,
+          0.06
+        ],
+        "detune": 6,
+        "gain": 0.6
+      }
+    ],
+    "env": {
+      "attack": 0.004,
+      "decay": 1.1,
+      "sustain": 0,
+      "release": 0.1
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 150,
+        "q": 0.5
+      },
+      {
+        "type": "peaking",
+        "freq": 220,
+        "q": 1,
+        "gain": 3
+      },
+      {
+        "type": "lowpass",
+        "freq": 4000,
+        "q": 0.5,
+        "to": 1600,
+        "time": 0.25
+      }
+    ],
+    "level": 0.12,
+    "pan": 0.18,
+    "send": 0.35,
+    "loose": 0.8
+  },
+  "drone": {
+    "name": "Low drone",
+    "layers": [
+      {
+        "harmonics": [
+          1,
+          0.6,
+          0.5,
+          0.35,
+          0.3,
+          0.2,
+          0.15,
+          0.1
+        ]
+      },
+      {
+        "harmonics": [
+          1,
+          0.6,
+          0.5,
+          0.35,
+          0.3,
+          0.2,
+          0.15,
+          0.1
+        ],
+        "detune": 3,
+        "gain": 0.6
+      }
+    ],
+    "env": {
+      "attack": 0.6,
+      "decay": 0.3,
+      "sustain": 1,
+      "release": 1
+    },
+    "filters": [
+      {
+        "type": "highpass",
+        "freq": 70,
+        "q": 0.5
+      },
+      {
+        "type": "peaking",
+        "freq": 600,
+        "q": 1.5,
+        "gain": 1
+      },
+      {
+        "type": "lowpass",
+        "freq": 800,
+        "q": 0.5
+      }
+    ],
+    "level": 0.11,
+    "send": 0.6,
+    "loose": 0.2
   }
 }

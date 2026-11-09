@@ -214,6 +214,42 @@
     "dormers": 2,
     "doorSide": "left"
    }
+  },
+  {
+   "mesh": "",
+   "recipe": "cape",
+   "x": -10,
+   "z": 3,
+   "w": 6,
+   "d": 7,
+   "height": 4,
+   "rot": 1.5708,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2,
+       -3.5
+      ],
+      [
+       2,
+       -3.5
+      ],
+      [
+       2,
+       3.5
+      ],
+      [
+       -2,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "dormers": 2,
+    "doorSide": "left"
+   }
   }
  ],
  "landmarks": [

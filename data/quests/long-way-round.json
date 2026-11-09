@@ -194,15 +194,25 @@
    "title": "Hardscrabble",
    "objective": "Down the lane to Hardscrabble.",
    "done": {
-    "flags": [
-     "reached_hardscrabble"
-    ]
+    "enter": "stone-lane"
    },
    "skip": {
     "area": "long-wall",
     "spot": "The hand's gap"
    },
-   "auto": []
+   "auto": [
+    {
+     "go": "stone-lane"
+    }
+   ],
+   "sets": [
+    "reached_hardscrabble"
+   ],
+   "onDone": [
+    {
+     "setFlag": "reached_hardscrabble"
+    }
+   ]
   }
  ]
 }

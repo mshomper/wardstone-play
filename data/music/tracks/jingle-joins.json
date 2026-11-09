@@ -1,0 +1,344 @@
+{
+ "version": 1,
+ "id": "jingle-joins",
+ "name": "Joins",
+ "take": "jingle-joins",
+ "bpm": 120,
+ "beats": 4,
+ "key": "",
+ "fx": {
+  "dry": 1,
+  "room": {
+   "amount": 0.5,
+   "size": 2.6,
+   "low": 0,
+   "high": 2500,
+   "q": 1,
+   "plain": true
+  },
+  "lowMid": -2
+ },
+ "parts": {
+  "lead": {
+   "inst": "flute"
+  },
+  "bell": {
+   "inst": "bell"
+  }
+ },
+ "patterns": {
+  "pad": {
+   "inst": "pad",
+   "voicing": {
+    "range": [
+     50,
+     67
+    ],
+    "n": 4
+   },
+   "steps": [
+    [
+     "all",
+     0,
+     4,
+     0.8
+    ]
+   ]
+  },
+  "bass": {
+   "inst": "bass",
+   "steps": [
+    [
+     "r",
+     0,
+     3.6,
+     0.7
+    ]
+   ]
+  }
+ },
+ "sections": {
+  "j": {
+   "level": 1,
+   "ramp": 0,
+   "patterns": [
+    "pad",
+    "bass"
+   ],
+   "bars": [
+    {
+     "c": "G",
+     "n": {
+      "lead": [
+       [
+        67,
+        0,
+        0.5,
+        1
+       ],
+       [
+        71,
+        0.5,
+        0.5,
+        0.88
+       ],
+       [
+        74,
+        1,
+        1,
+        0.88
+       ],
+       [
+        76,
+        2,
+        1,
+        0.88
+       ],
+       [
+        74,
+        3,
+        1,
+        0.88
+       ]
+      ]
+     }
+    },
+    {
+     "c": "A",
+     "n": {
+      "lead": [
+       [
+        73,
+        0,
+        1,
+        1
+       ],
+       [
+        76,
+        1,
+        1,
+        0.88
+       ],
+       [
+        69,
+        2,
+        1,
+        0.88
+       ],
+       [
+        71,
+        3,
+        1,
+        0.88
+       ]
+      ]
+     }
+    },
+    {
+     "c": "D",
+     "n": {
+      "lead": [
+       [
+        74,
+        0,
+        3,
+        1
+       ]
+      ],
+      "bell": [
+       [
+        81,
+        0,
+        3,
+        1
+       ]
+      ]
+     },
+     "patterns": [
+      "pad",
+      "bass"
+     ]
+    }
+   ]
+  }
+ },
+ "form": [
+  "j"
+ ],
+ "drafted": {
+  "place": "jingle-joins",
+  "seed": 0,
+  "note": "\"Two on the Road\", written by hand, 120 beats a minute: snappier, at Matt's ask"
+ },
+ "sounds": {
+  "pad": {
+   "name": "Held pad",
+   "layers": [
+    {
+     "harmonics": [
+      0.63662,
+      0,
+      -0.212207,
+      0,
+      0.127324
+     ],
+     "normalize": true,
+     "detune": -5
+    },
+    {
+     "harmonics": [
+      0.63662,
+      0,
+      -0.212207,
+      0,
+      0.127324
+     ],
+     "normalize": true,
+     "detune": 5
+    }
+   ],
+   "env": {
+    "attack": 1,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.6
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0,
+    "attackShare": 0.3,
+    "before": 0.1,
+    "after": 0.6
+   },
+   "filters": [
+    {
+     "type": "highpass",
+     "freq": 160,
+     "q": 0.5
+    },
+    {
+     "type": "lowpass",
+     "freq": 800,
+     "q": 1
+    }
+   ],
+   "level": 0.017,
+   "send": 1,
+   "jitter": {
+    "time": 0,
+    "vel": 0
+   },
+   "plainTone": true
+  },
+  "bass": {
+   "name": "Round sine bass",
+   "layers": [
+    {}
+   ],
+   "env": {
+    "attack": 0.03,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.05
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0.03,
+    "before": 0.25,
+    "after": 0.05
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 400,
+     "q": 1
+    }
+   ],
+   "level": 0.32,
+   "jitter": {
+    "time": 0,
+    "vel": 0
+   },
+   "plainTone": true
+  },
+  "flute": {
+   "name": "Soft flute lead",
+   "layers": [
+    {},
+    {
+     "ratio": 2,
+     "gain": 0.07
+    }
+   ],
+   "env": {
+    "attack": 0.07,
+    "decay": 0.1,
+    "sustain": 1,
+    "release": 0.22
+   },
+   "curve": {
+    "kind": "gate",
+    "attack": 0.07,
+    "before": 0.16,
+    "after": 0.22
+   },
+   "filters": [
+    {
+     "type": "lowpass",
+     "freq": 2200,
+     "q": 1
+    }
+   ],
+   "vibrato": {
+    "rate": 4.6,
+    "cents": 7,
+    "delay": 0,
+    "rise": 0.5,
+    "minLen": 0.9,
+    "firstOnly": true
+   },
+   "level": 0.1625,
+   "send": 1,
+   "jitter": {
+    "time": 0.024,
+    "vel": 0.153846
+   },
+   "plainTone": true
+  },
+  "bell": {
+   "name": "Bell",
+   "layers": [
+    {
+     "ratio": 1,
+     "gain": 1,
+     "decay": 2
+    },
+    {
+     "ratio": 2.01,
+     "gain": 0.3,
+     "decay": 0.9
+    },
+    {
+     "ratio": 3.02,
+     "gain": 0.16,
+     "decay": 0.45
+    },
+    {
+     "ratio": 5.04,
+     "gain": 0.06,
+     "decay": 0.16
+    }
+   ],
+   "env": {
+    "attack": 0.003,
+    "decay": 2.2,
+    "sustain": 0,
+    "release": 0.3
+   },
+   "level": 0.13,
+   "pan": 0.22,
+   "send": 0.5,
+   "echo": 0.26
+  }
+ }
+}

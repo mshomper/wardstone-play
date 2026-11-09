@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "name": "mast-wood",
+  "seed": 3702,
+  "size": {
+    "w": 64,
+    "h": 48
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3,
+    "edgeWidth": 6,
+    "roll": 0.5,
+    "pathMargin": 1,
+    "tiles": {
+      "open": "leaf_litter",
+      "under": "grass_leaves",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_1",
+          "maple_orange_0",
+          "birch_1"
+        ],
+        "density": 0.7,
+        "spacing": 2.2,
+        "scale": [
+          1,
+          1.3
+        ],
+        "near": "edge",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_orange_0",
+          "maple_orange_1",
+          "maple_red_0",
+          "maple_orange_1"
+        ],
+        "density": 0.26,
+        "spacing": 4.6,
+        "scale": [
+          1.3,
+          1.6
+        ],
+        "near": "open",
+        "collide": 0.6,
+        "tall": true
+      },
+      {
+        "props": [
+          "bare_tree_0",
+          "bare_tree_1"
+        ],
+        "density": 0.03,
+        "spacing": 8,
+        "scale": [
+          1.1,
+          1.3
+        ],
+        "near": "open",
+        "collide": 0.45,
+        "tall": true
+      },
+      {
+        "props": [
+          "witch_hazel_0"
+        ],
+        "density": 0.06,
+        "spacing": 4,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.4
+      },
+      {
+        "props": [
+          "beechnuts_0"
+        ],
+        "density": 0.3,
+        "spacing": 1.8,
+        "scale": [
+          0.85,
+          1.15
+        ],
+        "near": "open",
+        "shadow": false
+      },
+      {
+        "props": [
+          "beechnuts_0"
+        ],
+        "density": 0.16,
+        "spacing": 2,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "path",
+        "shadow": false
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "fallen_log_0",
+          "fallen_log_1",
+          "tree_stump_1"
+        ],
+        "density": 0.04,
+        "spacing": 5,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "open",
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_2",
+          "mushrooms_0"
+        ],
+        "density": 0.12,
+        "spacing": 1.4,
+        "scale": [
+          0.8,
+          1
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          11,
+          -24
+        ],
+        [
+          10.4,
+          -18
+        ],
+        [
+          6.6,
+          -12
+        ],
+        [
+          1,
+          -6.4
+        ],
+        [
+          -3.4,
+          -1.6
+        ],
+        [
+          -4,
+          3
+        ],
+        [
+          -1.6,
+          8.6
+        ],
+        [
+          2,
+          13.6
+        ],
+        [
+          3.6,
+          18
+        ],
+        [
+          3.4,
+          24
+        ]
+      ],
+      "width": 2,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          -1.4,
+          -4.6
+        ],
+        [
+          -8,
+          -5.4
+        ],
+        [
+          -14,
+          -6.2
+        ],
+        [
+          -19.4,
+          -6
+        ]
+      ],
+      "width": 0.9,
+      "kind": "path"
+    }
+  ],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": -18,
+      "z": 12,
+      "radius": 10,
+      "height": 1.2
+    },
+    {
+      "kind": "hollow",
+      "x": 18,
+      "z": -6,
+      "radius": 8,
+      "height": 0.5
+    }
+  ],
+  "arenas": [
+    {
+      "x": -3.6,
+      "z": 1,
+      "radius": 3
+    },
+    {
+      "x": 17,
+      "z": -15,
+      "radius": 2.6
+    },
+    {
+      "x": -13,
+      "z": 8.6,
+      "radius": 2.6
+    },
+    {
+      "x": 13,
+      "z": 15,
+      "radius": 2.6
+    },
+    {
+      "x": -24,
+      "z": 14,
+      "radius": 2.8
+    }
+  ],
+  "placements": [
+    {
+      "prop": "maple_orange_1",
+      "x": -8.4,
+      "z": -0.6,
+      "collide": 0.6,
+      "tall": true,
+      "scale": 1.55
+    },
+    {
+      "prop": "maple_orange_0",
+      "x": 4.6,
+      "z": 4.2,
+      "collide": 0.6,
+      "tall": true,
+      "scale": 1.5
+    },
+    {
+      "prop": "maple_red_0",
+      "x": -6.6,
+      "z": -12,
+      "collide": 0.6,
+      "tall": true,
+      "scale": 1.5
+    },
+    {
+      "prop": "farm_wagon_empty",
+      "x": 5.6,
+      "z": -9,
+      "collide": 1.2
+    },
+    {
+      "prop": "tailor_cart",
+      "x": 14,
+      "z": 3.6,
+      "collide": 0.8
+    },
+    {
+      "prop": "sack_grain",
+      "x": 12,
+      "z": 5.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "sack_flour_0",
+      "x": 15.8,
+      "z": 5.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "sack_grain",
+      "x": 16.8,
+      "z": 4.4,
+      "collide": 0.3,
+      "flip": true
+    },
+    {
+      "prop": "apple_basket_0",
+      "x": 11,
+      "z": 3,
+      "collide": 0.3
+    },
+    {
+      "prop": "chestnut_hollow",
+      "x": -22,
+      "z": -8.4,
+      "collide": 1.3,
+      "tall": true
+    },
+    {
+      "prop": "bare_tree_1",
+      "x": -27,
+      "z": -4,
+      "collide": 0.45,
+      "tall": true,
+      "scale": 1.1
+    },
+    {
+      "prop": "witch_hazel_0",
+      "x": -18.6,
+      "z": -9.6,
+      "collide": 0.4
+    },
+    {
+      "prop": "witch_hazel_0",
+      "x": 8.4,
+      "z": -3.4,
+      "collide": 0.4,
+      "flip": true
+    },
+    {
+      "prop": "beechnuts_0",
+      "x": -20.6,
+      "z": -5.4
+    },
+    {
+      "prop": "beechnuts_0",
+      "x": 13,
+      "z": 7
+    },
+    {
+      "prop": "beechnuts_0",
+      "x": -2,
+      "z": 5.6
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -22,
+          -6.4
+        ],
+        [
+          -22,
+          -5.4
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          10.6,
+          6.8
+        ],
+        [
+          16,
+          6.8
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          2.4,
+          -8.8
+        ],
+        [
+          3.4,
+          -8.8
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "From the Bark Road",
+      "x": 10.2,
+      "z": -18.4
+    },
+    {
+      "name": "The Bull of the Woods",
+      "x": -3.6,
+      "z": 0.6,
+      "note": "Standing square on the road at the middle bend; blocks the way south until he's settled (later session: gate the south exit on his flag)."
+    },
+    {
+      "name": "The Bull's beech",
+      "x": -7,
+      "z": 1.2,
+      "note": "The beech he gets his antlers caught in, halfway down the fight."
+    },
+    {
+      "name": "The teamster's wagon",
+      "x": 3.2,
+      "z": -8.6,
+      "note": "Jotham Leavitt's empty bark wagon, stuck behind the Bull (optional)."
+    },
+    {
+      "name": "Lydia (handcart)",
+      "x": 13,
+      "z": 6.8,
+      "note": "Lydia Fairbanks with the sacks and the handcart (the tailor cart stands in for it)."
+    },
+    {
+      "name": "Ned",
+      "x": 18.6,
+      "z": -2.4
+    },
+    {
+      "name": "Polly",
+      "x": 9.4,
+      "z": 10.4
+    },
+    {
+      "name": "Sam",
+      "x": 17.6,
+      "z": 8.6
+    },
+    {
+      "name": "The hollow chestnut (nook)",
+      "x": -22,
+      "z": -5.8,
+      "note": "Dead long ago, still standing, big enough to stand in. Inside, a child's initials cut low: H.B. (small find). Gloves inside (placed find)."
+    },
+    {
+      "name": "Beechnuts",
+      "x": -2,
+      "z": 6.8,
+      "note": "Charm goods: Beechnut."
+    },
+    {
+      "name": "Deep in the beeches",
+      "x": -24,
+      "z": 11,
+      "note": "The tougher fight, west."
+    },
+    {
+      "name": "On to the Hemlock Wall",
+      "x": 3.6,
+      "z": 18.6
+    }
+  ],
+  "start": [
+    10.2,
+    -18.4
+  ],
+  "exits": [
+    {
+      "rect": [
+        8,
+        -21,
+        12.8,
+        -20
+      ],
+      "to": "bark-road",
+      "at": [
+        11.6,
+        14.6
+      ],
+      "dir": 4
+    },
+    {
+      "rect": [
+        1.2,
+        20,
+        6,
+        21
+      ],
+      "to": "hemlock-wall",
+      "at": [
+        -19.4,
+        -16.4
+      ],
+      "dir": 0
+    }
+  ]
+}

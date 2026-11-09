@@ -1,0 +1,505 @@
+{
+ "version": 1,
+ "name": "ox-road",
+ "seed": 3204,
+ "size": {
+  "w": 56,
+  "h": 36
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.4,
+  "edgeWidth": 5,
+  "roll": 0.55,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.2,
+    "spacing": 2.3,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "birch_0",
+     "maple_yellow_0",
+     "birch_1",
+     "maple_yellow_1"
+    ],
+    "density": 0.7,
+    "spacing": 1.8,
+    "scale": [
+     0.85,
+     1.12
+    ],
+    "near": "edge",
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0"
+    ],
+    "density": 0.42,
+    "spacing": 2.1,
+    "scale": [
+     0.8,
+     1.08
+    ],
+    "within": [
+     [
+      -27,
+      5.5
+     ],
+     [
+      27,
+      5.5
+     ],
+     [
+      27,
+      17
+     ],
+     [
+      -27,
+      17
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_1",
+     "birch_0",
+     "white_pine_1",
+     "maple_orange_0"
+    ],
+    "density": 0.36,
+    "spacing": 2.2,
+    "scale": [
+     0.8,
+     1.08
+    ],
+    "within": [
+     [
+      -27,
+      -17
+     ],
+     [
+      27,
+      -17
+     ],
+     [
+      27,
+      -5
+     ],
+     [
+      -27,
+      -5
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "boulder_mossy_2",
+     "rock_face_0",
+     "stone_granite_0"
+    ],
+    "density": 0.08,
+    "spacing": 4,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "within": [
+     [
+      -27,
+      -17
+     ],
+     [
+      27,
+      -17
+     ],
+     [
+      27,
+      -3.5
+     ],
+     [
+      -27,
+      -3.5
+     ]
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.22,
+    "spacing": 1,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "edge"
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1",
+     "asters_0",
+     "asters_1",
+     "fern_autumn_1"
+    ],
+    "density": 0.2,
+    "spacing": 1.1,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "near": "path"
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "mushrooms_1"
+    ],
+    "density": 0.03,
+    "spacing": 2,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "open",
+    "shadow": false
+   },
+   {
+    "props": [
+     "fallen_log_0",
+     "fallen_log_1"
+    ],
+    "density": 0.03,
+    "spacing": 6,
+    "scale": [
+     0.85,
+     1
+    ],
+    "near": "open",
+    "collide": 0.3
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -28,
+     1
+    ],
+    [
+     -20,
+     0.4
+    ],
+    [
+     -12,
+     1.4
+    ],
+    [
+     -4,
+     0.4
+    ],
+    [
+     4,
+     -0.4
+    ],
+    [
+     12,
+     0.4
+    ],
+    [
+     20,
+     -0.4
+    ],
+    [
+     28,
+     -0.8
+    ]
+   ],
+   "width": 2.4,
+   "kind": "ledge"
+  }
+ ],
+ "walls": [],
+ "buildings": [],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 6,
+   "z": -15,
+   "radius": 14,
+   "height": 1.4
+  },
+  {
+   "kind": "hollow",
+   "x": -8,
+   "z": 11,
+   "radius": 8,
+   "height": 0.5
+  }
+ ],
+ "arenas": [
+  {
+   "x": -18,
+   "z": 8.4,
+   "radius": 2.6
+  },
+  {
+   "x": 3,
+   "z": 9,
+   "radius": 2.8
+  },
+  {
+   "x": 17.5,
+   "z": -8.4,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "stone_boat_broken",
+   "x": -9.4,
+   "z": -3.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "granite_trough",
+   "x": 8.4,
+   "z": 2.8,
+   "collide": 0.6
+  },
+  {
+   "prop": "granite_block_fallen",
+   "x": 14.6,
+   "z": -2.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "lunch_pail",
+   "x": -15.8,
+   "z": -2.9
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -17,
+   "z": -3.6,
+   "collide": 0.3,
+   "scale": 0.8
+  },
+  {
+   "prop": "birch_chain",
+   "x": 1.6,
+   "z": -4.2,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "rock_face_0",
+   "x": -4.4,
+   "z": -7.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "boulder_large_1",
+   "x": 19,
+   "z": -4.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "granite_block_1",
+   "x": 21.4,
+   "z": 3.4,
+   "collide": 0.45,
+   "scale": 0.8
+  },
+  {
+   "prop": "birch_1",
+   "x": -11.8,
+   "z": -5.8,
+   "collide": 0.34,
+   "tall": true
+  },
+  {
+   "prop": "fern_autumn_2",
+   "x": -7.8,
+   "z": -4.6
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 9.8,
+   "z": 3.6
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -11,
+     -3.4
+    ],
+    [
+     -7.6,
+     -3.4
+    ]
+   ],
+   "radius": 1.4
+  },
+  {
+   "points": [
+    [
+     8.4,
+     2.8
+    ],
+    [
+     8.4,
+     4.4
+    ]
+   ],
+   "radius": 1.4
+  },
+  {
+   "points": [
+    [
+     14.6,
+     -2.6
+    ],
+    [
+     14.6,
+     -1.2
+    ]
+   ],
+   "radius": 1.3
+  },
+  {
+   "points": [
+    [
+     -15.8,
+     -2.9
+    ],
+    [
+     -15.8,
+     -1.6
+    ]
+   ],
+   "radius": 1.2
+  }
+ ],
+ "spots": [
+  {
+   "name": "The stone-boat",
+   "x": -9.4,
+   "z": -2.1,
+   "note": "A broken stone-boat on its side by the ruts, a runner snapped. The quarry's blocks went down on these."
+  },
+  {
+   "name": "The nook (stone-boat)",
+   "x": -10.2,
+   "z": -5,
+   "note": "The nook: behind the stone-boat under the birches, out of the wind."
+  },
+  {
+   "name": "The trough",
+   "x": 8.4,
+   "z": 1.6,
+   "note": "A watering trough cut from one block, for the oxen on the haul."
+  },
+  {
+   "name": "The fallen block",
+   "x": 14.6,
+   "z": -1.4,
+   "note": "A block that fell off a load and was left, with the same mason's mark as the quarry's marked block (a find)."
+  },
+  {
+   "name": "The lunch pail",
+   "x": -15.8,
+   "z": -1.8,
+   "note": "A cutter's lunch pail, very old, very empty (a find)."
+  },
+  {
+   "name": "The birch and the chain",
+   "x": 1.6,
+   "z": -3,
+   "note": "A birch grown up through a rusted chain left on the ledge."
+  },
+  {
+   "name": "From Thayer's Yard",
+   "x": -22.5,
+   "z": 1
+  },
+  {
+   "name": "On to the Quarry",
+   "x": 22.5,
+   "z": -0.8
+  }
+ ],
+ "start": [
+  -22.5,
+  1
+ ],
+ "exits": [
+  {
+   "rect": [
+    -25,
+    -1.4,
+    -24,
+    3.4
+   ],
+   "to": "thayers-yard",
+   "at": [
+    14.5,
+    2.4
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    24,
+    -3.2,
+    25,
+    1.4
+   ],
+   "to": "the-quarry",
+   "at": [
+    -26.5,
+    8
+   ],
+   "dir": 6
+  }
+ ]
+}

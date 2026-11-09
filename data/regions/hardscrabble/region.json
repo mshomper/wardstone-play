@@ -1,0 +1,26 @@
+{
+  "_note": "Hardscrabble, the Stonemason's village at the end of the Old Post Road (docs/regions/hardscrabble.md). Built: the village, Thayer's Yard, the Stone Lane, the Sheep Walk and Hobble Hill (decision 0310); the Ox Road, the Quarry, Hemlock Brook and the Lonesome Cellar Holes (decision 0320). The Deep Cut, under the Quarry (decision 0325). The way on to Harlow Bridge is a lead until it is built.",
+  "id": "hardscrabble",
+  "name": "Hardscrabble",
+  "overheard": "overheard",
+  "barter": "barter",
+  "places": [
+    { "id": "hardscrabble", "name": "Hardscrabble", "town": true, "note": "half shut", "at": [240, 300], "areas": ["hardscrabble", "hardscrabble-boarding-house", "hardscrabble-east-farmhouse", "hardscrabble-varnums-house", "hardscrabble-varnums-house-upper", "hardscrabble-house-for-sale", "hardscrabble-shattucks-house", "hardscrabble-pike-house", "hardscrabble-farmhouse-by-the-lane", "hardscrabble-holt-house", "hardscrabble-house-by-the-common", "hardscrabble-house-by-the-common-upper", "hardscrabble-fogg-s-shop", "hardscrabble-fogg-s-shop-upper", "hardscrabble-meetinghouse"] },
+    { "id": "stone-lane", "name": "The Stone Lane", "at": [110, 300], "label": "below", "areas": ["stone-lane"] },
+    { "id": "thayers-yard", "name": "Thayer's Yard", "at": [470, 300], "label": "below", "areas": ["thayers-yard", "thayers-yard-tool-shed", "thayers-yard-thayer-house"] },
+    { "id": "sheep-walk", "name": "The Sheep Walk", "at": [240, 200], "areas": ["sheep-walk"] },
+    { "id": "hobble-hill", "name": "Hobble Hill", "at": [240, 95], "areas": ["hobble-hill"], "stone": { "mended": "obed_wall_laid", "travel": "hardscrabble_stone_woke" } },
+    { "id": "ox-road", "name": "The Ox Road", "at": [520, 385], "label": "right", "areas": ["ox-road"] },
+    { "id": "the-quarry", "name": "The Quarry", "at": [560, 470], "label": "below", "areas": ["the-quarry", "the-quarry-cutters-shanty"] },
+    { "id": "hemlock-brook", "name": "Hemlock Brook", "at": [240, 395], "label": "right", "areas": ["hemlock-brook"] },
+    { "id": "cellar-holes", "name": "Lonesome Cellar Holes", "at": [220, 475], "label": "left", "areas": ["cellar-holes"] },
+    { "id": "deep-cut", "name": "The Deep Cut", "note": "under the Quarry", "at": [615, 530], "label": "below", "areas": ["deep-cut"] }
+  ],
+  "paths": [["stone-lane", "hardscrabble"], ["hardscrabble", "thayers-yard"], ["hardscrabble", "sheep-walk"], ["sheep-walk", "hobble-hill"], ["thayers-yard", "ox-road"], ["ox-road", "the-quarry"], ["hardscrabble", "hemlock-brook"], ["hemlock-brook", "cellar-holes"], ["the-quarry", "deep-cut"]],
+  "leads": [
+    { "from": "stone-lane", "to": [40, 220], "name": "up to the Long Wall" },
+    { "from": "cellar-holes", "to": [150, 530], "name": "on to the Tanbark Road" }
+  ],
+  "quests": ["postage-due", "the-pound", "applejack", "mending-for-the-road", "coyles-bounds", "what-goes-on-the-wagon"],
+  "dialogue": ["deep_cut", "hs_people", "hs_finds", "hs_quests"]
+}

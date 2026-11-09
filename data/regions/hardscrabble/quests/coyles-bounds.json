@@ -1,0 +1,127 @@
+{
+ "id": "coyles-bounds",
+ "title": "Coyle's Bounds",
+ "side": true,
+ "blurb": "Abner Coyle wants the old bounds in his deed to the hill found and staked.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The deed",
+   "objective": "",
+   "done": {
+    "flags": [
+     "bounds_asked"
+    ]
+   },
+   "sets": [
+    "bounds_asked"
+   ],
+   "auto": [
+    {
+     "go": "sheep-walk"
+    },
+    {
+     "go": "hobble-hill"
+    },
+    {
+     "talk": "abner_coyle"
+    },
+    {
+     "talk": "abner_coyle"
+    },
+    {
+     "talk": "abner_coyle"
+    }
+   ]
+  },
+  {
+   "id": "marks",
+   "title": "The bounds",
+   "objective": "Walk the bounds in Coyle's deed on the Sheep Walk: the heap of stones at the brook, the split boulder, the stone with the three marks.",
+   "count": {
+    "flags": [
+     "bound:heap",
+     "bound:boulder",
+     "bound:marks"
+    ]
+   },
+   "done": {
+    "flags": [
+     "bound:heap",
+     "bound:boulder",
+     "bound:marks"
+    ]
+   },
+   "sets": [
+    "bound:heap",
+    "bound:boulder",
+    "bound:marks"
+   ],
+   "skip": {
+    "area": "hobble-hill",
+    "spot": "Coyle (hill)"
+   },
+   "auto": [
+    {
+     "go": "sheep-walk"
+    },
+    {
+     "use": "hs_bound_heap"
+    },
+    {
+     "use": "hs_bound_boulder"
+    },
+    {
+     "use": "hs_bound_marks"
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "title": "As it stands",
+   "objective": "\"And so along the wall as it stands.\" Go up to the ring wall on Hobble Hill.",
+   "done": {
+    "flags": [
+     "bound:wall"
+    ]
+   },
+   "sets": [
+    "bound:wall"
+   ],
+   "skip": {
+    "area": "sheep-walk",
+    "spot": "Up to Hobble Hill"
+   },
+   "auto": [
+    {
+     "go": "hobble-hill"
+    },
+    {
+     "use": "hs_bound_wall"
+    }
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "The deed",
+   "objective": "Tell Coyle what his deed says.",
+   "done": {
+    "flags": [
+     "bounds_done"
+    ]
+   },
+   "sets": [
+    "bounds_done"
+   ],
+   "skip": {
+    "area": "hobble-hill",
+    "spot": "Coyle (hill)"
+   },
+   "auto": [
+    {
+     "talk": "abner_coyle"
+    }
+   ]
+  }
+ ]
+}

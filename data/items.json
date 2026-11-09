@@ -11,7 +11,7 @@
       "apple_fritter": 3, "warm_cider": 3, "maple_candy": 3, "johnnycake": 2, "peppermint_drop": 2,
       "mulled_cider": 1, "birch_tonic": 1, "hearth_stew": 1, "chicken_pie": 1,
       "mustard_plaster": 2, "vinegar_rag": 1, "sassafras_tea": 1,
-      "pine_pitch": 2, "rock_salt": 2, "cold_iron_nail": 1, "ward_chalk": 1, "lamp_oil": 1, "cowbell": 1, "wool_scarf": 1
+      "pine_pitch": 2, "rock_salt": 2, "cold_iron_nail": 1, "ward_chalk": 1, "lamp_oil": 1, "cowbell": 1, "wool_scarf": 1, "lamp_wick": 1
     },
     "lines": {
       "empty": "Everything's for sale, friend. Everything's worth something. Show me.",
@@ -47,6 +47,8 @@
     { "id": "vinegar_rag", "name": "Vinegar Rag", "icon": "rag", "kind": "cure", "use": "quick", "desc": "Cures Sticky and burning.", "value": 4, "cure": ["sticky", "burning"] },
     { "id": "witch_hazel", "name": "Witch Hazel", "icon": "witchhazel", "kind": "cure", "use": "quick", "desc": "Cures burning.", "value": 3, "cure": ["burning"] },
     { "id": "sassafras_tea", "name": "Sassafras Tea", "icon": "teacup", "kind": "cure", "use": "turn", "desc": "Cures everything: chill, slow, Sticky and burning.", "value": 7, "cure": ["chilled", "slow", "sticky", "burning"] },
+    { "id": "dubbin", "name": "Dubbin", "icon": "dubbin", "kind": "cure", "use": "quick", "desc": "Boot grease, worked in warm. Cures chill and Sticky.", "value": 5, "cure": ["chilled", "sticky"] },
+    { "id": "bootlaces", "name": "Bootlaces", "icon": "laces", "kind": "cure", "use": "quick", "desc": "A fresh pair, pulled tight. Cures slow.", "value": 3, "cure": ["slow"] },
 
     { "id": "pine_pitch", "name": "Pine Pitch", "icon": "pitch", "kind": "battle", "use": "turn", "target": "one", "element": "hearth", "desc": "Makes one foe Sticky for 2 turns. Never misses.", "value": 8, "status": [{ "id": "sticky", "turns": 2 }] },
     { "id": "rock_salt", "name": "Rock Salt", "icon": "salt", "kind": "battle", "use": "turn", "target": "all", "element": "earth", "desc": "Earth damage to every foe.", "value": 12, "power": 0.8 },
@@ -70,6 +72,20 @@
     { "id": "old_almanac", "name": "Old Almanac", "icon": "almanac", "kind": "trade", "desc": "Last year's. It promised a mild autumn.", "value": 5 },
     { "id": "darning_egg", "name": "Darning Egg", "icon": "darningegg", "kind": "trade", "desc": "Worn smooth inside a great many socks.", "value": 3 },
     { "id": "tin_whistle", "name": "Tin Whistle", "icon": "whistle", "kind": "trade", "desc": "Plays one note well and the others bravely.", "value": 5 },
-    { "id": "lace_doily", "name": "Lace Doily", "icon": "doily", "kind": "trade", "desc": "Hours of somebody's winter, and it fits under a teacup.", "value": 4 }
+    { "id": "lace_doily", "name": "Lace Doily", "icon": "doily", "kind": "trade", "desc": "Hours of somebody's winter, and it fits under a teacup.", "value": 4 },
+    { "id": "horseshoe_nail", "name": "Horseshoe Nail", "icon": "nail", "kind": "trade", "desc": "Off a coach horse, years ago. Keep it pointing up, they say.", "value": 5 },
+    { "id": "crow_feather", "name": "Crow Feather", "icon": "quill", "kind": "trade", "desc": "Glossy black. A crow left it on purpose. Crows do.", "value": 5 },
+    { "id": "hare_foot", "name": "Hare's Foot", "icon": "harefoot", "kind": "trade", "desc": "White already, from the cold side. Didn't help the hare.", "value": 7 },
+    { "id": "tansy", "name": "Sprig of Tansy", "icon": "leaf", "kind": "trade", "desc": "Yellow buttons on a stalk, from the verge. Keeps the flies honest.", "value": 4 },
+    { "id": "hag_stone", "name": "Hag Stone", "icon": "stone", "kind": "trade", "desc": "A river stone with a hole worn through it. Look through it if you must.", "value": 6 },
+    { "id": "bottle_cork", "name": "Bottle Cork", "icon": "cork", "kind": "trade", "desc": "From one of Reuben's barrels. Smells of something better than you'll ever drink.", "value": 4 },
+    { "id": "cider_dregs", "name": "Hard Cider Dregs", "icon": "mug", "kind": "trade", "desc": "The bottom of the barrel, and proud of it.", "value": 5 },
+    { "id": "lamp_wick", "name": "Lamp Wick", "icon": "oilcan", "kind": "trade", "desc": "A coil of wick from the Half-Way House. Still smells of the last night it burned.", "value": 5 },
+    { "id": "foxglove", "name": "Foxglove", "icon": "leaf", "kind": "trade", "desc": "Self-sown at the edge of a garden. Pressed flat, it keeps. Wash your hands.", "value": 6 },
+    { "id": "hornet_paper", "name": "Hornet Paper", "icon": "doily", "kind": "trade", "desc": "A grey scrap of an old nest, light as ash. Nobody home. Probably.", "value": 5 },
+    { "id": "bent_pin", "name": "Bent Pin", "icon": "nail", "kind": "trade", "desc": "A dressmaker's pin bent double. Found in a hem, then found again in a thumb.", "value": 4 },
+    { "id": "wishbone", "name": "Wishbone", "icon": "wishbone", "kind": "trade", "desc": "Picked clean and dried on a wall stone. Nobody pulled it. That's the trouble.", "value": 6 },
+    { "id": "grindstone_grit", "name": "Grindstone Grit", "icon": "stone", "kind": "trade", "desc": "Granite dust from the cutters' grindstone, in a twist of sacking. Takes an edge off, puts an edge on.", "value": 6 },
+    { "id": "hearth_ash", "name": "Hearth Ash", "icon": "stone", "kind": "trade", "desc": "Grey ash from a fallen chimney. From a fire that never quite went out.", "value": 5 }
   ]
 }

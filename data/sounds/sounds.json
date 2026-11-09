@@ -1,5 +1,5 @@
 {
- "_note": "Sound effects made from data (src/core/sfxsynth.ts). `picked` holds the take Matt chose on the sound page. `fallback` is what a sound plays until then. Anything in neither stays silent.",
+ "_note": "Sound effects made from data (src/core/sfxsynth.ts). `picked` holds the take Matt chose on the sound page. A sound in a take file (`takeFiles`, public/data/sounds/<name>.json) plays the take `use` names instead, so a pick there is changing its letter. `fallback` is what a sound plays until then. Anything in neither stays silent. `joins` is a companion's own sound as they join, `at` seconds into the Joins jingle (5.5 is the last beat).",
  "picked": {
   "door_open": {
    "take": "Quiet",
@@ -728,7 +728,584 @@
      "vol": 0.03
     }
    ]
+  },
+  "cupboard_open": {
+   "take": "Crocks",
+   "room": 0.14,
+   "layers": [
+    {
+     "type": "strike",
+     "at": 0,
+     "vol": 0.1,
+     "click": 0.018,
+     "clickHz": 1800,
+     "modes": [
+      [
+       360,
+       0.04,
+       1
+      ],
+      [
+       792,
+       0.024,
+       0.5
+      ],
+      [
+       1692,
+       0.012,
+       0.22
+      ]
+     ]
+    },
+    {
+     "type": "creak",
+     "at": 0.04,
+     "dur": 0.22,
+     "from": 100,
+     "to": 150,
+     "jitter": 0.15,
+     "res": [
+      [
+       820,
+       8,
+       1
+      ],
+      [
+       1800,
+       9,
+       0.4
+      ]
+     ],
+     "vol": 0.1
+    },
+    {
+     "type": "strike",
+     "at": 0.22,
+     "vol": 0.06,
+     "click": 0.018,
+     "clickHz": 5000,
+     "modes": [
+      [
+       1900,
+       0.09,
+       1
+      ],
+      [
+       4370,
+       0.05,
+       0.4
+      ],
+      [
+       7410,
+       0.03,
+       0.2
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.29,
+     "vol": 0.04,
+     "click": 0.012,
+     "clickHz": 5000,
+     "modes": [
+      [
+       2300,
+       0.09,
+       1
+      ],
+      [
+       5290,
+       0.05,
+       0.4
+      ],
+      [
+       8970,
+       0.03,
+       0.2
+      ]
+     ]
+    }
+   ]
+  },
+  "dresser_open": {
+   "take": "Drawer slid",
+   "room": 0.12,
+   "layers": [
+    {
+     "type": "creak",
+     "at": 0,
+     "dur": 0.32,
+     "from": 420,
+     "to": 300,
+     "jitter": 0.7,
+     "res": [
+      [
+       700,
+       2.5,
+       1
+      ],
+      [
+       1610,
+       3,
+       0.4
+      ]
+     ],
+     "vol": 0.12
+    },
+    {
+     "type": "strike",
+     "at": 0.32,
+     "vol": 0.14,
+     "click": 0.0252,
+     "clickHz": 1800,
+     "modes": [
+      [
+       230,
+       0.06,
+       1
+      ],
+      [
+       506,
+       0.036,
+       0.5
+      ],
+      [
+       1081,
+       0.018,
+       0.22
+      ]
+     ]
+    }
+   ]
+  },
+  "barrel_open": {
+   "take": "Hollow knock",
+   "room": 0.18,
+   "layers": [
+    {
+     "type": "strike",
+     "at": 0,
+     "vol": 0.18,
+     "click": 0.027,
+     "clickHz": 1500,
+     "modes": [
+      [
+       100,
+       0.28,
+       1
+      ],
+      [
+       190,
+       0.16,
+       0.5
+      ],
+      [
+       340,
+       0.07,
+       0.2
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.17,
+     "vol": 0.12,
+     "click": 0.018,
+     "clickHz": 1500,
+     "modes": [
+      [
+       110,
+       0.28,
+       1
+      ],
+      [
+       209,
+       0.16,
+       0.5
+      ],
+      [
+       374,
+       0.07,
+       0.2
+      ]
+     ]
+    }
+   ]
+  },
+  "menu_open": {
+   "take": "Book opened",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "strike",
+     "vol": 0.09,
+     "click": 0.01,
+     "clickHz": 1200,
+     "modes": [
+      [
+       150,
+       0.07,
+       1
+      ],
+      [
+       330,
+       0.04,
+       0.4
+      ]
+     ]
+    },
+    {
+     "type": "grains",
+     "at": 0.02,
+     "dur": 0.14,
+     "rate": 110,
+     "f": [
+      2000,
+      6500
+     ],
+     "len": [
+      0.003,
+      0.012
+     ],
+     "vol": 0.05
+    },
+    {
+     "type": "noise",
+     "at": 0.02,
+     "dur": 0.14,
+     "filter": "bandpass",
+     "f": 1800,
+     "f2": 4200,
+     "q": 0.8,
+     "vol": 0.0125
+    }
+   ]
+  },
+  "menu_close": {
+   "take": "Book closed",
+   "room": 0.1,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.08,
+     "rate": 110,
+     "f": [
+      2000,
+      6500
+     ],
+     "len": [
+      0.003,
+      0.012
+     ],
+     "vol": 0.04
+    },
+    {
+     "type": "noise",
+     "at": 0,
+     "dur": 0.08,
+     "filter": "bandpass",
+     "f": 1800,
+     "f2": 4200,
+     "q": 0.8,
+     "vol": 0.01
+    },
+    {
+     "type": "strike",
+     "at": 0.06,
+     "vol": 0.11,
+     "click": 0.012,
+     "clickHz": 1000,
+     "modes": [
+      [
+       120,
+       0.08,
+       1
+      ],
+      [
+       270,
+       0.04,
+       0.4
+      ]
+     ]
+    }
+   ]
+  },
+  "page_turn": {
+   "take": "Quick flick",
+   "room": 0.05,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.08,
+     "rate": 110,
+     "f": [
+      3000,
+      8000
+     ],
+     "len": [
+      0.003,
+      0.012
+     ],
+     "vol": 0.06
+    },
+    {
+     "type": "noise",
+     "at": 0,
+     "dur": 0.08,
+     "filter": "bandpass",
+     "f": 1800,
+     "f2": 4200,
+     "q": 0.8,
+     "vol": 0.015
+    }
+   ]
+  },
+  "board_pin": {
+   "take": "Torn off",
+   "room": 0.05,
+   "layers": [
+    {
+     "type": "grains",
+     "dur": 0.18,
+     "rate": 260,
+     "f": [
+      1500,
+      6000
+     ],
+     "len": [
+      0.002,
+      0.006
+     ],
+     "vol": 0.12
+    },
+    {
+     "type": "noise",
+     "dur": 0.18,
+     "filter": "bandpass",
+     "f": 3000,
+     "f2": 1600,
+     "q": 1,
+     "vol": 0.04
+    }
+   ]
+  },
+  "joins_honk": {
+   "take": "One proud honk",
+   "room": 0.2,
+   "layers": [
+    {
+     "type": "creak",
+     "at": 0,
+     "dur": 0.38,
+     "from": 440,
+     "to": 370,
+     "jitter": 0.03,
+     "res": [
+      [
+       950,
+       4,
+       1
+      ],
+      [
+       2300,
+       6,
+       0.55
+      ],
+      [
+       3400,
+       8,
+       0.25
+      ]
+     ],
+     "vol": 0.24
+    }
+   ]
+  },
+  "splash": {
+   "take": "Big splash",
+   "room": 0.15,
+   "layers": [
+    {
+     "type": "grains",
+     "at": 0,
+     "dur": 0.3,
+     "rate": 70,
+     "f": [
+      250,
+      2400
+     ],
+     "len": [
+      0.02,
+      0.06
+     ],
+     "vol": 0.24
+    },
+    {
+     "type": "noise",
+     "at": 0,
+     "dur": 0.3,
+     "filter": "bandpass",
+     "f": 1920,
+     "f2": 350,
+     "q": 1.2,
+     "vol": 0.072
+    },
+    {
+     "type": "strike",
+     "at": 0.25,
+     "vol": 0.04,
+     "modes": [
+      [
+       1700,
+       0.04,
+       1
+      ],
+      [
+       2550,
+       0.02,
+       0.3
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.33,
+     "vol": 0.03,
+     "modes": [
+      [
+       2300,
+       0.04,
+       1
+      ],
+      [
+       3450,
+       0.02,
+       0.3
+      ]
+     ]
+    },
+    {
+     "type": "strike",
+     "at": 0.42,
+     "vol": 0.03,
+     "modes": [
+      [
+       1900,
+       0.04,
+       1
+      ],
+      [
+       2850,
+       0.02,
+       0.3
+      ]
+     ]
+    }
+   ]
+  },
+  "shakeoff": {
+   "take": "Three shudders",
+   "room": 0.06,
+   "layers": [
+    {
+     "type": "grains",
+     "dur": 0.1,
+     "rate": 200,
+     "f": [
+      2000,
+      6000
+     ],
+     "len": [
+      0.003,
+      0.01
+     ],
+     "vol": 0.12
+    },
+    {
+     "type": "grains",
+     "at": 0.15,
+     "dur": 0.14,
+     "rate": 200,
+     "f": [
+      1500,
+      5000
+     ],
+     "len": [
+      0.003,
+      0.01
+     ],
+     "vol": 0.15
+    },
+    {
+     "type": "grains",
+     "at": 0.34,
+     "dur": 0.12,
+     "rate": 180,
+     "f": [
+      1200,
+      4500
+     ],
+     "len": [
+      0.003,
+      0.01
+     ],
+     "vol": 0.12
+    }
+   ]
   }
  },
- "fallback": {}
+ "fallback": {},
+ "takeFiles": ["hardscrabble"],
+ "use": {
+  "hs_stone_set": "c",
+  "hs_trough": "b",
+  "hs_goat": "a",
+  "hs_pig": "a",
+  "hs_horse": "b",
+  "hs_hen": "b",
+  "hs_cat": "c",
+  "hs_hart_hooves": "a",
+  "hs_hiccup": "b",
+  "hs_frost_bridge": "a",
+  "hs_stone_wake": "c",
+  "hs_stone_travel": "a",
+  "hs_drip": "c",
+  "amb_village": "a",
+  "amb_stops": "b",
+  "amb_quarry": "b",
+  "amb_cellar": "b",
+  "amb_deepcut": "b",
+  "amb_cold_side": "a"
+ },
+ "ambience": {
+  "_note": "A quiet bed of sound for each place (src/core/ambience.ts, decision 0365). `level` against the sound effects, `inFight` its share during a fight, `fade` seconds to cross between beds. Anywhere not in `areas` is quiet. A zone gives part of an area its own bed: the Long Wall's cold side is the frost's own outline.",
+  "level": 1,
+  "inFight": 0.4,
+  "fade": 2,
+  "areas": {
+   "hardscrabble": "amb_village",
+   "thayers-yard": "amb_village",
+   "stone-lane": "amb_stops",
+   "sheep-walk": "amb_stops",
+   "hobble-hill": "amb_stops",
+   "ox-road": "amb_stops",
+   "hemlock-brook": "amb_stops",
+   "long-wall": "amb_stops",
+   "the-quarry": "amb_quarry",
+   "cellar-holes": "amb_cellar",
+   "deep-cut": "amb_deepcut"
+  },
+  "zones": [
+   { "area": "long-wall", "within": [[-48, -22], [48, -22], [48, -5.9], [36, -4.3], [24, -5.3], [10, -3.7], [-4, -5.1], [-18, -3.1], [-34, -4.4], [-48, -1.9]], "ambience": "amb_cold_side" }
+  ]
+ },
+ "joins": {
+  "applegate": {
+   "sound": "joins_honk",
+   "at": 5.5
+  }
+ }
 }

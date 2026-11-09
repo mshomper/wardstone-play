@@ -23,7 +23,7 @@
    "id": "gloves_sunday",
    "slot": "gloves",
    "rarity": "sunday",
-   "seed": 100
+   "seed": 102
   },
   {
    "id": "belt_sunday",
@@ -49,19 +49,19 @@
    "id": "boots_sunday",
    "slot": "boots",
    "rarity": "sunday",
-   "seed": 101
+   "seed": 100
   },
   {
    "id": "coat_sunday",
    "slot": "coat",
    "rarity": "sunday",
-   "seed": 102
+   "seed": 100
   },
   {
    "id": "keepsake_sunday",
    "slot": "keepsake",
    "rarity": "sunday",
-   "seed": 102
+   "seed": 103
   },
   {
    "id": "boots_heirloom",
@@ -73,7 +73,7 @@
    "id": "gloves_heirloom",
    "slot": "gloves",
    "rarity": "heirloom",
-   "seed": 111
+   "seed": 133
   },
   {
    "id": "coat_heirloom",
@@ -85,25 +85,25 @@
    "id": "belt_heirloom",
    "slot": "belt",
    "rarity": "heirloom",
-   "seed": 144
+   "seed": 149
   },
   {
    "id": "keepsake_heirloom",
    "slot": "keepsake",
    "rarity": "heirloom",
-   "seed": 104
+   "seed": 100
   },
   {
    "id": "boots_oldwork",
    "slot": "boots",
    "rarity": "oldwork",
-   "seed": 192
+   "seed": 901
   },
   {
    "id": "gloves_oldwork",
    "slot": "gloves",
    "rarity": "oldwork",
-   "seed": 104
+   "seed": 126
   },
   {
    "id": "coat_oldwork",
@@ -115,13 +115,13 @@
    "id": "belt_oldwork",
    "slot": "belt",
    "rarity": "oldwork",
-   "seed": 102
+   "seed": 100
   },
   {
    "id": "keepsake_oldwork",
    "slot": "keepsake",
    "rarity": "oldwork",
-   "seed": 109
+   "seed": 100
   }
  ]
 }

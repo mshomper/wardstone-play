@@ -503,7 +503,28 @@
         "window": "window_shuttered",
         "door": "door_panel_red",
         "spacing": 1.9
-      }
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "kitchen",
+              "share": 58,
+              "public": true
+            },
+            {
+              "type": "bedroom",
+              "share": 42
+            }
+          ],
+          "connect": [
+            [
+              "kitchen",
+              "bedroom"
+            ]
+          ]
+        }
+      ]
     },
     "colonial": {
       "storeys": 2,
@@ -787,6 +808,92 @@
             }
           ],
           "windows": false
+        }
+      ]
+    },
+    "meetinghouse": {
+      "_note": "Hardscrabble's meetinghouse (decision 0280): white, plain, gable end to the common, the door in the middle, two rows of tall windows, a short belfry with no spire, the stove's pipe for a chimney. One tall room inside.",
+      "storeys": 2,
+      "pitch": 0.85,
+      "mainRoof": "gable",
+      "chimney": "stovepipe",
+      "belfry": true,
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "shingle_cedar",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_meeting",
+        "door": "door_meeting",
+        "spacing": 2.1,
+        "doorCentre": true
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "meeting",
+              "share": 100,
+              "public": true
+            }
+          ]
+        }
+      ]
+    },
+    "shanty": {
+      "_note": "The quarry cutters' shanty (decision 0281): grey boards, a mossy roof, small windows, a plank door and a stovepipe. Inside: the stove and the tally board.",
+      "storeys": 1,
+      "pitch": 0.9,
+      "mainRoof": "gable",
+      "chimney": "stovepipe",
+      "tex": {
+        "wall": "board_gray",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.2
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "tally",
+              "share": 100,
+              "public": true
+            }
+          ]
+        }
+      ]
+    },
+    "shed": {
+      "_note": "A tool shed in a yard (Obed Thayer's, decision 0310): grey boards, a mossy roof, a plank door, no chimney. Inside: shelves of tools.",
+      "storeys": 1,
+      "pitch": 1.0,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "board_gray",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.4
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "storeroom",
+              "share": 100,
+              "public": true
+            }
+          ]
         }
       ]
     }

@@ -28,6 +28,11 @@
     {
       "mesh": "press",
       "kind": "furniture",
+      "frost": {
+        "notFlags": [
+          "press_thawed"
+        ]
+      },
       "x": -2.05,
       "z": -2.9,
       "w": 2.2,

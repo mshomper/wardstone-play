@@ -1,0 +1,38 @@
+{
+  "_note": "Hardscrabble's merchants (decision 0345). Same shape as Jasper's `barter` in items.json: `takes` and `sells` are shares of an item's value, `buysGear` the share of a piece's worth he pays (Jasper pays 0.25; Benoni pays fairer), `gearWorth` what a piece fetches by rarity, `stock` what he has after each rest, `gear` the pieces for sale, rolled when the world rests, each at `value` before `sells`. Benoni is generous with boots: their values are under what a piece of that rarity is worth.",
+  "merchants": [
+    {
+      "person": "benoni_fogg",
+      "takes": 0.6,
+      "sells": 1.5,
+      "buysGear": 0.4,
+      "gearWorth": { "homespun": 8, "stout": 20, "sunday": 50, "heirloom": 120, "oldwork": 300 },
+      "gear": [
+        { "slot": "boots", "rarity": "homespun", "value": 6 },
+        { "slot": "boots", "rarity": "homespun", "value": 6 },
+        { "slot": "boots", "rarity": "stout", "value": 15 }
+      ],
+      "stock": {
+        "bootlaces": 3,
+        "dubbin": 2,
+        "mustard_plaster": 1,
+        "wool_scarf": 1,
+        "old_wall_stone": 2,
+        "hag_stone": 2,
+        "grindstone_grit": 2,
+        "hearth_ash": 2,
+        "hornet_paper": 1
+      },
+      "lines": {
+        "empty": "Have a look round. Mind the lasts. What have you brought me?",
+        "short": "Not quite there. Put something with it and we'll shake on it.",
+        "fair": "That'll do nicely. Fair's fair.",
+        "over": "That's more than it's worth. I'll put the rest toward your next resoling.",
+        "giveonly": "For me? Pick something out, then, or I'll only feel bad about it.",
+        "done": "There. Wear them in slow. A mile the first day.",
+        "soldout": "That's the bench bare. Sleep a night somewhere warm and I'll have cut more.",
+        "dear": "That's old work. Nobody makes that now. Say it twice and it's mine."
+      }
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+ "version": 1,
+ "name": "cellar-holes",
+ "seed": 3208,
+ "size": {
+  "w": 80,
+  "h": 48
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.2,
+  "edgeWidth": 6,
+  "roll": 0.7,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "birch_0",
+     "maple_yellow_1",
+     "white_pine_0"
+    ],
+    "density": 0.72,
+    "spacing": 1.9,
+    "scale": [
+     0.85,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "birch_1",
+     "maple_orange_0"
+    ],
+    "density": 0.16,
+    "spacing": 2.4,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "near": "open",
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "birch_0"
+    ],
+    "density": 0.6,
+    "spacing": 2,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "within": [
+     [
+      -40,
+      -24
+     ],
+     [
+      -4,
+      -24
+     ],
+     [
+      -6,
+      -18
+     ],
+     [
+      -40,
+      -18
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_1",
+     "birch_0",
+     "maple_yellow_1"
+    ],
+    "density": 0.55,
+    "spacing": 2,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "within": [
+     [
+      -14,
+      12
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      -14,
+      24
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "white_pine_1"
+    ],
+    "density": 0.5,
+    "spacing": 2.1,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "within": [
+     [
+      30,
+      -24
+     ],
+     [
+      40,
+      -24
+     ],
+     [
+      40,
+      24
+     ],
+     [
+      32,
+      24
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.22,
+    "spacing": 2.6,
+    "scale": [
+     0.6,
+     0.85
+    ],
+    "near": "wall",
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "apple_old_0",
+     "apple_old_1"
+    ],
+    "density": 0.04,
+    "spacing": 5,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "open",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "windfall_apples"
+    ],
+    "density": 0.06,
+    "spacing": 3,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "open",
+    "shadow": false
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_2",
+     "fallen_log_0",
+     "tree_stump_0",
+     "tree_stump_1"
+    ],
+    "density": 0.06,
+    "spacing": 4.4,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "near": "open",
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1",
+     "asters_0",
+     "asters_1",
+     "fern_autumn_1"
+    ],
+    "density": 0.3,
+    "spacing": 1.1,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "wall"
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "goldenrod_1",
+     "asters_1",
+     "goldenrod_0",
+     "fern_autumn_2"
+    ],
+    "density": 0.2,
+    "spacing": 1.3,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "asters_0",
+     "mushrooms_0"
+    ],
+    "density": 0.12,
+    "spacing": 1.2,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     0.2,
+     -24
+    ],
+    [
+     0.4,
+     -19
+    ],
+    [
+     -1,
+     -14
+    ],
+    [
+     -4,
+     -10
+    ],
+    [
+     -10,
+     -6.4
+    ],
+    [
+     -18,
+     -4.6
+    ],
+    [
+     -26,
+     -3.4
+    ],
+    [
+     -31,
+     0
+    ],
+    [
+     -30,
+     5
+    ],
+    [
+     -24,
+     8
+    ],
+    [
+     -14,
+     9
+    ],
+    [
+     -4,
+     8.6
+    ],
+    [
+     6,
+     8.4
+    ],
+    [
+     16,
+     7.4
+    ],
+    [
+     24,
+     9
+    ],
+    [
+     28,
+     14
+    ],
+    [
+     27,
+     19
+    ],
+    [
+     26,
+     24
+    ]
+   ],
+   "width": 1.8,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -12,
+     -12.2
+    ],
+    [
+     -11.4,
+     -6.6
+    ]
+   ],
+   "width": 0.9,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -6,
+     16.4
+    ],
+    [
+     -5.6,
+     9.4
+    ]
+   ],
+   "width": 0.9,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     10,
+     0.2
+    ],
+    [
+     10.6,
+     8
+    ]
+   ],
+   "width": 0.9,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     22,
+     0.6
+    ],
+    [
+     22.6,
+     8.4
+    ]
+   ],
+   "width": 0.9,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     -40,
+     -18.6
+    ],
+    [
+     -30,
+     -19.4
+    ],
+    [
+     -18,
+     -19.8
+    ],
+    [
+     -6,
+     -19.2
+    ],
+    [
+     4,
+     -20.4
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 40.46,
+     "width": 2.6
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -14,
+     -15
+    ],
+    [
+     -14.4,
+     -8
+    ],
+    [
+     -13.6,
+     -1
+    ],
+    [
+     -14.2,
+     6
+    ],
+    [
+     -13.8,
+     13
+    ],
+    [
+     -14.2,
+     24
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 9.55,
+     "width": 2.6
+    },
+    {
+     "at": 24.08,
+     "width": 2.6
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     2.4,
+     24
+    ],
+    [
+     2.6,
+     18
+    ],
+    [
+     1.8,
+     13.4
+    ],
+    [
+     2.4,
+     6
+    ],
+    [
+     3.6,
+     -2
+    ],
+    [
+     4,
+     -9
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 15.61,
+     "width": 2.6
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     16,
+     -8
+    ],
+    [
+     24,
+     -7.6
+    ],
+    [
+     32,
+     -8.4
+    ],
+    [
+     40,
+     -8
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 11,
+     "width": 2.2
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     30,
+     24
+    ],
+    [
+     31.2,
+     16
+    ],
+    [
+     31,
+     8
+    ],
+    [
+     30.4,
+     -2
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 8.2,
+     "width": 2.4
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -40,
+     7.6
+    ],
+    [
+     -35,
+     7.2
+    ]
+   ],
+   "gaps": []
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": -12,
+   "z": -15,
+   "w": 6,
+   "d": 5,
+   "rot": 0,
+   "height": 1.5
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": -25,
+   "z": -13,
+   "w": 5,
+   "d": 4,
+   "rot": 0,
+   "height": 1.5
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": -21,
+   "z": 18.5,
+   "w": 6,
+   "d": 4,
+   "rot": 3.14,
+   "height": 1.5
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": -6,
+   "z": 18.5,
+   "w": 5,
+   "d": 4,
+   "rot": 3.14,
+   "height": 1.5
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": 10,
+   "z": -2.5,
+   "w": 6,
+   "d": 5,
+   "rot": 0,
+   "height": 1.5
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": 22,
+   "z": -1.5,
+   "w": 5,
+   "d": 4,
+   "rot": 0,
+   "height": 1.5
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 30,
+   "z": -18,
+   "radius": 14,
+   "height": 1.4
+  },
+  {
+   "kind": "hollow",
+   "x": -30,
+   "z": 18,
+   "radius": 10,
+   "height": 0.6
+  }
+ ],
+ "arenas": [
+  {
+   "x": -26.4,
+   "z": 2.4,
+   "radius": 2.8
+  },
+  {
+   "x": 8.6,
+   "z": 15.4,
+   "radius": 2.6
+  },
+  {
+   "x": 16,
+   "z": -13,
+   "radius": 2.6
+  },
+  {
+   "x": -11,
+   "z": 14.6,
+   "radius": 2.4
+  }
+ ],
+ "placements": [
+  {
+   "prop": "lilac_pruned",
+   "x": 18,
+   "z": 2.4,
+   "collide": 0.45,
+   "tall": true
+  },
+  {
+   "prop": "windfall_apples",
+   "x": 6.4,
+   "z": 4.6,
+   "shadow": false
+  },
+  {
+   "prop": "stone_granite_0",
+   "x": 22.2,
+   "z": 0.9,
+   "collide": 0.25
+  },
+  {
+   "prop": "stone_granite_1",
+   "x": -12,
+   "z": -12.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "stone_granite_0",
+   "x": -6,
+   "z": 16.2,
+   "collide": 0.25
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -15,
+     -9.9
+    ],
+    [
+     -9,
+     -9.9
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     -27.5,
+     -8.4
+    ],
+    [
+     -22.5,
+     -8.4
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     -24,
+     13.9
+    ],
+    [
+     -18,
+     13.9
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     -8.5,
+     13.9
+    ],
+    [
+     -3.5,
+     13.9
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     7,
+     2.5999999999999996
+    ],
+    [
+     13,
+     2.5999999999999996
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     19.5,
+     3.0999999999999996
+    ],
+    [
+     24.5,
+     3.0999999999999996
+    ]
+   ],
+   "radius": 2.2
+  },
+  {
+   "points": [
+    [
+     17.4,
+     3.4
+    ],
+    [
+     20,
+     4.4
+    ]
+   ],
+   "radius": 1.6
+  },
+  {
+   "points": [
+    [
+     26,
+     20
+    ],
+    [
+     26,
+     23
+    ]
+   ],
+   "radius": 1.6
+  }
+ ],
+ "spots": [
+  {
+   "name": "Applejack's hole",
+   "x": -6,
+   "z": 15.2,
+   "note": "The cellar hole Applejack lives in (Applejack, optional hero): windfalls all round its dooryard, the lilacs by the steps run wild."
+  },
+  {
+   "name": "The pruned lilac (nook)",
+   "x": 19,
+   "z": 4,
+   "note": "A dooryard where someone still keeps the lilac pruned. Nobody says who."
+  },
+  {
+   "name": "Benoni's walk (start)",
+   "x": -9,
+   "z": -6.2,
+   "note": "Where Benoni Fogg comes out along the old road to walk among the cellar holes, naming the families."
+  },
+  {
+   "name": "Benoni's walk (end)",
+   "x": 16,
+   "z": 6.2,
+   "note": "Where his walk ends, on the road below the north farm."
+  },
+  {
+   "name": "The first farm",
+   "x": -12,
+   "z": -11,
+   "note": "A cellar hole above the road, lilacs at its corners."
+  },
+  {
+   "name": "The north farm",
+   "x": 10,
+   "z": 1.2
+  },
+  {
+   "name": "The west farm",
+   "x": -21,
+   "z": 15.2
+  },
+  {
+   "name": "From Hemlock Brook",
+   "x": 0.2,
+   "z": -18.5
+  },
+  {
+   "name": "South toward Harlow Bridge",
+   "x": 26,
+   "z": 20.6,
+   "note": "The old road goes on south onto the Tanbark Road toward Harlow Bridge: the exit onto the Bark Road, open once Obed has joined (decision 0370)."
+  }
+ ],
+ "start": [
+  0.2,
+  -18.5
+ ],
+ "exits": [
+  {
+   "rect": [
+    23.6,
+    20,
+    28.4,
+    21
+   ],
+   "to": "bark-road",
+   "after": "joined:obed",
+   "at": [
+    -2.4,
+    -14.6
+   ],
+   "dir": 0
+  },
+  {
+   "rect": [
+    -2.2,
+    -21,
+    2.6,
+    -20
+   ],
+   "to": "hemlock-brook",
+   "at": [
+    -0.4,
+    14.5
+   ],
+   "dir": 4
+  }
+ ]
+}

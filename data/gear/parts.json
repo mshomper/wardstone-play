@@ -92,6 +92,8 @@
    "stitches": 0,
    "points": 2,
    "statUnits": 1,
+   "extras": 0,
+   "extraSize": 1,
    "colour": "#a89878",
    "note": "Made at home. Does its job."
   },
@@ -101,6 +103,8 @@
    "stitches": 1,
    "points": 5,
    "statUnits": 1,
+   "extras": 1,
+   "extraSize": 1,
    "colour": "#8fae7a",
    "note": "Bought, and worth the goods."
   },
@@ -109,7 +113,9 @@
    "name": "Sunday Best",
    "stitches": 2,
    "points": 9,
-   "statUnits": 1,
+   "statUnits": 1.5,
+   "extras": 2,
+   "extraSize": 1.5,
    "colour": "#7fa6c9",
    "note": "The good one. Kept for when it counts."
   },
@@ -119,6 +125,8 @@
    "stitches": 3,
    "points": 14,
    "statUnits": 2,
+   "extras": 3,
+   "extraSize": 2,
    "colour": "#c58fc0",
    "note": "Handed down. Somebody looked after it."
   },
@@ -127,11 +135,56 @@
    "name": "Old Work",
    "stitches": 4,
    "points": 20,
-   "statUnits": 2,
+   "statUnits": 2.5,
+   "extras": 4,
+   "extraSize": 2.5,
    "colour": "#e0b45a",
    "note": "Nobody living could make this. Endgame only."
   }
  ],
+ "gradeNote": "F10 A (decision 0272): every newly made piece rolls a maker's grade. `mul` scales its main effect and its extra effects, never its charms; `weight` is how often. The budget is a Fair piece's, so the grade is the only thing outside it. Masterwork never comes on Homespun.",
+ "grades": [
+  { "id": "rough", "name": "Rough", "mul": 0.8, "weight": 20, "colour": "#a8937a" },
+  { "id": "fair", "name": "Fair", "mul": 1, "weight": 40, "colour": "#d6cfc0" },
+  { "id": "good", "name": "Good", "mul": 1.1, "weight": 25, "colour": "#cfd79a" },
+  { "id": "fine", "name": "Fine", "mul": 1.2, "weight": 12, "colour": "#f2cf62" },
+  { "id": "masterwork", "name": "Masterwork", "mul": 1.35, "weight": 3, "colour": "#f59a62", "never": ["homespun"] }
+ ],
+ "sewnChance": 0.33,
+ "extraShare": 0.5,
+ "reroll": { "note": "Decision 0276: a tailor rolls one extra effect again for goods. The first costs what moving a charm costs on that tier (`unpick`); each one after on the same piece costs `growth` times the last, rounded up, rising `rises` times and then staying there (Matt, 8 Nov 2026: cap at 21 on a Stout piece).", "growth": 1.5, "rises": 3 },
+ "extraNote": "F10 B (decision 0272): each slot's extra effects. `lo` and `hi` are a Stout piece's range for `field`; a tier multiplies them by its `extraSize`, and the grade by its `mul`. `as`: more and less make `field` a multiplier (1 + size, 1 - size). `points` is the price of the middle of the Stout range, from tools/gear/sim/extrabench.mjs; a bigger size costs in proportion. Extras spend from the piece's budget, at most `extraShare` of what's left after its main effect. One of each `does` at most on a piece. A keepsake from Sunday Best up takes one from any slot's list.",
+ "extras": {
+  "boots": [
+   { "id": "dodge", "name": "Light-footed", "does": "dodge", "when": "passive", "field": "chance", "lo": 0.03, "hi": 0.05, "cap": 0.25, "points": 1.1, "tag": "Dodge {pc:chance}", "text": "A blow aimed at you alone misses {pc:chance} of the time." },
+   { "id": "rush", "name": "Quick off the mark", "does": "rush", "when": "each_round", "field": "chance", "lo": 0.06, "hi": 0.1, "cap": 0.5, "points": 0.2, "tag": "{pc:chance} act first", "text": "Each round, a {pc:chance} chance to act before everyone else." },
+   { "id": "revive", "name": "Gets back up", "does": "revive", "when": "passive", "field": "pct", "lo": 0.06, "hi": 0.1, "cap": 0.5, "points": 0.2, "tag": "Get back up, {pc:pct}", "text": "Felled once in a fight, you get back up with {pc:pct} of your health." },
+   { "id": "shrug", "name": "Shakes it off", "does": "shrug", "when": "each_round", "field": "chance", "statuses": ["slow", "sticky"], "lo": 0.2, "hi": 0.3, "cap": 0.9, "points": 0.2, "tag": "{pc:chance} shrug off Slow, Sticky", "text": "As each round starts, a {pc:chance} chance to shake off Slow and Sticky." },
+   { "id": "regen", "name": "Second wind", "does": "heal", "when": "each_round", "field": "pct", "lo": 0.008, "hi": 0.012, "cap": 0.05, "points": 1.6, "tag": "Heal {pc1:pct} a round", "text": "Heal {pc1:pct} of your health as each round starts." }
+  ],
+  "gloves": [
+   { "id": "el_dmg", "name": "Leaning", "does": "el_dmg", "when": "passive", "field": "mul", "as": "more", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.06, "hi": 0.1, "cap": 0.6, "points": 0.6, "tag": "+{more:mul} {element} damage", "text": "Your {element} hits land {more:mul} harder." },
+   { "id": "crit", "name": "Keen", "does": "crit", "when": "passive", "field": "critAdd", "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.7, "tag": "Crit chance +{pc:critAdd}", "text": "Your hits are {pc:critAdd} more likely to be critical." },
+   { "id": "crit_dmg", "name": "Telling", "does": "crit_dmg", "when": "passive", "field": "critUp", "lo": 0.15, "hi": 0.25, "cap": 1, "points": 0.3, "tag": "Crits +{pc:critUp} harder", "text": "Your critical hits land {pc:critUp} harder than a plain critical." },
+   { "id": "sure", "name": "Sure-handed", "does": "sure", "when": "passive", "field": "sure", "lo": 0.25, "hi": 0.4, "cap": 0.9, "points": 0.3, "tag": "Nimble foes dodge {pc:sure} less", "text": "Foes that dodge are {pc:sure} less likely to dodge your hits." },
+   { "id": "longer", "name": "Lingering", "does": "longer", "when": "passive", "field": "chance", "lo": 0.15, "hi": 0.25, "cap": 0.9, "points": 0.2, "tag": "{pc:chance} afflictions last longer", "text": "An affliction you put on a foe has a {pc:chance} chance to last a round longer." }
+  ],
+  "coat": [
+   { "id": "el_guard", "name": "Proofed", "does": "el_guard", "when": "passive", "field": "mul", "as": "less", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.06, "hi": 0.1, "cap": 0.5, "points": 0.6, "tag": "{less:mul} less {element} damage", "text": "Blows of {element} on you land {less:mul} softer." },
+   { "id": "hp", "name": "Hale", "does": "stat", "stat": "hp", "when": "passive", "field": "pct", "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 1.2, "tag": "+{pc:pct} max health", "text": "Your most health is {pc:pct} higher." },
+   { "id": "heal_in", "name": "Mends well", "does": "heal_in", "when": "passive", "field": "mul", "as": "more", "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.9, "tag": "Healing on you +{more:mul}", "text": "Healing from moves and food does {more:mul} more for you." },
+   { "id": "strike_back", "name": "Hits back", "does": "strike", "when": "when_hit", "field": "power", "lo": 0.1, "hi": 0.16, "cap": 0.8, "points": 1.2, "tag": "Hit back, {hund:power} power", "text": "The first blow on you each round, you hit back at {hund:power}% power." },
+   { "id": "resist", "name": "Steady", "does": "shrug", "when": "each_round", "field": "chance", "statusOptions": ["chilled", "slow", "blind", "burning", "drowsy", "afraid"], "lo": 0.2, "hi": 0.3, "cap": 0.9, "points": 0.2, "tag": "{pc:chance} shrug off {word}", "text": "As each round starts, a {pc:chance} chance to shake off {word}." }
+  ],
+  "belt": [
+   { "id": "item_up", "name": "Well-stocked", "does": "item_up", "when": "passive", "field": "mul", "as": "more", "items": true, "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.9, "tag": "Food and drink +{more:mul}", "text": "Food and drink do {more:mul} more." },
+   { "id": "heal_up", "name": "Healer's", "does": "heal_up", "when": "passive", "field": "mul", "as": "more", "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.2, "tag": "Healing you give +{more:mul}", "text": "Healing from your moves does {more:mul} more." },
+   { "id": "pool_win", "name": "Thrifty", "does": "pool_win", "when": "on_win", "field": "pct", "outside": true, "lo": 0.04, "hi": 0.06, "cap": 0.4, "points": 0.3, "tag": "{pc:pct} more MP back after a win", "text": "After a win, {pc:pct} more of your resource comes back." },
+   { "id": "pool_fell", "name": "Gleaning", "does": "pool", "when": "on_fell", "field": "pct", "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.2, "tag": "{pc:pct} MP back when a foe falls", "text": "Each time you fell a foe, {pc:pct} of your resource comes back." },
+   { "id": "el_dmg_belt", "name": "Leaning", "does": "el_dmg", "when": "passive", "field": "mul", "as": "more", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.4, "tag": "+{more:mul} {element} damage", "text": "Your {element} hits land {more:mul} harder." }
+  ]
+ },
+ "statusNames": { "slow": "Slow", "sticky": "Sticky", "chilled": "Chilled", "blind": "Blinded", "burning": "Burning", "drowsy": "Drowsy", "afraid": "Frightened" },
  "charms": {
   "rime_shard": {
    "flavor": "Doesn't melt in the hand.",
@@ -154,6 +207,7 @@
    "turns": 2
   },
   "lamp_wick": {
+   "item": "lamp_wick",
    "flavor": "Still smells of the last night it burned.",
    "name": "Lamp Wick",
    "craft": "iron",
@@ -173,6 +227,7 @@
    "turns": 2
   },
   "bent_pin": {
+   "item": "bent_pin",
    "flavor": "Found in a hem. Found again in a thumb.",
    "name": "Bent Pin",
    "craft": "iron",
@@ -182,6 +237,7 @@
    "turns": 2
   },
   "hag_stone": {
+   "item": "hag_stone",
    "flavor": "Look through the hole if you must.",
    "name": "Hag Stone",
    "craft": "stone",
@@ -191,6 +247,7 @@
    "turns": 2
   },
   "tansy": {
+   "item": "tansy",
    "flavor": "Hung in the pantry to keep the flies honest.",
    "name": "Sprig of Tansy",
    "craft": "herbs",
@@ -306,6 +363,7 @@
    "family": "ticket"
   },
   "foxglove": {
+   "item": "foxglove",
    "flavor": "Pressed flat. Wash your hands.",
    "name": "Foxglove",
    "craft": "herbs",
@@ -351,6 +409,7 @@
    "turns": 2
   },
   "cider_dregs": {
+   "item": "cider_dregs",
    "flavor": "The bottom of the barrel, and proud of it.",
    "name": "Hard Cider Dregs",
    "craft": "herbs",
@@ -360,6 +419,7 @@
    "turns": 2
   },
   "horseshoe_nail": {
+   "item": "horseshoe_nail",
    "flavor": "Keep it pointing up, they say.",
    "name": "Horseshoe Nail",
    "craft": "iron",
@@ -367,6 +427,7 @@
    "family": "luck"
   },
   "wishbone": {
+   "item": "wishbone",
    "flavor": "Nobody pulled it. That's the trouble.",
    "name": "Wishbone",
    "craft": "bargain",
@@ -388,6 +449,7 @@
    "family": "barrier"
   },
   "hare_foot": {
+   "item": "hare_foot",
    "flavor": "Didn't help the hare.",
    "name": "Hare's Foot",
    "craft": "paths",
@@ -395,6 +457,7 @@
    "family": "rush"
   },
   "crow_feather": {
+   "item": "crow_feather",
    "flavor": "A crow left it on purpose. Crows do.",
    "name": "Crow Feather",
    "craft": "paths",
@@ -402,6 +465,7 @@
    "family": "crow"
   },
   "grindstone_grit": {
+   "item": "grindstone_grit",
    "flavor": "Takes an edge off, puts an edge on.",
    "name": "Grindstone Grit",
    "craft": "stone",
@@ -416,6 +480,7 @@
    "family": "echo"
   },
   "hearth_ash": {
+   "item": "hearth_ash",
    "flavor": "From a fire that never quite went out.",
    "name": "Hearth Ash",
    "craft": "stone",
@@ -430,6 +495,7 @@
    "family": "pack"
   },
   "bottle_cork": {
+   "item": "bottle_cork",
    "flavor": "Smells of something better than you'll ever drink.",
    "name": "Bottle Cork",
    "craft": "bargain",
@@ -451,6 +517,7 @@
    "family": "glass"
   },
   "hornet_paper": {
+   "item": "hornet_paper",
    "flavor": "Nobody home. Probably.",
    "name": "Hornet Paper",
    "craft": "stone",

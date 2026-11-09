@@ -1,0 +1,607 @@
+{
+  "version": 1,
+  "name": "the-lookoff",
+  "seed": 3704,
+  "size": {
+    "w": 80,
+    "h": 44
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3,
+    "edgeWidth": 5,
+    "roll": 0.5,
+    "pathMargin": 0.8,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "ledge",
+      "cobble": "cobble",
+      "brookBed": "brook_bed",
+      "ledge": "ledge"
+    },
+    "species": [
+      {
+        "props": [
+          "maple_orange_0",
+          "bare_tree_0",
+          "maple_orange_1",
+          "bare_tree_1",
+          "white_pine_0"
+        ],
+        "density": 0.6,
+        "spacing": 2.2,
+        "scale": [
+          0.95,
+          1.2
+        ],
+        "within": [
+          [
+            -40,
+            -22
+          ],
+          [
+            40,
+            -22
+          ],
+          [
+            40,
+            -8
+          ],
+          [
+            24,
+            -6.4
+          ],
+          [
+            8,
+            -7.4
+          ],
+          [
+            -8,
+            -6.8
+          ],
+          [
+            -24,
+            -9
+          ],
+          [
+            -40,
+            -7
+          ]
+        ],
+        "collide": 0.42,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_orange_1",
+          "bare_tree_1",
+          "maple_orange_0"
+        ],
+        "density": 0.6,
+        "spacing": 2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.42,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_orange_0",
+          "bare_tree_0",
+          "maple_orange_1",
+          "bare_tree_1",
+          "maple_red_1"
+        ],
+        "density": 0.75,
+        "spacing": 2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "within": [
+          [
+            -40,
+            14
+          ],
+          [
+            24,
+            14
+          ],
+          [
+            40,
+            20
+          ],
+          [
+            40,
+            22
+          ],
+          [
+            -40,
+            22
+          ]
+        ],
+        "collide": 0.42,
+        "tall": true
+      },
+      {
+        "props": [
+          "maple_orange_1",
+          "bare_tree_1",
+          "white_pine_1"
+        ],
+        "density": 0.7,
+        "spacing": 2,
+        "scale": [
+          0.9,
+          1.15
+        ],
+        "within": [
+          [
+            -40,
+            -10
+          ],
+          [
+            -36.6,
+            -10
+          ],
+          [
+            -36.6,
+            22
+          ],
+          [
+            -40,
+            22
+          ]
+        ],
+        "collide": 0.42,
+        "tall": true
+      },
+      {
+        "props": [
+          "juniper_0",
+          "juniper_1"
+        ],
+        "density": 0.14,
+        "spacing": 2.6,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "bare_tree_0",
+          "maple_orange_0"
+        ],
+        "density": 0.06,
+        "spacing": 5,
+        "scale": [
+          0.7,
+          0.9
+        ],
+        "near": "open",
+        "collide": 0.4,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_large_0",
+          "boulder_large_1",
+          "boulder_large_2"
+        ],
+        "density": 0.03,
+        "spacing": 5,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "open",
+        "collide": 0.6
+      },
+      {
+        "props": [
+          "goldenrod_1",
+          "asters_1",
+          "fern_autumn_1"
+        ],
+        "density": 0.14,
+        "spacing": 1.3,
+        "scale": [
+          0.8,
+          1
+        ],
+        "near": "open"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -33,
+          -2
+        ],
+        [
+          -22,
+          -3.2
+        ],
+        [
+          -6,
+          -1.8
+        ],
+        [
+          10,
+          -2.6
+        ],
+        [
+          24,
+          -1.2
+        ]
+      ],
+      "width": 8,
+      "kind": "path"
+    },
+    {
+      "points": [
+        [
+          -28,
+          -22
+        ],
+        [
+          -27,
+          -16
+        ],
+        [
+          -24.6,
+          -10.6
+        ],
+        [
+          -19,
+          -5.4
+        ]
+      ],
+      "width": 2,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          -19,
+          -5.4
+        ],
+        [
+          -8,
+          -2.6
+        ],
+        [
+          4,
+          -2.2
+        ],
+        [
+          16,
+          -1.8
+        ],
+        [
+          25,
+          0.4
+        ]
+      ],
+      "width": 2,
+      "kind": "ledge"
+    },
+    {
+      "points": [
+        [
+          25,
+          0.4
+        ],
+        [
+          31,
+          3.2
+        ],
+        [
+          33.4,
+          6.8
+        ],
+        [
+          28,
+          9
+        ],
+        [
+          21,
+          11
+        ],
+        [
+          22,
+          14.4
+        ],
+        [
+          29,
+          16
+        ],
+        [
+          34.6,
+          18.4
+        ],
+        [
+          36,
+          20.4
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    }
+  ],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [
+    {
+      "kind": "hollow",
+      "x": -30,
+      "z": 20,
+      "radius": 9,
+      "height": 3.4
+    },
+    {
+      "kind": "hollow",
+      "x": -12,
+      "z": 21,
+      "radius": 10,
+      "height": 3.8
+    },
+    {
+      "kind": "hollow",
+      "x": 6,
+      "z": 20,
+      "radius": 9,
+      "height": 3.4
+    },
+    {
+      "kind": "hollow",
+      "x": 24,
+      "z": 12,
+      "radius": 6,
+      "height": 1.6
+    },
+    {
+      "kind": "mound",
+      "x": -6,
+      "z": -14,
+      "radius": 12,
+      "height": 1.2
+    }
+  ],
+  "arenas": [
+    {
+      "x": -14,
+      "z": -14,
+      "radius": 2.6
+    },
+    {
+      "x": -11,
+      "z": -2.2,
+      "radius": 2.8
+    },
+    {
+      "x": 12,
+      "z": -2.2,
+      "radius": 2.8
+    },
+    {
+      "x": 31,
+      "z": 2.6,
+      "radius": 2.4
+    },
+    {
+      "x": -31,
+      "z": -2.4,
+      "radius": 2.6
+    }
+  ],
+  "placements": [
+    {
+      "prop": "rock_face_0",
+      "x": -30,
+      "z": 4.4,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_2",
+      "x": -24,
+      "z": 3.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_1",
+      "x": -17,
+      "z": 4.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_0",
+      "x": -9,
+      "z": 4.4,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_2",
+      "x": 8,
+      "z": 3.8,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_1",
+      "x": 15,
+      "z": 4.4,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_spire_0",
+      "x": 20.4,
+      "z": 4,
+      "collide": 0.6
+    },
+    {
+      "prop": "juniper_0",
+      "x": -20,
+      "z": 1.8,
+      "collide": 0.3
+    },
+    {
+      "prop": "juniper_1",
+      "x": 4,
+      "z": 1.6,
+      "collide": 0.3
+    },
+    {
+      "prop": "juniper_0",
+      "x": 18,
+      "z": -6,
+      "collide": 0.3
+    },
+    {
+      "prop": "juniper_1",
+      "x": -4,
+      "z": -6,
+      "collide": 0.3
+    },
+    {
+      "prop": "juniper_0",
+      "x": -26,
+      "z": -6.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "rest_stone",
+      "x": -2,
+      "z": 2.4,
+      "collide": 0.35,
+      "scale": 1.2
+    },
+    {
+      "prop": "cairn",
+      "x": -21.4,
+      "z": -8.4,
+      "collide": 0.45
+    },
+    {
+      "prop": "hemlock_peeled_0",
+      "x": -35,
+      "z": -3.6,
+      "collide": 0.3,
+      "tall": true,
+      "scale": 1.1
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -2,
+          0.8
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          -33,
+          -1.6
+        ],
+        [
+          -30,
+          -1.6
+        ]
+      ],
+      "radius": 1.2
+    },
+    {
+      "points": [
+        [
+          -21.4,
+          -7
+        ],
+        [
+          -21.4,
+          -6.6
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "From the Hemlock Wall",
+      "x": -26.8,
+      "z": -15.4
+    },
+    {
+      "name": "The cairn",
+      "x": -21.4,
+      "z": -6.8,
+      "note": "Where the road leaves the woods."
+    },
+    {
+      "name": "The stone bench (nook)",
+      "x": -2,
+      "z": 1,
+      "note": "At the ledge edge: a date and two sets of initials, Thadeous and his wife (small find)."
+    },
+    {
+      "name": "The overlook",
+      "x": 6,
+      "z": 1.2,
+      "note": "Where the camera turns to the view: the river, the dam, Harlow Bridge, the tannery smoke, the lake with its steeple. Nothing of the view is built yet; the drop below the lip stands for it."
+    },
+    {
+      "name": "The hawk's perch (nook)",
+      "x": -32.4,
+      "z": -1.6,
+      "note": "The west end of the ledge, under a dead pine, with a long view upriver."
+    },
+    {
+      "name": "The far figure",
+      "x": 22.4,
+      "z": 14,
+      "note": "A tall stooped figure with a fiddle under his arm, far down the lower switchback, walking into town."
+    },
+    {
+      "name": "Down to Harlow Bridge",
+      "x": 34,
+      "z": 18,
+      "note": "The switchbacks go on down into Harlow Bridge. No exit until Harlow Bridge is built; then an exit here, about rect [32.2, 18, 37.4, 19] (decision 0370)."
+    }
+  ],
+  "start": [
+    -26.8,
+    -15.4
+  ],
+  "exits": [
+    {
+      "rect": [
+        -29.6,
+        -19,
+        -24.8,
+        -18
+      ],
+      "to": "hemlock-wall",
+      "at": [
+        -6.4,
+        16.4
+      ],
+      "dir": 4
+    }
+  ]
+}

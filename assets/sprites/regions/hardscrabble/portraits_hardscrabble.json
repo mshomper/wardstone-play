@@ -1,0 +1,158 @@
+{
+ "image": "portraits_hardscrabble.png",
+ "emissive": "portraits_hardscrabble_emissive.png",
+ "size": [
+  456,
+  196
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "portrait_abner_coyle_neutral": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_abner_coyle_smile": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_abner_coyle_concerned": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_benoni_fogg_neutral": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_benoni_fogg_smile": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_benoni_fogg_grin": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lucy_shattuck_neutral": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lucy_shattuck_smile": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lucy_shattuck_determined": {
+   "x": 66,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_sukey_varnum_neutral": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_sukey_varnum_smile": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_sukey_varnum_cross": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tamsin_gove_neutral": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tamsin_gove_smile": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tamsin_gove_quiet": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_truman_shattuck_neutral": {
+   "x": 66,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_truman_shattuck_smile": {
+   "x": 131,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_truman_shattuck_worried": {
+   "x": 196,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  }
+ },
+ "tiles": {}
+}

@@ -1,0 +1,589 @@
+{
+  "version": 1,
+  "name": "bark-road",
+  "seed": 3701,
+  "size": {
+    "w": 64,
+    "h": 40
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3.4,
+    "edgeWidth": 6,
+    "roll": 0.6,
+    "pathMargin": 0.8,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "birch_0",
+          "maple_yellow_0",
+          "hemlock_0",
+          "birch_1",
+          "maple_yellow_1",
+          "hemlock_1",
+          "birch_0"
+        ],
+        "density": 0.78,
+        "spacing": 1.9,
+        "scale": [
+          0.85,
+          1.15
+        ],
+        "near": "edge",
+        "collide": 0.38,
+        "tall": true
+      },
+      {
+        "props": [
+          "hemlock_peeled_0",
+          "hemlock_peeled_1"
+        ],
+        "density": 0.06,
+        "spacing": 4.5,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "birch_0",
+          "birch_1",
+          "maple_yellow_0",
+          "hemlock_young_0",
+          "maple_yellow_1",
+          "hemlock_1"
+        ],
+        "density": 0.34,
+        "spacing": 2.3,
+        "scale": [
+          0.8,
+          1.1
+        ],
+        "near": "open",
+        "collide": 0.36,
+        "tall": true
+      },
+      {
+        "props": [
+          "hemlock_peeled_0",
+          "hemlock_peeled_1"
+        ],
+        "density": 0.05,
+        "spacing": 5,
+        "scale": [
+          0.85,
+          1.05
+        ],
+        "near": "open",
+        "collide": 0.3,
+        "tall": true
+      },
+      {
+        "props": [
+          "boulder_mossy_0",
+          "boulder_mossy_1",
+          "fallen_log_0",
+          "fallen_log_1",
+          "tree_stump_0",
+          "tree_stump_1"
+        ],
+        "density": 0.06,
+        "spacing": 4,
+        "scale": [
+          0.8,
+          1.05
+        ],
+        "near": "open",
+        "collide": 0.3
+      },
+      {
+        "props": [
+          "fern_autumn_0",
+          "fern_autumn_1",
+          "fern_autumn_2",
+          "fern_autumn_1"
+        ],
+        "density": 0.34,
+        "spacing": 1.1,
+        "scale": [
+          0.85,
+          1.1
+        ],
+        "near": "open"
+      },
+      {
+        "props": [
+          "goldenrod_1",
+          "asters_1",
+          "fern_autumn_2"
+        ],
+        "density": 0.18,
+        "spacing": 1.2,
+        "scale": [
+          0.8,
+          1
+        ],
+        "near": "path"
+      },
+      {
+        "props": [
+          "mushrooms_0",
+          "mushrooms_1"
+        ],
+        "density": 0.08,
+        "spacing": 1.4,
+        "scale": [
+          0.8,
+          1
+        ],
+        "near": "open",
+        "shadow": false
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -2,
+          -20
+        ],
+        [
+          -2.4,
+          -14
+        ],
+        [
+          -3,
+          -8
+        ],
+        [
+          0,
+          -4.4
+        ],
+        [
+          4,
+          -1.6
+        ],
+        [
+          9,
+          1.6
+        ],
+        [
+          11.6,
+          7
+        ],
+        [
+          11.4,
+          13
+        ],
+        [
+          12,
+          20
+        ]
+      ],
+      "width": 2,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          7.4,
+          0.2
+        ],
+        [
+          12,
+          -3
+        ],
+        [
+          16,
+          -5.4
+        ],
+        [
+          19.4,
+          -6.2
+        ]
+      ],
+      "width": 0.9,
+      "kind": "path"
+    }
+  ],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "shed",
+      "x": -12,
+      "z": -2.5,
+      "w": 6,
+      "d": 4,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              -3,
+              2
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "door": false
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "mound",
+      "x": 18,
+      "z": -13,
+      "radius": 9,
+      "height": 1.8
+    },
+    {
+      "kind": "mound",
+      "x": -22,
+      "z": 12,
+      "radius": 8,
+      "height": 1
+    }
+  ],
+  "arenas": [
+    {
+      "x": -2.6,
+      "z": -12.6,
+      "radius": 2.6
+    },
+    {
+      "x": 6.4,
+      "z": 0.4,
+      "radius": 2.6
+    },
+    {
+      "x": 11.6,
+      "z": 12.6,
+      "radius": 2.6
+    },
+    {
+      "x": -23,
+      "z": -6,
+      "radius": 2.8
+    }
+  ],
+  "placements": [
+    {
+      "prop": "bark_rick_1",
+      "x": -9.4,
+      "z": 3,
+      "collide": 1.1
+    },
+    {
+      "prop": "bark_rick_1",
+      "x": -6.4,
+      "z": 3,
+      "collide": 1.1
+    },
+    {
+      "prop": "bark_rick_0",
+      "x": -10,
+      "z": 6.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "bark_rick_0",
+      "x": -7.6,
+      "z": 6.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "bark_rick_0",
+      "x": -5.2,
+      "z": 6.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "sap_sled",
+      "x": -16.4,
+      "z": 3.4,
+      "collide": 0.5
+    },
+    {
+      "prop": "cordwood",
+      "x": -16,
+      "z": -6.4,
+      "collide": 0.6
+    },
+    {
+      "prop": "hemlock_peeled_0",
+      "x": 3.2,
+      "z": -11,
+      "collide": 0.3,
+      "tall": true
+    },
+    {
+      "prop": "hemlock_peeled_1",
+      "x": -7.4,
+      "z": -11.6,
+      "collide": 0.3,
+      "tall": true
+    },
+    {
+      "prop": "hemlock_peeled_0",
+      "x": 16,
+      "z": 4.6,
+      "collide": 0.3,
+      "tall": true,
+      "scale": 1.1
+    },
+    {
+      "prop": "hemlock_peeled_1",
+      "x": 6.6,
+      "z": 9.4,
+      "collide": 0.3,
+      "tall": true
+    },
+    {
+      "prop": "hemlock_peeled_1",
+      "x": -18.4,
+      "z": -1,
+      "collide": 0.3,
+      "tall": true,
+      "flip": true
+    },
+    {
+      "prop": "rock_face_0",
+      "x": 17.4,
+      "z": -10.2,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_1",
+      "x": 21,
+      "z": -10.6,
+      "collide": 0.9
+    },
+    {
+      "prop": "rock_face_2",
+      "x": 24.4,
+      "z": -9.8,
+      "collide": 0.9
+    },
+    {
+      "prop": "boulder_mossy_0",
+      "x": 15.4,
+      "z": -8.6,
+      "collide": 0.4
+    },
+    {
+      "prop": "boulder_mossy_2",
+      "x": 25.4,
+      "z": -8,
+      "collide": 0.4
+    },
+    {
+      "prop": "stone_trough",
+      "x": 20.4,
+      "z": -8.2,
+      "collide": 0.5
+    },
+    {
+      "prop": "tin_cup",
+      "x": 22.4,
+      "z": -8.4,
+      "collide": 0.15
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": 18.6,
+      "z": -8.8
+    },
+    {
+      "prop": "fern_autumn_0",
+      "x": 23.6,
+      "z": -7.4
+    }
+  ],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -12,
+          -0.2
+        ],
+        [
+          -12,
+          1
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          -11,
+          2.6
+        ],
+        [
+          -4.4,
+          2.6
+        ],
+        [
+          -4.4,
+          6.4
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          19,
+          -6.4
+        ],
+        [
+          22.4,
+          -6.4
+        ]
+      ],
+      "radius": 1.4
+    },
+    {
+      "points": [
+        [
+          -23,
+          -6
+        ],
+        [
+          -14,
+          -4.6
+        ]
+      ],
+      "radius": 1.2
+    }
+  ],
+  "spots": [
+    {
+      "name": "From the Cellar Holes",
+      "x": -2.4,
+      "z": -14.6
+    },
+    {
+      "name": "The bark shed",
+      "x": -12,
+      "z": 0.4,
+      "note": "Open on one side in the brief, no door; a closed grey-board shed with no door stands in for it until an open-sided piece exists (decision 0370)."
+    },
+    {
+      "name": "Ezekiel (the ricks)",
+      "x": -7.8,
+      "z": 8.2,
+      "note": "Ezekiel Rowe peeling at the ricks."
+    },
+    {
+      "name": "Mehitable (rick ends)",
+      "x": -2.8,
+      "z": 4.6,
+      "note": "Mehitable Rowe counting the ricks out loud, at their chalked ends."
+    },
+    {
+      "name": "The bark sled",
+      "x": -16.4,
+      "z": 5,
+      "note": "The bark sled with one runner gone (the sap sled stands in for it)."
+    },
+    {
+      "name": "The spring (nook)",
+      "x": 20.4,
+      "z": -6.4,
+      "note": "A stone basin under a mossy ledge, east of the bend."
+    },
+    {
+      "name": "The tin cup",
+      "x": 22.6,
+      "z": -7,
+      "note": "A tin cup on a nail, always full after a night. The Rowes fill it for the Night Man (small find)."
+    },
+    {
+      "name": "Boots (the shed)",
+      "x": -14.6,
+      "z": 0.6,
+      "note": "Placed find: boots at the bark shed."
+    },
+    {
+      "name": "Hemlock Bark (the ricks)",
+      "x": -4.2,
+      "z": 1.8,
+      "note": "Charm goods on the ricks."
+    },
+    {
+      "name": "Behind the shed",
+      "x": -23,
+      "z": -3,
+      "note": "The clearing behind the shed: the tougher fight."
+    },
+    {
+      "name": "On to the Mast Wood",
+      "x": 11.6,
+      "z": 14.6
+    }
+  ],
+  "start": [
+    -2.4,
+    -14.6
+  ],
+  "exits": [
+    {
+      "rect": [
+        -4.8,
+        -17,
+        0,
+        -16
+      ],
+      "to": "cellar-holes",
+      "at": [
+        26,
+        18.4
+      ],
+      "dir": 4
+    },
+    {
+      "rect": [
+        9.4,
+        16,
+        14.2,
+        17
+      ],
+      "to": "mast-wood",
+      "at": [
+        10.2,
+        -18.4
+      ],
+      "dir": 0
+    }
+  ]
+}

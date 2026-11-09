@@ -1,0 +1,789 @@
+{
+ "version": 1,
+ "name": "hemlock-brook",
+ "seed": 3206,
+ "size": {
+  "w": 56,
+  "h": 40
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 4.6,
+  "edgeWidth": 6,
+  "roll": 0.4,
+  "pathMargin": 0.6,
+  "tiles": {
+   "open": "leaf_litter",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "hemlock_0",
+     "hemlock_1",
+     "hemlock_0"
+    ],
+    "density": 0.85,
+    "spacing": 1.9,
+    "scale": [
+     0.9,
+     1.2
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_0",
+     "hemlock_1",
+     "hemlock_young_0"
+    ],
+    "density": 0.3,
+    "spacing": 2.4,
+    "scale": [
+     0.8,
+     1.2
+    ],
+    "near": "open",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_0",
+     "hemlock_1",
+     "hemlock_0"
+    ],
+    "density": 0.75,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.2
+    ],
+    "within": [
+     [
+      -28,
+      -20
+     ],
+     [
+      -8,
+      -20
+     ],
+     [
+      -6,
+      -12
+     ],
+     [
+      -14,
+      -7
+     ],
+     [
+      -28,
+      -6
+     ]
+    ],
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_1",
+     "hemlock_0",
+     "hemlock_young_0"
+    ],
+    "density": 0.7,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.2
+    ],
+    "within": [
+     [
+      6,
+      -20
+     ],
+     [
+      28,
+      -20
+     ],
+     [
+      28,
+      -12
+     ],
+     [
+      18,
+      -11
+     ],
+     [
+      8,
+      -13
+     ]
+    ],
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_0",
+     "hemlock_1",
+     "hemlock_0"
+    ],
+    "density": 0.75,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.2
+    ],
+    "within": [
+     [
+      -28,
+      7
+     ],
+     [
+      -8,
+      8
+     ],
+     [
+      -4,
+      20
+     ],
+     [
+      -28,
+      20
+     ]
+    ],
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_0",
+     "hemlock_young_0",
+     "hemlock_1"
+    ],
+    "density": 0.45,
+    "spacing": 2,
+    "scale": [
+     0.8,
+     1.15
+    ],
+    "within": [
+     [
+      -24,
+      -7
+     ],
+     [
+      -3,
+      -9
+     ],
+     [
+      -2.4,
+      -1.4
+     ],
+     [
+      -24,
+      -1
+     ]
+    ],
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_1",
+     "hemlock_0",
+     "hemlock_young_0"
+    ],
+    "density": 0.45,
+    "spacing": 2,
+    "scale": [
+     0.8,
+     1.15
+    ],
+    "within": [
+     [
+      4.4,
+      -11
+     ],
+     [
+      26,
+      -10
+     ],
+     [
+      26,
+      -1
+     ],
+     [
+      4.6,
+      -1.6
+     ]
+    ],
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_1",
+     "hemlock_0"
+    ],
+    "density": 0.7,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.2
+    ],
+    "within": [
+     [
+      4,
+      14
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      28,
+      8
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      4,
+      20
+     ]
+    ],
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "hemlock_young_0",
+     "birch_0",
+     "maple_yellow_0",
+     "hemlock_young_0",
+     "birch_1"
+    ],
+    "density": 0.3,
+    "spacing": 2.4,
+    "scale": [
+     0.75,
+     1
+    ],
+    "near": "water",
+    "collide": 0.32,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "boulder_mossy_2",
+     "fallen_log_0",
+     "fallen_log_1"
+    ],
+    "density": 0.12,
+    "spacing": 3.4,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "near": "water",
+    "collide": 0.32
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.45,
+    "spacing": 0.9,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "water"
+   },
+   {
+    "props": [
+     "fern_autumn_1",
+     "mushrooms_0",
+     "mushrooms_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.18,
+    "spacing": 1.1,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "near": "open",
+    "shadow": false
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "fern_autumn_0",
+     "mushrooms_1"
+    ],
+    "density": 0.1,
+    "spacing": 1,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -1.2,
+     9.2
+    ],
+    [
+     -6,
+     10.4
+    ],
+    [
+     -11,
+     11
+    ],
+    [
+     -15.6,
+     11.8
+    ]
+   ],
+   "width": 0.8,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     0.4,
+     -20
+    ],
+    [
+     -0.4,
+     -16
+    ],
+    [
+     0.6,
+     -12.4
+    ],
+    [
+     1.6,
+     -8.6
+    ],
+    [
+     1.2,
+     -5
+    ],
+    [
+     0.3,
+     -2.2
+    ],
+    [
+     0,
+     1.6
+    ],
+    [
+     -0.2,
+     4.6
+    ],
+    [
+     -1,
+     7.6
+    ],
+    [
+     -1.4,
+     11
+    ],
+    [
+     -0.4,
+     14.6
+    ],
+    [
+     0,
+     20
+    ]
+   ],
+   "width": 1.6,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "culvert",
+   "kind": "culvert",
+   "x": 0,
+   "z": 1.6,
+   "w": 5.2,
+   "d": 2.4,
+   "rot": 1.57,
+   "height": 1.1
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "hollow",
+   "x": -18,
+   "z": 1.8,
+   "radius": 12,
+   "height": 3.2
+  },
+  {
+   "kind": "hollow",
+   "x": -6,
+   "z": 1.4,
+   "radius": 11,
+   "height": 3.4
+  },
+  {
+   "kind": "hollow",
+   "x": 6,
+   "z": 2.2,
+   "radius": 11,
+   "height": 3.4
+  },
+  {
+   "kind": "hollow",
+   "x": 18,
+   "z": 1.8,
+   "radius": 12,
+   "height": 3.2
+  }
+ ],
+ "arenas": [
+  {
+   "x": -12,
+   "z": -12.4,
+   "radius": 2.6
+  },
+  {
+   "x": 12.6,
+   "z": 12.6,
+   "radius": 2.6
+  },
+  {
+   "x": 13,
+   "z": -12.2,
+   "radius": 2.4
+  }
+ ],
+ "placements": [
+  {
+   "prop": "school_step",
+   "x": 3,
+   "z": -11.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 2.6,
+   "z": -0.6,
+   "collide": 0.3,
+   "scale": 0.7
+  },
+  {
+   "prop": "boulder_mossy_2",
+   "x": -2.8,
+   "z": 3.6,
+   "collide": 0.3,
+   "scale": 0.8
+  },
+  {
+   "prop": "fallen_log_1",
+   "x": -7.4,
+   "z": 5.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "hemlock_0",
+   "x": -19.6,
+   "z": 9.6,
+   "collide": 0.42,
+   "tall": true,
+   "scale": 1.15
+  },
+  {
+   "prop": "hemlock_1",
+   "x": -15.2,
+   "z": 10.8,
+   "collide": 0.42,
+   "tall": true,
+   "scale": 1.1
+  },
+  {
+   "prop": "hemlock_0",
+   "x": -18.8,
+   "z": 13.6,
+   "collide": 0.42,
+   "tall": true,
+   "scale": 1.2
+  },
+  {
+   "prop": "hemlock_0",
+   "x": -8,
+   "z": -4.2,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_1",
+   "x": -5,
+   "z": -6.8,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_young_0",
+   "x": -12.4,
+   "z": -3.4,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 0.9
+  },
+  {
+   "prop": "hemlock_0",
+   "x": -18,
+   "z": -3.8,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_1",
+   "x": -22.6,
+   "z": -5,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_young_0",
+   "x": 5.6,
+   "z": -5.2,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 0.9
+  },
+  {
+   "prop": "hemlock_0",
+   "x": 9.2,
+   "z": -3.4,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_1",
+   "x": 13.4,
+   "z": -6.2,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_young_0",
+   "x": 18.4,
+   "z": -4,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 0.9
+  },
+  {
+   "prop": "hemlock_0",
+   "x": 22.4,
+   "z": -5.6,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 1.05
+  },
+  {
+   "prop": "hemlock_young_0",
+   "x": -3.6,
+   "z": -3,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 0.9
+  },
+  {
+   "prop": "hemlock_young_0",
+   "x": 16,
+   "z": -2.6,
+   "collide": 0.4,
+   "tall": true,
+   "scale": 0.9
+  },
+  {
+   "prop": "fern_autumn_0",
+   "x": -17.2,
+   "z": 10.6
+  },
+  {
+   "prop": "mushrooms_1",
+   "x": -16.4,
+   "z": 12.2,
+   "shadow": false
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     3,
+     -12.6
+    ],
+    [
+     2.4,
+     -10.2
+    ]
+   ],
+   "radius": 1.3
+  },
+  {
+   "points": [
+    [
+     2.6,
+     3.6
+    ],
+    [
+     2.6,
+     4.2
+    ]
+   ],
+   "radius": 1.1
+  },
+  {
+   "points": [
+    [
+     -17.2,
+     11.6
+    ],
+    [
+     -17.2,
+     12
+    ]
+   ],
+   "radius": 1.5
+  }
+ ],
+ "spots": [
+  {
+   "name": "The schoolhouse step",
+   "x": 2.4,
+   "z": -10.6,
+   "note": "All that's left of the old schoolhouse, at the top of the bank: children's initials cut in it, Obed's among them and, lower down, Elias's (small find)."
+  },
+  {
+   "name": "The culvert keystone",
+   "x": 2.6,
+   "z": 3.8,
+   "note": "On the bank below the culvert, looking up at its arch: laid dry, still perfect. The keystone has a mark Obed knows (small find)."
+  },
+  {
+   "name": "The nook (under the hemlocks)",
+   "x": -17.2,
+   "z": 11.8,
+   "note": "A dry hollow under three big hemlocks, out of the wind; the needles thick and soft."
+  },
+  {
+   "name": "The ravine floor",
+   "x": -6,
+   "z": 3.4,
+   "note": "Down by the brook, dark under the hemlocks."
+  },
+  {
+   "name": "From the village",
+   "x": -0.3,
+   "z": -14.5
+  },
+  {
+   "name": "On to the Cellar Holes",
+   "x": -0.4,
+   "z": 14.5
+  }
+ ],
+ "start": [
+  -0.3,
+  -14.5
+ ],
+ "exits": [
+  {
+   "rect": [
+    -2.6,
+    -17,
+    2.2,
+    -16
+   ],
+   "to": "hardscrabble",
+   "at": [
+    -0.3,
+    24.6
+   ],
+   "dir": 4
+  },
+  {
+   "rect": [
+    -2.6,
+    16,
+    2.2,
+    17
+   ],
+   "to": "cellar-holes",
+   "at": [
+    0.2,
+    -18.5
+   ],
+   "dir": 0
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    -28,
+    0.6
+   ],
+   [
+    -19,
+    2.4
+   ],
+   [
+    -9,
+    0.9
+   ],
+   [
+    0,
+    1.6
+   ],
+   [
+    9,
+    2.8
+   ],
+   [
+    19,
+    1.4
+   ],
+   [
+    28,
+    2.2
+   ]
+  ],
+  "width": 1.4,
+  "depth": 0.7
+ }
+}

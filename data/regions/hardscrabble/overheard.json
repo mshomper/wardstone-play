@@ -1,0 +1,34 @@
+{
+  "_note": "People talking as Eldwin passes, in Hardscrabble (decision 0340). Drafts.",
+  "overheard": [
+    { "id": "hso_clock", "a": "lucy_shattuck", "b": "truman_shattuck", "if": { "notFlags": ["wagon_empty"] }, "lines": [
+      { "who": "lucy_shattuck", "text": "The clock goes." },
+      { "who": "truman_shattuck", "text": "Put a clock on a wagon, it stops on the road." },
+      { "who": "lucy_shattuck", "text": "It'll stop here too, if nobody winds it." },
+      { "who": "truman_shattuck", "text": "I wind it." }
+    ] },
+    { "id": "hso_chair", "a": "lucy_shattuck", "b": "truman_shattuck", "if": { "notFlags": ["wagon_empty"] }, "lines": [
+      { "who": "lucy_shattuck", "text": "We said the chair goes." },
+      { "who": "truman_shattuck", "text": "We said it might." },
+      { "who": "lucy_shattuck", "text": "Truman." },
+      { "who": "truman_shattuck", "text": "He sat in that chair forty years, Lucy." },
+      { "who": "lucy_shattuck", "text": "He's not sitting in it now." }
+    ] },
+    { "id": "hso_churn", "a": "truman_shattuck", "b": "lucy_shattuck", "if": { "notFlags": ["wagon_empty"] }, "lines": [
+      { "who": "truman_shattuck", "text": "There's no room for the churn." },
+      { "who": "lucy_shattuck", "text": "There was room yesterday." },
+      { "who": "truman_shattuck", "text": "Yesterday the clock was in the house." }
+    ] },
+    { "id": "hso_letter", "a": "asa_kimball", "b": "abner_coyle", "if": { "notFlags": ["joined:obed"] }, "lines": [
+      { "who": "abner_coyle", "text": "Anything for the land company?" },
+      { "who": "asa_kimball", "text": "One letter for Hardscrabble. It's for Obed Thayer." },
+      { "who": "abner_coyle", "text": "Ah. I'd leave it on his wall, and stand back." }
+    ] },
+    { "id": "hso_count", "a": "abner_coyle", "b": "hosea_lamb", "if": { "notFlags": ["oneshort_done"] }, "lines": [
+      { "who": "abner_coyle", "text": "Forty-two head, Mr. Lamb. The bill says forty-three." },
+      { "who": "hosea_lamb", "text": "The bill's right." },
+      { "who": "abner_coyle", "text": "Then where's the forty-third?" },
+      { "who": "hosea_lamb", "text": "Gyp knows." }
+    ] }
+  ]
+}

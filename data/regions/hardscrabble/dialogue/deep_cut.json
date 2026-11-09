@@ -1,0 +1,26 @@
+{
+ "conversations": [
+  {
+   "id": "dc_frost_bridge",
+   "lines": [
+    {
+     "who": "",
+     "text": "The cut blocks stop short. Black water lies between the last one and the far passage, and the cold comes up off it like breath."
+    },
+    {
+     "who": "eldwin",
+     "text": "It’s most of the way to ice already. It only wants telling."
+    }
+   ]
+  },
+  {
+   "id": "dc_frost_bridge_done",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "That’ll bear. It’ll keep, too. Nothing down here is in a hurry to thaw."
+    }
+   ]
+  }
+ ]
+}

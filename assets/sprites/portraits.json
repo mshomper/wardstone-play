@@ -3,7 +3,7 @@
  "emissive": "portraits_emissive.png",
  "size": [
   456,
-  196
+  261
  ],
  "cell": null,
  "pixelsPerUnit": 32,
@@ -132,6 +132,62 @@
   "portrait_obed_determined": {
    "x": 66,
    "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_neutral": {
+   "x": 131,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_grin": {
+   "x": 196,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_grimace": {
+   "x": 261,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_theatrical": {
+   "x": 326,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_drunk": {
+   "x": 391,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_stricken": {
+   "x": 1,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thadeous_tender": {
+   "x": 66,
+   "y": 196,
    "w": 64,
    "h": 64,
    "ax": 32,

@@ -1,0 +1,125 @@
+{
+ "id": "the-pound",
+ "title": "The Pound",
+ "side": true,
+ "blurb": "Sukey Varnum wants her pound back, and her animals in it.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The pound",
+   "objective": "",
+   "done": {
+    "flags": [
+     "pound_asked"
+    ]
+   },
+   "sets": [
+    "pound_asked"
+   ],
+   "auto": [
+    {
+     "talk": "sukey_varnum"
+    },
+    {
+     "talk": "sukey_varnum"
+    }
+   ]
+  },
+  {
+   "id": "holts",
+   "title": "The Holts first",
+   "objective": "Herd Sukey's animals up to the pound on Hobble Hill. The Holts go first, or nobody goes.",
+   "done": {
+    "flags": [
+     "penned:holts"
+    ]
+   },
+   "sets": [
+    "penned:holts"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Sukey (village)"
+   },
+   "auto": [
+    {
+     "talk": "pig_holts"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "title": "One family at a time",
+   "objective": "Herd the rest up the hill, one family at a time.",
+   "count": {
+    "flags": [
+     "penned:pikes",
+     "penned:dows",
+     "penned:merrills",
+     "penned:abbotts",
+     "penned:lowells"
+    ]
+   },
+   "done": {
+    "flags": [
+     "penned:pikes",
+     "penned:dows",
+     "penned:merrills",
+     "penned:abbotts",
+     "penned:lowells"
+    ]
+   },
+   "sets": [
+    "penned:pikes",
+    "penned:dows",
+    "penned:merrills",
+    "penned:abbotts",
+    "penned:lowells"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Sukey (village)"
+   },
+   "auto": [
+    {
+     "talk": "goat_pikes"
+    },
+    {
+     "talk": "goat_dows"
+    },
+    {
+     "talk": "horse_merrills"
+    },
+    {
+     "talk": "hen_abbotts_1"
+    },
+    {
+     "talk": "cat_lowells"
+    }
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "A full pound",
+   "objective": "Tell Sukey her pound is full.",
+   "done": {
+    "flags": [
+     "pound_done"
+    ]
+   },
+   "sets": [
+    "pound_done",
+    "owns_a_hen"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Sukey (village)"
+   },
+   "auto": [
+    {
+     "talk": "sukey_varnum"
+    }
+   ]
+  }
+ ]
+}

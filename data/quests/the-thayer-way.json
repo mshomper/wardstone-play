@@ -1,0 +1,160 @@
+{
+ "id": "the-thayer-way",
+ "title": "The Thayer Way",
+ "chapter": true,
+ "after": "reached_hardscrabble",
+ "_note": "The main story's third chapter (decision 0350): Hardscrabble, from the Stone Lane to Obed joining at the trough. The brief's eight steps (docs/regions/hardscrabble.md, 'The main beat'). Its steps drive the clock: morning on the lane, the wall in the afternoon, the lesson towards evening, and Obed at the trough the next morning.",
+ "steps": [
+  {
+   "id": "lane-patch",
+   "title": "The Stone Lane",
+   "objective": "The cold has pushed a gap in the lane's north wall. Something has come through it.",
+   "hints": [
+    { "if": { "flags": ["beat_sl_patch"] }, "text": "Stack the gap in the lane's wall, and shut it." }
+   ],
+   "time": 8.0,
+   "done": { "flags": ["patch_frozen"] },
+   "sets": ["beat_sl_patch", "patch_frozen", "gap:stone-lane:0:33.145185779182995"],
+   "skip": { "area": "stone-lane", "spot": "The patch (coming up to it)" },
+   "auto": [
+    { "fight": "sl-patch" },
+    { "use": "hs_patch" }
+   ]
+  },
+  {
+   "id": "village",
+   "title": "Hardscrabble",
+   "objective": "Go on down the lane into Hardscrabble.",
+   "time": 8.5,
+   "done": { "enter": "hardscrabble" },
+   "skip": { "area": "stone-lane", "spot": "Eldwin's patch" },
+   "auto": [
+    { "go": "hardscrabble" }
+   ]
+  },
+  {
+   "id": "walls",
+   "title": "Who keeps the walls",
+   "objective": "Somebody keeps the walls up here. Ask about it.",
+   "time": 9.0,
+   "done": { "flags": ["heard_of_obed"] },
+   "sets": ["heard_of_obed", "heard:ASH1"],
+   "skip": { "area": "hardscrabble", "spot": "The trough" },
+   "auto": [
+    { "talk": "asa_kimball" }
+   ]
+  },
+  {
+   "id": "obed",
+   "title": "The bad patch",
+   "objective": "Someone is standing at your patch on the Stone Lane, looking at it.",
+   "time": 10.0,
+   "done": { "flags": ["met_obed"] },
+   "sets": ["met_obed"],
+   "skip": { "area": "hardscrabble", "spot": "From the Stone Lane" },
+   "auto": [
+    { "go": "stone-lane" },
+    { "talk": "obed" }
+   ]
+  },
+  {
+   "id": "hill",
+   "title": "Coyle's wall",
+   "objective": "Frost is coming down off Hobble Hill. Go up the Sheep Walk and look at Coyle's wall.",
+   "time": 11.0,
+   "done": { "flags": ["coyle_wall_seen"] },
+   "sets": ["coyle_wall_seen"],
+   "skip": { "area": "stone-lane", "spot": "Obed (at the patch)" },
+   "auto": [
+    { "go": "hardscrabble" },
+    { "go": "sheep-walk" },
+    { "go": "hobble-hill" },
+    { "use": "hs_hill_wall" }
+   ]
+  },
+  {
+   "id": "hart",
+   "title": "The pound",
+   "objective": "Something white is in the stray pound, ramming the walls.",
+   "time": 12.0,
+   "done": { "flags": ["beat_pale_hart"] },
+   "sets": ["beat_pale_hart"],
+   "skip": { "area": "hobble-hill", "spot": "Coming up to the pound" },
+   "auto": [
+    { "fight": "hh-hart" }
+   ]
+  },
+  {
+   "id": "fetch",
+   "title": "The stag at the wall",
+   "objective": "The stag can't get home through Coyle's wall. Fetch Obed Thayer from his yard.",
+   "time": 13.0,
+   "done": { "flags": ["obed_on_hill"] },
+   "sets": ["obed_on_hill", "heard:HART"],
+   "skip": { "area": "hobble-hill", "spot": "Eldwin (watching)" },
+   "auto": [
+    { "go": "sheep-walk" },
+    { "go": "hardscrabble" },
+    { "go": "thayers-yard" },
+    { "talk": "obed" }
+   ]
+  },
+  {
+   "id": "wall",
+   "title": "Obed's wall",
+   "objective": "Obed has gone up Hobble Hill to look at the stag.",
+   "time": 14.0,
+   "done": { "flags": ["obed_wall_laid"] },
+   "sets": ["obed_wall_laid"],
+   "skip": { "area": "thayers-yard", "spot": "Obed (yard)" },
+   "auto": [
+    { "go": "hardscrabble" },
+    { "go": "sheep-walk" },
+    { "go": "hobble-hill" },
+    { "talk": "obed" }
+   ]
+  },
+  {
+   "id": "stone",
+   "title": "The wardstone",
+   "objective": "Put a hand on the wardstone beside Obed's wall.",
+   "done": { "flags": ["hardscrabble_stone_woke"] },
+   "sets": ["hart_home", "hardscrabble_stone_woke"],
+   "skip": { "area": "hobble-hill", "spot": "Eldwin (watching)" },
+   "auto": [
+    { "use": "hs_wardstone_wake" }
+   ]
+  },
+  {
+   "id": "lesson",
+   "title": "The lesson",
+   "objective": "Obed is waiting at your patch on the Stone Lane.",
+   "time": 16.0,
+   "done": { "flags": ["obed_lesson_done"] },
+   "sets": ["obed_lesson_done"],
+   "skip": { "area": "hobble-hill", "spot": "The wardstone" },
+   "auto": [
+    { "go": "sheep-walk" },
+    { "go": "hardscrabble" },
+    { "go": "stone-lane" },
+    { "talk": "obed" }
+   ]
+  },
+  {
+   "id": "join",
+   "title": "Morning",
+   "objective": "Obed is at the trough, with his sledge and a sack.",
+   "onStart": [
+    { "dialogue": "hs_lesson_night" },
+    { "sleep": 6.5 }
+   ],
+   "done": { "flags": ["joined:obed"] },
+   "sets": ["joined:obed"],
+   "skip": { "area": "hardscrabble", "spot": "The trough" },
+   "auto": [
+    { "go": "hardscrabble" },
+    { "talk": "obed" }
+   ]
+  }
+ ]
+}

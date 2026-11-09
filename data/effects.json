@@ -1,5 +1,5 @@
 {
-  "_note": "How effects look (docs/07-cinematics-and-vfx.md, the build decision in docs/11-milestones.md). `looks` has one entry per element: colours, particles, light and sound. Colours above 1 glow. `moves` says which delivery and look each skill, ward or creature move uses; `pose` is the anim to play, `release` the anim frame the effect leaves on. Anything not listed falls back on its target and element, so a new skill needs only a new line, and a new element only a new look.",
+  "_note": "How effects look (docs/07-cinematics-and-vfx.md, the build decision in docs/11-milestones.md). `looks` has one entry per element: colours, particles, light (a `flicker` jitters it) and sound. Colours above 1 glow. Particle kinds: 0 soft glow, 1 shard, 2 streak, 3 smoke, 4 spark, 5 leaf, 6 mist, and pixel glyphs 7 note, 8 two notes, 9 lantern. `moves` says which delivery and look each skill, ward or creature move uses; `pose` is the anim to play (a hero's by its Eldwin name, wiz_side_<motion>, played from their own sheet, or as their cast until it is drawn), `release` the anim frame the effect leaves on. The `song` delivery sends notes off the instrument to each target, and its `song` says which kind: finale (more, bigger, brighter notes for each Verse spent, which the battle passes on the effect as `scale`, 1 to 5), turn (the notes change colour in flight to the element the battle passes as `element`), ring (one short song per target, in the elements passed as `elements`, in target order, else round the six), lullaby (slow notes over every foe while the light dims a little). A defend whose line has delivery `ward` takes its look and stance from it. Anything not listed falls back on its target and element, so a new skill needs only a new line, and a new element only a new look (decision 0376). A move's `sound` plays on top of its look's, `soundAt` seconds in (the Pale Hart's hooves, Applejack's hiccup).",
   "looks": {
     "arcane": {
       "color": [0.55, 0.72, 1], "accent": [0.78, 0.55, 1],
@@ -76,6 +76,72 @@
       "ground": [{ "type": 2, "size": 2, "intensity": 0.8, "drawIn": 0.06, "hold": 0.12, "fade": 0.55 }],
       "spikes": ["crystal_cluster_0", "crystal_cluster_1"], "spikeTint": [1.4, 0.95, 0.5, 1]
     },
+    "storm": {
+      "color": [1, 0.94, 0.55], "accent": [0.72, 0.84, 1],
+      "light": { "intensity": 3.4, "radius": 3.2, "flicker": 0.5 },
+      "sfx": { "charge": "crackle", "release": "zap", "impact": "rumble" },
+      "gather": [{ "n": 14, "kind": 4, "life": [0.2, 0.36], "size": [0.025, 0.05], "color": [3, 2.8, 1.5, 1] }],
+      "trail": [
+        { "n": 2, "kind": 2, "spread": [0.06, 0.06, 0.06], "speed": [1.2, 3], "drag": 6, "life": [0.05, 0.12], "size": [0.12, 0.22], "color": [3, 2.9, 1.8, 1], "colorEnd": [1.4, 1.6, 2.4, 0], "orient": true },
+        { "n": 1, "kind": 4, "spread": [0.05, 0.05, 0.05], "speed": [0.2, 0.8], "drag": 2, "life": [0.12, 0.26], "size": [0.025, 0.045], "color": [3, 3, 2.2, 1] }
+      ],
+      "spray": [
+        { "n": 18, "kind": 2, "spread": [0.05, 0.05, 0.05], "speed": [3, 6.5], "drag": 7, "life": [0.08, 0.2], "size": [0.12, 0.26], "color": [3.2, 3, 1.8, 1], "colorEnd": [1.2, 1.5, 2.6, 0], "orient": true },
+        { "n": 12, "kind": 4, "spread": [0.1, 0.12, 0.1], "dir": [0, 1, 0], "cone": 0.9, "speed": [1, 2.6], "grav": 6, "bounce": 0.4, "drag": 1, "life": [0.35, 0.7], "size": [0.025, 0.05], "color": [3, 2.7, 1.4, 1], "colorEnd": [1.6, 1.2, 0.5, 0] }
+      ],
+      "puff": [{ "n": 4, "kind": 0, "spread": [0.05, 0.05, 0.05], "speed": [0.1, 0.4], "life": [0.06, 0.14], "size": [0.4, 0.7], "sizeEnd": 1.6, "color": [3, 3, 2.4, 0.9], "colorEnd": [1, 1.2, 2, 0] }],
+      "linger": [{ "n": 6, "kind": 2, "spread": [0.35, 0.4, 0.2], "speed": [0.6, 1.6], "drag": 5, "life": [0.05, 0.12], "size": [0.08, 0.16], "color": [2.6, 2.6, 2, 1], "delay": 0.4, "orient": true }],
+      "ground": [
+        { "type": 1, "size": 2.4, "sizeFrom": 0.3, "grow": 0.3, "intensity": 1.3, "drawIn": 0.03, "hold": 0.04, "fade": 0.3 },
+        { "type": 2, "size": 1.8, "intensity": 0.8, "drawIn": 0.03, "hold": 0.05, "fade": 0.35 }
+      ],
+      "spikes": ["crystal_cluster_0", "crystal_cluster_1"], "spikeTint": [1.75, 1.55, 0.45, 1]
+    },
+    "tide": {
+      "color": [0.32, 0.62, 1], "accent": [0.72, 0.9, 1],
+      "light": { "intensity": 2.6, "radius": 2.8 },
+      "sfx": { "charge": "splash", "release": "whoosh", "impact": "splash" },
+      "gather": [{ "n": 12, "kind": 0, "life": [0.25, 0.4], "size": [0.03, 0.06], "color": [0.9, 1.6, 2.6, 1] }],
+      "trail": [
+        { "n": 2, "kind": 0, "spread": [0.05, 0.05, 0.05], "speed": [0.05, 0.3], "drag": 2, "grav": 1.5, "life": [0.16, 0.32], "size": [0.1, 0.18], "sizeEnd": 0.4, "color": [0.8, 1.5, 2.4, 0.9], "colorEnd": [0.3, 0.6, 1, 0] },
+        { "n": 1, "kind": 4, "spread": [0.06, 0.06, 0.06], "speed": [0.2, 0.6], "grav": 7, "life": [0.3, 0.55], "size": [0.03, 0.05], "color": [1.3, 1.9, 2.6, 1] }
+      ],
+      "spray": [
+        { "n": 18, "kind": 0, "spread": [0.08, 0.1, 0.08], "dir": [0, 1, 0], "cone": 0.85, "speed": [1.6, 3.6], "grav": 10, "bounce": 0.15, "drag": 0.8, "life": [0.45, 0.85], "size": [0.05, 0.1], "color": [0.9, 1.6, 2.5, 1], "colorEnd": [0.4, 0.7, 1.2, 0.3] },
+        { "n": 10, "kind": 4, "spread": [0.12, 0.12, 0.12], "dir": [0, 1, 0], "cone": 1, "speed": [1, 2.6], "grav": 9, "life": [0.4, 0.75], "size": [0.025, 0.05], "color": [1.6, 2.2, 2.8, 1] }
+      ],
+      "puff": [{ "n": 12, "kind": 3, "spread": [0.2, 0.05, 0.15], "radial": [0, 0.35], "speed": [0.8, 2], "drag": 2.4, "life": [0.4, 0.8], "size": [0.2, 0.36], "sizeEnd": 2, "color": [0.7, 0.85, 0.98, 0.5], "colorEnd": [0.6, 0.78, 0.95, 0], "fadeIn": 0.04 }],
+      "linger": [{ "n": 7, "kind": 4, "spread": [0.35, 0.25, 0.25], "speed": [0, 0.15], "grav": 3, "life": [0.5, 0.9], "size": [0.025, 0.045], "color": [1.2, 1.8, 2.5, 1], "colorEnd": [0.4, 0.7, 1.2, 0] }],
+      "ground": [
+        { "type": 1, "size": 2.6, "sizeFrom": 0.5, "grow": 0.5, "intensity": 0.9, "drawIn": 0.05, "hold": 0.08, "fade": 0.5 },
+        { "type": 2, "size": 2.1, "intensity": 0.6, "drawIn": 0.06, "hold": 0.2, "fade": 0.6 }
+      ],
+      "spikes": ["crystal_cluster_0", "crystal_cluster_1"], "spikeTint": [0.6, 0.85, 1.35, 1]
+    },
+    "growth": {
+      "color": [0.45, 0.95, 0.35], "accent": [0.9, 1, 0.5],
+      "light": { "intensity": 2.4, "radius": 2.6 },
+      "sfx": { "charge": "shakeoff", "release": "whoosh", "impact": "thud" },
+      "gather": [{ "n": 12, "kind": 4, "life": [0.3, 0.5], "size": [0.025, 0.05], "color": [1.5, 2.6, 0.9, 1] }],
+      "trail": [
+        { "n": 1, "kind": 5, "spread": [0.05, 0.05, 0.05], "speed": [0.1, 0.4], "grav": 1.2, "drag": 2, "life": [0.4, 0.7], "size": [0.08, 0.12], "color": [0.42, 0.78, 0.28, 1], "spin": 6 },
+        { "n": 2, "kind": 4, "spread": [0.05, 0.05, 0.05], "dir": [0, 1, 0], "cone": 0.6, "speed": [0.1, 0.4], "life": [0.3, 0.55], "size": [0.025, 0.04], "color": [1.6, 2.4, 1, 1], "colorEnd": [0.6, 1, 0.3, 0] }
+      ],
+      "spray": [
+        { "n": 12, "kind": 5, "spread": [0.1, 0.1, 0.1], "speed": [1, 2.4], "grav": 2.4, "drag": 2.2, "life": [0.6, 1.1], "size": [0.08, 0.14], "color": [0.45, 0.8, 0.3, 1], "spin": 7 },
+        { "n": 12, "kind": 4, "spread": [0.15, 0.1, 0.15], "dir": [0, 1, 0], "cone": 0.7, "speed": [0.4, 1.4], "drag": 1.6, "life": [0.5, 0.9], "size": [0.025, 0.05], "color": [1.8, 2.6, 1, 1], "colorEnd": [0.7, 1.1, 0.3, 0] }
+      ],
+      "puff": [{ "n": 7, "kind": 3, "spread": [0.15, 0.1, 0.12], "dir": [0, 1, 0], "cone": 0.5, "speed": [0.2, 0.6], "drag": 1.4, "life": [0.5, 0.9], "size": [0.2, 0.34], "sizeEnd": 1.8, "color": [0.75, 0.88, 0.5, 0.35], "colorEnd": [0.7, 0.85, 0.5, 0], "fadeIn": 0.08 }],
+      "linger": [
+        { "n": 7, "kind": 4, "spread": [0.4, 0.2, 0.3], "dir": [0, 1, 0], "cone": 0.3, "speed": [0.15, 0.45], "life": [0.7, 1.2], "size": [0.02, 0.04], "color": [1.6, 2.4, 1, 1], "colorEnd": [0.6, 1, 0.3, 0] },
+        { "n": 2, "kind": 5, "spread": [0.3, 0.2, 0.2], "speed": [0, 0.2], "grav": 0.8, "drag": 2, "life": [0.8, 1.2], "size": [0.08, 0.12], "color": [0.5, 0.82, 0.3, 1], "spin": 4 }
+      ],
+      "ground": [
+        { "type": 2, "size": 2, "intensity": 0.7, "drawIn": 0.1, "hold": 0.2, "fade": 0.6 },
+        { "type": 1, "size": 2.2, "sizeFrom": 0.4, "grow": 0.6, "colorOf": "accent", "intensity": 0.6, "drawIn": 0.06, "hold": 0.06, "fade": 0.6 }
+      ],
+      "spikes": ["crystal_cluster_0", "crystal_cluster_1"], "spikeTint": [0.6, 1.35, 0.4, 1]
+    },
     "physical": {
       "color": [1, 0.88, 0.65], "accent": [1, 0.72, 0.4],
       "light": { "intensity": 2.2, "radius": 2.4 },
@@ -92,10 +158,17 @@
   "moves": {
     "attack": { "delivery": "strike", "look": "physical", "pose": "wiz_side_attack", "release": 4 },
     "honk": { "delivery": "groundBurst", "look": "physical", "pose": "wiz_side_cast", "release": 4 },
-    "wing_buffet": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_stamp", "release": 5 },
-    "goose_chase": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_twoblows", "release": 3 },
     "nip_awake": { "delivery": "strike", "look": "physical", "pose": "wiz_side_attack", "release": 4 },
-    "pecking_order": { "delivery": "groundBurst", "look": "physical", "pose": "mrs_applegate_side_haulup", "release": 5 },
+    "bite": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_bite", "release": 2 },
+    "won_t_let_go": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_attack", "release": 4 },
+    "bites_back": { "delivery": "aura", "look": "physical", "pose": "mrs_applegate_side_crouch" },
+    "hold_a_grudge": { "delivery": "bolt", "look": "arcane", "pose": "mrs_applegate_side_stare", "release": 3 },
+    "pass_it_on": { "delivery": "bolt", "look": "arcane", "pose": "mrs_applegate_side_cast", "release": 4 },
+    "bad_luck": { "delivery": "groundBurst", "look": "arcane", "pose": "mrs_applegate_side_cast", "release": 4 },
+    "under_my_wing": { "delivery": "aura", "look": "physical", "pose": "mrs_applegate_side_haulup" },
+    "last_straw": { "delivery": "strike", "look": "physical", "pose": "mrs_applegate_side_stamp", "release": 5 },
+    "fuss": { "delivery": "aura", "look": "hearth", "pose": "mrs_applegate_side_cast" },
+    "fair_swap": { "delivery": "aura", "look": "physical", "pose": "mrs_applegate_side_haulup" },
     "toll_peck": { "delivery": "strike", "look": "physical", "release": 3 },
     "wing_clout": { "delivery": "strike", "look": "physical", "pose": "tollgoose_side_wing", "release": 3 },
     "preen": { "delivery": "strike", "look": "physical", "pose": "tollgoose_side_preen", "release": 6 },
@@ -152,7 +225,36 @@
     "tally": { "delivery": "aura", "look": "arcane" },
     "chip": { "delivery": "bolt", "look": "earth", "release": 3 },
     "reckon": { "delivery": "rain", "look": "arcane", "release": 3 },
-    "erupt": { "delivery": "groundBurst", "look": "earth", "release": 3 }
+    "erupt": { "delivery": "groundBurst", "look": "earth", "release": 3 },
+    "stubborn": { "delivery": "aura", "look": "earth", "pose": "old_tup_side_stubborn" },
+    "flock": { "delivery": "aura", "look": "physical", "pose": "grit_swallow_side_call" },
+    "fisher_pounce": { "delivery": "strike", "look": "physical", "release": 4 },
+    "shriek": { "delivery": "wave", "look": "arcane", "pose": "fisher_side_shriek", "release": 2 },
+    "spray": { "delivery": "bolt", "look": "earth", "pose": "pewling_side_spray", "release": 3 },
+    "hart_gather": { "delivery": "aura", "look": "frost", "pose": "pale_hart_side_gather" },
+    "hart_charge": { "delivery": "strike", "look": "physical", "pose": "pale_hart_side_charge", "release": 4, "tier": "strong", "sound": "hs_hart_hooves" },
+    "frost_ring": { "delivery": "groundBurst", "look": "frost", "pose": "pale_hart_side_hurt", "release": 1 },
+    "apple_toss": { "delivery": "bolt", "look": "hearth", "pose": "applejack_side_throw", "release": 4 },
+    "sit_down": { "delivery": "aura", "look": "physical", "pose": "applejack_side_sit", "sound": "hs_hiccup", "soundAt": 0.6 },
+    "old_country_air": { "delivery": "song", "look": "arcane", "pose": "wiz_side_playit", "release": 4 },
+    "nonsense_verse": { "delivery": "song", "look": "arcane", "pose": "wiz_side_sing", "release": 3 },
+    "kitchen_reel": { "delivery": "song", "look": "hearth", "pose": "wiz_side_playit", "release": 4 },
+    "played_for_the_governor": { "delivery": "aura", "look": "hearth", "pose": "wiz_side_sing" },
+    "cold_wind_blows": { "delivery": "song", "look": "frost", "pose": "wiz_side_playit", "release": 4 },
+    "lantern_man": { "delivery": "sigil", "look": "arcane", "pose": "wiz_side_mark", "release": 4 },
+    "harvest_reel": { "delivery": "song", "look": "growth", "pose": "wiz_side_jig", "release": 2 },
+    "great_fire": { "delivery": "song", "song": "finale", "look": "hearth", "pose": "wiz_side_flourish", "release": 4 },
+    "thunder_on_the_hills": { "delivery": "song", "look": "storm", "pose": "wiz_side_jig", "release": 2 },
+    "drinking_song": { "delivery": "song", "look": "hearth", "pose": "wiz_side_playit", "release": 4 },
+    "long_winter": { "delivery": "song", "song": "finale", "look": "frost", "pose": "wiz_side_flourish", "release": 4 },
+    "gather_round": { "delivery": "song", "song": "finale", "look": "arcane", "pose": "wiz_side_flourish", "release": 4 },
+    "freshet": { "delivery": "song", "look": "tide", "pose": "wiz_side_playit", "release": 4 },
+    "verse_no_sense": { "delivery": "song", "song": "turn", "look": "arcane", "pose": "wiz_side_flourish", "release": 4 },
+    "every_verse_at_once": { "delivery": "song", "song": "ring", "look": "arcane", "pose": "wiz_side_flourish", "release": 4 },
+    "old_hundredth": { "delivery": "song", "song": "finale", "look": "growth", "pose": "wiz_side_flourish", "release": 4 },
+    "whole_song": { "delivery": "song", "song": "finale", "look": "arcane", "pose": "wiz_side_flourish", "release": 4 },
+    "tune_up": { "delivery": "ward", "look": "arcane", "pose": "wiz_side_tuneup" },
+    "lullaby": { "delivery": "song", "song": "lullaby", "look": "arcane", "pose": "wiz_side_lullaby", "release": 4 }
   },
   "items": {
     "warm_cider": { "look": "hearth", "held": "cider_jug", "heldScale": 0.4 },

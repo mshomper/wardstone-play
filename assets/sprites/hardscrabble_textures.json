@@ -1,0 +1,272 @@
+{
+ "image": "hardscrabble_textures.png",
+ "emissive": "hardscrabble_textures_emissive.png",
+ "size": [
+  995,
+  143
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {},
+ "tiles": {
+  "granite_face": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "granite_face_holes": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "granite_top": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "granite_drill": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 16
+  },
+  "stone_mortared": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 66
+  },
+  "stone_mortared_cracked": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 66
+  },
+  "mortar_cap": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 16
+  },
+  "window_meeting": {
+   "x": 456,
+   "y": 1,
+   "w": 30,
+   "h": 60
+  },
+  "door_meeting": {
+   "x": 487,
+   "y": 1,
+   "w": 46,
+   "h": 76
+  },
+  "tally_board": {
+   "x": 534,
+   "y": 1,
+   "w": 64,
+   "h": 40
+  },
+  "ledge_rut": {
+   "x": 599,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "ledge_0": {
+   "x": 632,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "ledge_1": {
+   "x": 665,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "ledge_2": {
+   "x": 698,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_1": {
+   "x": 731,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_2": {
+   "x": 764,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_3": {
+   "x": 797,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_4": {
+   "x": 830,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_5": {
+   "x": 863,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_6": {
+   "x": 896,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_7": {
+   "x": 929,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_8": {
+   "x": 962,
+   "y": 1,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_9": {
+   "x": 1,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_10": {
+   "x": 34,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_11": {
+   "x": 67,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_12": {
+   "x": 100,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_13": {
+   "x": 133,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_grass_leaves_14": {
+   "x": 166,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_1": {
+   "x": 199,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_2": {
+   "x": 232,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_3": {
+   "x": 265,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_4": {
+   "x": 298,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_5": {
+   "x": 331,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_6": {
+   "x": 364,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_7": {
+   "x": 397,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_8": {
+   "x": 430,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_9": {
+   "x": 463,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_10": {
+   "x": 496,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_11": {
+   "x": 529,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_12": {
+   "x": 562,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_13": {
+   "x": 595,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "edge_ledge_leaf_litter_14": {
+   "x": 628,
+   "y": 78,
+   "w": 32,
+   "h": 32
+  },
+  "ice_sheet": {
+   "x": 661,
+   "y": 78,
+   "w": 64,
+   "h": 64
+  }
+ }
+}

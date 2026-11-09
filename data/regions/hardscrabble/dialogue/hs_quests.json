@@ -1,0 +1,471 @@
+{
+  "_note": "Hardscrabble's quests (decision 0350): the main beat, The Thayer Way, and the side quests. Drafts for Matt's friend to rewrite. Voices and facts are in docs/regions/hardscrabble.md; Obed's in docs/briefs/characters/obed-thayer.md. Narration has an empty speaker.",
+  "conversations": [
+    { "id": "hs_patch_near", "lines": [
+      { "who": "", "text": "There's a gap in the lane's north wall, where the frost has pushed the stones out into the road. The cold is coming through it like a draught under a door." },
+      { "who": "eldwin", "text": "And something's come through with it." }
+    ] },
+    { "id": "hs_patch", "lines": [
+      { "who": "", "text": "The stones the frost pushed out lie in the road where they fell." },
+      { "who": "eldwin", "text": "Back you go, then. All of you." }
+    ], "onEnd": [{ "scene": "patch_freeze" }, { "dialogue": "hs_patch_done" }] },
+    { "id": "hs_patch_done", "lines": [
+      { "who": "", "text": "The stones sit in the gap any which way, rimed white, and the draught stops." },
+      { "who": "eldwin", "text": "That'll keep the cold out. It won't win any prizes." }
+    ] },
+
+    { "id": "hs_q_walls_coyle", "lines": [
+      { "who": "eldwin", "text": "Who keeps the walls up here?" },
+      { "who": "abner_coyle", "text": "Mr. Thayer. Obed Thayer. He walls for nobody, he says." },
+      { "who": "abner_coyle", "face": "concerned", "text": "He'll tell you about it. He's told me." }
+    ], "onEnd": [{ "setFlag": "heard_of_obed" }] },
+    { "id": "hs_q_walls_benoni", "lines": [
+      { "who": "eldwin", "text": "Who laid the walls along the lane?" },
+      { "who": "benoni_fogg", "text": "Thayers. Four of them, one after another. There's only Obed left." },
+      { "who": "benoni_fogg", "face": "grin", "text": "He walls for nobody. Ask him and he'll tell you about it. Bring a stool." }
+    ], "onEnd": [{ "setFlag": "heard_of_obed" }] },
+    { "id": "hs_q_walls_tamsin", "lines": [
+      { "who": "eldwin", "text": "Who keeps the walls?" },
+      { "who": "tamsin_gove", "text": "Obed Thayer. Out past the end of the street." },
+      { "who": "tamsin_gove", "text": "He walls for nobody. He'll tell you about it. At length, for him. Four words." }
+    ], "onEnd": [{ "setFlag": "heard_of_obed" }] },
+    { "id": "hs_q_walls_sukey", "lines": [
+      { "who": "eldwin", "text": "Who mends the walls here?" },
+      { "who": "sukey_varnum", "text": "Mr. Thayer. He walls for nobody. He told me." },
+      { "who": "sukey_varnum", "text": "He talks to the stones. I talk to the Pikes. Mama says that's different, but it isn't." }
+    ], "onEnd": [{ "setFlag": "heard_of_obed" }] },
+    { "id": "hs_q_walls_lucy", "lines": [
+      { "who": "eldwin", "text": "Who keeps the walls?" },
+      { "who": "lucy_shattuck", "text": "Obed Thayer. He walls for nobody. He'll tell you about it." },
+      { "who": "lucy_shattuck", "face": "determined", "text": "He did the low field wall for Truman's father. It's still standing. Everything else is on the wagon." }
+    ], "onEnd": [{ "setFlag": "heard_of_obed" }] },
+
+    { "id": "hs_obed_early", "lines": [
+      { "who": "", "text": "The man in the yard doesn't look up from the stone he's turning over." },
+      { "who": "obed", "face": "gruff", "text": "Working." }
+    ] },
+    { "id": "hs_obed_patch_2", "lines": [
+      { "who": "", "text": "The patch settles. A stone shifts, then the next, and the whole run of them sinks a finger's width and lies still, like a dog that has turned round twice and lain down." },
+      { "who": "", "text": "Obed watches it for a long moment. He says nothing about it." },
+      { "who": "obed", "text": "Your hearting's all at the front. Your throughs don't go through. And it's glued." },
+      { "who": "eldwin", "text": "Fair." },
+      { "who": "obed", "face": "gruff", "text": "It isn't. Fair's a word for work." },
+      { "who": "eldwin", "text": "You'll be Mr. Thayer." },
+      { "who": "obed", "text": "Obed." },
+      { "who": "eldwin", "text": "There's frost on the hill above the village. It's coming down into the pastures." },
+      { "who": "obed", "text": "Hobble Hill. That's Coyle's wall." },
+      { "who": "obed", "text": "Company bought the hill. The fence man took the old stretch down by the pound and put up his own. Straight as a fence. Mortared." },
+      { "who": "obed", "text": "I told him it'd crack by Christmas." },
+      { "who": "eldwin", "text": "Did it?" },
+      { "who": "obed", "text": "It cracked in a week." },
+      { "who": "obed", "face": "gruff", "text": "I'm told to keep off the hill. So I keep off it." }
+    ], "onEnd": [{ "setFlag": "met_obed" }] },
+
+    { "id": "hs_hill_wall", "lines": [
+      { "who": "", "text": "The frost is thick up here, and thickest along the top of the hill, where the ring wall runs crooked along the skyline as old walls do." },
+      { "who": "", "text": "Except for one stretch, beside the pound. That runs dead straight, squared and grey with mortar, and it's split from end to end. The cold is coming through the cracks." },
+      { "who": "eldwin", "text": "Oh, that's no good at all." },
+      { "who": "", "text": "Inside the pound, something hits the wall. Then again." }
+    ], "onEnd": [{ "setFlag": "coyle_wall_seen" }] },
+    { "id": "hs_hart_after", "lines": [
+      { "who": "", "text": "The stag goes to Coyle's wall and stands with its nose to the mortar, as if somebody had told it a door would open there." },
+      { "who": "eldwin", "text": "You want to go home, and the wall won't have you." },
+      { "who": "eldwin", "text": "I can patch a wall. I can't lay one. Not the way this wants." },
+      { "who": "eldwin", "text": "I know who can, though. Wait there." }
+    ], "onEnd": [{ "setFlag": "heard:HART" }] },
+    { "id": "hs_hart_look", "lines": [
+      { "who": "", "text": "The stag stands at the wall, waiting. It lets Eldwin come close, and doesn't look at him." },
+      { "who": "eldwin", "if": { "notFlags": ["obed_on_hill"] }, "text": "I'm fetching him. He'll come. He'll complain, but he'll come." },
+      { "who": "eldwin", "if": { "flags": ["obed_on_hill"] }, "text": "He's here. He's slow up hills, but he's here." }
+    ] },
+
+    { "id": "hs_obed_wall", "lines": [
+      { "who": "", "text": "Obed stands a long time looking at the stag, and the stag looks at the wall." },
+      { "who": "obed", "text": "Hm." },
+      { "who": "obed", "face": "gruff", "text": "That's not a wall. That's a lid." },
+      { "who": "", "text": "He takes his cap off, puts it back on, and starts on Coyle's wall." }
+    ], "onEnd": [{ "scene": "thayer_wall" }] },
+    { "id": "hs_wall_down", "lines": [
+      { "who": "", "text": "He breaks the mortar out with the sledge, a course at a time, throws it down the hill, and sorts the stone into heaps only he understands." },
+      { "who": "", "text": "He doesn't hurry, and he doesn't stop." }
+    ] },
+    { "id": "hs_wall_laid", "lines": [
+      { "who": "", "text": "He lays it again dry, from the footing up. There isn't a trowel of mortar in it." },
+      { "who": "", "text": "It doesn't run straight. It goes the way the ground goes, and bends where the stone wants to bend." },
+      { "who": "", "text": "Near the middle he sets one stone short and leaves a hand's width open at the bottom, facing north. He doesn't measure it. He doesn't look at it again." }
+    ] },
+    { "id": "hs_wall_spit", "lines": [
+      { "who": "", "text": "The last stone he turns over twice in his hands. Then he spits on it, and sets it." },
+      { "who": "obed", "text": "There." }
+    ] },
+    { "id": "hs_wall_hart", "lines": [
+      { "who": "", "text": "The stag walks to the gap and puts its nose down to it, as if it could smell the far side." }
+    ] },
+    { "id": "hs_wall_hart_gone", "lines": [
+      { "who": "", "text": "Then it goes through, and is gone." }
+    ] },
+    { "id": "hs_obed_stone", "lines": [
+      { "who": "obed", "text": "Who set this?" },
+      { "who": "", "text": "He puts his hand flat on the stone, the way you'd put a hand on a horse, and looks at it for a long time." },
+      { "who": "obed", "text": "That's Thayer work." },
+      { "who": "obed", "face": "quiet", "text": "That's our work." },
+      { "who": "", "text": "Eldwin says nothing." }
+    ], "onEnd": [{ "banner": ["The wardstones answer", "Hobble Hill and the Long Wall. Put a hand on a lit stone to go to the other."] }, { "dialogue": "hs_obed_after_stone" }] },
+    { "id": "hs_obed_after_stone", "lines": [
+      { "who": "obed", "text": "Your patch on the lane. I've not forgotten it." },
+      { "who": "obed", "text": "Come down when you're done looking." }
+    ] },
+    { "id": "hs_stone_alone", "lines": [
+      { "who": "", "text": "The stone's marks come up out of the cold, lit from inside, and stay lit." }
+    ], "onEnd": [{ "banner": ["The wardstones answer", "Hobble Hill and the Long Wall. Put a hand on a lit stone to go to the other."] }] },
+    { "id": "hs_ws_cold", "lines": [
+      { "who": "", "text": "The stone is cold. Coyle's mortar has cracked right up against it, and the frost comes through beside it." },
+      { "who": "eldwin", "text": "Asleep. And no wonder." }
+    ] },
+    { "id": "ws_touch", "lines": [
+      { "who": "", "text": "The stone is warm under Eldwin's hand. A long way off, another one answers." }
+    ] },
+    { "id": "ws_touch_alone", "lines": [
+      { "who": "", "text": "The stone is warm under Eldwin's hand. Nothing answers it yet." }
+    ] },
+
+    { "id": "hs_obed_lesson", "lines": [
+      { "who": "obed", "text": "That's your patch." },
+      { "who": "eldwin", "text": "It is." },
+      { "who": "obed", "text": "You made it. You'll unmake it." },
+      { "who": "", "text": "He takes the patch down himself, stone by stone, and lays the stones out along the verge, biggest first. The ice in them is already going." },
+      { "who": "obed", "face": "gruff", "text": "No magic. Hands." }
+    ], "onEnd": [{ "scene": "lesson" }] },
+    { "id": "hs_lesson_1", "lines": [
+      { "who": "obed", "text": "Big ones at the bottom. That one." },
+      { "who": "", "text": "It's the size of a loaf, and heavier than it looks." },
+      { "choice": [
+        { "text": "Stand it on its end. It'll fill more of the gap.", "next": "hs_lesson_1a" },
+        { "text": "Lay it flat, the long side into the wall.", "next": "hs_lesson_1b" },
+        { "text": "Lay it flat, the long side along the wall.", "next": "hs_lesson_1c" }
+      ] }
+    ] },
+    { "id": "hs_lesson_1a", "lines": [
+      { "who": "obed", "face": "gruff", "text": "On its end it's a gravestone. Lay it down. Length into the wall." },
+      { "who": "", "text": "Eldwin lays it down." }
+    ] },
+    { "id": "hs_lesson_1b", "lines": [
+      { "who": "obed", "text": "Length in. Right." },
+      { "who": "obed", "text": "It rocks. You've set it on its belly. Turn it over." },
+      { "who": "", "text": "Eldwin turns it over. It stops rocking." }
+    ] },
+    { "id": "hs_lesson_1c", "lines": [
+      { "who": "obed", "text": "Along the face, the first frost walks it out into the road. Length in." },
+      { "who": "", "text": "Eldwin turns it." }
+    ] },
+    { "id": "hs_lesson_2", "lines": [
+      { "who": "obed", "text": "Now the middle." },
+      { "choice": [
+        { "text": "One big stone. Fewer to set.", "next": "hs_lesson_2a" },
+        { "text": "Fill it with the small stones.", "next": "hs_lesson_2b" },
+        { "text": "Leave it hollow. Nobody sees the middle.", "next": "hs_lesson_2c" }
+      ] }
+    ] },
+    { "id": "hs_lesson_2a", "lines": [
+      { "who": "obed", "text": "Then it's a big stone with nothing round it. Hearting. Small stuff." },
+      { "who": "", "text": "Eldwin fills the middle with the small stones." }
+    ] },
+    { "id": "hs_lesson_2b", "lines": [
+      { "who": "obed", "text": "Small stuff first. Always the small stuff first." },
+      { "who": "obed", "text": "Not like seed in a furrow. Pack it. Every one touching." },
+      { "who": "", "text": "Eldwin packs it." }
+    ] },
+    { "id": "hs_lesson_2c", "lines": [
+      { "who": "obed", "face": "gruff", "text": "The wall sees it." },
+      { "who": "", "text": "Eldwin fills it." }
+    ] },
+    { "id": "hs_lesson_3", "lines": [
+      { "who": "obed", "text": "That long flat one. That's a through." },
+      { "choice": [
+        { "text": "Lay it along the top, so it looks tidy.", "next": "hs_lesson_3a" },
+        { "text": "Through, from one face of the wall to the other.", "next": "hs_lesson_3b" },
+        { "text": "Halfway in. The rest can go in later.", "next": "hs_lesson_3c" }
+      ] }
+    ] },
+    { "id": "hs_lesson_3a", "lines": [
+      { "who": "obed", "text": "Tidy's for curtains. Through. Face to face." },
+      { "who": "", "text": "Eldwin puts it through." }
+    ] },
+    { "id": "hs_lesson_3b", "lines": [
+      { "who": "obed", "text": "Through. Right." },
+      { "who": "obed", "text": "You've got it sloping in. Water runs in, frost follows it. Tip it out." },
+      { "who": "", "text": "Eldwin tips it out a hair." }
+    ] },
+    { "id": "hs_lesson_3c", "lines": [
+      { "who": "obed", "text": "There's no later in a wall. Through." },
+      { "who": "", "text": "Eldwin puts it through." }
+    ] },
+    { "id": "hs_lesson_gap", "lines": [
+      { "who": "obed", "if": { "notFlags": ["lesson_hint_gap"] }, "text": "Last course but one. What do you leave?" },
+      { "who": "obed", "if": { "flags": ["lesson_hint_gap"] }, "face": "gruff", "text": "North. You watched me do it." },
+      { "choice": [
+        { "text": "Nothing. Close it up tight.", "if": { "notFlags": ["lesson_hint_gap"] }, "next": "hs_lesson_gap_shut" },
+        { "text": "A hand's gap, facing south, out of the wind.", "if": { "notFlags": ["lesson_hint_gap"] }, "next": "hs_lesson_gap_south" },
+        { "text": "A hand's gap, facing north.", "next": "hs_lesson_gap_north", "then": [{ "setFlag": "lesson_north" }] }
+      ] }
+    ] },
+    { "id": "hs_lesson_gap_shut", "lines": [
+      { "who": "obed", "text": "You've shut it." },
+      { "who": "eldwin", "text": "Isn't that what a wall is for?" },
+      { "who": "obed", "text": "Not that part." }
+    ] },
+    { "id": "hs_lesson_gap_south", "lines": [
+      { "who": "obed", "text": "South." },
+      { "who": "obed", "face": "gruff", "text": "Who told you south?" },
+      { "who": "eldwin", "text": "The wind, I thought." },
+      { "who": "obed", "text": "The wind's not laying this." }
+    ] },
+    { "id": "hs_lesson_gap_north", "lines": [
+      { "who": "", "text": "Eldwin sets the stone a hand short, and leaves the gap at the bottom, facing north." },
+      { "who": "obed", "text": "Lets it breathe. Don't ask me why. My grandfather didn't know either." }
+    ] },
+    { "id": "hs_lesson_last", "lines": [
+      { "who": "obed", "if": { "notFlags": ["lesson_hint_spit"] }, "text": "Last stone." },
+      { "who": "obed", "if": { "flags": ["lesson_hint_spit"] }, "text": "Last stone. You've seen it done." },
+      { "choice": [
+        { "text": "Set it.", "if": { "notFlags": ["lesson_hint_spit"] }, "next": "hs_lesson_last_forgot" },
+        { "text": "Spit on it, then set it.", "next": "hs_lesson_last_spit", "then": [{ "setFlag": "lesson_spat" }] }
+      ] }
+    ] },
+    { "id": "hs_lesson_last_forgot", "lines": [
+      { "who": "", "text": "Eldwin lifts it into place. Obed's hand comes down on it before it's set." },
+      { "who": "obed", "text": "You've forgotten something." }
+    ] },
+    { "id": "hs_lesson_last_spit", "lines": [
+      { "who": "", "text": "Eldwin spits on the last stone, and sets it." },
+      { "who": "", "text": "Obed watches him do it with something close to approval." }
+    ] },
+    { "id": "hs_lesson_done", "lines": [
+      { "who": "obed", "text": "Fair." },
+      { "who": "", "text": "He looks along the patch again." },
+      { "who": "obed", "text": "Nearly." },
+      { "who": "", "text": "The wall doesn't settle this time. It doesn't need to." }
+    ], "onEnd": [{ "setFlag": "obed_lesson_done" }] },
+    { "id": "hs_lesson_night", "lines": [
+      { "who": "", "text": "Obed goes home without another word. That night Eldwin sleeps in the meetinghouse, by the stove, among the empty pews." }
+    ] },
+
+    { "id": "hs_asa_postage", "lines": [
+      { "who": "eldwin", "text": "What if somebody else paid the postage?" },
+      { "who": "asa_kimball", "text": "Then it'd be paid. That's all postage wants." },
+      { "who": "asa_kimball", "text": "A dozen eggs. I don't take coin. Nobody up here has any, and Patience won't carry it." },
+      { "who": "asa_kimball", "text": "The Varnum girl has hens. A great many hens." }
+    ], "onEnd": [{ "setFlag": "postage_asked" }] },
+    { "id": "hs_sukey_eggs", "lines": [
+      { "who": "eldwin", "text": "Could I have a dozen eggs?" },
+      { "who": "sukey_varnum", "text": "They're the Abbotts' eggs. The Abbotts would want something for them." },
+      { "who": "eldwin", "text": "What would the Abbotts want?" },
+      { "who": "sukey_varnum", "text": "Something for the Merrills. His leg's bad in the cold. Mama puts a mustard plaster on it, and we've run out." },
+      { "choice": [
+        { "text": "Here. A mustard plaster.", "if": { "has": { "mustard_plaster": 1 } }, "next": "hs_sukey_eggs_yes", "then": [{ "take": { "mustard_plaster": 1 } }, { "setFlag": "has_eggs" }] },
+        { "text": "I'll find one.", "next": "hs_sukey_eggs_later", "then": [{ "setFlag": "eggs_asked" }] }
+      ] }
+    ] },
+    { "id": "hs_sukey_eggs_yes", "lines": [
+      { "who": "sukey_varnum", "text": "Twelve. I counted them twice. Don't drop any, they're the Abbotts'." },
+      { "who": "", "text": "She puts the plaster on the Merrills there and then, and he stands for it." }
+    ] },
+    { "id": "hs_sukey_eggs_later", "lines": [
+      { "who": "sukey_varnum", "text": "Mr. Fogg sells them. He sells everything that isn't boots, as well as boots." }
+    ] },
+    { "id": "hs_asa_paid", "lines": [
+      { "who": "", "text": "Asa counts the eggs, which takes a while, because he counts them twice and then once more for Patience." },
+      { "who": "asa_kimball", "text": "Paid. Never had one paid by a stranger." },
+      { "who": "", "text": "He gives Eldwin the letter. It's addressed in a careful hand: Obed Thayer, Hardscrabble." },
+      { "who": "asa_kimball", "text": "He won't open it with anybody looking. He never opens anything with anybody looking." },
+      { "who": "eldwin", "text": "Then I won't look." }
+    ], "onEnd": [{ "setFlag": ["postage_paid", "has_letter"] }] },
+    { "id": "hs_letter_leave", "lines": [
+      { "who": "", "text": "Eldwin sets the letter on top of the yard wall, and puts a flat stone on it against the wind." },
+      { "who": "", "if": { "flags": ["joined:obed"] }, "text": "Obed, behind him, looks at the wall and doesn't say anything." }
+    ], "onEnd": [{ "setFlag": "letter_left" }, { "reward": { "title": "Postage Due", "xp": 120 } }] },
+    { "id": "hs_letter_read", "lines": [
+      { "who": "", "text": "The letter is back on the wall, under its stone. It's been opened, and read, and folded small." },
+      { "who": "", "text": "Pa. I'm at the furnace at Furnace Hollow. They feed you and pay in company paper. I laid a firebrick course on the stack Tuesday and the foreman said it was fair work. I thought you'd want to know. Elias." },
+      { "who": "", "text": "Eldwin folds it again the way it was, and puts the stone back on it." }
+    ], "onEnd": [{ "setFlag": "letter_read" }] },
+
+    { "id": "hs_herd_holts", "lines": [
+      { "who": "", "text": "The Holts looks at Eldwin, and at the hill, and goes back to what used to be a bonnet." },
+      { "choice": [
+        { "text": "Carry the bonnet up the hill, and let the Holts follow it.", "next": "hs_herd_holts_go", "then": [{ "setFlag": "penned:holts" }] },
+        { "text": "Leave the Holts be." }
+      ] }
+    ] },
+    { "id": "hs_herd_holts_go", "lines": [
+      { "who": "", "text": "Eldwin carries what's left of the bonnet up the Sheep Walk. The Holts follows it all the way, grumbling, past the wall and into the pound." }
+    ] },
+    { "id": "hs_herd_wait", "lines": [
+      { "who": "", "text": "Not before the Holts. Sukey was clear about that." }
+    ] },
+    { "id": "hs_herd_pikes", "lines": [
+      { "who": "", "text": "The Pikes bites Eldwin's sleeve, once, to show she could, and then goes up the hill after the Holts." }
+    ], "onEnd": [{ "setFlag": "penned:pikes" }] },
+    { "id": "hs_herd_dows", "lines": [
+      { "who": "", "text": "The Dows leans on Eldwin all the way up the Sheep Walk, which is slower than walking, but she gets there." }
+    ], "onEnd": [{ "setFlag": "penned:dows" }] },
+    { "id": "hs_herd_merrills", "lines": [
+      { "who": "", "text": "The Merrills goes up the hill at a lame horse's pace, with Eldwin's hand on his neck the whole way." }
+    ], "onEnd": [{ "setFlag": "penned:merrills" }] },
+    { "id": "hs_herd_abbotts", "lines": [
+      { "who": "", "text": "Eldwin herds twelve Abbotts up the Sheep Walk. It takes most of an hour, and he arrives with eleven. The twelfth is already in the pound, waiting." }
+    ], "onEnd": [{ "setFlag": "penned:abbotts" }] },
+    { "id": "hs_herd_lowells", "lines": [
+      { "who": "", "text": "The Lowells listens to Eldwin explain the plan, then goes up the hill by himself, some other way, and is in the pound first." }
+    ], "onEnd": [{ "setFlag": "penned:lowells" }] },
+    { "id": "hs_look_pound", "lines": [
+      { "who": "", "if": { "notFlags": ["owns_a_hen"] }, "text": "Back in the pound, where Sukey says they belong. Nobody seems to mind." },
+      { "who": "", "if": { "flags": ["owns_a_hen"] }, "text": "Back in the pound. One of the Abbotts is Eldwin's. She doesn't know it." }
+    ] },
+    { "id": "hs_sukey_pound_full", "lines": [
+      { "who": "sukey_varnum", "text": "You did the Abbotts. All twelve?" },
+      { "who": "eldwin", "text": "All twelve. One of them went ahead." },
+      { "who": "sukey_varnum", "text": "That's the Abbotts." },
+      { "who": "sukey_varnum", "text": "You can have a hen. Whichever you like. Not the speckled one." },
+      { "who": "eldwin", "text": "Would she rather stay with the others?" },
+      { "who": "sukey_varnum", "text": "Yes." },
+      { "who": "eldwin", "text": "Then I'll leave her where she is, and know she's mine." },
+      { "who": "sukey_varnum", "face": "cross", "text": "That isn't how hens work." },
+      { "who": "sukey_varnum", "text": "She's yours, though. I'll write it on the barn door." }
+    ], "onEnd": [{ "setFlag": ["pound_done", "owns_a_hen"] }, { "reward": { "title": "The Pound", "xp": 140 } }] },
+
+    { "id": "hs_benoni_bear", "lines": [
+      { "who": "benoni_fogg", "text": "You wouldn't be going down past the cellar holes?" },
+      { "who": "eldwin", "text": "I might be." },
+      { "who": "benoni_fogg", "text": "There's a bear sitting in the road down there. He's been at the windfalls in the old dooryards till he's drunk on them." },
+      { "who": "benoni_fogg", "text": "I want to walk that road south and see the Dows about their boots. Last pair I made them, they'll be through the heels by now. But I'm not walking past a drunk bear." },
+      { "who": "eldwin", "text": "I'll have a word with him." },
+      { "who": "benoni_fogg", "face": "grin", "text": "A word. Take boots." }
+    ], "onEnd": [{ "setFlag": "applejack_asked" }] },
+    { "id": "hs_benoni_bear_done", "lines": [
+      { "who": "eldwin", "text": "The bear's gone off into the birches." },
+      { "who": "benoni_fogg", "text": "Drunk?" },
+      { "who": "eldwin", "text": "Hiccupping." },
+      { "who": "benoni_fogg", "face": "grin", "text": "Then I'll give him a day to sleep it off, and go." },
+      { "who": "benoni_fogg", "text": "Here. Stone for your pockets and something for your boots. Don't argue. It goes toward your next resoling." }
+    ], "onEnd": [{ "setFlag": "applejack_done" }, { "reward": { "title": "Applejack", "xp": 160, "items": { "old_wall_stone": 1, "hag_stone": 1, "dubbin": 2 } } }] },
+
+    { "id": "hs_tamsin_wool", "lines": [
+      { "who": "tamsin_gove", "text": "I'm short of wool for the Shattucks' coat. Good wool. What's left in the village has been through three coats already." },
+      { "who": "eldwin", "text": "Where would I find a fleece?" },
+      { "who": "tamsin_gove", "if": { "flags": ["oneshort_done"] }, "text": "Hosea Lamb's down at the pens. He'd spare you one. You found him his forty-third, I hear." },
+      { "who": "tamsin_gove", "text": "Or Mr. Coyle's sheep on the Sheep Walk are due for shearing. He won't mind. He'll write it down." },
+      { "who": "tamsin_gove", "text": "Bring me a fleece and I'll show you what I do. The first one's on me." }
+    ], "onEnd": [{ "setFlag": "mending_asked" }] },
+    { "id": "hs_hosea_fleece", "lines": [
+      { "who": "eldwin", "text": "Could you spare a fleece, for Tamsin Gove?" },
+      { "who": "hosea_lamb", "text": "You fetched her back over the wall. You can have her coat." },
+      { "who": "", "text": "He shears the ewe that went over the wall, there and then, in about the time it takes to say so." },
+      { "who": "hosea_lamb", "text": "She won't miss it till Thursday. Weather's turning, mind." }
+    ], "onEnd": [{ "setFlag": "has_fleece" }] },
+    { "id": "hs_sheep_run", "lines": [
+      { "who": "", "text": "The sheep looks at Eldwin, decides against him, and trots off up the lane." }
+    ], "onEnd": [{ "setFlag": "sheep_ran" }] },
+    { "id": "hs_sheep_caught", "lines": [
+      { "who": "", "text": "He corners her against the wall at the second try. Coyle's shears are hanging on the nearest stake, with a tag on them: COMPANY PROPERTY." },
+      { "who": "", "text": "She stands for the shears with the air of somebody who expected worse." }
+    ], "onEnd": [{ "setFlag": "has_fleece" }] },
+    { "id": "hs_sheep_look", "lines": [
+      { "who": "", "text": "One of the land company's sheep. It looks at Eldwin as if he were a fence." }
+    ] },
+    { "id": "hs_tamsin_fleece", "lines": [
+      { "who": "tamsin_gove", "text": "That'll do. That'll more than do." },
+      { "who": "", "text": "She finishes the Shattucks' coat while he watches, talking round the pins in her mouth the whole time." },
+      { "who": "tamsin_gove", "text": "Now. Something of yours." },
+      { "who": "tamsin_gove", "text": "No charge for the first. After that I'm as dear as anybody." }
+    ], "onEnd": [{ "sewFree": true }, { "setFlag": "mending_done" }, { "reward": { "title": "Mending for the Road", "xp": 100 } }] },
+
+    { "id": "hs_coyle_bounds", "lines": [
+      { "who": "abner_coyle", "text": "The deed to the hill gives its bounds the old way. Listen to this." },
+      { "who": "abner_coyle", "text": "'From the heap of stones at the brook, to the split boulder, to the stone with the three marks, and so along the wall as it stands.'" },
+      { "who": "abner_coyle", "face": "concerned", "text": "I'd like each mark found and staked, for the ledger. Only the Sheep Walk is full of things that bite, and I'm a land agent." },
+      { "who": "eldwin", "text": "I'll walk them for you." }
+    ], "onEnd": [{ "setFlag": "bounds_asked" }] },
+    { "id": "hs_bound_heap", "lines": [
+      { "who": "", "text": "At the foot of the walk, where a thread of a brook comes out under the wall, there's a heap of stones, very old and grown over with moss." },
+      { "who": "eldwin", "text": "The heap of stones at the brook. One." }
+    ], "onEnd": [{ "setFlag": "bound:heap" }] },
+    { "id": "hs_bound_boulder", "lines": [
+      { "who": "", "text": "The boulder is split clean through, as if somebody had laid an axe to it, and a birch is growing in the split." },
+      { "who": "eldwin", "text": "The split boulder. Two." }
+    ], "onEnd": [{ "setFlag": "bound:boulder" }] },
+    { "id": "hs_bound_marks", "lines": [
+      { "who": "", "text": "Half buried in the turf: a stone with three crossed lines cut in it. Coyle's survey stakes go straight past it, an arm's length off." },
+      { "who": "eldwin", "text": "The stone with the three marks. Three. You walked right by it, Mr. Coyle." }
+    ], "onEnd": [{ "setFlag": "bound:marks" }] },
+    { "id": "hs_bound_wall", "lines": [
+      { "who": "", "text": "And so along the wall as it stands. The wall as it stands is Obed's: dry, crooked, with its hand's gap low down, facing north." },
+      { "who": "eldwin", "text": "As it stands." }
+    ], "onEnd": [{ "setFlag": "bound:wall" }] },
+    { "id": "hs_coyle_bounds_done", "lines": [
+      { "who": "eldwin", "text": "The heap at the brook, the split boulder, the three marks. And the wall as it stands." },
+      { "who": "abner_coyle", "text": "As it stands." },
+      { "who": "", "text": "He reads the deed through. Then he reads it through again." },
+      { "who": "abner_coyle", "face": "concerned", "text": "The wall I took down was in the deed. I took down a bound." },
+      { "who": "abner_coyle", "text": "Well. This one's in it now. I'll leave it as it stands." },
+      { "who": "abner_coyle", "if": { "flags": ["joined:obed"] }, "text": "Mr. Thayer. I'll leave your wall alone." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Hm." },
+      { "who": "abner_coyle", "if": { "notFlags": ["joined:obed"] }, "text": "I'll tell Mr. Thayer so myself. I expect he'll say 'Hm.'" },
+      { "who": "abner_coyle", "text": "Take these. Good boots. I've never once been comfortable in them." }
+    ], "onEnd": [{ "setFlag": "bounds_done" }, { "reward": { "title": "Coyle's Bounds", "xp": 150 } }, { "gear": { "slot": "boots", "rarity": "stout", "name": "Coyle's Good Boots", "line": "Never comfortable, he says. They walked his bounds." } }] },
+
+    { "id": "hs_lucy_wagon", "lines": [
+      { "who": "lucy_shattuck", "text": "Will you help us load? Once, and properly, and then it's done." },
+      { "who": "eldwin", "text": "Gladly." },
+      { "who": "lucy_shattuck", "face": "determined", "text": "Everything by the door goes on. Don't ask Truman. Truman will have reasons." }
+    ], "onEnd": [{ "setFlag": "wagon_asked" }] },
+    { "id": "hs_wagon", "lines": [
+      { "who": "", "if": { "notFlags": ["wagon_asked"] }, "text": "A farm wagon, half loaded: a feather bed, a box of crockery, a sack of seed potatoes. There's room on the back for a good deal more." },
+      { "who": "", "if": { "flags": ["wagon_asked"] }, "text": "The wagon. Lucy has put the next thing by the door." },
+      { "choice": [
+        { "text": "Carry out the churn.", "if": { "flags": ["wagon_asked"], "notFlags": ["wagon:churn"] }, "next": "hs_wagon_churn", "then": [{ "setFlag": "wagon:churn" }] },
+        { "text": "Carry out the clock.", "if": { "flags": ["wagon:churn"], "notFlags": ["wagon:clock"] }, "next": "hs_wagon_clock", "then": [{ "setFlag": "wagon:clock" }] },
+        { "text": "Carry out the cradle.", "if": { "flags": ["wagon:clock"], "notFlags": ["wagon:cradle"] }, "next": "hs_wagon_cradle", "then": [{ "setFlag": "wagon:cradle" }] },
+        { "text": "Carry out the chair.", "if": { "flags": ["wagon:cradle"], "notFlags": ["wagon_empty"] }, "next": "hs_wagon_chair" },
+        { "text": "Not yet.", "if": { "flags": ["wagon_asked"] } }
+      ] }
+    ] },
+    { "id": "hs_wagon_churn", "lines": [
+      { "who": "", "text": "Eldwin carries the churn out and sets it on the back of the wagon." },
+      { "who": "truman_shattuck", "text": "Not the churn. That was my mother's." },
+      { "who": "truman_shattuck", "face": "worried", "text": "It'll get shaken. Butter never comes right in a churn that's been shaken." },
+      { "who": "", "text": "He carries it back into the house." }
+    ] },
+    { "id": "hs_wagon_clock", "lines": [
+      { "who": "", "text": "Eldwin carries the clock out, wrapped in a quilt, and lays it in the wagon." },
+      { "who": "truman_shattuck", "text": "It'll stop on the road. A clock doesn't like a road." },
+      { "who": "lucy_shattuck", "text": "It stops in the house." },
+      { "who": "truman_shattuck", "text": "It stops in the house when it wants to." },
+      { "who": "", "text": "He carries it back in." }
+    ] },
+    { "id": "hs_wagon_cradle", "lines": [
+      { "who": "", "text": "Eldwin brings out the cradle. It's small and very old, and the rockers are worn flat underneath." },
+      { "who": "truman_shattuck", "text": "That was mine. My father's before that." },
+      { "who": "eldwin", "text": "It'll travel well. It's made to rock." },
+      { "who": "truman_shattuck", "face": "worried", "text": "It's made to stay where it's put." },
+      { "who": "", "text": "He takes it in himself." }
+    ] },
+    { "id": "hs_wagon_chair", "lines": [
+      { "who": "", "text": "The last thing by the door is Truman's father's chair. Eldwin carries it out." },
+      { "who": "", "text": "When he gets to the wagon, it's nearly empty. The feather bed is gone. So is the crockery." },
+      { "who": "", "text": "Lucy is coming back out of the house with nothing in her arms." },
+      { "who": "", "text": "She and Truman look at each other over the chair." },
+      { "who": "lucy_shattuck", "text": "Well." },
+      { "who": "truman_shattuck", "text": "Well." },
+      { "who": "", "text": "Truman takes the chair in. Lucy takes the last sack of potatoes. Then Truman goes out to the horse, and unhitches him." },
+      { "who": "lucy_shattuck", "text": "Here. This didn't fit anywhere either." },
+      { "who": "", "text": "It's the key to the clock." }
+    ], "onEnd": [{ "setFlag": "wagon_empty" }, { "reward": { "title": "What Goes on the Wagon", "xp": 120 } }, { "gear": { "slot": "keepsake", "rarity": "stout", "name": "The Shattucks' Clock Key", "line": "The clock stays. The key was going to go." } }] },
+
+    { "id": "hs_obed_letters", "lines": [
+      { "who": "", "text": "A stack of letters on the kitchen shelf, tied with garden twine. They're all addressed the same, and none of them has a stamp or a mark from the post." },
+      { "who": "", "text": "Eldwin doesn't touch them." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Those stay where they are." }
+    ] }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+ "id": "applejack",
+ "title": "Applejack",
+ "side": true,
+ "blurb": "Benoni Fogg wants to walk the road south, and a drunk bear is sitting in it.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "A bear in the road",
+   "objective": "",
+   "done": {
+    "flags": [
+     "applejack_asked"
+    ]
+   },
+   "sets": [
+    "applejack_asked"
+   ],
+   "auto": [
+    {
+     "talk": "benoni_fogg"
+    },
+    {
+     "talk": "benoni_fogg"
+    }
+   ]
+  },
+  {
+   "id": "bear",
+   "title": "A bear in the road",
+   "objective": "A bear is sitting in a cellar hole by the road south, drunk on windfalls. Settle him.",
+   "done": {
+    "flags": [
+     "beat_applejack"
+    ]
+   },
+   "sets": [
+    "beat_applejack"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Benoni (doorway)"
+   },
+   "auto": [
+    {
+     "go": "hemlock-brook"
+    },
+    {
+     "go": "cellar-holes"
+    },
+    {
+     "fight": "ch-applejack"
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "title": "The road south",
+   "objective": "Tell Benoni the road south is clear.",
+   "done": {
+    "flags": [
+     "applejack_done"
+    ]
+   },
+   "sets": [
+    "applejack_done"
+   ],
+   "skip": {
+    "area": "cellar-holes",
+    "spot": "Applejack's hole"
+   },
+   "auto": [
+    {
+     "go": "hemlock-brook"
+    },
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "talk": "benoni_fogg"
+    }
+   ]
+  }
+ ]
+}

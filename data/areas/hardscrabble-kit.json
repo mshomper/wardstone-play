@@ -1,0 +1,573 @@
+{
+ "version": 1,
+ "name": "hardscrabble-kit",
+ "seed": 270280,
+ "size": {
+  "w": 96,
+  "h": 64
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.2,
+  "edgeWidth": 6,
+  "roll": 0.8,
+  "pathMargin": 0.6,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.2,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.75,
+    "spacing": 1.8,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "water",
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "maple_orange_0",
+     "maple_yellow_0",
+     "apple_tree_0"
+    ],
+    "density": 0.04,
+    "spacing": 4,
+    "scale": [
+     0.85,
+     1
+    ],
+    "near": "open",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "boulder_mossy_2",
+     "fallen_log_0",
+     "fallen_log_1"
+    ],
+    "density": 0.13,
+    "spacing": 5.15,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.2,
+    "spacing": 0.9,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "water"
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "asters_0",
+     "asters_1",
+     "goldenrod_0",
+     "goldenrod_1"
+    ],
+    "density": 0.08,
+    "spacing": 1.1,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "wall"
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "mushrooms_1",
+     "goldenrod_0",
+     "asters_0"
+    ],
+    "density": 0.08,
+    "spacing": 0.9,
+    "scale": [
+     0.8,
+     1.1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -48,
+     8
+    ],
+    [
+     -30,
+     8
+    ],
+    [
+     48,
+     8
+    ]
+   ],
+   "width": 1.8,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     -26,
+     -5
+    ],
+    [
+     -24,
+     2
+    ],
+    [
+     -20,
+     8
+    ]
+   ],
+   "width": 3,
+   "kind": "ledge"
+  },
+  {
+   "points": [
+    [
+     20,
+     12
+    ],
+    [
+     48,
+     12
+    ]
+   ],
+   "width": 2,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     20,
+     -27.5
+    ],
+    [
+     44,
+     -27.5
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     10,
+     2
+    ],
+    [
+     22,
+     2
+    ]
+   ],
+   "gaps": [],
+   "style": "mortared",
+   "cracked": true
+  },
+  {
+   "points": [
+    [
+     24,
+     2
+    ],
+    [
+     27,
+     1.6
+    ],
+    [
+     30,
+     2.3
+    ],
+    [
+     33,
+     1.8
+    ],
+    [
+     36,
+     2.2
+    ]
+   ],
+   "gaps": [],
+   "handGap": 6
+  },
+  {
+   "points": [
+    [
+     10,
+     0
+    ],
+    [
+     22,
+     0
+    ]
+   ],
+   "gaps": [],
+   "style": "mortared"
+  }
+ ],
+ "landmarks": [],
+ "arenas": [],
+ "placements": [
+  {
+   "prop": "farm_wagon_loaded",
+   "x": -2,
+   "z": 4,
+   "collide": 0.9
+  },
+  {
+   "prop": "farm_wagon_empty",
+   "x": 6,
+   "z": 4,
+   "collide": 0.9
+  },
+  {
+   "prop": "stone_boat_broken",
+   "x": -16,
+   "z": 4,
+   "collide": 0.6
+  },
+  {
+   "prop": "granite_trough",
+   "x": -12,
+   "z": 4.5,
+   "collide": 0.6
+  },
+  {
+   "prop": "granite_block_0",
+   "x": -20,
+   "z": 12,
+   "collide": 0.5
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     30,
+     12
+    ],
+    [
+     42,
+     12
+    ]
+   ],
+   "radius": 6
+  },
+  {
+   "points": [
+    [
+     30,
+     -24
+    ],
+    [
+     30,
+     -16
+    ]
+   ],
+   "radius": 6
+  },
+  {
+   "points": [
+    [
+     8,
+     1
+    ],
+    [
+     38,
+     1
+    ]
+   ],
+   "radius": 4.5
+  },
+  {
+   "points": [
+    [
+     -40,
+     16
+    ],
+    [
+     -40,
+     22
+    ]
+   ],
+   "radius": 5
+  },
+  {
+   "points": [
+    [
+     -12,
+     26
+    ],
+    [
+     16,
+     27
+    ]
+   ],
+   "radius": 6
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "quarry",
+   "kind": "quarry",
+   "x": -26,
+   "z": -16,
+   "w": 26,
+   "d": 20,
+   "rot": 0,
+   "height": 0
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shanty",
+   "x": -40,
+   "z": 16,
+   "w": 6,
+   "d": 4,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3,
+       -2
+      ],
+      [
+       3,
+       -2
+      ],
+      [
+       3,
+       2
+      ],
+      [
+       -3,
+       2
+      ]
+     ]
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "mesh": "kit",
+   "recipe": "meetinghouse",
+   "x": 2,
+   "z": -18,
+   "w": 11,
+   "d": 13,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -5.5,
+       -6.5
+      ],
+      [
+       5.5,
+       -6.5
+      ],
+      [
+       5.5,
+       6.5
+      ],
+      [
+       -5.5,
+       6.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "doorSide": "front"
+   }
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": 18,
+   "z": -16,
+   "w": 7,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "forSale": "PIKE"
+   }
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -6,
+   "z": -2,
+   "w": 7,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "forSale": ""
+   }
+  },
+  {
+   "mesh": "pound",
+   "kind": "pound",
+   "x": 30,
+   "z": -24,
+   "w": 7,
+   "d": 7,
+   "rot": 0,
+   "height": 0
+  },
+  {
+   "mesh": "culvert",
+   "kind": "culvert",
+   "x": 36,
+   "z": 12,
+   "w": 5,
+   "d": 2.4,
+   "rot": 0,
+   "height": 0
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": -6,
+   "z": 20,
+   "w": 6,
+   "d": 5,
+   "rot": 0,
+   "height": 0
+  },
+  {
+   "mesh": "cellarhole",
+   "kind": "cellarhole",
+   "x": 10,
+   "z": 22,
+   "w": 5,
+   "d": 4,
+   "rot": 0,
+   "height": 0
+  }
+ ],
+ "start": [
+  -4,
+  10
+ ],
+ "brook": {
+  "points": [
+   [
+    40,
+    -32
+   ],
+   [
+    37,
+    -6
+   ],
+   [
+    36,
+    12
+   ],
+   [
+    33,
+    32
+   ]
+  ],
+  "width": 1.4,
+  "depth": 0.7
+ }
+}

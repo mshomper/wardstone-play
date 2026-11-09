@@ -1,0 +1,752 @@
+{
+ "version": 1,
+ "name": "stone-lane",
+ "seed": 3102,
+ "size": {
+  "w": 56,
+  "h": 32
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.2,
+  "edgeWidth": 5,
+  "roll": 0.6,
+  "pathMargin": 0.7,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.26,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "maple_orange_0",
+     "birch_0",
+     "maple_red_0"
+    ],
+    "density": 0.62,
+    "spacing": 1.9,
+    "scale": [
+     0.85,
+     1.12
+    ],
+    "near": "edge",
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "apple_old_0",
+     "apple_old_1",
+     "apple_tree_0",
+     "apple_old_0"
+    ],
+    "density": 0,
+    "spacing": 0,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "collide": 0.4,
+    "tall": true,
+    "rows": {
+     "region": [
+      [
+       -27,
+       -14
+      ],
+      [
+       -6,
+       -14
+      ],
+      [
+       -6,
+       -4.5
+      ],
+      [
+       -27,
+       -4.5
+      ]
+     ],
+     "spacing": 3,
+     "along": 2.9,
+     "angle": 4,
+     "jitter": 0.2,
+     "gaps": 0.14
+    }
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.05,
+    "spacing": 4,
+    "scale": [
+     0.6,
+     0.8
+    ],
+    "within": [
+     [
+      -27,
+      -14
+     ],
+     [
+      -6,
+      -14
+     ],
+     [
+      -6,
+      -4.5
+     ],
+     [
+      -27,
+      -4.5
+     ]
+    ],
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "windfall_apples"
+    ],
+    "density": 0.12,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "within": [
+     [
+      -27,
+      -14
+     ],
+     [
+      -6,
+      -14
+     ],
+     [
+      -6,
+      -4.5
+     ],
+     [
+      -27,
+      -4.5
+     ]
+    ],
+    "shadow": false
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "maple_orange_1"
+    ],
+    "density": 0.4,
+    "spacing": 2.2,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      18,
+      6
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      27,
+      15
+     ],
+     [
+      20,
+      15
+     ]
+    ],
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "white_pine_0",
+     "birch_0",
+     "maple_red_0",
+     "white_pine_1"
+    ],
+    "density": 0.35,
+    "spacing": 2.3,
+    "scale": [
+     0.85,
+     1.12
+    ],
+    "within": [
+     [
+      -6,
+      -14
+     ],
+     [
+      27,
+      -14
+     ],
+     [
+      27,
+      -5
+     ],
+     [
+      -6,
+      -5
+     ]
+    ],
+    "collide": 0.38,
+    "tall": true
+   },
+   {
+    "props": [
+     "juniper_0",
+     "juniper_1"
+    ],
+    "density": 0.06,
+    "spacing": 3.4,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      -1,
+      6
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      27,
+      15
+     ],
+     [
+      -1,
+      15
+     ]
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_large_1",
+     "boulder_mossy_2"
+    ],
+    "density": 0.03,
+    "spacing": 5,
+    "scale": [
+     0.8,
+     1
+    ],
+    "within": [
+     [
+      -1,
+      6
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      27,
+      15
+     ],
+     [
+      -1,
+      15
+     ]
+    ],
+    "collide": 0.4
+   },
+   {
+    "props": [
+     "maple_orange_0",
+     "maple_yellow_0",
+     "birch_1",
+     "maple_red_1"
+    ],
+    "density": 0.07,
+    "spacing": 4.6,
+    "scale": [
+     0.85,
+     1
+    ],
+    "near": "open",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "goldenrod_1",
+     "asters_0",
+     "asters_1",
+     "fern_autumn_1"
+    ],
+    "density": 0.4,
+    "spacing": 0.95,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "wall"
+   },
+   {
+    "props": [
+     "goldenrod_1",
+     "asters_1",
+     "fern_autumn_0"
+    ],
+    "density": 0.12,
+    "spacing": 1.5,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "mushrooms_0",
+     "asters_0"
+    ],
+    "density": 0.05,
+    "spacing": 1.6,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "path",
+    "shadow": false
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -28,
+     0.6
+    ],
+    [
+     -20,
+     0.2
+    ],
+    [
+     -12,
+     1.2
+    ],
+    [
+     -4,
+     0.4
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     12,
+     0.2
+    ],
+    [
+     20,
+     1
+    ],
+    [
+     28,
+     0.8
+    ]
+   ],
+   "width": 2.1,
+   "kind": "road"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     -28,
+     -2.6
+    ],
+    [
+     -20,
+     -3
+    ],
+    [
+     -12,
+     -2
+    ],
+    [
+     -4,
+     -2.9
+    ],
+    [
+     4,
+     -2.3
+    ],
+    [
+     12,
+     -3.1
+    ],
+    [
+     20,
+     -2.3
+    ],
+    [
+     28,
+     -2.6
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 11.009993757800315,
+     "width": 2.2
+    },
+    {
+     "at": 33.145185779182995,
+     "width": 1.6
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -28,
+     3.8
+    ],
+    [
+     -20,
+     3.4
+    ],
+    [
+     -12,
+     4.4
+    ],
+    [
+     -4,
+     3.6
+    ],
+    [
+     4,
+     4.2
+    ],
+    [
+     12,
+     3.4
+    ],
+    [
+     20,
+     4.2
+    ],
+    [
+     28,
+     4
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 38.17452094794492,
+     "width": 2.4
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -27,
+     -14.2
+    ],
+    [
+     -16,
+     -14.8
+    ],
+    [
+     -6,
+     -14
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     -1,
+     15.2
+    ],
+    [
+     12,
+     14.6
+    ],
+    [
+     27,
+     15
+    ]
+   ],
+   "gaps": []
+  }
+ ],
+ "buildings": [],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": -26,
+   "z": 0,
+   "radius": 16,
+   "height": 1.2
+  },
+  {
+   "kind": "hollow",
+   "x": 14,
+   "z": 10,
+   "radius": 9,
+   "height": 0.5
+  }
+ ],
+ "arenas": [
+  {
+   "x": 5.2,
+   "z": 0.9,
+   "radius": 2.8
+  },
+  {
+   "x": -18,
+   "z": -9,
+   "radius": 2.6
+  },
+  {
+   "x": -10,
+   "z": -10.4,
+   "radius": 2.4
+  },
+  {
+   "x": 8,
+   "z": 10,
+   "radius": 2.8
+  },
+  {
+   "x": 20,
+   "z": 10.4,
+   "radius": 2.6
+  },
+  {
+   "x": -18,
+   "z": 0.6,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "stone_granite_0",
+   "x": 3.6,
+   "z": -3.8,
+   "collide": 0.25
+  },
+  {
+   "prop": "stone_granite_1",
+   "x": 6.4,
+   "z": -4,
+   "collide": 0.25
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 7.2,
+   "z": -1.6,
+   "collide": 0.3,
+   "scale": 0.6
+  },
+  {
+   "prop": "milestone_twin",
+   "x": 18.6,
+   "z": 3,
+   "collide": 0.3
+  },
+  {
+   "prop": "bars_gate",
+   "x": 12.6,
+   "z": 4.6,
+   "collide": 0.3
+  },
+  {
+   "prop": "fence_post",
+   "x": 9.4,
+   "z": 3.6,
+   "collide": 0.2
+  },
+  {
+   "prop": "apple_old_1",
+   "x": -4.2,
+   "z": -6.2,
+   "collide": 0.4,
+   "tall": true
+  },
+  {
+   "prop": "windfall_apples",
+   "x": -3.4,
+   "z": -5.4
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     3,
+     -3
+    ],
+    [
+     7,
+     -3
+    ]
+   ],
+   "radius": 2
+  },
+  {
+   "points": [
+    [
+     -18.2,
+     -2.6
+    ],
+    [
+     -17.2,
+     -6
+    ]
+   ],
+   "radius": 1.4
+  },
+  {
+   "points": [
+    [
+     10,
+     4
+    ],
+    [
+     10,
+     8
+    ]
+   ],
+   "radius": 1.4
+  }
+ ],
+ "spots": [
+  {
+   "name": "Eldwin's patch",
+   "x": 5,
+   "z": -2.4,
+   "note": "The gap the cold pushed in the north wall. Eldwin stacks it and freezes it shut (main beat 1); Obed calls it the worst work he has ever seen."
+  },
+  {
+   "name": "Obed (at the patch)",
+   "x": 5.6,
+   "z": -0.6,
+   "note": "Obed with his hands behind his back, looking at the patch (main beat 2)."
+  },
+  {
+   "name": "Obed's lesson",
+   "x": 4.2,
+   "z": -1.2,
+   "note": "Where Eldwin lays the patch again by hand, the Thayer way (main beat 7). Obed stands at the spot above."
+  },
+  {
+   "name": "The patch (coming up to it)",
+   "x": 0,
+   "z": 0.8,
+   "note": "Where the cold coming through the gap is first felt."
+  },
+  {
+   "name": "The milestone",
+   "x": 18.6,
+   "z": 2,
+   "note": "HARDSCRABBLE 1 on one face, the other face blank."
+  },
+  {
+   "name": "The gate bar",
+   "x": 12.6,
+   "z": 3.4,
+   "note": "The pasture bars: every Thayer's initials cut into the top one, the last pair Elias's."
+  },
+  {
+   "name": "The orchard",
+   "x": -16,
+   "z": -9
+  },
+  {
+   "name": "The pasture",
+   "x": 12,
+   "z": 10
+  },
+  {
+   "name": "From the Long Wall",
+   "x": -22.5,
+   "z": 0.4
+  },
+  {
+   "name": "On to Hardscrabble",
+   "x": 22.5,
+   "z": 0.8
+  }
+ ],
+ "start": [
+  -22.5,
+  0.4
+ ],
+ "exits": [
+  {
+   "rect": [
+    -25,
+    -1.6,
+    -24,
+    3
+   ],
+   "to": "long-wall",
+   "at": [
+    42.5,
+    4.4
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    24,
+    -1.4,
+    25,
+    3.2
+   ],
+   "to": "hardscrabble",
+   "at": [
+    -38.5,
+    6.6
+   ],
+   "dir": 6
+  }
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "version": 1,
+ "name": "the-quarry",
+ "seed": 3205,
+ "size": {
+  "w": 64,
+  "h": 48
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.6,
+  "edgeWidth": 5,
+  "roll": 0.45,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "white_pine_0",
+     "white_pine_1"
+    ],
+    "density": 0.26,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_0",
+     "birch_0",
+     "maple_orange_1"
+    ],
+    "density": 0.6,
+    "spacing": 1.9,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "near": "edge",
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "maple_yellow_1",
+     "birch_0"
+    ],
+    "density": 0.5,
+    "spacing": 2.1,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "within": [
+     [
+      -31,
+      11
+     ],
+     [
+      31,
+      11
+     ],
+     [
+      31,
+      23
+     ],
+     [
+      -31,
+      23
+     ]
+    ],
+    "collide": 0.34,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "white_pine_0",
+     "birch_1",
+     "maple_yellow_0",
+     "white_pine_1"
+    ],
+    "density": 0.42,
+    "spacing": 2.2,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      -31,
+      -23
+     ],
+     [
+      -13,
+      -23
+     ],
+     [
+      -13,
+      -3
+     ],
+     [
+      -31,
+      -3
+     ]
+    ],
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_1",
+     "white_pine_1",
+     "maple_orange_0",
+     "birch_0"
+    ],
+    "density": 0.42,
+    "spacing": 2.2,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      23,
+      -23
+     ],
+     [
+      31,
+      -23
+     ],
+     [
+      31,
+      9
+     ],
+     [
+      23,
+      9
+     ]
+    ],
+    "collide": 0.36,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.22,
+    "spacing": 2.6,
+    "scale": [
+     0.75,
+     0.95
+    ],
+    "within": [
+     [
+      -9,
+      -23
+     ],
+     [
+      22,
+      -23
+     ],
+     [
+      22,
+      -19.5
+     ],
+     [
+      -9,
+      -19.5
+     ]
+    ],
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_2",
+     "stone_granite_0",
+     "stone_granite_1"
+    ],
+    "density": 0.06,
+    "spacing": 4.5,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "near": "open",
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "goldenrod_0",
+     "asters_1"
+    ],
+    "density": 0.18,
+    "spacing": 1.1,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "near": "path"
+   },
+   {
+    "props": [
+     "fern_autumn_2",
+     "asters_0"
+    ],
+    "density": 0.06,
+    "spacing": 1.8,
+    "scale": [
+     0.8,
+     1
+    ],
+    "near": "open"
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -32,
+     8
+    ],
+    [
+     -24,
+     8.2
+    ],
+    [
+     -14,
+     7.4
+    ],
+    [
+     -4,
+     6.8
+    ],
+    [
+     3,
+     5.8
+    ],
+    [
+     8,
+     4.4
+    ]
+   ],
+   "width": 2.2,
+   "kind": "ledge"
+  },
+  {
+   "points": [
+    [
+     -16.2,
+     7.6
+    ],
+    [
+     -16.2,
+     3.6
+    ]
+   ],
+   "width": 1.1,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "quarry",
+   "kind": "quarry",
+   "x": 6,
+   "z": -7.5,
+   "w": 30,
+   "d": 22,
+   "rot": 0,
+   "height": 6
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shanty",
+   "x": -15,
+   "z": 0.5,
+   "w": 6,
+   "d": 4,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3,
+       -2
+      ],
+      [
+       3,
+       -2
+      ],
+      [
+       3,
+       2
+      ],
+      [
+       -3,
+       2
+      ]
+     ]
+    }
+   ],
+   "variants": {},
+   "opens": "Cutters' shanty"
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": -22,
+   "z": -15,
+   "radius": 12,
+   "height": 1.4
+  },
+  {
+   "kind": "mound",
+   "x": 28,
+   "z": -14,
+   "radius": 10,
+   "height": 1.2
+  }
+ ],
+ "arenas": [
+  {
+   "x": -6,
+   "z": 12.4,
+   "radius": 2.8
+  },
+  {
+   "x": -24,
+   "z": -3,
+   "radius": 2.6
+  },
+  {
+   "x": 24.5,
+   "z": 12,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "cut_mouth",
+   "x": -3,
+   "z": -18.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "cut_mouth",
+   "x": 14.2,
+   "z": -12.1,
+   "collide": 0.6
+  },
+  {
+   "prop": "cordwood",
+   "x": -19.2,
+   "z": 1.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "granite_block_0",
+   "x": -6.4,
+   "z": 3.2,
+   "collide": 0.45
+  },
+  {
+   "prop": "granite_block_1",
+   "x": -9.2,
+   "z": 10.6,
+   "collide": 0.45,
+   "flip": true
+  },
+  {
+   "prop": "stone_rows_2",
+   "x": -22,
+   "z": 4.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "stone_boat_broken",
+   "x": 20.6,
+   "z": 6.6,
+   "collide": 0.6,
+   "flip": true
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -16.2,
+     3
+    ],
+    [
+     -16.2,
+     7
+    ]
+   ],
+   "radius": 1.5
+  },
+  {
+   "points": [
+    [
+     -8,
+     6
+    ],
+    [
+     10,
+     4
+    ]
+   ],
+   "radius": 2.4
+  }
+ ],
+ "spots": [
+  {
+   "name": "Deep Cut (in)",
+   "x": -3,
+   "z": -16.6,
+   "note": "The cut into the hill from the top ledge, the way into the Deep Cut (exit to deep-cut just behind it)."
+  },
+  {
+   "name": "Deep Cut (out)",
+   "x": 14.2,
+   "z": -10,
+   "note": "The second opening, on the lower ledge, where the Deep Cut comes back out: arriving out of the Deep Cut lands here (exit to deep-cut just behind it)."
+  },
+  {
+   "name": "The swallow-holed face",
+   "x": 8,
+   "z": -8.6,
+   "note": "The nook: the face above the pool, holed by swallows."
+  },
+  {
+   "name": "The pool",
+   "x": 3,
+   "z": -2.6,
+   "note": "Rainwater in the bottom of the pit."
+  },
+  {
+   "name": "The derrick",
+   "x": -2.2,
+   "z": -2.4,
+   "note": "The derrick mast with no rope."
+  },
+  {
+   "name": "Shanty door",
+   "x": -16.2,
+   "z": 3.8,
+   "note": "The cutters' shanty: inside, the stove and the quarry's old tally board (the board's spot comes with the room, named tally)."
+  },
+  {
+   "name": "From the Ox Road",
+   "x": -26.5,
+   "z": 8
+  }
+ ],
+ "start": [
+  -26.5,
+  8
+ ],
+ "exits": [
+  {
+   "rect": [
+    -29,
+    5.8,
+    -28,
+    10.4
+   ],
+   "to": "ox-road",
+   "at": [
+    22.5,
+    -0.8
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    -4.2,
+    -17.9,
+    -1.8,
+    -17.3
+   ],
+   "to": "deep-cut",
+   "at": [
+    -9,
+    -15.6
+   ],
+   "dir": 0
+  },
+  {
+   "rect": [
+    13,
+    -11.6,
+    15.4,
+    -11
+   ],
+   "to": "deep-cut",
+   "at": [
+    -19,
+    -15.6
+   ],
+   "dir": 0
+  }
+ ]
+}
