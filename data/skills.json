@@ -58,11 +58,11 @@
     "id": "hearthlight", "name": "Hearthlight", "mp": 6, "target": "friend", "icon": "flame",
     "desc": "Heal about a third of someone's health and shake off the chill.",
     "kind": "skill", "element": "hearth", "power": 0, "learn": { "level": 3 }, "slice": true,
-    "effects": [{ "healPct": 0.35 }, { "cure": ["chilled"] }], "anim": "arcane_channel",
+    "effects": [{ "healPct": 0.315 }, { "cure": ["chilled"] }], "anim": "arcane_channel",
     "ranks": [
-      { "points": 1, "healPct": 0.05, "desc": "Heal 40% of someone's health and shake off the chill." },
+      { "points": 1, "healPct": 0.045, "desc": "Heal 36% of someone's health and shake off the chill." },
       { "points": 1, "mp": -1 },
-      { "points": 2, "healPct": 0.08, "desc": "Heal nearly half of someone's health and shake off the chill." }
+      { "points": 2, "healPct": 0.072, "desc": "Heal over two fifths of someone's health and shake off the chill." }
     ]
   },
   {

@@ -1,0 +1,46 @@
+{
+ "image": "portraits_harlow-bridge.png",
+ "emissive": "portraits_harlow-bridge_emissive.png",
+ "size": [
+  261,
+  66
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "portrait_oren_whitcomb_neutral": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_tired": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_concerned": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_smile": {
+   "x": 196,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  }
+ },
+ "tiles": {}
+}

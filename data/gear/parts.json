@@ -185,6 +185,7 @@
    { "id": "el_guard", "name": "Proofed", "does": "el_guard", "when": "passive", "field": "mul", "as": "less", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.06, "hi": 0.1, "cap": 0.5, "points": 0.6, "tag": "{less:mul} less {element} damage", "text": "Blows of {element} on you land {less:mul} softer." },
    { "id": "hp", "name": "Hale", "does": "stat", "stat": "hp", "when": "passive", "field": "pct", "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 1.2, "tag": "+{pc:pct} max health", "text": "Your most health is {pc:pct} higher." },
    { "id": "heal_in", "name": "Mends well", "does": "heal_in", "when": "passive", "field": "mul", "as": "more", "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.9, "tag": "Healing on you +{more:mul}", "text": "Healing from moves and food does {more:mul} more for you." },
+   { "id": "thaw_coat", "name": "Banked embers", "does": "thaw", "when": "on_win", "field": "pct", "outside": true, "lo": 0.09, "hi": 0.11, "cap": 0.3, "points": 0.3, "tag": "{pc:pct} of your cold thaws after a win", "text": "After a win, {pc:pct} of the cold you carry thaws." },
    { "id": "strike_back", "name": "Hits back", "does": "strike", "when": "when_hit", "field": "power", "lo": 0.1, "hi": 0.16, "cap": 0.8, "points": 1.2, "tag": "Hit back, {hund:power} power", "text": "The first blow on you each round, you hit back at {hund:power}% power." },
    { "id": "resist", "name": "Steady", "does": "shrug", "when": "each_round", "field": "chance", "statusOptions": ["chilled", "slow", "blind", "burning", "drowsy", "afraid"], "lo": 0.2, "hi": 0.3, "cap": 0.9, "points": 0.2, "tag": "{pc:chance} shrug off {word}", "text": "As each round starts, a {pc:chance} chance to shake off {word}." }
   ],
@@ -192,11 +193,12 @@
    { "id": "item_up", "name": "Well-stocked", "does": "item_up", "when": "passive", "field": "mul", "as": "more", "items": true, "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.9, "tag": "Food and drink +{more:mul}", "text": "Food and drink do {more:mul} more." },
    { "id": "heal_up", "name": "Healer's", "does": "heal_up", "when": "passive", "field": "mul", "as": "more", "lo": 0.08, "hi": 0.12, "cap": 0.8, "points": 0.2, "tag": "Healing you give +{more:mul}", "text": "Healing from your moves does {more:mul} more." },
    { "id": "pool_win", "name": "Thrifty", "does": "pool_win", "when": "on_win", "field": "pct", "outside": true, "lo": 0.04, "hi": 0.06, "cap": 0.4, "points": 0.3, "tag": "{pc:pct} more MP back after a win", "text": "After a win, {pc:pct} more of your resource comes back." },
+   { "id": "thaw", "name": "Banked embers", "does": "thaw", "when": "on_win", "field": "pct", "outside": true, "lo": 0.09, "hi": 0.11, "cap": 0.3, "points": 0.3, "tag": "{pc:pct} of your cold thaws after a win", "text": "After a win, {pc:pct} of the cold you carry thaws." },
    { "id": "pool_fell", "name": "Gleaning", "does": "pool", "when": "on_fell", "field": "pct", "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.2, "tag": "{pc:pct} MP back when a foe falls", "text": "Each time you fell a foe, {pc:pct} of your resource comes back." },
    { "id": "el_dmg_belt", "name": "Leaning", "does": "el_dmg", "when": "passive", "field": "mul", "as": "more", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.4, "tag": "+{more:mul} {element} damage", "text": "Your {element} hits land {more:mul} harder." }
   ]
  },
- "regionNote": "F10 D2 (decision 0396): each region's own extra effect, found nowhere else. A piece found in a region (from a fight, a chest, a merchant or a notice, wherever Eldwin stands) carries one at `chance`, if its slot is in `slots`. A place with its own list (the Deep Cut) uses it instead of its region's. It comes on top of the piece's budget, on every tier, sized like an extra (`lo`, `hi` times the tier's `extraSize`, then the grade). `points` from tools/gear/sim/extrabench.mjs (9 Nov 2026): Toll-paid was worth more than a whole Stout main effect at 30% softer, so it's 10 to 14%; the other three price at the floor. Re-rolls leave it alone.",
+ "regionNote": "F10 D2 (decision 0396): each region's own extra effect, found nowhere else. A piece found in a region (from a fight, a chest, a merchant or a notice, wherever Eldwin stands) carries one at `chance`, if its slot is in `slots`. A place with its own list (the Deep Cut) uses it instead of its region's. It comes on top of the piece's budget, on every tier, sized like an extra (`lo`, `hi` times the tier's `extraSize`, then the grade). `points` from tools/gear/sim/extrabench.mjs (9 Nov 2026): Toll-paid was worth more than a whole Stout main effect at 30% softer, so it's 10 to 14%; the other three price at the floor. Woodswise (the Tanbark Road, decision 0428) is all or nothing, so its size changes nothing: measured at 0.16 of a level, it costs 2.1, about two Stout main effects. Re-rolls leave it alone.",
  "regionExtras": {
   "kettle-notch": { "chance": 0.25, "list": [
    { "id": "hearth_kept", "name": "Hearth-kept", "does": "hearth_kept", "when": "passive", "field": "chance", "lo": 0.5, "hi": 0.7, "cap": 1, "points": 0.2, "slots": ["keepsake", "belt"], "tag": "Food thaws you, {pc:chance}", "text": "Food and drink you take have a {pc:chance} chance to take Chilled off you too." }
@@ -206,6 +208,9 @@
   ] },
   "hardscrabble": { "chance": 0.25, "list": [
    { "id": "thayer_laid", "name": "Thayer-laid", "does": "thayer_laid", "when": "passive", "field": "pct", "lo": 0.1, "hi": 0.15, "cap": 0.5, "points": 0.2, "slots": ["coat"], "tag": "Braced, stand once at {pc:pct}", "text": "While you Defend, a blow that would fell you leaves you standing with {pc:pct} of your health, once a fight." }
+  ] },
+  "tanbark-road": { "chance": 0.25, "list": [
+   { "id": "woodswise", "name": "Woodswise", "does": "woodswise", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 2.1, "slots": ["boots", "coat"], "tag": "Unstruck in round 1 until you act", "text": "Nothing strikes you before you act in the first round of a fight." }
   ] },
   "deep-cut": { "chance": 0.5, "list": [
    { "id": "rime_touched", "name": "Rime-touched", "does": "rime_touched", "when": "passive", "field": "chance", "lo": 0.2, "hi": 0.3, "cap": 0.6, "points": 0.2, "slots": ["gloves"], "statuses": ["chilled"], "tag": "{pc:chance} frost hits Chill", "text": "Your frost hits have a {pc:chance} chance to leave the foe Chilled." }
@@ -550,6 +555,38 @@
    "craft": "stone",
    "colour": "#9a9488",
    "family": "hornet"
+  },
+  "hemlock_bark": {
+   "item": "hemlock_bark",
+   "flavor": "Red on the inside. It tans a hide, and it'll tan you.",
+   "name": "Hemlock Bark",
+   "craft": "herbs",
+   "colour": "#8a4a34",
+   "family": "tan"
+  },
+  "turkey_feather": {
+   "item": "turkey_feather",
+   "flavor": "He didn't give it up quietly.",
+   "name": "Turkey Feather",
+   "craft": "paths",
+   "colour": "#8a6a40",
+   "family": "feather"
+  },
+  "beechnut": {
+   "item": "beechnut",
+   "flavor": "Sweet, if you can get it open.",
+   "name": "Beechnut",
+   "craft": "herbs",
+   "colour": "#a46c3a",
+   "family": "nut"
+  },
+  "hawks_bell": {
+   "item": "hawks_bell",
+   "flavor": "Somebody kept a hawk once, and the hawk kept the bell.",
+   "name": "Hawk's Bell",
+   "craft": "iron",
+   "colour": "#c8a050",
+   "family": "bell"
   }
  },
  "seamBonus": 0.2,
@@ -1375,6 +1412,7 @@
   "quick2": "Two quick items a turn",
   "find": "{pc:chance} extra find",
   "pool_win": "{pc:pct} more MP back",
+  "thaw": "{pc:pct} cold thaws after a win",
   "mp_trade": "Moves +{mpAdd} MP, {plus:mul}",
   "single": "One foe {plus:mul}, all foes -{less:downMul}",
   "first_free": "First move free",
@@ -1386,7 +1424,10 @@
   "reflect": "{pc:chance} pass it back",
   "spread": "{pc:chance} it spreads",
   "lean": "{up} {plus:mul}, {down} -{less:downMul}",
-  "attack_element": "Attack strikes as {element}"
+  "attack_element": "Attack strikes as {element}",
+  "el_guard": "{less:mul} less {element} damage",
+  "dodge": "Dodge {pc:chance}",
+  "crit": "Crit chance +{pc:critAdd}"
  },
  "statWords": { "hp": "max health", "mp": "max MP", "def": "defense", "res": "resist", "atk": "hits", "mag": "hits", "spd": "speed" },
  "gateWords": { "even": "even rounds", "first": "round one", "high": "above 70% health", "low": "under half health", "alone": "last foe", "crowd": "3+ foes" },
@@ -3152,6 +3193,18 @@
     ],
     "text": "First time you fall under half health, every foe takes a blow of {power} power."
    }
+  ],
+  "tan": [
+   { "slot": "coat", "when": "passive", "does": "el_guard", "grid": [{ "mul": 0.92, "element": "frost" }, { "mul": 0.85, "element": "frost" }, { "mul": 0.75, "element": "frost" }], "text": "Frost blows on you land {less:mul} softer." }
+  ],
+  "feather": [
+   { "slot": "boots", "when": "passive", "does": "dodge", "grid": [{ "chance": 0.03 }, { "chance": 0.06 }, { "chance": 0.1 }], "text": "A blow aimed at you alone misses {pc:chance} of the time." }
+  ],
+  "nut": [
+   { "slot": "belt", "when": "passive", "does": "item_up", "items": true, "grid": [{ "mul": 1.1 }, { "mul": 1.2 }, { "mul": 1.35 }], "text": "Food and drink do {more:mul} more for you." }
+  ],
+  "bell": [
+   { "slot": "keepsake", "when": "passive", "does": "crit", "grid": [{ "critAdd": 0.02 }, { "critAdd": 0.04 }, { "critAdd": 0.07 }], "text": "Your hits are {pc:critAdd} more likely to be critical." }
   ]
  },
  "lean": {

@@ -24,9 +24,9 @@
     "species": [
       {
         "props": [
-          "maple_orange_0",
+          "oak_0",
           "bare_tree_0",
-          "maple_orange_1",
+          "oak_1",
           "bare_tree_1",
           "white_pine_0"
         ],
@@ -75,9 +75,9 @@
       },
       {
         "props": [
-          "maple_orange_1",
+          "oak_1",
           "bare_tree_1",
-          "maple_orange_0"
+          "oak_0"
         ],
         "density": 0.6,
         "spacing": 2,
@@ -91,11 +91,11 @@
       },
       {
         "props": [
-          "maple_orange_0",
+          "oak_0",
           "bare_tree_0",
-          "maple_orange_1",
+          "oak_1",
           "bare_tree_1",
-          "maple_red_1"
+          "oak_bare_0"
         ],
         "density": 0.75,
         "spacing": 2,
@@ -130,7 +130,7 @@
       },
       {
         "props": [
-          "maple_orange_1",
+          "oak_1",
           "bare_tree_1",
           "white_pine_1"
         ],
@@ -178,7 +178,7 @@
       {
         "props": [
           "bare_tree_0",
-          "maple_orange_0"
+          "oak_0"
         ],
         "density": 0.06,
         "spacing": 5,
@@ -345,6 +345,41 @@
     {
       "kind": "hollow",
       "x": -30,
+      "z": 17,
+      "radius": 12,
+      "height": 9
+    },
+    {
+      "kind": "hollow",
+      "x": -16,
+      "z": 17,
+      "radius": 12,
+      "height": 9
+    },
+    {
+      "kind": "hollow",
+      "x": -2,
+      "z": 17,
+      "radius": 12,
+      "height": 9
+    },
+    {
+      "kind": "hollow",
+      "x": 12,
+      "z": 17,
+      "radius": 12,
+      "height": 9
+    },
+    {
+      "kind": "hollow",
+      "x": 30,
+      "z": 15,
+      "radius": 8,
+      "height": 4
+    },
+    {
+      "kind": "hollow",
+      "x": -30,
       "z": 20,
       "radius": 9,
       "height": 3.4
@@ -431,18 +466,6 @@
       "collide": 0.9
     },
     {
-      "prop": "rock_face_2",
-      "x": 8,
-      "z": 3.8,
-      "collide": 0.9
-    },
-    {
-      "prop": "rock_face_1",
-      "x": 15,
-      "z": 4.4,
-      "collide": 0.9
-    },
-    {
       "prop": "rock_spire_0",
       "x": 20.4,
       "z": 4,
@@ -498,6 +521,750 @@
       "collide": 0.3,
       "tall": true,
       "scale": 1.1
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": 7.77,
+      "z": 13.32,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 1.52,
+      "z": 5.61,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_0",
+      "x": 18.53,
+      "z": 19.95,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 22.67,
+      "z": -18.58,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": -8.57,
+      "z": 8.01,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 5.59,
+      "z": 3.77,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 6.76,
+      "z": 8.8,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": -4.64,
+      "z": -7.79,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -34.5,
+      "z": 15.19,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -17.43,
+      "z": 9.43,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -15.5,
+      "z": -9.75,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 28.68,
+      "z": -13.22,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 33.77,
+      "z": -12.98,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": 6.54,
+      "z": -9.87,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -33.82,
+      "z": -8.47,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 28.22,
+      "z": -17.05,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -20.03,
+      "z": 18.49,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 33.29,
+      "z": -16.67,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 9.02,
+      "z": 16.25,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -31.53,
+      "z": -6.8,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 22.23,
+      "z": 8.34,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 21.98,
+      "z": -6.13,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": -28.61,
+      "z": 7.98,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 21.94,
+      "z": -10.99,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "leaf_drift_0",
+      "x": -36.48,
+      "z": -18.88,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 37.52,
+      "z": -3.24,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -15.07,
+      "z": 12.81,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -34.26,
+      "z": -11.08,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": 8.74,
+      "z": 8.18,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -5.69,
+      "z": 19.09,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_0",
+      "x": 14.6,
+      "z": 13.05,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "leaf_drift_0",
+      "x": -28.36,
+      "z": -13.55,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 26.54,
+      "z": 17.99,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 37.93,
+      "z": -18.83,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -12.65,
+      "z": -9.43,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -9.33,
+      "z": 18.54,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 2.84,
+      "z": -14.38,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -33.29,
+      "z": 7.76,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -4.9,
+      "z": 6.11,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 0.33,
+      "z": -16.96,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 11.18,
+      "z": 18.77,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": -38.38,
+      "z": -12.54,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": -25.24,
+      "z": 17.02,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -1.76,
+      "z": -8.75,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -17.27,
+      "z": -12.11,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_0",
+      "x": 27.91,
+      "z": -15.11,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "leaf_drift_0",
+      "x": -25.48,
+      "z": -9.27,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 16.36,
+      "z": 6.98,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -31.64,
+      "z": -14.67,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 16.8,
+      "z": -19.65,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -35.79,
+      "z": 11.65,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": 5.07,
+      "z": -17.07,
+      "collide": 0.5,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 9.52,
+      "z": -8.63,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 28.01,
+      "z": 4.92,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 37.6,
+      "z": 13.35,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 35.06,
+      "z": 15.02,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 1.57,
+      "z": 10.85,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 20.35,
+      "z": -18.82,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": 21.78,
+      "z": -14.5,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": -30.58,
+      "z": 15.69,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -25.83,
+      "z": 20.47,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -38.04,
+      "z": 20.09,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 1.39,
+      "z": 18.44,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "leaf_drift_0",
+      "x": 32.86,
+      "z": 10.61,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 6.91,
+      "z": -13.62,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 13.74,
+      "z": 2.7,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -38.48,
+      "z": 15.73,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -8.58,
+      "z": -10.82,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -16.58,
+      "z": 20.04,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 18.88,
+      "z": 12.49,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_mossy_1",
+      "x": 14.84,
+      "z": -16.64,
+      "collide": 0.5,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "deadfall_0",
+      "x": -31.56,
+      "z": 5.65,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": -1.38,
+      "z": -12.45,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 13.48,
+      "z": -11.68,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 6.19,
+      "z": 18.65,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "goldenrod_1",
+      "x": 18.13,
+      "z": 17.25,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 2.57,
+      "z": -11.46,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": -16.34,
+      "z": 7.29,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -6.27,
+      "z": -12.16,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 21.49,
+      "z": 17.62,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -36.91,
+      "z": 1.54,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -14.81,
+      "z": 1.99,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": -27.46,
+      "z": 3.45,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 4.0,
+      "z": 5.99,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 26.63,
+      "z": -9.53,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": 17.94,
+      "z": -11.0,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 26.85,
+      "z": 6.82,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_1",
+      "x": -5.55,
+      "z": -18.98,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": 2.79,
+      "z": -19.9,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "asters_1",
+      "x": -2.09,
+      "z": -15.13,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "boulder_large_1",
+      "x": -20.62,
+      "z": -19.59,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "juniper_0",
+      "x": 21.54,
+      "z": -16.43,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": -12.93,
+      "z": 9.66,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
     }
   ],
   "keepClear": [
@@ -539,6 +1306,44 @@
         ]
       ],
       "radius": 1.2
+    },
+    {
+      "points": [
+        [
+          8,
+          3
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          22.4,
+          14
+        ],
+        [
+          29,
+          16
+        ],
+        [
+          34.6,
+          18.4
+        ]
+      ],
+      "radius": 3.6
+    },
+    {
+      "points": [
+        [
+          6,
+          1.2
+        ],
+        [
+          23,
+          14.5
+        ]
+      ],
+      "radius": 3.2
     }
   ],
   "spots": [
@@ -563,7 +1368,7 @@
       "name": "The overlook",
       "x": 6,
       "z": 1.2,
-      "note": "Where the camera turns to the view: the river, the dam, Harlow Bridge, the tannery smoke, the lake with its steeple. Nothing of the view is built yet; the drop below the lip stands for it."
+      "note": "Where the camera turns to the view: the river, the dam, Harlow Bridge, the tannery smoke, the lake with its steeple. The valley is painted in the sky there (decision 0425), and the story scene lookoff_view turns the camera to it."
     },
     {
       "name": "The hawk's perch (nook)",
@@ -589,7 +1394,20 @@
     -15.4
   ],
   "exits": [
-    { "rect": [32.4, 19, 36.6, 20], "to": "harlow-bridge", "at": [-30.8, -19.4], "dir": 0 },
+    {
+      "rect": [
+        32.4,
+        19,
+        36.6,
+        20
+      ],
+      "to": "harlow-bridge",
+      "at": [
+        -30.8,
+        -19.4
+      ],
+      "dir": 0
+    },
     {
       "rect": [
         -29.6,

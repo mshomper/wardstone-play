@@ -1,0 +1,12 @@
+{
+  "_note": "Baked by tools/scenery/valley.py (decision 0425). Degrees: az round from the view's middle (right positive), el above the horizon. Alpha: 0 open sky, else 1 + haze * 254.",
+  "texel": 0.1,
+  "width": 1400,
+  "height": 560,
+  "elTop": 6.0,
+  "elBottom": -50.0,
+  "smoke": {
+    "col": 531,
+    "row": 111
+  }
+}

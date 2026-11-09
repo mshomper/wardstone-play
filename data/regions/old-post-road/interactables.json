@@ -7,6 +7,7 @@
     {"id": "tolls_heap", "kind": "use", "label": "The goose's takings", "once": true, "if": {"flags": ["beat_toll_goose"]}, "dialogue": "tolls_heap", "then": [{"setFlag": "tolls_found"}, {"give": {"brass_button": 1}}], "places": [{"area": "coopers-ford", "spot": "The toll heap"}]},
     {"id": "camp_sit", "kind": "use", "label": "Sit by the fire", "once": true, "if": {"flags": ["met_jasper_road"], "notFlags": ["rested_camp"]}, "then": [{"music": "camp"}, {"dialogue": "camp_night"}, {"sleep": 6.5}, {"music": "camp_end"}, {"setFlag": "rested_camp"}, {"dialogue": "camp_morning"}], "places": [{"area": "sawyers-clearing", "spot": "Jasper's fire"}]},
     {"id": "camp_hearth", "kind": "hearth", "label": "Jasper's fire", "if": {"flags": ["rested_camp"]}, "places": [{"area": "sawyers-clearing", "spot": "Jasper's fire"}]},
+    {"id": "inn_hearth", "kind": "hearth", "label": "The Half-Way House hearth", "places": [{"area": "old-post-road-half-way-house", "spot": "hearth"}]},
     {"id": "pine_marks", "kind": "use", "label": "The Warden's pine", "once": true, "if": {"flags": ["pine_asked"]}, "dialogue": "pine_marks", "then": [{"setFlag": "pine_seen"}], "places": [{"area": "sawyers-clearing", "spot": "The Warden's pine"}]},
     {"id": "lw_rise", "kind": "zone", "radius": 3, "once": true, "if": {"quest": {"id": "long-way-round", "atLeast": "walk-wall"}, "notFlags": ["beat_tumbledown"]}, "dialogue": "wall_rise", "places": [{"area": "long-wall", "spot": "The rise"}]},
     {"id": "lw_gap", "kind": "zone", "radius": 2, "once": true, "if": {"quest": {"id": "long-way-round", "is": "walk-wall"}}, "dialogue": "wall_gap", "places": [{"area": "long-wall", "spot": "The gap (coming up to it)"}]},
@@ -22,6 +23,9 @@
     {"id": "wall_find_coat", "kind": "use", "label": "A coat on the cold side", "pickup": true, "once": true, "gear": {"slot": "coat", "rarity": "stout"}, "places": [{"area": "long-wall", "at": [-3.0, -11.2]}]},
     {"id": "lw_mended", "kind": "zone", "radius": 4.5, "once": true, "if": {"flags": ["beat_tumbledown"]}, "dialogue": "gap_mended", "places": [{"area": "long-wall", "spot": "The gap (coming up to it)"}]},
     {"id": "lw_wardstone_lit", "kind": "use", "label": "Wardstone", "sound": "ward", "if": {"flags": ["hardscrabble_stone_woke"]}, "then": [{"travel": true}], "places": [{"area": "long-wall", "spot": "The wardstone"}]},
-    {"id": "opr_guest_book", "kind": "use", "label": "Guest book", "dialogue": "guest_book", "piece": {"prop": "book_stack_0", "collide": 0.3}, "places": [{"area": "old-post-road-half-way-house", "spot": "The guest book"}]}
+    {"id": "opr_guest_book", "kind": "use", "label": "Guest book", "dialogue": "guest_book", "piece": {"prop": "book_stack_0", "collide": 0.3}, "places": [{"area": "old-post-road-half-way-house", "spot": "The guest book"}]},
+    {"id": "nudge_toll", "kind": "zone", "radius": 4.6, "if": {"notFlags": ["beat_toll_goose", "until_rest:nudge_toll"], "coldAtLeast": 0.2}, "dialogue": "opr_cold_nudge", "then": [{"setFlag": "until_rest:nudge_toll"}], "places": [{"area": "coopers-ford", "at": [0.36, 1.81]}]},
+    {"id": "nudge_foreman", "kind": "zone", "radius": 5.2, "if": {"flags": ["pine_asked"], "notFlags": ["beat_foreman", "until_rest:nudge_foreman"], "coldAtLeast": 0.2}, "dialogue": "opr_cold_nudge", "then": [{"setFlag": "until_rest:nudge_foreman"}], "places": [{"area": "sawyers-clearing", "at": [9, 9.6]}]},
+    {"id": "nudge_tumbledown", "kind": "zone", "radius": 5, "if": {"notFlags": ["beat_tumbledown", "until_rest:nudge_tumbledown"], "coldAtLeast": 0.2}, "dialogue": "opr_cold_nudge", "then": [{"setFlag": "until_rest:nudge_tumbledown"}], "places": [{"area": "long-wall", "at": [-4.6, 1.6]}]}
   ]
 }

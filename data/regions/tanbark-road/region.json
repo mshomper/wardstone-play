@@ -3,16 +3,92 @@
   "id": "tanbark-road",
   "name": "The Tanbark Road",
   "places": [
-    { "id": "bark-road", "name": "The Bark Road", "note": "the bark shed", "at": [130, 115], "label": "right", "areas": ["bark-road"] },
-    { "id": "mast-wood", "name": "The Mast Wood", "at": [240, 215], "label": "right", "areas": ["mast-wood"] },
-    { "id": "hemlock-wall", "name": "The Hemlock Wall", "at": [355, 305], "label": "right", "areas": ["hemlock-wall"] },
-    { "id": "the-lookoff", "name": "The Lookoff", "note": "the valley", "at": [470, 395], "label": "below", "areas": ["the-lookoff"] }
+    {
+      "id": "bark-road",
+      "name": "The Bark Road",
+      "note": "the bark shed",
+      "at": [
+        130,
+        115
+      ],
+      "label": "right",
+      "areas": [
+        "bark-road"
+      ]
+    },
+    {
+      "id": "mast-wood",
+      "name": "The Mast Wood",
+      "at": [
+        240,
+        215
+      ],
+      "label": "right",
+      "areas": [
+        "mast-wood"
+      ]
+    },
+    {
+      "id": "hemlock-wall",
+      "name": "The Hemlock Wall",
+      "at": [
+        355,
+        305
+      ],
+      "label": "right",
+      "areas": [
+        "hemlock-wall"
+      ]
+    },
+    {
+      "id": "the-lookoff",
+      "name": "The Lookoff",
+      "note": "the valley",
+      "at": [
+        470,
+        395
+      ],
+      "label": "below",
+      "areas": [
+        "the-lookoff"
+      ]
+    }
   ],
-  "paths": [["bark-road", "mast-wood"], ["mast-wood", "hemlock-wall"], ["hemlock-wall", "the-lookoff"]],
+  "paths": [
+    [
+      "bark-road",
+      "mast-wood"
+    ],
+    [
+      "mast-wood",
+      "hemlock-wall"
+    ],
+    [
+      "hemlock-wall",
+      "the-lookoff"
+    ]
+  ],
   "leads": [
-    { "from": "bark-road", "to": [80, 30], "name": "back to Hardscrabble" },
-    { "from": "the-lookoff", "to": [575, 495], "name": "down to Harlow Bridge" }
+    {
+      "from": "bark-road",
+      "to": [
+        80,
+        30
+      ],
+      "name": "back to Hardscrabble"
+    },
+    {
+      "from": "the-lookoff",
+      "to": [
+        575,
+        495
+      ],
+      "name": "down to Harlow Bridge"
+    }
   ],
   "quests": [],
-  "dialogue": []
+  "dialogue": [
+    "tb_people",
+    "tb_quests"
+  ]
 }

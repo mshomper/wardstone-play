@@ -405,6 +405,12 @@
    "z": 6.6,
    "collide": 0.6,
    "flip": true
+  },
+  {
+   "prop": "cairn",
+   "x": 16.8,
+   "z": -11.2,
+   "collide": 0.5
   }
  ],
  "keepClear": [
@@ -433,6 +439,19 @@
     ]
    ],
    "radius": 2.4
+  },
+  {
+   "points": [
+    [
+     16.4,
+     -11.2
+    ],
+    [
+     17.2,
+     -11.2
+    ]
+   ],
+   "radius": 1.2
   }
  ],
  "spots": [
@@ -476,6 +495,12 @@
    "name": "From the Ox Road",
    "x": -26.5,
    "z": 8
+  },
+  {
+   "name": "Wayside cairn",
+   "x": 16.8,
+   "z": -11.2,
+   "note": "Wayside cairn on the lower ledge, at the top of the cutters' track beside the Deep Cut's second opening: rest before going in, or on coming out past the end group (decision 0406). A rest here burns a bundle of kindling."
   }
  ],
  "start": [

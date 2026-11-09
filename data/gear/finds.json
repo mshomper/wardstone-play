@@ -51,6 +51,26 @@
       "line": "Left on the sill of the last hollow, head down.",
       "riddle": "At the end of the Seam, on a sill, something put down for the night.",
       "ability": { "id": "letterers_hand", "name": "The letterer's hand", "does": "letterers_hand", "when": "passive", "field": "critAdd", "lo": 0.05, "hi": 0.05, "cap": 0.2, "points": 0, "tag": "Each crit: next {pc:critAdd} likelier; last in round 1", "text": "Each critical hit makes your next one {pc:critAdd} likelier, all fight long; but you act last in the first round." },
-      "box": { "area": "deep-cut", "kind": "deep_cut_seam", "chance": 0.025 } }
+      "box": { "area": "deep-cut", "kind": "deep_cut_seam", "chance": 0.025 } },
+    { "id": "rowe_bark_spud", "region": "tanbark-road", "name": "Ezekiel Rowe's Bark Spud", "slot": "keepsake", "rarity": "sunday", "seed": 4401,
+      "line": "Worn to the shape of his hand, and sharp.",
+      "riddle": "Where the bark is stacked to dry, the tool that took it off.",
+      "ability": { "id": "peeled", "name": "Peeled", "does": "peeled", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "First hit on each foe strips its guard", "text": "Your first hit on each foe strips any guard it has up: a Defend, a Curl, a shield." },
+      "box": { "area": "bark-road", "kind": "tanbark_rick_box", "near": "Behind the shed", "within": 9, "chance": 0.05 } },
+    { "id": "lydia_nutting_apron", "region": "tanbark-road", "name": "Lydia Fairbanks's Nutting Apron", "slot": "belt", "rarity": "stout", "seed": 4402,
+      "line": "Six pockets, and every one has a beechnut in the seam.",
+      "riddle": "Help a mother home with her harvest, and see what she can spare.",
+      "ability": { "id": "mast_year", "name": "Mast year", "does": "mast_year", "when": "passive", "field": "pct", "lo": 0.08, "hi": 0.08, "cap": 0.2, "points": 0, "tag": "Once: fell a foe, heal {pc:pct}", "text": "Once a fight, when you fell a foe, you eat a beechnut and heal {pc:pct} of your health." },
+      "given": true },
+    { "id": "night_man_cup", "region": "tanbark-road", "name": "The Night Man's Cup", "slot": "keepsake", "rarity": "sunday", "seed": 4403,
+      "line": "Tin, dented, full by morning.",
+      "riddle": "The cup that hangs where everyone drinks and no one owns it.",
+      "ability": { "id": "full_by_morning", "name": "Full by morning", "does": "full_by_morning", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "First Drowsy or Frightened each fight: kept off", "text": "The first time each fight you would be Drowsy or Frightened, you aren't." },
+      "given": true },
+    { "id": "jotham_teamster_coat", "region": "tanbark-road", "name": "Jotham Leavitt's Teamster Coat", "slot": "coat", "rarity": "stout", "seed": 4404,
+      "line": "Smells of horse and hemlock.",
+      "riddle": "Behind the one who blocks the road, a wagon waits; the driver keeps his coat on the seat.",
+      "ability": { "id": "hauled", "name": "Hauled", "does": "hauled", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "Takes blows meant for a friend below half health", "text": "While a friend is below half their health, blows aimed at them come to you instead." },
+      "given": true }
   ]
 }

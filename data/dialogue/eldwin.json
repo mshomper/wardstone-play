@@ -50,6 +50,13 @@
       "lines": [
         { "who": "eldwin", "face": "tired", "text": "That's done me in for the week." }
       ]
+    },
+    {
+      "id": "cold_sets_in",
+      "_note": "The first time the cold that stays sets in after a win (decision 0405), before its card (src/ui/results.ts). Matt chose the line.",
+      "lines": [
+        { "who": "eldwin", "face": "tired", "text": "My knee'll tell me about that one tonight." }
+      ]
     }
   ]
 }

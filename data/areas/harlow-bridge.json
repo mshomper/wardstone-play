@@ -848,10 +848,10 @@
   },
   {
    "prop": "lantern_bracket",
-   "x": -8.9,
-   "z": 0.7,
+   "x": -8.45,
+   "z": -0.6,
    "collide": 0,
-   "y": 1.7
+   "y": 1.15
   },
   {
    "prop": "hitching_rail",
@@ -1862,6 +1862,12 @@
    "collide": 0
   },
   {
+   "prop": "chickens_1",
+   "x": 19.15,
+   "z": -18.84,
+   "collide": 0
+  },
+  {
    "prop": "big_bucket",
    "x": -21.35,
    "z": -8.12,
@@ -1992,12 +1998,6 @@
    "x": -5.41,
    "z": -11.36,
    "collide": 0.42
-  },
-  {
-   "prop": "chickens_1",
-   "x": -4.9,
-   "z": -20.37,
-   "collide": 0
   }
  ],
  "keepClear": [
@@ -2060,7 +2060,7 @@
   {
    "name": "The iron lantern",
    "x": -6.6,
-   "z": 0.4,
+   "z": -0.6,
    "note": "The lantern by the Tankard door, from the scene on the frost night."
   },
   {

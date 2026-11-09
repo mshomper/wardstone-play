@@ -50,6 +50,55 @@
      }
     }
    ]
+  },
+  {
+   "id": "hester_button",
+   "lines": [
+    {
+     "who": "hester",
+     "text": "That's mine."
+    },
+    {
+     "who": "hester",
+     "text": "Not the button. The thread. Nobody else waxes it like that."
+    },
+    {
+     "who": "eldwin",
+     "text": "It was in a goose's heap on the road."
+    },
+    {
+     "who": "hester",
+     "text": "Then he hasn't got the coat on, has he. It's walking about on somebody else."
+    },
+    {
+     "who": "hester",
+     "text": "I'll put it on his slate. That makes four."
+    }
+   ],
+   "onEnd": [
+    {
+     "take": {
+      "brass_button": 1
+     }
+    },
+    {
+     "setFlag": "heard:HBB"
+    },
+    {
+     "setFlag": "hester_charm_owed"
+    },
+    {
+     "reward": {
+      "title": "The Brass Button",
+      "xp": 10
+     }
+    },
+    {
+     "tailor": {
+      "cart": true
+     }
+    }
+   ]
   }
  ]
 }

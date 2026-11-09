@@ -449,10 +449,528 @@
       "collide": 0.3
     },
     {
-      "prop": "dirt_mound",
-      "x": -28,
-      "z": 15,
-      "collide": 0.6
+      "prop": "camp_kettle",
+      "x": -7.1,
+      "z": 6.6,
+      "collide": 0.4,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "camp_bedroll",
+      "x": -9.4,
+      "z": 7.8,
+      "collide": 0.0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "camp_bedroll",
+      "x": -6.7,
+      "z": 8.0,
+      "collide": 0.0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "jug_stoneware",
+      "x": 10.6,
+      "z": -3.1,
+      "collide": 0.0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "charcoal_pit",
+      "x": -27,
+      "z": 11.8,
+      "collide": 0.0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "deadfall_0",
+      "x": 27.23,
+      "z": -19.63,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": 16.45,
+      "z": 14.76,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 20.79,
+      "z": -6.62,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 23.13,
+      "z": -7.52,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "stone_wall_tumbled",
+      "x": -30.5,
+      "z": -10.7,
+      "collide": 0.9,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 26.45,
+      "z": -3.01,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "hemlock_young_0",
+      "x": 12.79,
+      "z": 9.6,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true,
+      "tall": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": -27.81,
+      "z": 8.96,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 17.3,
+      "z": 11.36,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 14.91,
+      "z": -19.5,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": 20.2,
+      "z": 17.99,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 6.1,
+      "z": -18.6,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": -0.5,
+      "z": 7.5,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": -2.81,
+      "z": -4.72,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": -28.52,
+      "z": -2.97,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "hemlock_young_0",
+      "x": 18.8,
+      "z": 9.56,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true,
+      "tall": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 20.4,
+      "z": -3.46,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": -13.16,
+      "z": -6.4,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": 12.44,
+      "z": 0.92,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 8.94,
+      "z": 3.95,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": -31.22,
+      "z": 16.82,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -30.19,
+      "z": -6.37,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 23.15,
+      "z": 4.51,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": -27.92,
+      "z": -15.7,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": 13.87,
+      "z": 5.75,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": -29.97,
+      "z": 2.92,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 9.19,
+      "z": 6.89,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "hemlock_young_0",
+      "x": -2.13,
+      "z": 13.15,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true,
+      "tall": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 23.53,
+      "z": 2.2,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": 5.93,
+      "z": 7.04,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_0",
+      "x": 27.05,
+      "z": 5.52,
+      "collide": 1.1,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 11.73,
+      "z": -12.35,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": 2.03,
+      "z": -7.5,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "stone_wall_tumbled",
+      "x": 18.29,
+      "z": -6.58,
+      "collide": 0.9,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 15.99,
+      "z": 17.55,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": -25.34,
+      "z": 4.72,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": -7.98,
+      "z": -12.02,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": -5.97,
+      "z": -16.04,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 25.06,
+      "z": 14.2,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -5.62,
+      "z": 14.14,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": -22.5,
+      "z": -5.47,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": -18.38,
+      "z": 0.77,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "deadfall_0",
+      "x": 30.15,
+      "z": -16.83,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "rock_ledge_mossy_1",
+      "x": 0.3,
+      "z": 14.93,
+      "collide": 0.8,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": 17.27,
+      "z": -14.98,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": -11.75,
+      "z": 18.85,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": 32.99,
+      "z": 4.72,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "hemlock_young_0",
+      "x": 8.97,
+      "z": 14.1,
+      "collide": 0.3,
+      "setpiece": true,
+      "tanbark-dress": true,
+      "tall": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -18.2,
+      "z": 6.53,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": 31.46,
+      "z": -11.9,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 5.85,
+      "z": -10.5,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "deadfall_0",
+      "x": 11.96,
+      "z": 15.17,
+      "collide": 0.6,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": 30.4,
+      "z": 18.61,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_0",
+      "x": 28.69,
+      "z": 16.01,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_1",
+      "x": -32.78,
+      "z": 1.62,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "stone_wall_tumbled",
+      "x": -18.77,
+      "z": -2.62,
+      "collide": 0.9,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "mushrooms_1",
+      "x": 34.23,
+      "z": 8.4,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_brown_1",
+      "x": 20.83,
+      "z": -18.66,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "fern_autumn_1",
+      "x": -0.69,
+      "z": -18.11,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
+    },
+    {
+      "prop": "wintergreen_0",
+      "x": 30.34,
+      "z": 13.24,
+      "collide": 0,
+      "setpiece": true,
+      "tanbark-dress": true
     }
   ],
   "frost": {

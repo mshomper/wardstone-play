@@ -31,7 +31,7 @@
       { "who": "obed", "text": "Somebody else up the road's been mending badly. I'd like a look at it." },
       { "who": "eldwin", "text": "Some of it may have been me." },
       { "who": "obed", "text": "Then I'll know the work." }
-    ], "onEnd": [{ "join": "obed" }] },
+    ], "onEnd": [{ "scene": "obed_joins" }, { "join": "obed" }] },
     { "id": "hs_open_ob1", "lines": [
       { "who": "obed", "text": "Village says I talk to the stones." },
       { "who": "eldwin", "text": "Do you?" },
@@ -193,6 +193,12 @@
     { "id": "hs_sukey_again", "lines": [
       { "who": "sukey_varnum", "text": "Twelve Abbotts, two goats, the Holts, the Merrills and the Lowells. I count them every morning. Most of the Abbotts are in the barn. Mama says the barn isn't a pound." }
     ] },
+    { "id": "hs_sukey_cold", "lines": [
+      { "who": "sukey_varnum", "text": "You're shaking. The Merrills shook like that when the white thing came." },
+      { "who": "sukey_varnum", "text": "Mama says cold that gets in won't come out by itself. He stood in the barn under three blankets till it did." },
+      { "who": "sukey_varnum", "face": "cross", "text": "You haven't got blankets. You sit by a fire before you go anywhere far." },
+      { "who": "eldwin", "text": "Yes, miss." }
+    ], "onEnd": [{ "setFlag": "heard:SVCOLD" }] },
     { "id": "hs_open_sv1", "lines": [
       { "who": "sukey_varnum", "text": "The Merrills left the horse because he's lame. Mama says they'll send for him." },
       { "who": "eldwin", "text": "Will they?" },

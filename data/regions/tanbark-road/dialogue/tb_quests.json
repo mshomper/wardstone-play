@@ -1,0 +1,392 @@
+{
+  "_note": "The Fiddle in the Woods (decision 0427): the main story's fourth chapter, from the Bark Road to the switchbacks down to Harlow Bridge. The beat is docs/regions/tanbark-road.md, 'The main beat'. Draft lines, for Matt or his writer friend. src/story/fiddle.ts stages the night walk and the far figure.",
+  "conversations": [
+    {
+      "id": "tb_bull_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "A bull moose stands square in the middle of the road, as tall at the shoulder as a horse, and broader. His antlers are a yard across."
+        },
+        {
+          "who": "",
+          "text": "He looks at Eldwin's staff, lowers his head, and paws the ground."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "He thinks that stick's a rival. I'd put it behind you."
+        }
+      ]
+    },
+    {
+      "id": "tb_bull_settled",
+      "lines": [
+        {
+          "who": "",
+          "text": "The bull wrenches his antlers free of the beech, bellows once at the whole wood, and crashes off into the trees."
+        },
+        {
+          "who": "",
+          "text": "They hear him a long way off, still bellowing."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "Well. He'll be telling everyone about that."
+        }
+      ]
+    },
+    {
+      "id": "tb_jasper_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "Under a big hemlock, a camp. A kettle has just come to the boil."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "You came the long way. You always do."
+        },
+        {
+          "who": "eldwin",
+          "text": "It's the only way down."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "So it is. Tea's on. The fire's on account."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "met_jasper_tanbark"
+        }
+      ]
+    },
+    {
+      "id": "tb_jasper_fire",
+      "lines": [
+        {
+          "who": "jasper_crane",
+          "text": "Dark comes early under these trees. Sit, if you're stopping."
+        }
+      ]
+    },
+    {
+      "id": "tb_jasper_wall",
+      "lines": [
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "That's ours, that wall. My great-grandfather's, maybe further. Look at the batter on it."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "It's held a long time."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "It'll hold longer."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard:TJW"
+        }
+      ]
+    },
+    {
+      "id": "tb_jasper_tune",
+      "lines": [
+        {
+          "who": "eldwin",
+          "text": "That tune. You played it, on the Post Road."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "Old song. Everybody's got a verse of it somewhere."
+        },
+        {
+          "who": "",
+          "text": "He doesn't say which verse he has."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard:TJT"
+        }
+      ]
+    },
+    {
+      "id": "tb_camp_night",
+      "lines": [
+        {
+          "who": "",
+          "text": "The fire burns down. Jasper banks it. The hemlocks close in, and the cold comes off the wall."
+        },
+        {
+          "who": "",
+          "if": {
+            "flags": [
+              "joined:applegate"
+            ]
+          },
+          "text": "Mrs. Applegate won't settle. She stands with her head up, facing along the wall."
+        },
+        {
+          "who": "",
+          "text": "Eldwin sleeps."
+        }
+      ]
+    },
+    {
+      "id": "tb_fiddle_wake",
+      "lines": [
+        {
+          "who": "",
+          "text": "He wakes in the dark. The fire is embers."
+        },
+        {
+          "who": "",
+          "text": "Far off along the wall, a fiddle. The tune he knows from Jasper's fire on the Post Road."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "He plays most nights. He won't thank you for following."
+        },
+        {
+          "who": "",
+          "text": "Jasper is awake, looking into the fire. He doesn't look up."
+        },
+        {
+          "who": "",
+          "text": "Then, back in the hemlocks the other way, a scream. High and long, like a woman's."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "And that's the cat. Everybody says they're gone from these woods."
+        },
+        {
+          "who": "eldwin",
+          "text": "Is it coming here?"
+        },
+        {
+          "who": "jasper_crane",
+          "text": "It's been round the fire twice already. You'll not hit what you can't see."
+        },
+        {
+          "who": "jasper_crane",
+          "text": "Give it no opening. All of you braced at once, and it can't stand not knowing. It comes out to look."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard_fiddle"
+        }
+      ]
+    },
+    {
+      "id": "tb_fiddle_gone",
+      "lines": [
+        {
+          "who": "",
+          "text": "The worn place on the wall, where the moss is gone from the top stones. Nobody."
+        },
+        {
+          "who": "",
+          "text": "A cider jug, stoppered, set down on the wall. It's still warm from a hand."
+        },
+        {
+          "who": "",
+          "text": "Boot prints in the frost, going off along the wall toward the valley."
+        },
+        {
+          "who": "",
+          "text": "A last few notes, further off. Then nothing."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "followed_fiddle"
+        }
+      ]
+    },
+    {
+      "id": "tb_fiddle_back",
+      "lines": [
+        {
+          "who": "jasper_crane",
+          "text": "Told you."
+        },
+        {
+          "who": "eldwin",
+          "text": "You did."
+        },
+        {
+          "who": "",
+          "text": "Jasper puts another stick on the fire and says nothing else until morning."
+        }
+      ]
+    },
+    {
+      "id": "tb_far_figure",
+      "lines": [
+        {
+          "who": "",
+          "text": "First light. The valley opens below."
+        },
+        {
+          "who": "",
+          "text": "Far down the switchbacks, a tall, stooped figure is walking into town, a fiddle under his arm."
+        },
+        {
+          "who": "",
+          "text": "Too far to call to."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "saw_far_figure"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_cup",
+      "lines": [
+        {
+          "who": "",
+          "text": "A tin cup on a nail over the spring. Dented. Full to the brim, though nobody's been by since dark."
+        }
+      ]
+    },
+    {
+      "id": "tb_find_chestnut",
+      "lines": [
+        {
+          "who": "",
+          "text": "Inside the hollow chestnut, cut low in the wood where a child could reach: H.B."
+        },
+        {
+          "who": "",
+          "text": "The letters are years old. The edges have gone soft."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "saw_hb"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_worn",
+      "lines": [
+        {
+          "who": "",
+          "text": "The moss is gone from these few stones, worn off, as if someone sits here often."
+        }
+      ]
+    },
+    {
+      "id": "tb_find_bench",
+      "lines": [
+        {
+          "who": "",
+          "text": "A stone bench at the top of the ledge, where the whole valley shows."
+        },
+        {
+          "who": "",
+          "text": "Cut into the seat, joined by a plus: T.B. and M.B. Under them, the date of a wedding."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "saw_bench"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_ricks",
+      "lines": [
+        {
+          "who": "",
+          "text": "Chalk tallies on every rick end, in the same round hand. The latest says forty-five."
+        }
+      ]
+    },
+    {
+      "id": "tb_find_sled",
+      "lines": [
+        {
+          "who": "",
+          "text": "A bark sled with one runner gone. Somebody meant to mend it."
+        }
+      ]
+    },
+    {
+      "id": "tb_lost_sack",
+      "lines": [
+        {
+          "who": "",
+          "text": "A sack of beechnuts with a red string round its neck, dropped in the leaves. Something has been at one corner."
+        }
+      ]
+    },
+    {
+      "id": "tb_find_cup_empty",
+      "lines": [
+        {
+          "who": "",
+          "text": "The tin cup over the spring is empty this morning, for the first time. Whoever drinks from it has gone on down the hill."
+        },
+        {
+          "who": "",
+          "text": "It comes off the nail easily, as if it had been waiting."
+        }
+      ]
+    },
+    {
+      "id": "tb_bull_meet",
+      "lines": [
+        {
+          "who": "",
+          "text": "A bull moose stands square in the middle of the road, as tall at the shoulder as a horse, and broader. His antlers are a yard across."
+        },
+        {
+          "who": "",
+          "text": "He looks at Eldwin's staff, lowers his head, and paws the ground."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "He thinks that stick's a rival. I'd put it behind you."
+        }
+      ],
+      "onEnd": [
+        {
+          "fight": "mw-bull"
+        }
+      ]
+    }
+  ]
+}

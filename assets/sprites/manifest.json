@@ -74,9 +74,9 @@
       "emissive": "thadeous_iso_emissive.png",
       "size": [
         1996,
-        622
+        829
       ],
-      "anims": 48,
+      "anims": 64,
       "sprites": 0,
       "tiles": 0
     },
@@ -90,6 +90,32 @@
         456
       ],
       "anims": 20,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "fisher_iso",
+      "json": "fisher_iso.json",
+      "image": "fisher_iso.png",
+      "emissive": "fisher_iso_emissive.png",
+      "size": [
+        799,
+        38
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "fisher_side",
+      "json": "fisher_side.json",
+      "image": "fisher_side.png",
+      "emissive": "fisher_side_emissive.png",
+      "size": [
+        1680,
+        42
+      ],
+      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -194,6 +220,32 @@
         189
       ],
       "anims": 18,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "old_tup_iso",
+      "json": "old_tup_iso.json",
+      "image": "old_tup_iso.png",
+      "emissive": "old_tup_iso_emissive.png",
+      "size": [
+        977,
+        50
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "old_tup_side",
+      "json": "old_tup_side.json",
+      "image": "old_tup_side.png",
+      "emissive": "old_tup_side_emissive.png",
+      "size": [
+        1753,
+        58
+      ],
+      "anims": 5,
       "sprites": 0,
       "tiles": 0
     },
@@ -506,7 +558,7 @@
         515
       ],
       "anims": 0,
-      "sprites": 61,
+      "sprites": 63,
       "tiles": 0
     },
     {
@@ -586,6 +638,19 @@
       "anims": 0,
       "sprites": 26,
       "tiles": 11
+    },
+    {
+      "name": "tanbark_woods",
+      "json": "tanbark_woods.json",
+      "image": "tanbark_woods.png",
+      "emissive": "tanbark_woods_emissive.png",
+      "size": [
+        989,
+        279
+      ],
+      "anims": 0,
+      "sprites": 27,
+      "tiles": 0
     }
   ],
   "people": [
@@ -662,12 +727,48 @@
       ]
     },
     {
+      "sprite": "npc_ezekiel_rowe_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_ezekiel_rowe.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
       "sprite": "npc_gideon_strand_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_gideon_strand.json",
       "size": [
         970,
         484
+      ]
+    },
+    {
+      "sprite": "harlow_farmer_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/harlow_farmer.json",
+      "size": [
+        970,
+        622
+      ]
+    },
+    {
+      "sprite": "harlow_goodwife_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/harlow_goodwife.json",
+      "size": [
+        970,
+        622
+      ]
+    },
+    {
+      "sprite": "harlow_millhand_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/harlow_millhand.json",
+      "size": [
+        970,
+        622
       ]
     },
     {
@@ -698,6 +799,15 @@
       ]
     },
     {
+      "sprite": "npc_jotham_leavitt_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_jotham_leavitt.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
       "sprite": "npc_lavinia_dunn_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_lavinia_dunn.json",
@@ -725,12 +835,39 @@
       ]
     },
     {
+      "sprite": "npc_lydia_fairbanks_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_lydia_fairbanks.json",
+      "size": [
+        970,
+        760
+      ]
+    },
+    {
       "sprite": "npc_martha_combs_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_martha_combs.json",
       "size": [
         970,
         484
+      ]
+    },
+    {
+      "sprite": "npc_mehitable_rowe_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_mehitable_rowe.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
+      "sprite": "npc_ned_fairbanks_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_ned_fairbanks.json",
+      "size": [
+        970,
+        691
       ]
     },
     {
@@ -752,12 +889,30 @@
       ]
     },
     {
+      "sprite": "npc_oren_whitcomb_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_oren_whitcomb.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
       "sprite": "npc_pip_danforth_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_pip_danforth.json",
       "size": [
         970,
         484
+      ]
+    },
+    {
+      "sprite": "npc_polly_fairbanks_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/npc_polly_fairbanks.json",
+      "size": [
+        970,
+        622
       ]
     },
     {
@@ -776,6 +931,15 @@
       "size": [
         970,
         484
+      ]
+    },
+    {
+      "sprite": "sam_fairbanks_iso",
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/sam_fairbanks.json",
+      "size": [
+        970,
+        622
       ]
     },
     {
@@ -992,6 +1156,22 @@
         456,
         196
       ]
+    },
+    {
+      "region": "tanbark-road",
+      "json": "regions/tanbark-road/portraits_tanbark-road.json",
+      "size": [
+        456,
+        196
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/portraits_harlow-bridge.json",
+      "size": [
+        261,
+        66
+      ]
     }
   ],
   "creatures": [
@@ -1018,6 +1198,50 @@
       ]
     },
     {
+      "region": "tanbark-road",
+      "areas": [
+        "bark-road"
+      ],
+      "json": "regions/tanbark-road/barkling_iso.json",
+      "size": [
+        631,
+        32
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "bark-road"
+      ],
+      "json": "regions/tanbark-road/barkling_side.json",
+      "size": [
+        977,
+        71
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/bull_moose_iso.json",
+      "size": [
+        982,
+        215
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/bull_moose_side.json",
+      "size": [
+        988,
+        778
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "alder-hollow",
@@ -1040,6 +1264,50 @@
       "json": "regions/kettle-notch/burrback_side.json",
       "size": [
         950,
+        83
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "hemlock-wall"
+      ],
+      "json": "regions/tanbark-road/catamount_iso.json",
+      "size": [
+        946,
+        87
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "hemlock-wall"
+      ],
+      "json": "regions/tanbark-road/catamount_side.json",
+      "size": [
+        1018,
+        286
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/chatterer_iso.json",
+      "size": [
+        889,
+        36
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/chatterer_side.json",
+      "size": [
+        991,
         83
       ]
     },
@@ -1109,32 +1377,6 @@
       "size": [
         971,
         208
-      ]
-    },
-    {
-      "region": "hardscrabble",
-      "areas": [
-        "deep-cut",
-        "ox-road",
-        "the-quarry"
-      ],
-      "json": "regions/hardscrabble/fisher_iso.json",
-      "size": [
-        799,
-        38
-      ]
-    },
-    {
-      "region": "hardscrabble",
-      "areas": [
-        "deep-cut",
-        "ox-road",
-        "the-quarry"
-      ],
-      "json": "regions/hardscrabble/fisher_side.json",
-      "size": [
-        950,
-        83
       ]
     },
     {
@@ -1282,6 +1524,28 @@
       ]
     },
     {
+      "region": "tanbark-road",
+      "areas": [
+        "the-lookoff"
+      ],
+      "json": "regions/tanbark-road/ledge_hawk_iso.json",
+      "size": [
+        967,
+        123
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "the-lookoff"
+      ],
+      "json": "regions/tanbark-road/ledge_hawk_side.json",
+      "size": [
+        946,
+        386
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "old-burying-ground"
@@ -1304,27 +1568,25 @@
       ]
     },
     {
-      "region": "hardscrabble",
+      "region": "tanbark-road",
       "areas": [
-        "hobble-hill",
-        "sheep-walk"
+        "hemlock-wall"
       ],
-      "json": "regions/hardscrabble/old_tup_iso.json",
+      "json": "regions/tanbark-road/masked_bandit_iso.json",
       "size": [
-        977,
-        50
+        913,
+        42
       ]
     },
     {
-      "region": "hardscrabble",
+      "region": "tanbark-road",
       "areas": [
-        "hobble-hill",
-        "sheep-walk"
+        "hemlock-wall"
       ],
-      "json": "regions/hardscrabble/old_tup_side.json",
+      "json": "regions/tanbark-road/masked_bandit_side.json",
       "size": [
         950,
-        115
+        160
       ]
     },
     {
@@ -1404,6 +1666,28 @@
       "size": [
         970,
         99
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "the-lookoff"
+      ],
+      "json": "regions/tanbark-road/rattler_iso.json",
+      "size": [
+        1011,
+        124
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "the-lookoff"
+      ],
+      "json": "regions/tanbark-road/rattler_side.json",
+      "size": [
+        937,
+        226
       ]
     },
     {
@@ -1559,6 +1843,28 @@
       "size": [
         946,
         232
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/strutting_tom_iso.json",
+      "size": [
+        855,
+        58
+      ]
+    },
+    {
+      "region": "tanbark-road",
+      "areas": [
+        "mast-wood"
+      ],
+      "json": "regions/tanbark-road/strutting_tom_side.json",
+      "size": [
+        973,
+        131
       ]
     },
     {
@@ -1771,5 +2077,5 @@
       ]
     }
   ],
-  "bandHeight": 2698
+  "bandHeight": 2771
 }

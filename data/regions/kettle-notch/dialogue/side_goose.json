@@ -63,6 +63,9 @@
    ],
    "onEnd": [
     {
+     "scene": "goose_walk"
+    },
+    {
      "setFlag": "goose_led"
     },
     {

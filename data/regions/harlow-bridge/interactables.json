@@ -1,5 +1,6 @@
 {
   "interactables": [
+    { "id": "hb_tankard_hearth", "kind": "hearth", "label": "The Tankard's fire", "places": [{ "area": "harlow-bridge-the-broken-tankard", "spot": "hearth" }] },
     { "id": "door_harlow_bridge_the_broken_tankard", "kind": "door", "label": "The Broken Tankard", "to": "harlow-bridge-the-broken-tankard", "dir": 4, "places": [{ "area": "harlow-bridge", "building": 0 }] },
     { "id": "door_harlow_bridge_fessenden_s_dry_goods", "kind": "door", "label": "Fessenden's dry goods", "to": "harlow-bridge-fessenden-s-dry-goods", "dir": 4, "places": [{ "area": "harlow-bridge", "building": 1 }] },
     { "id": "door_harlow_bridge_the_druggist", "kind": "door", "label": "The druggist", "to": "harlow-bridge-the-druggist", "dir": 4, "places": [{ "area": "harlow-bridge", "building": 2 }] },

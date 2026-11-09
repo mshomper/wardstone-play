@@ -1,3 +1,485 @@
 {
-  "interactables": []
+  "interactables": [
+    {
+      "id": "tb_bull_after",
+      "kind": "zone",
+      "radius": 7,
+      "once": true,
+      "if": {
+        "flags": [
+          "beat_bull"
+        ]
+      },
+      "dialogue": "tb_bull_settled",
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "The Bull of the Woods"
+        }
+      ]
+    },
+    {
+      "id": "nudge_bull",
+      "kind": "zone",
+      "radius": 5,
+      "if": {
+        "flags": [
+          "met_jotham"
+        ],
+        "notFlags": [
+          "beat_bull",
+          "until_rest:nudge_bull"
+        ],
+        "coldAtLeast": 0.2
+      },
+      "dialogue": "hs_cold_nudge",
+      "then": [
+        {
+          "setFlag": "until_rest:nudge_bull"
+        }
+      ],
+      "places": [
+        {
+          "area": "mast-wood",
+          "at": [
+            3.2,
+            -5.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nudge_catamount",
+      "kind": "zone",
+      "radius": 5,
+      "if": {
+        "flags": [
+          "heard_fiddle"
+        ],
+        "notFlags": [
+          "beat_catamount",
+          "until_rest:nudge_catamount"
+        ],
+        "timeTo": 5.5,
+        "coldAtLeast": 0.2
+      },
+      "dialogue": "hs_cold_nudge",
+      "then": [
+        {
+          "setFlag": "until_rest:nudge_catamount"
+        }
+      ],
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "at": [
+            -19,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tb_dead_limbs",
+      "kind": "use",
+      "label": "Dead limbs",
+      "sound": "wood_search",
+      "pickup": true,
+      "if": {
+        "notFlags": [
+          "until_rest:tb_dead_limbs"
+        ]
+      },
+      "find": {
+        "item": "kindling",
+        "note": "Beech, down in the last wind and dry as paper. Enough for one fire."
+      },
+      "then": [
+        {
+          "setFlag": "until_rest:tb_dead_limbs"
+        }
+      ],
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "The dead limbs"
+        }
+      ]
+    },
+    {
+      "id": "tb_cairn_mast",
+      "kind": "hearth",
+      "label": "Wayside cairn",
+      "sound": "stone_search",
+      "cost": {
+        "kindling": 1
+      },
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "The cairn"
+        }
+      ]
+    },
+    {
+      "id": "tb_camp_sit",
+      "kind": "use",
+      "label": "Sit by the fire",
+      "once": true,
+      "if": {
+        "flags": [
+          "met_jasper_tanbark"
+        ],
+        "notFlags": [
+          "heard_fiddle"
+        ]
+      },
+      "then": [
+        {
+          "music": "camp"
+        },
+        {
+          "dialogue": "tb_camp_night"
+        },
+        {
+          "sleep": 1.5
+        },
+        {
+          "scene": "frost_night"
+        },
+        {
+          "music": "camp_end"
+        },
+        {
+          "scene": "fiddle_wake"
+        }
+      ],
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "spot": "Jasper's fire"
+        }
+      ]
+    },
+    {
+      "id": "tb_camp_hearth",
+      "kind": "hearth",
+      "label": "Jasper's fire",
+      "if": {
+        "flags": [
+          "heard_fiddle"
+        ]
+      },
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "spot": "Jasper's fire"
+        }
+      ]
+    },
+    {
+      "id": "tb_worn_place",
+      "kind": "zone",
+      "radius": 2.6,
+      "once": true,
+      "if": {
+        "flags": [
+          "heard_fiddle"
+        ],
+        "notFlags": [
+          "followed_fiddle"
+        ]
+      },
+      "then": [
+        {
+          "scene": "fiddle_gone"
+        }
+      ],
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "spot": "The worn place"
+        }
+      ]
+    },
+    {
+      "id": "tb_overlook",
+      "kind": "zone",
+      "radius": 3,
+      "once": true,
+      "if": {
+        "flags": [
+          "followed_fiddle"
+        ],
+        "notFlags": [
+          "saw_far_figure"
+        ]
+      },
+      "then": [
+        {
+          "scene": "far_figure"
+        }
+      ],
+      "places": [
+        {
+          "area": "the-lookoff",
+          "spot": "The overlook"
+        }
+      ]
+    },
+    {
+      "id": "tb_tin_cup",
+      "kind": "use",
+      "label": "Tin cup",
+      "if": {
+        "notFlags": [
+          "followed_fiddle"
+        ]
+      },
+      "dialogue": "tb_find_cup",
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "The tin cup"
+        }
+      ]
+    },
+    {
+      "id": "tb_tin_cup_after",
+      "kind": "use",
+      "label": "Tin cup",
+      "once": true,
+      "if": {
+        "flags": [
+          "followed_fiddle"
+        ],
+        "notFlags": [
+          "found:night_man_cup"
+        ]
+      },
+      "dialogue": "tb_find_cup_empty",
+      "then": [
+        {
+          "find": "night_man_cup"
+        }
+      ],
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "The tin cup"
+        }
+      ]
+    },
+    {
+      "id": "tb_chestnut",
+      "kind": "use",
+      "label": "Inside the chestnut",
+      "dialogue": "tb_find_chestnut",
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "The hollow chestnut (nook)"
+        }
+      ]
+    },
+    {
+      "id": "tb_worn_stones",
+      "kind": "use",
+      "label": "The worn stones",
+      "if": {
+        "flags": [
+          "followed_fiddle"
+        ]
+      },
+      "dialogue": "tb_find_worn",
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "spot": "The worn place"
+        }
+      ]
+    },
+    {
+      "id": "tb_bench",
+      "kind": "use",
+      "label": "Stone bench",
+      "dialogue": "tb_find_bench",
+      "places": [
+        {
+          "area": "the-lookoff",
+          "spot": "The stone bench (nook)"
+        }
+      ]
+    },
+    {
+      "id": "tb_ricks",
+      "kind": "use",
+      "label": "Rick ends",
+      "dialogue": "tb_find_ricks",
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "Mehitable (rick ends)"
+        }
+      ]
+    },
+    {
+      "id": "tb_sled",
+      "kind": "use",
+      "label": "Bark sled",
+      "dialogue": "tb_find_sled",
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "The bark sled"
+        }
+      ]
+    },
+    {
+      "id": "tb_lost_sack",
+      "kind": "use",
+      "label": "A sack of beechnuts",
+      "pickup": true,
+      "sound": "hay_search",
+      "once": true,
+      "if": {
+        "flags": [
+          "lydia_asked"
+        ],
+        "notFlags": [
+          "sack_found"
+        ]
+      },
+      "dialogue": "tb_lost_sack",
+      "then": [
+        {
+          "setFlag": "sack_found"
+        }
+      ],
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "Deep in the beeches"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_boots",
+      "kind": "use",
+      "label": "Boots in the shed",
+      "pickup": true,
+      "once": true,
+      "gear": {
+        "slot": "boots",
+        "rarity": "stout"
+      },
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "Boots (the shed)"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_bark",
+      "kind": "use",
+      "label": "Hemlock bark",
+      "pickup": true,
+      "once": true,
+      "sound": "hay_search",
+      "find": {
+        "item": "hemlock_bark",
+        "n": 2,
+        "note": "Two curls off the end of a rick. Mehitable won't miss them; she'll know, but she won't miss them."
+      },
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "Hemlock Bark (the ricks)"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_gloves",
+      "kind": "use",
+      "label": "Gloves in the chestnut",
+      "pickup": true,
+      "once": true,
+      "gear": {
+        "slot": "gloves",
+        "rarity": "stout"
+      },
+      "places": [
+        {
+          "area": "mast-wood",
+          "at": [
+            -21.4,
+            -6.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tb_find_nuts",
+      "kind": "use",
+      "label": "Beechnuts",
+      "pickup": true,
+      "once": true,
+      "sound": "hay_search",
+      "find": {
+        "item": "beechnut",
+        "n": 3,
+        "note": "Three-sided, glossy, and good."
+      },
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "Beechnuts"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_belt",
+      "kind": "use",
+      "label": "Something by the spring",
+      "pickup": true,
+      "once": true,
+      "sound": "hay_search",
+      "gear": {
+        "slot": "belt",
+        "rarity": "stout"
+      },
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "The spring (nook)"
+        }
+      ]
+    },
+    {
+      "id": "tb_find_coat",
+      "kind": "use",
+      "label": "A coat on the wall",
+      "pickup": true,
+      "once": true,
+      "if": {
+        "flags": [
+          "followed_fiddle"
+        ]
+      },
+      "gear": {
+        "slot": "coat",
+        "rarity": "stout"
+      },
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "at": [
+            11.6,
+            -1.6
+          ]
+        }
+      ]
+    }
+  ]
 }

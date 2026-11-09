@@ -987,6 +987,12 @@
  "arenas": [],
  "placements": [
   {
+   "prop": "cordwood",
+   "x": 4.6,
+   "z": -13.5,
+   "collide": 0.4
+  },
+  {
    "prop": "granite_trough",
    "x": -1.6,
    "z": 1.6,
@@ -1287,6 +1293,18 @@
   }
  ],
  "spots": [
+  {
+   "name": "The meetinghouse woodpile",
+   "x": 4.6,
+   "z": -13.5,
+   "note": "Cordwood for the meetinghouse stove, against the east wall: a bundle of kindling, once between rests (decision 0406)."
+  },
+  {
+   "name": "The woodpile by the common",
+   "x": -15.6,
+   "z": -5,
+   "note": "The House by the common's cordwood: a bundle of kindling, once between rests (decision 0406)."
+  },
   {
    "name": "The trough",
    "x": -1.6,

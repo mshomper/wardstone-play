@@ -53,6 +53,15 @@
       ]
     },
     {
+      "id": "ada_cold",
+      "lines": [
+        { "who": "ada", "face": "worried", "text": "You're grey as a dishrag, you old goose. Cold that gets in stays in." },
+        { "who": "ada", "text": "Sit by a fire before you go anywhere you can't walk back from. And eat something while you're there." },
+        { "who": "eldwin", "text": "Yes, Ada." }
+      ],
+      "onEnd": [{ "setFlag": "heard:ACOLD" }]
+    },
+    {
       "id": "ada_after",
       "lines": [
         { "who": "ada", "text": "Sit down, Eldwin, before you fall down. The walls will keep till morning." }

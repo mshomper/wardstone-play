@@ -686,6 +686,12 @@
  ],
  "placements": [
   {
+   "prop": "cairn",
+   "x": 8.4,
+   "z": 2.2,
+   "collide": 0.5
+  },
+  {
    "prop": "wardstone_whole",
    "x": 2,
    "z": -15.7,
@@ -772,6 +778,19 @@
   }
  ],
  "keepClear": [
+  {
+   "points": [
+    [
+     8.0,
+     2.2
+    ],
+    [
+     8.8,
+     2.2
+    ]
+   ],
+   "radius": 1.2
+  },
   {
    "points": [
     [
@@ -882,6 +901,12 @@
   "spacing": 2.2
  },
  "spots": [
+  {
+   "name": "Wayside cairn",
+   "x": 8.4,
+   "z": 2.2,
+   "note": "Wayside cairn where the path turns up the last rise to the pound, the gate in sight: rest before the Pale Hart (decision 0406). A rest here burns a bundle of kindling."
+  },
   {
    "name": "The pound gate",
    "x": 8,

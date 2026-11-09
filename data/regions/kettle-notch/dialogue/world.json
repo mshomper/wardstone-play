@@ -1,6 +1,12 @@
 {
   "conversations": [
     {
+      "id": "kn_cold_nudge",
+      "lines": [
+        { "who": "eldwin", "text": "I'd sit by a fire first." }
+      ]
+    },
+    {
       "id": "noticeboard",
       "lines": [
         { "who": "", "text": "HARVEST FAIR — Tonight on the Green. Pie judging at six. Lanterns at dusk. Music by the Weller brothers." },

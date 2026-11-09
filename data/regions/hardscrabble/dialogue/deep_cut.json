@@ -1,6 +1,28 @@
 {
  "conversations": [
   {
+   "id": "dc_brazier",
+   "lines": [
+    {
+     "who": "",
+     "text": "An old iron fire basket, left by the cutters. There's coal still in the bottom of it, dry as the day they went."
+    },
+    {
+     "who": "eldwin",
+     "text": "It catches. Warm enough to stand by a while."
+    }
+   ]
+  },
+  {
+   "id": "hs_cold_nudge",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "I'd sit by a fire first."
+    }
+   ]
+  },
+  {
    "id": "dc_frost_bridge",
    "lines": [
     {
@@ -32,7 +54,17 @@
     {
      "who": "",
      "text": "A row of hollows in the face, each the size of a block. Three lines are cut across each other over every one, and there is a name under every one, worn down to scratches."
-    },
+    }
+   ],
+   "onEnd": [
+    {
+     "scene": "seam_face"
+    }
+   ]
+  },
+  {
+   "id": "dc_seam_panel",
+   "lines": [
     {
      "who": "",
      "text": "The last hollow is the cleanest. Its name panel has been dressed smooth, ready for the chisel. Nothing is cut in it."

@@ -1,0 +1,215 @@
+{
+  "id": "the-fiddle-in-the-woods",
+  "title": "The Fiddle in the Woods",
+  "chapter": true,
+  "after": "joined:obed",
+  "_note": "The main story's fourth chapter (decision 0427): the Tanbark Road, from the Cellar Holes down to Harlow Bridge. The brief's five beats (docs/regions/tanbark-road.md, 'The main beat'). Morning on the Bark Road, midday in the Mast Wood, dusk at the Hemlock Wall and the night at Jasper's fire, first light at the Lookoff. Spoken to, the Bull of the Woods starts his fight (mw-bull, decision 0429); the win sets beat_bull.",
+  "steps": [
+    {
+      "id": "bark",
+      "title": "The bark road",
+      "objective": "Take the old bark road south into the woods.",
+      "time": 8.5,
+      "done": {
+        "flags": [
+          "met_rowes"
+        ]
+      },
+      "skip": {
+        "area": "bark-road",
+        "spot": "From the Cellar Holes"
+      },
+      "auto": [
+        {
+          "go": "bark-road"
+        },
+        {
+          "talk": "ezekiel_rowe"
+        }
+      ],
+      "sets": [
+        "met_rowes",
+        "heard_night_man"
+      ]
+    },
+    {
+      "id": "mast",
+      "title": "The Mast Wood",
+      "objective": "Go on south, into the big beeches.",
+      "time": 11.5,
+      "done": {
+        "flags": [
+          "met_jotham"
+        ]
+      },
+      "skip": {
+        "area": "mast-wood",
+        "spot": "From the Bark Road"
+      },
+      "auto": [
+        {
+          "go": "mast-wood"
+        },
+        {
+          "talk": "lydia_fairbanks"
+        },
+        {
+          "talk": "jotham_leavitt"
+        }
+      ],
+      "sets": [
+        "met_fairbanks",
+        "met_jotham"
+      ]
+    },
+    {
+      "id": "bull",
+      "title": "The Bull of the Woods",
+      "objective": "A bull moose is standing on the road, and won't move.",
+      "time": 12.5,
+      "done": {
+        "flags": [
+          "beat_bull"
+        ]
+      },
+      "skip": {
+        "area": "mast-wood",
+        "spot": "The teamster's wagon"
+      },
+      "auto": [
+        {
+          "talk": "bull_of_the_woods"
+        }
+      ],
+      "sets": [
+        "beat_bull"
+      ]
+    },
+    {
+      "id": "camp",
+      "title": "The hemlocks",
+      "objective": "Go on down into the hemlocks.",
+      "time": 16.5,
+      "done": {
+        "flags": [
+          "met_jasper_tanbark"
+        ]
+      },
+      "skip": {
+        "area": "hemlock-wall",
+        "spot": "From the Mast Wood"
+      },
+      "auto": [
+        {
+          "go": "hemlock-wall"
+        },
+        {
+          "talk": "jasper_crane"
+        }
+      ],
+      "sets": [
+        "met_jasper_tanbark"
+      ]
+    },
+    {
+      "id": "rest",
+      "title": "Jasper's fire",
+      "objective": "Dark comes early under the hemlocks. Rest at Jasper's fire.",
+      "time": 18.5,
+      "done": {
+        "flags": [
+          "heard_fiddle"
+        ]
+      },
+      "skip": {
+        "area": "hemlock-wall",
+        "spot": "Jasper's fire"
+      },
+      "auto": [
+        {
+          "use": "tb_camp_sit"
+        }
+      ],
+      "sets": [
+        "heard_fiddle"
+      ]
+    },
+    {
+      "id": "fiddle",
+      "title": "The fiddle",
+      "objective": "Follow the fiddle along the wall.",
+      "done": {
+        "flags": [
+          "followed_fiddle"
+        ]
+      },
+      "skip": {
+        "area": "hemlock-wall",
+        "spot": "Jasper's fire"
+      },
+      "auto": [
+        {
+          "use": "tb_worn_place"
+        }
+      ],
+      "sets": [
+        "followed_fiddle"
+      ]
+    },
+    {
+      "id": "first-light",
+      "title": "First light",
+      "objective": "Go on at first light, to where the woods end.",
+      "onStart": [
+        {
+          "dialogue": "tb_fiddle_back"
+        },
+        {
+          "sleep": 7.2
+        }
+      ],
+      "done": {
+        "flags": [
+          "saw_far_figure"
+        ]
+      },
+      "skip": {
+        "area": "hemlock-wall",
+        "spot": "Jasper's fire"
+      },
+      "auto": [
+        {
+          "go": "the-lookoff"
+        },
+        {
+          "use": "tb_overlook"
+        }
+      ],
+      "sets": [
+        "saw_far_figure"
+      ],
+      "time": 7.4
+    },
+    {
+      "id": "down",
+      "title": "Down to Harlow Bridge",
+      "objective": "Follow the switchbacks down into Harlow Bridge.",
+      "done": {
+        "enter": "harlow-bridge"
+      },
+      "sets": [
+        "reached_harlow_bridge"
+      ],
+      "skip": {
+        "area": "the-lookoff",
+        "spot": "The overlook"
+      },
+      "auto": [
+        {
+          "go": "harlow-bridge"
+        }
+      ],
+      "time": 8.0
+    }
+  ]
+}

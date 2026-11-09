@@ -1,0 +1,62 @@
+{
+  "_note": "The Broken Tankard's two scenes (decision 0388). frost_night: the cutaway at Jasper's fire on the Tanbark Road, the night the frost came early, close to a friend's original scene (docs/briefs/characters/thadeous-scene-adapted.md). tm_: the evening the party first walks into the Tankard and meets Thadeous (docs/regions/harlow-bridge.md, Old Country Airs beats 2 and 3). src/story/tankard.ts stages the moments between these lines.",
+  "conversations": [
+    { "id": "fn_name", "lines": [
+      { "who": "", "text": "Harlow Bridge, the same night. Down the river, the frost was coming to Kettle Notch." },
+      { "who": "", "text": "Thadeous had always hated his own name." },
+      { "who": "thadeous", "text": "Thadeous Burnbottom." }
+    ] },
+    { "id": "fn_drops", "lines": [
+      { "who": "", "text": "The last drops of hard cider leapt from the tankard and hung there in the air, as if held up on a string, then spattered down across the table and across his shirtsleeves." },
+      { "who": "oren_whitcomb", "text": "Easy now, Thadeous! I've warned you time and enough about your foolishness." }
+    ] },
+    { "id": "fn_governor", "lines": [
+      { "who": "thadeous", "text": "Right! I'll just be off, then!" },
+      { "who": "", "text": "A handful of mill hands and farmers looked up from their suppers, with only the mildest interest. They'd seen this before." },
+      { "who": "", "text": "He had learned his craft under Master Hiram Prentice himself. He had been asked to sing at the Governor's harvest ball. It all seemed a lifetime ago." },
+      { "who": "thadeous", "text": "I sang for the Governor! I..." },
+      { "who": "", "text": "He started again, then fell silent." },
+      { "who": "oren_whitcomb", "text": "Go home, Thadeous. Go on home." }
+    ] },
+    { "id": "fn_five_years", "lines": [
+      { "who": "thadeous", "text": "It was five years ago, you know. Five years." },
+      { "who": "", "text": "They had all heard the story. His little girl, three years old, lost somewhere up in the high pastures north of town, where the old stone walls run into the woods." },
+      { "who": "thadeous", "text": "She was only three. She'd be eight now." }
+    ] },
+    { "id": "fn_lantern", "lines": [
+      { "who": "", "text": "On the iron lantern beside the tavern door, a heavy frost had just begun to settle." },
+      { "who": "", "text": "A frost that came far too early, in an otherwise ordinary fall." }
+    ] },
+
+    { "id": "tm_announce", "lines": [
+      { "who": "thadeous", "text": "And now, for the discerning ear, and I can see at least one, Oren, though it's yours and you're not using it, the verse my grandmother swore up and down was the oldest in the county." }
+    ] },
+    { "id": "tm_laugh", "lines": [
+      { "who": "harlow_millhand", "text": "Here it comes!" },
+      { "who": "", "text": "The room laughs, the way a room laughs at a joke it has heard a hundred times." }
+    ] },
+    { "id": "tm_still", "lines": [
+      { "who": "", "text": "Eldwin has gone completely still." },
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "That's Burnbottom. Every town's got one." },
+      { "who": "", "if": { "flags": ["joined:applegate"] }, "text": "Mrs. Applegate doesn't laugh." }
+    ] },
+    { "id": "tm_meeting", "lines": [
+      { "who": "thadeous", "text": "Thank you. Thank you. I'm here all week. I'm always here all week." },
+      { "who": "oren_whitcomb", "text": "Last one, Thadeous." },
+      { "who": "", "text": "He turns, and finds strangers looking at him." },
+      { "who": "thadeous", "text": "Thadeous Burnbottom. Go on, get the laughing over with. I'll wait." },
+      { "who": "eldwin", "text": "Where did you learn that verse?" },
+      { "who": "thadeous", "text": "My grandmother, who had it from hers, and then Master Hiram Prentice, the finest singing-master who ever rode a circuit of meetinghouses, who told me it was an old country air and that I was never, under any circumstances, to sing it in a meetinghouse. So naturally I sing it here." },
+      { "who": "eldwin", "text": "Would you sing it again? All of it." },
+      { "who": "", "text": "He stops dead, the tankard halfway up." },
+      { "who": "thadeous", "text": "Nobody's asked me that in..." },
+      { "who": "thadeous", "text": "Five years." },
+      { "who": "", "text": "He doesn't say who used to ask. He picks the fiddle back up." }
+    ] },
+    { "id": "tm_candles", "lines": [
+      { "who": "", "text": "Every candle flame in the room leans toward him, the wrong way for the draught from the door." },
+      { "who": "oren_whitcomb", "text": "Well. That's new." },
+      { "who": "", "text": "Eldwin doesn't explain." }
+    ] }
+  ]
+}

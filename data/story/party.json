@@ -26,8 +26,9 @@
   "pointsPerLevel": 1,
   "typicalFoeRes": 7,
   "fallenBack": 0.1,
+  "cold": { "_note": "The cold that stays (decision 0405): after a fight, `share` of the damage each hero took sets in as cold, lowering their most health until a rest, and never below `floor` of it. It starts once `after` is set (the breach sealed), so the breach and everything before it are untouched.", "share": 0.25, "floor": 0.3, "after": "breach_sealed" },
   "resources": {
-    "mp": { "name": "Magic", "short": "MP", "icon": "drop", "onAttack": 2, "onRound": 1, "afterWin": 0.33 },
+    "mp": { "name": "Magic", "short": "MP", "icon": "drop", "onAttack": 2, "onRound": 1, "afterWin": 0.15 },
     "stamina": { "name": "Stamina", "short": "Stamina", "icon": "drop", "colour": ["#8a5a24", "#e6b35c"], "onAttack": 4, "onRound": 3, "onStruck": 3, "startsAt": 0.5, "afterWin": 1 },
     "temper": {"name": "Temper", "short": "Temper", "icon": "feather", "colour": ["#7a2a1a", "#e0703a"], "onAttack": 0, "onHit": 3, "onRound": 0, "onStruck": 4, "onAllyStruck": 3, "startsAt": 0, "afterWin": 0},
     "verse": {"name": "Verse", "short": "Verse", "icon": "note", "colour": ["#5a2a6a", "#e2b6f2"], "onAttack": 0, "onRound": 0, "startsAt": 0, "afterWin": 0, "max": 5, "verse": {"song": 1, "inARow": 2}}

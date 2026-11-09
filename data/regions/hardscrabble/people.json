@@ -150,6 +150,7 @@
         { "if": { "flags": ["penned:holts", "penned:pikes", "penned:dows", "penned:merrills", "penned:abbotts", "penned:lowells"], "notFlags": ["pound_done"] }, "dialogue": "hs_sukey_pound_full" },
         { "if": { "flags": ["joined:obed"], "notFlags": ["heard:SVO"] }, "dialogue": "hs_sukey_obed" },
         { "if": { "flags": ["obed_wall_laid"], "notFlags": ["pound_done", "pound_asked"] }, "dialogue": "hs_sukey_gone" },
+        { "if": { "flags": ["breach_sealed"], "notFlags": ["heard:SVCOLD"], "coldAtLeast": 0.01 }, "dialogue": "hs_sukey_cold" },
         { "if": { "flags": ["talks:sukey_varnum:3"], "notFlags": ["heard:SV1"] }, "dialogue": "hs_open_sv1" },
         { "if": { "flags": ["talks:sukey_varnum:5", "heard:SV1"], "notFlags": ["heard:SV2"] }, "dialogue": "hs_open_sv2" },
         { "if": { "notFlags": ["obed_wall_laid"] }, "dialogue": "hs_sukey_pound" },

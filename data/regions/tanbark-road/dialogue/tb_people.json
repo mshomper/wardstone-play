@@ -1,0 +1,412 @@
+{
+  "_note": "The Tanbark Road's people (decision 0427): the Rowes at the bark shed, Lydia Fairbanks and her three in the Mast Wood, Jotham Leavitt and his wagon, Jasper at the Hemlock Wall. Voices from docs/regions/tanbark-road.md. Draft lines, for Matt or his writer friend.",
+  "conversations": [
+    {
+      "id": "tb_ezekiel_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "An old man works a spud down a hemlock log. The bark comes away in one long curl, and he lays it on the rick without looking."
+        },
+        {
+          "who": "ezekiel_rowe",
+          "text": "Morning. Road's open, if you're going down. Nobody much comes up."
+        },
+        {
+          "who": "eldwin",
+          "text": "We're going down."
+        },
+        {
+          "who": "ezekiel_rowe",
+          "text": "Then mind the woods after dark. Not for anything in them. You'll hear him, is all."
+        },
+        {
+          "who": "eldwin",
+          "text": "Hear who?"
+        },
+        {
+          "who": "ezekiel_rowe",
+          "text": "Fiddle. Up in the hemlocks, most nights. Same tune every time. Sad one."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "Fiddles don't hurt anybody."
+        },
+        {
+          "who": "ezekiel_rowe",
+          "text": "No. They don't."
+        },
+        {
+          "who": "",
+          "if": {
+            "flags": [
+              "joined:applegate"
+            ]
+          },
+          "text": "Mrs. Applegate looks south down the road, and keeps looking."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "met_rowes"
+        }
+      ]
+    },
+    {
+      "id": "tb_ezekiel",
+      "lines": [
+        {
+          "who": "ezekiel_rowe",
+          "text": "Wagon comes once a month now. When it comes. Tannery's buying less."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "Shame about the trees. Good timber, standing there dead."
+        },
+        {
+          "who": "ezekiel_rowe",
+          "text": "Wasn't the timber they wanted, Thayer. It was the bark."
+        }
+      ]
+    },
+    {
+      "id": "tb_mehitable_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "She chalks a mark on the end of a rick, counts under her breath, and chalks another."
+        },
+        {
+          "who": "mehitable_rowe",
+          "text": "Forty-one. Don't make me lose it."
+        },
+        {
+          "who": "eldwin",
+          "text": "Your husband says there's a fiddler in the woods."
+        },
+        {
+          "who": "mehitable_rowe",
+          "text": "The Night Man. That's what we call him. Folk down the hill say ghost. He's no ghost."
+        },
+        {
+          "who": "mehitable_rowe",
+          "text": "We leave the cup full at the spring. It's empty by morning."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard_night_man"
+        }
+      ]
+    },
+    {
+      "id": "tb_mehitable",
+      "lines": [
+        {
+          "who": "mehitable_rowe",
+          "text": "Forty-four. Forty-five."
+        }
+      ]
+    },
+    {
+      "id": "tb_mehitable_open",
+      "lines": [
+        {
+          "who": "mehitable_rowe",
+          "text": "I knew whose girl it was. That went missing."
+        },
+        {
+          "who": "eldwin",
+          "text": "Whose?"
+        },
+        {
+          "who": "mehitable_rowe",
+          "text": "Poor soul. He's not a joke up here, whatever he is in town."
+        },
+        {
+          "who": "",
+          "text": "She doesn't say his name."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard:TMO"
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "A woman in a town shawl is filling sacks with beechnuts, fast, while three children do something more like eating them."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "Mast year. Every squirrel in the county's out, and every widow. Ned, those are for selling."
+        },
+        {
+          "who": "ned_fairbanks",
+          "text": "Mister, there's a ghost in these woods. It plays the fiddle and it screams."
+        },
+        {
+          "who": "polly_fairbanks",
+          "text": "It's the lost girl. From the Bridge. She's calling for her father."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "That's enough."
+        },
+        {
+          "who": "",
+          "text": "She says it hard, and the children go quiet. Sam goes on eating."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "met_fairbanks"
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia",
+      "lines": [
+        {
+          "who": "lydia_fairbanks",
+          "text": "Beechnuts sell at the square, Thursdays. Acorns are for the pig."
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_catamount",
+      "lines": [
+        {
+          "who": "eldwin",
+          "text": "The screaming in the woods at night. It was a catamount."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "Well. Don't tell Ned. He'll be sorry it wasn't a ghost."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard:TLC"
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_open",
+      "lines": [
+        {
+          "who": "lydia_fairbanks",
+          "text": "I'm sorry about the children. They hear things and they say them."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "He sang at my wedding. Best voice in the county. Folk forget that."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "heard:TLO"
+        }
+      ]
+    },
+    {
+      "id": "tb_ned",
+      "lines": [
+        {
+          "who": "ned_fairbanks",
+          "text": "If you hear it, don't follow it. That's how it gets you."
+        },
+        {
+          "who": "eldwin",
+          "text": "How does it get you?"
+        },
+        {
+          "who": "ned_fairbanks",
+          "text": "I don't know. Nobody's ever come back to say."
+        }
+      ]
+    },
+    {
+      "id": "tb_polly",
+      "lines": [
+        {
+          "who": "polly_fairbanks",
+          "text": "Ned says it's a ghost. Is it a ghost?"
+        },
+        {
+          "who": "eldwin",
+          "text": "I've never met one."
+        },
+        {
+          "who": "polly_fairbanks",
+          "text": "That's what a ghost would say."
+        }
+      ]
+    },
+    {
+      "id": "tb_sam",
+      "lines": [
+        {
+          "who": "",
+          "text": "Sam holds up a beechnut, considers it, and eats it."
+        }
+      ]
+    },
+    {
+      "id": "tb_jotham_first",
+      "lines": [
+        {
+          "who": "",
+          "text": "A big man in a canvas coat is standing by an empty bark wagon, rubbing the back of his neck, and looking up the road."
+        },
+        {
+          "who": "jotham_leavitt",
+          "text": "Leavitt. Tannery wagon. I'd be up at the Rowes' by now, if not for him."
+        },
+        {
+          "who": "",
+          "text": "He nods down the road. Something very large is standing on it."
+        },
+        {
+          "who": "jotham_leavitt",
+          "text": "Bull moose. In the rut. Takes anything tall for a rival, and the horses won't go past."
+        },
+        {
+          "who": "obed",
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          },
+          "text": "The bull of the woods."
+        },
+        {
+          "who": "jotham_leavitt",
+          "text": "That's what the Rowes call him. They think it's very funny. It's a word for the camp boss, up north."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "met_jotham"
+        }
+      ]
+    },
+    {
+      "id": "tb_jotham",
+      "lines": [
+        {
+          "who": "jotham_leavitt",
+          "text": "Two days I've sat here. The horses don't like it. I don't like it."
+        }
+      ]
+    },
+    {
+      "id": "tb_jotham_thanks",
+      "lines": [
+        {
+          "who": "jotham_leavitt",
+          "text": "Well. That's the road clear."
+        },
+        {
+          "who": "jotham_leavitt",
+          "text": "Here. It's not much, but it's warm, and it's been up and down this road more than I have."
+        },
+        {
+          "who": "",
+          "text": "He takes off his coat, shakes it, and hands it over. It smells of horse and hemlock."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "jotham_thanked"
+        },
+        {
+          "find": "jotham_teamster_coat"
+        }
+      ]
+    },
+    {
+      "id": "tb_jotham_after",
+      "lines": [
+        {
+          "who": "jotham_leavitt",
+          "text": "I'll be down at the Bridge before you, likely. Ask at the tannery if you need a ride back up."
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_ask",
+      "lines": [
+        {
+          "who": "lydia_fairbanks",
+          "text": "Polly dropped a sack somewhere back in the big beeches and won't go after it. Not with the noise that moose makes."
+        },
+        {
+          "who": "polly_fairbanks",
+          "text": "It was the ghost."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "It was the moose. If you're passing that way."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "lydia_asked"
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_waiting",
+      "lines": [
+        {
+          "who": "lydia_fairbanks",
+          "text": "Deep in the beeches, west of the road. A sack with a red string on it."
+        }
+      ]
+    },
+    {
+      "id": "tb_lydia_thanks",
+      "lines": [
+        {
+          "who": "lydia_fairbanks",
+          "text": "That's the one. Polly, say thank you."
+        },
+        {
+          "who": "polly_fairbanks",
+          "text": "Was it the ghost?"
+        },
+        {
+          "who": "eldwin",
+          "text": "It was a sack."
+        },
+        {
+          "who": "lydia_fairbanks",
+          "text": "Here. It was my mother's, for the nutting. Six pockets, and I've never got the last beechnut out of any of them."
+        }
+      ],
+      "onEnd": [
+        {
+          "setFlag": "lydia_thanked"
+        },
+        {
+          "find": "lydia_nutting_apron"
+        }
+      ]
+    }
+  ]
+}

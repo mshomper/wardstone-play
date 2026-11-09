@@ -31,6 +31,7 @@
     "sheltered": { "name": "Under her wing", "desc": "Nothing can hurt them.", "until": "Until her next turn" },
     "biting": { "name": "Ready to bite", "desc": "The first foe to strike anyone in the party gets bitten, and Hexed.", "until": "Until her next turn" },
     "grudge": { "name": "Grudge", "desc": "Any blow it lands on a hero, however small, Hexes it." },
-    "wrapped": { "name": "Wrapped up", "desc": "A wool scarf, wound twice: you can't be Chilled.", "until": "For the rest of this fight" }
+    "wrapped": { "name": "Wrapped up", "desc": "A wool scarf, wound twice: you can't be Chilled.", "until": "For the rest of this fight" },
+    "cold": { "name": "The cold that stays", "desc": "{n} cold. It lowers your most health until you rest at a hearth or cairn.", "until": "Until a rest" }
   }
 }

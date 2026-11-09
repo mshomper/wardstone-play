@@ -21,7 +21,8 @@
         "hag_stone": 2,
         "grindstone_grit": 2,
         "hearth_ash": 2,
-        "hornet_paper": 1
+        "hornet_paper": 1,
+        "kindling": 4
       },
       "lines": {
         "empty": "Have a look round. Mind the lasts. What have you brought me?",

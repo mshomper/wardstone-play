@@ -757,7 +757,8 @@
             2.2,
             2.4
           ],
-          "depth": 0.8
+          "depth": 0.8,
+          "spot": "hearth"
         },
         {
           "mesh": "table",
@@ -3545,6 +3546,7 @@
       ]
     },
     "deep_cut_box": {"label": "Cutters' box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 23, "areas": ["deep-cut"]}, {"gear": "stout", "weight": 11.7, "areas": ["deep-cut"]}, {"gear": "sunday", "weight": 0.3, "areas": ["deep-cut"]}, {"item": "rime_shard", "weight": 10}, {"item": "hag_stone", "weight": 6}, {"item": "bent_pin", "weight": 6}, {"item": "lamp_wick", "weight": 6}, {"item": "pine_pitch", "weight": 6}, {"item": "old_wall_stone", "weight": 5}, {"item": "warm_cider", "weight": 8}, {"item": "mustard_plaster", "weight": 6}, {"item": "rock_salt", "weight": 6}, {"item": "birch_tonic", "weight": 6}], "notes": ["Under a cutter’s apron gone stiff with the cold.", "Wrapped in sacking, against the damp.", "At the bottom, under the wedges and a broken feather."], "empty": ["Wedges, feathers and a mallet with no handle.", "A tally stick, notched to the end.", "Rust, and the smell of the rock."]},
-    "deep_cut_seam": {"label": "Rime-grown box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 33, "areas": ["deep-cut"]}, {"gear": "stout", "weight": 16.7, "areas": ["deep-cut"]}, {"gear": "sunday", "weight": 1.3, "areas": ["deep-cut"]}, {"item": "rime_shard", "weight": 12, "n": 2}, {"item": "hag_stone", "weight": 6}, {"item": "mulled_cider", "weight": 6}, {"item": "sassafras_tea", "weight": 5}, {"item": "cold_iron_nail", "weight": 6}, {"item": "ward_chalk", "weight": 5}, {"item": "sugar_on_snow", "weight": 5}, {"item": "wool_scarf", "weight": 4}], "notes": ["Kept where the cold could keep it.", "Under a skin of rime that breaks like sugar.", "Somebody followed the best stone this far, and left the best of their things with it."], "empty": ["Rime, all the way down.", "Nothing but cold, and the shine of it."]}
+    "deep_cut_seam": {"label": "Rime-grown box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 33, "areas": ["deep-cut"]}, {"gear": "stout", "weight": 16.7, "areas": ["deep-cut"]}, {"gear": "sunday", "weight": 1.3, "areas": ["deep-cut"]}, {"item": "rime_shard", "weight": 12, "n": 2}, {"item": "hag_stone", "weight": 6}, {"item": "mulled_cider", "weight": 6}, {"item": "sassafras_tea", "weight": 5}, {"item": "cold_iron_nail", "weight": 6}, {"item": "ward_chalk", "weight": 5}, {"item": "sugar_on_snow", "weight": 5}, {"item": "wool_scarf", "weight": 4}], "notes": ["Kept where the cold could keep it.", "Under a skin of rime that breaks like sugar.", "Somebody followed the best stone this far, and left the best of their things with it."], "empty": ["Rime, all the way down.", "Nothing but cold, and the shine of it."]},
+    "tanbark_rick_box": {"label": "Barkers' box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 23, "areas": ["bark-road"]}, {"gear": "stout", "weight": 11.7, "areas": ["bark-road"]}, {"item": "hemlock_bark", "weight": 12, "n": 2}, {"item": "beechnut", "weight": 8}, {"item": "warm_cider", "weight": 6}], "notes": ["Under a peeling iron gone brown with tan.", "Wrapped in a barker's apron, stiff and red.", "At the bottom, under a coil of rope and a whetstone."], "empty": ["A whetstone worn to a saddle.", "Bark dust, red as rust.", "A tally in chalk, rubbed half out."]}
   }
 }

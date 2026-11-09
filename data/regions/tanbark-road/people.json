@@ -1,3 +1,363 @@
 {
-  "people": []
+  "_note": "The Tanbark Road's people (decisions 0426, 0427): the Rowes at the bark shed; Lydia Fairbanks and her three, and Jotham Leavitt with his wagon, in the Mast Wood; the Bull of the Woods on the road until he's settled. Jasper is in story/people.json.",
+  "people": [
+    {
+      "id": "ezekiel_rowe",
+      "name": "Ezekiel Rowe",
+      "title": "Bark peeler",
+      "portrait": "#5a4a3a",
+      "sprite": "npc_ezekiel_rowe_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "bark-road",
+          "spot": "Ezekiel (the ricks)",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_rowes"
+            ]
+          },
+          "dialogue": "tb_ezekiel_first"
+        },
+        {
+          "dialogue": "tb_ezekiel"
+        }
+      ]
+    },
+    {
+      "id": "mehitable_rowe",
+      "name": "Mehitable Rowe",
+      "title": "Bark peeler",
+      "portrait": "#7a4a4a",
+      "sprite": "npc_mehitable_rowe_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "bark-road",
+          "spot": "Mehitable (rick ends)",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "heard_night_man"
+            ]
+          },
+          "dialogue": "tb_mehitable_first"
+        },
+        {
+          "if": {
+            "flags": [
+              "talks:mehitable_rowe:3"
+            ],
+            "notFlags": [
+              "heard:TMO"
+            ]
+          },
+          "dialogue": "tb_mehitable_open"
+        },
+        {
+          "dialogue": "tb_mehitable"
+        }
+      ]
+    },
+    {
+      "id": "lydia_fairbanks",
+      "name": "Lydia Fairbanks",
+      "title": "Out nutting",
+      "portrait": "#2e3448",
+      "sprite": "npc_lydia_fairbanks_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mast-wood",
+          "spot": "Lydia (handcart)",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_fairbanks"
+            ]
+          },
+          "dialogue": "tb_lydia_first"
+        },
+        {
+          "if": {
+            "flags": [
+              "sack_found"
+            ],
+            "notFlags": [
+              "lydia_thanked"
+            ]
+          },
+          "dialogue": "tb_lydia_thanks"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "lydia_asked"
+            ]
+          },
+          "dialogue": "tb_lydia_ask"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "sack_found"
+            ]
+          },
+          "dialogue": "tb_lydia_waiting"
+        },
+        {
+          "if": {
+            "flags": [
+              "beat_catamount"
+            ],
+            "notFlags": [
+              "heard:TLC"
+            ]
+          },
+          "dialogue": "tb_lydia_catamount"
+        },
+        {
+          "if": {
+            "flags": [
+              "talks:lydia_fairbanks:4"
+            ],
+            "notFlags": [
+              "heard:TLO"
+            ]
+          },
+          "dialogue": "tb_lydia_open"
+        },
+        {
+          "dialogue": "tb_lydia"
+        }
+      ]
+    },
+    {
+      "id": "ned_fairbanks",
+      "name": "Ned Fairbanks",
+      "title": "Lydia's eldest",
+      "portrait": "#3e5034",
+      "sprite": "npc_ned_fairbanks_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mast-wood",
+          "spot": "Ned",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "tb_ned"
+        }
+      ]
+    },
+    {
+      "id": "polly_fairbanks",
+      "name": "Polly Fairbanks",
+      "title": "Lydia's daughter",
+      "portrait": "#3a5a7a",
+      "sprite": "npc_polly_fairbanks_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mast-wood",
+          "spot": "Polly",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "tb_polly"
+        }
+      ]
+    },
+    {
+      "id": "sam_fairbanks",
+      "name": "Sam Fairbanks",
+      "title": "Lydia's youngest",
+      "portrait": "#7a6440",
+      "sprite": "sam_fairbanks_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mast-wood",
+          "spot": "Sam",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "tb_sam"
+        }
+      ]
+    },
+    {
+      "id": "jotham_leavitt",
+      "name": "Jotham Leavitt",
+      "title": "The tannery's teamster",
+      "portrait": "#6a6040",
+      "sprite": "npc_jotham_leavitt_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mast-wood",
+          "spot": "The teamster's wagon",
+          "dir": 0,
+          "potter": 0,
+          "if": {
+            "flags": [
+              "joined:obed"
+            ],
+            "notFlags": [
+              "reached_harlow_bridge"
+            ]
+          }
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_jotham"
+            ]
+          },
+          "dialogue": "tb_jotham_first"
+        },
+        {
+          "if": {
+            "flags": [
+              "beat_bull"
+            ],
+            "notFlags": [
+              "jotham_thanked"
+            ]
+          },
+          "dialogue": "tb_jotham_thanks"
+        },
+        {
+          "if": {
+            "flags": [
+              "jotham_thanked"
+            ]
+          },
+          "dialogue": "tb_jotham_after"
+        },
+        {
+          "dialogue": "tb_jotham"
+        }
+      ]
+    },
+    {
+      "id": "bull_of_the_woods",
+      "name": "The Bull of the Woods",
+      "title": "",
+      "portrait": "#4a3a2a",
+      "sprite": "bull_moose_iso",
+      "scale": 1.0,
+      "radius": 1.1,
+      "low": false,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "joined:obed"
+            ],
+            "notFlags": [
+              "beat_bull"
+            ]
+          },
+          "area": "mast-wood",
+          "spot": "The Bull of the Woods",
+          "dir": 2,
+          "potter": 0,
+          "exact": true
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_jotham"
+            ]
+          },
+          "dialogue": "tb_bull_first"
+        },
+        {
+          "dialogue": "tb_bull_meet"
+        }
+      ]
+    },
+    {
+      "id": "far_figure",
+      "name": "A figure far off",
+      "title": "",
+      "portrait": "#6a3a6a",
+      "sprite": "thadeous_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:far_figure"
+            ]
+          },
+          "area": "the-lookoff",
+          "spot": "The far figure",
+          "dir": 0,
+          "potter": 0
+        }
+      ],
+      "talk": []
+    }
+  ]
 }

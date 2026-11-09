@@ -1,3 +1,204 @@
 {
-  "people": []
+  "_note": "Harlow Bridge's people (decisions 0388, 0389). Oren keeps the bar and the drinkers sit at the taproom's tables; during the Broken Tankard's two scenes everyone stands where that scene's flag puts them. Thadeous is only in the taproom for the scenes until the region's story is written.",
+  "people": [
+    {
+      "id": "oren_whitcomb",
+      "name": "Oren Whitcomb",
+      "title": "Keeps the Broken Tankard",
+      "portrait": "#2e4a3a",
+      "sprite": "npc_oren_whitcomb_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:frost_night"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "bar",
+          "dir": 0,
+          "potter": 0,
+          "exact": true
+        },
+        {
+          "if": {
+            "flags": [
+              "scene:tankard_meeting"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "bar",
+          "dir": 0,
+          "potter": 0,
+          "exact": true
+        },
+        {
+          "if": {
+            "flags": [
+              "oren_on_porch"
+            ]
+          },
+          "area": "harlow-bridge",
+          "spot": "The Tankard's porch",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "bar",
+          "dir": 0,
+          "exact": true,
+          "potter": 0
+        }
+      ],
+      "talk": []
+    },
+    {
+      "id": "thadeous",
+      "name": "Thadeous Burnbottom",
+      "title": "The Bard",
+      "portrait": "#6a3a6a",
+      "sprite": "thadeous_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:frost_night"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_1",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "scene:tankard_meeting"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "corner",
+          "dir": 0,
+          "potter": 0
+        }
+      ]
+    },
+    {
+      "id": "harlow_millhand",
+      "name": "Mill hand",
+      "title": "",
+      "portrait": "#4a5a6a",
+      "sprite": "harlow_millhand_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:frost_night"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_2",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "scene:tankard_meeting"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_1",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_1",
+          "dir": 4
+        }
+      ],
+      "talk": []
+    },
+    {
+      "id": "harlow_farmer",
+      "name": "Farmer",
+      "title": "",
+      "portrait": "#3e4a32",
+      "sprite": "harlow_farmer_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:frost_night"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_3",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "scene:tankard_meeting"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_2",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_2",
+          "dir": 4
+        }
+      ],
+      "talk": []
+    },
+    {
+      "id": "harlow_goodwife",
+      "name": "Goodwife",
+      "title": "",
+      "portrait": "#2e3a4e",
+      "sprite": "harlow_goodwife_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "scene:frost_night"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "scene:tankard_meeting"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_3",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "table_3",
+          "dir": 4
+        }
+      ],
+      "talk": []
+    }
+  ]
 }

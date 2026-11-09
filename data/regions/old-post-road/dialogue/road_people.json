@@ -1,6 +1,15 @@
 {
  "conversations": [
   {
+   "id": "opr_cold_nudge",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "I'd sit by a fire first."
+    }
+   ]
+  },
+  {
    "id": "lavinia_first",
    "lines": [
     {

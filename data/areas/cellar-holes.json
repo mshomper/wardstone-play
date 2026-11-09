@@ -702,6 +702,12 @@
    "x": -6,
    "z": 16.2,
    "collide": 0.25
+  },
+  {
+   "prop": "cairn",
+   "x": -5.6,
+   "z": 6.9,
+   "collide": 0.5
   }
  ],
  "keepClear": [
@@ -808,6 +814,19 @@
     ]
    ],
    "radius": 1.6
+  },
+  {
+   "points": [
+    [
+     -6.0,
+     6.9
+    ],
+    [
+     -5.2,
+     6.9
+    ]
+   ],
+   "radius": 1.2
   }
  ],
  "spots": [
@@ -861,6 +880,12 @@
    "x": 26,
    "z": 20.6,
    "note": "The old road goes on south onto the Tanbark Road toward Harlow Bridge: the exit onto the Bark Road, open once Obed has joined (decision 0370)."
+  },
+  {
+   "name": "Wayside cairn",
+   "x": -5.6,
+   "z": 6.9,
+   "note": "Wayside cairn at the fork, across the old road from the lane down to Applejack's hole: rest before Applejack (decision 0406). A rest here burns a bundle of kindling."
   }
  ],
  "start": [

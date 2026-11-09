@@ -5,5 +5,11 @@
     "areas": {
       "breach": { "yaw": -8, "scale": 1.5, "lift": 0 }
     }
+  },
+  "_valley": "The valley below the Lookoff (tools/scenery/valley.py, decision 0425): painted only in the areas listed. yaw: degrees round from north that the view's middle faces (180 is south). scale and lift as the mountain's. fogFloor: the lowest height the dawn fog thickens down to there (elsewhere -4), so the drop below the lip doesn't fill with a white bank in front of the painting.",
+  "valley": {
+    "areas": {
+      "the-lookoff": { "yaw": 180, "scale": 1, "lift": 0, "fogFloor": 0 }
+    }
   }
 }
