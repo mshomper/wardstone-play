@@ -1,0 +1,667 @@
+{
+  "version": 1,
+  "name": "harlow-kit",
+  "seed": 382382,
+  "size": {
+    "w": 128,
+    "h": 64
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3.2,
+    "edgeWidth": 6,
+    "roll": 0.8,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.2,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -64,
+          14
+        ],
+        [
+          64,
+          14
+        ]
+      ],
+      "width": 2.2,
+      "kind": "road"
+    },
+    {
+      "points": [
+        [
+          -64,
+          -10
+        ],
+        [
+          64,
+          -10
+        ]
+      ],
+      "width": 1.8,
+      "kind": "road"
+    }
+  ],
+  "walls": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -60,
+          -10
+        ],
+        [
+          60,
+          -10
+        ]
+      ],
+      "radius": 16
+    },
+    {
+      "points": [
+        [
+          -60,
+          8
+        ],
+        [
+          60,
+          8
+        ]
+      ],
+      "radius": 9
+    }
+  ],
+  "buildings": [
+    {
+      "mesh": "kit",
+      "recipe": "rowhouse_end",
+      "x": -50,
+      "z": 6.5,
+      "w": 4,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "rowhouse",
+      "x": -46,
+      "z": 6.5,
+      "w": 4,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "rowhouse",
+      "x": -42,
+      "z": 6.5,
+      "w": 4,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "rowhouse",
+      "x": -38,
+      "z": 6.5,
+      "w": 4,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "rowhouse_end",
+      "x": -34,
+      "z": 6.5,
+      "w": 4,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "party": [
+          "left"
+        ]
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "shopblock",
+      "x": -22,
+      "z": 5.5,
+      "w": 6,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -4.5
+            ],
+            [
+              3,
+              -4.5
+            ],
+            [
+              3,
+              4.5
+            ],
+            [
+              -3,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "signText": "Lord Tailor",
+        "party": [
+          "right"
+        ]
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "shopblock",
+      "x": -16,
+      "z": 5.5,
+      "w": 6,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -4.5
+            ],
+            [
+              3,
+              -4.5
+            ],
+            [
+              3,
+              4.5
+            ],
+            [
+              -3,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "signText": "Dry Goods"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "shopblock",
+      "x": -10,
+      "z": 5.5,
+      "w": 6,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -4.5
+            ],
+            [
+              3,
+              -4.5
+            ],
+            [
+              3,
+              4.5
+            ],
+            [
+              -3,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "signText": "Hardware"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "shopblock",
+      "x": -4,
+      "z": 5.5,
+      "w": 6,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -4.5
+            ],
+            [
+              3,
+              -4.5
+            ],
+            [
+              3,
+              4.5
+            ],
+            [
+              -3,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "signText": "Books",
+        "party": [
+          "left"
+        ]
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "inn",
+      "x": 14,
+      "z": 6,
+      "w": 14,
+      "d": 8,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -7,
+              -4
+            ],
+            [
+              7,
+              -4
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              -7,
+              4
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "store",
+      "x": 34,
+      "z": 7,
+      "w": 8,
+      "d": 6,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -4,
+              -3
+            ],
+            [
+              4,
+              -3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              -4,
+              3
+            ]
+          ]
+        }
+      ],
+      "variants": {
+        "bow": true,
+        "porch": 0,
+        "signText": "E. Lord"
+      }
+    },
+    {
+      "mesh": "kit",
+      "recipe": "meetinghouse_spire",
+      "x": -44,
+      "z": -20,
+      "w": 11,
+      "d": 14,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -5.5,
+              -7
+            ],
+            [
+              5.5,
+              -7
+            ],
+            [
+              5.5,
+              7
+            ],
+            [
+              -5.5,
+              7
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "millhouse_office",
+      "x": -24,
+      "z": -19,
+      "w": 10,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -5,
+              -3.5
+            ],
+            [
+              5,
+              -3.5
+            ],
+            [
+              5,
+              3.5
+            ],
+            [
+              -5,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "federal",
+      "x": -8,
+      "z": -19,
+      "w": 10,
+      "d": 8,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              -5,
+              4
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "schoolhouse",
+      "x": 7,
+      "z": -19,
+      "w": 7,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3.5,
+              -4.5
+            ],
+            [
+              3.5,
+              -4.5
+            ],
+            [
+              3.5,
+              4.5
+            ],
+            [
+              -3.5,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "mill_brick",
+      "x": 30,
+      "z": -20,
+      "w": 20,
+      "d": 9,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -10,
+              -4.5
+            ],
+            [
+              10,
+              -4.5
+            ],
+            [
+              10,
+              4.5
+            ],
+            [
+              -10,
+              4.5
+            ]
+          ]
+        }
+      ],
+      "variants": {},
+      "landmarks": [
+        {
+          "kind": "waterwheel",
+          "side": "right",
+          "radius": 2.4,
+          "width": 1.1
+        }
+      ]
+    }
+  ],
+  "start": [
+    0,
+    13
+  ]
+}

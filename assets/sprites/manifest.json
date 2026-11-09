@@ -390,7 +390,7 @@
       ],
       "anims": 0,
       "sprites": 0,
-      "tiles": 252
+      "tiles": 266
     },
     {
       "name": "autumn_trees",
@@ -503,10 +503,10 @@
       "emissive": "hardscrabble_kit_emissive.png",
       "size": [
         1015,
-        424
+        515
       ],
       "anims": 0,
-      "sprites": 53,
+      "sprites": 61,
       "tiles": 0
     },
     {
@@ -534,6 +534,58 @@
       "anims": 0,
       "sprites": 8,
       "tiles": 0
+    },
+    {
+      "name": "harlow_textures",
+      "json": "harlow_textures.json",
+      "image": "harlow_textures.png",
+      "emissive": "harlow_textures_emissive.png",
+      "size": [
+        389,
+        78
+      ],
+      "anims": 0,
+      "sprites": 0,
+      "tiles": 8
+    },
+    {
+      "name": "harlow_kit",
+      "json": "harlow_kit.json",
+      "image": "harlow_kit.png",
+      "emissive": "harlow_kit_emissive.png",
+      "size": [
+        564,
+        82
+      ],
+      "anims": 0,
+      "sprites": 11,
+      "tiles": 0
+    },
+    {
+      "name": "harlow_clutter",
+      "json": "harlow_clutter.json",
+      "image": "harlow_clutter.png",
+      "emissive": "harlow_clutter_emissive.png",
+      "size": [
+        887,
+        66
+      ],
+      "anims": 0,
+      "sprites": 16,
+      "tiles": 0
+    },
+    {
+      "name": "harlow_inside",
+      "json": "harlow_inside.json",
+      "image": "harlow_inside.png",
+      "emissive": "harlow_inside_emissive.png",
+      "size": [
+        564,
+        123
+      ],
+      "anims": 0,
+      "sprites": 26,
+      "tiles": 11
     }
   ],
   "people": [

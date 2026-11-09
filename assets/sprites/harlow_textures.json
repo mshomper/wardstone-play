@@ -1,0 +1,62 @@
+{
+ "image": "harlow_textures.png",
+ "emissive": "harlow_textures_emissive.png",
+ "size": [
+  389,
+  78
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {},
+ "tiles": {
+  "brick_red": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "brick_red_worn": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 64
+  },
+  "granite_trim": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 32
+  },
+  "window_brick": {
+   "x": 196,
+   "y": 1,
+   "w": 24,
+   "h": 40
+  },
+  "window_shop": {
+   "x": 221,
+   "y": 1,
+   "w": 48,
+   "h": 40
+  },
+  "door_shop": {
+   "x": 270,
+   "y": 1,
+   "w": 28,
+   "h": 54
+  },
+  "door_inn": {
+   "x": 299,
+   "y": 1,
+   "w": 48,
+   "h": 76
+  },
+  "clock_face": {
+   "x": 348,
+   "y": 1,
+   "w": 40,
+   "h": 40
+  }
+ }
+}

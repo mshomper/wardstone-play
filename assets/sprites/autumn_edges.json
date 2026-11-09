@@ -1189,338 +1189,422 @@
    "w": 32,
    "h": 32
   },
-  "edge_mud_road_1": {
+  "edge_cobble_path_1": {
    "x": 331,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_2": {
+   "x": 364,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_3": {
+   "x": 397,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_4": {
+   "x": 430,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_5": {
+   "x": 463,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_6": {
+   "x": 496,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_7": {
+   "x": 529,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_8": {
+   "x": 562,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_9": {
+   "x": 595,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_10": {
+   "x": 628,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_11": {
+   "x": 661,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_12": {
+   "x": 694,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_13": {
+   "x": 727,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_cobble_path_14": {
+   "x": 760,
+   "y": 199,
+   "w": 32,
+   "h": 32
+  },
+  "edge_mud_road_1": {
+   "x": 793,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_2": {
-   "x": 364,
+   "x": 826,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_3": {
-   "x": 397,
+   "x": 859,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_4": {
-   "x": 430,
+   "x": 892,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_5": {
-   "x": 463,
+   "x": 925,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_6": {
-   "x": 496,
+   "x": 958,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_7": {
-   "x": 529,
+   "x": 991,
    "y": 199,
    "w": 32,
    "h": 32
   },
   "edge_mud_road_8": {
-   "x": 562,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_9": {
-   "x": 595,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_10": {
-   "x": 628,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_11": {
-   "x": 661,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_12": {
-   "x": 694,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_13": {
-   "x": 727,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_mud_road_14": {
-   "x": 760,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_1": {
-   "x": 793,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_2": {
-   "x": 826,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_3": {
-   "x": 859,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_4": {
-   "x": 892,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_5": {
-   "x": 925,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_6": {
-   "x": 958,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_7": {
-   "x": 991,
-   "y": 199,
-   "w": 32,
-   "h": 32
-  },
-  "edge_path_road_8": {
    "x": 1,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_9": {
+  "edge_mud_road_9": {
    "x": 34,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_10": {
+  "edge_mud_road_10": {
    "x": 67,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_11": {
+  "edge_mud_road_11": {
    "x": 100,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_12": {
+  "edge_mud_road_12": {
    "x": 133,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_13": {
+  "edge_mud_road_13": {
    "x": 166,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_14": {
+  "edge_mud_road_14": {
    "x": 199,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_1": {
+  "edge_path_road_1": {
    "x": 232,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_2": {
+  "edge_path_road_2": {
    "x": 265,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_3": {
+  "edge_path_road_3": {
    "x": 298,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_4": {
+  "edge_path_road_4": {
    "x": 331,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_5": {
+  "edge_path_road_5": {
    "x": 364,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_6": {
+  "edge_path_road_6": {
    "x": 397,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_7": {
+  "edge_path_road_7": {
    "x": 430,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_8": {
+  "edge_path_road_8": {
    "x": 463,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_9": {
+  "edge_path_road_9": {
    "x": 496,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_10": {
+  "edge_path_road_10": {
    "x": 529,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_11": {
+  "edge_path_road_11": {
    "x": 562,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_12": {
+  "edge_path_road_12": {
    "x": 595,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_13": {
+  "edge_path_road_13": {
    "x": 628,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_path_road_ew_14": {
+  "edge_path_road_14": {
    "x": 661,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_1": {
+  "edge_path_road_ew_1": {
    "x": 694,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_2": {
+  "edge_path_road_ew_2": {
    "x": 727,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_3": {
+  "edge_path_road_ew_3": {
    "x": 760,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_4": {
+  "edge_path_road_ew_4": {
    "x": 793,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_5": {
+  "edge_path_road_ew_5": {
    "x": 826,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_6": {
+  "edge_path_road_ew_6": {
    "x": 859,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_7": {
+  "edge_path_road_ew_7": {
    "x": 892,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_8": {
+  "edge_path_road_ew_8": {
    "x": 925,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_9": {
+  "edge_path_road_ew_9": {
    "x": 958,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_10": {
+  "edge_path_road_ew_10": {
    "x": 991,
    "y": 232,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_11": {
+  "edge_path_road_ew_11": {
    "x": 1,
    "y": 265,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_12": {
+  "edge_path_road_ew_12": {
    "x": 34,
    "y": 265,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_13": {
+  "edge_path_road_ew_13": {
    "x": 67,
    "y": 265,
    "w": 32,
    "h": 32
   },
-  "edge_brook_bed_leaf_litter_14": {
+  "edge_path_road_ew_14": {
    "x": 100,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_1": {
+   "x": 133,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_2": {
+   "x": 166,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_3": {
+   "x": 199,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_4": {
+   "x": 232,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_5": {
+   "x": 265,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_6": {
+   "x": 298,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_7": {
+   "x": 331,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_8": {
+   "x": 364,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_9": {
+   "x": 397,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_10": {
+   "x": 430,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_11": {
+   "x": 463,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_12": {
+   "x": 496,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_13": {
+   "x": 529,
+   "y": 265,
+   "w": 32,
+   "h": 32
+  },
+  "edge_brook_bed_leaf_litter_14": {
+   "x": 562,
    "y": 265,
    "w": 32,
    "h": 32

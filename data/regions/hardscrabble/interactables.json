@@ -61,6 +61,27 @@
     {"id": "hs_bound_marks", "kind": "use", "label": "Stake the marked stone", "once": true, "if": {"flags": ["bounds_asked"]}, "dialogue": "hs_bound_marks", "places": [{"area": "sheep-walk", "at": [9.4, -3.8]}]},
     {"id": "hs_bound_wall", "kind": "use", "label": "The wall as it stands", "once": true, "if": {"flags": ["bound:heap", "bound:boulder", "bound:marks"]}, "dialogue": "hs_bound_wall", "places": [{"area": "hobble-hill", "at": [-3.0, -14.4]}]},
     {"id": "hs_wagon", "kind": "use", "label": "The Shattucks' wagon", "if": {"notFlags": ["wagon_empty"]}, "swap": {"from": "farm_wagon_loaded", "to": "farm_wagon_empty"}, "dialogue": "hs_wagon", "places": [{"area": "hardscrabble", "spot": "The Shattucks' wagon"}]},
-    {"id": "hs_look_letters", "kind": "use", "label": "Letters on the shelf", "dialogue": "hs_obed_letters", "piece": {"prop": "jar_shelf_small", "collide": 0.35}, "places": [{"area": "thayers-yard-thayer-house", "spot": "Obed's letters"}]}
+    {"id": "hs_look_letters", "kind": "use", "label": "Letters on the shelf", "dialogue": "hs_obed_letters", "piece": {"prop": "jar_shelf_small", "collide": 0.35}, "places": [{"area": "thayers-yard-thayer-house", "spot": "Obed's letters"}]},
+    {"id": "hs_phebe_pouch", "kind": "zone", "radius": 4, "once": true, "if": {"flags": ["joined:obed"], "notFlags": ["found:phebe_herb_pouch"]}, "dialogue": "hs_phebe_pouch", "places": [{"area": "thayers-yard", "spot": "Phebe's garden"}]},
+    { "id": "hs_noticeboard", "kind": "use", "label": "Noticeboard", "board": "hardscrabble", "places": [{ "area": "hardscrabble", "spot": "Noticeboard" }] },
+    { "id": "spot_hs_trough", "kind": "use", "label": "By the trough", "sound": "stone_search", "pickup": true, "if": { "flags": ["spot:spot_hs_trough"] }, "places": [{ "area": "hardscrabble", "at": [-3.0, 0.6] }] },
+    { "id": "spot_hs_steps", "kind": "use", "label": "Meetinghouse steps", "pickup": true, "if": { "flags": ["spot:spot_hs_steps"] }, "places": [{ "area": "hardscrabble", "at": [-4.0, -5.4] }] },
+    { "id": "spot_hs_pens", "kind": "use", "label": "By the pens", "sound": "hay_search", "pickup": true, "if": { "flags": ["spot:spot_hs_pens"] }, "places": [{ "area": "hardscrabble", "at": [15.6, -17.4] }] },
+    { "id": "spot_ty_rows", "kind": "use", "label": "Stone rows", "sound": "stone_search", "pickup": true, "if": { "flags": ["spot:spot_ty_rows"] }, "places": [{ "area": "thayers-yard", "at": [4.6, 0.2] }] },
+    { "id": "spot_sl_orchard", "kind": "use", "label": "Long grass", "sound": "hay_search", "pickup": true, "if": { "flags": ["spot:spot_sl_orchard"] }, "places": [{ "area": "stone-lane", "at": [-13.0, -10.4] }] },
+    { "id": "spot_sw_stakes", "kind": "use", "label": "Survey stakes", "pickup": true, "if": { "flags": ["spot:spot_sw_stakes"] }, "places": [{ "area": "sheep-walk", "at": [2.4, 2.2] }] },
+    { "id": "spot_hh_pound", "kind": "use", "label": "By the pound gate", "sound": "stone_search", "pickup": true, "if": { "flags": ["spot:spot_hh_pound"] }, "places": [{ "area": "hobble-hill", "at": [9.6, -5.4] }] },
+    { "id": "spot_ox_birch", "kind": "use", "label": "Under the birch", "sound": "hay_search", "pickup": true, "if": { "flags": ["spot:spot_ox_birch"] }, "places": [{ "area": "ox-road", "at": [2.6, -1.6] }] },
+    { "id": "spot_qy_shanty", "kind": "use", "label": "By the shanty", "sound": "wood_search", "pickup": true, "if": { "flags": ["spot:spot_qy_shanty"] }, "places": [{ "area": "the-quarry", "at": [-14.6, 5.2] }] },
+    { "id": "spot_hb_school", "kind": "use", "label": "By the step", "sound": "stone_search", "pickup": true, "if": { "flags": ["spot:spot_hb_school"] }, "places": [{ "area": "hemlock-brook", "at": [0.8, -9.6] }] },
+    { "id": "spot_ch_farm", "kind": "use", "label": "By the cellar hole", "sound": "stone_search", "pickup": true, "if": { "flags": ["spot:spot_ch_farm"] }, "places": [{ "area": "cellar-holes", "at": [6.0, 1.6] }] },
+    {"id": "dc_seam_face", "kind": "use", "label": "The end of the seam", "dialogue": "dc_seam_face", "places": [{"area": "deep-cut", "spot": "The seam face"}]},
+    {"id": "hs_pike_crate_look", "kind": "use", "label": "A crate chalked PIKE", "if": {"notFlags": ["pikes_asked"]}, "dialogue": "hs_pike_crate_look", "places": [{"area": "deep-cut", "spot": "The Pikes' crate"}]},
+    {"id": "hs_pike_crate_take", "kind": "use", "label": "The Pikes' boots", "if": {"flags": ["pikes_asked"], "notFlags": ["has_pike_boots"]}, "dialogue": "hs_pike_crate_take", "places": [{"area": "deep-cut", "spot": "The Pikes' crate"}]},
+    {"id": "hs_benoni_note", "kind": "use", "label": "A note on the door", "if": {"flags": ["until_rest:benoni_away"]}, "dialogue": "hs_benoni_note", "places": [{"area": "hardscrabble", "spot": "Benoni (doorway)"}]},
+    {"id": "hs_look_slate", "kind": "use", "label": "A child's slate", "dialogue": "hs_find_slate", "piece": {"prop": "hs_slate", "collide": 0.25}, "places": [{"area": "hardscrabble-pike-house", "spot": "The slate"}]},
+    {"id": "hs_look_chair", "kind": "use", "label": "A chair left out", "dialogue": "hs_find_chair", "piece": {"prop": "chair_wood", "collide": 0.3}, "places": [{"area": "hardscrabble-holt-house", "spot": "The chair"}]},
+    {"id": "hs_look_calendar", "kind": "use", "label": "An almanac page", "dialogue": "hs_find_calendar", "piece": {"prop": "hs_calendar", "collide": 0.25}, "places": [{"area": "hardscrabble-house-for-sale", "spot": "The almanac"}]},
+    {"id": "hs_look_sample_walls", "kind": "use", "label": "Sample walls", "dialogue": "hs_find_sample_walls", "places": [{"area": "thayers-yard", "spot": "The sample walls"}]}
   ]
 }

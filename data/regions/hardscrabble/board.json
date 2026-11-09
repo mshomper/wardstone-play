@@ -1,0 +1,121 @@
+{
+  "_note": "The noticeboard on the meetinghouse door (docs/15-regions.md, Noticeboards; decision 0401). Kettle Notch's board.json is the model and its note holds here: the seed picks a writer's line and fills {where} from `spots` and {in} from `places`; `pay` is the least and most each kind may pay, in item worth, and `npm run check` holds every payment to it. A writer must be in town at every hour, so the map's star is never wrong: Tamsin keeps to her table in the meetinghouse, the Shattucks to their yard. Benoni will be away a day, Coyle and Sukey go up Hobble Hill, and Hosea and Asa are from the road, so none of them write here. A line's `if` keeps it off the board while it wouldn't make sense (the wagon's list, once the wagon is empty). The Deep Cut is left out: it resets, and board work stays above ground.",
+  "show": 3,
+  "hold": 3,
+  "pay": { "deliver": [4, 6], "find": [6, 10], "thin": [10, 15], "clear": [15, 20], "bring": [0, 18] },
+  "gear": { "chance": 0.15 },
+  "gearHint": "That's plain work, mind. The man minding the house for sale knows what plain work's worth. More than it is, likely.",
+  "town": "hardscrabble",
+  "words": {
+    "find": "Find {name}'s {thing}, {where}.",
+    "findBack": "Take the {thing} back to {name}.",
+    "found": "{name}'s {thing}, just where the notice said.",
+    "deliver": "Take the {thing} to {to}.",
+    "deliverBack": "Tell {name} it's delivered.",
+    "bring": "Bring {name} {of} {things}.",
+    "bringBack": "Hand {name} the {things}.",
+    "thin": "Clear two lots of creatures from {in}.",
+    "clear": "Clear every creature from {in}.",
+    "fightBack": "Tell {name} it's done.",
+    "short": "That's not all of them. I said {of}.",
+    "blurb": "A notice on the meetinghouse door, from {name}. Pays {pay}.",
+    "fightBlurb": "A notice on the meetinghouse door, from {name}. Pays {pay}. Creatures already seen off come back after a rest."
+  },
+  "posted": [
+    { "text": "SINGING SCHOOL will not meet this winter. Not enough for the parts. The pitch pipe is in the meetinghouse cupboard." },
+    { "text": "WAGON FOR SALE, with the Holt place. One wheel new. Apply to A. Coyle, for the land company." },
+    { "if": { "notFlags": ["pound_done"] }, "text": "PIKES, DOWS, HOLTS, MERRILLS, ABBOTTS, LOWELLS. Your animals are in the Varnums' barn. They are fine. The Pikes bite. S. VARNUM" },
+    { "if": { "flags": ["pound_done"] }, "text": "PIKES, DOWS, HOLTS, MERRILLS, ABBOTTS, LOWELLS. Your animals are in the pound on Hobble Hill. They are fine. The Pikes still bite. S. VARNUM" }
+  ],
+  "places": {
+    "hardscrabble": { "in": "the village" },
+    "thayers-yard": { "in": "Thayer's Yard" },
+    "stone-lane": { "in": "the Stone Lane", "fights": ["sl-orchard", "sl-pasture"] },
+    "sheep-walk": { "in": "the Sheep Walk", "fights": ["sw-hares", "sw-tup", "sw-boulder"] },
+    "hobble-hill": { "in": "Hobble Hill", "fights": ["hh-heave", "hh-tup", "hh-hares"] },
+    "ox-road": { "in": "the Ox Road", "fights": ["ox-fisher", "ox-swallows", "ox-mixed"] },
+    "the-quarry": { "in": "the Quarry", "fights": ["qy-blocks", "qy-face", "qy-tough"] },
+    "hemlock-brook": { "in": "Hemlock Brook", "fights": ["hb-pewling", "hb-mixed", "hb-quills"] },
+    "cellar-holes": { "in": "the Cellar Holes", "fights": ["ch-west", "ch-lilacs", "ch-tough"] }
+  },
+  "spots": [
+    { "id": "spot_hs_trough", "place": "hardscrabble", "where": "by the trough on the common" },
+    { "id": "spot_hs_steps", "place": "hardscrabble", "where": "on the meetinghouse steps" },
+    { "id": "spot_hs_pens", "place": "hardscrabble", "where": "by the sheep pens" },
+    { "id": "spot_ty_rows", "place": "thayers-yard", "where": "among the stone rows in Thayer's Yard" },
+    { "id": "spot_sl_orchard", "place": "stone-lane", "where": "in the long grass of the Stone Lane's orchard" },
+    { "id": "spot_sw_stakes", "place": "sheep-walk", "where": "by Mr. Coyle's stakes on the Sheep Walk" },
+    { "id": "spot_hh_pound", "place": "hobble-hill", "where": "outside the pound gate on Hobble Hill" },
+    { "id": "spot_ox_birch", "place": "ox-road", "where": "under the birch with the chain in it, on the Ox Road" },
+    { "id": "spot_qy_shanty", "place": "the-quarry", "where": "by the cutters' shanty at the Quarry" },
+    { "id": "spot_hb_school", "place": "hemlock-brook", "where": "by the schoolhouse step at Hemlock Brook" },
+    { "id": "spot_ch_farm", "place": "cellar-holes", "where": "by the north farm's cellar hole" }
+  ],
+  "writers": [
+    {
+      "person": "tamsin_gove",
+      "signed": "T. Gove, at the meetinghouse",
+      "thanks": ["That'll do. Hold still while I find you something.", "Good. Put it on the table.", "Thank you. Mind the hem on your way out."],
+      "pays": {
+        "deliver": [{ "bent_pin": 1 }, { "darning_egg": 2 }],
+        "find": [{ "wool_scarf": 1 }, { "hearth_ash": 1, "bent_pin": 1 }],
+        "thin": [{ "wool_scarf": 1, "darning_egg": 1 }, { "horseshoe_nail": 1, "hearth_ash": 1, "bent_pin": 1 }],
+        "clear": [{ "wool_scarf": 2 }, { "wool_scarf": 1, "mustard_plaster": 1, "hearth_ash": 1 }]
+      },
+      "notices": [
+        { "id": "coat", "kind": "thin", "title": "A Coat, Let Out", "gear": { "slot": "coat", "rarity": "homespun", "bare": true }, "payWords": "a coat nobody came back for", "places": ["sheep-walk", "hemlock-brook"], "text": "I let a coat out for a man who said he'd be back for it. That was spring. See off two lots in {in} and it's yours." },
+        { "id": "thimble", "kind": "find", "title": "My Thimble", "thing": "thimble", "text": "Lost my thimble {where}. Brass, worn through on one side. I've been pushing with a spoon." },
+        { "id": "tin", "kind": "find", "title": "The Button Tin", "thing": "button tin", "text": "Dropped the button tin {where}. A button off every coat that went down the road. I'd like it back." },
+        { "id": "cushion", "kind": "find", "title": "A Pincushion", "thing": "pincushion", "text": "My pincushion is {where}. I know because somebody saw it there and didn't pick it up." },
+        { "id": "trousers", "kind": "deliver", "title": "The Full Inch", "thing": "trousers", "to": "truman_shattuck", "got": "The full inch. She said that last time.", "text": "Truman Shattuck's good trousers, let out. Tell him it's the full inch and there isn't another." },
+        { "id": "skirt", "kind": "deliver", "title": "Taken Up", "thing": "skirt", "to": "lucy_shattuck", "got": "For walking. Tell her thank you.", "text": "Lucy Shattuck's skirt, taken up for walking. Walking where, she didn't say. Take it over." },
+        { "id": "feet", "kind": "bring", "title": "For the Lining", "good": "hare_foot", "of": 2, "things": "hare's feet", "from": "sheep-walk", "pays": [{ "wool_scarf": 1, "horseshoe_nail": 1, "bent_pin": 1 }], "text": "Wanted: two hare's feet, off the hares on the Sheep Walk. They go in a lining, for a long walk. My mother did it." },
+        { "id": "buttons", "kind": "bring", "title": "Buttons, Copper", "good": "copper_button", "of": 2, "things": "copper buttons", "from": "ox-road", "pays": [{ "wool_scarf": 1, "hearth_ash": 1 }], "text": "Wanted: two copper buttons. The fishers on the Ox Road collect them. Don't ask me where they get them." },
+        { "id": "washing", "kind": "thin", "title": "The Washing", "text": "Something from {in} has been at the washing. Mine and everybody's, and there isn't so much of everybody's now. Two lots, if you would." },
+        { "id": "south", "kind": "clear", "title": "The South Road", "places": ["cellar-holes"], "text": "Some families go out by the south road, through {in}. I'd like it clear when they do. All of it." }
+      ]
+    },
+    {
+      "person": "truman_shattuck",
+      "signed": "T. Shattuck",
+      "thanks": ["Well. That's that.", "Obliged. My father'd have done it himself, mind.", "That's done, then. It might not have been."],
+      "pays": {
+        "deliver": [{ "johnnycake": 2 }, { "sharp_cheddar": 1 }],
+        "find": [{ "sharp_cheddar": 2 }, { "kindling": 1, "johnnycake": 1 }],
+        "thin": [{ "rock_salt": 1 }, { "sharp_cheddar": 2, "johnnycake": 1 }],
+        "clear": [{ "rock_salt": 1, "kindling": 1 }, { "sharp_cheddar": 3 }]
+      },
+      "notices": [
+        { "id": "gloves", "kind": "thin", "title": "Stone Gloves", "gear": { "slot": "gloves", "rarity": "stout", "bare": true }, "payWords": "my father's stone gloves", "places": ["hobble-hill", "the-quarry"], "text": "My father wore these clearing the low field. Eleven years. They're good for eleven more. See off two lots in {in} and they're yours." },
+        { "id": "whetstone", "kind": "find", "title": "My Whetstone", "thing": "whetstone", "text": "My whetstone is {where}. I set it down. I don't recall setting it down there." },
+        { "id": "halter", "kind": "find", "title": "The Brindle's Halter", "thing": "halter", "text": "The brindle cow's halter came off and was found {where}. She wasn't in it. She's home. The halter isn't." },
+        { "id": "list", "kind": "deliver", "title": "One or Two Changes", "if": { "notFlags": ["wagon_empty"] }, "thing": "list", "to": "lucy_shattuck", "got": "One or two. He's crossed out half the page.", "text": "Take this to Lucy. It's the list of what goes. I've made one or two changes." },
+        { "id": "milk", "kind": "deliver", "title": "A Can of Milk", "thing": "can of milk", "to": "tamsin_gove", "got": "Set it by the stove. Tell him thank you.", "text": "Can of milk for Tamsin Gove. She's at the meetinghouse. Don't swing it." },
+        { "id": "stones", "kind": "bring", "title": "Two Good Stones", "good": "old_wall_stone", "of": 2, "things": "old wall stones", "from": "hobble-hill", "pays": [{ "rock_salt": 1, "johnnycake": 1 }], "text": "Wanted: two good wall stones, for a gap in the low field wall. I won't take one off another man's wall. Not even an empty farm's." },
+        { "id": "low", "kind": "thin", "title": "The Low Field", "text": "Things from {in} have been coming down at night and getting into the low field. See off two lots. My father spent eleven years on that field." },
+        { "id": "might", "kind": "clear", "title": "It Might", "text": "I'd like {in} cleared. All of it. I might go up there one more time. I might not." }
+      ]
+    },
+    {
+      "person": "lucy_shattuck",
+      "signed": "L. Shattuck, the house with the wagon",
+      "thanks": ["Thank you. One thing done in this house, anyway.", "Good. I'll cross it off. I keep a list.", "There. Now if only everything stayed done."],
+      "pays": {
+        "deliver": [{ "apple_fritter": 1 }, { "witch_hazel": 2 }],
+        "find": [{ "sassafras_tea": 1 }, { "warm_cider": 1, "apple_fritter": 1 }],
+        "thin": [{ "mustard_plaster": 2 }, { "warm_cider": 2 }],
+        "clear": [{ "chicken_pie": 1 }, { "warm_cider": 1, "sassafras_tea": 1, "mustard_plaster": 1 }]
+      },
+      "notices": [
+        { "id": "belt", "kind": "thin", "title": "A Sunday Belt", "gear": { "slot": "belt", "rarity": "homespun", "bare": true }, "payWords": "Truman's Sunday belt", "places": ["ox-road", "cellar-holes"], "text": "Truman's Sunday belt. He doesn't go to meeting now. Nobody does. See off two lots in {in} and it's yours. He won't miss it." },
+        { "id": "bell", "kind": "find", "title": "A Bell for Hosea", "thing": "bell for Hosea", "text": "Hosea Lamb's lead ewe came in without her bell. He thinks it's {where}. He won't leave off counting, so I said I'd put it up. Not the old flat one on the Sheep Walk. His rings." },
+        { "id": "spoon", "kind": "find", "title": "The Good Spoon", "thing": "good spoon", "text": "The good spoon is {where}. Packed, unpacked, and gone. If you find the rest of the drawer, leave it." },
+        { "id": "pie", "kind": "deliver", "title": "A Pie", "thing": "pie", "to": "tamsin_gove", "got": "She knows I'd give it to Obed. Tell her I'll eat half.", "text": "A pie for Tamsin Gove. She sews all day and forgets. Don't let her give it to Obed Thayer." },
+        { "id": "dinner", "kind": "deliver", "title": "His Dinner", "if": { "notFlags": ["wagon_empty"] }, "thing": "dinner", "to": "truman_shattuck", "got": "I wasn't thinking. I was resting. Tell her that.", "text": "Take Truman his dinner. He's in the yard, thinking. He's been thinking since Tuesday." },
+        { "id": "hazel", "kind": "bring", "title": "For the Cows", "good": "witch_hazel", "of": 3, "things": "witch hazel", "from": "hemlock-brook", "pays": [{ "sassafras_tea": 1, "warm_cider": 1 }], "text": "Wanted: three witch hazel, for the cows, in the cold. The skunks at Hemlock Brook carry it about. I don't know why and I don't want to." },
+        { "id": "cows", "kind": "thin", "title": "The Cows", "places": ["stone-lane", "sheep-walk", "hemlock-brook"], "text": "The cows came home from {in} at a run last night. Something's out there. Two lots, I'd say." },
+        { "id": "cross", "kind": "clear", "title": "Cross It Off", "text": "Clear {in}, if you would. All of it. It's been on my list since spring, and I'd like one thing on that list crossed off." }
+      ]
+    }
+  ]
+}

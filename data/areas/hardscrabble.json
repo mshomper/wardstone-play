@@ -999,6 +999,12 @@
    "collide": 0.3
   },
   {
+   "prop": "hs_tamsin_sign",
+   "x": -5.4,
+   "z": -6.5,
+   "collide": 0.35
+  },
+  {
    "prop": "farm_wagon_loaded",
    "x": -5.2,
    "z": 13.2,

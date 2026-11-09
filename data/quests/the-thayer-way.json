@@ -102,15 +102,12 @@
   {
    "id": "wall",
    "title": "Obed's wall",
-   "objective": "Obed has gone up Hobble Hill to look at the stag.",
+   "objective": "Obed is looking at Coyle's wall.",
    "time": 14.0,
    "done": { "flags": ["obed_wall_laid"] },
    "sets": ["obed_wall_laid"],
-   "skip": { "area": "thayers-yard", "spot": "Obed (yard)" },
+   "skip": { "area": "hobble-hill", "spot": "Eldwin (watching)" },
    "auto": [
-    { "go": "hardscrabble" },
-    { "go": "sheep-walk" },
-    { "go": "hobble-hill" },
     { "talk": "obed" }
    ]
   },
@@ -128,7 +125,7 @@
   {
    "id": "lesson",
    "title": "The lesson",
-   "objective": "Obed is waiting at your patch on the Stone Lane.",
+   "objective": "Obed is waiting at your patch on the Stone Lane. The stone on Hobble Hill can take you to the Long Wall, just below the lane.",
    "time": 16.0,
    "done": { "flags": ["obed_lesson_done"] },
    "sets": ["obed_lesson_done"],

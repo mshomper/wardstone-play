@@ -62,14 +62,17 @@
       "sprite": "npc_benoni_fogg_iso",
       "potter": 0.6,
       "schedule": [
-        { "area": "hardscrabble", "spot": "Benoni (doorway)", "dir": 6 }
+        { "if": { "notFlags": ["until_rest:benoni_away"] }, "area": "hardscrabble", "spot": "Benoni (doorway)", "dir": 6 }
       ],
       "talk": [
         { "if": { "notFlags": ["met_benoni"] }, "dialogue": "hs_benoni_first" },
         { "if": { "quest": { "id": "the-thayer-way", "is": "walls" } }, "dialogue": "hs_q_walls_benoni" },
         { "if": { "flags": ["beat_applejack", "applejack_asked"], "notFlags": ["applejack_done"] }, "dialogue": "hs_benoni_bear_done" },
         { "if": { "notFlags": ["applejack_asked", "beat_applejack"] }, "dialogue": "hs_benoni_bear" },
+        { "if": { "flags": ["has_pike_boots"], "notFlags": ["pikes_done"] }, "dialogue": "hs_benoni_pikes_done" },
+        { "if": { "flags": ["benoni_went"], "notFlags": ["heard:BFS"] }, "dialogue": "hs_benoni_back" },
         { "if": { "flags": ["joined:obed"], "notFlags": ["heard:BFO"] }, "dialogue": "hs_benoni_obed" },
+        { "if": { "flags": ["met_benoni", "applejack_asked"], "notFlags": ["pikes_asked"] }, "dialogue": "hs_benoni_pikes_ask" },
         { "if": { "flags": ["talks:benoni_fogg:3"], "notFlags": ["heard:BF1"] }, "dialogue": "hs_open_bf1" },
         { "if": { "flags": ["talks:benoni_fogg:5", "heard:BF1"], "notFlags": ["heard:BF2"] }, "dialogue": "hs_open_bf2" },
         { "dialogue": "hs_benoni_shop" }

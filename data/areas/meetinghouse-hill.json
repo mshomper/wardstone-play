@@ -1,0 +1,1394 @@
+{
+ "version": 1,
+ "name": "meetinghouse-hill",
+ "seed": 4203,
+ "size": {
+  "w": 64,
+  "h": 48
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.3,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "maple_red_0",
+     "bare_tree_0",
+     "maple_orange_0",
+     "bare_tree_1",
+     "white_pine_0"
+    ],
+    "density": 0.35,
+    "spacing": 2.4,
+    "scale": [
+     0.95,
+     1.2
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "lilac_0",
+     "lilac_1"
+    ],
+    "density": 0.02,
+    "spacing": 6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "path",
+    "collide": 0.4
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     0.4,
+     24
+    ],
+    [
+     0.2,
+     14
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "width": 3.6,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     0,
+     8
+    ],
+    [
+     -10,
+     6
+    ],
+    [
+     -11,
+     -4
+    ],
+    [
+     0,
+     -6
+    ],
+    [
+     11,
+     -4
+    ],
+    [
+     10,
+     6
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "width": 2.8,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     10,
+     -4.6
+    ],
+    [
+     12.4,
+     -12
+    ],
+    [
+     13,
+     -18
+    ],
+    [
+     12.6,
+     -24
+    ]
+   ],
+   "width": 1.8,
+   "kind": "road"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     11,
+     -12
+    ],
+    [
+     11.2,
+     -24
+    ]
+   ],
+   "gaps": []
+  },
+  {
+   "points": [
+    [
+     14.6,
+     -11
+    ],
+    [
+     14.4,
+     -24
+    ]
+   ],
+   "gaps": []
+  }
+ ],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "meetinghouse_spire",
+   "x": 0,
+   "z": -15,
+   "w": 11,
+   "d": 14,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -5.5,
+       -7.0
+      ],
+      [
+       5.5,
+       -7.0
+      ],
+      [
+       5.5,
+       7.0
+      ],
+      [
+       -5.5,
+       7.0
+      ]
+     ]
+    }
+   ],
+   "opens": "The meetinghouse"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "federal",
+   "x": 20,
+   "z": 0,
+   "w": 10,
+   "d": 8,
+   "rot": 1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -5.0,
+       -4.0
+      ],
+      [
+       5.0,
+       -4.0
+      ],
+      [
+       5.0,
+       4.0
+      ],
+      [
+       -5.0,
+       4.0
+      ]
+     ]
+    }
+   ],
+   "opens": "Penhallow's house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": -16,
+   "z": -12,
+   "w": 6.5,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "The parsonage"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "schoolhouse",
+   "x": -19.5,
+   "z": 3.5,
+   "w": 7,
+   "d": 9,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -4.5
+      ],
+      [
+       3.5,
+       -4.5
+      ],
+      [
+       3.5,
+       4.5
+      ],
+      [
+       -3.5,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "opens": "The schoolhouse"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -8.5,
+   "z": 16.5,
+   "w": 7,
+   "d": 5,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "House on Meetinghouse Street"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 9,
+   "z": 16.5,
+   "w": 6.5,
+   "d": 5,
+   "rot": 1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "The Spragues' house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -20,
+   "z": 15,
+   "w": 7,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "The Tolmans' house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 22,
+   "z": 14,
+   "w": 6.5,
+   "d": 5,
+   "rot": 1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "House below the hill"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shed",
+   "x": -14,
+   "z": -21.5,
+   "w": 8,
+   "d": 3,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4.0,
+       -1.5
+      ],
+      [
+       4.0,
+       -1.5
+      ],
+      [
+       4.0,
+       1.5
+      ],
+      [
+       -4.0,
+       1.5
+      ]
+     ]
+    }
+   ],
+   "opens": "The horse sheds"
+  }
+ ],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 0,
+   "z": -24,
+   "radius": 30,
+   "height": 1.8
+  }
+ ],
+ "arenas": [],
+ "placements": [
+  {
+   "prop": "maple_red_0",
+   "x": -5,
+   "z": 1,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": 5,
+   "z": 1.6,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 0,
+   "z": -1.6,
+   "collide": 0.42
+  },
+  {
+   "prop": "hitching_rail",
+   "x": 4.6,
+   "z": -6.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "lantern_post",
+   "x": 1.6,
+   "z": 7.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "horse_trough",
+   "x": -5.4,
+   "z": -6.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "hitching_rail",
+   "x": -4.6,
+   "z": -6.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "rest_stone",
+   "x": 6.6,
+   "z": -7.2,
+   "collide": 0.5
+  },
+  {
+   "prop": "school_step",
+   "x": -15.4,
+   "z": 6.6,
+   "collide": 0.3
+  },
+  {
+   "prop": "lantern_post",
+   "x": -12.0,
+   "z": 9.6,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": 12.0,
+   "z": -7.6,
+   "collide": 0.25
+  },
+  {
+   "prop": "stage_bench",
+   "x": 3.4,
+   "z": 4.8,
+   "collide": 0.4
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -26,
+   "z": -6,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 26,
+   "z": -12,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": 26,
+   "z": 8,
+   "collide": 0.42
+  },
+  {
+   "prop": "bean_poles",
+   "x": 22.6,
+   "z": -7.4,
+   "collide": 0.3
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 20.6,
+   "z": -7.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "herbs_0",
+   "x": 18.4,
+   "z": -7.4,
+   "collide": 0.25
+  },
+  {
+   "prop": "signpost",
+   "x": 9.4,
+   "z": -8.4,
+   "collide": 0.15
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 15.0,
+   "z": -2.6,
+   "collide": 0.35
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 15.0,
+   "z": 2.6,
+   "collide": 0.35
+  },
+  {
+   "prop": "laundry_line_1",
+   "x": -16.0,
+   "z": -17.6,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": 20.6,
+   "z": 6.2,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": 15.6,
+   "z": -5.9,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 26.0,
+   "z": -0.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": 26.2,
+   "z": -2.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": 25.8,
+   "z": 1.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "fence_picket",
+   "x": -20.0,
+   "z": -7.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -18.0,
+   "z": -7.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -14.0,
+   "z": -7.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -12.0,
+   "z": -7.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "mailbox",
+   "x": -14.5,
+   "z": -7.4,
+   "collide": 0.15
+  },
+  {
+   "prop": "cordwood",
+   "x": -11.55,
+   "z": -12.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": -20.15,
+   "z": -9.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -16.6,
+   "z": -16.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": -18.2,
+   "z": -16.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": -14.8,
+   "z": -16.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": -9.1,
+   "z": 11.8,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_1",
+   "x": -5.6,
+   "z": 20.9,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -13.0,
+   "z": 17.1,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": -13.2,
+   "z": 18.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": -12.8,
+   "z": 15.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": 9.6,
+   "z": 20.95,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": 6.1,
+   "z": 12.35,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 13.5,
+   "z": 15.9,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": 13.7,
+   "z": 14.3,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": 13.3,
+   "z": 17.7,
+   "collide": 0.25
+  },
+  {
+   "prop": "fence_picket",
+   "x": -15.5,
+   "z": 10.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -17.5,
+   "z": 10.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -21.5,
+   "z": 10.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -23.5,
+   "z": 10.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "cordwood",
+   "x": -24.7,
+   "z": 15.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_1",
+   "x": -15.6,
+   "z": 12.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -19.4,
+   "z": 19.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": -17.8,
+   "z": 19.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": -21.2,
+   "z": 19.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": 22.6,
+   "z": 18.45,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_1",
+   "x": 19.1,
+   "z": 9.85,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 26.5,
+   "z": 13.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": 26.7,
+   "z": 11.8,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": 26.3,
+   "z": 15.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "bench_plain",
+   "x": 23.27,
+   "z": -20.69,
+   "collide": 0.4
+  },
+  {
+   "prop": "asters_0",
+   "x": -27.47,
+   "z": 2.46,
+   "collide": 0
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": -4.71,
+   "z": 9.8,
+   "collide": 0.9
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 5.72,
+   "z": -1.14,
+   "collide": 0.9
+  },
+  {
+   "prop": "asters_0",
+   "x": -25.09,
+   "z": -11.99,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 18.93,
+   "z": 18.76,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_1",
+   "x": -25.62,
+   "z": -20.81,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_0",
+   "x": 23.23,
+   "z": -17.48,
+   "collide": 0.42
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 28.45,
+   "z": 20.54,
+   "collide": 0.9
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 15.08,
+   "z": -8.93,
+   "collide": 0
+  },
+  {
+   "prop": "white_pine_0",
+   "x": 28.54,
+   "z": 7.1,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": 13.02,
+   "z": 9.05,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": 16.29,
+   "z": 5.41,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -22.74,
+   "z": -9.53,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -5.39,
+   "z": 16.96,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 3.68,
+   "z": 14.18,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -22.73,
+   "z": -21.26,
+   "collide": 0.3
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -14.3,
+   "z": -2.25,
+   "collide": 0.42
+  },
+  {
+   "prop": "cordwood",
+   "x": -27.56,
+   "z": -15.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": -8.19,
+   "z": -15.29,
+   "collide": 0.45
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -19.6,
+   "z": 8.97,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -28.41,
+   "z": 7.28,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_0",
+   "x": 28.07,
+   "z": -4.03,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -7.73,
+   "z": 0.36,
+   "collide": 0.42
+  },
+  {
+   "prop": "cordwood",
+   "x": -26.01,
+   "z": 4.96,
+   "collide": 0.6
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -9.26,
+   "z": -9.95,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": 16.02,
+   "z": 9.71,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -22.98,
+   "z": -5.92,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_0",
+   "x": 22.97,
+   "z": -11.14,
+   "collide": 0.45
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -21.69,
+   "z": 7.5,
+   "collide": 0.3
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 4.47,
+   "z": 9.77,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -29.27,
+   "z": -8.59,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 20.04,
+   "z": -14.7,
+   "collide": 0.42
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 29.01,
+   "z": 3.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "asters_0",
+   "x": -28.36,
+   "z": -2.59,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -28.08,
+   "z": 15.06,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": -17.77,
+   "z": -1.39,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 28.85,
+   "z": -20.44,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -26.38,
+   "z": 21.17,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 25.49,
+   "z": 21.2,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_0",
+   "x": -13.05,
+   "z": 1.91,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": 10.65,
+   "z": -16.03,
+   "collide": 0
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -22.19,
+   "z": -13.19,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": 25.21,
+   "z": 18.09,
+   "collide": 0
+  },
+  {
+   "prop": "maple_red_1",
+   "x": -25.81,
+   "z": 13.35,
+   "collide": 0.42
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": 12.21,
+   "z": 12.06,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -8.07,
+   "z": -18.58,
+   "collide": 0
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -24.72,
+   "z": 8.11,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": -25.45,
+   "z": 18.26,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_0",
+   "x": -28.43,
+   "z": 19.15,
+   "collide": 0.45
+  },
+  {
+   "prop": "lilac_0",
+   "x": 4.86,
+   "z": 16.37,
+   "collide": 0.45
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -3.17,
+   "z": 14.51,
+   "collide": 0.42
+  },
+  {
+   "prop": "lilac_0",
+   "x": 15.87,
+   "z": -13.53,
+   "collide": 0.45
+  },
+  {
+   "prop": "asters_0",
+   "x": -4.73,
+   "z": -3.23,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": -2.19,
+   "z": 3.96,
+   "collide": 0.6
+  },
+  {
+   "prop": "cordwood",
+   "x": 6.8,
+   "z": 3.95,
+   "collide": 0.6
+  },
+  {
+   "prop": "white_pine_0",
+   "x": 28.49,
+   "z": -0.69,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -19.42,
+   "z": -5.41,
+   "collide": 0.3
+  },
+  {
+   "prop": "bench_plain",
+   "x": -7.68,
+   "z": 3.43,
+   "collide": 0.4
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 7.16,
+   "z": 20.48,
+   "collide": 0.3
+  },
+  {
+   "prop": "lilac_0",
+   "x": -12.83,
+   "z": 6.12,
+   "collide": 0.45
+  },
+  {
+   "prop": "asters_0",
+   "x": 9.72,
+   "z": 11.73,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 8.32,
+   "z": -13.15,
+   "collide": 0.5
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -13.74,
+   "z": -4.8,
+   "collide": 0.35
+  },
+  {
+   "prop": "bench_plain",
+   "x": -8.79,
+   "z": 8.99,
+   "collide": 0.4
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 8.46,
+   "z": -0.82,
+   "collide": 0.35
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -25.91,
+   "z": -2.37,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 9.36,
+   "z": -19.87,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": 12.65,
+   "z": 21.3,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": -25.05,
+   "z": 1.51,
+   "collide": 0.4
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 19.05,
+   "z": -17.79,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -15.46,
+   "z": 20.87,
+   "collide": 0.42
+  },
+  {
+   "prop": "asters_0",
+   "x": -9.16,
+   "z": -7.47,
+   "collide": 0
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 17.32,
+   "z": -15.48,
+   "collide": 0.35
+  },
+  {
+   "prop": "lilac_0",
+   "x": 26.63,
+   "z": -14.97,
+   "collide": 0.45
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     0,
+     8
+    ],
+    [
+     -10,
+     6
+    ],
+    [
+     -11,
+     -4
+    ],
+    [
+     0,
+     -6
+    ],
+    [
+     11,
+     -4
+    ],
+    [
+     10,
+     6
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "radius": 1.8
+  }
+ ],
+ "spots": [
+  {
+   "name": "From Market Square",
+   "x": 0.4,
+   "z": 18.6
+  },
+  {
+   "name": "The green",
+   "x": 0,
+   "z": 1
+  },
+  {
+   "name": "Meetinghouse door",
+   "x": 0,
+   "z": -7.0,
+   "note": "Reverend Kent."
+  },
+  {
+   "name": "The meetinghouse roof",
+   "x": 3.4,
+   "z": -13,
+   "note": "Dorcas, from the road (Slate for the Roof)."
+  },
+  {
+   "name": "Penhallow's gate",
+   "x": 13.8,
+   "z": 0
+  },
+  {
+   "name": "The schoolhouse door",
+   "x": -15.0,
+   "z": 3.5,
+   "note": "The Singing School gathers here, after Thadeous joins."
+  },
+  {
+   "name": "Up the Pasture Lane",
+   "x": 12.8,
+   "z": -21.6,
+   "note": "To the high pastures and the North Lots (not built yet)."
+  }
+ ],
+ "start": [
+  0.4,
+  18.6
+ ],
+ "exits": [
+  {
+   "rect": [
+    -2.2,
+    20.5,
+    2.8,
+    21.5
+   ],
+   "to": "harlow-bridge",
+   "at": [
+    28.4,
+    -20.2
+   ],
+   "dir": 0
+  }
+ ]
+}

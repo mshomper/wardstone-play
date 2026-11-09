@@ -348,7 +348,7 @@
       { "who": "eldwin", "text": "Hiccupping." },
       { "who": "benoni_fogg", "face": "grin", "text": "Then I'll give him a day to sleep it off, and go." },
       { "who": "benoni_fogg", "text": "Here. Stone for your pockets and something for your boots. Don't argue. It goes toward your next resoling." }
-    ], "onEnd": [{ "setFlag": "applejack_done" }, { "reward": { "title": "Applejack", "xp": 160, "items": { "old_wall_stone": 1, "hag_stone": 1, "dubbin": 2 } } }] },
+    ], "onEnd": [{ "setFlag": ["applejack_done", "next_rest:until_rest:benoni_away", "next_rest:benoni_went"] }, { "reward": { "title": "Applejack", "xp": 160, "items": { "old_wall_stone": 1, "hag_stone": 1, "dubbin": 2 } } }] },
 
     { "id": "hs_tamsin_wool", "lines": [
       { "who": "tamsin_gove", "text": "I'm short of wool for the Shattucks' coat. Good wool. What's left in the village has been through three coats already." },

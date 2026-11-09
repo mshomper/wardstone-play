@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "name": "mill-street-mill-row-south-no-1-upper",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [],
+  "interior": {
+    "town": "mill-street",
+    "building": 5,
+    "storey": 1,
+    "scale": 1.7,
+    "generated": true,
+    "lootMax": 2,
+    "source": {
+      "recipe": "rowhouse_end",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2,
+              -3.5
+            ],
+            [
+              2,
+              -3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              -2,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "down": "mill-street-mill-row-south-no-1"
+  }
+}

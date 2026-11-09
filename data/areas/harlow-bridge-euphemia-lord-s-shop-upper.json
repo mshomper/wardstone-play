@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "name": "harlow-bridge-euphemia-lord-s-shop-upper",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [],
+  "interior": {
+    "town": "harlow-bridge",
+    "building": 5,
+    "storey": 1,
+    "scale": 1.7,
+    "generated": true,
+    "lootMax": 2,
+    "source": {
+      "recipe": "tailor",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -4,
+              -3
+            ],
+            [
+              4,
+              -3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              -4,
+              3
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "down": "harlow-bridge-euphemia-lord-s-shop"
+  }
+}

@@ -21,6 +21,68 @@
      "text": "That’ll bear. It’ll keep, too. Nothing down here is in a hurry to thaw."
     }
    ]
+  },
+  {
+   "id": "dc_seam_face",
+   "lines": [
+    {
+     "who": "",
+     "text": "The end of the seam. The cutters followed the best of the granite this far, and took it out whole."
+    },
+    {
+     "who": "",
+     "text": "A row of hollows in the face, each the size of a block. Three lines are cut across each other over every one, and there is a name under every one, worn down to scratches."
+    },
+    {
+     "who": "",
+     "text": "The last hollow is the cleanest. Its name panel has been dressed smooth, ready for the chisel. Nothing is cut in it."
+    },
+    {
+     "who": "obed",
+     "if": {
+      "flags": [
+       "joined:obed"
+      ]
+     },
+     "text": "Taken out whole. Every one. That's not quarrying. That's fetching."
+    },
+    {
+     "who": "obed",
+     "if": {
+      "flags": [
+       "joined:obed"
+      ]
+     },
+     "text": "Panel's dressed and nobody's lettered it. Somebody paid for that and never came back."
+    },
+    {
+     "who": "eldwin",
+     "text": "He had a good hand."
+    },
+    {
+     "who": "obed",
+     "if": {
+      "flags": [
+       "joined:obed"
+      ]
+     },
+     "text": "Who did?"
+    },
+    {
+     "who": "",
+     "if": {
+      "flags": [
+       "joined:obed"
+      ]
+     },
+     "text": "Eldwin doesn't answer."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "seam_seen"
+    }
+   ]
   }
  ]
 }

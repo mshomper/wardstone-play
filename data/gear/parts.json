@@ -184,6 +184,21 @@
    { "id": "el_dmg_belt", "name": "Leaning", "does": "el_dmg", "when": "passive", "field": "mul", "as": "more", "elements": ["frost", "hearth", "earth", "arcane", "physical", "growth", "storm", "tide"], "lo": 0.03, "hi": 0.05, "cap": 0.3, "points": 0.4, "tag": "+{more:mul} {element} damage", "text": "Your {element} hits land {more:mul} harder." }
   ]
  },
+ "regionNote": "F10 D2 (decision 0396): each region's own extra effect, found nowhere else. A piece found in a region (from a fight, a chest, a merchant or a notice, wherever Eldwin stands) carries one at `chance`, if its slot is in `slots`. A place with its own list (the Deep Cut) uses it instead of its region's. It comes on top of the piece's budget, on every tier, sized like an extra (`lo`, `hi` times the tier's `extraSize`, then the grade). `points` from tools/gear/sim/extrabench.mjs (9 Nov 2026): Toll-paid was worth more than a whole Stout main effect at 30% softer, so it's 10 to 14%; the other three price at the floor. Re-rolls leave it alone.",
+ "regionExtras": {
+  "kettle-notch": { "chance": 0.25, "list": [
+   { "id": "hearth_kept", "name": "Hearth-kept", "does": "hearth_kept", "when": "passive", "field": "chance", "lo": 0.5, "hi": 0.7, "cap": 1, "points": 0.2, "slots": ["keepsake", "belt"], "tag": "Food thaws you, {pc:chance}", "text": "Food and drink you take have a {pc:chance} chance to take Chilled off you too." }
+  ] },
+  "old-post-road": { "chance": 0.25, "list": [
+   { "id": "toll_paid", "name": "Toll-paid", "does": "toll_paid", "when": "passive", "field": "mul", "as": "less", "lo": 0.1, "hi": 0.14, "cap": 0.4, "points": 0.4, "slots": ["boots", "coat"], "tag": "First blow {less:mul} softer", "text": "The first blow on you each fight lands {less:mul} softer." }
+  ] },
+  "hardscrabble": { "chance": 0.25, "list": [
+   { "id": "thayer_laid", "name": "Thayer-laid", "does": "thayer_laid", "when": "passive", "field": "pct", "lo": 0.1, "hi": 0.15, "cap": 0.5, "points": 0.2, "slots": ["coat"], "tag": "Braced, stand once at {pc:pct}", "text": "While you Defend, a blow that would fell you leaves you standing with {pc:pct} of your health, once a fight." }
+  ] },
+  "deep-cut": { "chance": 0.5, "list": [
+   { "id": "rime_touched", "name": "Rime-touched", "does": "rime_touched", "when": "passive", "field": "chance", "lo": 0.2, "hi": 0.3, "cap": 0.6, "points": 0.2, "slots": ["gloves"], "statuses": ["chilled"], "tag": "{pc:chance} frost hits Chill", "text": "Your frost hits have a {pc:chance} chance to leave the foe Chilled." }
+  ] }
+ },
  "statusNames": { "slow": "Slow", "sticky": "Sticky", "chilled": "Chilled", "blind": "Blinded", "burning": "Burning", "drowsy": "Drowsy", "afraid": "Frightened" },
  "charms": {
   "rime_shard": {
@@ -1223,6 +1238,8 @@
    "rule": "Both grow 6% for every silk seam on this piece. Weak alone, strong when the whole block is silk."
   }
  ],
+ "growth": { "note": "Grows with you (F10 D4, decision 0397): `fights` worn through at a tier before a tailor can raise the piece one tier, and `cost` in goods to raise it from that tier (half what a piece of the next tier is worth). Every fight counts, won or lost, for every piece worn by anyone who fought (Matt, 9 Nov 2026). Heirloom is the top; Old Work is only found.", "fights": { "homespun": 15, "stout": 25, "sunday": 40 }, "cost": { "homespun": 10, "stout": 25, "sunday": 60 } },
+ "moveFee": 3,
  "unpick": { "homespun": 3,
   "stout": 6,
   "sunday": 15,

@@ -1,0 +1,100 @@
+{
+ "id": "pikes-boots",
+ "title": "The Pikes' Boots",
+ "side": true,
+ "blurb": "The Pikes left their boots in a store down the old cut, and Benoni wants them on his shelf.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The Pikes' boots",
+   "objective": "",
+   "done": {
+    "flags": [
+     "pikes_asked"
+    ]
+   },
+   "sets": [
+    "pikes_asked"
+   ],
+   "auto": [
+    {
+     "talk": "benoni_fogg"
+    },
+    {
+     "talk": "benoni_fogg"
+    },
+    {
+     "talk": "benoni_fogg"
+    }
+   ]
+  },
+  {
+   "id": "store",
+   "title": "The Pikes' boots",
+   "objective": "The Pikes kept a store in the Deep Cut, under the Quarry. Bring Benoni their boots.",
+   "done": {
+    "flags": [
+     "has_pike_boots"
+    ]
+   },
+   "sets": [
+    "has_pike_boots"
+   ],
+   "skip": {
+    "area": "hardscrabble",
+    "spot": "Benoni (doorway)"
+   },
+   "auto": [
+    {
+     "go": "thayers-yard"
+    },
+    {
+     "go": "ox-road"
+    },
+    {
+     "go": "the-quarry"
+    },
+    {
+     "go": "deep-cut"
+    },
+    {
+     "use": "hs_pike_crate_take"
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "title": "The Pikes' boots",
+   "objective": "Take the Pikes' boots to Benoni.",
+   "done": {
+    "flags": [
+     "pikes_done"
+    ]
+   },
+   "sets": [
+    "pikes_done"
+   ],
+   "skip": {
+    "area": "deep-cut",
+    "spot": "The Pikes' crate"
+   },
+   "auto": [
+    {
+     "go": "the-quarry"
+    },
+    {
+     "go": "ox-road"
+    },
+    {
+     "go": "thayers-yard"
+    },
+    {
+     "go": "hardscrabble"
+    },
+    {
+     "talk": "benoni_fogg"
+    }
+   ]
+  }
+ ]
+}

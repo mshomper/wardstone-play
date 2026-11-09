@@ -1,0 +1,1867 @@
+{
+ "version": 1,
+ "name": "mill-street",
+ "seed": 4202,
+ "size": {
+  "w": 72,
+  "h": 52
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.3,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "path",
+   "under": "grass_leaves",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "maple_red_0",
+     "bare_tree_0",
+     "maple_orange_0",
+     "bare_tree_1",
+     "white_pine_0"
+    ],
+    "density": 0.35,
+    "spacing": 2.4,
+    "scale": [
+     0.95,
+     1.2
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "lilac_0",
+     "lilac_1"
+    ],
+    "density": 0.02,
+    "spacing": 6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "path",
+    "collide": 0.4
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -36,
+     0
+    ],
+    [
+     -10,
+     0
+    ],
+    [
+     8,
+     0.2
+    ],
+    [
+     26,
+     0.4
+    ]
+   ],
+   "width": 4,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     34,
+     0.4
+    ],
+    [
+     36,
+     0.4
+    ]
+   ],
+   "width": 3,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     -36,
+     14
+    ],
+    [
+     -20,
+     14.2
+    ],
+    [
+     -6,
+     14.4
+    ],
+    [
+     14,
+     14.6
+    ]
+   ],
+   "width": 2.6,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     14,
+     0.4
+    ],
+    [
+     14,
+     10
+    ],
+    [
+     14.2,
+     18
+    ],
+    [
+     14.4,
+     26
+    ]
+   ],
+   "width": 2.4,
+   "kind": "road"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -30,
+   "z": -6,
+   "w": 4,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row north, no. 1"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -26,
+   "z": -6,
+   "w": 4,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row north, no. 2"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -22,
+   "z": -6,
+   "w": 4,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row north, no. 3"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -18,
+   "z": -6,
+   "w": 4,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row north, no. 4"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -14,
+   "z": -6,
+   "w": 4,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row north, no. 5",
+   "variants": {
+    "party": [
+     "left"
+    ]
+   }
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -30,
+   "z": 8,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row south, no. 1",
+   "variants": {
+    "party": [
+     "left"
+    ]
+   }
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -26,
+   "z": 8,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row south, no. 2"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -22,
+   "z": 8,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row south, no. 3"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -18,
+   "z": 8,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row south, no. 4"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -14,
+   "z": 8,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row south, no. 5"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -30,
+   "z": 19.5,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row back, no. 1",
+   "variants": {
+    "party": [
+     "left"
+    ]
+   }
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -26,
+   "z": 19.5,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row back, no. 2"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -22,
+   "z": 19.5,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row back, no. 3"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse",
+   "x": -18,
+   "z": 19.5,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row back, no. 4"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "rowhouse_end",
+   "x": -14,
+   "z": 19.5,
+   "w": 4,
+   "d": 7,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       -3.5
+      ],
+      [
+       2.0,
+       3.5
+      ],
+      [
+       -2.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Mill row back, no. 5"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "millhouse_office",
+   "x": 2,
+   "z": -7,
+   "w": 10,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -5.0,
+       -3.5
+      ],
+      [
+       5.0,
+       -3.5
+      ],
+      [
+       5.0,
+       3.5
+      ],
+      [
+       -5.0,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "HARLOW MILLS"
+   },
+   "opens": "The mill office"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": -2,
+   "z": 9.5,
+   "w": 9,
+   "d": 6,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4.5,
+       -3.0
+      ],
+      [
+       4.5,
+       -3.0
+      ],
+      [
+       4.5,
+       3.0
+      ],
+      [
+       -4.5,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": false
+   },
+   "opens": "The boarding house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "store",
+   "x": 8.5,
+   "z": 8.5,
+   "w": 6,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.0,
+       -2.5
+      ],
+      [
+       3.0,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "COMPANY STORE"
+   },
+   "opens": "The company store"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "mill_brick",
+   "x": 21,
+   "z": -12.5,
+   "w": 20,
+   "d": 9,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -10.0,
+       -4.5
+      ],
+      [
+       10.0,
+       -4.5
+      ],
+      [
+       10.0,
+       4.5
+      ],
+      [
+       -10.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "landmarks": [
+    {
+     "kind": "waterwheel",
+     "side": "front",
+     "radius": 2.4,
+     "width": 1.1
+    }
+   ],
+   "opens": "The sawmill"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "mill_brick",
+   "x": 21,
+   "z": 13.5,
+   "w": 20,
+   "d": 9,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -10.0,
+       -4.5
+      ],
+      [
+       10.0,
+       -4.5
+      ],
+      [
+       10.0,
+       4.5
+      ],
+      [
+       -10.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "landmarks": [
+    {
+     "kind": "waterwheel",
+     "side": "front",
+     "radius": 2.4,
+     "width": 1.1
+    }
+   ],
+   "opens": "The fulling mill"
+  },
+  {
+   "mesh": "bridge",
+   "kind": "bridge",
+   "x": 30,
+   "z": 0.4,
+   "w": 9,
+   "d": 2.6,
+   "rot": 0,
+   "height": 2.4
+  }
+ ],
+ "landmarks": [],
+ "arenas": [],
+ "placements": [
+  {
+   "prop": "barrel_stack",
+   "x": 10.0,
+   "z": -4.4,
+   "collide": 0.5
+  },
+  {
+   "prop": "handcart",
+   "x": -8.0,
+   "z": -2.4,
+   "collide": 0.5
+  },
+  {
+   "prop": "lantern_post",
+   "x": 6.4,
+   "z": -3.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "stage_bench",
+   "x": -20.0,
+   "z": -2.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "crate_0",
+   "x": 14.6,
+   "z": -4.0,
+   "collide": 0.35
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": 11.4,
+   "z": 12.0,
+   "collide": 0.45
+  },
+  {
+   "prop": "horse_trough",
+   "x": -6.4,
+   "z": -3.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -9,
+   "z": 22,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -20,
+   "z": -14,
+   "collide": 0.42
+  },
+  {
+   "prop": "timber_fallen",
+   "x": 13.0,
+   "z": -19.0,
+   "collide": 0.4
+  },
+  {
+   "prop": "timber_fallen",
+   "x": 13.2,
+   "z": -17.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "timber_fallen",
+   "x": 12.8,
+   "z": -16.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "cordwood",
+   "x": 12.6,
+   "z": -22.0,
+   "collide": 0.6
+  },
+  {
+   "prop": "stone_barrow",
+   "x": 14.6,
+   "z": -7.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "ladder",
+   "x": 15.9,
+   "z": -10.0,
+   "collide": 0.2
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": 13.2,
+   "z": 7.0,
+   "collide": 0.45
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": 12.6,
+   "z": 19.0,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_stack",
+   "x": 12.8,
+   "z": 21.2,
+   "collide": 0.5
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 26.4,
+   "z": -20.0,
+   "collide": 0.5
+  },
+  {
+   "prop": "cattails_0",
+   "x": 26.0,
+   "z": -16.0,
+   "collide": 0
+  },
+  {
+   "prop": "cattails_1",
+   "x": 26.6,
+   "z": 22.0,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 25.8,
+   "z": 24.0,
+   "collide": 0.5
+  },
+  {
+   "prop": "stone_trough",
+   "x": 16.4,
+   "z": 24.4,
+   "collide": 0.5
+  },
+  {
+   "prop": "crate_lid",
+   "x": 12.0,
+   "z": 24.6,
+   "collide": 0.35
+  },
+  {
+   "prop": "lamp_post",
+   "x": -9.0,
+   "z": -2.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "lamp_post",
+   "x": 7.0,
+   "z": 3.0,
+   "collide": 0.2
+  },
+  {
+   "prop": "stage_bench",
+   "x": -22.0,
+   "z": 2.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "cordwood",
+   "x": -34.0,
+   "z": 10.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -34.0,
+   "z": -14.0,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 8.0,
+   "z": -18.0,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -4.0,
+   "z": -18.0,
+   "collide": 0.42
+  },
+  {
+   "prop": "log_pile",
+   "x": 13.2,
+   "z": -13.2,
+   "collide": 1.1
+  },
+  {
+   "prop": "log_pile",
+   "x": 12.8,
+   "z": -9.8,
+   "collide": 1.1
+  },
+  {
+   "prop": "lumber_stack",
+   "x": 9.4,
+   "z": -13.0,
+   "collide": 0.9
+  },
+  {
+   "prop": "lumber_stack",
+   "x": 9.6,
+   "z": -10.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "wool_bales",
+   "x": 12.6,
+   "z": 9.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "grain_sacks",
+   "x": 12.0,
+   "z": 16.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "wool_bales",
+   "x": 13.0,
+   "z": 22.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "laundry_line_0",
+   "x": -26.0,
+   "z": -11.6,
+   "collide": 0
+  },
+  {
+   "prop": "laundry_line_1",
+   "x": -18.0,
+   "z": -11.6,
+   "collide": 0
+  },
+  {
+   "prop": "laundry_line_0",
+   "x": -22.0,
+   "z": 24.6,
+   "collide": 0
+  },
+  {
+   "prop": "rain_barrel",
+   "x": -32.6,
+   "z": -9.2,
+   "collide": 0.35
+  },
+  {
+   "prop": "rain_barrel",
+   "x": -11.4,
+   "z": -9.2,
+   "collide": 0.35
+  },
+  {
+   "prop": "signpost",
+   "x": 17.2,
+   "z": -2.4,
+   "collide": 0.15
+  },
+  {
+   "prop": "bench_plain",
+   "x": -14.0,
+   "z": 2.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "crate_lid",
+   "x": -30.0,
+   "z": -10.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "crate_lid",
+   "x": -30.0,
+   "z": 24.0,
+   "collide": 0.4
+  },
+  {
+   "prop": "fence_picket",
+   "x": 3.5,
+   "z": 4.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": 1.5,
+   "z": 4.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -0.5,
+   "z": 4.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -4.5,
+   "z": 4.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -6.5,
+   "z": 4.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "mailbox",
+   "x": -3.5,
+   "z": 4.4,
+   "collide": 0.15
+  },
+  {
+   "prop": "cordwood",
+   "x": -7.7,
+   "z": 10.1,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": 3.4,
+   "z": 6.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "crate_lid",
+   "x": 8.5,
+   "z": 12.0,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 15.4,
+   "z": -5.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_stack",
+   "x": 15.4,
+   "z": -8.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 15.4,
+   "z": -16.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 15.4,
+   "z": -19.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "big_bucket",
+   "x": 0.37,
+   "z": -15.58,
+   "collide": 0.3
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -30.97,
+   "z": -20.24,
+   "collide": 0.5
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -20.29,
+   "z": -22.02,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": 2.14,
+   "z": -10.68,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 5.69,
+   "z": -18.93,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": -12.57,
+   "z": -19.24,
+   "collide": 0.6
+  },
+  {
+   "prop": "firewood_split",
+   "x": -11.33,
+   "z": -23.15,
+   "collide": 0.35
+  },
+  {
+   "prop": "crate_0",
+   "x": -5.06,
+   "z": -22.64,
+   "collide": 0.3
+  },
+  {
+   "prop": "big_bucket",
+   "x": -10.46,
+   "z": 3.89,
+   "collide": 0.3
+  },
+  {
+   "prop": "crate_lid",
+   "x": -14.09,
+   "z": -14.0,
+   "collide": 0.35
+  },
+  {
+   "prop": "timber_fallen",
+   "x": -1.64,
+   "z": -13.23,
+   "collide": 0.4
+  },
+  {
+   "prop": "grain_sacks",
+   "x": -6.38,
+   "z": -11.63,
+   "collide": 0.45
+  },
+  {
+   "prop": "chickens_1",
+   "x": -32.84,
+   "z": -6.0,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 22.21,
+   "z": -23.35,
+   "collide": 0
+  },
+  {
+   "prop": "crate_lid",
+   "x": -2.09,
+   "z": 17.93,
+   "collide": 0.35
+  },
+  {
+   "prop": "stone_barrow",
+   "x": -10.45,
+   "z": -20.42,
+   "collide": 0.5
+  },
+  {
+   "prop": "stone_barrow",
+   "x": -0.47,
+   "z": 21.19,
+   "collide": 0.5
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 9.32,
+   "z": 20.61,
+   "collide": 0.4
+  },
+  {
+   "prop": "asters_1",
+   "x": -24.22,
+   "z": -16.26,
+   "collide": 0
+  },
+  {
+   "prop": "crate_lid",
+   "x": -7.65,
+   "z": -21.68,
+   "collide": 0.35
+  },
+  {
+   "prop": "wool_bales",
+   "x": -13.98,
+   "z": -22.78,
+   "collide": 0.6
+  },
+  {
+   "prop": "timber_fallen",
+   "x": 8.48,
+   "z": 23.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "lumber_stack",
+   "x": -5.2,
+   "z": -7.65,
+   "collide": 0.9
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -26.56,
+   "z": -15.3,
+   "collide": 0.5
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 5.05,
+   "z": 16.7,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 33.33,
+   "z": -14.94,
+   "collide": 0.42
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -9.87,
+   "z": -7.02,
+   "collide": 0.4
+  },
+  {
+   "prop": "lumber_stack",
+   "x": 6.61,
+   "z": 18.94,
+   "collide": 0.9
+  },
+  {
+   "prop": "firewood_split",
+   "x": -15.75,
+   "z": -19.57,
+   "collide": 0.35
+  },
+  {
+   "prop": "crate_lid",
+   "x": -1.62,
+   "z": -22.45,
+   "collide": 0.35
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -18.96,
+   "z": -17.86,
+   "collide": 0.42
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": -10.71,
+   "z": 18.86,
+   "collide": 0.45
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -12.43,
+   "z": -16.95,
+   "collide": 0
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 2.52,
+   "z": -19.85,
+   "collide": 0.4
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 1.49,
+   "z": 16.91,
+   "collide": 0.4
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -5.32,
+   "z": 19.75,
+   "collide": 0.4
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -0.89,
+   "z": -18.45,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": 12.34,
+   "z": -4.88,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 5.49,
+   "z": -12.35,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": 4.7,
+   "z": 20.25,
+   "collide": 0
+  },
+  {
+   "prop": "big_bucket",
+   "x": -25.2,
+   "z": -18.98,
+   "collide": 0.3
+  },
+  {
+   "prop": "chickens_1",
+   "x": -23.15,
+   "z": -10.22,
+   "collide": 0
+  },
+  {
+   "prop": "maple_red_1",
+   "x": -9.8,
+   "z": 7.37,
+   "collide": 0.42
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -32.6,
+   "z": -18.68,
+   "collide": 0.5
+  },
+  {
+   "prop": "asters_1",
+   "x": -2.5,
+   "z": -11.14,
+   "collide": 0
+  },
+  {
+   "prop": "timber_fallen",
+   "x": -11.22,
+   "z": -14.55,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -5.53,
+   "z": -15.92,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": -29.93,
+   "z": -14.93,
+   "collide": 0.6
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -28.18,
+   "z": 12.03,
+   "collide": 0
+  },
+  {
+   "prop": "crate_0",
+   "x": 15.85,
+   "z": 4.12,
+   "collide": 0.3
+  },
+  {
+   "prop": "crate_0",
+   "x": -8.58,
+   "z": -15.97,
+   "collide": 0.3
+  },
+  {
+   "prop": "timber_fallen",
+   "x": 5.05,
+   "z": 22.71,
+   "collide": 0.4
+  },
+  {
+   "prop": "chickens_1",
+   "x": 8.44,
+   "z": 16.37,
+   "collide": 0
+  },
+  {
+   "prop": "timber_fallen",
+   "x": -23.37,
+   "z": -21.11,
+   "collide": 0.4
+  },
+  {
+   "prop": "cordwood",
+   "x": -28.13,
+   "z": -13.46,
+   "collide": 0.6
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -28.89,
+   "z": -23.02,
+   "collide": 0.5
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -19.38,
+   "z": 2.74,
+   "collide": 0
+  },
+  {
+   "prop": "crate_0",
+   "x": 10.11,
+   "z": -15.96,
+   "collide": 0.3
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -17.35,
+   "z": -15.67,
+   "collide": 0.42
+  },
+  {
+   "prop": "grain_sacks",
+   "x": -15.36,
+   "z": -11.02,
+   "collide": 0.45
+  },
+  {
+   "prop": "asters_1",
+   "x": 25.69,
+   "z": -22.96,
+   "collide": 0
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": 7.66,
+   "z": -21.18,
+   "collide": 0.42
+  },
+  {
+   "prop": "crate_0",
+   "x": -30.75,
+   "z": -17.37,
+   "collide": 0.3
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -3.48,
+   "z": 22.12,
+   "collide": 0.5
+  },
+  {
+   "prop": "crate_0",
+   "x": 4.74,
+   "z": 9.52,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 33.23,
+   "z": -18.28,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": 3.78,
+   "z": -14.26,
+   "collide": 0.3
+  },
+  {
+   "prop": "firewood_split",
+   "x": 10.52,
+   "z": 22.52,
+   "collide": 0.35
+  },
+  {
+   "prop": "timber_fallen",
+   "x": -33.19,
+   "z": 7.15,
+   "collide": 0.4
+  },
+  {
+   "prop": "wool_bales",
+   "x": 10.78,
+   "z": -7.75,
+   "collide": 0.6
+  },
+  {
+   "prop": "crate_0",
+   "x": -24.37,
+   "z": 12.14,
+   "collide": 0.3
+  },
+  {
+   "prop": "stone_barrow",
+   "x": -6.2,
+   "z": 22.38,
+   "collide": 0.5
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -22.24,
+   "z": -13.74,
+   "collide": 0.3
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -26.57,
+   "z": -22.91,
+   "collide": 0.42
+  },
+  {
+   "prop": "firewood_split",
+   "x": -4.76,
+   "z": -9.91,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_red_1",
+   "x": -7.11,
+   "z": -6.33,
+   "collide": 0.42
+  },
+  {
+   "prop": "cordwood",
+   "x": -32.89,
+   "z": -23.0,
+   "collide": 0.6
+  },
+  {
+   "prop": "chickens_1",
+   "x": -5.87,
+   "z": 16.06,
+   "collide": 0
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 17.59,
+   "z": -23.33,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -11.25,
+   "z": 21.01,
+   "collide": 0.3
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": -33.27,
+   "z": 17.48,
+   "collide": 0.45
+  },
+  {
+   "prop": "crate_0",
+   "x": -3.42,
+   "z": -20.61,
+   "collide": 0.3
+  },
+  {
+   "prop": "chickens_1",
+   "x": 26.24,
+   "z": -6.88,
+   "collide": 0
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": 5.47,
+   "z": -23.2,
+   "collide": 0.42
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": 2.22,
+   "z": 19.65,
+   "collide": 0.45
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": 15.75,
+   "z": -13.25,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -16.18,
+   "z": 23.45,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -11.39,
+   "z": -3.36,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": -10.18,
+   "z": 9.73,
+   "collide": 0
+  },
+  {
+   "prop": "stone_barrow",
+   "x": -21.51,
+   "z": -17.7,
+   "collide": 0.5
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -36,
+     0
+    ],
+    [
+     26,
+     0.4
+    ]
+   ],
+   "radius": 2.6
+  }
+ ],
+ "spots": [
+  {
+   "name": "From Market Square",
+   "x": -30.6,
+   "z": 0.2
+  },
+  {
+   "name": "The mill office door",
+   "x": 2,
+   "z": -2.6,
+   "note": "Penhallow, most days."
+  },
+  {
+   "name": "Foot of the clock tower",
+   "x": -2.6,
+   "z": -2.6,
+   "note": "Tolman, looking up. The hands at ten past two."
+  },
+  {
+   "name": "The row steps",
+   "x": -21,
+   "z": -1.6,
+   "note": "Mill hands sitting out, the wheels stopped."
+  },
+  {
+   "name": "The frozen wheel",
+   "x": 24.2,
+   "z": -0.4,
+   "note": "The sawmill's wheel, iced still till noon."
+  },
+  {
+   "name": "The bridge portal",
+   "x": 25,
+   "z": 0.4,
+   "note": "The covered bridge over the river; Tanner's Row beyond (not built yet)."
+  },
+  {
+   "name": "The ferry landing",
+   "x": 14.2,
+   "z": 23.6,
+   "note": "Hezekiah. Closed until Fallow Bend."
+  }
+ ],
+ "start": [
+  -30.6,
+  0.2
+ ],
+ "exits": [
+  {
+   "rect": [
+    -33.5,
+    -2.4,
+    -32.5,
+    2.6
+   ],
+   "to": "harlow-bridge",
+   "at": [
+    31.4,
+    -1
+   ],
+   "dir": 2
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    30,
+    -26
+   ],
+   [
+    29.4,
+    -14
+   ],
+   [
+    30.2,
+    -4
+   ],
+   [
+    29.6,
+    8
+   ],
+   [
+    30.4,
+    18
+   ],
+   [
+    30,
+    26
+   ]
+  ],
+  "width": 6.5,
+  "depth": 1.1
+ }
+}

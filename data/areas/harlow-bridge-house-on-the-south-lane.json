@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "name": "harlow-bridge-house-on-the-south-lane",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [
+    {
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "to": "harlow-bridge",
+      "at": [
+        -16.25,
+        15.4
+      ],
+      "dir": 4
+    }
+  ],
+  "interior": {
+    "town": "harlow-bridge",
+    "building": 10,
+    "storey": 0,
+    "scale": 1.7,
+    "generated": true,
+    "lootMax": 2,
+    "source": {
+      "recipe": "colonial",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3,
+              -2.5
+            ],
+            [
+              3.5,
+              -2.5
+            ],
+            [
+              3.5,
+              2.5
+            ],
+            [
+              -3,
+              2.5
+            ]
+          ]
+        }
+      ],
+      "storeys": 2,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": [],
+    "up": "harlow-bridge-house-on-the-south-lane-upper"
+  }
+}

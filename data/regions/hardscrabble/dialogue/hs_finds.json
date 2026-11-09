@@ -37,7 +37,8 @@
     ] },
     { "id": "hs_find_quarry_block", "lines": [
       { "who": "", "text": "A block on the top ledge, squared on five faces, the sixth still rough. Three lines are cut across each other on top, and there's a mason's mark at the corner. Nobody ever came to move it." },
-      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "That's my great-grandfather's mark." }
+      { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "That's my great-grandfather's mark." },
+      { "who": "", "if": { "flags": ["seam_seen"] }, "text": "Frost on its north face, and nowhere else." }
     ] },
     { "id": "hs_find_tally", "lines": [
       { "who": "", "text": "The cutters' tally board, the chalk gone grey under the grease. Every block counted in fives, row after row." },
@@ -59,6 +60,14 @@
     { "id": "hs_find_lasts", "lines": [
       { "who": "", "text": "A shelf of wooden lasts, a pair to each family, with a paper tag tied on each: Pike. Holt. Merrill. Dow. Abbott. Lowell. And more behind. They've been dusted." },
       { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Mine's not up there. I'm not leaving. I'm going." }
-    ] }
+    ] },
+    {"id": "hs_find_slate", "lines": [{"who": "", "text": "A child's slate against the wall. A sum chalked on it, half done: 7 and 5 make."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Twelve. That's the Pike boy's. He never could carry."}]},
+    {"id": "hs_find_chair", "lines": [{"who": "", "text": "A chair left where somebody got up out of it. Dust on the seat. None on the arms."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Pegged, not nailed. Good chair. They'll want it, wherever they are."}]},
+    {"id": "hs_find_calendar", "lines": [{"who": "", "text": "An almanac page on a nail. A Tuesday is circled. Nothing after it is marked."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Wagons went Tuesday. Half the village did."}]},
+    {"id": "hs_find_sample_walls", "lines": [{"who": "", "if": {"notFlags": ["joined:obed"]}, "text": "Three short lengths of wall standing on their own in the yard, each laid a different way. None of them keeps anything in."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Coursed. For people who like a straight line. They pay more and get less."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Field stone, as it comes off the land. Ugly. Stands two hundred years."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "That one's ours."}, {"who": "eldwin", "if": {"flags": ["joined:obed"]}, "text": "There's a gap low down on the north side."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "There's always a gap."}]},
+    {"id": "hs_benoni_note", "lines": [{"who": "", "text": "A note pinned to the shop door: GONE SOUTH TO THE DOWS. BACK TOMORROW. LEAVE BOOTS ON THE STEP."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "He'll be back. He resoled mine before he went."}]},
+    {"id": "hs_pike_crate_look", "lines": [{"who": "", "text": "A crate chalked PIKE, the lid off. Three pairs of boots inside, greased and paired, toes to the wall. The small pair has hardly been worn."}, {"who": "", "text": "They aren't yours to take."}]},
+    {"id": "hs_pike_crate_take", "lines": [{"who": "", "text": "A crate chalked PIKE, the lid off. Three pairs of boots inside, greased and paired, toes to the wall. The small pair has hardly been worn."}, {"who": "obed", "if": {"flags": ["joined:obed"]}, "text": "Benoni's stitching. He double-welts everything."}, {"who": "", "text": "You take all three pairs."}], "onEnd": [{"setFlag": "has_pike_boots"}]},
+    {"id":"hs_phebe_pouch","lines":[{"who":"","text":"Phebe's garden is mostly sage now, gone woody and tall."},{"who":"","text":"Obed goes into the house. He comes back with a leather pouch off the kitchen hook, turns it over once, and holds it out."},{"who":"obed","text":"Phebe's. Leave the sage in."}],"onEnd":[{"find":"phebe_herb_pouch"}]}
   ]
 }

@@ -1,0 +1,2138 @@
+{
+ "version": 1,
+ "name": "harlow-bridge",
+ "seed": 4201,
+ "size": {
+  "w": 72,
+  "h": 50
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.3,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "path",
+   "under": "grass_leaves",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "maple_red_0",
+     "bare_tree_0",
+     "maple_orange_0",
+     "bare_tree_1",
+     "white_pine_0"
+    ],
+    "density": 0.35,
+    "spacing": 2.4,
+    "scale": [
+     0.95,
+     1.2
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "lilac_0",
+     "lilac_1"
+    ],
+    "density": 0.02,
+    "spacing": 6,
+    "scale": [
+     0.9,
+     1.1
+    ],
+    "near": "path",
+    "collide": 0.4
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     0,
+     -2
+    ],
+    [
+     12,
+     -2
+    ]
+   ],
+   "width": 13,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     -31.5,
+     -25
+    ],
+    [
+     -30,
+     -20
+    ],
+    [
+     -23,
+     -18.8
+    ],
+    [
+     -20,
+     -15.4
+    ],
+    [
+     -12,
+     -13.6
+    ],
+    [
+     -6,
+     -9
+    ]
+   ],
+   "width": 2.8,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     18.5,
+     -8
+    ],
+    [
+     27.6,
+     -12
+    ],
+    [
+     28.6,
+     -25
+    ]
+   ],
+   "width": 3.6,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     18.5,
+     -1.5
+    ],
+    [
+     27,
+     -1.2
+    ],
+    [
+     36,
+     -1
+    ]
+   ],
+   "width": 3.8,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     -6,
+     4
+    ],
+    [
+     -10,
+     9.4
+    ],
+    [
+     -22,
+     10.6
+    ],
+    [
+     -36,
+     11.8
+    ]
+   ],
+   "width": 3.2,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     17.2,
+     4.5
+    ],
+    [
+     17.2,
+     13
+    ]
+   ],
+   "width": 2.6,
+   "kind": "cobble"
+  },
+  {
+   "points": [
+    [
+     -11,
+     13.2
+    ],
+    [
+     6,
+     13.4
+    ],
+    [
+     22,
+     13.6
+    ],
+    [
+     36,
+     14
+    ]
+   ],
+   "width": 2.8,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     -21,
+     -2
+    ],
+    [
+     -23,
+     -2
+    ]
+   ],
+   "width": 1.8,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "inn",
+   "x": -13,
+   "z": -2,
+   "w": 14,
+   "d": 8,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -7.0,
+       -4.0
+      ],
+      [
+       7.0,
+       -4.0
+      ],
+      [
+       7.0,
+       4.0
+      ],
+      [
+       -7.0,
+       4.0
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "porch": 14,
+    "sign": true,
+    "signText": "THE BROKEN TANKARD",
+    "porchLight": true
+   },
+   "opens": "The Broken Tankard"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shopblock",
+   "x": -1,
+   "z": -14,
+   "w": 6,
+   "d": 9,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       4.5
+      ],
+      [
+       -3.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "A. FESSENDEN, DRY GOODS",
+    "party": [
+     "right"
+    ]
+   },
+   "opens": "Fessenden's dry goods"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shopblock",
+   "x": 5,
+   "z": -14,
+   "w": 6,
+   "d": 9,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       4.5
+      ],
+      [
+       -3.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "DRUGS & PHYSIC"
+   },
+   "opens": "The druggist"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shopblock",
+   "x": 11,
+   "z": -14,
+   "w": 6,
+   "d": 9,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       4.5
+      ],
+      [
+       -3.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "J. LYMAN, BOOTS"
+   },
+   "opens": "Lyman's boots"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shopblock",
+   "x": 17,
+   "z": -14,
+   "w": 6,
+   "d": 9,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       -4.5
+      ],
+      [
+       3.0,
+       4.5
+      ],
+      [
+       -3.0,
+       4.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "CORLISS, PRINTER",
+    "party": [
+     "left"
+    ]
+   },
+   "opens": "Corliss's print shop"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "tailor",
+   "x": 10.5,
+   "z": 8,
+   "w": 8,
+   "d": 6,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4.0,
+       -3.0
+      ],
+      [
+       4.0,
+       -3.0
+      ],
+      [
+       4.0,
+       3.0
+      ],
+      [
+       -4.0,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "E. LORD, TAILOR",
+    "bow": true,
+    "porch": 0
+   },
+   "opens": "Euphemia Lord's shop"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 2,
+   "z": 8,
+   "w": 6.5,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "Squire Hatch's house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 23.5,
+   "z": 7,
+   "w": 6.5,
+   "d": 5,
+   "rot": 1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "The doctor's house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "barn",
+   "x": -27,
+   "z": -2,
+   "w": 8,
+   "d": 6,
+   "rot": -1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4.0,
+       -3.0
+      ],
+      [
+       4.0,
+       -3.0
+      ],
+      [
+       4.0,
+       3.0
+      ],
+      [
+       -4.0,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "opens": "The livery stable"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -27,
+   "z": -15.5,
+   "w": 7,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "House at the switchbacks"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": -16,
+   "z": 19,
+   "w": 6.5,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "House on the south lane"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": -6,
+   "z": 19,
+   "w": 7,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "Widow Ames's house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 4,
+   "z": 19,
+   "w": 6.5,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "The Goodells' house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": 23,
+   "z": 19.5,
+   "w": 7,
+   "d": 5,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "House by the river road"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": 32,
+   "z": -9,
+   "w": 6.5,
+   "d": 5,
+   "rot": 1.5707963267948966,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": true
+   },
+   "opens": "Deacon Pratt's house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "cape",
+   "x": 11,
+   "z": -22,
+   "w": 7,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       -2.5
+      ],
+      [
+       3.5,
+       2.5
+      ],
+      [
+       -3.5,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "opens": "House behind the Block"
+  }
+ ],
+ "landmarks": [],
+ "arenas": [],
+ "placements": [
+  {
+   "prop": "town_pump",
+   "x": 6.2,
+   "z": -0.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "noticeboard",
+   "x": 8.8,
+   "z": -1.0,
+   "collide": 0.3
+  },
+  {
+   "prop": "market_stall_0",
+   "x": 1.0,
+   "z": -5.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "market_stall_1",
+   "x": 5.6,
+   "z": -5.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "market_stall_2",
+   "x": 14.4,
+   "z": 1.6,
+   "collide": 0.9
+  },
+  {
+   "prop": "lantern_post",
+   "x": -6.0,
+   "z": -8.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": 18.0,
+   "z": -8.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": -6.0,
+   "z": 4.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": 18.0,
+   "z": 4.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_bracket",
+   "x": -8.9,
+   "z": 0.7,
+   "collide": 0,
+   "y": 1.7
+  },
+  {
+   "prop": "hitching_rail",
+   "x": -5.0,
+   "z": 3.0,
+   "collide": 0.4
+  },
+  {
+   "prop": "hitching_rail",
+   "x": 14.0,
+   "z": -8.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "stage_bench",
+   "x": -8.0,
+   "z": -5.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "barrel_stack",
+   "x": -5.4,
+   "z": -9.0,
+   "collide": 0.5
+  },
+  {
+   "prop": "horse_trough",
+   "x": -21.6,
+   "z": 2.2,
+   "collide": 0.6
+  },
+  {
+   "prop": "crate_0",
+   "x": 21.0,
+   "z": -9.0,
+   "collide": 0.35
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 8.0,
+   "z": -9.0,
+   "collide": 0.35
+  },
+  {
+   "prop": "hay_bale_0",
+   "x": -23.6,
+   "z": -7.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": -25.2,
+   "z": -7.8,
+   "collide": 0.45
+  },
+  {
+   "prop": "farm_wagon_loaded",
+   "x": -22.8,
+   "z": 4.2,
+   "collide": 0.9
+  },
+  {
+   "prop": "lilac_0",
+   "x": -10.6,
+   "z": 16.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "lilac_1",
+   "x": 9.2,
+   "z": 16.2,
+   "collide": 0.4
+  },
+  {
+   "prop": "lilac_0",
+   "x": 28.4,
+   "z": 16.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "maple_red_0",
+   "x": 16,
+   "z": 16,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -1,
+   "z": 15.8,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 31,
+   "z": 4,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_1",
+   "x": -18,
+   "z": 6,
+   "collide": 0.42
+  },
+  {
+   "prop": "cider_barrel_0",
+   "x": -8.2,
+   "z": 2.6,
+   "collide": 0.3
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": -8.2,
+   "z": 3.4,
+   "collide": 0.3
+  },
+  {
+   "prop": "rest_stone",
+   "x": -19.6,
+   "z": 3.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "cordwood",
+   "x": -24.6,
+   "z": -9.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "ladder",
+   "x": -23.2,
+   "z": -5.2,
+   "collide": 0.2
+  },
+  {
+   "prop": "farm_wagon_empty",
+   "x": -30.6,
+   "z": 6.4,
+   "collide": 0.9
+  },
+  {
+   "prop": "fence_rail",
+   "x": -31,
+   "z": 9.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "fence_rail",
+   "x": -29,
+   "z": 9.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "fence_rail",
+   "x": -27,
+   "z": 9.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "crate_pumpkins",
+   "x": 3.4,
+   "z": -5.0,
+   "collide": 0.3
+  },
+  {
+   "prop": "apple_basket_0",
+   "x": 6.8,
+   "z": -5.2,
+   "collide": 0.2
+  },
+  {
+   "prop": "apple_basket_1",
+   "x": 13.6,
+   "z": 2.6,
+   "collide": 0.2
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 25.6,
+   "z": -16.5,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_0",
+   "x": 31.6,
+   "z": -19.0,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -20.5,
+   "z": 15.5,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 9.5,
+   "z": 16.2,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 30.5,
+   "z": 10.5,
+   "collide": 0.42
+  },
+  {
+   "prop": "lantern_post",
+   "x": 22.0,
+   "z": 11.6,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": -12.0,
+   "z": 11.4,
+   "collide": 0.25
+  },
+  {
+   "prop": "lamp_post",
+   "x": 25.0,
+   "z": -4.0,
+   "collide": 0.2
+  },
+  {
+   "prop": "stage_bench",
+   "x": 16.0,
+   "z": 5.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "signpost",
+   "x": 19.6,
+   "z": -10.6,
+   "collide": 0.15
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -8.6,
+   "z": -6.4,
+   "collide": 0.35
+  },
+  {
+   "prop": "flower_tubs",
+   "x": 21.6,
+   "z": 5.2,
+   "collide": 0.35
+  },
+  {
+   "prop": "bench_plain",
+   "x": 0.6,
+   "z": 5.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "grain_sacks",
+   "x": 20.6,
+   "z": -9.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -24.0,
+   "z": 6.8,
+   "collide": 0.4
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": -30.0,
+   "z": -9.0,
+   "collide": 0.9
+  },
+  {
+   "prop": "crate_lid",
+   "x": -1.0,
+   "z": -19.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "crate_lid",
+   "x": 5.0,
+   "z": -19.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "cordwood",
+   "x": 17.0,
+   "z": -19.5,
+   "collide": 0.45
+  },
+  {
+   "prop": "cordwood",
+   "x": -2.45,
+   "z": 8.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": 20.6,
+   "z": 2.85,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 28.0,
+   "z": 6.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": 28.2,
+   "z": 4.8,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": 27.8,
+   "z": 8.2,
+   "collide": 0.25
+  },
+  {
+   "prop": "fence_picket",
+   "x": -31.5,
+   "z": -11.3,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -29.5,
+   "z": -11.3,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -25.5,
+   "z": -11.3,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -23.5,
+   "z": -11.3,
+   "collide": 0.2
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": -31.4,
+   "z": -12.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "fence_picket",
+   "x": -14.0,
+   "z": 14.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -18.0,
+   "z": 14.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "fence_picket",
+   "x": -20.0,
+   "z": 14.8,
+   "collide": 0.2
+  },
+  {
+   "prop": "mailbox",
+   "x": -17.5,
+   "z": 14.4,
+   "collide": 0.15
+  },
+  {
+   "prop": "cordwood",
+   "x": -20.45,
+   "z": 19.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": -11.85,
+   "z": 16.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -15.4,
+   "z": 23.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": -13.8,
+   "z": 23.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": -17.2,
+   "z": 23.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": -10.7,
+   "z": 19.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": -5.4,
+   "z": 23.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": -3.8,
+   "z": 23.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": -7.2,
+   "z": 23.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": -0.45,
+   "z": 19.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_pruned",
+   "x": 8.15,
+   "z": 16.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "garden_seed_0",
+   "x": 4.6,
+   "z": 23.5,
+   "collide": 0.4
+  },
+  {
+   "prop": "bean_poles",
+   "x": 6.2,
+   "z": 23.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "herbs_0",
+   "x": 2.8,
+   "z": 23.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": 18.3,
+   "z": 20.1,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": 27.4,
+   "z": 16.6,
+   "collide": 0.45
+  },
+  {
+   "prop": "herbs_0",
+   "x": 21.8,
+   "z": 23.8,
+   "collide": 0.25
+  },
+  {
+   "prop": "cordwood",
+   "x": 15.7,
+   "z": -22.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "lilac_0",
+   "x": 6.6,
+   "z": -19.1,
+   "collide": 0.45
+  },
+  {
+   "prop": "pumpkin_2",
+   "x": -20.9,
+   "z": -21.26,
+   "collide": 0.15
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 22.91,
+   "z": -5.22,
+   "collide": 0
+  },
+  {
+   "prop": "chickens_1",
+   "x": -31.77,
+   "z": 21.1,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_1",
+   "x": -29.88,
+   "z": 14.07,
+   "collide": 0.45
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": -5.91,
+   "z": 8.76,
+   "collide": 0.3
+  },
+  {
+   "prop": "rain_barrel",
+   "x": 32.82,
+   "z": 22.03,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -4.67,
+   "z": 6.15,
+   "collide": 0.42
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -24.77,
+   "z": 17.68,
+   "collide": 0.35
+  },
+  {
+   "prop": "lilac_1",
+   "x": -27.42,
+   "z": 5.03,
+   "collide": 0.45
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": -33.45,
+   "z": 0.81,
+   "collide": 0.9
+  },
+  {
+   "prop": "lilac_1",
+   "x": 33.43,
+   "z": 9.75,
+   "collide": 0.45
+  },
+  {
+   "prop": "apple_basket_1",
+   "x": -30.31,
+   "z": 17.9,
+   "collide": 0.2
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -31.05,
+   "z": 1.78,
+   "collide": 0.42
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 22.51,
+   "z": -20.59,
+   "collide": 0.9
+  },
+  {
+   "prop": "chickens_1",
+   "x": 9.68,
+   "z": 20.71,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -3.02,
+   "z": -22.48,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": -26.83,
+   "z": 13.68,
+   "collide": 0.6
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": -15.4,
+   "z": -18.01,
+   "collide": 0.9
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 14.79,
+   "z": 22.45,
+   "collide": 0.3
+  },
+  {
+   "prop": "chickens_1",
+   "x": -15.69,
+   "z": -21.68,
+   "collide": 0
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -18.44,
+   "z": -8.28,
+   "collide": 0.42
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -22.5,
+   "z": -13.89,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 30.73,
+   "z": -12.85,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -26.56,
+   "z": -21.99,
+   "collide": 0.42
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 31.17,
+   "z": -15.01,
+   "collide": 0.42
+  },
+  {
+   "prop": "rain_barrel",
+   "x": 19.76,
+   "z": 10.41,
+   "collide": 0.35
+  },
+  {
+   "prop": "pumpkin_2",
+   "x": 25.28,
+   "z": -7.79,
+   "collide": 0.15
+  },
+  {
+   "prop": "big_bucket",
+   "x": -8.19,
+   "z": -13.83,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -23.26,
+   "z": 12.65,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -32.65,
+   "z": 4.88,
+   "collide": 0
+  },
+  {
+   "prop": "crate_0",
+   "x": -20.32,
+   "z": -4.26,
+   "collide": 0.3
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -13.66,
+   "z": -10.83,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 22.6,
+   "z": -13.25,
+   "collide": 0
+  },
+  {
+   "prop": "firewood_split",
+   "x": -1.72,
+   "z": 11.04,
+   "collide": 0.35
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 32.98,
+   "z": 6.87,
+   "collide": 0.4
+  },
+  {
+   "prop": "crate_0",
+   "x": -5.77,
+   "z": -16.47,
+   "collide": 0.3
+  },
+  {
+   "prop": "clothes_basket",
+   "x": -32.72,
+   "z": -2.14,
+   "collide": 0.3
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -11.65,
+   "z": -16.21,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -6.64,
+   "z": -18.7,
+   "collide": 0.3
+  },
+  {
+   "prop": "lilac_0",
+   "x": -32.7,
+   "z": -14.51,
+   "collide": 0.45
+  },
+  {
+   "prop": "asters_0",
+   "x": 19.17,
+   "z": -5.36,
+   "collide": 0
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -10.7,
+   "z": -20.26,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": 2.84,
+   "z": -19.02,
+   "collide": 0
+  },
+  {
+   "prop": "apple_basket_1",
+   "x": 14.86,
+   "z": 10.3,
+   "collide": 0.2
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 31.93,
+   "z": 17.02,
+   "collide": 0.4
+  },
+  {
+   "prop": "asters_0",
+   "x": 33.45,
+   "z": -13.99,
+   "collide": 0
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": -10.27,
+   "z": 22.05,
+   "collide": 0.45
+  },
+  {
+   "prop": "cordwood",
+   "x": 27.12,
+   "z": 10.88,
+   "collide": 0.6
+  },
+  {
+   "prop": "asters_0",
+   "x": -26.13,
+   "z": 19.44,
+   "collide": 0
+  },
+  {
+   "prop": "chickens_0",
+   "x": 28.26,
+   "z": -7.8,
+   "collide": 0
+  },
+  {
+   "prop": "lilac_1",
+   "x": -31.35,
+   "z": -4.49,
+   "collide": 0.45
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": 22.86,
+   "z": -15.54,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": -17.25,
+   "z": 3.1,
+   "collide": 0
+  },
+  {
+   "prop": "clothes_basket",
+   "x": 1.68,
+   "z": -21.41,
+   "collide": 0.3
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -32.21,
+   "z": 16.7,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": 25.56,
+   "z": 1.88,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 22.29,
+   "z": -18.35,
+   "collide": 0.3
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": -19.5,
+   "z": 22.22,
+   "collide": 0.45
+  },
+  {
+   "prop": "clothes_basket",
+   "x": -9.43,
+   "z": -16.87,
+   "collide": 0.3
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -12.74,
+   "z": 6.92,
+   "collide": 0.42
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -32.43,
+   "z": -19.14,
+   "collide": 0.4
+  },
+  {
+   "prop": "crate_0",
+   "x": 14.9,
+   "z": 18.49,
+   "collide": 0.3
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": 28.71,
+   "z": 19.99,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 19.64,
+   "z": 15.68,
+   "collide": 0.3
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -16.87,
+   "z": -11.68,
+   "collide": 0.4
+  },
+  {
+   "prop": "chickens_1",
+   "x": 2.87,
+   "z": 11.29,
+   "collide": 0
+  },
+  {
+   "prop": "chickens_0",
+   "x": -8.73,
+   "z": 15.15,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -11.51,
+   "z": -10.12,
+   "collide": 0.3
+  },
+  {
+   "prop": "firewood_split",
+   "x": -22.87,
+   "z": 21.03,
+   "collide": 0.35
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -32.56,
+   "z": -8.73,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -17.25,
+   "z": -0.18,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 12.83,
+   "z": 17.65,
+   "collide": 0.42
+  },
+  {
+   "prop": "lilac_1",
+   "x": -29.6,
+   "z": 20.73,
+   "collide": 0.45
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": -27.87,
+   "z": 22.31,
+   "collide": 0.45
+  },
+  {
+   "prop": "lilac_0",
+   "x": -7.21,
+   "z": -21.24,
+   "collide": 0.45
+  },
+  {
+   "prop": "chickens_0",
+   "x": 30.57,
+   "z": 7.91,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": -19.2,
+   "z": 1.31,
+   "collide": 0.6
+  },
+  {
+   "prop": "big_bucket",
+   "x": 30.53,
+   "z": 22.28,
+   "collide": 0.3
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -17.62,
+   "z": -3.01,
+   "collide": 0.35
+  },
+  {
+   "prop": "chickens_0",
+   "x": 5.68,
+   "z": 10.64,
+   "collide": 0
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -11.57,
+   "z": -22.5,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_0",
+   "x": -18.5,
+   "z": -20.13,
+   "collide": 0
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -2.61,
+   "z": 5.3,
+   "collide": 0.35
+  },
+  {
+   "prop": "asters_0",
+   "x": 2.48,
+   "z": 15.15,
+   "collide": 0
+  },
+  {
+   "prop": "chickens_0",
+   "x": 7.09,
+   "z": -21.54,
+   "collide": 0
+  },
+  {
+   "prop": "big_bucket",
+   "x": -28.12,
+   "z": 17.44,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_0",
+   "x": 28.23,
+   "z": 1.93,
+   "collide": 0
+  },
+  {
+   "prop": "big_bucket",
+   "x": -21.35,
+   "z": -8.12,
+   "collide": 0.3
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -27.67,
+   "z": -7.84,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 19.09,
+   "z": 0.85,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": -15.0,
+   "z": 6.51,
+   "collide": 0.42
+  },
+  {
+   "prop": "rain_barrel",
+   "x": 28.29,
+   "z": -4.83,
+   "collide": 0.35
+  },
+  {
+   "prop": "flower_tubs",
+   "x": -21.25,
+   "z": -10.51,
+   "collide": 0.35
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 24.57,
+   "z": 22.48,
+   "collide": 0
+  },
+  {
+   "prop": "maple_orange_1",
+   "x": 19.54,
+   "z": -21.83,
+   "collide": 0.42
+  },
+  {
+   "prop": "firewood_split",
+   "x": 24.28,
+   "z": 10.8,
+   "collide": 0.35
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": 19.63,
+   "z": 6.96,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": -6.41,
+   "z": 11.1,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": -19.72,
+   "z": -17.67,
+   "collide": 0
+  },
+  {
+   "prop": "cider_barrel_0",
+   "x": -5.33,
+   "z": -14.25,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_0",
+   "x": 5.61,
+   "z": 15.43,
+   "collide": 0
+  },
+  {
+   "prop": "apple_basket_1",
+   "x": -25.5,
+   "z": 21.63,
+   "collide": 0.2
+  },
+  {
+   "prop": "lilac_0",
+   "x": 33.09,
+   "z": -20.91,
+   "collide": 0.45
+  },
+  {
+   "prop": "big_bucket",
+   "x": -13.12,
+   "z": -19.63,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_0",
+   "x": -33.36,
+   "z": 7.2,
+   "collide": 0
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": 17.83,
+   "z": 17.91,
+   "collide": 0.4
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -10.69,
+   "z": 5.94,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_orange_0",
+   "x": 11.9,
+   "z": 20.05,
+   "collide": 0.42
+  },
+  {
+   "prop": "maple_red_0",
+   "x": -5.41,
+   "z": -11.36,
+   "collide": 0.42
+  },
+  {
+   "prop": "chickens_1",
+   "x": -4.9,
+   "z": -20.37,
+   "collide": 0
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     0,
+     -2
+    ],
+    [
+     12,
+     -2
+    ]
+   ],
+   "radius": 7.5
+  },
+  {
+   "points": [
+    [
+     -23,
+     -6
+    ],
+    [
+     -23,
+     4
+    ]
+   ],
+   "radius": 2.6
+  }
+ ],
+ "spots": [
+  {
+   "name": "From the Lookoff",
+   "x": -30.8,
+   "z": -19.8,
+   "note": "The switchbacks come down from the Lookoff here."
+  },
+  {
+   "name": "The pump",
+   "x": 6.2,
+   "z": 1.0,
+   "note": "The town pump and its trough, the middle of the square."
+  },
+  {
+   "name": "Noticeboard",
+   "x": 8.8,
+   "z": 0.2
+  },
+  {
+   "name": "The Tankard's porch",
+   "x": -6.8,
+   "z": -4,
+   "note": "Oren by day; Jasper when he comes in off the road."
+  },
+  {
+   "name": "The Tankard's door",
+   "x": -6.2,
+   "z": -2
+  },
+  {
+   "name": "The iron lantern",
+   "x": -6.6,
+   "z": 0.4,
+   "note": "The lantern by the Tankard door, from the scene on the frost night."
+  },
+  {
+   "name": "The stage yard",
+   "x": -21.6,
+   "z": -0.4,
+   "note": "Behind the Tankard, where the stage stops, by the livery."
+  },
+  {
+   "name": "Euphemia's door",
+   "x": 10.5,
+   "z": 4.2
+  },
+  {
+   "name": "The hitching rail",
+   "x": -5.4,
+   "z": 3.6,
+   "note": "Asa and Patience, when they come down from the road."
+  },
+  {
+   "name": "Mill hands in the square",
+   "x": 12,
+   "z": 2.6,
+   "note": "Idle men, the wheels stopped till noon."
+  }
+ ],
+ "start": [
+  -30.8,
+  -19.6
+ ],
+ "exits": [
+  {
+   "rect": [
+    -34,
+    -22.5,
+    -29,
+    -21.5
+   ],
+   "to": "the-lookoff",
+   "at": [
+    34,
+    17.4
+   ],
+   "dir": 4
+  },
+  {
+   "rect": [
+    26.2,
+    -22.5,
+    31,
+    -21.5
+   ],
+   "to": "meetinghouse-hill",
+   "at": [
+    0.4,
+    19.6
+   ],
+   "dir": 4
+  },
+  {
+   "rect": [
+    32.5,
+    -3.6,
+    33.5,
+    1.6
+   ],
+   "to": "mill-street",
+   "at": [
+    -31.4,
+    0.2
+   ],
+   "dir": 6
+  }
+ ]
+}

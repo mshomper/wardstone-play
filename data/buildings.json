@@ -896,6 +896,542 @@
           ]
         }
       ]
+    },
+    "rowhouse": {
+      "_note": "Harlow Bridge's brick row house (decision 0382): 4 wide and 7 deep, two storeys and a garret with one dormer, the ridge along the street, the door to one side. Stand 4 to 6 side by side, touching, all turned the same way: party walls on both sides, so roofs and walls run on as one terrace and each unit carries the chimney on its right-hand party wall. End units are rowhouse_end.",
+      "storeys": 2,
+      "pitch": 0.85,
+      "mainRoof": "gable",
+      "chimney": "party",
+      "party": [
+        "left",
+        "right"
+      ],
+      "dormers": 1,
+      "tex": {
+        "wall": "brick_red",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_panel_red",
+        "spacing": 1.45
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "parlor",
+              "share": 55,
+              "public": true
+            },
+            {
+              "type": "kitchen",
+              "share": 45
+            }
+          ],
+          "connect": [
+            [
+              "parlor",
+              "kitchen"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom",
+              "share": 100
+            }
+          ]
+        }
+      ]
+    },
+    "rowhouse_end": {
+      "_note": "The end of a brick terrace (decision 0382): a rowhouse whose open gable is a brick parapet with granite coping and its own chimney. Its neighbour is on its right; the unit at the other end of the row sets variants.party to [\"left\"].",
+      "storeys": 2,
+      "pitch": 0.85,
+      "mainRoof": "gable",
+      "chimney": "party",
+      "party": [
+        "right"
+      ],
+      "parapet": true,
+      "dormers": 1,
+      "tex": {
+        "wall": "brick_red",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_panel_red",
+        "spacing": 1.45
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "parlor",
+              "share": 55,
+              "public": true
+            },
+            {
+              "type": "kitchen",
+              "share": 45
+            }
+          ],
+          "connect": [
+            [
+              "parlor",
+              "kitchen"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom",
+              "share": 100
+            }
+          ]
+        }
+      ]
+    },
+    "shopblock": {
+      "_note": "One shop of the Brick Block (decision 0382): 6 wide, 9 deep, two brick storeys, a shopfront (a shop window either side of the door) under a painted sign band with the shop's name (variants.signText). Stand four side by side as a terrace; the ends are plain brick gables.",
+      "storeys": 2,
+      "pitch": 0.6,
+      "mainRoof": "gable",
+      "chimney": "party",
+      "party": [
+        "left",
+        "right"
+      ],
+      "sign": true,
+      "tex": {
+        "wall": "brick_red",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_shop",
+        "spacing": 1.6,
+        "shopWindow": "window_shop"
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "shop",
+              "share": 65,
+              "public": true
+            },
+            {
+              "type": "storeroom",
+              "share": 35
+            }
+          ],
+          "connect": [
+            [
+              "shop",
+              "storeroom"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "study",
+              "share": 45
+            },
+            {
+              "type": "bedroom",
+              "share": 55
+            }
+          ]
+        }
+      ]
+    },
+    "inn": {
+      "_note": "The Broken Tankard (decision 0382): the biggest building yet, about 14 by 8, two storeys of white clapboard with shutters, a slate roof, a porch the full length of the front, the door in the middle, a chimney on each end and the sign hanging from an iron bracket. Inside: the taproom and the kitchen; five rooms upstairs.",
+      "storeys": 2,
+      "pitch": 0.75,
+      "mainRoof": "gable",
+      "chimney": "ends",
+      "shutters": true,
+      "porch": {
+        "width": 14,
+        "depth": 1.8
+      },
+      "porchLight": true,
+      "sign": true,
+      "signHang": true,
+      "signText": "The Broken Tankard",
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "granite_trim"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_inn",
+        "spacing": 1.75,
+        "doorCentre": true
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "taproom",
+              "share": 68,
+              "public": true,
+              "stairs": true
+            },
+            {
+              "type": "inn_kitchen",
+              "share": 32
+            }
+          ],
+          "connect": [
+            [
+              "taproom",
+              "inn_kitchen"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom_rented",
+              "share": 22
+            },
+            {
+              "type": "bedroom_inn",
+              "share": 20
+            },
+            {
+              "type": "bedroom_inn",
+              "share": 20
+            },
+            {
+              "type": "bedroom_inn",
+              "share": 19
+            },
+            {
+              "type": "bedroom_inn",
+              "share": 19
+            }
+          ]
+        }
+      ]
+    },
+    "millhouse_office": {
+      "_note": "The mill office under Harlow Bridge's clock tower (decision 0382): a two-storey brick office with a square brick tower rising through its left end, a clock on each face under a granite cornice, a white belfry and a low cap. The office downstairs; the clock's works room up.",
+      "storeys": 2,
+      "pitch": 0.6,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "tex": {
+        "wall": "brick_red",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_panel_red",
+        "spacing": 1.6
+      },
+      "tower": {
+        "side": "left",
+        "width": 2.6,
+        "wall": "brick_red",
+        "trim": "granite_trim",
+        "clock": "clock_face",
+        "rise": 2.6,
+        "cap": "pyramid",
+        "spire": 1.3
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "mill_office",
+              "share": 100,
+              "public": true
+            }
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "clockworks",
+              "share": 100
+            }
+          ]
+        }
+      ]
+    },
+    "meetinghouse_spire": {
+      "_note": "Harlow Bridge's meetinghouse (decision 0382): the meetinghouse with a real steeple: a tower rising well above the ridge just inside the front, a louvered belfry and a tall octagonal spire. White clapboard, gable end to the street, the door in the middle. One tall room inside.",
+      "storeys": 2,
+      "pitch": 0.85,
+      "mainRoof": "gable",
+      "chimney": "stovepipe",
+      "belfry": "spire",
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "granite_trim"
+      },
+      "openings": {
+        "window": "window_meeting",
+        "door": "door_meeting",
+        "spacing": 2.1,
+        "doorCentre": true
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "meeting",
+              "share": 100,
+              "public": true
+            }
+          ]
+        }
+      ]
+    },
+    "federal": {
+      "_note": "Penhallow's house (decision 0382): a square brick Federal house, two storeys, a low hip roof, a pair of chimneys on each end wall, the door in the middle under its fanlight, granite trim.",
+      "storeys": 2,
+      "pitch": 0.55,
+      "mainRoof": "hip",
+      "chimney": "ends",
+      "tex": {
+        "wall": "brick_red",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_inn",
+        "spacing": 1.7,
+        "doorCentre": true
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "parlor",
+              "share": 55,
+              "public": true
+            },
+            {
+              "type": "kitchen",
+              "share": 45
+            }
+          ],
+          "connect": [
+            [
+              "parlor",
+              "kitchen"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom",
+              "share": 55
+            },
+            {
+              "type": "bedroom",
+              "share": 45
+            }
+          ]
+        }
+      ]
+    },
+    "mill_brick": {
+      "_note": "A brick mill on the race (decision 0382): long, three storeys of weathered brick in even rows of windows, a low slate roof and a white belfry on the ridge. Give it a waterwheel landmark on the race side.",
+      "storeys": 3,
+      "pitch": 0.45,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "tex": {
+        "wall": "brick_red_worn",
+        "roof": "slate_roof",
+        "foundation": "granite_trim",
+        "trim": "granite_trim"
+      },
+      "openings": {
+        "window": "window_brick",
+        "door": "door_plank",
+        "spacing": 1.4
+      },
+      "tower": {
+        "side": "centre",
+        "width": 1.8,
+        "rise": 0.2,
+        "cap": "pyramid",
+        "spire": 1.1
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "press",
+              "share": 65,
+              "public": true
+            },
+            {
+              "type": "storeroom",
+              "share": 35
+            }
+          ],
+          "connect": [
+            [
+              "press",
+              "storeroom"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "loft",
+              "share": 100
+            }
+          ]
+        }
+      ]
+    },
+    "schoolhouse": {
+      "_note": "The district schoolhouse (decision 0382): one room, one storey of red boards, gable end to the road with the door in the middle, a small white belfry over the door end, a stovepipe.",
+      "storeys": 1,
+      "pitch": 0.9,
+      "mainRoof": "gable",
+      "chimney": "stovepipe",
+      "tex": {
+        "wall": "barn_board_red",
+        "roof": "shingle_cedar",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_plank",
+        "spacing": 1.8,
+        "doorCentre": true
+      },
+      "tower": {
+        "side": "right",
+        "width": 1.5,
+        "rise": 0.15,
+        "cap": "pyramid",
+        "spire": 0.9
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "schoolroom",
+              "share": 100,
+              "public": true
+            }
+          ]
+        }
+      ]
+    },
+    "tailor": {
+      "storeys": 2,
+      "pitch": 0.8,
+      "mainRoof": "gable",
+      "chimney": "end",
+      "porch": {
+        "width": 4.4
+      },
+      "porchLight": true,
+      "sign": true,
+      "tex": {
+        "wall": "clapboard_white",
+        "roof": "slate_roof",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_white",
+        "door": "door_panel_red",
+        "spacing": 1.6
+      },
+      "rooms": [
+        {
+          "rooms": [
+            {
+              "type": "tailor",
+              "share": 70,
+              "public": true
+            },
+            {
+              "type": "storeroom",
+              "share": 30
+            }
+          ],
+          "connect": [
+            [
+              "tailor",
+              "storeroom"
+            ]
+          ]
+        },
+        {
+          "rooms": [
+            {
+              "type": "bedroom",
+              "share": 100
+            }
+          ]
+        }
+      ],
+      "_note": "Euphemia Lord's tailor shop in Harlow Bridge (decision 0383): the store with a bow window and the tailor's room inside."
     }
+  },
+  "fallbacks": {
+    "_note": "Stand-ins for textures whose art isn't exported yet (decision 0382): used only while the atlas lacks the name, so the real tile takes over by itself.",
+    "brick_red": {
+      "tile": "brick_chimney",
+      "tint": [
+        1,
+        0.95,
+        0.92
+      ]
+    },
+    "brick_red_worn": {
+      "tile": "brick_chimney",
+      "tint": [
+        0.86,
+        0.8,
+        0.78
+      ]
+    },
+    "granite_trim": {
+      "tile": "fieldstone_cap",
+      "tint": [
+        0.92,
+        0.94,
+        0.98
+      ]
+    },
+    "window_brick": "window_white",
+    "window_shop": "window_shuttered",
+    "door_shop": "door_panel_red",
+    "door_inn": "door_meeting",
+    "clock_face": "window_small"
   }
 }

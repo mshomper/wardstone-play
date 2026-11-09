@@ -19,8 +19,9 @@
       { "who": "obed", "face": "gruff", "text": "Fence man told me to keep off the hill. Hm." },
       { "who": "eldwin", "text": "Come and look, at least." },
       { "who": "obed", "text": "Looking's free." },
-      { "who": "", "text": "He picks up his sledge anyway." }
-    ], "onEnd": [{ "setFlag": "obed_on_hill" }] },
+      { "who": "", "text": "He picks up his sledge anyway." },
+      { "who": "", "text": "You go up together. He stops twice on the Sheep Walk to look at walls, and says nothing about either." }
+    ], "onEnd": [{ "setFlag": "obed_on_hill" }, { "goTo": { "area": "hobble-hill", "spot": "Eldwin (watching)" } }] },
     { "id": "hs_obed_lesson_wait", "lines": [
       { "who": "obed", "text": "Your patch is where you left it. On the lane. It won't lay itself." },
       { "who": "obed", "text": "Well. Not properly." }
@@ -129,7 +130,7 @@
     { "id": "hs_tamsin_table", "lines": [
       { "who": "tamsin_gove", "if": { "notFlags": ["joined:obed"] }, "text": "Let's see it, then. Hold still. Not you. The coat." },
       { "who": "tamsin_gove", "if": { "flags": ["joined:obed"] }, "text": "Put it on the table. And tell Obed Thayer to stop looking at my seams like that." }
-    ], "onEnd": [{ "tailor": { "cart": true, "table": "Tamsin's table", "reroll": true } }] },
+    ], "onEnd": [{ "tailor": { "table": "Tamsin's table", "upTo": "stout", "threads": ["cotton", "linen", "horsehair"], "notCrafts": ["words"], "finer": "Not that one. That's {tier}. It wants finer hands than mine. Harlow Bridge." } }] },
     { "id": "hs_open_tg1", "lines": [
       { "who": "tamsin_gove", "text": "Everything I sew into a coat is something to bring a person home. A nail out of the doorframe. Ash from their own hearth." },
       { "who": "eldwin", "text": "Has it ever worked?" },
@@ -249,6 +250,10 @@
       { "who": "obed", "face": "gruff", "text": "My father never bought anything off anybody." },
       { "who": "jasper_crane", "text": "That's the one." }
     ], "onEnd": [{ "setFlag": "heard:JHO" }] },
+    {"id": "hs_benoni_pikes_ask", "lines": [{"who": "benoni_fogg", "text": "The Pikes kept a store down the old cut, under the Quarry. Cold keeps leather."}, {"who": "benoni_fogg", "text": "They took the wagon and left the store. Three pairs of my boots in it. One's the boy's."}, {"who": "eldwin", "text": "You want them back?"}, {"who": "benoni_fogg", "text": "I want them on the shelf, by the Pikes' last. Nobody's going to wear them. They can sit somewhere."}, {"who": "benoni_fogg", "text": "Mind the cut. It goes further in than the Pikes ever did."}], "onEnd": [{"setFlag": "pikes_asked"}]},
+    {"id": "hs_benoni_pikes_done", "lines": [{"who": "eldwin", "text": "The Pikes' boots."}, {"who": "benoni_fogg", "text": "Toes to the wall. That's Hannah Pike. She always put them away like they'd run off."}, {"who": "", "text": "He sets them on the shelf beside the Pikes' last, the small pair in front."}, {"who": "benoni_fogg", "text": "There. Now they're somewhere."}, {"who": "benoni_fogg", "text": "For your trouble. And grease your own. They look like a bad week."}], "onEnd": [{"setFlag": "pikes_done"}, {"reward": {"title": "The Pikes' Boots", "xp": 180, "items": {"dubbin": 2, "bootlaces": 2}}}]},
+    {"id": "hs_benoni_back", "lines": [{"who": "benoni_fogg", "text": "The Dows are well. Their boy's gone up two sizes. I said he would."}, {"who": "benoni_fogg", "text": "They asked was the shop still open. I said it's open till it isn't."}], "onEnd": [{"setFlag": "heard:BFS"}]},
+    {"id": "hs_jasper_seam", "lines": [{"who": "jasper_crane", "text": "Been down the Cut, by the look of your boots."}, {"who": "eldwin", "text": "To the end of it."}, {"who": "jasper_crane", "text": "Don't go counting the hollows. It's bad for trade, counting."}], "onEnd": [{"setFlag": "heard:JSM"}]},
     { "id": "hs_jasper_step", "lines": [
       { "who": "jasper_crane", "if": { "notFlags": ["hardscrabble_stone_woke"] }, "text": "Tea's stewed. Business isn't. What'll it be?" },
       { "who": "jasper_crane", "if": { "flags": ["hardscrabble_stone_woke"] }, "text": "Quieter up the hill these nights. Bad for trade, quiet. What'll it be?" },

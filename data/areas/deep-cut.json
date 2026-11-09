@@ -341,13 +341,6 @@
   },
   {
    "prop": "rime_seam_0",
-   "x": 34.8,
-   "z": 8.2,
-   "collide": 0.2,
-   "tall": true
-  },
-  {
-   "prop": "rime_seam_0",
    "x": -20.4,
    "z": 2.2,
    "collide": 0.2,
@@ -401,8 +394,8 @@
   },
   {
    "prop": "rime_crystals_1",
-   "x": 33.8,
-   "z": 12.2
+   "x": 32.6,
+   "z": 13.8
   },
   {
    "prop": "rime_crystals_0",
@@ -526,8 +519,21 @@
   },
   {
    "prop": "rime_box",
-   "x": 33.8,
+   "x": 35.2,
+   "z": 12.6,
+   "collide": 0.4
+  },
+  {
+   "prop": "dc_seam_face",
+   "x": 34,
    "z": 9.2,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "hs_pike_crate",
+   "x": 5,
+   "z": 10.6,
    "collide": 0.4
   }
  ],
@@ -564,6 +570,12 @@
    "note": "Fight circle 2: the island of cut blocks in the black water."
   },
   {
+   "name": "The Pikes' crate",
+   "x": 5,
+   "z": 11.5,
+   "note": "A crate chalked PIKE, in the Cutters' Store (The Pikes' Boots, decision 0403)."
+  },
+  {
    "name": "The Cutters’ Store",
    "x": 10.8,
    "z": 12.0,
@@ -574,6 +586,12 @@
    "x": -16.0,
    "z": 6.0,
    "note": "Fight circle 3: the tough group at the end, a piece more often than not."
+  },
+  {
+   "name": "The seam face",
+   "x": 34,
+   "z": 10.3,
+   "note": "The old working face: a row of hollows where blocks were taken out whole, the last with a blank name panel (decision 0403)."
   },
   {
    "name": "The Seam",
@@ -619,8 +637,8 @@
   },
   {
    "name": "Box: the Seam (best)",
-   "x": 33.8,
-   "z": 9.95,
+   "x": 35.2,
+   "z": 13.35,
    "note": "In front of a box that fills again on every rest."
   }
  ],
@@ -701,8 +719,8 @@
    "label": "",
    "prop": "rime_box",
    "openProp": "rime_box_open",
-   "x": 33.8,
-   "z": 9.2
+   "x": 35.2,
+   "z": 12.6
   }
  ],
  "interior": {

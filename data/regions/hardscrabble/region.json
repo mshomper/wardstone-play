@@ -21,6 +21,7 @@
     { "from": "stone-lane", "to": [40, 220], "name": "up to the Long Wall" },
     { "from": "cellar-holes", "to": [150, 530], "name": "on to the Tanbark Road" }
   ],
-  "quests": ["postage-due", "the-pound", "applejack", "mending-for-the-road", "coyles-bounds", "what-goes-on-the-wagon"],
+  "board": "board",
+  "quests": ["postage-due", "the-pound", "applejack", "mending-for-the-road", "coyles-bounds", "what-goes-on-the-wagon", "pikes-boots"],
   "dialogue": ["deep_cut", "hs_people", "hs_finds", "hs_quests"]
 }

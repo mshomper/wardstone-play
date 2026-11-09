@@ -3,7 +3,7 @@
  "emissive": "hardscrabble_kit_emissive.png",
  "size": [
   1015,
-  424
+  515
  ],
  "cell": null,
  "pixelsPerUnit": 32,
@@ -432,6 +432,70 @@
    "h": 36,
    "ax": 20,
    "ay": 34
+  },
+  "hs_pike_crate": {
+   "x": 830,
+   "y": 271,
+   "w": 34,
+   "h": 30,
+   "ax": 17,
+   "ay": 28
+  },
+  "hs_slate": {
+   "x": 865,
+   "y": 271,
+   "w": 29,
+   "h": 20,
+   "ax": 14,
+   "ay": 18
+  },
+  "hs_calendar": {
+   "x": 895,
+   "y": 271,
+   "w": 18,
+   "h": 64,
+   "ax": 9,
+   "ay": 62
+  },
+  "dc_seam_face": {
+   "x": 1,
+   "y": 424,
+   "w": 114,
+   "h": 90,
+   "ax": 57,
+   "ay": 88
+  },
+  "hs_sample_wall_a": {
+   "x": 116,
+   "y": 424,
+   "w": 58,
+   "h": 30,
+   "ax": 29,
+   "ay": 28
+  },
+  "hs_sample_wall_b": {
+   "x": 175,
+   "y": 424,
+   "w": 58,
+   "h": 30,
+   "ax": 29,
+   "ay": 28
+  },
+  "hs_sample_wall_c": {
+   "x": 234,
+   "y": 424,
+   "w": 52,
+   "h": 28,
+   "ax": 26,
+   "ay": 26
+  },
+  "hs_tamsin_sign": {
+   "x": 287,
+   "y": 424,
+   "w": 44,
+   "h": 46,
+   "ax": 22,
+   "ay": 44
   }
  },
  "tiles": {}

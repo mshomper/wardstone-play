@@ -1,0 +1,102 @@
+{
+ "image": "harlow_kit.png",
+ "emissive": "harlow_kit_emissive.png",
+ "size": [
+  564,
+  82
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "market_stall_0": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 60,
+   "ax": 32,
+   "ay": 58
+  },
+  "market_stall_1": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 60,
+   "ax": 32,
+   "ay": 58
+  },
+  "market_stall_2": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 60,
+   "ax": 32,
+   "ay": 58
+  },
+  "town_pump": {
+   "x": 196,
+   "y": 1,
+   "w": 44,
+   "h": 50,
+   "ax": 22,
+   "ay": 48
+  },
+  "hitching_rail": {
+   "x": 241,
+   "y": 1,
+   "w": 64,
+   "h": 28,
+   "ax": 32,
+   "ay": 26
+  },
+  "lantern_post": {
+   "x": 306,
+   "y": 1,
+   "w": 18,
+   "h": 80,
+   "ax": 9,
+   "ay": 78
+  },
+  "lantern_bracket": {
+   "x": 325,
+   "y": 1,
+   "w": 30,
+   "h": 40,
+   "ax": 15,
+   "ay": 38
+  },
+  "stage_bench": {
+   "x": 356,
+   "y": 1,
+   "w": 52,
+   "h": 30,
+   "ax": 26,
+   "ay": 28
+  },
+  "barrel_stack": {
+   "x": 409,
+   "y": 1,
+   "w": 46,
+   "h": 48,
+   "ax": 23,
+   "ay": 46
+  },
+  "horse_trough": {
+   "x": 456,
+   "y": 1,
+   "w": 56,
+   "h": 26,
+   "ax": 28,
+   "ay": 24
+  },
+  "handcart": {
+   "x": 513,
+   "y": 1,
+   "w": 50,
+   "h": 34,
+   "ax": 25,
+   "ay": 32
+  }
+ },
+ "tiles": {}
+}

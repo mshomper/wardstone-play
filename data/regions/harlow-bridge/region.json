@@ -1,0 +1,100 @@
+{
+  "_note": "Harlow Bridge, the mill town at the end of the Tanbark Road (docs/regions/harlow-bridge.md). The town is three areas (Matt, 9 Nov 2026): Market Square, Mill Street and Meetinghouse Hill, built as ground with every door opening (decisions 0381 to 0384). The rest of the region is leads until it is built.",
+  "id": "harlow-bridge",
+  "name": "Harlow Bridge",
+  "places": [
+    {
+      "id": "harlow-bridge",
+      "name": "Market Square",
+      "note": "the Broken Tankard",
+      "at": [
+        200,
+        220
+      ],
+      "label": "left",
+      "areas": [
+        "harlow-bridge", "harlow-bridge-house-behind-the-block", "harlow-bridge-deacon-pratt-s-house", "harlow-bridge-deacon-pratt-s-house-upper", "harlow-bridge-house-by-the-river-road", "harlow-bridge-the-goodells-house", "harlow-bridge-the-goodells-house-upper", "harlow-bridge-widow-ames-s-house", "harlow-bridge-house-on-the-south-lane", "harlow-bridge-house-on-the-south-lane-upper", "harlow-bridge-house-at-the-switchbacks", "harlow-bridge-the-livery-stable", "harlow-bridge-the-livery-stable-upper", "harlow-bridge-the-doctor-s-house", "harlow-bridge-the-doctor-s-house-upper", "harlow-bridge-squire-hatch-s-house", "harlow-bridge-squire-hatch-s-house-upper", "harlow-bridge-euphemia-lord-s-shop", "harlow-bridge-euphemia-lord-s-shop-upper", "harlow-bridge-corliss-s-print-shop", "harlow-bridge-corliss-s-print-shop-upper", "harlow-bridge-lyman-s-boots", "harlow-bridge-lyman-s-boots-upper", "harlow-bridge-the-druggist", "harlow-bridge-the-druggist-upper", "harlow-bridge-fessenden-s-dry-goods", "harlow-bridge-fessenden-s-dry-goods-upper", "harlow-bridge-the-broken-tankard", "harlow-bridge-the-broken-tankard-upper"
+      ]
+    },
+    {
+      "id": "meetinghouse-hill",
+      "name": "Meetinghouse Hill",
+      "note": "the spire",
+      "at": [
+        250,
+        130
+      ],
+      "label": "left",
+      "areas": [
+        "meetinghouse-hill", "meetinghouse-hill-the-horse-sheds", "meetinghouse-hill-house-below-the-hill", "meetinghouse-hill-house-below-the-hill-upper", "meetinghouse-hill-the-tolmans-house", "meetinghouse-hill-the-spragues-house", "meetinghouse-hill-the-spragues-house-upper", "meetinghouse-hill-house-on-meetinghouse-street", "meetinghouse-hill-the-schoolhouse", "meetinghouse-hill-the-parsonage", "meetinghouse-hill-the-parsonage-upper", "meetinghouse-hill-penhallow-s-house", "meetinghouse-hill-penhallow-s-house-upper", "meetinghouse-hill-the-meetinghouse"
+      ]
+    },
+    {
+      "id": "mill-street",
+      "name": "Mill Street",
+      "note": "the clock tower",
+      "at": [
+        330,
+        235
+      ],
+      "label": "right",
+      "areas": [
+        "mill-street", "mill-street-the-fulling-mill", "mill-street-the-fulling-mill-upper", "mill-street-the-sawmill", "mill-street-the-sawmill-upper", "mill-street-the-company-store", "mill-street-the-company-store-upper", "mill-street-the-boarding-house", "mill-street-the-boarding-house-upper", "mill-street-the-mill-office", "mill-street-the-mill-office-upper", "mill-street-mill-row-back-no-5", "mill-street-mill-row-back-no-5-upper", "mill-street-mill-row-back-no-4", "mill-street-mill-row-back-no-4-upper", "mill-street-mill-row-back-no-3", "mill-street-mill-row-back-no-3-upper", "mill-street-mill-row-back-no-2", "mill-street-mill-row-back-no-2-upper", "mill-street-mill-row-back-no-1", "mill-street-mill-row-back-no-1-upper", "mill-street-mill-row-south-no-5", "mill-street-mill-row-south-no-5-upper", "mill-street-mill-row-south-no-4", "mill-street-mill-row-south-no-4-upper", "mill-street-mill-row-south-no-3", "mill-street-mill-row-south-no-3-upper", "mill-street-mill-row-south-no-2", "mill-street-mill-row-south-no-2-upper", "mill-street-mill-row-south-no-1", "mill-street-mill-row-south-no-1-upper", "mill-street-mill-row-north-no-5", "mill-street-mill-row-north-no-5-upper", "mill-street-mill-row-north-no-4", "mill-street-mill-row-north-no-4-upper", "mill-street-mill-row-north-no-3", "mill-street-mill-row-north-no-3-upper", "mill-street-mill-row-north-no-2", "mill-street-mill-row-north-no-2-upper", "mill-street-mill-row-north-no-1", "mill-street-mill-row-north-no-1-upper"
+      ]
+    }
+  ],
+  "paths": [
+    [
+      "harlow-bridge",
+      "meetinghouse-hill"
+    ],
+    [
+      "harlow-bridge",
+      "mill-street"
+    ]
+  ],
+  "leads": [
+    {
+      "from": "harlow-bridge",
+      "to": [
+        90,
+        110
+      ],
+      "name": "up to the Lookoff"
+    },
+    {
+      "from": "meetinghouse-hill",
+      "to": [
+        260,
+        40
+      ],
+      "name": "up the Pasture Lane"
+    },
+    {
+      "from": "mill-street",
+      "to": [
+        440,
+        230
+      ],
+      "name": "over the Covered Bridge"
+    },
+    {
+      "from": "harlow-bridge",
+      "to": [
+        110,
+        310
+      ],
+      "name": "to the Mill Pond"
+    },
+    {
+      "from": "mill-street",
+      "to": [
+        360,
+        340
+      ],
+      "name": "the ferry landing"
+    }
+  ],
+  "quests": [],
+  "dialogue": []
+}

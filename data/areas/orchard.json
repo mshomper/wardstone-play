@@ -315,6 +315,22 @@
     }
   ],
   "placements": [
+  {"prop": "frost_grass_0", "x": 1.18, "z": 2.87},
+  {"prop": "frost_grass_1", "x": 2.03, "z": 2.4},
+  {"prop": "frost_grass_0", "x": 2.6, "z": 1.94},
+  {"prop": "frost_grass_1", "x": 3.68, "z": 0.93},
+  {"prop": "frost_grass_0", "x": 4.28, "z": 0.6},
+  {"prop": "frost_grass_1", "x": 4.65, "z": -0.34},
+  {"prop": "frost_grass_0", "x": 5.56, "z": -1.31},
+  {"prop": "frost_grass_1", "x": 6.11, "z": -1.42},
+  {"prop": "frost_grass_0", "x": 6.84, "z": -3.18},
+  {"prop": "frost_grass_1", "x": 8.27, "z": -2.91},
+  {"prop": "frost_grass_0", "x": 8.48, "z": -3.97},
+  {"prop": "frost_grass_1", "x": 9.2, "z": -4.63},
+  {"prop": "frost_grass_0", "x": 8.17, "z": -4.78},
+  {"prop": "frost_grass_1", "x": 8.23, "z": -4.87},
+  {"prop": "frost_grass_0", "x": 8.05, "z": -5.52},
+  {"prop": "frost_grass_1", "x": 9.96, "z": -5.5},
     {
       "prop": "apple_tree_0",
       "x": 1.45,
@@ -501,7 +517,11 @@
       "radius": 1
     }
   ],
-  "spots": [
+  "frost": {
+  "within": [[1.54, 3.57], [3.95, 1.78], [6.4, -0.24], [8.71, -2.34], [10.9, -4.9], [7.9, -6.9], [6.49, -4.06], [4.8, -1.76], [2.85, 0.62], [0.86, 2.83]],
+  "spacing": 1.0
+ },
+ "spots": [
    {"name": "Round: windfalls east", "x": -2.2, "z": 4.4, "note": "A stop on someone's rounds."},
    {"name": "Round: under the trees", "x": -4.8, "z": 3.0, "note": "A stop on someone's rounds."},
    {"name": "Round: orchard road", "x": -0.6, "z": 1.2, "note": "A stop on someone's rounds."},{"name": "Mrs. Applegate (windfalls)", "x": -6.4, "z": 6.0, "note": "The goose among the windfalls."}, 

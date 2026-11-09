@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "name": "meetinghouse-hill-house-on-meetinghouse-street",
+  "seed": 1,
+  "size": {
+    "w": 20,
+    "h": 16
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 0,
+    "edgeWidth": 1,
+    "roll": 0,
+    "pathMargin": 0,
+    "species": [],
+    "tiles": {
+      "open": "grass_0",
+      "under": "grass_0",
+      "road": "grass_0",
+      "path": "grass_0",
+      "cobble": "grass_0",
+      "brookBed": "grass_0"
+    }
+  },
+  "paths": [],
+  "walls": [],
+  "buildings": [],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [],
+  "spots": [],
+  "exits": [
+    {
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "to": "meetinghouse-hill",
+      "at": [
+        -4.9,
+        16.5
+      ],
+      "dir": 6
+    }
+  ],
+  "interior": {
+    "town": "meetinghouse-hill",
+    "building": 4,
+    "storey": 0,
+    "scale": 1.7,
+    "generated": true,
+    "lootMax": 2,
+    "source": {
+      "recipe": "cape",
+      "parts": [
+        {
+          "footprint": [
+            [
+              -3.5,
+              -2.5
+            ],
+            [
+              3.5,
+              -2.5
+            ],
+            [
+              3.5,
+              2.5
+            ],
+            [
+              -3.5,
+              2.5
+            ]
+          ]
+        }
+      ],
+      "storeys": 1,
+      "doorSide": "front"
+    },
+    "rooms": [],
+    "openings": []
+  }
+}

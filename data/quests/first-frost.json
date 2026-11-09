@@ -23,6 +23,7 @@
     },
     {
       "id": "first-gaps", "title": "The first gaps", "objective": "Settle the frost lights by the wall.", "time": 10.0,
+      "hints": [{ "if": { "notFlags": ["seen_first_gap"] }, "text": "Something has come through the orchard wall. Find the gap." }],
       "done": { "flags": ["settled_rime1", "settled_rime2"] }, "sets": ["seen_first_gap", "settled_rime1", "settled_rime2"],
       "skip": { "area": "orchard", "spot": "Wren (morning)" },
       "auto": [{ "use": "first_gap" }, { "fight": "rime1" }, { "fight": "rime2" }]
