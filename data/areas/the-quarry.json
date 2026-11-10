@@ -411,6 +411,12 @@
    "x": 16.8,
    "z": -11.2,
    "collide": 0.5
+  },
+  {
+   "prop": "stone_rows_1",
+   "x": -10.4,
+   "z": 4.6,
+   "collide": 0.45
   }
  ],
  "keepClear": [
@@ -449,6 +455,32 @@
     [
      17.2,
      -11.2
+    ]
+   ],
+   "radius": 1.2
+  },
+  {
+   "points": [
+    [
+     -10.4,
+     4.6
+    ],
+    [
+     -10.4,
+     5.8
+    ]
+   ],
+   "radius": 1.2
+  },
+  {
+   "points": [
+    [
+     20.6,
+     6.6
+    ],
+    [
+     20.0,
+     5.2
     ]
    ],
    "radius": 1.2
@@ -549,6 +581,20 @@
     -15.6
    ],
    "dir": 0
+  }
+ ],
+ "containers": [
+  {
+   "id": "hs_spoil_heap",
+   "kind": "hs_spoil_heap",
+   "label": "Spoil heap",
+   "prop": "stone_rows_1",
+   "openProp": "stone_rows_1",
+   "x": -10.4,
+   "z": 4.6,
+   "sound": "stone_search",
+   "refills": true,
+   "line": "Nothing but spoil."
   }
  ]
 }

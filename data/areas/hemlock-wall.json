@@ -971,6 +971,54 @@
       "collide": 0,
       "setpiece": true,
       "tanbark-dress": true
+    },
+    {
+      "prop": "fallen_log_0",
+      "x": -20.5,
+      "z": -5,
+      "collide": 0.3
+    },
+    {
+      "prop": "rock_1",
+      "x": -1.83,
+      "z": 9.18,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -2.24,
+      "z": 9.56,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -2.85,
+      "z": 9.52,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -3.19,
+      "z": 9.09,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -3.01,
+      "z": 8.59,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -2.45,
+      "z": 8.4,
+      "collide": 0.0
+    },
+    {
+      "prop": "rock_1",
+      "x": -1.92,
+      "z": 8.66,
+      "collide": 0.0
     }
   ],
   "frost": {
@@ -1114,6 +1162,16 @@
       "name": "On to the Lookoff",
       "x": -6.4,
       "z": 16.4
+    },
+    {
+      "name": "A fire ring gone cold",
+      "x": -2.5,
+      "z": 9
+    },
+    {
+      "name": "The blowdown",
+      "x": -20.5,
+      "z": -5
     }
   ],
   "start": [
@@ -1148,6 +1206,19 @@
         -15.6
       ],
       "dir": 0
+    }
+  ],
+  "containers": [
+    {
+      "id": "tb_blowdown",
+      "kind": "tanbark_blowdown",
+      "label": "Under the blowdown",
+      "prop": "fallen_log_0",
+      "openProp": "fallen_log_0",
+      "x": -20.5,
+      "z": -5,
+      "sound": "wood_search",
+      "refills": true
     }
   ]
 }

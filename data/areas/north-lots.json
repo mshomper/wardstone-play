@@ -2941,6 +2941,12 @@
    "x": 36.87,
    "z": -15.73,
    "collide": 0.3
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 10.0,
+   "z": 14.6,
+   "collide": 0.9
   }
  ],
  "frost": {
@@ -3093,6 +3099,16 @@
    "x": 21.0,
    "z": -11.9,
    "note": "A hand-sized gap through the ring wall, facing north, the Thayer way. Where Thadeous sings the lullaby once more."
+  },
+  {
+   "name": "Search: the frozen trough",
+   "x": -27.0,
+   "z": 14.5
+  },
+  {
+   "name": "Search: the shepherd's lean-to",
+   "x": 10.0,
+   "z": 15.9
   }
  ],
  "start": [
@@ -3113,6 +3129,18 @@
     -15.6
    ],
    "dir": 0
+  }
+ ],
+ "containers": [
+  {
+   "id": "hb_lean_to:north-lots",
+   "kind": "hb_lean_to",
+   "label": "",
+   "prop": "woodshed_lean",
+   "openProp": "woodshed_lean",
+   "x": 10.0,
+   "z": 14.6,
+   "refills": true
   }
  ]
 }

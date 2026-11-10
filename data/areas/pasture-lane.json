@@ -945,6 +945,12 @@
    "x": -16.12,
    "z": 5.6,
    "collide": 0
+  },
+  {
+   "prop": "rock_2",
+   "x": 0.3,
+   "z": 12.6,
+   "collide": 0.2
   }
  ],
  "frost": {
@@ -1051,6 +1057,16 @@
    "x": 2.9,
    "z": -15.6,
    "note": "The lane goes on up between the walls to the high pastures."
+  },
+  {
+   "name": "Search: the capstone",
+   "x": 1.3,
+   "z": 12.4
+  },
+  {
+   "name": "Search: the haycock",
+   "x": 7.6,
+   "z": 8.6
   }
  ],
  "start": [
@@ -1085,6 +1101,18 @@
     18.6
    ],
    "dir": 4
+  }
+ ],
+ "containers": [
+  {
+   "id": "hb_haycock:pasture-lane",
+   "kind": "hb_haycock",
+   "label": "",
+   "prop": "haycock_0",
+   "openProp": "haycock_0",
+   "x": 7.61,
+   "z": 7.34,
+   "refills": true
   }
  ]
 }

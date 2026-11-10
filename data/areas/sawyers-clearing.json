@@ -535,6 +535,12 @@
       "x": -5.4,
       "z": 2.6,
       "collide": 0.45
+    },
+    {
+      "prop": "tree_stump_0",
+      "x": 20,
+      "z": 5,
+      "collide": 0.3
     }
   ],
   "keepClear": [
@@ -669,6 +675,19 @@
         4.2
       ],
       "dir": 6
+    }
+  ],
+  "containers": [
+    {
+      "id": "camp_slab_pile",
+      "kind": "road_slab_pile",
+      "label": "The slab pile",
+      "prop": "cordwood",
+      "openProp": "cordwood",
+      "x": -16.4,
+      "z": -8.6,
+      "sound": "wood_search",
+      "refills": true
     }
   ]
 }

@@ -480,6 +480,117 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tb_search_spud",
+      "kind": "use",
+      "label": "A spud on a stump",
+      "sound": "wood_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "pine_pitch",
+        "note": "Snapped at the handle and left where it broke. The pitch on the blade is still soft enough to scrape off."
+      },
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "A spud on a stump"
+        }
+      ]
+    },
+    {
+      "id": "tb_search_feathers",
+      "kind": "use",
+      "label": "Turkey feathers by the road",
+      "sound": "hay_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "turkey_feather",
+        "n": 2,
+        "note": "A tom took a dust bath here and left in a temper."
+      },
+      "places": [
+        {
+          "area": "bark-road",
+          "spot": "Turkey feathers by the road"
+        }
+      ]
+    },
+    {
+      "id": "tb_search_cache",
+      "kind": "use",
+      "label": "A squirrel's cache",
+      "sound": "hay_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "beechnut",
+        "n": 4,
+        "note": "Packed in under the roots of a stump. A red squirrel's whole winter. He'll be cross."
+      },
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "A squirrel's cache"
+        }
+      ]
+    },
+    {
+      "id": "tb_search_nest",
+      "kind": "use",
+      "label": "A nest in a fallen limb",
+      "sound": "wood_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "hawks_bell",
+        "note": "Blown down with the limb it was built on. A crow's. They'll carry off anything that rings."
+      },
+      "places": [
+        {
+          "area": "mast-wood",
+          "spot": "A nest in a fallen limb"
+        }
+      ]
+    },
+    {
+      "id": "tb_search_ring",
+      "kind": "use",
+      "label": "A fire ring gone cold",
+      "sound": "stone_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "hearth_ash",
+        "n": 2,
+        "note": "Peelers camped here once, by the black of it. Under the stones the ash is still dry."
+      },
+      "places": [
+        {
+          "area": "hemlock-wall",
+          "spot": "A fire ring gone cold"
+        }
+      ]
+    },
+    {
+      "id": "tb_search_cairn",
+      "kind": "use",
+      "label": "The cairn",
+      "sound": "stone_search",
+      "pickup": true,
+      "once": true,
+      "find": {
+        "item": "birch_tonic",
+        "note": "A stoppered bottle under the top stone, left for whoever needs it on the climb. Somebody's custom."
+      },
+      "places": [
+        {
+          "area": "the-lookoff",
+          "spot": "The cairn"
+        }
+      ]
     }
   ]
 }

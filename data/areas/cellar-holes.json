@@ -708,6 +708,17 @@
    "x": -5.6,
    "z": 6.9,
    "collide": 0.5
+  },
+  {
+   "prop": "apple_old_0",
+   "x": -22.8,
+   "z": -9.8,
+   "collide": 0.4
+  },
+  {
+   "prop": "windfall_apples",
+   "x": -21.8,
+   "z": -8.8
   }
  ],
  "keepClear": [
@@ -827,6 +838,19 @@
     ]
    ],
    "radius": 1.2
+  },
+  {
+   "points": [
+    [
+     -22.8,
+     -9.8
+    ],
+    [
+     -21.8,
+     -8.0
+    ]
+   ],
+   "radius": 1.2
   }
  ],
  "spots": [
@@ -921,6 +945,20 @@
     14.5
    ],
    "dir": 4
+  }
+ ],
+ "containers": [
+  {
+   "id": "hs_windfalls",
+   "kind": "hs_windfalls",
+   "label": "Windfalls",
+   "prop": "windfall_apples",
+   "openProp": "windfall_apples",
+   "x": -21.8,
+   "z": -8.8,
+   "sound": "hay_search",
+   "refills": true,
+   "line": "Nothing new down since."
   }
  ]
 }

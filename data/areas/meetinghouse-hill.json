@@ -1298,6 +1298,18 @@
    "x": 7.0,
    "z": -14.4,
    "collide": 0.5
+  },
+  {
+   "prop": "crate_0",
+   "x": -12.0,
+   "z": -19.4,
+   "collide": 0.3
+  },
+  {
+   "prop": "crate_lid",
+   "x": -14.4,
+   "z": 0.2,
+   "collide": 0.35
   }
  ],
  "keepClear": [
@@ -1421,6 +1433,21 @@
    "name": "Round: Mrs. Nye at the herbs",
    "x": 18.6,
    "z": -6.4
+  },
+  {
+   "name": "Search: the feed box",
+   "x": -12.0,
+   "z": -18.3
+  },
+  {
+   "name": "Search: the mounting step",
+   "x": 6.6,
+   "z": -6.1
+  },
+  {
+   "name": "Search: the schoolhouse woodbox",
+   "x": -13.6,
+   "z": 1.0
   }
  ],
  "start": [
@@ -1455,6 +1482,18 @@
     15.4
    ],
    "dir": 4
+  }
+ ],
+ "containers": [
+  {
+   "id": "hb_woodbox:meetinghouse-hill",
+   "kind": "hb_woodbox",
+   "label": "",
+   "prop": "crate_lid",
+   "openProp": "crate_lid_open",
+   "x": -14.4,
+   "z": 0.2,
+   "refills": true
   }
  ]
 }

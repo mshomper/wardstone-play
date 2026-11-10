@@ -1748,6 +1748,24 @@
    "x": -21.51,
    "z": -17.7,
    "collide": 0.5
+  },
+  {
+   "prop": "handcart",
+   "x": 11.4,
+   "z": 3.0,
+   "collide": 0.5
+  },
+  {
+   "prop": "grain_sacks",
+   "x": 6.2,
+   "z": 5.2,
+   "collide": 0.45
+  },
+  {
+   "prop": "cordwood",
+   "x": -10.9,
+   "z": 10.4,
+   "collide": 0.6
   }
  ],
  "keepClear": [
@@ -1867,6 +1885,21 @@
    "name": "Round: Lucinda by the store",
    "x": 12.4,
    "z": 4.4
+  },
+  {
+   "name": "Search: the bobbin cart",
+   "x": 10.2,
+   "z": 3.4
+  },
+  {
+   "name": "Search: the flour sacks",
+   "x": 6.2,
+   "z": 4.1
+  },
+  {
+   "name": "Search: the row woodpile",
+   "x": -10.9,
+   "z": 11.7
   }
  ],
  "start": [
@@ -1932,5 +1965,17 @@
   ],
   "width": 6.5,
   "depth": 1.1
- }
+ },
+ "containers": [
+  {
+   "id": "hb_row_woodpile:mill-street",
+   "kind": "hb_row_woodpile",
+   "label": "",
+   "prop": "cordwood",
+   "openProp": "cordwood",
+   "x": -10.9,
+   "z": 10.4,
+   "refills": true
+  }
+ ]
 }

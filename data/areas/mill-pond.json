@@ -367,6 +367,12 @@
    "x": -13.4,
    "z": -14.49,
    "collide": 0
+  },
+  {
+   "prop": "ice_chunks_0",
+   "x": 24.0,
+   "z": 4.4,
+   "collide": 0
   }
  ],
  "keepClear": [
@@ -411,6 +417,11 @@
    "name": "To the Drowned Town",
    "x": -22.6,
    "z": -5.4
+  },
+  {
+   "name": "Search: the sluice ledge",
+   "x": 23.4,
+   "z": 3.5
   }
  ],
  "start": [
@@ -594,5 +605,17 @@
   ],
   "width": 2,
   "depth": 0.8
- }
+ },
+ "containers": [
+  {
+   "id": "hb_sluice_ledge:mill-pond",
+   "kind": "hb_sluice_ledge",
+   "label": "",
+   "prop": "ice_chunks_0",
+   "openProp": "ice_chunks_0",
+   "x": 24.0,
+   "z": 4.4,
+   "refills": true
+  }
+ ]
 }

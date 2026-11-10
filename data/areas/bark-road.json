@@ -525,14 +525,6 @@
       "tanbark-dress": true
     },
     {
-      "prop": "leaf_drift_0",
-      "x": -7.0,
-      "z": -7.1,
-      "collide": 0,
-      "setpiece": true,
-      "tanbark-dress": true
-    },
-    {
       "prop": "snag_woodpecker",
       "x": 3.02,
       "z": -15.75,
@@ -932,26 +924,10 @@
       "tanbark-dress": true
     },
     {
-      "prop": "wintergreen_1",
-      "x": 15.55,
-      "z": -0.38,
-      "collide": 0,
-      "setpiece": true,
-      "tanbark-dress": true
-    },
-    {
       "prop": "tree_stump_0",
       "x": 4.24,
       "z": 3.47,
       "collide": 0.3,
-      "setpiece": true,
-      "tanbark-dress": true
-    },
-    {
-      "prop": "leaf_drift_1",
-      "x": -5.83,
-      "z": -5.17,
-      "collide": 0,
       "setpiece": true,
       "tanbark-dress": true
     },
@@ -970,6 +946,18 @@
       "collide": 0,
       "setpiece": true,
       "tanbark-dress": true
+    },
+    {
+      "prop": "bark_spud",
+      "x": -6,
+      "z": -6.4,
+      "collide": 0.3
+    },
+    {
+      "prop": "turkey_feathers",
+      "x": 14.5,
+      "z": 0.5,
+      "collide": 0.0
     }
   ],
   "containers": [
@@ -1109,6 +1097,16 @@
       "name": "On to the Mast Wood",
       "x": 11.6,
       "z": 14.6
+    },
+    {
+      "name": "A spud on a stump",
+      "x": -6,
+      "z": -6
+    },
+    {
+      "name": "Turkey feathers by the road",
+      "x": 14.5,
+      "z": 0.5
     }
   ],
   "start": [

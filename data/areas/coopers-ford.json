@@ -438,6 +438,18 @@
       "x": -4.0,
       "z": 6.4,
       "collide": 0.3
+    },
+    {
+      "prop": "rock_1",
+      "x": -1,
+      "z": -9,
+      "collide": 0.0
+    },
+    {
+      "prop": "crate_lid",
+      "x": -13.8,
+      "z": -1.2,
+      "collide": 0.3
     }
   ],
   "keepClear": [
@@ -568,6 +580,19 @@
         0.6
       ],
       "dir": 6
+    }
+  ],
+  "containers": [
+    {
+      "id": "ford_offcuts",
+      "kind": "road_offcuts",
+      "label": "The cooper's offcuts",
+      "prop": "crate_lid",
+      "openProp": "crate_lid_open",
+      "x": -13.8,
+      "z": -1.2,
+      "sound": "crate_open",
+      "refills": true
     }
   ]
 }

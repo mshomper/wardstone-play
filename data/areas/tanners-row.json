@@ -812,6 +812,12 @@
    "x": -14.37,
    "z": 17.71,
    "collide": 0.3
+  },
+  {
+   "prop": "firewood_split",
+   "x": -4.4,
+   "z": -7.6,
+   "collide": 0.35
   }
  ],
  "keepClear": [
@@ -911,6 +917,16 @@
    "name": "Round: Gideon at the hide frames",
    "x": -12.6,
    "z": -2.8
+  },
+  {
+   "name": "Search: the vat staves",
+   "x": -4.4,
+   "z": -6.5
+  },
+  {
+   "name": "Search: the spent bark heap",
+   "x": -1.4,
+   "z": -5.0
   }
  ],
  "start": [
@@ -958,5 +974,17 @@
   ],
   "width": 7,
   "depth": 1.2
- }
+ },
+ "containers": [
+  {
+   "id": "hb_bark_heap:tanners-row",
+   "kind": "hb_bark_heap",
+   "label": "",
+   "prop": "spent_bark_heap_0",
+   "openProp": "spent_bark_heap_0",
+   "x": -1.4,
+   "z": -6.2,
+   "refills": true
+  }
+ ]
 }

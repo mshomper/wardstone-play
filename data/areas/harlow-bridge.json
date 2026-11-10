@@ -1998,6 +1998,18 @@
    "x": 33.25,
    "z": -16.66,
    "collide": 0.3
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": -4.6,
+   "z": -11.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "hay_bale_1",
+   "x": -19.6,
+   "z": -6.3,
+   "collide": 0.45
   }
  ],
  "keepClear": [
@@ -2234,6 +2246,21 @@
    "name": "Round: the Deacon by the Tankard",
    "x": -4.4,
    "z": -5.2
+  },
+  {
+   "name": "Search: the hogshead",
+   "x": -4.6,
+   "z": -10.1
+  },
+  {
+   "name": "Search: the pump trough",
+   "x": 4.9,
+   "z": -0.6
+  },
+  {
+   "name": "Search: the stage yard straw",
+   "x": -19.6,
+   "z": -5.2
   }
  ],
  "start": [
@@ -2296,6 +2323,18 @@
     -5.4
    ],
    "dir": 2
+  }
+ ],
+ "containers": [
+  {
+   "id": "hb_stage_straw:harlow-bridge",
+   "kind": "hb_stage_straw",
+   "label": "",
+   "prop": "hay_bale_1",
+   "openProp": "hay_bale_1",
+   "x": -19.6,
+   "z": -6.3,
+   "refills": true
   }
  ]
 }

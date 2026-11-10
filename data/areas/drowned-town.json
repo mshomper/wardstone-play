@@ -574,6 +574,18 @@
    "x": 31.42,
    "z": 15.79,
    "collide": 0
+  },
+  {
+   "prop": "big_bucket",
+   "x": -11.0,
+   "z": 7.0,
+   "collide": 0.3
+  },
+  {
+   "prop": "ice_chunks_0",
+   "x": -10.1,
+   "z": 7.3,
+   "collide": 0
   }
  ],
  "keepClear": [
@@ -662,6 +674,16 @@
    "name": "Round: Abel on the shore path",
    "x": 25.4,
    "z": -1.6
+  },
+  {
+   "name": "Search: the fishing hole",
+   "x": -11.0,
+   "z": 8.1
+  },
+  {
+   "name": "Search: the cutters' sledge",
+   "x": 28.2,
+   "z": 12.8
   }
  ],
  "start": [
@@ -822,6 +844,18 @@
      ]
     }
    ]
+  }
+ ],
+ "containers": [
+  {
+   "id": "hb_cutters_sledge:drowned-town",
+   "kind": "hb_cutters_sledge",
+   "label": "",
+   "prop": "sap_sled",
+   "openProp": "sap_sled",
+   "x": 28.2,
+   "z": 11.6,
+   "refills": true
   }
  ]
 }

@@ -332,6 +332,12 @@
    "x": -10.4,
    "z": -7.35,
    "collide": 0
+  },
+  {
+   "prop": "fallen_log_0",
+   "x": -6.2,
+   "z": 3.0,
+   "collide": 0.4
   }
  ],
  "keepClear": [
@@ -382,6 +388,16 @@
    "name": "From Tanner's Row",
    "x": 19.0,
    "z": 0
+  },
+  {
+   "name": "Search: the loose plank",
+   "x": -3.4,
+   "z": 0.5
+  },
+  {
+   "name": "Search: the bank under the bridge",
+   "x": -6.6,
+   "z": 4.1
   }
  ],
  "start": [
@@ -443,5 +459,17 @@
   ],
   "width": 9,
   "depth": 1.4
- }
+ },
+ "containers": [
+  {
+   "id": "hb_bridge_bank:covered-bridge",
+   "kind": "hb_bridge_bank",
+   "label": "",
+   "prop": "fallen_log_0",
+   "openProp": "fallen_log_0",
+   "x": -6.2,
+   "z": 3.0,
+   "refills": true
+  }
+ ]
 }

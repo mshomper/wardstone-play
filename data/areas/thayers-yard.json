@@ -730,6 +730,19 @@
     ]
    ],
    "radius": 3
+  },
+  {
+   "points": [
+    [
+     -14.2,
+     -8.6
+    ],
+    [
+     -14.4,
+     -7.6
+    ]
+   ],
+   "radius": 1.2
   }
  ],
  "spots": [
@@ -818,6 +831,20 @@
     1
    ],
    "dir": 6
+  }
+ ],
+ "containers": [
+  {
+   "id": "hs_spall_barrow",
+   "kind": "hs_spall_barrow",
+   "label": "Barrow of spalls",
+   "prop": "stone_barrow",
+   "openProp": "stone_barrow",
+   "x": 4.2,
+   "z": -6.4,
+   "sound": "stone_search",
+   "refills": true,
+   "line": "Spalls. He keeps those for hearting."
   }
  ]
 }

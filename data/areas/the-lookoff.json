@@ -1387,6 +1387,11 @@
       "x": 34,
       "z": 18,
       "note": "The switchbacks go on down into Harlow Bridge. No exit until Harlow Bridge is built; then an exit here, about rect [32.2, 18, 37.4, 19] (decision 0370)."
+    },
+    {
+      "name": "The hawk's rock",
+      "x": 20.4,
+      "z": 4
     }
   ],
   "start": [
@@ -1421,6 +1426,19 @@
         16.4
       ],
       "dir": 4
+    }
+  ],
+  "containers": [
+    {
+      "id": "tb_hawk_rock",
+      "kind": "tanbark_hawk_rock",
+      "label": "The hawk's rock",
+      "prop": "rock_spire_0",
+      "openProp": "rock_spire_0",
+      "x": 20.4,
+      "z": 4,
+      "sound": "stone_search",
+      "refills": true
     }
   ]
 }

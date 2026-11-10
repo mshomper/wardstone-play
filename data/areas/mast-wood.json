@@ -853,14 +853,6 @@
       "tanbark-dress": true
     },
     {
-      "prop": "wintergreen_0",
-      "x": -5.54,
-      "z": 13.21,
-      "collide": 0,
-      "setpiece": true,
-      "tanbark-dress": true
-    },
-    {
       "prop": "mushrooms_0",
       "x": 20.81,
       "z": -21.52,
@@ -1029,6 +1021,18 @@
       "collide": 0,
       "setpiece": true,
       "tanbark-dress": true
+    },
+    {
+      "prop": "tree_stump_1",
+      "x": -12,
+      "z": -9.9,
+      "collide": 0.3
+    },
+    {
+      "prop": "deadfall_0",
+      "x": -6,
+      "z": 13.3,
+      "collide": 0.4
     }
   ],
   "keepClear": [
@@ -1151,6 +1155,16 @@
       "x": 10.5,
       "z": -14.0,
       "note": "Dry beech limbs by the cairn: a bundle of kindling once between rests, so the cairn before the Bull can always be lit (decision 0406)."
+    },
+    {
+      "name": "A squirrel's cache",
+      "x": -12,
+      "z": -9.5
+    },
+    {
+      "name": "A nest in a fallen limb",
+      "x": -6,
+      "z": 13
     }
   ],
   "start": [
