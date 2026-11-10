@@ -1,0 +1,110 @@
+{
+ "image": "harlow_lots.png",
+ "emissive": "harlow_lots_emissive.png",
+ "size": [
+  695,
+  152
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "birch_ribbons": {
+   "x": 1,
+   "y": 1,
+   "w": 72,
+   "h": 150,
+   "ax": 26,
+   "ay": 147
+  },
+  "birch_bare_0": {
+   "x": 74,
+   "y": 1,
+   "w": 64,
+   "h": 140,
+   "ax": 32,
+   "ay": 137
+  },
+  "birch_bare_1": {
+   "x": 139,
+   "y": 1,
+   "w": 50,
+   "h": 112,
+   "ax": 25,
+   "ay": 109
+  },
+  "haycock_0": {
+   "x": 190,
+   "y": 1,
+   "w": 44,
+   "h": 40,
+   "ax": 22,
+   "ay": 38
+  },
+  "haycock_1": {
+   "x": 235,
+   "y": 1,
+   "w": 36,
+   "h": 32,
+   "ax": 18,
+   "ay": 30
+  },
+  "barway": {
+   "x": 272,
+   "y": 1,
+   "w": 84,
+   "h": 44,
+   "ax": 42,
+   "ay": 42
+  },
+  "hay_cart_half": {
+   "x": 357,
+   "y": 1,
+   "w": 104,
+   "h": 64,
+   "ax": 52,
+   "ay": 62
+  },
+  "sheep_pen_rails": {
+   "x": 462,
+   "y": 1,
+   "w": 64,
+   "h": 36,
+   "ax": 32,
+   "ay": 34
+  },
+  "snow_hollow_0": {
+   "x": 527,
+   "y": 1,
+   "w": 56,
+   "h": 16,
+   "ax": 28,
+   "ay": 14
+  },
+  "snow_hollow_1": {
+   "x": 584,
+   "y": 1,
+   "w": 40,
+   "h": 12,
+   "ax": 20,
+   "ay": 10
+  },
+  "frost_tussock_0": {
+   "x": 625,
+   "y": 1,
+   "w": 28,
+   "h": 18,
+   "ax": 14,
+   "ay": 16
+  },
+  "searchers_cairn": {
+   "x": 654,
+   "y": 1,
+   "w": 40,
+   "h": 48,
+   "ax": 20,
+   "ay": 46
+  }
+ },
+ "tiles": {}
+}

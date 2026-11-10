@@ -212,6 +212,9 @@
   "tanbark-road": { "chance": 0.25, "list": [
    { "id": "woodswise", "name": "Woodswise", "does": "woodswise", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 2.1, "slots": ["boots", "coat"], "tag": "Unstruck in round 1 until you act", "text": "Nothing strikes you before you act in the first round of a fight." }
   ] },
+  "harlow-bridge": { "chance": 0.25, "list": [
+   { "id": "fulled", "name": "Fulled", "does": "fulled", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0.2, "slots": ["coat", "boots"], "tag": "Afflictions wear off a round sooner", "text": "Afflictions on you wear off a round sooner (never under one round)." }
+  ] },
   "deep-cut": { "chance": 0.5, "list": [
    { "id": "rime_touched", "name": "Rime-touched", "does": "rime_touched", "when": "passive", "field": "chance", "lo": 0.2, "hi": 0.3, "cap": 0.6, "points": 0.2, "slots": ["gloves"], "statuses": ["chilled"], "tag": "{pc:chance} frost hits Chill", "text": "Your frost hits have a {pc:chance} chance to leave the foe Chilled." }
   ] }
@@ -587,6 +590,33 @@
    "craft": "iron",
    "colour": "#c8a050",
    "family": "bell"
+  },
+  "bell_rust": {
+   "item": "bell_rust",
+   "flavor": "Off the old bell. It was always flat, and it still finds the crack.",
+   "name": "Bell Rust",
+   "craft": "iron",
+   "colour": "#9a5a34",
+   "family": "rust",
+   "fine": true
+  },
+  "lake_glass": {
+   "item": "lake_glass",
+   "flavor": "Green as the light under the ice. You can see a long way down through it.",
+   "name": "Lake Glass",
+   "craft": "frost",
+   "colour": "#6fb8a4",
+   "family": "lake",
+   "fine": true
+  },
+  "pike_scale": {
+   "item": "pike_scale",
+   "flavor": "Off Old Gran. Bigger than your hand. She was bigger than the boat.",
+   "name": "Pike Scale",
+   "craft": "paths",
+   "colour": "#8a9a6a",
+   "family": "scale",
+   "fine": true
   }
  },
  "seamBonus": 0.2,
@@ -3205,6 +3235,15 @@
   ],
   "bell": [
    { "slot": "keepsake", "when": "passive", "does": "crit", "grid": [{ "critAdd": 0.02 }, { "critAdd": 0.04 }, { "critAdd": 0.07 }], "text": "Your hits are {pc:critAdd} more likely to be critical." }
+  ],
+  "rust": [
+   { "slot": "keepsake", "when": "passive", "does": "vs_status", "grid": [{ "mul": 1.04 }, { "mul": 1.08 }, { "mul": 1.14 }], "text": "You hit {more:mul} harder against a foe with any affliction on it." }
+  ],
+  "lake": [
+   { "slot": "coat", "when": "passive", "does": "bounce", "grid": [{ "chance": 0.02 }, { "chance": 0.035 }, { "chance": 0.05 }], "text": "A blow aimed at you alone has a {pc:chance} chance to glance off and strike whoever struck it, at half strength." }
+  ],
+  "scale": [
+   { "slot": "coat", "when": "passive", "does": "el_guard", "grid": [{ "mul": 0.97, "element": "physical" }, { "mul": 0.95, "element": "physical" }, { "mul": 0.93, "element": "physical" }], "text": "Plain blows on you, tooth, claw and blade, land {less:mul} softer." }
   ]
  },
  "lean": {

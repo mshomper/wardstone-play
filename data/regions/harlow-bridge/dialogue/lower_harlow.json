@@ -1,0 +1,36 @@
+{
+ "conversations": [
+  {
+   "id": "lh_tin_box",
+   "lines": [
+    { "who": "", "text": "A tin box on the sill. The clasp has been tried." }
+   ]
+  },
+  {
+   "id": "lh_door_shut",
+   "lines": [
+    { "who": "", "text": "A wall of ice right across the street, older than the rest of it. White, not clear, laid down in bands like years. Nothing has cut it, and it doesn't melt." },
+    { "who": "eldwin", "text": "It won't take a word from me. It's waiting on some other word." }
+   ]
+  },
+  {
+   "id": "lh_door_look",
+   "lines": [
+    { "who": "", "text": "A wall of ice right across the street, older than the rest of it. White, not clear, laid down in bands like years. Nothing has cut it, and it doesn't melt." }
+   ]
+  },
+  {
+   "id": "lh_door_sing",
+   "lines": [
+    { "who": "thadeous", "text": "Old ice, is it? I have played to colder rooms than this, Eldwin, and to harder faces, and once, God help me, to the Temperance Society. Stand back and let a professional work." }
+   ]
+  },
+  {
+   "id": "lh_door_open",
+   "lines": [
+    { "who": "", "text": "The ice lets go all at once, like a held breath. The street goes on." },
+    { "who": "thadeous", "text": "Twice in one week. I could get used to being useful." }
+   ]
+  }
+ ]
+}

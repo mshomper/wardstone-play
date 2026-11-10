@@ -1,0 +1,70 @@
+{
+ "image": "harlow_tailor.png",
+ "emissive": "harlow_tailor_emissive.png",
+ "size": [
+  188,
+  55
+ ],
+ "cell": null,
+ "pixelsPerUnit": 32,
+ "anims": {},
+ "sprites": {
+  "yarn_rack": {
+   "x": 1,
+   "y": 1,
+   "w": 42,
+   "h": 53,
+   "ax": 21,
+   "ay": 51
+  },
+  "indigo_crock": {
+   "x": 44,
+   "y": 1,
+   "w": 20,
+   "h": 20,
+   "ax": 10,
+   "ay": 18
+  },
+  "indigo_crock_1": {
+   "x": 65,
+   "y": 1,
+   "w": 24,
+   "h": 28,
+   "ax": 12,
+   "ay": 26
+  },
+  "dress_form_coat": {
+   "x": 90,
+   "y": 1,
+   "w": 24,
+   "h": 52,
+   "ax": 12,
+   "ay": 50
+  },
+  "cutting_tools": {
+   "x": 115,
+   "y": 1,
+   "w": 22,
+   "h": 10,
+   "ax": 11,
+   "ay": 8
+  },
+  "swatch_board": {
+   "x": 138,
+   "y": 1,
+   "w": 26,
+   "h": 26,
+   "ax": 13,
+   "ay": 24
+  },
+  "bolts_indigo": {
+   "x": 165,
+   "y": 1,
+   "w": 22,
+   "h": 28,
+   "ax": 11,
+   "ay": 26
+  }
+ },
+ "tiles": {}
+}

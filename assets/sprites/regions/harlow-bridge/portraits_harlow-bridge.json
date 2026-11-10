@@ -2,14 +2,14 @@
  "image": "portraits_harlow-bridge.png",
  "emissive": "portraits_harlow-bridge_emissive.png",
  "size": [
-  261,
-  66
+  456,
+  781
  ],
  "cell": null,
  "pixelsPerUnit": 32,
  "anims": {},
  "sprites": {
-  "portrait_oren_whitcomb_neutral": {
+  "portrait_abel_mudgett_neutral": {
    "x": 1,
    "y": 1,
    "w": 64,
@@ -17,7 +17,7 @@
    "ax": 32,
    "ay": 63
   },
-  "portrait_oren_whitcomb_tired": {
+  "portrait_abel_mudgett_gruff": {
    "x": 66,
    "y": 1,
    "w": 64,
@@ -25,7 +25,7 @@
    "ax": 32,
    "ay": 63
   },
-  "portrait_oren_whitcomb_concerned": {
+  "portrait_abijah_hatch_neutral": {
    "x": 131,
    "y": 1,
    "w": 64,
@@ -33,9 +33,625 @@
    "ax": 32,
    "ay": 63
   },
-  "portrait_oren_whitcomb_smile": {
+  "portrait_abijah_hatch_cross": {
    "x": 196,
    "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ansel_frye_neutral": {
+   "x": 261,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ansel_frye_worried": {
+   "x": 326,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asahel_fessenden_neutral": {
+   "x": 391,
+   "y": 1,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asahel_fessenden_quiet": {
+   "x": 1,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asher_kent_neutral": {
+   "x": 66,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asher_kent_smile": {
+   "x": 131,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_asher_kent_worried": {
+   "x": 196,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_bartholomew_swain_neutral": {
+   "x": 261,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_bartholomew_swain_smile": {
+   "x": 326,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_bartholomew_swain_quiet": {
+   "x": 391,
+   "y": 66,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_clarissa_sprague_neutral": {
+   "x": 1,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_clarissa_sprague_determined": {
+   "x": 66,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_cyrus_penhallow_neutral": {
+   "x": 131,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_cyrus_penhallow_concerned": {
+   "x": 196,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_cyrus_penhallow_cross": {
+   "x": 261,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ebenezer_tolman_neutral": {
+   "x": 326,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ebenezer_tolman_smile": {
+   "x": 391,
+   "y": 131,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ebenezer_tolman_tender": {
+   "x": 1,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_elam_lyman_neutral": {
+   "x": 66,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_elam_lyman_gruff": {
+   "x": 131,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eli_goodell_neutral": {
+   "x": 196,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_eli_goodell_grin": {
+   "x": 261,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_euphemia_lord_neutral": {
+   "x": 326,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_euphemia_lord_cross": {
+   "x": 391,
+   "y": 196,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_euphemia_lord_teasing": {
+   "x": 1,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_gideon_sloat_neutral": {
+   "x": 66,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_gideon_sloat_gruff": {
+   "x": 131,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hannah_corliss_neutral": {
+   "x": 196,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hannah_corliss_teasing": {
+   "x": 261,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hepzibah_walker_neutral": {
+   "x": 326,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hepzibah_walker_cross": {
+   "x": 391,
+   "y": 261,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hepzibah_walker_quiet": {
+   "x": 1,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hezekiah_doane_neutral": {
+   "x": 66,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hezekiah_doane_gruff": {
+   "x": 131,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_hezekiah_doane_grimace": {
+   "x": 196,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ira_bascom_neutral": {
+   "x": 261,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ira_bascom_gruff": {
+   "x": 326,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ira_bascom_smile": {
+   "x": 391,
+   "y": 326,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jerusha_kidder_neutral": {
+   "x": 1,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_jerusha_kidder_cross": {
+   "x": 66,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_levi_coburn_neutral": {
+   "x": 131,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_levi_coburn_teasing": {
+   "x": 196,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lucinda_bean_neutral": {
+   "x": 261,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lucinda_bean_smile": {
+   "x": 326,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lydia_ames_neutral": {
+   "x": 391,
+   "y": 391,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_lydia_ames_quiet": {
+   "x": 1,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_moses_pratt_neutral": {
+   "x": 66,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_moses_pratt_cross": {
+   "x": 131,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_mother_peck_neutral": {
+   "x": 196,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_mother_peck_smile": {
+   "x": 261,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_mrs_nye_neutral": {
+   "x": 326,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_mrs_nye_teasing": {
+   "x": 391,
+   "y": 456,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_nathaniel_wolcott_neutral": {
+   "x": 1,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_nathaniel_wolcott_tired": {
+   "x": 66,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_neutral": {
+   "x": 131,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_tired": {
+   "x": 196,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_concerned": {
+   "x": 261,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_oren_whitcomb_smile": {
+   "x": 326,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_orrin_gage_neutral": {
+   "x": 391,
+   "y": 521,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_orrin_gage_worried": {
+   "x": 1,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_phineas_whipple_neutral": {
+   "x": 66,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_phineas_whipple_teasing": {
+   "x": 131,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_prudence_goodell_neutral": {
+   "x": 196,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_prudence_goodell_cross": {
+   "x": 261,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_rhoda_cobb_neutral": {
+   "x": 326,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_rhoda_cobb_smile": {
+   "x": 391,
+   "y": 586,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ruel_batchelder_neutral": {
+   "x": 1,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_ruel_batchelder_smile": {
+   "x": 66,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_submit_tolman_neutral": {
+   "x": 131,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_submit_tolman_smile": {
+   "x": 196,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thankful_ide_neutral": {
+   "x": 261,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thankful_ide_quiet": {
+   "x": 326,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_thankful_ide_smile": {
+   "x": 391,
+   "y": 651,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tom_nason_neutral": {
+   "x": 1,
+   "y": 716,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_tom_nason_quiet": {
+   "x": 66,
+   "y": 716,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_zebulon_gault_neutral": {
+   "x": 131,
+   "y": 716,
+   "w": 64,
+   "h": 64,
+   "ax": 32,
+   "ay": 63
+  },
+  "portrait_zebulon_gault_smile": {
+   "x": 196,
+   "y": 716,
    "w": 64,
    "h": 64,
    "ax": 32,

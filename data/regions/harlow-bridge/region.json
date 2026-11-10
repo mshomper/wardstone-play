@@ -1,5 +1,5 @@
 {
-  "_note": "Harlow Bridge, the mill town at the end of the Tanbark Road (docs/regions/harlow-bridge.md). The town is three areas (Matt, 9 Nov 2026): Market Square, Mill Street and Meetinghouse Hill, built as ground with every door opening (decisions 0381 to 0384). The rest of the region is leads until it is built.",
+  "_note": "Harlow Bridge, the mill town at the end of the Tanbark Road (docs/regions/harlow-bridge.md). The town is three areas (Matt, 9 Nov 2026): Market Square, Mill Street and Meetinghouse Hill, built as ground with every door opening (decisions 0381 to 0384); the Covered Bridge, Tanner's Row, the Mill Pond and the Drowned Town round it (decision 0460). The rest of the region is leads until it is built.",
   "id": "harlow-bridge",
   "name": "Harlow Bridge",
   "places": [
@@ -122,6 +122,107 @@
         "mill-street-mill-row-north-no-1",
         "mill-street-mill-row-north-no-1-upper"
       ]
+    },
+    {
+      "id": "pasture-lane",
+      "name": "The Pasture Lane",
+      "at": [
+        262,
+        78
+      ],
+      "label": "right",
+      "areas": [
+        "pasture-lane"
+      ]
+    },
+    {
+      "id": "north-lots",
+      "name": "The North Lots",
+      "note": "the ring wall",
+      "at": [
+        250,
+        32
+      ],
+      "label": "right",
+      "areas": [
+        "north-lots"
+      ],
+      "stone": {
+        "mended": "harlow_stone_woke",
+        "travel": "harlow_stone_woke"
+      }
+    },
+    {
+      "id": "covered-bridge",
+      "name": "The Covered Bridge",
+      "note": "the toll of stories",
+      "at": [
+        405,
+        232
+      ],
+      "label": "below",
+      "areas": [
+        "covered-bridge"
+      ]
+    },
+    {
+      "id": "tanners-row",
+      "name": "Tanner's Row",
+      "note": "the tannery",
+      "at": [
+        480,
+        225
+      ],
+      "label": "right",
+      "areas": [
+        "tanners-row",
+        "tanners-row-the-grog-shop",
+        "tanners-row-the-grog-shop-upper",
+        "tanners-row-the-boarding-house",
+        "tanners-row-the-boarding-house-upper",
+        "tanners-row-the-tannery"
+      ]
+    },
+    {
+      "id": "mill-pond",
+      "name": "The Mill Pond",
+      "note": "the sluice gate",
+      "at": [
+        125,
+        295
+      ],
+      "label": "right",
+      "areas": [
+        "mill-pond",
+        "mill-pond-penhallow-s-boathouse"
+      ]
+    },
+    {
+      "id": "drowned-town",
+      "name": "The Drowned Town",
+      "note": "the steeple in the ice",
+      "at": [
+        70,
+        375
+      ],
+      "label": "right",
+      "areas": [
+        "drowned-town",
+        "drowned-town-thankful-ide-s-cottage"
+      ]
+    },
+    {
+      "id": "lower-harlow",
+      "name": "Lower Harlow",
+      "note": "under the lake",
+      "at": [
+        80,
+        440
+      ],
+      "label": "below",
+      "areas": [
+        "lower-harlow"
+      ]
     }
   ],
   "paths": [
@@ -130,8 +231,40 @@
       "meetinghouse-hill"
     ],
     [
+      "drowned-town",
+      "lower-harlow"
+    ],
+    [
       "harlow-bridge",
       "mill-street"
+    ],
+    [
+      "meetinghouse-hill",
+      "pasture-lane"
+    ],
+    [
+      "pasture-lane",
+      "north-lots"
+    ],
+    [
+      "mill-street",
+      "covered-bridge"
+    ],
+    [
+      "covered-bridge",
+      "tanners-row"
+    ],
+    [
+      "harlow-bridge",
+      "mill-pond"
+    ],
+    [
+      "mill-pond",
+      "drowned-town"
+    ],
+    [
+      "drowned-town",
+      "lower-harlow"
     ]
   ],
   "leads": [
@@ -144,30 +277,6 @@
       "name": "up to the Lookoff"
     },
     {
-      "from": "meetinghouse-hill",
-      "to": [
-        260,
-        40
-      ],
-      "name": "up the Pasture Lane"
-    },
-    {
-      "from": "mill-street",
-      "to": [
-        440,
-        230
-      ],
-      "name": "over the Covered Bridge"
-    },
-    {
-      "from": "harlow-bridge",
-      "to": [
-        110,
-        310
-      ],
-      "name": "to the Mill Pond"
-    },
-    {
       "from": "mill-street",
       "to": [
         360,
@@ -176,8 +285,26 @@
       "name": "the ferry landing"
     }
   ],
-  "quests": [],
+  "board": "board",
+  "quests": [
+    "bark-for-the-tannery",
+    "the-drowned-bell",
+    "dye-book",
+    "singing-school",
+    "slate-for-the-roof"
+  ],
   "dialogue": [
-    "tankard"
+    "harlow_euphemia",
+    "tankard",
+    "oca",
+    "hb_jasper",
+    "ss",
+    "ss_town",
+    "lower_harlow",
+    "hb_side",
+    "thankful_verse",
+    "hb_folk_square",
+    "hb_folk_mill",
+    "slate"
   ]
 }

@@ -1634,12 +1634,6 @@
    "collide": 0
   },
   {
-   "prop": "chickens_0",
-   "x": 28.26,
-   "z": -7.8,
-   "collide": 0
-  },
-  {
    "prop": "lilac_1",
    "x": -31.35,
    "z": -4.49,
@@ -1736,12 +1730,6 @@
    "collide": 0
   },
   {
-   "prop": "chickens_0",
-   "x": -8.73,
-   "z": 15.15,
-   "collide": 0
-  },
-  {
    "prop": "tree_stump_0",
    "x": -11.51,
    "z": -10.12,
@@ -1821,9 +1809,15 @@
   },
   {
    "prop": "maple_red_0",
-   "x": -11.57,
-   "z": -22.5,
+   "x": 3.77,
+   "z": -22.09,
    "collide": 0.42
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -12.9,
+   "z": -22.03,
+   "collide": 0.4
   },
   {
    "prop": "chickens_0",
@@ -1844,22 +1838,16 @@
    "collide": 0
   },
   {
-   "prop": "chickens_0",
-   "x": 7.09,
-   "z": -21.54,
-   "collide": 0
-  },
-  {
-   "prop": "big_bucket",
-   "x": -28.12,
-   "z": 17.44,
-   "collide": 0.3
-  },
-  {
    "prop": "asters_0",
    "x": 28.23,
    "z": 1.93,
    "collide": 0
+  },
+  {
+   "prop": "crate_0",
+   "x": -10.74,
+   "z": 5.74,
+   "collide": 0.3
   },
   {
    "prop": "chickens_1",
@@ -1904,10 +1892,16 @@
    "collide": 0.35
   },
   {
-   "prop": "goldenrod_0",
-   "x": 24.57,
-   "z": 22.48,
+   "prop": "chickens_1",
+   "x": -27.8,
+   "z": 17.14,
    "collide": 0
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -33.46,
+   "z": -5.91,
+   "collide": 0.42
   },
   {
    "prop": "maple_orange_1",
@@ -1922,10 +1916,10 @@
    "collide": 0.35
   },
   {
-   "prop": "maple_orange_0",
-   "x": 19.63,
-   "z": 6.96,
-   "collide": 0.42
+   "prop": "apple_basket_1",
+   "x": 24.87,
+   "z": 22.4,
+   "collide": 0.2
   },
   {
    "prop": "maple_orange_0",
@@ -1982,22 +1976,28 @@
    "collide": 0.4
   },
   {
-   "prop": "bare_tree_0",
-   "x": -10.69,
-   "z": 5.94,
-   "collide": 0.42
+   "prop": "goldenrod_0",
+   "x": -6.39,
+   "z": 15.5,
+   "collide": 0
   },
   {
-   "prop": "maple_orange_0",
-   "x": 11.9,
-   "z": 20.05,
-   "collide": 0.42
+   "prop": "asters_0",
+   "x": -21.43,
+   "z": 6.16,
+   "collide": 0
   },
   {
-   "prop": "maple_red_0",
-   "x": -5.41,
-   "z": -11.36,
-   "collide": 0.42
+   "prop": "lilac_1",
+   "x": -31.88,
+   "z": -16.96,
+   "collide": 0.45
+  },
+  {
+   "prop": "crate_0",
+   "x": 33.25,
+   "z": -16.66,
+   "collide": 0.3
   }
  ],
  "keepClear": [
@@ -2047,6 +2047,12 @@
    "z": 0.2
   },
   {
+   "name": "Penhallow by the board",
+   "x": 10.8,
+   "z": 0.6,
+   "note": "Penhallow reading the notices from a step away, so the board itself stays clear to read (decision 0434)."
+  },
+  {
    "name": "The Tankard's porch",
    "x": -6.8,
    "z": -4,
@@ -2085,6 +2091,149 @@
    "x": 12,
    "z": 2.6,
    "note": "Idle men, the wheels stopped till noon."
+  },
+  {
+   "name": "To the Mill Pond",
+   "x": -30.6,
+   "z": 11.6,
+   "note": "The road west along the race to the Mill Pond."
+  },
+  {
+   "name": "Fessenden at his door",
+   "x": -2.3,
+   "z": -7.9
+  },
+  {
+   "name": "Round: Fessenden's door",
+   "x": -1.0,
+   "z": -8.5
+  },
+  {
+   "name": "Round: Fessenden at the stall",
+   "x": 1.0,
+   "z": -4.3
+  },
+  {
+   "name": "Whipple at his door",
+   "x": 6.3,
+   "z": -7.9
+  },
+  {
+   "name": "Round: the druggist's door",
+   "x": 5.0,
+   "z": -8.5
+  },
+  {
+   "name": "Lyman at his door",
+   "x": 9.7,
+   "z": -7.9
+  },
+  {
+   "name": "Round: Lyman's door",
+   "x": 11.0,
+   "z": -8.5
+  },
+  {
+   "name": "Hannah at her door",
+   "x": 15.7,
+   "z": -7.9
+  },
+  {
+   "name": "Round: the print shop door",
+   "x": 17.0,
+   "z": -8.5
+  },
+  {
+   "name": "Round: Hannah at the noticeboard",
+   "x": 10.2,
+   "z": 0.4
+  },
+  {
+   "name": "Squire Hatch on his step",
+   "x": 3.1,
+   "z": 4.0
+  },
+  {
+   "name": "Round: the Squire's door",
+   "x": 0.8,
+   "z": 4.3
+  },
+  {
+   "name": "Round: the Squire at the stalls",
+   "x": 5.6,
+   "z": -4.3
+  },
+  {
+   "name": "Dr. Wolcott at his door",
+   "x": 20.0,
+   "z": 8.7
+  },
+  {
+   "name": "Round: the doctor's door",
+   "x": 20.1,
+   "z": 7.3
+  },
+  {
+   "name": "Round: the doctor at the corner",
+   "x": 16.6,
+   "z": 2.4
+  },
+  {
+   "name": "Gault at the stable door",
+   "x": -22.6,
+   "z": -4.0
+  },
+  {
+   "name": "Round: the livery door",
+   "x": -23.1,
+   "z": -0.3
+  },
+  {
+   "name": "Round: Gault at the trough",
+   "x": -23.0,
+   "z": 3.0
+  },
+  {
+   "name": "Round: Gault at the hay",
+   "x": -22.6,
+   "z": -6.4
+  },
+  {
+   "name": "Mrs. Ames at her door",
+   "x": -8.6,
+   "z": 15.0,
+   "note": "Lydia Ames, looking up the lane onto the square."
+  },
+  {
+   "name": "Prudence at fox and geese",
+   "x": 2.0,
+   "z": -1.0,
+   "note": "The Goodell children, playing in the frost."
+  },
+  {
+   "name": "Round: the children by the pump",
+   "x": 4.6,
+   "z": 1.8
+  },
+  {
+   "name": "Round: the children by the stalls",
+   "x": 3.4,
+   "z": -3.8
+  },
+  {
+   "name": "Round: the children by the bench",
+   "x": -0.4,
+   "z": 3.4
+  },
+  {
+   "name": "Deacon Pratt at his gate",
+   "x": 27.6,
+   "z": -7.4
+  },
+  {
+   "name": "Round: the Deacon by the Tankard",
+   "x": -4.4,
+   "z": -5.2
   }
  ],
  "start": [
@@ -2133,6 +2282,20 @@
     0.2
    ],
    "dir": 6
+  },
+  {
+   "rect": [
+    -33.6,
+    9.8,
+    -32.6,
+    13.8
+   ],
+   "to": "mill-pond",
+   "at": [
+    22.6,
+    -5.4
+   ],
+   "dir": 2
   }
  ]
 }

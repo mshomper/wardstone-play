@@ -1,0 +1,265 @@
+{
+ "_note": "Harlow Bridge's townsfolk on Mill Street, Tanner's Row and the Drowned Town shore (decision 0480). Matt approved the roster, 9 Nov 2026; the lines are the Sprints session's drafts, word for word, and Matt is still reading them. Each says their piece while the frost holds and one thing once the tower clock has struck in the night (harlow_stone_woke). Hepzibah Walker's line about Thadeous is her second talk before the clock strikes; Gideon Sloat's second beat waits for the bark to come down (bark_done), not the clock.",
+ "conversations": [
+  {
+   "id": "hb_folk_ruel",
+   "lines": [
+    {
+     "who": "ruel_batchelder",
+     "text": "I was a boy when they raised the dam. There was a cold year after. Not like this."
+    },
+    {
+     "who": "ruel_batchelder",
+     "text": "Sixty years on that saw. First month I've had nothing to do but stand here."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_ruel_after",
+   "lines": [
+    {
+     "who": "ruel_batchelder",
+     "text": "Hear her? That's the saw. I'd know her anywhere.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_rhoda",
+   "lines": [
+    {
+     "who": "rhoda_cobb",
+     "text": "I knit till noon. When the wheel turns I go in. When it stops I come out and knit."
+    },
+    {
+     "who": "rhoda_cobb",
+     "text": "That's three stockings this week. Nobody needs three stockings."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_rhoda_after",
+   "lines": [
+    {
+     "who": "rhoda_cobb",
+     "text": "Wheel turned at seven. I've half a stocking, and I'll never finish it now."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_kidder",
+   "lines": [
+    {
+     "who": "jerusha_kidder",
+     "text": "Penhallow wants the fulling mill run till dark to make up the mornings. Cloth won't full in that cold. I've told him. He's told me. We'll see.",
+     "face": "cross"
+    },
+    {
+     "who": "jerusha_kidder",
+     "text": "Mind the race. Thin ice over fast water, and it freezes again every night."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_kidder_after",
+   "lines": [
+    {
+     "who": "jerusha_kidder",
+     "text": "Running from seven. Don't tell Penhallow I said he was right about anything. He wasn't."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_ansel",
+   "lines": [
+    {
+     "who": "ansel_frye",
+     "text": "Idle hours. I write them in a column for Mr. Penhallow. This month the column's longer than the page."
+    },
+    {
+     "who": "ansel_frye",
+     "text": "I'd rather add up anything else. Sheep. Rain."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_ansel_after",
+   "lines": [
+    {
+     "who": "ansel_frye",
+     "text": "First day this month the column's empty. I left it in for him to see."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_gage",
+   "lines": [
+    {
+     "who": "orrin_gage",
+     "text": "I write down what the hands take from the store. This month I've left a few things off. Flour, mostly. Don't mention it."
+    },
+    {
+     "who": "orrin_gage",
+     "text": "Penhallow reads the book on the first. I'm hoping the frost lifts before the first."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_gage_after",
+   "lines": [
+    {
+     "who": "orrin_gage",
+     "text": "Wheels running before the first. I don't think anybody's going to read last month very closely."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_walker",
+   "lines": [
+    {
+     "who": "hepzibah_walker",
+     "text": "Twenty-two girls in this house. Door's bolted at nine. Nobody comes in after, and nobody sings under the window, though some try."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_walker_thadeous",
+   "lines": [
+    {
+     "who": "hepzibah_walker",
+     "text": "He sang the whole Lantern Man under there one night. The girls threw him down a blanket. I didn't stop them.",
+     "face": "quiet"
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:HWT"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_walker_after",
+   "lines": [
+    {
+     "who": "hepzibah_walker",
+     "text": "Girls are back at the mill by seven. House is quiet as a meetinghouse. I don't like it."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_lucinda",
+   "lines": [
+    {
+     "who": "lucinda_bean",
+     "text": "I write home every Sunday. I don't send them. There's nothing in them yet but the cold."
+    },
+    {
+     "who": "lucinda_bean",
+     "text": "When the mill runs I'll have something to say."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_lucinda_after",
+   "lines": [
+    {
+     "who": "lucinda_bean",
+     "text": "I sent one. I said the clock struck in the night and the whole house got up to listen. That's all I said. It was enough.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_nason",
+   "lines": [
+    {
+     "who": "tom_nason",
+     "text": "Tannery hands drink here. And Burnbottom. Nobody else comes over the bridge."
+    },
+    {
+     "who": "tom_nason",
+     "text": "I don't ask what anybody's drinking to. Saves time."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_nason_after",
+   "lines": [
+    {
+     "who": "tom_nason",
+     "text": "He's not been in since he went off with you. I keep his stool. Nobody sits on it.",
+     "face": "quiet"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_gideon",
+   "lines": [
+    {
+     "who": "gideon_sloat",
+     "text": "Nineteen years in the beam house. Can't smell it. Can smell you, though. Road, and wet wool."
+    },
+    {
+     "who": "gideon_sloat",
+     "text": "Ira's short of bark. When Ira's short of bark, Ira's short of everything."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_gideon_bark",
+   "lines": [
+    {
+     "who": "gideon_sloat",
+     "text": "Vats full. Ira's smiling. I don't trust it.",
+     "face": "gruff"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_peck",
+   "lines": [
+    {
+     "who": "mother_peck",
+     "text": "Stew's on. It's always on. It's the only thing on the Row that smells of anything but the Row."
+    },
+    {
+     "who": "mother_peck",
+     "text": "Sit if you want. Hands eat first."
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_peck_after",
+   "lines": [
+    {
+     "who": "mother_peck",
+     "text": "You've a look about you like you've earned a bowl. Sit.",
+     "face": "smile"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_mudgett",
+   "lines": [
+    {
+     "who": "abel_mudgett",
+     "text": "Twenty winters cutting ice on this lake. I wait for it all autumn."
+    },
+    {
+     "who": "abel_mudgett",
+     "text": "Now it's froze. Round the steeple and nowhere else, two foot thick, in October. That's wrong ice. I won't put a saw in it.",
+     "face": "gruff"
+    }
+   ]
+  },
+  {
+   "id": "hb_folk_mudgett_after",
+   "lines": [
+    {
+     "who": "abel_mudgett",
+     "text": "Still froze round the steeple. Still won't cut it. Some ice you leave be."
+    }
+   ]
+  }
+ ]
+}

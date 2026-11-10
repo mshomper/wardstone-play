@@ -1,0 +1,823 @@
+{
+ "_note": "Harlow Bridge's Bartholomew Swain (the Toll of Stories, the small charm), Ira Bascom (Bark for the Tannery, with Mehitable Rowe at the Rowes' shed) and Thankful Ide (The Drowned Bell), decision 0475. Matt approved the lines, 9 Nov 2026; Mehitable's were checked by the Thadeous session (forty-five ricks, as the Bark Road's tallies say). Thankful's Lantern Man verse is the Thadeous session's, in thankful_verse.json. Voices and facts are in docs/regions/harlow-bridge.md.",
+ "conversations": [
+  {
+   "id": "hb_toll",
+   "lines": [
+    {
+     "who": "bartholomew_swain",
+     "text": "Toll."
+    },
+    {
+     "who": "eldwin",
+     "text": "What's the toll?"
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "A story. One I haven't heard."
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Thirty-one years on this stool. I've heard most of them."
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Each of you pays once. Then the bridge is yours for good."
+    },
+    {
+     "who": "eldwin",
+     "text": "There was a man who lived a long time in one place and never told anyone why."
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Why?"
+    },
+    {
+     "who": "eldwin",
+     "text": "That's the story."
+    },
+    {
+     "who": "",
+     "text": "Bartholomew looks at him a while."
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "I haven't heard that one. I'll be turning it over all week. Go on."
+    },
+    {
+     "who": "obed",
+     "text": "My great-grandfather laid a wall on the Coyle line. A man moved it four feet in the night. Next morning it was back where it belonged. Nobody's touched it since.",
+     "if": {
+      "party": [
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Who moved it back?",
+     "if": {
+      "party": [
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "That'd be five sentences.",
+     "if": {
+      "party": [
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid.",
+     "if": {
+      "party": [
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Obed rubs his wrist.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "She stood on a bridge on the Post Road and took a toll off everybody who crossed. Hats. Crusts. A man's spectacles.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "I've heard that one.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "Not from her side, you haven't.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Bartholomew looks down at the goose. The goose looks at his stool.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid. Keep her off the stool.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "In the winter of the deep snow I played the Haverhill dance for nine hours without stopping. When the strings went I played on the bow hair, and when the bow hair went I whistled, and the dancers never noticed, because by then most of them were asleep on their feet.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Again.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "Again?",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Slower. I want to keep it right.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Thadeous starts to say something grand, and doesn't.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "Nobody's asked me for one twice in five years.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "He tells it again, slower.",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid in full. The bridge is yours."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "toll:eldwin"
+    },
+    {
+     "if": {
+      "party": [
+       "obed"
+      ]
+     },
+     "setFlag": "toll:obed"
+    },
+    {
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     },
+     "setFlag": "toll:applegate"
+    },
+    {
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     },
+     "setFlag": "toll:thadeous"
+    }
+   ]
+  },
+  {
+   "id": "hb_toll_more",
+   "lines": [
+    {
+     "who": "obed",
+     "text": "My great-grandfather laid a wall on the Coyle line. A man moved it four feet in the night. Next morning it was back where it belonged. Nobody's touched it since.",
+     "if": {
+      "party": [
+       "obed"
+      ],
+      "notFlags": [
+       "toll:obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Who moved it back?",
+     "if": {
+      "party": [
+       "obed"
+      ],
+      "notFlags": [
+       "toll:obed"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "That'd be five sentences.",
+     "if": {
+      "party": [
+       "obed"
+      ],
+      "notFlags": [
+       "toll:obed"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid.",
+     "if": {
+      "party": [
+       "obed"
+      ],
+      "notFlags": [
+       "toll:obed"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Obed rubs his wrist.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "She stood on a bridge on the Post Road and took a toll off everybody who crossed. Hats. Crusts. A man's spectacles.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "I've heard that one.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "obed",
+     "text": "Not from her side, you haven't.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Bartholomew looks down at the goose. The goose looks at his stool.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid. Keep her off the stool.",
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ],
+      "notFlags": [
+       "toll:applegate"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "In the winter of the deep snow I played the Haverhill dance for nine hours without stopping. When the strings went I played on the bow hair, and when the bow hair went I whistled, and the dancers never noticed, because by then most of them were asleep on their feet.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Again.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "Again?",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Slower. I want to keep it right.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "Thadeous starts to say something grand, and doesn't.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "thadeous",
+     "text": "Nobody's asked me for one twice in five years.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "",
+     "text": "He tells it again, slower.",
+     "if": {
+      "party": [
+       "thadeous"
+      ],
+      "notFlags": [
+       "toll:thadeous"
+      ]
+     }
+    },
+    {
+     "who": "bartholomew_swain",
+     "text": "Paid in full. The bridge is yours."
+    }
+   ],
+   "onEnd": [
+    {
+     "if": {
+      "party": [
+       "obed"
+      ]
+     },
+     "setFlag": "toll:obed"
+    },
+    {
+     "if": {
+      "party": [
+       "applegate",
+       "obed"
+      ]
+     },
+     "setFlag": "toll:applegate"
+    },
+    {
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     },
+     "setFlag": "toll:thadeous"
+    }
+   ]
+  },
+  {
+   "id": "hb_toll_plank",
+   "lines": [
+    {
+     "who": "bartholomew_swain",
+     "text": "Mind the third plank. I've been meaning to mention it for thirty-one years."
+    }
+   ]
+  },
+  {
+   "id": "hb_find_notices",
+   "lines": [
+    {
+     "who": "",
+     "text": "Notices nailed over notices: a stray heifer, a singing school, a horse for sale. Under them all, the oldest, mostly torn away: a search for a girl of three. Nobody has nailed anything over her name."
+    }
+   ]
+  },
+  {
+   "id": "hb_ira_first",
+   "lines": [
+    {
+     "who": "ira_bascom",
+     "text": "Stand upwind. Everybody does."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "You're not from over the bridge. Bridge folk only come across to tell me about the smell."
+    },
+    {
+     "who": "eldwin",
+     "text": "We came about the frost."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Frost doesn't bother a hide. Bark bothers me. I've got eight vats and nothing to put in them."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "The Rowes have it cut and stacked up the Tanbark Road. My wagon won't go past that moose."
+    },
+    {
+     "who": "eldwin",
+     "text": "The moose has gone off into the beeches.",
+     "if": {
+      "flags": [
+       "beat_bull"
+      ]
+     }
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Has he.",
+     "if": {
+      "flags": [
+       "beat_bull"
+      ]
+     }
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Then the road's open, and I've run out of reasons to sit here.",
+     "if": {
+      "flags": [
+       "beat_bull"
+      ]
+     }
+    },
+    {
+     "who": "ira_bascom",
+     "text": "The horses won't go up there with only me. Walk up with the wagon, and there's a turn in it for you.",
+     "if": {
+      "flags": [
+       "beat_bull"
+      ]
+     }
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_ira"
+    },
+    {
+     "if": {
+      "flags": [
+       "beat_bull"
+      ]
+     },
+     "setFlag": "bark_asked"
+    }
+   ]
+  },
+  {
+   "id": "hb_ira_bull",
+   "lines": [
+    {
+     "who": "eldwin",
+     "text": "The moose has gone off into the beeches."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Has he."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Then the road's open, and I've run out of reasons to sit here."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "The horses won't go up there with only me. Walk up with the wagon, and there's a turn in it for you."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bark_asked"
+    }
+   ]
+  },
+  {
+   "id": "hb_ira_back",
+   "lines": [
+    {
+     "who": "ira_bascom",
+     "text": "Full by Thursday. The Row owes you a turn."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Don't ask me to say it twice. Nobody over here says it once."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bark_done"
+    },
+    {
+     "reward": {
+      "title": "Bark for the Tannery",
+      "xp": 420,
+      "items": {
+       "dubbin": 3,
+       "bootlaces": 2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "hb_ira_thadeous",
+   "lines": [
+    {
+     "who": "ira_bascom",
+     "text": "Burnbottom drinks at the grog shop. Only man from over the bridge who will."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "Sings the hands the old songs, and never once asks what the place smells of."
+    },
+    {
+     "who": "ira_bascom",
+     "text": "They laugh at him over there. They don't here."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:IBT"
+    }
+   ]
+  },
+  {
+   "id": "hb_ira",
+   "lines": [
+    {
+     "who": "ira_bascom",
+     "text": "Upwind."
+    }
+   ]
+  },
+  {
+   "id": "hb_mehitable_bark",
+   "lines": [
+    {
+     "who": "mehitable_rowe",
+     "text": "Ira's wagon. I'd started to think it was a story."
+    },
+    {
+     "who": "mehitable_rowe",
+     "text": "Forty-five ricks. That's the last of this year's peeling."
+    },
+    {
+     "who": "mehitable_rowe",
+     "text": "Tell him the count's right. He'll count it again anyway."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bark_counted"
+    }
+   ]
+  },
+  {
+   "id": "hb_thankful_first",
+   "lines": [
+    {
+     "who": "thankful_ide",
+     "text": "Mind the step. It's older than the town."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "I was born down there."
+    },
+    {
+     "who": "",
+     "text": "She looks out at the lake."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "Under all that. There was a road, and a meetinghouse, and my mother's kitchen."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "Penhallow's father raised the dam when I was nine. We carried what we could up the hill. Not the bell."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "I used to row out on calm days and tie up to the weathervane, and sit. This year the ice came round it in October, and it hasn't let go."
+    },
+    {
+     "who": "eldwin",
+     "text": "Early for ice."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "Early for a lot of things."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_thankful"
+    }
+   ]
+  },
+  {
+   "id": "hb_thankful_bell",
+   "lines": [
+    {
+     "who": "thankful_ide",
+     "text": "Some cold nights it rings, under the ice. People say it's the old town."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "It's just the cold, ringing the cold."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "Still. I'd like to hear it once more, rung properly, before I go and see them."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bell_asked"
+    }
+   ]
+  },
+  {
+   "id": "hb_thankful_waiting",
+   "lines": [
+    {
+     "who": "thankful_ide",
+     "text": "Still frozen. I listen at night anyway."
+    }
+   ]
+  },
+  {
+   "id": "hb_thankful_rung",
+   "lines": [
+    {
+     "who": "thankful_ide",
+     "text": "There. That's all I wanted."
+    },
+    {
+     "who": "",
+     "text": "She doesn't say anything for a while."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "It was flat, you know. It always was. They never could afford a better one."
+    },
+    {
+     "who": "thankful_ide",
+     "text": "Sit down. There's only the one chair. Sit on the woodbox."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "bell_done"
+    },
+    {
+     "reward": {
+      "title": "The Drowned Bell",
+      "xp": 520,
+      "items": {
+       "hearth_stew": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "hb_thankful",
+   "lines": [
+    {
+     "who": "thankful_ide",
+     "text": "I heard it. Don't let anybody tell you different."
+    }
+   ]
+  },
+  {
+   "id": "hb_bell_frozen_look",
+   "lines": [
+    {
+     "who": "",
+     "text": "The bell, frozen in a block of ice to the lip. A rope runs down out of it into the floor."
+    }
+   ]
+  },
+  {
+   "id": "hb_bell_rings",
+   "lines": [
+    {
+     "who": "",
+     "text": "Far above, through the ice, the bell rings once."
+    }
+   ]
+  }
+ ]
+}

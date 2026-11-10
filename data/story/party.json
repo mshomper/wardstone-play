@@ -20,7 +20,17 @@
     { "level": 17, "xp": 8250 },
     { "level": 18, "xp": 10080 },
     { "level": 19, "xp": 12270 },
-    { "level": 20, "xp": 14900 }
+    { "level": 20, "xp": 14900 },
+    { "level": 21, "xp": 18060 },
+    { "level": 22, "xp": 21850 },
+    { "level": 23, "xp": 26400 },
+    { "level": 24, "xp": 31860 },
+    { "level": 25, "xp": 38410 },
+    { "level": 26, "xp": 46270 },
+    { "level": 27, "xp": 55700 },
+    { "level": 28, "xp": 67020 },
+    { "level": 29, "xp": 80600 },
+    { "level": 30, "xp": 96900 }
   ],
   "start": { "level": 1, "roster": ["eldwin"], "items": { "warm_cider": 0, "maple_candy": 0 } },
   "pointsPerLevel": 1,
@@ -62,7 +72,17 @@
         { "level": 17, "hp": 532, "mp": 88, "atk": 26, "mag": 64, "def": 24, "res": 44, "spd": 17 },
         { "level": 18, "hp": 576, "mp": 92, "atk": 27, "mag": 67, "def": 25, "res": 46, "spd": 18 },
         { "level": 19, "hp": 622, "mp": 96, "atk": 28, "mag": 70, "def": 26, "res": 48, "spd": 18 },
-        { "level": 20, "hp": 670, "mp": 100, "atk": 29, "mag": 73, "def": 27, "res": 50, "spd": 19 }
+        { "level": 20, "hp": 670, "mp": 100, "atk": 29, "mag": 73, "def": 27, "res": 50, "spd": 19 },
+        { "level": 21, "hp": 717, "mp": 104, "atk": 30, "mag": 76, "def": 28, "res": 52, "spd": 19 },
+        { "level": 22, "hp": 763, "mp": 108, "atk": 31, "mag": 79, "def": 29, "res": 54, "spd": 20 },
+        { "level": 23, "hp": 808, "mp": 112, "atk": 32, "mag": 82, "def": 30, "res": 56, "spd": 20 },
+        { "level": 24, "hp": 852, "mp": 116, "atk": 33, "mag": 85, "def": 31, "res": 58, "spd": 21 },
+        { "level": 25, "hp": 895, "mp": 120, "atk": 34, "mag": 88, "def": 32, "res": 60, "spd": 21 },
+        { "level": 26, "hp": 937, "mp": 124, "atk": 35, "mag": 91, "def": 33, "res": 62, "spd": 22 },
+        { "level": 27, "hp": 978, "mp": 128, "atk": 36, "mag": 94, "def": 34, "res": 64, "spd": 22 },
+        { "level": 28, "hp": 1018, "mp": 132, "atk": 37, "mag": 97, "def": 35, "res": 66, "spd": 23 },
+        { "level": 29, "hp": 1057, "mp": 136, "atk": 38, "mag": 100, "def": 36, "res": 68, "spd": 23 },
+        { "level": 30, "hp": 1095, "mp": 140, "atk": 39, "mag": 103, "def": 37, "res": 70, "spd": 24 }
       ],
       "start": { "known": ["glaze","bolt","rime","channel"], "equipped": ["glaze","bolt","rime","channel"], "ward": "frostward", "wards": ["frostward"] }
     },
@@ -95,7 +115,17 @@
         { "level": 17, "hp": 672, "mp": 60, "atk": 54, "mag": 54, "def": 31, "res": 56, "spd": 16 },
         { "level": 18, "hp": 724, "mp": 63, "atk": 57, "mag": 57, "def": 33, "res": 59, "spd": 17 },
         { "level": 19, "hp": 778, "mp": 66, "atk": 59, "mag": 59, "def": 34, "res": 61, "spd": 17 },
-        { "level": 20, "hp": 834, "mp": 68, "atk": 62, "mag": 62, "def": 35, "res": 64, "spd": 18 }
+        { "level": 20, "hp": 834, "mp": 68, "atk": 62, "mag": 62, "def": 35, "res": 64, "spd": 18 },
+        { "level": 21, "hp": 896, "mp": 71, "atk": 64, "mag": 63, "def": 37, "res": 66, "spd": 18 },
+        { "level": 22, "hp": 962, "mp": 74, "atk": 67, "mag": 64, "def": 39, "res": 68, "spd": 18 },
+        { "level": 23, "hp": 1033, "mp": 76, "atk": 69, "mag": 65, "def": 41, "res": 70, "spd": 19 },
+        { "level": 24, "hp": 1107, "mp": 79, "atk": 72, "mag": 66, "def": 43, "res": 72, "spd": 19 },
+        { "level": 25, "hp": 1184, "mp": 82, "atk": 74, "mag": 67, "def": 45, "res": 74, "spd": 19 },
+        { "level": 26, "hp": 1261, "mp": 84, "atk": 77, "mag": 68, "def": 47, "res": 76, "spd": 20 },
+        { "level": 27, "hp": 1336, "mp": 87, "atk": 79, "mag": 69, "def": 49, "res": 78, "spd": 20 },
+        { "level": 28, "hp": 1409, "mp": 90, "atk": 82, "mag": 70, "def": 51, "res": 80, "spd": 20 },
+        { "level": 29, "hp": 1475, "mp": 92, "atk": 84, "mag": 71, "def": 53, "res": 82, "spd": 21 },
+        { "level": 30, "hp": 1533, "mp": 95, "atk": 87, "mag": 72, "def": 55, "res": 84, "spd": 21 }
       ],
       "start": { "known": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "equipped": ["footing_stone", "fill_grit", "thayer_wall", "catch_breath"], "ward": "no_mortar", "wards": ["no_mortar"] }
     },
@@ -105,6 +135,10 @@
       "words": {"attack": "Peck one foe, hard.", "skills": "Temper", "skillsDesc": "What she does when she's had enough, which is often.", "move": "move", "moves": "moves"},
       "slippery": true,
       "pox": {"blow": 0.25, "below": 0.34, "turns": 2},
+      "_gearNote": "Decision 0172: she wears three pieces, keepsake, coat and belt, and her keepsake is Tilly's ribbon (gear id tilly_ribbon), on her and nobody else and never taken off while she has it. No gloves or boots. The two missing spots' main effects fold into her own numbers once the party owns any gear (gearFold): each at Stout, Fair grade, the tier she meets them at around level 5, from the slots' stat lists in gear/parts.json. Gloves give +5% attack and +5% magic, boots +1 speed. So she stays level with the others on numbers and has two fewer pieces' worth of charms and extras: that is her difference. If the simulator shows her falling behind, each of her pieces takes one extra stitch (0172).",
+      "gearSlots": ["keepsake", "coat", "belt"],
+      "gearFold": "stout",
+      "keeps": {"keepsake": "tilly_ribbon"},
       "combos": [
         {"id": "stuck_fast", "name": "Stuck Fast", "by": "physical", "on": "sticky", "result": "adds", "status": "cracked", "turns": 2}
       ],
@@ -128,7 +162,17 @@
         {"level": 17, "hp": 602, "mp": 34, "atk": 41, "mag": 22, "def": 28, "res": 40, "spd": 20},
         {"level": 18, "hp": 650, "mp": 36, "atk": 42, "mag": 23, "def": 29, "res": 42, "spd": 21},
         {"level": 19, "hp": 700, "mp": 36, "atk": 44, "mag": 24, "def": 30, "res": 43, "spd": 21},
-        {"level": 20, "hp": 752, "mp": 38, "atk": 45, "mag": 25, "def": 31, "res": 45, "spd": 22}
+        {"level": 20, "hp": 752, "mp": 38, "atk": 45, "mag": 25, "def": 31, "res": 45, "spd": 22},
+        { "level": 21, "hp": 805, "mp": 38, "atk": 47, "mag": 26, "def": 33, "res": 47, "spd": 22 },
+        { "level": 22, "hp": 859, "mp": 40, "atk": 48, "mag": 27, "def": 34, "res": 48, "spd": 23 },
+        { "level": 23, "hp": 912, "mp": 40, "atk": 50, "mag": 28, "def": 35, "res": 50, "spd": 23 },
+        { "level": 24, "hp": 965, "mp": 42, "atk": 51, "mag": 29, "def": 36, "res": 52, "spd": 24 },
+        { "level": 25, "hp": 1017, "mp": 42, "atk": 53, "mag": 30, "def": 38, "res": 53, "spd": 24 },
+        { "level": 26, "hp": 1068, "mp": 44, "atk": 54, "mag": 31, "def": 39, "res": 55, "spd": 25 },
+        { "level": 27, "hp": 1119, "mp": 44, "atk": 56, "mag": 32, "def": 40, "res": 57, "spd": 25 },
+        { "level": 28, "hp": 1168, "mp": 46, "atk": 57, "mag": 33, "def": 41, "res": 58, "spd": 26 },
+        { "level": 29, "hp": 1215, "mp": 46, "atk": 59, "mag": 34, "def": 43, "res": 60, "spd": 26 },
+        { "level": 30, "hp": 1259, "mp": 48, "atk": 60, "mag": 35, "def": 44, "res": 62, "spd": 27 }
       ],
       "start": {"known": ["won_t_let_go", "bites_back", "honk", "nip_awake"], "equipped": ["won_t_let_go", "bites_back", "honk", "nip_awake"], "ward": "preen", "wards": ["preen"]}
     },
@@ -161,7 +205,17 @@
         { "level": 17, "hp": 575, "mp": 5, "atk": 27, "mag": 55, "def": 23, "res": 44, "spd": 18 },
         { "level": 18, "hp": 622, "mp": 5, "atk": 28, "mag": 58, "def": 24, "res": 46, "spd": 19 },
         { "level": 19, "hp": 672, "mp": 5, "atk": 29, "mag": 60, "def": 25, "res": 48, "spd": 19 },
-        { "level": 20, "hp": 724, "mp": 5, "atk": 30, "mag": 63, "def": 26, "res": 50, "spd": 20 }
+        { "level": 20, "hp": 724, "mp": 5, "atk": 30, "mag": 63, "def": 26, "res": 50, "spd": 20 },
+        { "level": 21, "hp": 774, "mp": 5, "atk": 30, "mag": 66, "def": 26, "res": 52, "spd": 20 },
+        { "level": 22, "hp": 820, "mp": 5, "atk": 31, "mag": 69, "def": 27, "res": 54, "spd": 21 },
+        { "level": 23, "hp": 864, "mp": 5, "atk": 31, "mag": 72, "def": 27, "res": 56, "spd": 22 },
+        { "level": 24, "hp": 905, "mp": 5, "atk": 32, "mag": 75, "def": 28, "res": 58, "spd": 22 },
+        { "level": 25, "hp": 944, "mp": 5, "atk": 32, "mag": 78, "def": 28, "res": 60, "spd": 23 },
+        { "level": 26, "hp": 982, "mp": 5, "atk": 33, "mag": 81, "def": 29, "res": 62, "spd": 24 },
+        { "level": 27, "hp": 1018, "mp": 5, "atk": 33, "mag": 84, "def": 29, "res": 64, "spd": 24 },
+        { "level": 28, "hp": 1054, "mp": 5, "atk": 34, "mag": 87, "def": 30, "res": 66, "spd": 25 },
+        { "level": 29, "hp": 1090, "mp": 5, "atk": 34, "mag": 90, "def": 30, "res": 68, "spd": 26 },
+        { "level": 30, "hp": 1128, "mp": 5, "atk": 35, "mag": 93, "def": 31, "res": 70, "spd": 27 }
       ],
       "start": { "known": ["old_country_air", "nonsense_verse", "kitchen_reel", "played_for_the_governor"], "equipped": ["old_country_air", "nonsense_verse", "kitchen_reel", "played_for_the_governor"], "ward": "tune_up", "wards": ["tune_up"] }
     }

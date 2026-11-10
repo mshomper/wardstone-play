@@ -1,0 +1,45 @@
+{
+ "id": "singing-school",
+ "title": "The Singing School",
+ "side": true,
+ "blurb": "Reverend Kent has a meetinghouse and a winter, and nobody to lead the singing school or sing in it.",
+ "_note": "Decision 0434 (Matt's picks, 9 Nov 2026): after Thadeous joins. Find the tune books, have the parts printed, and talk round singers: six townsfolk, each with a small condition; four is enough to go ahead. Walking into the Tankard while it's on only brings a warning. At dusk the meetinghouse fills with whoever came, and Thadeous learns The Whole Room, a rank up for each singer past four (story/singing.ts).",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The Singing School",
+   "objective": "",
+   "done": { "flags": ["ss_asked"] },
+   "sets": ["ss_asked"],
+   "auto": [{ "go": "pasture-lane" }, { "go": "meetinghouse-hill" }, { "talk": "asher_kent" }]
+  },
+  {
+   "id": "books",
+   "title": "The Singing School",
+   "objective": "Find something to sing from. Miss Sprague, the schoolmistress, will know.",
+   "done": { "flags": ["ss_books"] },
+   "sets": ["ss_books"],
+   "skip": { "area": "meetinghouse-hill", "spot": "The schoolhouse door" },
+   "auto": [{ "use": "door_meetinghouse_hill_the_schoolhouse" }, { "use": "ss_tune_books" }]
+  },
+  {
+   "id": "singers",
+   "title": "The Singing School",
+   "objective": "Talk round singers for tonight, and have the parts printed. Keep Thadeous out of the Tankard.",
+   "count": { "flags": ["ss_singer_pratt", "ss_singer_whipple", "ss_singer_cobb", "ss_singer_ames", "ss_singer_nason", "ss_singer_submit"] },
+   "done": { "flags": ["ss_enough", "ss_parts"] },
+   "sets": ["ss_parts_ordered", "ss_parts", "ss_enough"],
+   "skip": { "area": "harlow-bridge", "spot": "The pump" },
+   "auto": [{"go": "meetinghouse-hill", "if": {"notFlags": ["ss_singer_ames"]}}, {"go": "harlow-bridge", "if": {"notFlags": ["ss_singer_ames"]}}, {"talk": "hannah_corliss"}, {"talk": "phineas_whipple"}, {"talk": "lydia_ames"}, {"use": "door_harlow_bridge_widow_ames_s_house"}, {"use": "ss_ames_chair"}, {"go": "harlow-bridge", "if": {"flags": ["ss_singer_ames"], "notFlags": ["ss_tolman_down"]}}, {"talk": "hannah_corliss"}, {"talk": "moses_pratt"}, {"go": "mill-street", "if": {"notFlags": ["ss_tolman_down"]}}, {"talk": "ebenezer_tolman"}, {"go": "harlow-bridge", "if": {"flags": ["ss_tolman_down"]}}, {"go": "meetinghouse-hill", "if": {"flags": ["ss_tolman_down"]}}, {"talk": "submit_tolman"}]
+  },
+  {
+   "id": "evening",
+   "title": "The Singing School",
+   "objective": "Go up to the meetinghouse. They'll have the candles lit.",
+   "done": { "flags": ["ss_done"] },
+   "sets": ["ss_done"],
+   "skip": { "area": "meetinghouse-hill", "spot": "Meetinghouse door" },
+   "auto": [{ "use": "door_meetinghouse_hill_the_meetinghouse" }, { "use": "ss_evening" }]
+  }
+ ]
+}

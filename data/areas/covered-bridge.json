@@ -1,0 +1,447 @@
+{
+ "version": 1,
+ "name": "covered-bridge",
+ "seed": 4211,
+ "size": {
+  "w": 48,
+  "h": 32
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.3,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "bare_tree_0",
+     "maple_red_0",
+     "bare_tree_1",
+     "white_pine_0",
+     "maple_orange_0"
+    ],
+    "density": 0.5,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1",
+     "bare_tree_1"
+    ],
+    "density": 0.2,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "water",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "boulder_mossy_0",
+     "boulder_mossy_1",
+     "tree_stump_0"
+    ],
+    "density": 0.05,
+    "spacing": 4,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "open",
+    "collide": 0.4
+   },
+   {
+    "props": [
+     "goldenrod_1",
+     "asters_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.16,
+    "spacing": 1.2,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "path"
+   },
+   {
+    "props": [
+     "cattails_0",
+     "cattails_1"
+    ],
+    "density": 0.12,
+    "spacing": 1.6,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "water"
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -24,
+     0
+    ],
+    [
+     -16,
+     0.2
+    ],
+    [
+     -8.6,
+     0
+    ]
+   ],
+   "width": 3,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     8.6,
+     0
+    ],
+    [
+     16,
+     -0.2
+    ],
+    [
+     24,
+     0
+    ]
+   ],
+   "width": 3,
+   "kind": "road"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "bridge",
+   "kind": "bridge",
+   "x": 0,
+   "z": 0,
+   "w": 17.2,
+   "d": 2.8,
+   "rot": 0,
+   "height": 2.6
+  }
+ ],
+ "landmarks": [],
+ "arenas": [
+  {
+   "x": -15.5,
+   "z": -7.4,
+   "radius": 2.6
+  },
+  {
+   "x": -15,
+   "z": 7.6,
+   "radius": 2.6
+  },
+  {
+   "x": 15.5,
+   "z": -7.4,
+   "radius": 2.6
+  },
+  {
+   "x": 15,
+   "z": 7.6,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "notices_layered",
+   "x": -7.3,
+   "z": -1.12,
+   "collide": 0,
+   "y": 1.0
+  },
+  {
+   "prop": "notices_layered",
+   "x": -6.4,
+   "z": -1.12,
+   "collide": 0,
+   "y": 1.05,
+   "flip": true
+  },
+  {
+   "prop": "toll_stool",
+   "x": -10.2,
+   "z": -2.3,
+   "collide": 0.25
+  },
+  {
+   "prop": "lantern_post",
+   "x": -10.4,
+   "z": 2.4,
+   "collide": 0.25
+  },
+  {
+   "prop": "signpost",
+   "x": 10.6,
+   "z": -2.6,
+   "collide": 0.15
+  },
+  {
+   "prop": "rest_stone",
+   "x": 11.2,
+   "z": 2.8,
+   "collide": 0.5
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -6.6,
+   "z": -5.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 6.4,
+   "z": 5.8,
+   "collide": 0.5
+  },
+  {
+   "prop": "cattails_0",
+   "x": -5.4,
+   "z": 4.4,
+   "collide": 0
+  },
+  {
+   "prop": "cattails_1",
+   "x": 5.2,
+   "z": -4.6,
+   "collide": 0
+  },
+  {
+   "prop": "reeds_frozen_0",
+   "x": -5.2,
+   "z": -9.4,
+   "collide": 0
+  },
+  {
+   "prop": "reeds_frozen_1",
+   "x": 5.4,
+   "z": 10.2,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -21.25,
+   "z": -12.29,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": -9.86,
+   "z": 5.03,
+   "collide": 0.5
+  },
+  {
+   "prop": "asters_0",
+   "x": -21.39,
+   "z": 4.68,
+   "collide": 0
+  },
+  {
+   "prop": "fallen_log_0",
+   "x": -5.83,
+   "z": 9.99,
+   "collide": 0.4
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 6.49,
+   "z": 2.92,
+   "collide": 0
+  },
+  {
+   "prop": "cordwood",
+   "x": 14.22,
+   "z": 3.07,
+   "collide": 0.6
+  },
+  {
+   "prop": "asters_0",
+   "x": 9.89,
+   "z": -6.13,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": -12.67,
+   "z": -3.45,
+   "collide": 0
+  },
+  {
+   "prop": "fallen_log_0",
+   "x": -10.73,
+   "z": 11.79,
+   "collide": 0.4
+  },
+  {
+   "prop": "fallen_log_0",
+   "x": -12.76,
+   "z": -12.13,
+   "collide": 0.4
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 12.16,
+   "z": 11.72,
+   "collide": 0.5
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 6.62,
+   "z": -7.13,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_0",
+   "x": 19.37,
+   "z": -13.11,
+   "collide": 0
+  },
+  {
+   "prop": "asters_0",
+   "x": -10.4,
+   "z": -7.35,
+   "collide": 0
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -24,
+     0
+    ],
+    [
+     24,
+     0
+    ]
+   ],
+   "radius": 2.4
+  }
+ ],
+ "spots": [
+  {
+   "name": "From Mill Street",
+   "x": -19.0,
+   "z": 0
+  },
+  {
+   "name": "The west portal",
+   "x": -10.0,
+   "z": -1.4,
+   "note": "Bartholomew Swain at his toll stool: the bridge takes stories, not coin."
+  },
+  {
+   "name": "The notices",
+   "x": -6.9,
+   "z": -0.4,
+   "note": "Layered notices nailed up inside the bridge; the oldest a torn search notice (a find to read)."
+  },
+  {
+   "name": "Mid-river",
+   "x": 0,
+   "z": 0.4,
+   "note": "Inside the bridge over the water: dark, bars of light, the river loud below."
+  },
+  {
+   "name": "The east portal",
+   "x": 10.0,
+   "z": 1.2
+  },
+  {
+   "name": "From Tanner's Row",
+   "x": 19.0,
+   "z": 0
+  }
+ ],
+ "start": [
+  -19.0,
+  0
+ ],
+ "exits": [
+  {
+   "rect": [
+    -21.6,
+    -2,
+    -20.4,
+    2
+   ],
+   "to": "mill-street",
+   "at": [
+    23.4,
+    0.4
+   ],
+   "dir": 2
+  },
+  {
+   "rect": [
+    20.4,
+    -2,
+    21.6,
+    2
+   ],
+   "to": "tanners-row",
+   "at": [
+    -15.4,
+    -11.6
+   ],
+   "dir": 6
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    0.4,
+    -17
+   ],
+   [
+    -0.6,
+    -8
+   ],
+   [
+    0.5,
+    0
+   ],
+   [
+    -0.4,
+    8
+   ],
+   [
+    0.4,
+    17
+   ]
+  ],
+  "width": 9,
+  "depth": 1.4
+ }
+}

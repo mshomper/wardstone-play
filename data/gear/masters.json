@@ -3,7 +3,7 @@
   "commission": { "goods": 250 },
   "masters": [
     { "id": "test_master", "name": "A test master", "town": "kettle-notch", "slot": "any", "test": true, "placed": true },
-    { "id": "harlow_master", "name": "The market's tailor", "town": "harlow-bridge", "slot": "coat", "material": null, "placed": false,
+    { "id": "euphemia_lord", "name": "Euphemia Lord", "town": "harlow-bridge", "slot": "coat", "material": "drowned_indigo", "placed": true, "opens": { "flags": ["dye_book_returned"] }, "lines": { "notYet": "That's the price. You'll do the other thing first.", "made": "Wear it in before you judge it. Then judge it.", "raised": "Somebody made this well. Hold still while I make it mine." },
       "touch": { "id": "cut_close", "name": "Cut close", "does": "cut_close", "when": "passive", "field": "mul", "as": "less", "lo": 0.3, "hi": 0.3, "cap": 0.5, "points": 0, "tag": "First heavy blow {less:mul} softer", "text": "The first blow each fight that would take a quarter of your health lands {less:mul} softer." } },
     { "id": "fallow_master", "name": "The pouch-maker on the terraces", "town": "fallow-bend", "slot": "belt", "material": null, "placed": false,
       "touch": { "id": "pouch_holds", "name": "A pouch that holds", "does": "pouch_holds", "when": "passive", "field": "chance", "lo": 1, "hi": 1, "cap": 1, "points": 0, "tag": "First item each fight: kept", "text": "The first item you use each fight isn't used up." } },

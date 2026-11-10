@@ -78,6 +78,7 @@
     { "id": "cowbell", "name": "Cowbell", "icon": "cowbell", "kind": "battle", "use": "turn", "target": "one", "element": "physical", "desc": "Rattles one foe. It's Slow for 2 turns, and goes last.", "value": 7, "status": [{ "id": "slow", "turns": 2 }] },
     { "id": "wool_scarf", "name": "Wool Scarf", "icon": "scarf", "kind": "battle", "use": "turn", "desc": "You can't be Chilled for the rest of this fight.", "value": 8, "immune": "chilled" },
 
+    { "id": "drowned_indigo", "name": "Cake of Drowned Indigo", "icon": "chalk", "kind": "trade", "rare": true, "desc": "The Lords' old indigo, kept in the ice. Nobody's mixed it right since.", "value": 60 },
     { "id": "old_thread", "name": "Hank of Old Thread", "icon": "thimble", "kind": "trade", "rare": true, "desc": "Nobody has spun thread like this in living memory. It only comes off old work.", "value": 150 },
     { "id": "rime_shard", "name": "Rime Shard", "icon": "shard", "kind": "trade", "desc": "A sliver of cold that won't melt. Left behind by a rimeling.", "value": 5 },
     { "id": "burrback_quill", "name": "Burrback Quill", "icon": "quill", "kind": "trade", "desc": "Sharp, frost-tipped, and shed in a temper.", "value": 8 },
@@ -101,6 +102,9 @@
     { "id": "crow_feather", "name": "Crow Feather", "icon": "quill", "kind": "trade", "desc": "Glossy black. A crow left it on purpose. Crows do.", "value": 5 },
     { "id": "hare_foot", "name": "Hare's Foot", "icon": "harefoot", "kind": "trade", "desc": "White already, from the cold side. Didn't help the hare.", "value": 7 },
     { "id": "tansy", "name": "Sprig of Tansy", "icon": "leaf", "kind": "trade", "desc": "Yellow buttons on a stalk, from the verge. Keeps the flies honest.", "value": 4 },
+    { "id": "bell_rust", "name": "Bell Rust", "icon": "shard", "kind": "trade", "desc": "Flakes of rust off Lower Harlow's old bell. It was always flat.", "value": 7 },
+    { "id": "lake_glass", "name": "Lake Glass", "icon": "shard", "kind": "trade", "desc": "A lens of clear green ice that doesn't melt. You can see a long way down through it.", "value": 8 },
+    { "id": "pike_scale", "name": "Pike Scale", "icon": "shard", "kind": "trade", "rare": true, "desc": "A scale off Old Gran, bigger than your hand. She was bigger than the boat.", "value": 40 },
     { "id": "hag_stone", "name": "Hag Stone", "icon": "stone", "kind": "trade", "desc": "A river stone with a hole worn through it. Look through it if you must.", "value": 6 },
     { "id": "bottle_cork", "name": "Bottle Cork", "icon": "cork", "kind": "trade", "desc": "From one of Reuben's barrels. Smells of something better than you'll ever drink.", "value": 4 },
     { "id": "cider_dregs", "name": "Hard Cider Dregs", "icon": "mug", "kind": "trade", "desc": "The bottom of the barrel, and proud of it.", "value": 5 },

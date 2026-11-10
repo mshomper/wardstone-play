@@ -1151,12 +1151,6 @@
   },
   {
    "prop": "fence_picket",
-   "x": -0.5,
-   "z": 4.8,
-   "collide": 0.2
-  },
-  {
-   "prop": "fence_picket",
    "x": -4.5,
    "z": 4.8,
    "collide": 0.2
@@ -1511,12 +1505,6 @@
   },
   {
    "prop": "crate_0",
-   "x": 15.85,
-   "z": 4.12,
-   "collide": 0.3
-  },
-  {
-   "prop": "crate_0",
    "x": -8.58,
    "z": -15.97,
    "collide": 0.3
@@ -1562,6 +1550,12 @@
    "x": 10.11,
    "z": -15.96,
    "collide": 0.3
+  },
+  {
+   "prop": "wool_bales",
+   "x": -1.23,
+   "z": 3.39,
+   "collide": 0.6
   },
   {
    "prop": "bare_tree_0",
@@ -1805,13 +1799,74 @@
    "name": "The bridge portal",
    "x": 25,
    "z": 0.4,
-   "note": "The covered bridge over the river; Tanner's Row beyond (not built yet)."
+   "note": "The covered bridge over the river; Tanner's Row beyond."
   },
   {
    "name": "The ferry landing",
    "x": 14.2,
    "z": 23.6,
    "note": "Hezekiah. Closed until Fallow Bend."
+  },
+  {
+   "name": "Mrs. Tolman with his dinner",
+   "x": -3.8,
+   "z": -1.6,
+   "note": "Submit Tolman at noon, with Ebenezer's dinner (decision 0476)."
+  },
+  {
+   "name": "Ruel by the sawmill",
+   "x": 17.6,
+   "z": -1.4,
+   "note": "Ruel Batchelder, sixty years on that saw."
+  },
+  {
+   "name": "Round: Ruel by the barrels",
+   "x": 11.6,
+   "z": -2.6
+  },
+  {
+   "name": "Rhoda on her step",
+   "x": -25.4,
+   "z": 3.6,
+   "note": "Rhoda Cobb knitting on the step of south no. 2."
+  },
+  {
+   "name": "Round: Rhoda's door",
+   "x": -26.7,
+   "z": 3.7
+  },
+  {
+   "name": "Mrs. Kidder at the fulling mill",
+   "x": 18.6,
+   "z": 2.6,
+   "note": "Jerusha Kidder, who runs the fulling mill."
+  },
+  {
+   "name": "Round: Mrs. Kidder by the ferry road",
+   "x": 15.8,
+   "z": 10.4
+  },
+  {
+   "name": "Mrs. Walker at her door",
+   "x": -0.2,
+   "z": 5.6,
+   "note": "Hepzibah Walker, who keeps the boarding house."
+  },
+  {
+   "name": "Round: the boarding house door",
+   "x": -2.0,
+   "z": 5.6
+  },
+  {
+   "name": "Lucinda by the fulling mill",
+   "x": 15.6,
+   "z": 4.8,
+   "note": "Lucinda Bean, a mill girl with nothing to do till noon."
+  },
+  {
+   "name": "Round: Lucinda by the store",
+   "x": 12.4,
+   "z": 4.4
   }
  ],
  "start": [
@@ -1832,6 +1887,20 @@
     -1
    ],
    "dir": 2
+  },
+  {
+   "rect": [
+    25.4,
+    -0.9,
+    26.4,
+    1.7
+   ],
+   "to": "covered-bridge",
+   "at": [
+    -19.0,
+    0
+   ],
+   "dir": 6
   }
  ],
  "brook": {

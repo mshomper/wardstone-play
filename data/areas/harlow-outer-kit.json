@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "name": "harlow-outer-kit",
+  "seed": 383384,
+  "size": {
+    "w": 96,
+    "h": 56
+  },
+  "mood": {
+    "baseHeight": 0,
+    "edgeRise": 3.2,
+    "edgeWidth": 6,
+    "roll": 0.8,
+    "pathMargin": 0.6,
+    "tiles": {
+      "open": "grass_leaves",
+      "under": "leaf_litter",
+      "road": "road",
+      "path": "path",
+      "cobble": "cobble",
+      "brookBed": "brook_bed"
+    },
+    "species": [
+      {
+        "props": [
+          "white_pine_0",
+          "white_pine_1"
+        ],
+        "density": 0.2,
+        "spacing": 2.2,
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "near": "edge",
+        "collide": 0.4,
+        "tall": true
+      }
+    ]
+  },
+  "paths": [
+    {
+      "points": [
+        [
+          -48,
+          16
+        ],
+        [
+          48,
+          16
+        ]
+      ],
+      "width": 2.2,
+      "kind": "road"
+    }
+  ],
+  "walls": [],
+  "buildings": [
+    {
+      "mesh": "tan_vats",
+      "x": -32,
+      "z": 6,
+      "w": 7.2,
+      "d": 4.4,
+      "rot": 0,
+      "height": 0.3
+    },
+    {
+      "mesh": "bark_mill",
+      "x": -18,
+      "z": 6,
+      "w": 5,
+      "d": 5,
+      "rot": 0,
+      "height": 4.0
+    },
+    {
+      "mesh": "ice_blocks_0",
+      "x": -7,
+      "z": 6,
+      "w": 2.4,
+      "d": 1.6,
+      "rot": 0,
+      "height": 1.3
+    },
+    {
+      "mesh": "ice_blocks_1",
+      "x": -2,
+      "z": 6,
+      "w": 1.8,
+      "d": 1.4,
+      "rot": 0,
+      "height": 0.9
+    },
+    {
+      "mesh": "sluice_gate",
+      "x": 8,
+      "z": 6,
+      "w": 4,
+      "d": 3,
+      "rot": 0,
+      "height": 3.5
+    },
+    {
+      "mesh": "ice_ramp",
+      "x": 22,
+      "z": 5,
+      "w": 3,
+      "d": 7,
+      "rot": 0,
+      "height": 1.8
+    },
+    {
+      "mesh": "kit",
+      "recipe": "tannery",
+      "x": -18,
+      "z": -12,
+      "w": 14,
+      "d": 6,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -7.0,
+              -3.0
+            ],
+            [
+              7.0,
+              -3.0
+            ],
+            [
+              7.0,
+              3.0
+            ],
+            [
+              -7.0,
+              3.0
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    },
+    {
+      "mesh": "kit",
+      "recipe": "grogshop",
+      "x": 6,
+      "z": -12,
+      "w": 5,
+      "d": 7,
+      "rot": 0,
+      "height": 6,
+      "parts": [
+        {
+          "footprint": [
+            [
+              -2.5,
+              -3.5
+            ],
+            [
+              2.5,
+              -3.5
+            ],
+            [
+              2.5,
+              3.5
+            ],
+            [
+              -2.5,
+              3.5
+            ]
+          ]
+        }
+      ],
+      "variants": {}
+    }
+  ],
+  "landmarks": [],
+  "arenas": [],
+  "placements": [],
+  "keepClear": [
+    {
+      "points": [
+        [
+          -44,
+          6
+        ],
+        [
+          40,
+          6
+        ]
+      ],
+      "radius": 9
+    },
+    {
+      "points": [
+        [
+          -40,
+          -12
+        ],
+        [
+          30,
+          -12
+        ]
+      ],
+      "radius": 10
+    }
+  ],
+  "spots": [],
+  "start": [
+    0,
+    18
+  ],
+  "exits": []
+}

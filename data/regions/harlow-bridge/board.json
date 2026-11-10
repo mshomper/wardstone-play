@@ -1,0 +1,135 @@
+{
+  "_note": "The noticeboard on Market Square (docs/15-regions.md, Noticeboards; decision 0484). Kettle Notch's board.json is the model and its note holds here: the seed picks a writer's line and fills {where} from `spots` and {in} from `places`; `pay` is the least and most each kind may pay, in item worth, and `npm run check` holds every payment to it. Harlow pays about half as much again as Hardscrabble, for levels 14 to 18, and gear comes more often and Stout (one Sunday Best line). Hannah Corliss sets every notice, so the blurb says so; she doesn't write them. A writer keeps to one place at every hour, so the map's star is never wrong: Fessenden, the Squire and Gault on Market Square, Mrs. Kidder on Mill Street, Mother Peck in the Row boarding house. Abel Mudgett is on the lake by day and the mill rows at night, so his notice is a posted one. Lower Harlow is left out: it resets, and board work stays above ground. The Watcher isn't a board fight.",
+  "show": 3,
+  "hold": 3,
+  "pay": { "deliver": [6, 9], "find": [9, 14], "thin": [14, 21], "clear": [21, 30], "bring": [0, 30] },
+  "gear": { "chance": 0.24 },
+  "gearHint": "There's a man at the Tankard with a month paid ahead who deals in that sort of thing. He'll tell you what it's worth. He'll tell you twice.",
+  "town": "harlow-bridge",
+  "words": {
+    "find": "Find {name}'s {thing}, {where}.",
+    "findBack": "Take the {thing} back to {name}.",
+    "found": "{name}'s {thing}, just where the notice said.",
+    "deliver": "Take the {thing} to {to}.",
+    "deliverBack": "Tell {name} it's delivered.",
+    "bring": "Bring {name} {of} {things}.",
+    "bringBack": "Hand {name} the {things}.",
+    "thin": "Clear two lots of creatures from {in}.",
+    "clear": "Clear every creature from {in}.",
+    "fightBack": "Tell {name} it's done.",
+    "short": "That's not all of them. I said {of}.",
+    "blurb": "A notice on the board in Market Square, from {name}, set by Hannah Corliss. Pays {pay}.",
+    "fightBlurb": "A notice on the board in Market Square, from {name}, set by Hannah Corliss. Pays {pay}. Creatures already seen off come back after a rest."
+  },
+  "posted": [
+    { "text": "ORDINANCE. No singing in Market Square after ten o'clock at night. This applies to everyone. A. HATCH, J.P." },
+    { "text": "ICE, cut and put up, when the lake freezes. Not before. Not from round the steeple. A. MUDGETT" },
+    { "text": "STAGE leaves Thursday. Not Wednesday. Not after dark. L. COBURN" },
+    { "if": { "flags": ["harlow_stone_woke"] }, "text": "MILL RUNNING. Hands wanted at noon. A. FRYE, for the mill office" }
+  ],
+  "places": {
+    "harlow-bridge": { "in": "Market Square" },
+    "mill-street": { "in": "Mill Street" },
+    "meetinghouse-hill": { "in": "Meetinghouse Hill" },
+    "pasture-lane": { "in": "the Pasture Lane", "fights": ["pl-cart", "pl-pen", "pl-frost"] },
+    "north-lots": { "in": "the North Lots", "fights": ["nl-west", "nl-lane", "nl-mid", "nl-east", "nl-tough"] },
+    "covered-bridge": { "in": "the Covered Bridge", "fights": ["covered-bridge-north", "covered-bridge-south"] },
+    "tanners-row": { "in": "Tanner's Row", "fights": ["tanners-row-vats", "tanners-row-yard", "tanners-row-frames", "tanners-row-tough"] },
+    "mill-pond": { "in": "the Mill Pond", "fights": ["mill-pond-bank", "mill-pond-sluice"] },
+    "drowned-town": { "in": "the Drowned Town", "fights": ["drowned-town-shore", "drowned-town-ice", "drowned-town-steeple", "drowned-town-tough"] }
+  },
+  "spots": [
+    { "id": "spot_hb_pump", "place": "harlow-bridge", "where": "by the pump in Market Square" },
+    { "id": "spot_hb_rail", "place": "harlow-bridge", "where": "under the hitching rail by the Tankard" },
+    { "id": "spot_ms_steps", "place": "mill-street", "where": "by the row steps on Mill Street" },
+    { "id": "spot_mh_green", "place": "meetinghouse-hill", "where": "on the meetinghouse green" },
+    { "id": "spot_pl_cart", "place": "pasture-lane", "where": "under the hay cart on the Pasture Lane" },
+    { "id": "spot_cb_portal", "place": "covered-bridge", "where": "inside the east end of the Covered Bridge" },
+    { "id": "spot_tr_frames", "place": "tanners-row", "where": "by the hide frames on Tanner's Row" },
+    { "id": "spot_mp_sluice", "place": "mill-pond", "where": "by the sluice gate on the Mill Pond" },
+    { "id": "spot_dt_road", "place": "drowned-town", "where": "where the old road goes down into the lake" }
+  ],
+  "writers": [
+    {
+      "person": "asahel_fessenden",
+      "signed": "A. Fessenden, dry goods",
+      "at": [{ "if": { "timeFrom": 19 }, "words": "upstairs over his shop, after dark" }, { "if": { "timeTo": 7 }, "words": "upstairs over his shop, after dark" }],
+      "thanks": ["Good. I'll write that down.", "Obliged. I'd check it twice, but I'll take your word.", "That's done. Everything's up this month but that."],
+      "pays": {
+        "deliver": [{ "lamp_oil": 1 }, { "wool_scarf": 1 }],
+        "find": [{ "lamp_oil": 1, "bootlaces": 1 }, { "wool_scarf": 1, "bootlaces": 1 }],
+        "thin": [{ "wool_scarf": 1, "lamp_oil": 1 }, { "lamp_oil": 2 }],
+        "clear": [{ "wool_scarf": 2, "lamp_oil": 1 }, { "silver_thimble": 1, "lamp_oil": 1 }]
+      },
+      "notices": [
+        { "id": "yardstick", "kind": "find", "title": "My Yardstick", "thing": "yardstick", "text": "Lost my yardstick {where}. Brass at both ends. It was a yard when I dropped it. Bring it in before the cold gets at it." },
+        { "id": "bolt", "kind": "deliver", "title": "Twenty-Two Yards", "thing": "bolt of cloth", "to": "jerusha_kidder", "got": "Twenty-two before fulling. It comes back shorter. That's what fulling is. Tell him.", "text": "Take this bolt to Mrs. Kidder at the fulling mill. Twenty-two yards. I measured it twice. Ask her to measure it when it comes in." }
+      ]
+    },
+    {
+      "person": "abijah_hatch",
+      "signed": "A. Hatch, Justice of the Peace",
+      "at": [{ "if": { "timeFrom": 18 }, "words": "at home, after dark" }, { "if": { "timeTo": 8 }, "words": "at home, after dark" }],
+      "thanks": ["So noted.", "Very good. I'll enter it in the record.", "That will do. I'd thank you formally, but there's no form for it."],
+      "pays": {
+        "deliver": [{ "maple_sugar": 1 }, { "sassafras_tea": 1 }],
+        "find": [{ "birch_tonic": 1 }, { "rock_salt": 1 }],
+        "thin": [{ "mulled_cider": 1 }, { "rock_salt": 1, "sassafras_tea": 1 }],
+        "clear": [{ "mulled_cider": 1, "birch_tonic": 1 }, { "sugar_on_snow": 1, "rock_salt": 1 }]
+      },
+      "notices": [
+        { "id": "gloves", "kind": "thin", "title": "Kid Gloves", "gear": { "slot": "gloves", "rarity": "sunday", "bare": true }, "payWords": "the Squire's kid gloves from the bench", "places": ["covered-bridge", "tanners-row"], "text": "Kid gloves, for the bench. I wore them to be sworn in, and not since. See off two lots in {in} and they're yours." },
+        { "id": "seal", "kind": "find", "title": "The Seal", "thing": "seal", "text": "I have lost the seal of my office {where}. Brass, with the county on it. Until it's back, nothing I sign is so." },
+        { "id": "ten", "kind": "thin", "title": "After Ten", "text": "Something in {in} carries on after ten at night. The ordinance stops at the square. I'd like it seen to all the same. Two lots." }
+      ]
+    },
+    {
+      "person": "zebulon_gault",
+      "signed": "Z. Gault, the livery",
+      "at": [{ "if": { "timeFrom": 19 }, "words": "in the stable, after dark" }, { "if": { "timeTo": 6 }, "words": "in the stable, after dark" }],
+      "thanks": ["Good. The horses'll be glad. They won't show it.", "That'll do.", "Obliged. The gray says so too, in his way."],
+      "pays": {
+        "deliver": [{ "kindling": 1 }, { "horseshoe_nail": 1, "johnnycake": 1 }],
+        "find": [{ "cold_iron_nail": 1 }, { "hawks_bell": 1, "horseshoe_nail": 1 }],
+        "thin": [{ "rock_salt": 1, "horseshoe_nail": 1 }, { "cold_iron_nail": 2 }],
+        "clear": [{ "rock_salt": 2 }, { "rock_salt": 1, "cold_iron_nail": 1, "kindling": 1 }]
+      },
+      "notices": [
+        { "id": "boots", "kind": "thin", "title": "A Drummer's Boots", "gear": { "slot": "boots", "rarity": "stout", "bare": true }, "payWords": "a drummer's riding boots", "places": ["pasture-lane", "north-lots"], "text": "A drummer left his boots at the stable and went on by the stage. He'd no use for them sitting down. See off two lots in {in} and they're yours." },
+        { "id": "bars", "kind": "clear", "title": "Past the Bars", "places": ["pasture-lane"], "text": "The horses won't go up {in} past the bars. Clear it, all of it, and I'll take the gray up and see." }
+      ]
+    },
+    {
+      "person": "jerusha_kidder",
+      "signed": "J. Kidder, the fulling mill",
+      "at": [{ "if": { "timeFrom": 21 }, "words": "at home on the mill rows, after dark" }, { "if": { "timeTo": 6 }, "words": "at home on the mill rows, after dark" }],
+      "thanks": ["Good. One thing in this town done when it was meant to be.", "Thank you. Don't tell Penhallow it was quick. He'll want it quicker.", "That's done. Mind the race on your way."],
+      "pays": {
+        "deliver": [{ "warm_cider": 1 }, { "mustard_plaster": 1, "witch_hazel": 1 }],
+        "find": [{ "wool_scarf": 1, "mustard_plaster": 1 }, { "warm_cider": 2 }],
+        "thin": [{ "wool_scarf": 2 }, { "wool_scarf": 1, "warm_cider": 1, "mustard_plaster": 1 }],
+        "clear": [{ "wool_scarf": 3 }, { "wool_scarf": 2, "birch_tonic": 1 }]
+      },
+      "notices": [
+        { "id": "coat", "kind": "thin", "title": "Fulled Twice", "gear": { "slot": "coat", "rarity": "stout", "bare": true }, "payWords": "a coat fulled twice", "places": ["mill-pond", "drowned-town"], "text": "A coat went through the stocks twice by mistake. Wind won't go through it now, and nobody at the mill can get into it. See off two lots in {in} and it's yours." },
+        { "id": "race", "kind": "thin", "title": "Race Ice", "places": ["mill-pond"], "text": "Ice off {in} has been walking down into the race at night. Two lots, please. Mr. Penhallow wants the mill run till dark. It won't run with ice in the wheel either." }
+      ]
+    },
+    {
+      "person": "mother_peck",
+      "signed": "Mother Peck, the Row boarding house",
+      "at": [{ "if": { "timeFrom": 21 }, "words": "upstairs at the Row boarding house, after dark" }, { "if": { "timeTo": 6 }, "words": "upstairs at the Row boarding house, after dark" }, { "if": {}, "words": "at the stove in the Row boarding house" }],
+      "thanks": ["Sit. You've earned a bowl.", "Good. Hands eat first. You're a hand today.", "That's a help. Mind the step, it's greasy."],
+      "pays": {
+        "deliver": [{ "johnnycake": 2 }, { "apple_fritter": 2 }],
+        "find": [{ "apple_fritter": 1, "warm_cider": 1 }, { "johnnycake": 2, "warm_cider": 1 }],
+        "thin": [{ "hearth_stew": 1 }, { "chicken_pie": 1 }],
+        "clear": [{ "boiled_dinner": 1 }, { "hearth_stew": 1, "apple_fritter": 1, "johnnycake": 1 }]
+      },
+      "notices": [
+        { "id": "pot", "kind": "thin", "title": "The Stew Pot", "places": ["tanners-row"], "text": "The curs on {in} had my stew pot over again. See off two lots. Hands eat first. Curs don't eat at all." },
+        { "id": "cheese", "kind": "bring", "title": "Cheese for the Stew", "good": "sharp_cheddar", "of": 2, "things": "sharp cheddars", "from": "pasture-lane", "pays": [{ "hearth_stew": 1 }], "text": "Wanted: two cheeses for the hands' stew. The rams on the Pasture Lane have been at the carts coming down. They've more cheese than I have." }
+      ]
+    }
+  ]
+}

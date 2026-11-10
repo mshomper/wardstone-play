@@ -1,6 +1,678 @@
 {
   "_note": "Room types for interiors (decision 0022): big pieces (furniture meshes, buildkit/furniture.ts) with an anchor, a length range and depth, then small props (sprites) with an anchor: corner, wall, floor, on:<piece> (on top of it) or near:<piece>. A spot names where a story interaction stands (keep: hearth, press, counter). A prop rule with `box` [width, depth] takes that much floor against a wall; one with `container` can be opened: `containers` below says what each kind is called, its chance of holding something, what it might hold, and the lines it shows. Headwall: a long low piece (a bed) with its head to the back wall, else a side wall. Gear goes here when the gear branch lands: a find may then name gear instead of an item (see decision 0126).",
   "types": {
+    "tannery": {
+      "_note": "The Rowes' beam house on Tanner's Row: the work tables where hides are fleshed and scraped (spot `bench`, where the tanner works), shelves, barrels and kegs of oil and liquor, sacks of ground bark, crates, hides hung over the rails, a ladder up to the drying loft, an oil lamp.",
+      "pieces": [
+        {
+          "mesh": "table",
+          "anchor": "aisle",
+          "len": [
+            2.4,
+            3.2
+          ],
+          "depth": 1.0,
+          "spot": "bench"
+        },
+        {
+          "mesh": "shelf",
+          "anchor": "back",
+          "len": [
+            2.0,
+            3.5
+          ],
+          "depth": 0.6,
+          "prefer": "end",
+          "overWindows": true
+        },
+        {
+          "mesh": "table",
+          "anchor": "left",
+          "len": [
+            1.6,
+            2.2
+          ],
+          "depth": 0.8,
+          "chance": 0.85,
+          "overWindows": true
+        },
+        {
+          "mesh": "table",
+          "anchor": "window",
+          "len": [
+            1.6,
+            2.0
+          ],
+          "depth": 0.8,
+          "chance": 0.7
+        },
+        {
+          "mesh": "shelf",
+          "anchor": "right",
+          "len": [
+            1.6,
+            2.4
+          ],
+          "depth": 0.6,
+          "chance": 0.5,
+          "overWindows": true
+        },
+        {
+          "mesh": "bench",
+          "anchor": "wall",
+          "len": [
+            1.6,
+            2.4
+          ],
+          "depth": 0.45,
+          "chance": 0.6,
+          "overWindows": true
+        },
+        {
+          "mesh": "table",
+          "anchor": "tables",
+          "len": [
+            2.2,
+            2.6
+          ],
+          "depth": 0.9,
+          "count": [
+            1,
+            2
+          ],
+          "bench": "bench"
+        },
+        {
+          "mesh": "table",
+          "anchor": "right",
+          "len": [
+            1.6,
+            2.2
+          ],
+          "depth": 0.8,
+          "chance": 0.7,
+          "overWindows": true
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "hides_hung"
+          ],
+          "anchor": "wall",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.45
+        },
+        {
+          "props": [
+            "hides_hung"
+          ],
+          "anchor": "front",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.45
+        },
+        {
+          "props": [
+            "hides_hung"
+          ],
+          "anchor": "floor",
+          "count": [
+            3,
+            5
+          ],
+          "collide": 0.45
+        },
+        {
+          "props": [
+            "cider_barrel_0",
+            "cider_barrel_1"
+          ],
+          "anchor": "wall",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "barrel_lidded"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "box": [
+            0.7,
+            0.6
+          ],
+          "container": "barrel"
+        },
+        {
+          "props": [
+            "keg_stack"
+          ],
+          "anchor": "corner",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.5
+        },
+        {
+          "props": [
+            "sack_grain",
+            "grain_sacks"
+          ],
+          "anchor": "wall",
+          "count": [
+            3,
+            5
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "sack_grain"
+          ],
+          "anchor": "near:table",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "crate_stack"
+          ],
+          "anchor": "corner",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.4
+        },
+        {
+          "props": [
+            "crate_lid"
+          ],
+          "anchor": "wall",
+          "count": [
+            0,
+            1
+          ],
+          "box": [
+            0.9,
+            0.6
+          ],
+          "container": "crate"
+        },
+        {
+          "props": [
+            "crate_0"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.4
+        },
+        {
+          "props": [
+            "big_bucket",
+            "mortar_tub"
+          ],
+          "anchor": "near:table",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "ladder"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "on:table",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.15
+        },
+        {
+          "props": [
+            "cider_jug",
+            "tin_cup",
+            "jug_stoneware"
+          ],
+          "anchor": "on:table",
+          "count": [
+            1,
+            2
+          ]
+        },
+        {
+          "props": [
+            "stool"
+          ],
+          "anchor": "near:table",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "broom",
+            "bark_spud"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.2
+        },
+        {
+          "props": [
+            "cider_barrel_0",
+            "cider_barrel_1",
+            "sack_grain",
+            "crate_stack"
+          ],
+          "anchor": "front",
+          "count": [
+            3,
+            5
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "cider_barrel_0",
+            "cider_barrel_1",
+            "barrel_stack"
+          ],
+          "anchor": "floor",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.4
+        },
+        {
+          "props": [
+            "sack_grain",
+            "grain_sacks",
+            "big_bucket",
+            "mortar_tub"
+          ],
+          "anchor": "floor",
+          "count": [
+            3,
+            4
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "crate_stack",
+            "crate_0"
+          ],
+          "anchor": "floor",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.4
+        },
+        {
+          "props": [
+            "oil_lamp",
+            "candle_tall"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.15
+        },
+        {
+          "props": [
+            "coat_pegs"
+          ],
+          "anchor": "backwall",
+          "count": [
+            0,
+            1
+          ],
+          "y": 1.25
+        },
+        {
+          "props": [
+            "herb_bundle_hanging"
+          ],
+          "anchor": "backwall",
+          "count": [
+            0,
+            1
+          ],
+          "y": 2.3
+        }
+      ]
+    },
+    "grogshop": {
+      "_note": "The grog shop on Tanner's Row: a small rough taproom for the tannery hands. A short bar on the back wall (spots `bar` and `bar_stool`), the hearth, two to four tables with benches, stools, kegs, jugs, tankards and candles stuck in bottles. Furnishes a room of about 12 x 8.5 (a 7 x 5 building).",
+      "pieces": [
+        {
+          "mesh": "bar",
+          "anchor": "back",
+          "len": [
+            3.0,
+            4.0
+          ],
+          "depth": 2.2,
+          "prefer": "end",
+          "overWindows": true,
+          "spots": [
+            {
+              "name": "bar",
+              "along": 0.1,
+              "out": -1.2
+            },
+            {
+              "name": "bar_stool",
+              "along": -0.55,
+              "out": 0.6
+            }
+          ]
+        },
+        {
+          "mesh": "hearth",
+          "anchor": "feature",
+          "len": [
+            2.0,
+            2.2
+          ],
+          "depth": 0.8,
+          "spot": "hearth"
+        },
+        {
+          "mesh": "table",
+          "anchor": "tables",
+          "len": [
+            1.4,
+            1.4
+          ],
+          "depth": 0.8,
+          "count": [
+            2,
+            3
+          ],
+          "bench": "bench",
+          "spot": "table"
+        },
+        {
+          "mesh": "table",
+          "anchor": "tables",
+          "len": [
+            1.2,
+            1.2
+          ],
+          "depth": 0.75,
+          "count": [
+            1,
+            1
+          ],
+          "bench": "bench",
+          "chance": 0.6
+        },
+        {
+          "mesh": "bench",
+          "anchor": "right",
+          "len": [
+            1.6,
+            2.2
+          ],
+          "depth": 0.45,
+          "chance": 0.7,
+          "overWindows": true
+        },
+        {
+          "mesh": "table",
+          "anchor": "left",
+          "len": [
+            1.2,
+            1.4
+          ],
+          "depth": 0.7,
+          "chance": 0.6,
+          "overWindows": true
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "keg_stack"
+          ],
+          "anchor": "near:bar",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.5
+        },
+        {
+          "props": [
+            "keg_tapped"
+          ],
+          "anchor": "near:bar",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "on:bar",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "bottles_row",
+            "tankards_pair",
+            "tankard",
+            "jug_stoneware"
+          ],
+          "anchor": "on:bar",
+          "count": [
+            2,
+            3
+          ]
+        },
+        {
+          "props": [
+            "bar_stool"
+          ],
+          "anchor": "before:bar",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.15
+        },
+        {
+          "props": [
+            "candle_bottle"
+          ],
+          "anchor": "on:table",
+          "count": [
+            3,
+            5
+          ]
+        },
+        {
+          "props": [
+            "tankards_pair",
+            "tankard",
+            "cider_jug",
+            "jug_tipped",
+            "jug_stoneware"
+          ],
+          "anchor": "on:table",
+          "count": [
+            3,
+            5
+          ]
+        },
+        {
+          "props": [
+            "stool",
+            "stool",
+            "chair_wood"
+          ],
+          "anchor": "near:table",
+          "count": [
+            3,
+            5
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "cider_barrel_0",
+            "cider_barrel_1"
+          ],
+          "anchor": "corner",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "slate_prices"
+          ],
+          "anchor": "backwall",
+          "count": [
+            1,
+            1
+          ],
+          "y": 1.4
+        },
+        {
+          "props": [
+            "coat_pegs"
+          ],
+          "anchor": "backwall",
+          "count": [
+            0,
+            1
+          ],
+          "y": 1.25
+        },
+        {
+          "props": [
+            "candle_tall"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.15
+        },
+        {
+          "props": [
+            "crate_stack",
+            "sack_grain"
+          ],
+          "anchor": "corner",
+          "count": [
+            0,
+            1
+          ],
+          "collide": 0.35
+        },
+        {
+          "props": [
+            "broom"
+          ],
+          "anchor": "wall",
+          "count": [
+            0,
+            1
+          ],
+          "collide": 0.2
+        },
+        {
+          "props": [
+            "cat_sleeping"
+          ],
+          "anchor": "near:hearth",
+          "count": [
+            0,
+            1
+          ],
+          "collide": 0.2
+        },
+        {
+          "props": [
+            "cider_barrel_0",
+            "cider_barrel_1",
+            "stool",
+            "crate_stack"
+          ],
+          "anchor": "front",
+          "count": [
+            2,
+            3
+          ],
+          "collide": 0.3
+        }
+      ],
+      "entranceSpot": "door"
+    },
     "meeting": {
       "pieces": [
         {
@@ -107,6 +779,261 @@
           "collide": 0.2
         }
       ]
+    },
+    "meetinghouse": {
+      "_note": "Harlow Bridge's meetinghouse, about 1830 (decision 0435): one tall room, unheated, white plaster over dark wood. The raised pulpit in the middle of the back wall (spots `pulpit`, up in it, and `leader`, on the floor before it, where the singing master stands), the singing seats beside it (`singers_1` to `singers_3`), box pews in rows either side of the middle aisle (`pew_1` ... from the front row, left to right), a gallery on posts down each side with candles along its rail, candle stands and sconces round the walls. Furnishes a room of about 19 x 24 (the 11 x 14 meetinghouse at scale 1.7).",
+      "pieces": [
+        {
+          "mesh": "pulpit",
+          "anchor": "back",
+          "len": [
+            3.0,
+            3.0
+          ],
+          "depth": 2.0,
+          "prefer": "center",
+          "overWindows": true,
+          "spots": [
+            {
+              "name": "pulpit",
+              "out": -1.25
+            },
+            {
+              "name": "leader",
+              "out": 1.5
+            }
+          ]
+        },
+        {
+          "mesh": "bench",
+          "anchor": "beside",
+          "host": "pulpit",
+          "len": [
+            2.6,
+            2.6
+          ],
+          "depth": 0.45,
+          "spots": [
+            {
+              "name": "singers_1",
+              "along": -0.7,
+              "out": -0.25
+            },
+            {
+              "name": "singers_2",
+              "along": 0.7,
+              "out": -0.25
+            }
+          ]
+        },
+        {
+          "mesh": "bench",
+          "anchor": "beside",
+          "host": "bench",
+          "len": [
+            2.0,
+            2.0
+          ],
+          "depth": 0.45,
+          "spots": [
+            {
+              "name": "singers_3",
+              "along": 0,
+              "out": -0.25
+            }
+          ]
+        },
+        {
+          "mesh": "gallery",
+          "anchor": "left",
+          "len": [
+            14.0,
+            15.0
+          ],
+          "depth": 1.5,
+          "prefer": "center"
+        },
+        {
+          "mesh": "gallery",
+          "anchor": "right",
+          "len": [
+            14.0,
+            15.0
+          ],
+          "depth": 1.5,
+          "prefer": "center"
+        },
+        {
+          "mesh": "box_pew",
+          "anchor": "rows",
+          "len": [
+            2.4,
+            2.6
+          ],
+          "depth": 1.7,
+          "from": 4.9,
+          "aisle": 1.6,
+          "perSide": 2,
+          "spot": "pew"
+        }
+      ],
+      "props": [
+        {
+          "props": [
+            "mh_pulpit_desk"
+          ],
+          "anchor": "on:pulpit",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "mh_psalm_board"
+          ],
+          "anchor": "backwall",
+          "count": [
+            1,
+            1
+          ],
+          "y": 1.5,
+          "noFlip": true
+        },
+        {
+          "props": [
+            "mh_sconce"
+          ],
+          "anchor": "backwall",
+          "count": [
+            4,
+            4
+          ],
+          "y": 1.45
+        },
+        {
+          "props": [
+            "mh_rail_candle"
+          ],
+          "anchor": "on:gallery",
+          "count": [
+            6,
+            8
+          ]
+        },
+        {
+          "props": [
+            "mh_rail_candle"
+          ],
+          "anchor": "on:box_pew",
+          "count": [
+            10,
+            12
+          ]
+        },
+        {
+          "props": [
+            "mh_tune_books"
+          ],
+          "anchor": "on:bench",
+          "count": [
+            2,
+            3
+          ]
+        },
+        {
+          "props": [
+            "mh_bass_viol"
+          ],
+          "anchor": "near:bench",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "mh_chandelier"
+          ],
+          "anchor": "overaisle",
+          "count": [
+            3,
+            3
+          ],
+          "y": 2.4
+        },
+        {
+          "props": [
+            "mh_candle_stand"
+          ],
+          "anchor": "near:pulpit",
+          "count": [
+            2,
+            2
+          ],
+          "collide": 0.18
+        },
+        {
+          "props": [
+            "mh_candle_stand"
+          ],
+          "anchor": "corner",
+          "count": [
+            3,
+            4
+          ],
+          "collide": 0.18
+        },
+        {
+          "props": [
+            "mh_candle_stand"
+          ],
+          "anchor": "front",
+          "count": [
+            2,
+            2
+          ],
+          "collide": 0.18
+        },
+        {
+          "props": [
+            "mh_foot_stove"
+          ],
+          "anchor": "front",
+          "count": [
+            2,
+            3
+          ]
+        },
+        {
+          "props": [
+            "bell_rope"
+          ],
+          "anchor": "corner",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.2
+        },
+        {
+          "props": [
+            "chest"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "box": [
+            1.0,
+            0.6
+          ],
+          "container": "chest"
+        }
+      ],
+      "entranceSpot": "door"
     },
     "tally": {
       "pieces": [
@@ -2606,8 +3533,8 @@
           ],
           "anchor": "floor",
           "count": [
-            1,
-            2
+            0,
+            1
           ],
           "collide": 0.3
         },
@@ -2698,6 +3625,114 @@
             1
           ],
           "collide": 0.4
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "on:counter",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "oil_lamp"
+          ],
+          "anchor": "on:cutting_table",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "candle_tree"
+          ],
+          "anchor": "floor",
+          "count": [
+            2,
+            2
+          ],
+          "collide": 0.25
+        },
+        {
+          "props": [
+            "candle_tall"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.15
+        },
+        {
+          "props": [
+            "dress_form_coat"
+          ],
+          "anchor": "near:cutting_table",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "cutting_tools"
+          ],
+          "anchor": "on:cutting_table",
+          "count": [
+            1,
+            1
+          ]
+        },
+        {
+          "props": [
+            "yarn_rack"
+          ],
+          "anchor": "wall",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.45
+        },
+        {
+          "props": [
+            "indigo_crock",
+            "indigo_crock_1"
+          ],
+          "anchor": "corner",
+          "count": [
+            1,
+            2
+          ],
+          "collide": 0.3
+        },
+        {
+          "props": [
+            "swatch_board"
+          ],
+          "anchor": "backwall",
+          "count": [
+            1,
+            1
+          ],
+          "y": 1.35
+        },
+        {
+          "props": [
+            "bolts_indigo"
+          ],
+          "anchor": "near:bolt_shelf",
+          "count": [
+            1,
+            1
+          ],
+          "collide": 0.3
         }
       ]
     },
@@ -3101,6 +4136,47 @@
   },
   "plans": {
     "_note": "Room lists for kit recipes that don't carry their own in buildings.json, by the recipe's name (decision 0383). A recipe's own `rooms` win.",
+    "tannery": [
+      {
+        "rooms": [
+          {
+            "type": "tannery",
+            "share": 70,
+            "public": true
+          },
+          {
+            "type": "storeroom",
+            "share": 30
+          }
+        ],
+        "connect": [
+          [
+            "tannery",
+            "storeroom"
+          ]
+        ]
+      }
+    ],
+    "grogshop": [
+      {
+        "rooms": [
+          {
+            "type": "grogshop",
+            "share": 100,
+            "public": true,
+            "stairs": true
+          }
+        ]
+      },
+      {
+        "rooms": [
+          {
+            "type": "bedroom_inn",
+            "share": 100
+          }
+        ]
+      }
+    ],
     "inn": [
       {
         "rooms": [
@@ -3547,6 +4623,9 @@
     },
     "deep_cut_box": {"label": "Cutters' box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 23, "areas": ["deep-cut"]}, {"gear": "stout", "weight": 11.7, "areas": ["deep-cut"]}, {"gear": "sunday", "weight": 0.3, "areas": ["deep-cut"]}, {"item": "rime_shard", "weight": 10}, {"item": "hag_stone", "weight": 6}, {"item": "bent_pin", "weight": 6}, {"item": "lamp_wick", "weight": 6}, {"item": "pine_pitch", "weight": 6}, {"item": "old_wall_stone", "weight": 5}, {"item": "warm_cider", "weight": 8}, {"item": "mustard_plaster", "weight": 6}, {"item": "rock_salt", "weight": 6}, {"item": "birch_tonic", "weight": 6}], "notes": ["Under a cutter’s apron gone stiff with the cold.", "Wrapped in sacking, against the damp.", "At the bottom, under the wedges and a broken feather."], "empty": ["Wedges, feathers and a mallet with no handle.", "A tally stick, notched to the end.", "Rust, and the smell of the rock."]},
     "deep_cut_seam": {"label": "Rime-grown box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 33, "areas": ["deep-cut"]}, {"gear": "stout", "weight": 16.7, "areas": ["deep-cut"]}, {"gear": "sunday", "weight": 1.3, "areas": ["deep-cut"]}, {"item": "rime_shard", "weight": 12, "n": 2}, {"item": "hag_stone", "weight": 6}, {"item": "mulled_cider", "weight": 6}, {"item": "sassafras_tea", "weight": 5}, {"item": "cold_iron_nail", "weight": 6}, {"item": "ward_chalk", "weight": 5}, {"item": "sugar_on_snow", "weight": 5}, {"item": "wool_scarf", "weight": 4}], "notes": ["Kept where the cold could keep it.", "Under a skin of rime that breaks like sugar.", "Somebody followed the best stone this far, and left the best of their things with it."], "empty": ["Rime, all the way down.", "Nothing but cold, and the shine of it."]},
-    "tanbark_rick_box": {"label": "Barkers' box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 23, "areas": ["bark-road"]}, {"gear": "stout", "weight": 11.7, "areas": ["bark-road"]}, {"item": "hemlock_bark", "weight": 12, "n": 2}, {"item": "beechnut", "weight": 8}, {"item": "warm_cider", "weight": 6}], "notes": ["Under a peeling iron gone brown with tan.", "Wrapped in a barker's apron, stiff and red.", "At the bottom, under a coil of rope and a whetstone."], "empty": ["A whetstone worn to a saddle.", "Bark dust, red as rust.", "A tally in chalk, rubbed half out."]}
+    "tanbark_rick_box": {"label": "Barkers' box", "sound": "chest_open", "chance": 1, "sewn": 0.6, "finds": [{"gear": "homespun", "weight": 23, "areas": ["bark-road"]}, {"gear": "stout", "weight": 11.7, "areas": ["bark-road"]}, {"item": "hemlock_bark", "weight": 12, "n": 2}, {"item": "beechnut", "weight": 8}, {"item": "warm_cider", "weight": 6}], "notes": ["Under a peeling iron gone brown with tan.", "Wrapped in a barker's apron, stiff and red.", "At the bottom, under a coil of rope and a whetstone."], "empty": ["A whetstone worn to a saddle.", "Bark dust, red as rust.", "A tally in chalk, rubbed half out."]},
+    "lower_harlow_box": {"label": "Drowned chest", "sound": "chest_open", "chance": 1, "sewn": 0.75, "finds": [{"gear": "homespun", "weight": 21, "areas": ["lower-harlow"]}, {"gear": "stout", "weight": 36, "areas": ["lower-harlow"]}, {"gear": "sunday", "weight": 0.92, "areas": ["lower-harlow"]}, {"item": "rime_shard", "weight": 8}, {"item": "hag_stone", "weight": 5}, {"item": "cold_iron_nail", "weight": 5}, {"item": "ward_chalk", "weight": 4}, {"item": "lamp_wick", "weight": 4}, {"item": "warm_cider", "weight": 4}, {"item": "mulled_cider", "weight": 2}, {"item": "mustard_plaster", "weight": 3}, {"item": "wool_scarf", "weight": 1.1}, {"item": "drowned_indigo", "weight": 4.17}, {"item": "bell_rust", "weight": 3}, {"item": "lake_glass", "weight": 3}], "notes": ["Under a quilt gone stiff as a board.", "Wrapped in oilcloth, the way somebody meant to come back for it.", "At the bottom, under a Sunday hat the water flattened."], "empty": ["A quilt, frozen to the shape of the chest.", "Buttons, a thimble, and ice.", "A spoon and a bent candlestick."]},
+    "lower_harlow_wall": {"label": "Iron-bound chest", "sound": "chest_open", "chance": 1, "sewn": 0.75, "finds": [{"gear": "homespun", "weight": 15, "areas": ["lower-harlow"]}, {"gear": "stout", "weight": 40, "areas": ["lower-harlow"]}, {"gear": "sunday", "weight": 4, "areas": ["lower-harlow"]}, {"gear": "heirloom", "weight": 0.5, "areas": ["lower-harlow"]}, {"item": "rime_shard", "weight": 8, "n": 2}, {"item": "hag_stone", "weight": 6}, {"item": "cold_iron_nail", "weight": 6}, {"item": "ward_chalk", "weight": 5}, {"item": "sugar_on_snow", "weight": 2}, {"item": "sassafras_tea", "weight": 2}, {"item": "wool_scarf", "weight": 3.5}, {"item": "drowned_indigo", "weight": 4.17}, {"item": "bell_rust", "weight": 4, "n": 2}, {"item": "lake_glass", "weight": 4}], "notes": ["Pushed up against the old wall, where the cold is worst.", "Under a skin of ice that glows a little, the way the wall does.", "Packed by somebody who knew they wouldn't carry it far."], "empty": ["Cold, and the blue light off the stones.", "Ice, all the way down."]},
+    "lower_harlow_dye": {"label": "Dyer's chest", "sound": "chest_open", "chance": 1, "sewn": 0.75, "finds": [{"gear": "homespun", "weight": 21, "areas": ["lower-harlow"]}, {"gear": "stout", "weight": 36, "areas": ["lower-harlow"]}, {"gear": "sunday", "weight": 0.92, "areas": ["lower-harlow"]}, {"item": "rime_shard", "weight": 8}, {"item": "hag_stone", "weight": 5}, {"item": "cold_iron_nail", "weight": 5}, {"item": "ward_chalk", "weight": 4}, {"item": "lamp_wick", "weight": 4}, {"item": "warm_cider", "weight": 4}, {"item": "mulled_cider", "weight": 2}, {"item": "mustard_plaster", "weight": 3}, {"item": "wool_scarf", "weight": 1.1}, {"item": "drowned_indigo", "weight": 14.29}, {"item": "bell_rust", "weight": 3}, {"item": "lake_glass", "weight": 3}], "notes": ["Blue to the hinges. Whatever was in it, the dye got to first.", "Under a bolt of cloth gone stiff and blue.", "Packed in the Lords' dye house, the day the water came."], "empty": ["Blue stains, and ice.", "A dye stick and a cracked crock."]}
   }
 }

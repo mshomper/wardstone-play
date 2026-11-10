@@ -1,0 +1,73 @@
+{
+ "_note": "Slate for the Roof (decision 0485): Dorcas Brigham, the carter from Cooper's Ford, on the meetinghouse roof at Harlow Bridge. Drafts for Matt. Her voice is the road's: loud, says exactly what she thinks, keeps her counts. Facts are in docs/regions/harlow-bridge.md and old-post-road.md.",
+ "conversations": [
+  {
+   "id": "slate_dorcas_ask",
+   "lines": [
+    { "who": "dorcas_brigham", "text": "You. You were at the ford, standing about with the rest of us." },
+    { "who": "eldwin", "text": "I was." },
+    { "who": "dorcas_brigham", "text": "Well, it moved in the end. Sixty squares, and I've laid all but the last three bundles." },
+    { "who": "dorcas_brigham", "text": "The mill hands were handing up all morning. Then the wheel went, and so did they." },
+    { "who": "dorcas_brigham", "text": "Pass me the rest off that pile. Mind the edges. They'll cut you." }
+   ],
+   "onEnd": [{ "setFlag": ["slate_asked", "met_dorcas"] }]
+  },
+  {
+   "id": "slate_dorcas_waiting",
+   "lines": [
+    { "who": "dorcas_brigham", "text": "Off the pile and up the ladder. I'm not coming down for it." }
+   ]
+  },
+  {
+   "id": "slate_hand",
+   "lines": [
+    { "who": "", "if": { "notFlags": ["slate_1"] }, "text": "Eldwin passes a bundle of slate up the ladder. It's heavier than it looks." },
+    { "who": "dorcas_brigham", "if": { "notFlags": ["slate_1"] }, "text": "That's one. Don't stand under me." },
+    { "who": "thadeous", "if": { "notFlags": ["slate_1"], "party": ["thadeous"] }, "text": "Madam, I could sing you up the rest of it. The roofers in the old country swore by it." },
+    { "who": "dorcas_brigham", "if": { "notFlags": ["slate_1"], "party": ["thadeous"] }, "text": "I'll swear by it too, if you start." },
+
+    { "who": "", "if": { "flags": ["slate_1"], "notFlags": ["slate_2"] }, "text": "Eldwin passes up another bundle." },
+    { "who": "obed", "if": { "flags": ["slate_1"], "notFlags": ["slate_2"], "party": ["obed"] }, "text": "Good slate. Splits clean." },
+    { "who": "dorcas_brigham", "if": { "flags": ["slate_1"], "notFlags": ["slate_2"], "party": ["obed"] }, "text": "Course it does. I don't carry rubbish." },
+    { "who": "dorcas_brigham", "if": { "flags": ["slate_1"], "notFlags": ["slate_2"] }, "text": "Two. You're quicker than the mill hands." },
+
+    { "who": "dorcas_brigham", "if": { "flags": ["slate_2"], "party": ["applegate"] }, "text": "Is that a goose?" },
+    { "who": "eldwin", "if": { "flags": ["slate_2"], "party": ["applegate"] }, "text": "She's with me." },
+    { "who": "dorcas_brigham", "if": { "flags": ["slate_2"], "party": ["applegate"] }, "text": "Keep her off my ladder." },
+    { "who": "", "if": { "flags": ["slate_2"] }, "text": "Eldwin passes up the last bundle." },
+    { "who": "dorcas_brigham", "if": { "flags": ["slate_2"] }, "text": "And that's sixty. That's the roof." },
+    { "who": "", "if": { "flags": ["slate_2"] }, "text": "She comes down the ladder backwards, quicker than she went up." }
+   ]
+  },
+  {
+   "id": "slate_dorcas_down",
+   "lines": [
+    { "who": "dorcas_brigham", "text": "Sixty squares, and not one cracked." },
+    { "who": "", "text": "She looks at the meetinghouse door for a while." },
+    { "who": "dorcas_brigham", "text": "Two days on top of it. I suppose I'd better see what I've been keeping the rain off." }
+   ],
+   "onEnd": [{ "setFlag": "slate_in" }]
+  },
+  {
+   "id": "slate_dorcas_going",
+   "lines": [
+    { "who": "dorcas_brigham", "text": "I'm going. Don't rush me." }
+   ]
+  },
+  {
+   "id": "slate_pew",
+   "lines": [
+    { "who": "", "text": "Dorcas is at the back, just sitting down on the end of the last pew. She looks up." },
+    { "who": "dorcas_brigham", "text": "Well! It's bigger from underneath." },
+    { "who": "", "text": "It comes back down at her off the ceiling." }
+   ],
+   "onEnd": [{ "setFlag": "slate_done" }, { "reward": { "title": "Slate for the Roof", "xp": 360, "items": { "ward_chalk": 2 } } }]
+  },
+  {
+   "id": "slate_dorcas_after",
+   "lines": [
+    { "who": "dorcas_brigham", "text": "You want to keep your voice down in a church. Nobody tells you that." }
+   ]
+  }
+ ]
+}

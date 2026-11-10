@@ -1,0 +1,20 @@
+{
+  "_note": "Thankful Ide's verse of the Lantern Man (docs/regions/harlow-bridge.md, Thankful Ide): her mother's words, from Lower Harlow before the dam. Offered once the tower clock has struck (harlow_stone_woke), when the whole town has heard about Burnbottom's verse. The ward-words themselves are never written down: her mother would only hum the last line, and it's the tune of the verse they laugh at. A draft for Matt or his writer friend.",
+  "conversations": [
+    {
+      "id": "thankful_lantern_verse",
+      "lines": [
+        { "who": "thankful_ide", "text": "They say it was Burnbottom's song that started the clock. That verse of his, the one they laugh at." },
+        { "who": "thankful_ide", "text": "My mother had that song. Not his words. Hers." },
+        { "who": "", "text": "She sings it, thin and steady, looking out at the steeple." },
+        { "who": "thankful_ide", "text": "Lantern man, lantern man, down at the cross, counting the living and counting the lost. Mind what you carry and mind what you owe. He'll light you home if the count says so." },
+        { "who": "thankful_ide", "text": "There's another line. She never sang it out loud. She'd hum it, at the churn, and stop if you came in." },
+        { "who": "", "text": "She hums it. It's the tune of the verse they laugh at at the Tankard." },
+        { "who": "eldwin", "text": "Who did your mother have it from?" },
+        { "who": "thankful_ide", "text": "Her mother. And hers. Down there." },
+        { "who": "", "text": "She doesn't point at the lake. She doesn't have to." }
+      ],
+      "onEnd": [{ "setFlag": "heard_thankful_verse" }]
+    }
+  ]
+}

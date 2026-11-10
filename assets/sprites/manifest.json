@@ -94,6 +94,32 @@
       "tiles": 0
     },
     {
+      "name": "chatterer_iso",
+      "json": "chatterer_iso.json",
+      "image": "chatterer_iso.png",
+      "emissive": "chatterer_iso_emissive.png",
+      "size": [
+        889,
+        36
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "chatterer_side",
+      "json": "chatterer_side.json",
+      "image": "chatterer_side.png",
+      "emissive": "chatterer_side_emissive.png",
+      "size": [
+        1261,
+        42
+      ],
+      "anims": 7,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
       "name": "fisher_iso",
       "json": "fisher_iso.json",
       "image": "fisher_iso.png",
@@ -194,6 +220,32 @@
         139
       ],
       "anims": 5,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "masked_bandit_iso",
+      "json": "masked_bandit_iso.json",
+      "image": "masked_bandit_iso.png",
+      "emissive": "masked_bandit_iso_emissive.png",
+      "size": [
+        913,
+        42
+      ],
+      "anims": 16,
+      "sprites": 0,
+      "tiles": 0
+    },
+    {
+      "name": "masked_bandit_side",
+      "json": "masked_bandit_side.json",
+      "image": "masked_bandit_side.png",
+      "emissive": "masked_bandit_side_emissive.png",
+      "size": [
+        2045,
+        107
+      ],
+      "anims": 7,
       "sprites": 0,
       "tiles": 0
     },
@@ -651,13 +703,70 @@
       "anims": 0,
       "sprites": 27,
       "tiles": 0
+    },
+    {
+      "name": "harlow_outer",
+      "json": "harlow_outer.json",
+      "image": "harlow_outer.png",
+      "emissive": "harlow_outer_emissive.png",
+      "size": [
+        1024,
+        165
+      ],
+      "anims": 0,
+      "sprites": 18,
+      "tiles": 76
+    },
+    {
+      "name": "lower_harlow",
+      "json": "lower_harlow.json",
+      "image": "lower_harlow.png",
+      "emissive": "lower_harlow_emissive.png",
+      "size": [
+        948,
+        353
+      ],
+      "anims": 0,
+      "sprites": 23,
+      "tiles": 14
+    },
+    {
+      "name": "harlow_lots",
+      "json": "harlow_lots.json",
+      "image": "harlow_lots.png",
+      "emissive": "harlow_lots_emissive.png",
+      "size": [
+        695,
+        152
+      ],
+      "anims": 0,
+      "sprites": 12,
+      "tiles": 0
     }
   ],
   "people": [
     {
+      "sprite": "npc_abel_mudgett_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_abel_mudgett.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_abigail_ness_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_abigail_ness.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_abijah_hatch_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_abijah_hatch.json",
       "size": [
         970,
         484
@@ -691,9 +800,45 @@
       ]
     },
     {
+      "sprite": "npc_ansel_frye_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_ansel_frye.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_asa_kimball_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_asa_kimball.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_asahel_fessenden_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_asahel_fessenden.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_asher_kent_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_asher_kent.json",
+      "size": [
+        970,
+        760
+      ]
+    },
+    {
+      "sprite": "npc_bartholomew_swain_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_bartholomew_swain.json",
       "size": [
         970,
         484
@@ -718,12 +863,66 @@
       ]
     },
     {
+      "sprite": "npc_clarissa_sprague_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_clarissa_sprague.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_cyrus_penhallow_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_cyrus_penhallow.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
       "sprite": "npc_dorcas_brigham_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_dorcas_brigham.json",
       "size": [
         970,
         484
+      ]
+    },
+    {
+      "sprite": "npc_ebenezer_tolman_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_ebenezer_tolman.json",
+      "size": [
+        970,
+        760
+      ]
+    },
+    {
+      "sprite": "npc_elam_lyman_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_elam_lyman.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_eli_goodell_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_eli_goodell.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_euphemia_lord_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_euphemia_lord.json",
+      "size": [
+        970,
+        760
       ]
     },
     {
@@ -736,9 +935,27 @@
       ]
     },
     {
+      "sprite": "npc_gideon_sloat_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_gideon_sloat.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_gideon_strand_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_gideon_strand.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_hannah_corliss_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_hannah_corliss.json",
       "size": [
         970,
         484
@@ -772,6 +989,15 @@
       ]
     },
     {
+      "sprite": "npc_hepzibah_walker_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_hepzibah_walker.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_hester_quimby_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_hester_quimby.json",
@@ -781,9 +1007,36 @@
       ]
     },
     {
+      "sprite": "npc_hezekiah_doane_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_hezekiah_doane.json",
+      "size": [
+        970,
+        691
+      ]
+    },
+    {
       "sprite": "npc_hosea_lamb_iso",
       "region": "old-post-road",
       "json": "regions/old-post-road/npc_hosea_lamb.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_ira_bascom_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_ira_bascom.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_jerusha_kidder_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_jerusha_kidder.json",
       "size": [
         970,
         484
@@ -826,9 +1079,36 @@
       ]
     },
     {
+      "sprite": "npc_levi_coburn_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_levi_coburn.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_lucinda_bean_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_lucinda_bean.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_lucy_shattuck_iso",
       "region": "hardscrabble",
       "json": "regions/hardscrabble/npc_lucy_shattuck.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_lydia_ames_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_lydia_ames.json",
       "size": [
         970,
         484
@@ -859,6 +1139,42 @@
       "size": [
         970,
         691
+      ]
+    },
+    {
+      "sprite": "npc_moses_pratt_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_moses_pratt.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_mother_peck_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_mother_peck.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_mrs_nye_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_mrs_nye.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_nathaniel_wolcott_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_nathaniel_wolcott.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -898,6 +1214,24 @@
       ]
     },
     {
+      "sprite": "npc_orrin_gage_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_orrin_gage.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_phineas_whipple_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_phineas_whipple.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_pip_danforth_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_pip_danforth.json",
@@ -913,6 +1247,15 @@
       "size": [
         970,
         622
+      ]
+    },
+    {
+      "sprite": "npc_prudence_goodell_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_prudence_goodell.json",
+      "size": [
+        970,
+        484
       ]
     },
     {
@@ -934,6 +1277,24 @@
       ]
     },
     {
+      "sprite": "npc_rhoda_cobb_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_rhoda_cobb.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_ruel_batchelder_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_ruel_batchelder.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "sam_fairbanks_iso",
       "region": "tanbark-road",
       "json": "regions/tanbark-road/sam_fairbanks.json",
@@ -946,6 +1307,15 @@
       "sprite": "npc_silas_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_silas.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_submit_tolman_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_submit_tolman.json",
       "size": [
         970,
         484
@@ -979,6 +1349,15 @@
       ]
     },
     {
+      "sprite": "npc_thankful_ide_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_thankful_ide.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_tilly_marsh_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_tilly_marsh.json",
@@ -997,6 +1376,15 @@
       ]
     },
     {
+      "sprite": "npc_tom_nason_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_tom_nason.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
       "sprite": "npc_truman_shattuck_iso",
       "region": "hardscrabble",
       "json": "regions/hardscrabble/npc_truman_shattuck.json",
@@ -1009,6 +1397,15 @@
       "sprite": "npc_wren_iso",
       "region": "kettle-notch",
       "json": "regions/kettle-notch/npc_wren.json",
+      "size": [
+        970,
+        484
+      ]
+    },
+    {
+      "sprite": "npc_zebulon_gault_iso",
+      "region": "harlow-bridge",
+      "json": "regions/harlow-bridge/npc_zebulon_gault.json",
       "size": [
         970,
         484
@@ -1169,8 +1566,8 @@
       "region": "harlow-bridge",
       "json": "regions/harlow-bridge/portraits_harlow-bridge.json",
       "size": [
-        261,
-        66
+        456,
+        781
       ]
     }
   ],
@@ -1290,28 +1687,6 @@
       ]
     },
     {
-      "region": "tanbark-road",
-      "areas": [
-        "mast-wood"
-      ],
-      "json": "regions/tanbark-road/chatterer_iso.json",
-      "size": [
-        889,
-        36
-      ]
-    },
-    {
-      "region": "tanbark-road",
-      "areas": [
-        "mast-wood"
-      ],
-      "json": "regions/tanbark-road/chatterer_side.json",
-      "size": [
-        991,
-        83
-      ]
-    },
-    {
       "region": "kettle-notch",
       "areas": [
         "sugarbush"
@@ -1377,6 +1752,32 @@
       "size": [
         971,
         208
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "drowned-town",
+        "lower-harlow",
+        "mill-pond"
+      ],
+      "json": "regions/harlow-bridge/floe_iso.json",
+      "size": [
+        945,
+        54
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "drowned-town",
+        "lower-harlow",
+        "mill-pond"
+      ],
+      "json": "regions/harlow-bridge/floe_side.json",
+      "size": [
+        969,
+        229
       ]
     },
     {
@@ -1568,25 +1969,77 @@
       ]
     },
     {
-      "region": "tanbark-road",
+      "region": "harlow-bridge",
       "areas": [
-        "hemlock-wall"
+        "drowned-town",
+        "lower-harlow"
       ],
-      "json": "regions/tanbark-road/masked_bandit_iso.json",
+      "json": "regions/harlow-bridge/loon_iso.json",
       "size": [
-        913,
-        42
+        950,
+        87
       ]
     },
     {
-      "region": "tanbark-road",
+      "region": "harlow-bridge",
       "areas": [
-        "hemlock-wall"
+        "drowned-town",
+        "lower-harlow"
       ],
-      "json": "regions/tanbark-road/masked_bandit_side.json",
+      "json": "regions/harlow-bridge/loon_side.json",
       "size": [
-        950,
-        160
+        969,
+        237
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "covered-bridge",
+        "drowned-town",
+        "lower-harlow",
+        "mill-pond"
+      ],
+      "json": "regions/harlow-bridge/mink_iso.json",
+      "size": [
+        799,
+        34
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "covered-bridge",
+        "drowned-town",
+        "lower-harlow",
+        "mill-pond"
+      ],
+      "json": "regions/harlow-bridge/mink_side.json",
+      "size": [
+        936,
+        124
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "lower-harlow"
+      ],
+      "json": "regions/harlow-bridge/old_gran_iso.json",
+      "size": [
+        1015,
+        980
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "lower-harlow"
+      ],
+      "json": "regions/harlow-bridge/old_gran_side.json",
+      "size": [
+        1015,
+        1216
       ]
     },
     {
@@ -1912,6 +2365,28 @@
       ]
     },
     {
+      "region": "harlow-bridge",
+      "areas": [
+        "tanners-row"
+      ],
+      "json": "regions/harlow-bridge/tannery_cur_iso.json",
+      "size": [
+        967,
+        46
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "tanners-row"
+      ],
+      "json": "regions/harlow-bridge/tannery_cur_side.json",
+      "size": [
+        1002,
+        154
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "sugarbush"
@@ -2055,6 +2530,28 @@
       ]
     },
     {
+      "region": "harlow-bridge",
+      "areas": [
+        "north-lots"
+      ],
+      "json": "regions/harlow-bridge/watcher_iso.json",
+      "size": [
+        980,
+        203
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "north-lots"
+      ],
+      "json": "regions/harlow-bridge/watcher_side.json",
+      "size": [
+        886,
+        1337
+      ]
+    },
+    {
       "region": "kettle-notch",
       "areas": [
         "old-burying-ground"
@@ -2075,7 +2572,225 @@
         971,
         208
       ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "covered-bridge",
+        "drowned-town",
+        "drowned-town-thankful-ide-s-cottage",
+        "harlow-bridge",
+        "harlow-bridge-corliss-s-print-shop",
+        "harlow-bridge-corliss-s-print-shop-upper",
+        "harlow-bridge-deacon-pratt-s-house",
+        "harlow-bridge-deacon-pratt-s-house-upper",
+        "harlow-bridge-euphemia-lord-s-shop",
+        "harlow-bridge-euphemia-lord-s-shop-upper",
+        "harlow-bridge-fessenden-s-dry-goods",
+        "harlow-bridge-fessenden-s-dry-goods-upper",
+        "harlow-bridge-house-at-the-switchbacks",
+        "harlow-bridge-house-behind-the-block",
+        "harlow-bridge-house-by-the-river-road",
+        "harlow-bridge-house-on-the-south-lane",
+        "harlow-bridge-house-on-the-south-lane-upper",
+        "harlow-bridge-lyman-s-boots",
+        "harlow-bridge-lyman-s-boots-upper",
+        "harlow-bridge-squire-hatch-s-house",
+        "harlow-bridge-squire-hatch-s-house-upper",
+        "harlow-bridge-the-broken-tankard",
+        "harlow-bridge-the-broken-tankard-upper",
+        "harlow-bridge-the-doctor-s-house",
+        "harlow-bridge-the-doctor-s-house-upper",
+        "harlow-bridge-the-druggist",
+        "harlow-bridge-the-druggist-upper",
+        "harlow-bridge-the-goodells-house",
+        "harlow-bridge-the-goodells-house-upper",
+        "harlow-bridge-the-livery-stable",
+        "harlow-bridge-the-livery-stable-upper",
+        "harlow-bridge-widow-ames-s-house",
+        "harlow-insides-tailor",
+        "harlow-insides-tailor-upper",
+        "lower-harlow",
+        "meetinghouse-hill",
+        "meetinghouse-hill-house-below-the-hill",
+        "meetinghouse-hill-house-below-the-hill-upper",
+        "meetinghouse-hill-house-on-meetinghouse-street",
+        "meetinghouse-hill-penhallow-s-house",
+        "meetinghouse-hill-penhallow-s-house-upper",
+        "meetinghouse-hill-the-horse-sheds",
+        "meetinghouse-hill-the-meetinghouse",
+        "meetinghouse-hill-the-parsonage",
+        "meetinghouse-hill-the-parsonage-upper",
+        "meetinghouse-hill-the-schoolhouse",
+        "meetinghouse-hill-the-spragues-house",
+        "meetinghouse-hill-the-spragues-house-upper",
+        "meetinghouse-hill-the-tolmans-house",
+        "mill-pond",
+        "mill-pond-penhallow-s-boathouse",
+        "mill-street",
+        "mill-street-mill-row-back-no-1",
+        "mill-street-mill-row-back-no-1-upper",
+        "mill-street-mill-row-back-no-2",
+        "mill-street-mill-row-back-no-2-upper",
+        "mill-street-mill-row-back-no-3",
+        "mill-street-mill-row-back-no-3-upper",
+        "mill-street-mill-row-back-no-4",
+        "mill-street-mill-row-back-no-4-upper",
+        "mill-street-mill-row-back-no-5",
+        "mill-street-mill-row-back-no-5-upper",
+        "mill-street-mill-row-north-no-1",
+        "mill-street-mill-row-north-no-1-upper",
+        "mill-street-mill-row-north-no-2",
+        "mill-street-mill-row-north-no-2-upper",
+        "mill-street-mill-row-north-no-3",
+        "mill-street-mill-row-north-no-3-upper",
+        "mill-street-mill-row-north-no-4",
+        "mill-street-mill-row-north-no-4-upper",
+        "mill-street-mill-row-north-no-5",
+        "mill-street-mill-row-north-no-5-upper",
+        "mill-street-mill-row-south-no-1",
+        "mill-street-mill-row-south-no-1-upper",
+        "mill-street-mill-row-south-no-2",
+        "mill-street-mill-row-south-no-2-upper",
+        "mill-street-mill-row-south-no-3",
+        "mill-street-mill-row-south-no-3-upper",
+        "mill-street-mill-row-south-no-4",
+        "mill-street-mill-row-south-no-4-upper",
+        "mill-street-mill-row-south-no-5",
+        "mill-street-mill-row-south-no-5-upper",
+        "mill-street-the-boarding-house",
+        "mill-street-the-boarding-house-upper",
+        "mill-street-the-company-store",
+        "mill-street-the-company-store-upper",
+        "mill-street-the-fulling-mill",
+        "mill-street-the-fulling-mill-upper",
+        "mill-street-the-mill-office",
+        "mill-street-the-mill-office-upper",
+        "mill-street-the-sawmill",
+        "mill-street-the-sawmill-upper",
+        "north-lots",
+        "pasture-lane",
+        "tanners-row",
+        "tanners-row-the-boarding-house",
+        "tanners-row-the-boarding-house-upper",
+        "tanners-row-the-grog-shop",
+        "tanners-row-the-grog-shop-upper",
+        "tanners-row-the-tannery"
+      ],
+      "json": "regions/harlow-bridge/harlow_tailor.json",
+      "size": [
+        188,
+        55
+      ]
+    },
+    {
+      "region": "harlow-bridge",
+      "areas": [
+        "covered-bridge",
+        "drowned-town",
+        "drowned-town-thankful-ide-s-cottage",
+        "harlow-bridge",
+        "harlow-bridge-corliss-s-print-shop",
+        "harlow-bridge-corliss-s-print-shop-upper",
+        "harlow-bridge-deacon-pratt-s-house",
+        "harlow-bridge-deacon-pratt-s-house-upper",
+        "harlow-bridge-euphemia-lord-s-shop",
+        "harlow-bridge-euphemia-lord-s-shop-upper",
+        "harlow-bridge-fessenden-s-dry-goods",
+        "harlow-bridge-fessenden-s-dry-goods-upper",
+        "harlow-bridge-house-at-the-switchbacks",
+        "harlow-bridge-house-behind-the-block",
+        "harlow-bridge-house-by-the-river-road",
+        "harlow-bridge-house-on-the-south-lane",
+        "harlow-bridge-house-on-the-south-lane-upper",
+        "harlow-bridge-lyman-s-boots",
+        "harlow-bridge-lyman-s-boots-upper",
+        "harlow-bridge-squire-hatch-s-house",
+        "harlow-bridge-squire-hatch-s-house-upper",
+        "harlow-bridge-the-broken-tankard",
+        "harlow-bridge-the-broken-tankard-upper",
+        "harlow-bridge-the-doctor-s-house",
+        "harlow-bridge-the-doctor-s-house-upper",
+        "harlow-bridge-the-druggist",
+        "harlow-bridge-the-druggist-upper",
+        "harlow-bridge-the-goodells-house",
+        "harlow-bridge-the-goodells-house-upper",
+        "harlow-bridge-the-livery-stable",
+        "harlow-bridge-the-livery-stable-upper",
+        "harlow-bridge-widow-ames-s-house",
+        "lower-harlow",
+        "meetinghouse-hill",
+        "meetinghouse-hill-house-below-the-hill",
+        "meetinghouse-hill-house-below-the-hill-upper",
+        "meetinghouse-hill-house-on-meetinghouse-street",
+        "meetinghouse-hill-penhallow-s-house",
+        "meetinghouse-hill-penhallow-s-house-upper",
+        "meetinghouse-hill-the-horse-sheds",
+        "meetinghouse-hill-the-meetinghouse",
+        "meetinghouse-hill-the-parsonage",
+        "meetinghouse-hill-the-parsonage-upper",
+        "meetinghouse-hill-the-schoolhouse",
+        "meetinghouse-hill-the-spragues-house",
+        "meetinghouse-hill-the-spragues-house-upper",
+        "meetinghouse-hill-the-tolmans-house",
+        "mill-pond",
+        "mill-pond-penhallow-s-boathouse",
+        "mill-street",
+        "mill-street-mill-row-back-no-1",
+        "mill-street-mill-row-back-no-1-upper",
+        "mill-street-mill-row-back-no-2",
+        "mill-street-mill-row-back-no-2-upper",
+        "mill-street-mill-row-back-no-3",
+        "mill-street-mill-row-back-no-3-upper",
+        "mill-street-mill-row-back-no-4",
+        "mill-street-mill-row-back-no-4-upper",
+        "mill-street-mill-row-back-no-5",
+        "mill-street-mill-row-back-no-5-upper",
+        "mill-street-mill-row-north-no-1",
+        "mill-street-mill-row-north-no-1-upper",
+        "mill-street-mill-row-north-no-2",
+        "mill-street-mill-row-north-no-2-upper",
+        "mill-street-mill-row-north-no-3",
+        "mill-street-mill-row-north-no-3-upper",
+        "mill-street-mill-row-north-no-4",
+        "mill-street-mill-row-north-no-4-upper",
+        "mill-street-mill-row-north-no-5",
+        "mill-street-mill-row-north-no-5-upper",
+        "mill-street-mill-row-south-no-1",
+        "mill-street-mill-row-south-no-1-upper",
+        "mill-street-mill-row-south-no-2",
+        "mill-street-mill-row-south-no-2-upper",
+        "mill-street-mill-row-south-no-3",
+        "mill-street-mill-row-south-no-3-upper",
+        "mill-street-mill-row-south-no-4",
+        "mill-street-mill-row-south-no-4-upper",
+        "mill-street-mill-row-south-no-5",
+        "mill-street-mill-row-south-no-5-upper",
+        "mill-street-the-boarding-house",
+        "mill-street-the-boarding-house-upper",
+        "mill-street-the-company-store",
+        "mill-street-the-company-store-upper",
+        "mill-street-the-fulling-mill",
+        "mill-street-the-fulling-mill-upper",
+        "mill-street-the-mill-office",
+        "mill-street-the-mill-office-upper",
+        "mill-street-the-sawmill",
+        "mill-street-the-sawmill-upper",
+        "north-lots",
+        "pasture-lane",
+        "tanners-row",
+        "tanners-row-the-boarding-house",
+        "tanners-row-the-boarding-house-upper",
+        "tanners-row-the-grog-shop",
+        "tanners-row-the-grog-shop-upper",
+        "tanners-row-the-tannery"
+      ],
+      "json": "regions/harlow-bridge/harlow_meetinghouse.json",
+      "size": [
+        328,
+        152
+      ]
     }
   ],
-  "bandHeight": 2771
+  "bandHeight": 3989
 }

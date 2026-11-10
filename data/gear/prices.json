@@ -795,4 +795,13 @@
 "copper_button.belt.on_win.find.2":{"points":3,"guess":true},
 "silver_thimble.belt.on_win.pool_win.0":{"points":1,"guess":true},
 "silver_thimble.belt.on_win.pool_win.1":{"points":2,"guess":true},
-"silver_thimble.belt.on_win.pool_win.2":{"points":3,"guess":true}}}
+"silver_thimble.belt.on_win.pool_win.2":{"points":3,"guess":true},
+"bell_rust.keepsake.passive.vs_status.0":{"points":1,"levels":0.005,"best":0.04},
+"bell_rust.keepsake.passive.vs_status.1":{"points":1,"levels":0.007,"best":0.04},
+"bell_rust.keepsake.passive.vs_status.2":{"points":1,"levels":0.007,"best":0.04},
+"lake_glass.coat.passive.bounce.0":{"points":3,"levels":0.069,"best":0.2},
+"lake_glass.coat.passive.bounce.1":{"points":6,"levels":0.11,"best":0.35},
+"lake_glass.coat.passive.bounce.2":{"points":8,"levels":0.155,"best":0.46},
+"pike_scale.coat.passive.el_guard.0":{"points":3,"levels":0.065,"best":0.25},
+"pike_scale.coat.passive.el_guard.1":{"points":6,"levels":0.123,"best":0.45},
+"pike_scale.coat.passive.el_guard.2":{"points":8,"levels":0.162,"best":0.53}}}

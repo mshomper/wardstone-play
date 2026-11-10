@@ -1,0 +1,390 @@
+{
+ "_note": "Harlow Bridge's townsfolk on Market Square and Meetinghouse Hill (decision 0476): fourteen people, Matt's approved lines word for word. Each says their 'now' lines until the tower clock strikes (harlow_stone_woke), then their 'after' line. Dr. Wolcott, Mrs. Ames and the Goodell children have a second talk about Thadeous before the clock strikes. Voices and facts are in docs/regions/harlow-bridge.md.",
+ "conversations": [
+  {
+   "id": "hbf_fessenden_now",
+   "lines": [
+    {
+     "who": "asahel_fessenden",
+     "text": "Wool's up. Lamp oil's up. Everything's up but the mill."
+    },
+    {
+     "who": "asahel_fessenden",
+     "text": "I measure it twice. You'd be surprised what a yard does in the cold."
+    }
+   ]
+  },
+  {
+   "id": "hbf_fessenden_after",
+   "lines": [
+    {
+     "who": "asahel_fessenden",
+     "text": "Wheels going. The hands'll want cloth by Saturday. I've measured it already."
+    }
+   ]
+  },
+  {
+   "id": "hbf_whipple_now",
+   "lines": [
+    {
+     "who": "phineas_whipple",
+     "text": "I've a powder for the frost. Camphor and chalk, mostly. It doesn't work, but people like to be doing something."
+    },
+    {
+     "who": "phineas_whipple",
+     "text": "Half the town's on my wintergreen. The other half's at the Tankard."
+    }
+   ]
+  },
+  {
+   "id": "hbf_whipple_after",
+   "lines": [
+    {
+     "who": "phineas_whipple",
+     "text": "Nobody's bought the powder since the clock struck. I'm taking it as a compliment to the powder."
+    }
+   ]
+  },
+  {
+   "id": "hbf_lyman_now",
+   "lines": [
+    {
+     "who": "",
+     "text": "He looks at your boots before he looks at you."
+    },
+    {
+     "who": "elam_lyman",
+     "text": "Road clay. Hill clay over it. And something white in the welts."
+    },
+    {
+     "who": "elam_lyman",
+     "text": "You've been up past the wall. Nobody goes up past the wall."
+    }
+   ]
+  },
+  {
+   "id": "hbf_lyman_after",
+   "lines": [
+    {
+     "who": "elam_lyman",
+     "text": "Same white in the welts. Less of it now."
+    }
+   ]
+  },
+  {
+   "id": "hbf_corliss_now",
+   "lines": [
+    {
+     "who": "hannah_corliss",
+     "text": "I set every notice on that board. Half of them twice, because people change their minds."
+    },
+    {
+     "who": "hannah_corliss",
+     "text": "If you want something done in this town, put it on the board. If you want it done right, ask me who wrote it."
+    }
+   ]
+  },
+  {
+   "id": "hbf_corliss_after",
+   "lines": [
+    {
+     "who": "hannah_corliss",
+     "text": "I set one this morning. \"Mill running. Hands wanted at noon.\" Nobody's needed that one in a month."
+    }
+   ]
+  },
+  {
+   "id": "hbf_hatch_now",
+   "lines": [
+    {
+     "who": "abijah_hatch",
+     "text": "There's an ordinance against singing in the square after ten. I wrote it for one man. He has never once been home by ten."
+    },
+    {
+     "who": "abijah_hatch",
+     "text": "I don't rule on the weather. People keep asking me to."
+    }
+   ]
+  },
+  {
+   "id": "hbf_hatch_after",
+   "lines": [
+    {
+     "who": "abijah_hatch",
+     "text": "The clock struck at half past two in the morning. Under the ordinance that's disturbing the peace. I'm letting it go."
+    }
+   ]
+  },
+  {
+   "id": "hbf_wolcott_now",
+   "lines": [
+    {
+     "who": "nathaniel_wolcott",
+     "text": "Chilblains. Every hand on Mill Street. Standing about in the cold doesn't agree with men who aren't used to standing about."
+    },
+    {
+     "who": "nathaniel_wolcott",
+     "text": "You'll want to know what I think of the frost. I think it's cold."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_nathaniel_wolcott"
+    }
+   ]
+  },
+  {
+   "id": "hbf_wolcott_thadeous",
+   "lines": [
+    {
+     "who": "nathaniel_wolcott",
+     "text": "He comes to me about his throat every winter. It's never his throat."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:hbf_wolcott"
+    }
+   ]
+  },
+  {
+   "id": "hbf_wolcott_after",
+   "lines": [
+    {
+     "who": "nathaniel_wolcott",
+     "text": "Two hands back on the wheel this morning with their fingers wrapped. I told them not to. Nobody listens to a doctor when there's work."
+    }
+   ]
+  },
+  {
+   "id": "hbf_gault_now",
+   "lines": [
+    {
+     "who": "zebulon_gault",
+     "text": "Stage still stops here. Stage always stops here. That's why there's a Harlow Bridge."
+    },
+    {
+     "who": "zebulon_gault",
+     "text": "Horses don't like the north road this year. They'll go up the Pasture Lane as far as the bars and no further."
+    }
+   ]
+  },
+  {
+   "id": "hbf_gault_after",
+   "lines": [
+    {
+     "who": "zebulon_gault",
+     "text": "Took the gray up the lane this morning. Went right past the bars. Didn't even look round."
+    }
+   ]
+  },
+  {
+   "id": "hbf_coburn_now",
+   "lines": [
+    {
+     "who": "levi_coburn",
+     "text": "Laid over till Thursday. The road down's clear. The road up I won't drive after dark, and I've driven it twenty years."
+    },
+    {
+     "who": "levi_coburn",
+     "text": "I carry the news both ways. Harlow's news this month is that it's cold."
+    }
+   ]
+  },
+  {
+   "id": "hbf_coburn_after",
+   "lines": [
+    {
+     "who": "levi_coburn",
+     "text": "Every inn on the road will want to hear about that clock. I'll tell it slower each time."
+    }
+   ]
+  },
+  {
+   "id": "hbf_ames_now",
+   "lines": [
+    {
+     "who": "lydia_ames",
+     "text": "I sit at this window. Somebody has to."
+    },
+    {
+     "who": "lydia_ames",
+     "text": "If you're looking for anybody, ask me. I'll know where they went, and most of the time why."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_lydia_ames"
+    }
+   ]
+  },
+  {
+   "id": "hbf_ames_thadeous",
+   "lines": [
+    {
+     "who": "lydia_ames",
+     "text": "He goes up the lane every night about nine. Comes down about four. I don't sleep much either."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:hbf_ames"
+    }
+   ]
+  },
+  {
+   "id": "hbf_ames_after",
+   "lines": [
+    {
+     "who": "lydia_ames",
+     "text": "He didn't come down at four last night. I watched till it was light. Then he came down singing, and I went to bed."
+    }
+   ]
+  },
+  {
+   "id": "hbf_goodell_now",
+   "lines": [
+    {
+     "who": "eli_goodell",
+     "text": "You're the fox."
+    },
+    {
+     "who": "prudence_goodell",
+     "text": "He can't be the fox. He's a stranger."
+    },
+    {
+     "who": "eli_goodell",
+     "text": "Strangers can be foxes."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "met_prudence_goodell"
+    }
+   ]
+  },
+  {
+   "id": "hbf_goodell_thadeous",
+   "lines": [
+    {
+     "who": "prudence_goodell",
+     "text": "We're not allowed to sing the Burnbottom song. Mother says."
+    },
+    {
+     "who": "eli_goodell",
+     "text": "It goes..."
+    },
+    {
+     "who": "prudence_goodell",
+     "text": "Eli."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "heard:hbf_goodell"
+    }
+   ]
+  },
+  {
+   "id": "hbf_goodell_after",
+   "lines": [
+    {
+     "who": "eli_goodell",
+     "text": "The clock went in the night. I counted to three and then I fell asleep."
+    },
+    {
+     "who": "prudence_goodell",
+     "text": "It went to three. I counted all of it."
+    }
+   ]
+  },
+  {
+   "id": "hbf_pratt_now",
+   "lines": [
+    {
+     "who": "moses_pratt",
+     "text": "I don't hold with the Tankard. I don't hold with singing on a weekday, and I don't hold with that man."
+    },
+    {
+     "who": "moses_pratt",
+     "text": "I walked him home Tuesday. He sang the whole way. I don't hold with that either."
+    }
+   ]
+  },
+  {
+   "id": "hbf_pratt_after",
+   "lines": [
+    {
+     "who": "moses_pratt",
+     "text": "The clock struck in the night. I went down to the meetinghouse in case it was a fire. It wasn't. I stayed a while anyway."
+    }
+   ]
+  },
+  {
+   "id": "hbf_sprague_now",
+   "lines": [
+    {
+     "who": "clarissa_sprague",
+     "text": "School's shut till the cold breaks. Penhallow's orders. The stove can't keep up and neither can I."
+    },
+    {
+     "who": "clarissa_sprague",
+     "text": "The singing school filled the meetinghouse every winter when I was a girl. The Reverend wants it back. So do I, and I'm not too proud to say so."
+    }
+   ]
+  },
+  {
+   "id": "hbf_sprague_after",
+   "lines": [
+    {
+     "who": "clarissa_sprague",
+     "text": "Clock's going. If the school can open, the singing school can. Somebody tell the Reverend I said so."
+    }
+   ]
+  },
+  {
+   "id": "hbf_submit_tolman_now",
+   "lines": [
+    {
+     "who": "submit_tolman",
+     "text": "His dinner. Every noon I carry it up, and every noon the last one's still there."
+    },
+    {
+     "who": "submit_tolman",
+     "text": "He puts his hand on the works and stands there. Forty years married, and I'd never seen him stand still."
+    }
+   ]
+  },
+  {
+   "id": "hbf_submit_tolman_after",
+   "lines": [
+    {
+     "who": "submit_tolman",
+     "text": "He ate his dinner. Both of them. Then he wound her, and came home, and slept."
+    }
+   ]
+  },
+  {
+   "id": "hbf_nye_now",
+   "lines": [
+    {
+     "who": "mrs_nye",
+     "text": "Mr. Penhallow's in the mill office. Mr. Penhallow's always in the mill office."
+    },
+    {
+     "who": "mrs_nye",
+     "text": "His father raised the dam. You'll hear people say it was the right thing. You won't hear it from me, and you didn't hear that from me either."
+    }
+   ]
+  },
+  {
+   "id": "hbf_nye_after",
+   "lines": [
+    {
+     "who": "mrs_nye",
+     "text": "He stood at the window the whole night the clock struck. I brought him tea at three. He said thank you. He has never once said thank you."
+    }
+   ]
+  }
+ ]
+}

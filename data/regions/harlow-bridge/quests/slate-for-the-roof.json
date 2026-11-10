@@ -1,0 +1,45 @@
+{
+ "id": "slate-for-the-roof",
+ "title": "Slate for the Roof",
+ "side": true,
+ "blurb": "Dorcas Brigham's slate got over the ford at last. Now the last of it has to go up on the meetinghouse roof.",
+ "_note": "Decision 0485: Harlow Bridge's last side quest, cross-region from the Old Post Road. The Toll Goose is settled on the main path, so Dorcas is on the meetinghouse roof whenever the party reaches Harlow Bridge. Three bundles handed up the ladder (one use of the slate pile each), then she comes down, goes in, and sits at the back. Words in dialogue/slate.json; her schedule and talk are in regions/old-post-road/people.json.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Slate for the roof",
+   "objective": "",
+   "done": { "flags": ["slate_asked"] },
+   "sets": ["slate_asked"],
+   "auto": [{ "go": "meetinghouse-hill" }, { "talk": "dorcas_brigham" }]
+  },
+  {
+   "id": "hand",
+   "title": "Slate for the roof",
+   "objective": "Hand the last of the slate up the ladder to Dorcas.",
+   "count": { "flags": ["slate_1", "slate_2", "slate_3"] },
+   "done": { "flags": ["slate_3"] },
+   "sets": ["slate_1", "slate_2", "slate_3"],
+   "skip": { "area": "meetinghouse-hill", "spot": "The slate pile" },
+   "auto": [{ "use": "slate_hand" }, { "use": "slate_hand" }, { "use": "slate_hand" }]
+  },
+  {
+   "id": "down",
+   "title": "Slate for the roof",
+   "objective": "The roof is done. Dorcas is down off the ladder.",
+   "done": { "flags": ["slate_in"] },
+   "sets": ["slate_in"],
+   "skip": { "area": "meetinghouse-hill", "spot": "Dorcas at the ladder" },
+   "auto": [{ "talk": "dorcas_brigham" }]
+  },
+  {
+   "id": "inside",
+   "title": "Slate for the roof",
+   "objective": "Dorcas has gone into the meetinghouse.",
+   "done": { "flags": ["slate_done"] },
+   "sets": ["slate_done"],
+   "skip": { "area": "meetinghouse-hill", "spot": "Meetinghouse door" },
+   "auto": [{ "use": "door_meetinghouse_hill_the_meetinghouse" }, { "use": "slate_pew" }]
+  }
+ ]
+}

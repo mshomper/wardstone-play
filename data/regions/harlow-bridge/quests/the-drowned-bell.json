@@ -1,0 +1,109 @@
+{
+ "id": "the-drowned-bell",
+ "title": "The Drowned Bell",
+ "side": true,
+ "blurb": "Thankful Ide wants to hear the bell of drowned Lower Harlow once more, rung properly.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "The drowned bell",
+   "objective": "",
+   "done": {
+    "flags": [
+     "bell_asked"
+    ]
+   },
+   "sets": [
+    "met_thankful",
+    "bell_asked"
+   ],
+   "auto": [
+    {
+     "talk": "thankful_ide"
+    },
+    {
+     "talk": "thankful_ide"
+    }
+   ]
+  },
+  {
+   "id": "belfry",
+   "title": "The drowned bell",
+   "optional": true,
+   "objective": "The old meetinghouse's bell is under the ice. Go down through the steeple and find it.",
+   "done": {
+    "flags": [
+     "bell_seen"
+    ]
+   },
+   "sets": [
+    "bell_seen"
+   ],
+   "skip": {
+    "area": "drowned-town",
+    "spot": "Thankful at her door"
+   },
+   "auto": [
+    {
+     "go": "lower-harlow"
+    },
+    {
+     "use": "hb_bell_frozen"
+    }
+   ]
+  },
+  {
+   "id": "mill",
+   "title": "The drowned bell",
+   "objective": "The bell is frozen in a block of ice. It can't be rung from here.",
+   "done": {
+    "flags": [
+     "bell_rung"
+    ]
+   },
+   "sets": [
+    "bell_rung"
+   ],
+   "skip": {
+    "area": "lower-harlow",
+    "spot": "The bell"
+   },
+   "auto": [
+    {
+     "go": "lower-harlow"
+    },
+    {
+     "fight": "lower-harlow-old-mill"
+    },
+    {
+     "use": "hb_bell_rings"
+    }
+   ]
+  },
+  {
+   "id": "shore",
+   "title": "The drowned bell",
+   "objective": "Go back up to Thankful on the shore.",
+   "done": {
+    "flags": [
+     "bell_done"
+    ]
+   },
+   "sets": [
+    "bell_done"
+   ],
+   "skip": {
+    "area": "lower-harlow",
+    "spot": "The Old Mill"
+   },
+   "auto": [
+    {
+     "go": "drowned-town"
+    },
+    {
+     "talk": "thankful_ide"
+    }
+   ]
+  }
+ ]
+}

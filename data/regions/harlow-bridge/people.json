@@ -2,6 +2,22 @@
   "_note": "Harlow Bridge's people (decisions 0388, 0389). Oren keeps the bar and the drinkers sit at the taproom's tables; during the Broken Tankard's two scenes everyone stands where that scene's flag puts them. Thadeous is only in the taproom for the scenes until the region's story is written.",
   "people": [
     {
+      "id": "euphemia_lord",
+      "name": "Euphemia Lord",
+      "title": "Tailor, Market Square",
+      "portrait": "#33406e",
+      "sprite": "npc_euphemia_lord_iso",
+      "potter": 0,
+      "schedule": [{"area": "harlow-bridge-euphemia-lord-s-shop", "spot": "counter", "dir": 2, "potter": 0, "exact": true}],
+      "talk": [
+        {"if": {"notFlags": ["met_euphemia"]}, "dialogue": "hb_euphemia_first"},
+        {"if": {"flags": ["has_dye_book"], "notFlags": ["dye_book_returned"]}, "dialogue": "hb_euphemia_book_back"},
+        {"if": {"flags": ["joined:obed"], "notFlags": ["heard:EUO"]}, "dialogue": "hb_euphemia_obed"},
+        {"if": {"flags": ["joined:thadeous"], "notFlags": ["dye_book_asked"]}, "dialogue": "hb_euphemia_ask"},
+        {"dialogue": "hb_euphemia_bench"}
+      ]
+    },
+    {
       "id": "oren_whitcomb",
       "name": "Oren Whitcomb",
       "title": "Keeps the Broken Tankard",
@@ -62,6 +78,7 @@
       "sprite": "thadeous_iso",
       "potter": 0,
       "schedule": [
+        {"if": {"flags": ["scene:singing_school"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "leader", "dir": 2, "potter": 0, "exact": true},
         {
           "if": {
             "flags": [
@@ -83,6 +100,95 @@
           "spot": "corner",
           "dir": 0,
           "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "walked_the_wall"
+            ],
+            "notFlags": [
+              "went_up"
+            ]
+          },
+          "area": "harlow-bridge-the-broken-tankard",
+          "spot": "bar_stool",
+          "dir": 2,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "went_up"
+            ],
+            "notFlags": [
+              "heard_the_answer",
+              "joined:thadeous"
+            ]
+          },
+          "area": "north-lots",
+          "spot": "Thadeous at the gap",
+          "dir": 0,
+          "potter": 0
+        },
+        {
+          "if": {
+            "flags": [
+              "heard_the_answer"
+            ],
+            "notFlags": [
+              "joined:thadeous"
+            ]
+          },
+          "area": "north-lots",
+          "spot": "Thadeous at the gap",
+          "dir": 2,
+          "potter": 0
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "walked_the_wall"
+            ],
+            "notFlags": [
+              "went_up"
+            ]
+          },
+          "dialogue": "oca_ask_to_come"
+        },
+        {
+          "if": {
+            "flags": [
+              "went_up"
+            ],
+            "notFlags": [
+              "hushed_watcher"
+            ]
+          },
+          "dialogue": "oca_at_gap"
+        },
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ],
+            "notFlags": [
+              "heard_the_answer"
+            ]
+          },
+          "dialogue": "oca_answer"
+        },
+        {
+          "if": {
+            "flags": [
+              "heard_the_answer"
+            ],
+            "notFlags": [
+              "joined:thadeous"
+            ]
+          },
+          "dialogue": "oca_join"
         }
       ]
     },
@@ -117,12 +223,223 @@
           "potter": 0
         },
         {
+          "from": 7,
+          "to": 18,
+          "area": "harlow-bridge",
+          "spot": "Mill hands in the square",
+          "dir": 2
+        },
+        {
           "area": "harlow-bridge-the-broken-tankard",
           "spot": "table_1",
           "dir": 4
         }
       ],
-      "talk": []
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "heard_burnbottom"
+            ]
+          },
+          "dialogue": "oca_ask_frost"
+        },
+        {
+          "dialogue": "oca_millhand"
+        }
+      ]
+    },
+    {
+      "id": "bartholomew_swain",
+      "name": "Bartholomew Swain",
+      "title": "Keeps the toll",
+      "portrait": "#3a4a5e",
+      "sprite": "npc_bartholomew_swain_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "covered-bridge",
+          "spot": "The west portal",
+          "dir": 2,
+          "potter": 0
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "toll:eldwin"
+            ]
+          },
+          "dialogue": "hb_toll"
+        },
+        {
+          "if": {
+            "party": [
+              "obed"
+            ],
+            "notFlags": [
+              "toll:obed"
+            ]
+          },
+          "dialogue": "hb_toll_more"
+        },
+        {
+          "if": {
+            "party": [
+              "applegate",
+              "obed"
+            ],
+            "notFlags": [
+              "toll:applegate"
+            ]
+          },
+          "dialogue": "hb_toll_more"
+        },
+        {
+          "if": {
+            "party": [
+              "thadeous"
+            ],
+            "notFlags": [
+              "toll:thadeous"
+            ]
+          },
+          "dialogue": "hb_toll_more"
+        },
+        {
+          "dialogue": "hb_toll_plank"
+        }
+      ]
+    },
+    {
+      "id": "ira_bascom",
+      "name": "Ira Bascom",
+      "title": "Tanner",
+      "portrait": "#5a3a22",
+      "sprite": "npc_ira_bascom_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "tanners-row",
+          "spot": "Ira at the vats",
+          "dir": 1,
+          "potter": 0
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_ira"
+            ]
+          },
+          "dialogue": "hb_ira_first"
+        },
+        {
+          "if": {
+            "flags": [
+              "beat_bull"
+            ],
+            "notFlags": [
+              "bark_asked"
+            ]
+          },
+          "dialogue": "hb_ira_bull"
+        },
+        {
+          "if": {
+            "flags": [
+              "bark_counted"
+            ],
+            "notFlags": [
+              "bark_done"
+            ]
+          },
+          "dialogue": "hb_ira_back"
+        },
+        {
+          "if": {
+            "flags": [
+              "joined:thadeous"
+            ],
+            "notFlags": [
+              "heard:IBT"
+            ]
+          },
+          "dialogue": "hb_ira_thadeous"
+        },
+        {
+          "dialogue": "hb_ira"
+        }
+      ]
+    },
+    {
+      "id": "thankful_ide",
+      "name": "Thankful Ide",
+      "title": "The Drowned Town",
+      "portrait": "#5a4a5a",
+      "sprite": "npc_thankful_ide_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "drowned-town",
+          "spot": "Thankful at her door",
+          "dir": 0,
+          "potter": 0
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ],
+            "notFlags": [
+              "heard_thankful_verse"
+            ]
+          },
+          "dialogue": "thankful_lantern_verse"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "met_thankful"
+            ]
+          },
+          "dialogue": "hb_thankful_first"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "bell_asked"
+            ]
+          },
+          "dialogue": "hb_thankful_bell"
+        },
+        {
+          "if": {
+            "flags": [
+              "bell_rung"
+            ],
+            "notFlags": [
+              "bell_done"
+            ]
+          },
+          "dialogue": "hb_thankful_rung"
+        },
+        {
+          "if": {
+            "flags": [
+              "bell_done"
+            ]
+          },
+          "dialogue": "hb_thankful"
+        },
+        {
+          "dialogue": "hb_thankful_waiting"
+        }
+      ]
     },
     {
       "id": "harlow_farmer",
@@ -155,12 +472,23 @@
           "potter": 0
         },
         {
+          "from": 7,
+          "to": 18,
+          "area": "harlow-bridge",
+          "spot": "The hitching rail",
+          "dir": 2
+        },
+        {
           "area": "harlow-bridge-the-broken-tankard",
           "spot": "table_2",
           "dir": 4
         }
       ],
-      "talk": []
+      "talk": [
+        {
+          "dialogue": "oca_farmer"
+        }
+      ]
     },
     {
       "id": "harlow_goodwife",
@@ -193,12 +521,1100 @@
           "potter": 0
         },
         {
+          "from": 7,
+          "to": 18,
+          "area": "harlow-bridge",
+          "spot": "The pump",
+          "dir": 2
+        },
+        {
           "area": "harlow-bridge-the-broken-tankard",
           "spot": "table_3",
           "dir": 4
         }
       ],
-      "talk": []
-    }
+      "talk": [
+        {
+          "dialogue": "oca_goodwife"
+        }
+      ]
+    },
+    {
+      "id": "cyrus_penhallow",
+      "name": "Cyrus Penhallow",
+      "title": "Mill owner",
+      "portrait": "#3a4a6a",
+      "sprite": "npc_cyrus_penhallow_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "from": 8,
+          "to": 17,
+          "area": "harlow-bridge",
+          "spot": "Penhallow by the board",
+          "dir": 2,
+          "potter": 0.5
+        },
+        {
+          "area": "meetinghouse-hill",
+          "spot": "Penhallow's gate",
+          "dir": 2
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "notFlags": [
+              "met_penhallow"
+            ]
+          },
+          "dialogue": "oca_penhallow_first"
+        },
+        {
+          "dialogue": "oca_penhallow"
+        }
+      ]
+    },
+    {
+      "id": "ebenezer_tolman",
+      "name": "Ebenezer Tolman",
+      "title": "Clockmaker",
+      "portrait": "#6a5a40",
+      "sprite": "npc_ebenezer_tolman_iso",
+      "potter": 0,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_submit"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_3", "dir": 0, "potter": 0, "exact": true},
+        {
+          "area": "mill-street",
+          "spot": "Foot of the clock tower",
+          "dir": 0
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_tolman_down"]}, "dialogue": "ss_tolman_tower"},
+        {
+          "if": {
+            "notFlags": [
+              "met_tolman"
+            ]
+          },
+          "dialogue": "oca_tolman_first"
+        },
+        {
+          "dialogue": "oca_tolman"
+        }
+      ]
+    },
+    {
+      "id": "asher_kent",
+      "name": "Reverend Asher Kent",
+      "title": "Minister",
+      "portrait": "#2a2a2a",
+      "sprite": "npc_asher_kent_iso",
+      "potter": 0,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "singers_1", "dir": 2, "potter": 0, "exact": true},
+        {
+          "area": "meetinghouse-hill",
+          "spot": "Meetinghouse door",
+          "dir": 2
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["joined:thadeous"], "notFlags": ["ss_asked"]}, "dialogue": "ss_kent_ask"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_done"]}, "dialogue": "ss_kent_waiting"},
+        {"if": {"flags": ["ss_done"]}, "dialogue": "ss_kent_after"},
+        {
+          "dialogue": "oca_kent"
+        }
+      ]
+    },
+    {
+      "id": "hezekiah_doane",
+      "name": "Hezekiah Doane",
+      "title": "Ferryman",
+      "portrait": "#8a7a30",
+      "sprite": "npc_hezekiah_doane_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "area": "mill-street",
+          "spot": "The ferry landing",
+          "dir": 2
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "oca_doane"
+        }
+      ]
+    },
+    {
+      "id": "watcher_awake",
+      "name": "The Watcher",
+      "title": "A snowy owl",
+      "portrait": "#e8e8e0",
+      "sprite": "watcher_iso",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "notFlags": [
+              "hushed_watcher"
+            ]
+          },
+          "area": "north-lots",
+          "spot": "The Watcher",
+          "dir": 2,
+          "potter": 0,
+          "exact": true,
+          "lift": 1.0
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "oca_watcher_day"
+        }
+      ],
+      "scale": 0.45
+    },
+    {
+      "id": "watcher_asleep",
+      "name": "The Watcher",
+      "title": "Asleep",
+      "portrait": "#e8e8e0",
+      "sprite": "watcher_iso_asleep",
+      "potter": 0,
+      "schedule": [
+        {
+          "if": {
+            "flags": [
+              "hushed_watcher"
+            ]
+          },
+          "area": "north-lots",
+          "spot": "The Watcher",
+          "dir": 2,
+          "potter": 0,
+          "exact": true,
+          "lift": 1.0
+        }
+      ],
+      "talk": [
+        {
+          "dialogue": "oca_watcher_asleep"
+        }
+      ],
+      "scale": 0.45
+    },
+    {
+      "id": "asahel_fessenden",
+      "name": "Asahel Fessenden",
+      "title": "Dry goods, Market Square",
+      "portrait": "#4a4a32",
+      "sprite": "npc_asahel_fessenden_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_skein"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_7", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Fessenden at his door",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Fessenden at his door"
+              },
+              {
+                "spot": "Round: Fessenden's door",
+                "inside": {
+                  "area": "harlow-bridge-fessenden-s-dry-goods",
+                  "spot": "counter",
+                  "potter": 0.5
+                }
+              },
+              {
+                "spot": "Round: Fessenden at the stall"
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-fessenden-s-dry-goods-upper",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_cobb_asked"], "notFlags": ["ss_skein"]}, "dialogue": "ss_fessenden_skein"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_fessenden_after"
+        },
+        {
+          "dialogue": "hbf_fessenden_now"
+        }
+      ]
+    },
+    {
+      "id": "phineas_whipple",
+      "name": "Phineas Whipple",
+      "title": "Druggist, Market Square",
+      "portrait": "#3a5a4a",
+      "sprite": "npc_phineas_whipple_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_whipple"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_5", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Whipple at his door",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Whipple at his door"
+              },
+              {
+                "spot": "Round: the druggist's door",
+                "inside": {
+                  "area": "harlow-bridge-the-druggist",
+                  "spot": "counter",
+                  "potter": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-the-druggist-upper",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_whipple"], "party": ["thadeous"]}, "dialogue": "ss_whipple_word"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_whipple"]}, "dialogue": "ss_whipple_bring"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_whipple_after"
+        },
+        {
+          "dialogue": "hbf_whipple_now"
+        }
+      ]
+    },
+    {
+      "id": "elam_lyman",
+      "name": "Elam Lyman",
+      "title": "Bootmaker, Market Square",
+      "portrait": "#5a3e2a",
+      "sprite": "npc_elam_lyman_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Lyman at his door",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Lyman at his door"
+              },
+              {
+                "spot": "Round: Lyman's door",
+                "inside": {
+                  "area": "harlow-bridge-lyman-s-boots",
+                  "spot": "counter",
+                  "potter": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-lyman-s-boots-upper",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_lyman_after"
+        },
+        {
+          "dialogue": "hbf_lyman_now"
+        }
+      ]
+    },
+    {
+      "id": "hannah_corliss",
+      "name": "Hannah Corliss",
+      "title": "Printer, Market Square",
+      "portrait": "#3a3a4e",
+      "sprite": "npc_hannah_corliss_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_parts"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_6", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Hannah at her door",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Hannah at her door"
+              },
+              {
+                "spot": "Round: the print shop door",
+                "inside": {
+                  "area": "harlow-bridge-corliss-s-print-shop",
+                  "spot": "counter",
+                  "potter": 0.5
+                }
+              },
+              {
+                "spot": "Round: Hannah at the noticeboard"
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-corliss-s-print-shop-upper",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_books"], "notFlags": ["ss_parts_ordered"]}, "dialogue": "ss_corliss_order"},
+        {"if": {"flags": ["ss_parts_ordered"], "notFlags": ["ss_parts"], "atLeast": {"flags": ["ss_singer_pratt", "ss_singer_whipple", "ss_singer_cobb", "ss_singer_ames", "ss_singer_nason", "ss_singer_submit"], "n": 2}}, "dialogue": "ss_corliss_ready"},
+        {"if": {"flags": ["ss_parts_ordered"], "notFlags": ["ss_parts"]}, "dialogue": "ss_corliss_setting"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_corliss_after"
+        },
+        {
+          "dialogue": "hbf_corliss_now"
+        }
+      ]
+    },
+    {
+      "id": "abijah_hatch",
+      "name": "Squire Abijah Hatch",
+      "title": "Justice of the peace",
+      "portrait": "#2e3a5a",
+      "sprite": "npc_abijah_hatch_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 8,
+          "to": 18,
+          "area": "harlow-bridge",
+          "spot": "Squire Hatch on his step",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.8,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Squire Hatch on his step"
+              },
+              {
+                "spot": "Round: the Squire at the stalls"
+              },
+              {
+                "spot": "Round: the Squire's door",
+                "inside": {
+                  "area": "harlow-bridge-squire-hatch-s-house",
+                  "spot": "hearth",
+                  "potter": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-squire-hatch-s-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_hatch_after"
+        },
+        {
+          "dialogue": "hbf_hatch_now"
+        }
+      ]
+    },
+    {
+      "id": "nathaniel_wolcott",
+      "name": "Dr. Nathaniel Wolcott",
+      "title": "Doctor",
+      "portrait": "#22222a",
+      "sprite": "npc_nathaniel_wolcott_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Dr. Wolcott at his door",
+          "dir": 2,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Dr. Wolcott at his door"
+              },
+              {
+                "spot": "Round: the doctor's door",
+                "inside": {
+                  "area": "harlow-bridge-the-doctor-s-house",
+                  "spot": "hearth",
+                  "potter": 0.5
+                }
+              },
+              {
+                "spot": "Round: the doctor at the corner"
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-the-doctor-s-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_wolcott_after"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "met_nathaniel_wolcott"
+            ]
+          },
+          "dialogue": "hbf_wolcott_now"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "heard:hbf_wolcott"
+            ]
+          },
+          "dialogue": "hbf_wolcott_thadeous"
+        },
+        {
+          "dialogue": "hbf_wolcott_now"
+        }
+      ]
+    },
+    {
+      "id": "zebulon_gault",
+      "name": "Zebulon Gault",
+      "title": "Keeps the livery stable",
+      "portrait": "#5a4a30",
+      "sprite": "npc_zebulon_gault_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 6,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Gault at the stable door",
+          "dir": 6,
+          "rounds": {
+            "speed": 1.0,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Gault at the stable door"
+              },
+              {
+                "spot": "Round: Gault at the trough"
+              },
+              {
+                "spot": "Round: Gault at the hay"
+              },
+              {
+                "spot": "Round: the livery door",
+                "inside": {
+                  "area": "harlow-bridge-the-livery-stable",
+                  "spot": "",
+                  "potter": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-the-livery-stable",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.6
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_gault_after"
+        },
+        {
+          "dialogue": "hbf_gault_now"
+        }
+      ]
+    },
+    {
+      "id": "levi_coburn",
+      "name": "Levi Coburn",
+      "title": "Stage driver",
+      "portrait": "#4a3a2a",
+      "sprite": "npc_levi_coburn_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 7,
+          "to": 20,
+          "area": "harlow-bridge",
+          "spot": "The stage yard",
+          "dir": 1,
+          "potter": 0.9
+        },
+        {
+          "area": "harlow-bridge-the-broken-tankard-upper",
+          "spot": "",
+          "dir": 0,
+          "potter": 0.3
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_coburn_after"
+        },
+        {
+          "dialogue": "hbf_coburn_now"
+        }
+      ]
+    },
+    {
+      "id": "lydia_ames",
+      "name": "Lydia Ames",
+      "title": "Widow, Market Square",
+      "portrait": "#1e1a22",
+      "sprite": "npc_lydia_ames_iso",
+      "potter": 0,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_ames"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_8", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 7,
+          "to": 20,
+          "area": "harlow-bridge",
+          "spot": "Mrs. Ames at her door",
+          "dir": 4,
+          "potter": 0
+        },
+        {
+          "area": "harlow-bridge-widow-ames-s-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.2
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_ames_asked"]}, "dialogue": "ss_ames_chair"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_ames_after"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "met_lydia_ames"
+            ]
+          },
+          "dialogue": "hbf_ames_now"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "heard:hbf_ames"
+            ]
+          },
+          "dialogue": "hbf_ames_thadeous"
+        },
+        {
+          "dialogue": "hbf_ames_now"
+        }
+      ]
+    },
+    {
+      "id": "prudence_goodell",
+      "name": "Prudence Goodell",
+      "title": "",
+      "portrait": "#6a3a3a",
+      "sprite": "npc_prudence_goodell_iso",
+      "potter": 1.0,
+      "schedule": [
+        {
+          "from": 8,
+          "to": 17,
+          "area": "harlow-bridge",
+          "spot": "Prudence at fox and geese",
+          "dir": 0,
+          "rounds": {
+            "speed": 1.5,
+            "stay": [
+              4,
+              9
+            ],
+            "stops": [
+              {
+                "spot": "Prudence at fox and geese"
+              },
+              {
+                "spot": "Round: the children by the pump"
+              },
+              {
+                "spot": "Round: the children by the stalls"
+              },
+              {
+                "spot": "Round: the children by the bench"
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-the-goodells-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.6
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_goodell_after"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "met_prudence_goodell"
+            ]
+          },
+          "dialogue": "hbf_goodell_now"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "heard:hbf_goodell"
+            ]
+          },
+          "dialogue": "hbf_goodell_thadeous"
+        },
+        {
+          "dialogue": "hbf_goodell_now"
+        }
+      ]
+    },
+    {
+      "id": "eli_goodell",
+      "name": "Eli Goodell",
+      "title": "",
+      "portrait": "#3a4a6a",
+      "sprite": "npc_eli_goodell_iso",
+      "potter": 1.0,
+      "schedule": [
+        {
+          "from": 8,
+          "to": 17,
+          "area": "harlow-bridge",
+          "spot": "Prudence at fox and geese",
+          "dir": 0,
+          "rounds": {
+            "speed": 1.6,
+            "follow": "prudence_goodell",
+            "gap": 1.1,
+            "stops": []
+          }
+        },
+        {
+          "area": "harlow-bridge-the-goodells-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.6
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_goodell_after"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "met_prudence_goodell"
+            ]
+          },
+          "dialogue": "hbf_goodell_now"
+        },
+        {
+          "if": {
+            "notFlags": [
+              "heard:hbf_goodell"
+            ]
+          },
+          "dialogue": "hbf_goodell_thadeous"
+        },
+        {
+          "dialogue": "hbf_goodell_now"
+        }
+      ]
+    },
+    {
+      "id": "moses_pratt",
+      "name": "Deacon Moses Pratt",
+      "title": "Deacon",
+      "portrait": "#26262a",
+      "sprite": "npc_moses_pratt_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_pratt"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_4", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 7,
+          "to": 19,
+          "area": "harlow-bridge",
+          "spot": "Deacon Pratt at his gate",
+          "dir": 2,
+          "rounds": {
+            "speed": 0.85,
+            "stay": [
+              14,
+              30
+            ],
+            "stops": [
+              {
+                "spot": "Deacon Pratt at his gate"
+              },
+              {
+                "spot": "Round: the Deacon by the Tankard"
+              }
+            ]
+          }
+        },
+        {
+          "area": "harlow-bridge-deacon-pratt-s-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_parts", "ss_singer_pratt"]}, "dialogue": "ss_pratt_doubt"},
+        {"if": {"flags": ["ss_parts"], "notFlags": ["ss_singer_pratt"]}, "dialogue": "ss_pratt_comes"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_pratt_after"
+        },
+        {
+          "dialogue": "hbf_pratt_now"
+        }
+      ]
+    },
+    {
+      "id": "clarissa_sprague",
+      "name": "Clarissa Sprague",
+      "title": "Schoolmistress",
+      "portrait": "#4a3a5a",
+      "sprite": "npc_clarissa_sprague_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_asked"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_1", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 8,
+          "to": 16,
+          "area": "meetinghouse-hill",
+          "spot": "Miss Sprague at the schoolhouse",
+          "dir": 6,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Miss Sprague at the schoolhouse"
+              },
+              {
+                "spot": "Round: the schoolhouse door",
+                "inside": {
+                  "area": "meetinghouse-hill-the-schoolhouse",
+                  "spot": "master",
+                  "potter": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "area": "meetinghouse-hill-the-spragues-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_books"]}, "dialogue": "ss_clarissa_books"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_done"]}, "dialogue": "ss_clarissa_plain"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_sprague_after"
+        },
+        {
+          "dialogue": "hbf_sprague_now"
+        }
+      ]
+    },
+    {
+      "id": "submit_tolman",
+      "name": "Submit Tolman",
+      "title": "The clockmaker's wife",
+      "portrait": "#5a4a3a",
+      "sprite": "npc_submit_tolman_iso",
+      "potter": 0.5,
+      "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_submit"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_2", "dir": 0, "potter": 0, "exact": true},
+        {
+          "from": 11.5,
+          "to": 13,
+          "area": "mill-street",
+          "spot": "Mrs. Tolman with his dinner",
+          "dir": 6,
+          "potter": 0
+        },
+        {
+          "from": 7,
+          "to": 19,
+          "area": "meetinghouse-hill",
+          "spot": "Mrs. Tolman at her door",
+          "dir": 0,
+          "rounds": {
+            "speed": 0.8,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Mrs. Tolman at her door"
+              },
+              {
+                "spot": "Round: Mrs. Tolman on the green"
+              }
+            ]
+          }
+        },
+        {
+          "area": "meetinghouse-hill-the-tolmans-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {"if": {"flags": ["ss_tolman_down"], "notFlags": ["ss_singer_submit"]}, "dialogue": "ss_submit_comes"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_submit"]}, "dialogue": "ss_submit_tower"},
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_submit_tolman_after"
+        },
+        {
+          "dialogue": "hbf_submit_tolman_now"
+        }
+      ]
+    },
+    {
+      "id": "mrs_nye",
+      "name": "Mrs. Nye",
+      "title": "Penhallow's housekeeper",
+      "portrait": "#3a3a3a",
+      "sprite": "npc_mrs_nye_iso",
+      "potter": 0.5,
+      "schedule": [
+        {
+          "from": 7,
+          "to": 20,
+          "area": "meetinghouse-hill",
+          "spot": "Mrs. Nye on the step",
+          "dir": 2,
+          "rounds": {
+            "speed": 0.95,
+            "stay": [
+              10,
+              24
+            ],
+            "stops": [
+              {
+                "spot": "Mrs. Nye on the step"
+              },
+              {
+                "spot": "Round: Penhallow's door",
+                "inside": {
+                  "area": "meetinghouse-hill-penhallow-s-house",
+                  "spot": "hearth",
+                  "potter": 0.5
+                }
+              },
+              {
+                "spot": "Round: Mrs. Nye at the herbs"
+              }
+            ]
+          }
+        },
+        {
+          "area": "meetinghouse-hill-penhallow-s-house",
+          "spot": "hearth",
+          "dir": 0,
+          "potter": 0.4
+        }
+      ],
+      "talk": [
+        {
+          "if": {
+            "flags": [
+              "harlow_stone_woke"
+            ]
+          },
+          "dialogue": "hbf_nye_after"
+        },
+        {
+          "dialogue": "hbf_nye_now"
+        }
+      ]
+    },
+    {"id": "ruel_batchelder", "name": "Ruel Batchelder", "title": "Sawyer", "portrait": "#5a4a3a", "sprite": "npc_ruel_batchelder_iso", "potter": 0.5, "schedule": [{"from": 6, "to": 21, "area": "mill-street", "spot": "Ruel by the sawmill", "dir": 7, "rounds": {"speed": 0.55, "stay": [14, 30], "stops": [{"spot": "Ruel by the sawmill"}, {"spot": "Round: Ruel by the barrels"}]}}, {"area": "mill-street-mill-row-north-no-1", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_ruel_after"}, {"dialogue": "hb_folk_ruel"}]},
+    {"id": "rhoda_cobb", "name": "Rhoda Cobb", "title": "Mill hand", "portrait": "#6a3a4a", "sprite": "npc_rhoda_cobb_iso", "potter": 0, "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_cobb"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_25", "dir": 0, "potter": 0, "exact": true},{"from": 6, "to": 21, "area": "mill-street", "spot": "Rhoda on her step", "dir": 2, "potter": 0, "rounds": {"speed": 0.6, "stay": [20, 40], "stops": [{"spot": "Rhoda on her step"}, {"spot": "Round: Rhoda's door", "inside": {"area": "mill-street-mill-row-south-no-2", "spot": "hearth", "potter": 0.4}}]}}, {"area": "mill-street-mill-row-south-no-2", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [
+        {"if": {"flags": ["ss_skein"], "notFlags": ["ss_singer_cobb"]}, "dialogue": "ss_cobb_comes"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_cobb"]}, "dialogue": "ss_cobb_wool"},{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_rhoda_after"}, {"dialogue": "hb_folk_rhoda"}]},
+    {"id": "jerusha_kidder", "name": "Jerusha Kidder", "title": "Fulling mill", "portrait": "#3a4a5a", "sprite": "npc_jerusha_kidder_iso", "potter": 0.6, "schedule": [{"from": 6, "to": 21, "area": "mill-street", "spot": "Mrs. Kidder at the fulling mill", "dir": 0, "rounds": {"speed": 0.95, "stay": [10, 22], "stops": [{"spot": "Mrs. Kidder at the fulling mill"}, {"spot": "Round: Mrs. Kidder by the ferry road"}]}}, {"area": "mill-street-mill-row-back-no-1", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_kidder_after"}, {"dialogue": "hb_folk_kidder"}]},
+    {"id": "ansel_frye", "name": "Ansel Frye", "title": "Mill clerk", "portrait": "#2a3a4a", "sprite": "npc_ansel_frye_iso", "potter": 0.4, "schedule": [{"from": 6, "to": 21, "area": "mill-street-the-mill-office", "spot": "desk", "dir": 4, "potter": 0.4}, {"area": "mill-street-mill-row-north-no-3", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_ansel_after"}, {"dialogue": "hb_folk_ansel"}]},
+    {"id": "orrin_gage", "name": "Orrin Gage", "title": "Company store", "portrait": "#4a5a3a", "sprite": "npc_orrin_gage_iso", "potter": 0.5, "schedule": [{"from": 6, "to": 21, "area": "mill-street-the-company-store", "spot": "counter", "dir": 0, "potter": 0.5}, {"area": "mill-street-mill-row-south-no-4", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_gage_after"}, {"dialogue": "hb_folk_gage"}]},
+    {"id": "hepzibah_walker", "name": "Hepzibah Walker", "title": "Keeps the boarding house", "portrait": "#2a2a3a", "sprite": "npc_hepzibah_walker_iso", "potter": 0.3, "schedule": [{"from": 6, "to": 21, "area": "mill-street", "spot": "Mrs. Walker at her door", "dir": 2, "potter": 0.3, "rounds": {"speed": 0.7, "stay": [16, 32], "stops": [{"spot": "Mrs. Walker at her door"}, {"spot": "Round: the boarding house door", "inside": {"area": "mill-street-the-boarding-house", "spot": "hearth", "potter": 0.5}}]}}, {"area": "mill-street-the-boarding-house", "spot": "hearth", "dir": 0, "potter": 0.2}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_walker_after"}, {"if": {"flags": ["talks:hepzibah_walker:1"], "notFlags": ["heard:HWT"]}, "dialogue": "hb_folk_walker_thadeous"}, {"dialogue": "hb_folk_walker"}]},
+    {"id": "lucinda_bean", "name": "Lucinda Bean", "title": "Mill girl", "portrait": "#7a5a6a", "sprite": "npc_lucinda_bean_iso", "potter": 0.8, "schedule": [{"from": 6, "to": 21, "area": "mill-street", "spot": "Lucinda by the fulling mill", "dir": 6, "rounds": {"speed": 1.05, "stay": [8, 18], "stops": [{"spot": "Lucinda by the fulling mill"}, {"spot": "Round: Lucinda by the store"}, {"spot": "Round: the boarding house door", "inside": {"area": "mill-street-the-boarding-house", "spot": "hearth", "potter": 0.6}}]}}, {"area": "mill-street-the-boarding-house-upper", "spot": "", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_lucinda_after"}, {"dialogue": "hb_folk_lucinda"}]},
+    {"id": "tom_nason", "name": "Tom Nason", "title": "Keeps the grog shop", "portrait": "#4a3a2a", "sprite": "npc_tom_nason_iso", "potter": 0, "schedule": [
+        {"if": {"flags": ["scene:singing_school", "ss_singer_nason"]}, "area": "meetinghouse-hill-the-meetinghouse", "spot": "pew_28", "dir": 0, "potter": 0, "exact": true},{"from": 6, "area": "tanners-row-the-grog-shop", "spot": "bar", "dir": 0, "potter": 0, "exact": true}, {"area": "tanners-row-the-grog-shop-upper", "spot": "", "dir": 0, "potter": 0.2}], "talk": [
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_nason"], "party": ["thadeous"]}, "dialogue": "ss_nason_refused"},
+        {"if": {"flags": ["ss_asked"], "notFlags": ["ss_singer_nason"]}, "dialogue": "ss_nason_bring"},{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_nason_after"}, {"dialogue": "hb_folk_nason"}]},
+    {"id": "gideon_sloat", "name": "Gideon Sloat", "title": "Tannery hand", "portrait": "#5a4028", "sprite": "npc_gideon_sloat_iso", "potter": 0.7, "schedule": [{"from": 6, "to": 21, "area": "tanners-row", "spot": "Gideon in the tannery yard", "dir": 0, "rounds": {"speed": 0.9, "stay": [10, 24], "stops": [{"spot": "Gideon in the tannery yard"}, {"spot": "Round: Gideon at the hide frames"}, {"spot": "The tannery door", "inside": {"area": "tanners-row-the-tannery", "spot": "bench", "potter": 0.5}}]}}, {"area": "tanners-row-the-boarding-house-upper", "spot": "", "dir": 0, "potter": 0.2}], "talk": [{"if": {"flags": ["bark_done"]}, "dialogue": "hb_folk_gideon_bark"}, {"dialogue": "hb_folk_gideon"}]},
+    {"id": "mother_peck", "name": "Mother Peck", "title": "Cook, the Row boarding house", "portrait": "#6a4a3a", "sprite": "npc_mother_peck_iso", "potter": 0.6, "schedule": [{"from": 6, "to": 21, "area": "tanners-row-the-boarding-house", "spot": "hearth", "dir": 0, "potter": 0.6}, {"area": "tanners-row-the-boarding-house-upper", "spot": "", "dir": 0, "potter": 0.2}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_peck_after"}, {"dialogue": "hb_folk_peck"}]},
+    {"id": "abel_mudgett", "name": "Abel Mudgett", "title": "Ice cutter", "portrait": "#3a4a5a", "sprite": "npc_abel_mudgett_iso", "potter": 0.5, "schedule": [{"from": 6, "to": 21, "area": "drowned-town", "spot": "Abel by the ramp", "dir": 2, "rounds": {"speed": 0.7, "stay": [14, 30], "stops": [{"spot": "Abel by the ramp"}, {"spot": "Round: Abel on the shore path"}]}}, {"area": "mill-street-mill-row-back-no-4", "spot": "hearth", "dir": 0, "potter": 0.3}], "talk": [{"if": {"flags": ["harlow_stone_woke"]}, "dialogue": "hb_folk_mudgett_after"}, {"dialogue": "hb_folk_mudgett"}]}
   ]
 }

@@ -1,0 +1,116 @@
+{
+ "id": "bark-for-the-tannery",
+ "title": "Bark for the Tannery",
+ "side": true,
+ "blurb": "Ira Bascom has eight vats and no bark, and his wagon won't go up the Tanbark Road alone.",
+ "steps": [
+  {
+   "id": "unasked",
+   "title": "Bark for the tannery",
+   "objective": "",
+   "done": {
+    "flags": [
+     "bark_asked"
+    ]
+   },
+   "sets": [
+    "met_ira",
+    "bark_asked"
+   ],
+   "auto": [
+    {
+     "talk": "ira_bascom"
+    },
+    {
+     "talk": "ira_bascom"
+    }
+   ]
+  },
+  {
+   "id": "shed",
+   "title": "Bark for the tannery",
+   "objective": "Walk up the Tanbark Road with Ira's wagon to the Rowes' bark shed.",
+   "done": {
+    "flags": [
+     "bark_counted"
+    ]
+   },
+   "sets": [
+    "bark_counted"
+   ],
+   "skip": {
+    "area": "tanners-row",
+    "spot": "Ira at the vats"
+   },
+   "auto": [
+    {
+     "go": "covered-bridge"
+    },
+    {
+     "go": "mill-street"
+    },
+    {
+     "go": "harlow-bridge"
+    },
+    {
+     "go": "the-lookoff"
+    },
+    {
+     "go": "hemlock-wall"
+    },
+    {
+     "go": "mast-wood"
+    },
+    {
+     "go": "bark-road"
+    },
+    {
+     "talk": "mehitable_rowe"
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "title": "Bark for the tannery",
+   "objective": "Bring the bark down to Ira on Tanner's Row.",
+   "done": {
+    "flags": [
+     "bark_done"
+    ]
+   },
+   "sets": [
+    "bark_done"
+   ],
+   "skip": {
+    "area": "bark-road",
+    "spot": "Mehitable (rick ends)"
+   },
+   "auto": [
+    {
+     "go": "mast-wood"
+    },
+    {
+     "go": "hemlock-wall"
+    },
+    {
+     "go": "the-lookoff"
+    },
+    {
+     "go": "harlow-bridge"
+    },
+    {
+     "go": "mill-street"
+    },
+    {
+     "go": "covered-bridge"
+    },
+    {
+     "go": "tanners-row"
+    },
+    {
+     "talk": "ira_bascom"
+    }
+   ]
+  }
+ ]
+}

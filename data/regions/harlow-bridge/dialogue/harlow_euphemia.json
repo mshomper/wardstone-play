@@ -1,0 +1,30 @@
+{
+  "_note": "Euphemia Lord, Harlow Bridge's tailor and master (decisions 0450, 0451; Matt approved the lines 9 Nov 2026). Her bench is every slot and tier up to Master's Make, her threads the plain three plus Indigo and Rawhide, and her master work (Master's Make coats) opens with The Dye Book. Exact, dry, judges cloth the way Obed judges stone.",
+  "conversations": [
+    { "id": "hb_euphemia_first", "lines": [
+      { "who": "euphemia_lord", "text": "Stand in the light. That coat was well made once, by someone who didn't hurry." },
+      { "who": "euphemia_lord", "text": "It's been mended by someone who did." },
+      { "who": "euphemia_lord", "if": { "flags": ["met_tamsin"] }, "text": "Tamsin Gove sent you. She sews tight. Too tight." },
+      { "who": "euphemia_lord", "text": "Lay it flat. I'll turn it, unpick it, or put a word in it. Not all three today." }
+    ], "onEnd": [{ "setFlag": "met_euphemia" }, { "tailor": { "table": "Euphemia Lord's bench", "upTo": "master", "threads": ["cotton", "linen", "horsehair", "indigo", "rawhide"], "master": "euphemia_lord", "finer": "No. Nobody living made that, and nobody living should touch it." } }] },
+    { "id": "hb_euphemia_bench", "lines": [
+      { "who": "euphemia_lord", "text": "Lay it flat." }
+    ], "onEnd": [{ "tailor": { "table": "Euphemia Lord's bench", "upTo": "master", "threads": ["cotton", "linen", "horsehair", "indigo", "rawhide"], "master": "euphemia_lord", "finer": "No. Nobody living made that, and nobody living should touch it." } }] },
+    { "id": "hb_euphemia_ask", "lines": [
+      { "who": "euphemia_lord", "text": "I don't cut for strangers. Strangers don't come back for fittings." },
+      { "who": "euphemia_lord", "text": "My grandmother's book went under with the house. Main Street, the blue door. A tin box on the sill. Don't open it." }
+    ], "onEnd": [{ "setFlag": "dye_book_asked" }, { "tailor": { "table": "Euphemia Lord's bench", "upTo": "master", "threads": ["cotton", "linen", "horsehair", "indigo", "rawhide"], "master": "euphemia_lord", "finer": "No. Nobody living made that, and nobody living should touch it." } }] },
+    { "id": "hb_euphemia_book_back", "lines": [
+      { "who": "", "text": "She turns the tin over twice before she opens it." },
+      { "who": "euphemia_lord", "text": "Dry. Somebody's tried the clasp. But dry." },
+      { "who": "", "text": "She holds a swatch from the book against the thread on her bench." },
+      { "who": "euphemia_lord", "text": "Two shades off. Fifty years. I knew it." },
+      { "who": "euphemia_lord", "text": "Now I'll take your measure. Properly. Arms out." }
+    ], "onEnd": [{ "setFlag": "dye_book_returned" }, { "tailor": { "table": "Euphemia Lord's bench", "upTo": "master", "threads": ["cotton", "linen", "horsehair", "indigo", "rawhide"], "master": "euphemia_lord", "finer": "No. Nobody living made that, and nobody living should touch it." } }] },
+    { "id": "hb_euphemia_obed", "lines": [
+      { "who": "euphemia_lord", "text": "You looked at my seams before my face." },
+      { "who": "obed", "text": "Always do." },
+      { "who": "euphemia_lord", "text": "Good." }
+    ], "onEnd": [{ "setFlag": "heard:EUO" }] }
+  ]
+}

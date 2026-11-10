@@ -1,0 +1,88 @@
+{
+  "_note": "The Singing School (decision 0434), the lines spoken by people who exist already: Reverend Kent's ask, the tune books, Tolman down from the tower, the Tankard warning, and the evening. The townsfolk's own lines are in ss_town.json. All drafts for Matt or his writer friend.",
+  "conversations": [
+    {
+      "id": "ss_kent_ask",
+      "lines": [
+        { "who": "asher_kent", "text": "Mr. Burnbottom. They tell me you're leaving us." },
+        { "who": "thadeous", "text": "Eventually. Everything I do is eventually." },
+        { "who": "asher_kent", "text": "Then one evening first. The singing school filled this house every winter. I have the house, and I have the winter. I haven't anyone to lead it, or anyone to sing." },
+        { "who": "thadeous", "text": "Nobody's going to climb this hill to hear me sing hymns, Reverend. They've heard me sing everything else." },
+        { "who": "asher_kent", "text": "Then they'll need asking." },
+        { "who": "", "text": "He looks at Eldwin when he says it." },
+        { "who": "asher_kent", "text": "Tonight, if it can be done. And Mr. Burnbottom. Sober." },
+        { "who": "thadeous", "text": "I'm always sober in the mornings. It's my best time." }
+      ],
+      "onEnd": [{ "setFlag": "ss_asked" }, { "time": 9.5 }]
+    },
+    {
+      "id": "ss_kent_waiting",
+      "lines": [
+        { "who": "asher_kent", "if": { "notFlags": ["ss_books"] }, "text": "Miss Sprague will tell you we've nothing to sing from. She's right, as usual. Try the schoolhouse." },
+        { "who": "asher_kent", "if": { "flags": ["ss_books"], "notFlags": ["ss_enough"] }, "text": "Four would do. Six would be a congregation. Anyone you can talk round." },
+        { "who": "asher_kent", "if": { "flags": ["ss_enough"] }, "text": "Come up when you're ready. I'll light the candles, and the rest can come up as the day goes." }
+      ]
+    },
+    {
+      "id": "ss_kent_after",
+      "lines": [
+        { "who": "asher_kent", "text": "I've had letters from three towns asking how we did it. I'm going to tell them we asked." }
+      ]
+    },
+    {
+      "id": "ss_books",
+      "lines": [
+        { "who": "", "text": "Under the master's desk, a box gone soft with damp. Inside, six tune books, their covers foxed." },
+        { "who": "", "text": "On every one, in what's left of the gilt: The Harlow Collection. H. Prentice." },
+        { "who": "", "if": { "party": ["thadeous"] }, "text": "Thadeous takes one and turns the pages without reading them." },
+        { "who": "thadeous", "if": { "party": ["thadeous"] }, "text": "He copied the first ones out by hand. Every part. He'd be appalled at the state of them." }
+      ],
+      "onEnd": [{ "setFlag": "ss_books" }]
+    },
+    {
+      "id": "ss_tolman_tower",
+      "lines": [
+        { "who": "ebenezer_tolman", "text": "The singing school. Submit asked me this morning. I told her I'd be up the tower." },
+        { "who": "eldwin", "text": "The clock's going." },
+        { "who": "ebenezer_tolman", "text": "So it is. So it is." },
+        { "who": "ebenezer_tolman", "text": "She sings alto. I'd forgotten that. Tell her I'll come down." }
+      ],
+      "onEnd": [{ "setFlag": "ss_tolman_down" }]
+    },
+    {
+      "id": "ss_tankard_warning",
+      "lines": [
+        { "who": "thadeous", "text": "Just to warm the pipes. One. Medicinal." },
+        { "who": "eldwin", "text": "No." },
+        { "who": "thadeous", "text": "No. No, you're right. Whipple would smell it on me from the square." }
+      ]
+    },
+    {
+      "id": "ss_evening",
+      "lines": [
+        { "who": "", "text": "The meetinghouse is lit, a candle in every sconce, and there are people in the pews." },
+        { "who": "thadeous", "text": "Old Hundredth. I'll give you the line, and you give it back. Don't be clever with it." }
+      ]
+    },
+    {
+      "id": "ss_sung_back",
+      "lines": [
+        { "who": "", "text": "He sings the first line alone. They sing it back, ragged. Then, the second time, not." }
+      ]
+    },
+    {
+      "id": "ss_candles",
+      "lines": [
+        { "who": "", "text": "Every candle in the house leans toward the front." },
+        { "who": "asher_kent", "text": "There." },
+        { "who": "thadeous", "text": "They came. You asked them, and they came." }
+      ]
+    },
+    {
+      "id": "ss_full",
+      "lines": [
+        { "who": "", "text": "Every pew has somebody in it. Somebody is standing at the back." }
+      ]
+    }
+  ]
+}

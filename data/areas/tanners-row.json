@@ -1,0 +1,962 @@
+{
+ "version": 1,
+ "name": "tanners-row",
+ "seed": 4212,
+ "size": {
+  "w": 64,
+  "h": 44
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 1.0,
+  "edgeWidth": 3,
+  "roll": 0.2,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "mud",
+   "under": "bark",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "bare_tree_0",
+     "bare_tree_1",
+     "white_pine_0",
+     "maple_red_1"
+    ],
+    "density": 0.4,
+    "spacing": 2.6,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_0",
+     "bare_tree_1"
+    ],
+    "density": 0.18,
+    "spacing": 2.8,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "water",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "bare_tree_0",
+     "bare_tree_1",
+     "white_pine_0",
+     "lilac_pruned"
+    ],
+    "density": 0.12,
+    "spacing": 4.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "open",
+    "collide": 0.4,
+    "tall": true
+   },
+   {
+    "props": [
+     "tree_stump_0",
+     "tree_stump_1",
+     "spent_bark_heap_0",
+     "spent_bark_heap_1"
+    ],
+    "density": 0.16,
+    "spacing": 2.6,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "goldenrod_0",
+     "asters_0",
+     "fern_autumn_2"
+    ],
+    "density": 0.12,
+    "spacing": 1.6,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "goldenrod_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.1,
+    "spacing": 1.2,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "path"
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -17.6,
+     -12
+    ],
+    [
+     -10,
+     -11
+    ],
+    [
+     0,
+     -10.4
+    ],
+    [
+     12,
+     -10
+    ],
+    [
+     22,
+     -9.6
+    ],
+    [
+     27,
+     -8
+    ]
+   ],
+   "width": 3,
+   "kind": "road"
+  },
+  {
+   "points": [
+    [
+     22,
+     -9.6
+    ],
+    [
+     24,
+     -2
+    ],
+    [
+     24.6,
+     6
+    ]
+   ],
+   "width": 1.6,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "bridge",
+   "kind": "bridge",
+   "x": -24,
+   "z": -12,
+   "w": 12.4,
+   "d": 2.8,
+   "rot": 0,
+   "height": 2.6
+  },
+  {
+   "mesh": "kit",
+   "recipe": "tannery",
+   "x": 2,
+   "z": 1.5,
+   "w": 14,
+   "d": 6,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -7.0,
+       -3.0
+      ],
+      [
+       7.0,
+       -3.0
+      ],
+      [
+       7.0,
+       3.0
+      ],
+      [
+       -7.0,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "opens": "The tannery"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "colonial",
+   "x": -6,
+   "z": -17,
+   "w": 9,
+   "d": 6,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -4.5,
+       -3.0
+      ],
+      [
+       4.5,
+       -3.0
+      ],
+      [
+       4.5,
+       3.0
+      ],
+      [
+       -4.5,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "shutters": false
+   },
+   "opens": "The boarding house"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "grogshop",
+   "x": 5,
+   "z": -16.6,
+   "w": 5,
+   "d": 7,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.5,
+       -3.5
+      ],
+      [
+       2.5,
+       -3.5
+      ],
+      [
+       2.5,
+       3.5
+      ],
+      [
+       -2.5,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "sign": true,
+    "signText": "GROG"
+   },
+   "opens": "The grog shop"
+  },
+  {
+   "mesh": "kit",
+   "recipe": "shanty",
+   "x": 15,
+   "z": -16.8,
+   "w": 6,
+   "d": 5,
+   "rot": 0,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -3.0,
+       -2.5
+      ],
+      [
+       3.0,
+       -2.5
+      ],
+      [
+       3.0,
+       2.5
+      ],
+      [
+       -3.0,
+       2.5
+      ]
+     ]
+    }
+   ],
+   "variants": {
+    "door": false
+   }
+  },
+  {
+   "mesh": "tan_vats",
+   "x": -8.6,
+   "z": -4.6,
+   "w": 7.2,
+   "d": 4.4,
+   "rot": 0,
+   "height": 0.3
+  },
+  {
+   "mesh": "bark_mill",
+   "x": 17.6,
+   "z": -3.4,
+   "w": 5,
+   "d": 5,
+   "rot": 0,
+   "height": 4.0
+  }
+ ],
+ "landmarks": [],
+ "arenas": [
+  {
+   "x": -15.6,
+   "z": -17.4,
+   "radius": 2.6
+  },
+  {
+   "x": 9.4,
+   "z": -5.6,
+   "radius": 2.4
+  },
+  {
+   "x": -3,
+   "z": 11,
+   "radius": 2.6
+  },
+  {
+   "x": 23.6,
+   "z": 11.4,
+   "radius": 2.8
+  }
+ ],
+ "placements": [
+  {
+   "prop": "hide_frame_0",
+   "x": -14,
+   "z": -4.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "hide_frame_1",
+   "x": -14.4,
+   "z": -1.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "hide_frame_0",
+   "x": -11.6,
+   "z": -0.6,
+   "collide": 0.6,
+   "flip": true
+  },
+  {
+   "prop": "hides_hung",
+   "x": -3.2,
+   "z": -3.0,
+   "collide": 0.7
+  },
+  {
+   "prop": "hides_hung",
+   "x": 10.6,
+   "z": -1.6,
+   "collide": 0.7
+  },
+  {
+   "prop": "bark_rick_0",
+   "x": 21.6,
+   "z": -5.4,
+   "collide": 0.6
+  },
+  {
+   "prop": "bark_rick_1",
+   "x": 21.8,
+   "z": -2.6,
+   "collide": 0.6
+  },
+  {
+   "prop": "bark_rick_0",
+   "x": 14.2,
+   "z": -0.4,
+   "collide": 0.6,
+   "flip": true
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": -1.4,
+   "z": -6.2,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": 6.4,
+   "z": 6.6,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": -9.6,
+   "z": 6.8,
+   "collide": 0
+  },
+  {
+   "prop": "barrel_stack",
+   "x": 9.6,
+   "z": 5.8,
+   "collide": 0.5
+  },
+  {
+   "prop": "cider_barrel_0",
+   "x": -4.4,
+   "z": 5.6,
+   "collide": 0.3
+  },
+  {
+   "prop": "handcart",
+   "x": 12.6,
+   "z": -6.8,
+   "collide": 0.5
+  },
+  {
+   "prop": "lantern_post",
+   "x": 1.0,
+   "z": -13.0,
+   "collide": 0.25
+  },
+  {
+   "prop": "bench_plain",
+   "x": 7.4,
+   "z": -12.4,
+   "collide": 0.4
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 2.4,
+   "z": -12.6,
+   "collide": 0.3
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": 19.2,
+   "z": -18.2,
+   "collide": 0.9
+  },
+  {
+   "prop": "firewood_split",
+   "x": 11.0,
+   "z": -13.4,
+   "collide": 0.35
+  },
+  {
+   "prop": "laundry_line_1",
+   "x": -6.0,
+   "z": -21.0,
+   "collide": 0
+  },
+  {
+   "prop": "hide_frame_1",
+   "x": 5.6,
+   "z": 9.0,
+   "collide": 0.6
+  },
+  {
+   "prop": "hide_frame_0",
+   "x": 8.0,
+   "z": 9.3,
+   "collide": 0.6
+  },
+  {
+   "prop": "hide_frame_1",
+   "x": 10.4,
+   "z": 8.9,
+   "collide": 0.6,
+   "flip": true
+  },
+  {
+   "prop": "hides_hung",
+   "x": 13.2,
+   "z": 9.6,
+   "collide": 0.7
+  },
+  {
+   "prop": "hides_hung",
+   "x": 7.0,
+   "z": 12.6,
+   "collide": 0.7
+  },
+  {
+   "prop": "woodshed_lean",
+   "x": -12.4,
+   "z": 11.4,
+   "collide": 0.9
+  },
+  {
+   "prop": "cordwood",
+   "x": -9.6,
+   "z": 12.2,
+   "collide": 0.6
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": 25.4,
+   "z": 5.6,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 27.6,
+   "z": 8.0,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": 26.0,
+   "z": 15.4,
+   "collide": 0
+  },
+  {
+   "prop": "bones_0",
+   "x": 26.6,
+   "z": 6.6,
+   "collide": 0
+  },
+  {
+   "prop": "bones_0",
+   "x": 21.4,
+   "z": 15.6,
+   "collide": 0
+  },
+  {
+   "prop": "crow_0",
+   "x": 27.2,
+   "z": 9.6,
+   "collide": 0
+  },
+  {
+   "prop": "crow_1",
+   "x": 25.2,
+   "z": 7.4,
+   "collide": 0
+  },
+  {
+   "prop": "crow_0",
+   "x": 20.8,
+   "z": 8.0,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": 29.15,
+   "z": -15.47,
+   "collide": 0.3
+  },
+  {
+   "prop": "hide_frame_1",
+   "x": 28.38,
+   "z": -5.72,
+   "collide": 0.6
+  },
+  {
+   "prop": "cordwood",
+   "x": 8.62,
+   "z": 17.24,
+   "collide": 0.6
+  },
+  {
+   "prop": "crow_1",
+   "x": -18.31,
+   "z": 10.23,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 25.95,
+   "z": -2.89,
+   "collide": 0
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 5.15,
+   "z": 19.14,
+   "collide": 0.3
+  },
+  {
+   "prop": "crate_lid",
+   "x": 16.74,
+   "z": 3.61,
+   "collide": 0.35
+  },
+  {
+   "prop": "cordwood",
+   "x": 19.74,
+   "z": 5.7,
+   "collide": 0.6
+  },
+  {
+   "prop": "hide_frame_1",
+   "x": -6.89,
+   "z": 13.52,
+   "collide": 0.6
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -14.46,
+   "z": 1.84,
+   "collide": 0.3
+  },
+  {
+   "prop": "cordwood",
+   "x": -17.38,
+   "z": 0.75,
+   "collide": 0.6
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": 12.2,
+   "z": 3.33,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 18.42,
+   "z": 14.15,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": -4.81,
+   "z": -7.75,
+   "collide": 0
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 2.12,
+   "z": 7.98,
+   "collide": 0.3
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 5.99,
+   "z": 15.0,
+   "collide": 0.3
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 5.95,
+   "z": -7.53,
+   "collide": 0.3
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": 3.73,
+   "z": -6.16,
+   "collide": 0.3
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 20.4,
+   "z": -11.66,
+   "collide": 0
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 2.71,
+   "z": 11.3,
+   "collide": 0.3
+  },
+  {
+   "prop": "wheelbarrow",
+   "x": -10.13,
+   "z": -7.83,
+   "collide": 0.4
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": 2.78,
+   "z": 15.72,
+   "collide": 0
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": 12.09,
+   "z": 5.73,
+   "collide": 0.3
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 7.47,
+   "z": 19.39,
+   "collide": 0
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 22.87,
+   "z": -14.02,
+   "collide": 0.3
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": 9.75,
+   "z": -15.77,
+   "collide": 0.3
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -19.65,
+   "z": 7.37,
+   "collide": 0.3
+  },
+  {
+   "prop": "crate_lid",
+   "x": -11.28,
+   "z": 8.37,
+   "collide": 0.35
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": 16.43,
+   "z": 0.14,
+   "collide": 0
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": -11.86,
+   "z": 17.82,
+   "collide": 0
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 16.4,
+   "z": 12.27,
+   "collide": 0.3
+  },
+  {
+   "prop": "spent_bark_heap_1",
+   "x": -8.29,
+   "z": 3.48,
+   "collide": 0
+  },
+  {
+   "prop": "big_bucket",
+   "x": 17.3,
+   "z": 18.75,
+   "collide": 0.3
+  },
+  {
+   "prop": "tree_stump_1",
+   "x": -20.28,
+   "z": 3.34,
+   "collide": 0.3
+  },
+  {
+   "prop": "cider_barrel_1",
+   "x": 28.07,
+   "z": 3.06,
+   "collide": 0.3
+  },
+  {
+   "prop": "crow_1",
+   "x": -15.98,
+   "z": 16.03,
+   "collide": 0
+  },
+  {
+   "prop": "crate_lid",
+   "x": -16.2,
+   "z": -7.21,
+   "collide": 0.35
+  },
+  {
+   "prop": "cordwood",
+   "x": -13.82,
+   "z": 9.18,
+   "collide": 0.6
+  },
+  {
+   "prop": "spent_bark_heap_0",
+   "x": -12.37,
+   "z": 14.21,
+   "collide": 0
+  },
+  {
+   "prop": "barrel_lidded",
+   "x": -14.37,
+   "z": 17.71,
+   "collide": 0.3
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -17.6,
+     -12
+    ],
+    [
+     27,
+     -8
+    ]
+   ],
+   "radius": 2.0
+  },
+  {
+   "points": [
+    [
+     2,
+     -2.6
+    ],
+    [
+     2,
+     -9
+    ]
+   ],
+   "radius": 1.4
+  },
+  {
+   "points": [
+    [
+     -12.6,
+     -1.6
+    ],
+    [
+     -4.6,
+     -1.6
+    ]
+   ],
+   "radius": 1.4
+  }
+ ],
+ "spots": [
+  {
+   "name": "From the covered bridge",
+   "x": -15.4,
+   "z": -11.6
+  },
+  {
+   "name": "Ira at the vats",
+   "x": -8.6,
+   "z": -1.6,
+   "note": "Ira Bascom, tanner, at his vats."
+  },
+  {
+   "name": "The tannery door",
+   "x": 2,
+   "z": -2.8
+  },
+  {
+   "name": "The bark mill",
+   "x": 17.6,
+   "z": -7.2,
+   "note": "The Rowes' bark, ground for the vats."
+  },
+  {
+   "name": "Tannery hands at the grog shop",
+   "x": 7.6,
+   "z": -12.2,
+   "note": "Hands drinking outside the grog shop."
+  },
+  {
+   "name": "The boarding house door",
+   "x": -6,
+   "z": -12.6
+  },
+  {
+   "name": "Curs by the dump",
+   "x": 22.0,
+   "z": 5.4,
+   "note": "Loose curs from the tannery: settled, they slink home."
+  },
+  {
+   "name": "The tannery dump (nook)",
+   "x": 25.6,
+   "z": 9.6,
+   "note": "Spent bark, bones, crows."
+  },
+  {
+   "name": "Gideon in the tannery yard",
+   "x": 6.4,
+   "z": -3.6,
+   "note": "Gideon Sloat, nineteen years in the beam house."
+  },
+  {
+   "name": "Round: Gideon at the hide frames",
+   "x": -12.6,
+   "z": -2.8
+  }
+ ],
+ "start": [
+  -15.4,
+  -11.6
+ ],
+ "exits": [
+  {
+   "rect": [
+    -19.0,
+    -13.0,
+    -18.0,
+    -11.0
+   ],
+   "to": "covered-bridge",
+   "at": [
+    19.0,
+    0
+   ],
+   "dir": 2
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    -24.4,
+    -23
+   ],
+   [
+    -23.6,
+    -12
+   ],
+   [
+    -25,
+    0
+   ],
+   [
+    -24,
+    12
+   ],
+   [
+    -24.6,
+    23
+   ]
+  ],
+  "width": 7,
+  "depth": 1.2
+ }
+}

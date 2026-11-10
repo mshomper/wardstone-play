@@ -768,12 +768,6 @@
   },
   {
    "prop": "fence_picket",
-   "x": -17.5,
-   "z": 10.8,
-   "collide": 0.2
-  },
-  {
-   "prop": "fence_picket",
    "x": -21.5,
    "z": 10.8,
    "collide": 0.2
@@ -1170,12 +1164,6 @@
   },
   {
    "prop": "cordwood",
-   "x": -2.19,
-   "z": 3.96,
-   "collide": 0.6
-  },
-  {
-   "prop": "cordwood",
    "x": 6.8,
    "z": 3.95,
    "collide": 0.6
@@ -1203,12 +1191,6 @@
    "x": 7.16,
    "z": 20.48,
    "collide": 0.3
-  },
-  {
-   "prop": "lilac_0",
-   "x": -12.83,
-   "z": 6.12,
-   "collide": 0.45
   },
   {
    "prop": "asters_0",
@@ -1293,6 +1275,29 @@
    "x": 26.63,
    "z": -14.97,
    "collide": 0.45
+  },
+  {
+   "prop": "bare_tree_1",
+   "x": -21.94,
+   "z": -0.76,
+   "collide": 0.42
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 28.07,
+   "z": 17.12,
+   "collide": 0.3
+  },
+  {
+   "prop": "mh_roof_ladder",
+   "x": 6.5,
+   "z": -12.0
+  },
+  {
+   "prop": "mh_slate_pile",
+   "x": 7.0,
+   "z": -14.4,
+   "collide": 0.5
   }
  ],
  "keepClear": [
@@ -1349,9 +1354,21 @@
   },
   {
    "name": "The meetinghouse roof",
-   "x": 3.4,
-   "z": -13,
-   "note": "Dorcas, from the road (Slate for the Roof)."
+   "x": 5.2,
+   "z": -10.6,
+   "note": "Dorcas on the east slope by the eave, laying the last of her slate (Slate for the Roof, decision 0485). Her schedule's lift raises her to the roof."
+  },
+  {
+   "name": "The slate pile",
+   "x": 7.0,
+   "z": -14.4,
+   "note": "Dorcas's roof slate at the foot of her ladder: hand it up to her (Slate for the Roof)."
+  },
+  {
+   "name": "Dorcas at the ladder",
+   "x": 6.9,
+   "z": -9.8,
+   "note": "Dorcas down off the roof, before she goes in (Slate for the Roof)."
   },
   {
    "name": "Penhallow's gate",
@@ -1367,8 +1384,43 @@
   {
    "name": "Up the Pasture Lane",
    "x": 12.8,
-   "z": -21.6,
-   "note": "To the high pastures and the North Lots (not built yet)."
+   "z": -18.4,
+   "note": "To the high pastures and the North Lots: the exit onto the Pasture Lane."
+  },
+  {
+   "name": "Miss Sprague at the schoolhouse",
+   "x": -13.4,
+   "z": 5.0
+  },
+  {
+   "name": "Round: the schoolhouse door",
+   "x": -14.1,
+   "z": 3.5
+  },
+  {
+   "name": "Mrs. Tolman at her door",
+   "x": -18.7,
+   "z": 11.2
+  },
+  {
+   "name": "Round: Mrs. Tolman on the green",
+   "x": -2.6,
+   "z": 2.6
+  },
+  {
+   "name": "Mrs. Nye on the step",
+   "x": 15.0,
+   "z": -1.5
+  },
+  {
+   "name": "Round: Penhallow's door",
+   "x": 15.1,
+   "z": 0.0
+  },
+  {
+   "name": "Round: Mrs. Nye at the herbs",
+   "x": 18.6,
+   "z": -6.4
   }
  ],
  "start": [
@@ -1389,6 +1441,20 @@
     -20.2
    ],
    "dir": 0
+  },
+  {
+   "rect": [
+    11.4,
+    -21.4,
+    14.2,
+    -20.4
+   ],
+   "to": "pasture-lane",
+   "at": [
+    2.3,
+    15.4
+   ],
+   "dir": 4
   }
  ]
 }

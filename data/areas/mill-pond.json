@@ -1,0 +1,598 @@
+{
+ "version": 1,
+ "name": "mill-pond",
+ "seed": 4213,
+ "size": {
+  "w": 56,
+  "h": 36
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 2.4,
+  "edgeWidth": 4,
+  "roll": 0.3,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "leaf_litter",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "bare_tree_0",
+     "maple_red_0",
+     "white_pine_0",
+     "bare_tree_1",
+     "white_pine_1",
+     "maple_orange_1"
+    ],
+    "density": 0.75,
+    "spacing": 2.0,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true,
+    "within": [
+     [
+      -30,
+      -19
+     ],
+     [
+      30,
+      -19
+     ],
+     [
+      30,
+      -8.4
+     ],
+     [
+      -30,
+      -8.4
+     ]
+    ]
+   },
+   {
+    "props": [
+     "birch_0",
+     "birch_1"
+    ],
+    "density": 0.12,
+    "spacing": 3,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "water",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "fern_autumn_0",
+     "fern_autumn_1",
+     "fern_autumn_2"
+    ],
+    "density": 0.25,
+    "spacing": 1.2,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "open"
+   },
+   {
+    "props": [
+     "reeds_frozen_0",
+     "reeds_frozen_1",
+     "cattails_0"
+    ],
+    "density": 0.3,
+    "spacing": 1.4,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "water"
+   },
+   {
+    "props": [
+     "goldenrod_1",
+     "asters_1"
+    ],
+    "density": 0.12,
+    "spacing": 1.2,
+    "scale": [
+     0.85,
+     1.05
+    ],
+    "near": "path"
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -28,
+     -5.4
+    ],
+    [
+     -16,
+     -5.8
+    ],
+    [
+     -4,
+     -5.2
+    ],
+    [
+     8,
+     -5.6
+    ],
+    [
+     18,
+     -5.2
+    ],
+    [
+     28,
+     -5.4
+    ]
+   ],
+   "width": 2,
+   "kind": "path"
+  }
+ ],
+ "walls": [],
+ "buildings": [
+  {
+   "mesh": "kit",
+   "recipe": "shed",
+   "x": -10,
+   "z": -1.4,
+   "w": 5,
+   "d": 4,
+   "rot": 3.141592653589793,
+   "height": 6,
+   "parts": [
+    {
+     "footprint": [
+      [
+       -2.5,
+       -2.0
+      ],
+      [
+       2.5,
+       -2.0
+      ],
+      [
+       2.5,
+       2.0
+      ],
+      [
+       -2.5,
+       2.0
+      ]
+     ]
+    }
+   ],
+   "opens": "Penhallow's boathouse"
+  },
+  {
+   "mesh": "sluice_gate",
+   "x": 21.8,
+   "z": 6.0,
+   "w": 4,
+   "d": 3,
+   "rot": -1.5707963267948966,
+   "height": 3.5
+  }
+ ],
+ "landmarks": [],
+ "arenas": [
+  {
+   "x": -17,
+   "z": -7.4,
+   "radius": 2.6
+  },
+  {
+   "x": 2,
+   "z": -7.6,
+   "radius": 2.6
+  },
+  {
+   "x": 15.4,
+   "z": -7.4,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "punt",
+   "x": -5.0,
+   "z": 0.0,
+   "collide": 0.9
+  },
+  {
+   "prop": "oars_leaning",
+   "x": -12.9,
+   "z": -3.9,
+   "collide": 0.2
+  },
+  {
+   "prop": "crate_lid",
+   "x": -7.2,
+   "z": -3.8,
+   "collide": 0.35
+  },
+  {
+   "prop": "rest_stone",
+   "x": 9.6,
+   "z": -2.4,
+   "collide": 0.5
+  },
+  {
+   "prop": "ice_chunks_0",
+   "x": 12.6,
+   "z": 0.2,
+   "collide": 0
+  },
+  {
+   "prop": "ice_chunks_0",
+   "x": -20.4,
+   "z": -0.4,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 24.6,
+   "z": 2.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 24.2,
+   "z": 9.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "reeds_frozen_1",
+   "x": 18.0,
+   "z": 2.4,
+   "collide": 0
+  },
+  {
+   "prop": "lantern_post",
+   "x": 23.6,
+   "z": -3.4,
+   "collide": 0.25
+  },
+  {
+   "prop": "fallen_log_1",
+   "x": 23.64,
+   "z": -15.3,
+   "collide": 0.4
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -10.49,
+   "z": -14.46,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": -8.26,
+   "z": -8.61,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": -2.03,
+   "z": -12.63,
+   "collide": 0.3
+  },
+  {
+   "prop": "fern_autumn_1",
+   "x": 18.61,
+   "z": -2.46,
+   "collide": 0
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 22.58,
+   "z": 12.86,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": 9.29,
+   "z": -12.98,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -3.58,
+   "z": -10.42,
+   "collide": 0.5
+  },
+  {
+   "prop": "fallen_log_1",
+   "x": 1.87,
+   "z": -2.0,
+   "collide": 0.4
+  },
+  {
+   "prop": "tree_stump_0",
+   "x": 18.27,
+   "z": -10.72,
+   "collide": 0.3
+  },
+  {
+   "prop": "fallen_log_1",
+   "x": -21.47,
+   "z": -13.73,
+   "collide": 0.4
+  },
+  {
+   "prop": "fern_autumn_1",
+   "x": -17.5,
+   "z": -12.31,
+   "collide": 0
+  },
+  {
+   "prop": "fern_autumn_1",
+   "x": 0.17,
+   "z": -10.83,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 6.49,
+   "z": -1.78,
+   "collide": 0.5
+  },
+  {
+   "prop": "fallen_log_1",
+   "x": 16.04,
+   "z": 0.02,
+   "collide": 0.4
+  },
+  {
+   "prop": "fern_autumn_1",
+   "x": -13.4,
+   "z": -14.49,
+   "collide": 0
+  }
+ ],
+ "keepClear": [
+  {
+   "points": [
+    [
+     -28,
+     -5.4
+    ],
+    [
+     28,
+     -5.4
+    ]
+   ],
+   "radius": 1.6
+  }
+ ],
+ "spots": [
+  {
+   "name": "From the town",
+   "x": 22.6,
+   "z": -5.4
+  },
+  {
+   "name": "The sluice gate",
+   "x": 21.8,
+   "z": 3.0,
+   "note": "The timber gate in its stone channel, with the wheel to raise it; the head of the race."
+  },
+  {
+   "name": "The boathouse door",
+   "x": -10,
+   "z": -4.6,
+   "note": "Penhallow's boathouse (on the shore: stilts would need a new piece)."
+  },
+  {
+   "name": "The punt",
+   "x": -5.0,
+   "z": -1.6
+  },
+  {
+   "name": "To the Drowned Town",
+   "x": -22.6,
+   "z": -5.4
+  }
+ ],
+ "start": [
+  22.6,
+  -5.4
+ ],
+ "exits": [
+  {
+   "rect": [
+    24.6,
+    -7.4,
+    25.6,
+    -3.4
+   ],
+   "to": "harlow-bridge",
+   "at": [
+    -31.0,
+    11.6
+   ],
+   "dir": 6
+  },
+  {
+   "rect": [
+    -25.6,
+    -7.4,
+    -24.6,
+    -3.4
+   ],
+   "to": "drowned-town",
+   "at": [
+    30.6,
+    -12.0
+   ],
+   "dir": 2
+  }
+ ],
+ "lakes": [
+  {
+   "outline": [
+    [
+     -30,
+     1.6
+    ],
+    [
+     -22,
+     0.4
+    ],
+    [
+     -12,
+     1.2
+    ],
+    [
+     -2,
+     0.4
+    ],
+    [
+     8,
+     1.0
+    ],
+    [
+     15,
+     1.6
+    ],
+    [
+     19.6,
+     4.2
+    ],
+    [
+     20.2,
+     6.0
+    ],
+    [
+     19.4,
+     8.6
+    ],
+    [
+     17.6,
+     19.5
+    ],
+    [
+     -30,
+     19.5
+    ]
+   ],
+   "depth": 1.0,
+   "ice": [
+    {
+     "skim": true,
+     "outline": [
+      [
+       -31,
+       0.4
+      ],
+      [
+       -22,
+       -0.8
+      ],
+      [
+       -12,
+       0
+      ],
+      [
+       -2,
+       -0.8
+      ],
+      [
+       8,
+       -0.2
+      ],
+      [
+       15,
+       0.4
+      ],
+      [
+       21,
+       4.0
+      ],
+      [
+       21,
+       9
+      ],
+      [
+       18.8,
+       9.2
+      ],
+      [
+       18.6,
+       5.6
+      ],
+      [
+       15.4,
+       3.2
+      ],
+      [
+       8,
+       2.6
+      ],
+      [
+       -2,
+       2.0
+      ],
+      [
+       -12,
+       2.8
+      ],
+      [
+       -22,
+       2.0
+      ],
+      [
+       -28,
+       3.4
+      ],
+      [
+       -28,
+       19.5
+      ],
+      [
+       -31,
+       19.5
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "brook": {
+  "points": [
+   [
+    23.0,
+    6.0
+   ],
+   [
+    25.6,
+    6.4
+   ],
+   [
+    29,
+    6.8
+   ]
+  ],
+  "width": 2,
+  "depth": 0.8
+ }
+}

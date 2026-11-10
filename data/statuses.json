@@ -3,7 +3,7 @@
   "statuses": {
     "regen": { "name": "Warming", "desc": "Gets back a little health at the end of each round." },
     "marked": { "name": "Marked", "desc": "Every hero hits it harder, and its weaknesses show." },
-    "deepcold": { "name": "Deep Cold", "desc": "Slower each round it holds." },
+    "deepcold": { "name": "Deep Cold", "desc": "Slower each round it holds, and Chilled afresh each round." },
     "shielded": { "name": "Shielded", "desc": "Blows spend this first. {n} left." },
     "drawing": { "name": "Drawing the blows", "desc": "Foes aiming at one hero aim here.", "until": "Until their next turn" },
     "covered": { "name": "Covered", "desc": "Someone is taking the blows meant for them.", "until": "Until that hero's next turn" },
@@ -30,6 +30,7 @@
     "slippery": { "name": "Slippery Goose", "desc": "Nothing can hurt her while anyone else in the party has half their health or more, and foes seldom bother trying.", "until": "While a friend has half their health" },
     "sheltered": { "name": "Under her wing", "desc": "Nothing can hurt them.", "until": "Until her next turn" },
     "biting": { "name": "Ready to bite", "desc": "The first foe to strike anyone in the party gets bitten, and Hexed.", "until": "Until her next turn" },
+    "dancing": { "name": "Dancing", "desc": "Dancing to Thadeous's reel: it loses its turns, one for each on the tag. Blows don't stop it.", "until": "Until it has danced its turns away" },
     "grudge": { "name": "Grudge", "desc": "Any blow it lands on a hero, however small, Hexes it." },
     "wrapped": { "name": "Wrapped up", "desc": "A wool scarf, wound twice: you can't be Chilled.", "until": "For the rest of this fight" },
     "cold": { "name": "The cold that stays", "desc": "{n} cold. It lowers your most health until you rest at a hearth or cairn.", "until": "Until a rest" }

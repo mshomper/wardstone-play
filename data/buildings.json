@@ -485,6 +485,3502 @@
           }
         }
       ]
+    },
+    "tan_vats": {
+      "_note": "Tanner's Row's sunk tan pits (harlow-bridge-areas.md 9): two rows of three square pits, plank rims just proud of the ground, the dark still liquor nearly to the brim, a plank walk between the rows and across. About 7.2 x 4.4.",
+      "footprint": [
+        7.2,
+        4.4
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            -1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            -2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            -0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -3.37,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.63,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            -1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            -2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            -0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.87,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.87,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            -1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            -2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            -0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.63,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            3.37,
+            0,
+            -1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0,
+            2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -3.37,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.63,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.87,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.87,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            1.25
+          ],
+          "size": [
+            1.62,
+            0.1,
+            1.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            },
+            "top": {
+              "tile": "plaster_wall",
+              "tint": [
+                0.075,
+                0.048,
+                0.03
+              ]
+            }
+          },
+          "liquid": "liquor"
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            0.38
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0,
+            2.12
+          ],
+          "size": [
+            1.9,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.63,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            3.37,
+            0,
+            1.25
+          ],
+          "size": [
+            0.16,
+            0.16,
+            1.58
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            7.2,
+            0.08,
+            0.6
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.25,
+            0,
+            0
+          ],
+          "size": [
+            0.55,
+            0.07,
+            4.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.25,
+            0,
+            0
+          ],
+          "size": [
+            0.55,
+            0.07,
+            4.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.5,
+            0.17,
+            -1.25
+          ],
+          "size": [
+            0.07,
+            0.07,
+            2.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.5,
+            0.17,
+            1.15
+          ],
+          "size": [
+            2.1,
+            0.05,
+            0.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "bark_mill": {
+      "_note": "Tanner's Row's bark mill (harlow-bridge-areas.md 9): four posts and a low mossy hip roof over a round stone bed filled with ground bark, an upright runner stone on edge in the track, its axle running from the king post out past the eaves both ways for the horse. About 5 x 5; the sweep reaches 3.7 out from the middle.",
+      "footprint": [
+        5.0,
+        5.0
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "at": [
+            -2.15,
+            0,
+            -2.15
+          ],
+          "size": [
+            0.22,
+            2.75,
+            0.22
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.15,
+            0,
+            -2.15
+          ],
+          "size": [
+            0.42,
+            0.16,
+            0.42
+          ],
+          "tex": {
+            "side": "fieldstone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.15,
+            0,
+            2.15
+          ],
+          "size": [
+            0.22,
+            2.75,
+            0.22
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.15,
+            0,
+            2.15
+          ],
+          "size": [
+            0.42,
+            0.16,
+            0.42
+          ],
+          "tex": {
+            "side": "fieldstone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.15,
+            0,
+            -2.15
+          ],
+          "size": [
+            0.22,
+            2.75,
+            0.22
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.15,
+            0,
+            -2.15
+          ],
+          "size": [
+            0.42,
+            0.16,
+            0.42
+          ],
+          "tex": {
+            "side": "fieldstone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.15,
+            0,
+            2.15
+          ],
+          "size": [
+            0.22,
+            2.75,
+            0.22
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.15,
+            0,
+            2.15
+          ],
+          "size": [
+            0.42,
+            0.16,
+            0.42
+          ],
+          "tex": {
+            "side": "fieldstone"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            2.75,
+            -2.15
+          ],
+          "size": [
+            4.74,
+            0.22,
+            0.24
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            2.75,
+            2.15
+          ],
+          "size": [
+            4.74,
+            0.22,
+            0.24
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -2.15,
+            2.75,
+            0
+          ],
+          "size": [
+            0.24,
+            0.22,
+            4.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            2.15,
+            2.75,
+            0
+          ],
+          "size": [
+            0.24,
+            0.22,
+            4.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "hip",
+          "at": [
+            0,
+            2.97,
+            0
+          ],
+          "size": [
+            4.7,
+            1.05,
+            4.7
+          ],
+          "tex": {
+            "roof": "shingle_cedar_mossy",
+            "edge": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          },
+          "overhang": 0.25,
+          "thick": 0.1
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.42,
+            0
+          ],
+          "outline": [
+            [
+              1.516,
+              0.875
+            ],
+            [
+              0.875,
+              1.516
+            ],
+            [
+              0.0,
+              1.75
+            ],
+            [
+              -0.875,
+              1.516
+            ],
+            [
+              -1.516,
+              0.875
+            ],
+            [
+              -1.75,
+              0.0
+            ],
+            [
+              -1.516,
+              -0.875
+            ],
+            [
+              -0.875,
+              -1.516
+            ],
+            [
+              -0.0,
+              -1.75
+            ],
+            [
+              0.875,
+              -1.516
+            ],
+            [
+              1.516,
+              -0.875
+            ],
+            [
+              1.75,
+              -0.0
+            ]
+          ],
+          "tex": {
+            "side": "fieldstone",
+            "top": "fieldstone_cap"
+          }
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.46,
+            0
+          ],
+          "outline": [
+            [
+              1.256,
+              0.725
+            ],
+            [
+              0.725,
+              1.256
+            ],
+            [
+              0.0,
+              1.45
+            ],
+            [
+              -0.725,
+              1.256
+            ],
+            [
+              -1.256,
+              0.725
+            ],
+            [
+              -1.45,
+              0.0
+            ],
+            [
+              -1.256,
+              -0.725
+            ],
+            [
+              -0.725,
+              -1.256
+            ],
+            [
+              -0.0,
+              -1.45
+            ],
+            [
+              0.725,
+              -1.256
+            ],
+            [
+              1.256,
+              -0.725
+            ],
+            [
+              1.45,
+              -0.0
+            ]
+          ],
+          "tex": {
+            "side": "fieldstone",
+            "top": {
+              "tile": "mud_0",
+              "tint": [
+                1.05,
+                0.62,
+                0.42
+              ]
+            }
+          }
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            0.46,
+            0
+          ],
+          "size": [
+            0,
+            0.5,
+            0
+          ],
+          "outline": [
+            [
+              0.296,
+              0.122
+            ],
+            [
+              0.122,
+              0.296
+            ],
+            [
+              -0.122,
+              0.296
+            ],
+            [
+              -0.296,
+              0.122
+            ],
+            [
+              -0.296,
+              -0.122
+            ],
+            [
+              -0.122,
+              -0.296
+            ],
+            [
+              0.122,
+              -0.296
+            ],
+            [
+              0.296,
+              -0.122
+            ]
+          ],
+          "tex": {
+            "side": "fieldstone",
+            "top": "fieldstone_cap"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.96,
+            0
+          ],
+          "size": [
+            0.24,
+            1.81,
+            0.24
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.95,
+            0.7,
+            0
+          ],
+          "size": [
+            0.36,
+            0.86,
+            1.36
+          ],
+          "tex": {
+            "side": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "top": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "left": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            },
+            "right": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.95,
+            0.56,
+            0
+          ],
+          "size": [
+            0.36,
+            1.14,
+            1.2
+          ],
+          "tex": {
+            "side": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "top": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "left": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            },
+            "right": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.95,
+            0.49,
+            0
+          ],
+          "size": [
+            0.36,
+            1.28,
+            0.98
+          ],
+          "tex": {
+            "side": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "top": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "left": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            },
+            "right": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.95,
+            0.46,
+            0
+          ],
+          "size": [
+            0.36,
+            1.37,
+            0.62
+          ],
+          "tex": {
+            "side": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "top": {
+              "tile": "granite_face",
+              "tint": [
+                0.72,
+                0.7,
+                0.66
+              ]
+            },
+            "left": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            },
+            "right": {
+              "tile": "granite_top",
+              "tint": [
+                0.78,
+                0.76,
+                0.72
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.18,
+            1.0,
+            0
+          ],
+          "size": [
+            0.1,
+            0.32,
+            0.32
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.85,
+            1.08,
+            0
+          ],
+          "size": [
+            3.7,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            3.62,
+            0.96,
+            0
+          ],
+          "size": [
+            0.12,
+            0.3,
+            0.6
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.85,
+            1.08,
+            0
+          ],
+          "size": [
+            3.7,
+            0.16,
+            0.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ice_blocks_0": {
+      "_note": "Cut lake ice stacked on the Drowned Town's shore by the cutters' ramp (harlow-bridge-areas.md 11): blocks in a stepped pile, sawdust between the first courses. About 2.4 x 1.6.",
+      "footprint": [
+        2.4,
+        1.6
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "at": [
+            -0.78,
+            0,
+            -0.4
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.78,
+            0,
+            0.2
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            -0.4
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0,
+            0.2
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.78,
+            0,
+            -0.4
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.78,
+            0,
+            0.2
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.78,
+            0,
+            0.73
+          ],
+          "size": [
+            0.74,
+            0.32,
+            0.36
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.4,
+            0.42,
+            -0.12
+          ],
+          "size": [
+            1.6,
+            0.05,
+            1.24
+          ],
+          "tex": {
+            "side": {
+              "tile": "straw_floor",
+              "tint": [
+                0.74,
+                0.64,
+                0.8
+              ]
+            },
+            "top": {
+              "tile": "straw_floor",
+              "tint": [
+                0.74,
+                0.64,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.78,
+            0.47,
+            -0.38
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0.47,
+            -0.38
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.38,
+            0.47,
+            0.22
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.4,
+            0.89,
+            -0.36
+          ],
+          "size": [
+            0.74,
+            0.4,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ice_blocks_1": {
+      "_note": "A smaller pile of cut lake ice (harlow-bridge-areas.md 11): four blocks, a sawdust layer, one on top, a broken piece beside. About 1.8 x 1.4.",
+      "footprint": [
+        1.8,
+        1.4
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "at": [
+            -0.42,
+            0,
+            -0.32
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.42,
+            0,
+            0.3
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.36,
+            0,
+            -0.32
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.36,
+            0,
+            0.3
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.1,
+            0.42,
+            -0.06
+          ],
+          "size": [
+            1.44,
+            0.05,
+            1.16
+          ],
+          "tex": {
+            "side": {
+              "tile": "straw_floor",
+              "tint": [
+                0.74,
+                0.64,
+                0.8
+              ]
+            },
+            "top": {
+              "tile": "straw_floor",
+              "tint": [
+                0.74,
+                0.64,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.0,
+            0.47,
+            -0.3
+          ],
+          "size": [
+            0.74,
+            0.42,
+            0.56
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.7,
+            0,
+            0.5
+          ],
+          "size": [
+            0.36,
+            0.3,
+            0.38
+          ],
+          "tex": {
+            "side": {
+              "tile": "frost_ice",
+              "tint": [
+                0.78,
+                0.88,
+                0.94
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.8,
+                0.9,
+                0.94
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "sluice_gate": {
+      "_note": "The Mill Pond's sluice gate (harlow-bridge-areas.md 10): a timber gate between two granite walls, the pond high behind it (-z) and the race low in front (+z), a gate frame over it and a flat hand wheel on the gate's stem. About 4 x 3.",
+      "footprint": [
+        4.0,
+        3.0
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "at": [
+            -1.45,
+            0,
+            0
+          ],
+          "size": [
+            0.9,
+            1.15,
+            3.0
+          ],
+          "tex": {
+            "side": "stone_mortared",
+            "top": "granite_top"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.45,
+            1.15,
+            0
+          ],
+          "size": [
+            1.0,
+            0.12,
+            3.1
+          ],
+          "tex": {
+            "side": "granite_top",
+            "top": "granite_top"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.45,
+            0,
+            0
+          ],
+          "size": [
+            0.9,
+            1.15,
+            3.0
+          ],
+          "tex": {
+            "side": "stone_mortared",
+            "top": "granite_top"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.45,
+            1.15,
+            0
+          ],
+          "size": [
+            1.0,
+            0.12,
+            3.1
+          ],
+          "tex": {
+            "side": "granite_top",
+            "top": "granite_top"
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            -0.78
+          ],
+          "size": [
+            2.0,
+            0.86,
+            1.44
+          ],
+          "tex": {
+            "side": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.2,
+                0.26,
+                0.29
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.2,
+                0.26,
+                0.29
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            0.78
+          ],
+          "size": [
+            2.0,
+            0.18,
+            1.44
+          ],
+          "tex": {
+            "side": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.2,
+                0.26,
+                0.29
+              ]
+            },
+            "top": {
+              "tile": "ice_sheet",
+              "tint": [
+                0.2,
+                0.26,
+                0.29
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.06,
+            1.02,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -0.36,
+            0.08,
+            0.08
+          ],
+          "size": [
+            0.1,
+            0.94,
+            0.04
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.36,
+            0.08,
+            0.08
+          ],
+          "size": [
+            0.1,
+            0.94,
+            0.04
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.12,
+            1.27,
+            0
+          ],
+          "size": [
+            0.24,
+            1.55,
+            0.26
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.12,
+            1.27,
+            0
+          ],
+          "size": [
+            0.24,
+            1.55,
+            0.26
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            2.82,
+            0
+          ],
+          "size": [
+            2.75,
+            0.24,
+            0.3
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            1.02,
+            0
+          ],
+          "size": [
+            0.1,
+            2.22,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "kit_tin",
+              "tint": [
+                0.42,
+                0.42,
+                0.45
+              ]
+            }
+          }
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            3.1,
+            0
+          ],
+          "size": [
+            0,
+            0.07,
+            0
+          ],
+          "outline": [
+            [
+              0.476,
+              0.155
+            ],
+            [
+              0.294,
+              0.405
+            ],
+            [
+              0.0,
+              0.5
+            ],
+            [
+              -0.294,
+              0.405
+            ],
+            [
+              -0.476,
+              0.155
+            ],
+            [
+              -0.476,
+              -0.155
+            ],
+            [
+              -0.294,
+              -0.405
+            ],
+            [
+              -0.0,
+              -0.5
+            ],
+            [
+              0.294,
+              -0.405
+            ],
+            [
+              0.476,
+              -0.155
+            ]
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            },
+            "top": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            3.17,
+            0
+          ],
+          "size": [
+            0,
+            0.05,
+            0
+          ],
+          "outline": [
+            [
+              0.361,
+              0.117
+            ],
+            [
+              0.223,
+              0.307
+            ],
+            [
+              0.0,
+              0.38
+            ],
+            [
+              -0.223,
+              0.307
+            ],
+            [
+              -0.361,
+              0.117
+            ],
+            [
+              -0.361,
+              -0.117
+            ],
+            [
+              -0.223,
+              -0.307
+            ],
+            [
+              -0.0,
+              -0.38
+            ],
+            [
+              0.223,
+              -0.307
+            ],
+            [
+              0.361,
+              -0.117
+            ]
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.46,
+                0.36,
+                0.28
+              ]
+            }
+          }
+        },
+        {
+          "shape": "prism",
+          "at": [
+            0,
+            3.17,
+            0
+          ],
+          "size": [
+            0,
+            0.09,
+            0
+          ],
+          "outline": [
+            [
+              0.104,
+              0.06
+            ],
+            [
+              0.0,
+              0.12
+            ],
+            [
+              -0.104,
+              0.06
+            ],
+            [
+              -0.104,
+              -0.06
+            ],
+            [
+              -0.0,
+              -0.12
+            ],
+            [
+              0.104,
+              -0.06
+            ]
+          ],
+          "tex": {
+            "side": {
+              "tile": "kit_tin",
+              "tint": [
+                0.42,
+                0.42,
+                0.45
+              ]
+            },
+            "top": {
+              "tile": "kit_tin",
+              "tint": [
+                0.42,
+                0.42,
+                0.45
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0.33,
+            3.22,
+            0
+          ],
+          "size": [
+            0.07,
+            0.24,
+            0.07
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ice_ramp": {
+      "_note": "The ice cutters' ramp on the Drowned Town's east shore (harlow-bridge-areas.md 11): a plank slide with cleats on a solid timber bed, high on the shore (-z) and down to the ice (+z), side boards on posts. About 3 x 7.",
+      "footprint": [
+        3.0,
+        7.0
+      ],
+      "parts": [
+        {
+          "shape": "shed",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.1,
+            1.3,
+            6.8
+          ],
+          "tex": {
+            "roof": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            },
+            "gable": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "edge": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          },
+          "overhang": 0.0,
+          "thick": 0.1
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            1.146,
+            -2.7
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.936,
+            -1.6
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.726,
+            -0.5
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.515,
+            0.6
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.305,
+            1.7
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0.095,
+            2.8
+          ],
+          "size": [
+            2.0,
+            0.07,
+            0.1
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "shed",
+          "at": [
+            -1.11,
+            0.42,
+            0
+          ],
+          "size": [
+            0.1,
+            1.3,
+            6.8
+          ],
+          "tex": {
+            "roof": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            },
+            "gable": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "edge": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          },
+          "overhang": 0.0,
+          "thick": 0.18
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.11,
+            0,
+            -3.28
+          ],
+          "size": [
+            0.14,
+            1.717,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.11,
+            0,
+            -1.1
+          ],
+          "size": [
+            0.14,
+            1.3,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.11,
+            0,
+            1.2
+          ],
+          "size": [
+            0.14,
+            0.861,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            -1.11,
+            0,
+            3.15
+          ],
+          "size": [
+            0.14,
+            0.488,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "shed",
+          "at": [
+            1.11,
+            0.42,
+            0
+          ],
+          "size": [
+            0.1,
+            1.3,
+            6.8
+          ],
+          "tex": {
+            "roof": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            },
+            "gable": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.55,
+                0.45,
+                0.36
+              ]
+            },
+            "edge": {
+              "tile": "timber_beam",
+              "tint": [
+                0.9,
+                0.85,
+                0.8
+              ]
+            }
+          },
+          "overhang": 0.0,
+          "thick": 0.18
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.11,
+            0,
+            -3.28
+          ],
+          "size": [
+            0.14,
+            1.717,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.11,
+            0,
+            -1.1
+          ],
+          "size": [
+            0.14,
+            1.3,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.11,
+            0,
+            1.2
+          ],
+          "size": [
+            0.14,
+            0.861,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            1.11,
+            0,
+            3.15
+          ],
+          "size": [
+            0.14,
+            0.488,
+            0.14
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            }
+          }
+        },
+        {
+          "shape": "box",
+          "at": [
+            0,
+            0,
+            -3.45
+          ],
+          "size": [
+            2.5,
+            1.3,
+            0.2
+          ],
+          "tex": {
+            "side": {
+              "tile": "timber_beam",
+              "tint": [
+                0.7,
+                0.64,
+                0.58
+              ]
+            },
+            "top": {
+              "tile": "bridge_planks",
+              "tint": [
+                0.78,
+                0.66,
+                0.54
+              ]
+            }
+          }
+        }
+      ]
     }
   },
   "recipes": {
@@ -1200,7 +4696,7 @@
         {
           "rooms": [
             {
-              "type": "meeting",
+              "type": "meetinghouse",
               "share": 100,
               "public": true
             }
@@ -1400,6 +4896,49 @@
         }
       ],
       "_note": "Euphemia Lord's tailor shop in Harlow Bridge (decision 0383): the store with a bow window and the tailor's room inside."
+    },
+    "tannery": {
+      "_note": "The Rowes' tannery on Tanner's Row (harlow-bridge-areas.md 9): a long low one-storey shed of weathered grey boards, a mossy shingle roof with a long roofed smoke vent on the ridge, a plank door and small windows. Place it about 14 x 6. Rooms from rooms.json plans: the beam house and a storeroom.",
+      "storeys": 1,
+      "pitch": 0.7,
+      "mainRoof": "gable",
+      "chimney": "none",
+      "tex": {
+        "wall": "board_gray",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.6
+      },
+      "landmarks": [
+        {
+          "kind": "vent",
+          "length": 8.0
+        }
+      ]
+    },
+    "grogshop": {
+      "_note": "The grog shop on Tanner's Row (harlow-bridge-areas.md 9): a small rough tavern, one storey and a garret under a steep roof with a dormer, weathered grey boards, a mossy roof, a sign over the plank door and a stovepipe. Place it about 7 x 5. Rooms from rooms.json plans: the taproom, and the garret above (an interior file for the garret needs source storeys 2, since the garret is in the roof).",
+      "storeys": 1,
+      "pitch": 1.25,
+      "mainRoof": "gable",
+      "chimney": "stovepipe",
+      "dormers": 1,
+      "sign": true,
+      "signText": "Grog",
+      "tex": {
+        "wall": "board_gray",
+        "roof": "shingle_cedar_mossy",
+        "foundation": "fieldstone"
+      },
+      "openings": {
+        "window": "window_small",
+        "door": "door_plank",
+        "spacing": 2.2
+      }
     }
   },
   "fallbacks": {

@@ -51,6 +51,7 @@
     "building": 0,
     "storey": 0,
     "scale": 1.7,
+    "wallHeight": 4,
     "generated": true,
     "lootMax": 2,
     "source": {

@@ -1,0 +1,26 @@
+{
+  "_note": "Jasper Crane at the Broken Tankard (docs/regions/harlow-bridge.md, Jasper Crane; decision 0434): already in town, as ever, at a table by the taproom's hearth, his room upstairs paid a month ahead. He buys Thadeous a cider every time and won't say why, and he leaves the room when the Lantern Man is sung (story/tankard.ts). Drafts for Matt or his writer friend.",
+  "conversations": [
+    { "id": "hb_jasper_first", "lines": [
+      { "who": "", "text": "Jasper, at a table by the hearth, with a pot of tea nobody brought him." },
+      { "who": "jasper_crane", "text": "You came the long way. Room's upstairs, paid a month ahead. Oren likes that in a man." },
+      { "who": "eldwin", "text": "A month." },
+      { "who": "jasper_crane", "text": "Things take as long as they take." },
+      { "choice": [{ "text": "Show me what you've got.", "next": "jasper_open", "then": [{ "shop": true }] }, { "text": "Another time.", "next": "jasper_later" }] }
+    ], "onEnd": [{ "setFlag": "met_jasper_hb" }] },
+    { "id": "hb_jasper_cider", "lines": [
+      { "who": "", "text": "Jasper sets a cider down by Thadeous's elbow without a word, and goes back to his tea." },
+      { "who": "thadeous", "text": "Five years he's done that. Every time I'm in. Won't say why." },
+      { "who": "thadeous", "text": "Jasper. Why?" },
+      { "who": "jasper_crane", "text": "It's on account." },
+      { "who": "thadeous", "text": "Whose account?" },
+      { "who": "", "text": "Jasper drinks his tea." }
+    ], "onEnd": [{ "setFlag": "heard:JHC" }] },
+    { "id": "hb_jasper", "lines": [
+      { "who": "jasper_crane", "if": { "notFlags": ["harlow_stone_woke"] }, "text": "Town's waiting on noon, and on the clock. I'm only waiting. What'll it be?" },
+      { "who": "jasper_crane", "if": { "flags": ["harlow_stone_woke"], "notFlags": ["joined:thadeous"] }, "text": "Clock's going again, I hear. You'd think they'd be glad. They're mostly surprised. What'll it be?" },
+      { "who": "jasper_crane", "if": { "flags": ["joined:thadeous"] }, "text": "He's in good hands, then. Or yours, anyway. What'll it be?" },
+      { "choice": [{ "text": "Show me what you've got.", "next": "jasper_open", "then": [{ "shop": true }] }, { "text": "Another time.", "next": "jasper_later" }] }
+    ] }
+  ]
+}

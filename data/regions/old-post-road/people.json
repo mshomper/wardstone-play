@@ -152,6 +152,29 @@
     {
      "if": {
       "flags": [
+       "joined:thadeous"
+      ],
+      "notFlags": [
+       "got_prentice_letter"
+      ]
+     },
+     "area": "north-lots",
+     "spot": "From the lane",
+     "dir": 0
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge"
+      ]
+     },
+     "area": "harlow-bridge",
+     "spot": "The Tankard's porch",
+     "dir": 2
+    },
+    {
+     "if": {
+      "flags": [
        "reached_hardscrabble"
       ]
      },
@@ -189,6 +212,36 @@
     }
    ],
    "talk": [
+    {
+     "if": {
+      "flags": [
+       "joined:thadeous"
+      ],
+      "notFlags": [
+       "got_prentice_letter"
+      ]
+     },
+     "dialogue": "oca_asa_letter"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge"
+      ],
+      "notFlags": [
+       "asa_letters"
+      ]
+     },
+     "dialogue": "oca_asa_first"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge"
+      ]
+     },
+     "dialogue": "oca_asa"
+    },
     {
      "if": {
       "flags": [
@@ -484,7 +537,55 @@
    "title": "Carter",
    "portrait": "#9a5a2a",
    "sprite": "npc_dorcas_brigham_iso",
+   "_note": "Slate for the Roof (decision 0485): once the party reaches Harlow Bridge her slate is there too, and she's up on the meetinghouse roof; once the roof is done and she has sat at the back, she drives home, and is back by her cart at the ford.",
    "schedule": [
+    {
+     "if": {
+      "flags": [
+       "slate_in"
+      ],
+      "notFlags": [
+       "slate_done"
+      ]
+     },
+     "area": "meetinghouse-hill-the-meetinghouse",
+     "spot": "pew_27",
+     "dir": 0,
+     "potter": 0,
+     "exact": true
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge",
+       "slate_3"
+      ],
+      "notFlags": [
+       "slate_done"
+      ]
+     },
+     "area": "meetinghouse-hill",
+     "spot": "Dorcas at the ladder",
+     "dir": 2,
+     "potter": 0
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge"
+      ],
+      "notFlags": [
+       "slate_3"
+      ]
+     },
+     "area": "meetinghouse-hill",
+     "spot": "The meetinghouse roof",
+     "dir": 7,
+     "potter": 0,
+     "exact": true,
+     "lift": 5.15,
+     "pull": 1.5
+    },
     {
      "area": "coopers-ford",
      "spot": "Dorcas",
@@ -502,6 +603,46 @@
       ]
      },
      "dialogue": "tolls_dorcas"
+    },
+    {
+     "if": {
+      "flags": [
+       "slate_done"
+      ]
+     },
+     "dialogue": "slate_dorcas_after"
+    },
+    {
+     "if": {
+      "flags": [
+       "slate_in"
+      ]
+     },
+     "dialogue": "slate_dorcas_going"
+    },
+    {
+     "if": {
+      "flags": [
+       "slate_3"
+      ]
+     },
+     "dialogue": "slate_dorcas_down"
+    },
+    {
+     "if": {
+      "flags": [
+       "slate_asked"
+      ]
+     },
+     "dialogue": "slate_dorcas_waiting"
+    },
+    {
+     "if": {
+      "flags": [
+       "reached_harlow_bridge"
+      ]
+     },
+     "dialogue": "slate_dorcas_ask"
     },
     {
      "dialogue": "dorcas_first",

@@ -44,7 +44,9 @@
       "oldbucket": { "wander": 0.7, "chase": 2.3 }
     }
   },
-  "planned": [],
+  "planned": [
+    {"id": "lower-harlow-belfry", "boost": {"hp": 1.22, "atk": 1.22}, "area": "lower-harlow", "circle": 0, "icefloor": true, "creatures": ["lh_loon", "lh_mink", "lh_mink"], "gear": {"chance": 0.15, "rarity": "stout", "sewn": 0.3}, "questFlag": "beat_lower_harlow_belfry"}
+  ],
   "groups": [
     {
       "id": "rime1",
@@ -294,11 +296,38 @@
     {"id": "hw-wall", "area": "hemlock-wall", "circle": 1, "creatures": ["tb_frostheave", "masked_bandit"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_hw_wall"},
     {"id": "hw-owls", "area": "hemlock-wall", "circle": 2, "creatures": ["tb_hushwing", "tb_frostheave"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_hw_owls"},
     {"id": "hw-tough", "boost": {"hp": 1.1, "atk": 1.1}, "area": "hemlock-wall", "circle": 4, "creatures": ["masked_bandit", "tb_hushwing"], "tough": true, "gear": {"chance": 0.17, "rarity": "stout"}, "questFlag": "beat_hw_tough"},
+    {"id": "pl-cart", "area": "pasture-lane", "circle": 0, "creatures": ["chatterer", "chatterer"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_pl_cart"},
+    {"id": "pl-pen", "area": "pasture-lane", "circle": 1, "creatures": ["tb_old_tup", "chatterer"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_pl_pen"},
+    {"id": "pl-frost", "area": "pasture-lane", "circle": 2, "boost": {"hp": 1.1, "atk": 1.1}, "creatures": ["tb_old_tup", "chatterer"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_pl_frost"},
+    {"id": "nl-west", "area": "north-lots", "circle": 0, "creatures": ["hb_whitecoat", "hb_whitecoat", "hb_whitecoat"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_nl_west"},
+    {"id": "nl-lane", "area": "north-lots", "circle": 1, "creatures": ["tb_old_tup", "hb_whitecoat"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_nl_lane"},
+    {"id": "nl-mid", "area": "north-lots", "circle": 2, "creatures": ["hb_whitecoat", "chatterer"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_nl_mid"},
+    {"id": "nl-east", "area": "north-lots", "circle": 3, "creatures": ["tb_old_tup", "hb_whitecoat"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_nl_east"},
+    {"id": "nl-tough", "boost": {"hp": 1.25, "atk": 1.2}, "area": "north-lots", "circle": 5, "creatures": ["tb_old_tup", "hb_whitecoat"], "tough": true, "gear": {"chance": 0.17, "rarity": "stout"}, "questFlag": "beat_nl_tough"},
+    {"id": "nl-watcher", "area": "north-lots", "circle": 4, "hidden": true, "creatures": ["watcher"], "guest": "thadeous", "hush": {"round": 4, "below": 0.5}, "forParty": {"2": {"hp": 1.5, "damage": 1.2}, "3": {"hp": 2, "damage": 1.4}, "4": {"hp": 2.5, "damage": 1.5}}, "gear": {"chance": 1, "rarity": "stout", "sewn": 0.6}, "questFlag": "hushed_watcher", "banner": ["The Watcher", "Hush now. It settles on the wall, and sleeps."]},
     {"id": "hw-catamount", "area": "hemlock-wall", "circle": 3, "after": "heard_fiddle", "night": true, "creatures": ["catamount"], "forParty": {"2": {"hp": 1.5, "damage": 1.2}, "3": {"hp": 2, "damage": 1.5}, "4": {"hp": 2.5, "damage": 1.5}}, "gear": {"chance": 1, "rarity": "stout", "sewn": 0.6}, "questFlag": "beat_catamount", "banner": ["The Catamount", "It slips over the ring wall onto the cold side, and doesn't come back."]},
     {"id": "lo-ledge", "area": "the-lookoff", "circle": 0, "creatures": ["ledge_hawk", "rattler"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_lo_ledge"},
     {"id": "lo-pasture", "area": "the-lookoff", "circle": 1, "creatures": ["tb_old_tup", "ledge_hawk"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_lo_pasture"},
     {"id": "lo-sun", "boost": {"hp": 1.05, "atk": 1.05}, "area": "the-lookoff", "circle": 2, "creatures": ["rattler", "tb_old_tup"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_lo_sun"},
     {"id": "lo-perch", "area": "the-lookoff", "circle": 3, "creatures": ["ledge_hawk", "ledge_hawk"], "gear": {"chance": 0.1, "rarity": "stout"}, "questFlag": "beat_lo_perch"},
-    {"id": "lo-tough", "boost": {"hp": 1.1, "atk": 1.1}, "area": "the-lookoff", "circle": 4, "creatures": ["tb_old_tup", "rattler"], "tough": true, "gear": {"chance": 0.17, "rarity": "stout"}, "questFlag": "beat_lo_tough"}
+    {"id": "lo-tough", "boost": {"hp": 1.1, "atk": 1.1}, "area": "the-lookoff", "circle": 4, "creatures": ["tb_old_tup", "rattler"], "tough": true, "gear": {"chance": 0.17, "rarity": "stout"}, "questFlag": "beat_lo_tough"},
+    {"id": "covered-bridge-north", "area": "covered-bridge", "circle": 0, "creatures": ["masked_bandit", "mink"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_covered_bridge_north"},
+    {"id": "covered-bridge-south", "area": "covered-bridge", "circle": 3, "creatures": ["mink", "mink"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_covered_bridge_south"},
+    {"id": "mill-pond-bank", "area": "mill-pond", "circle": 0, "creatures": ["mink", "floe"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_mill_pond_bank"},
+    {"id": "mill-pond-sluice", "area": "mill-pond", "circle": 2, "creatures": ["floe", "floe"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_mill_pond_sluice"},
+    {"id": "tanners-row-vats", "area": "tanners-row", "circle": 2, "creatures": ["tannery_cur", "tannery_cur"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_tanners_row_vats"},
+    {"id": "tanners-row-yard", "area": "tanners-row", "circle": 1, "creatures": ["tannery_cur", "masked_bandit"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_tanners_row_yard"},
+    {"id": "tanners-row-frames", "area": "tanners-row", "circle": 0, "creatures": ["hb_fisher", "tannery_cur"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_tanners_row_frames"},
+    {"id": "tanners-row-tough", "boost": {"hp": 0.85, "atk": 0.85}, "area": "tanners-row", "circle": 3, "tough": true, "creatures": ["tannery_cur", "hb_fisher"], "gear": [{"chance": 0.2, "rarity": "stout"}, {"chance": 0.02, "rarity": "sunday", "sewn": 0.6}], "questFlag": "beat_tanners_row_tough"},
+    {"id": "drowned-town-shore", "area": "drowned-town", "circle": 0, "creatures": ["loon", "mink"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_drowned_town_shore"},
+    {"id": "drowned-town-ice", "area": "drowned-town", "circle": 1, "creatures": ["floe", "loon"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_drowned_town_ice"},
+    {"id": "drowned-town-steeple", "area": "drowned-town", "circle": 2, "creatures": ["floe", "mink"], "gear": {"chance": 0.12, "rarity": "stout"}, "questFlag": "beat_drowned_town_steeple"},
+    {"id": "drowned-town-tough", "boost": {"hp": 0.97, "atk": 0.97}, "area": "drowned-town", "circle": 3, "tough": true, "creatures": ["loon", "floe"], "gear": [{"chance": 0.2, "rarity": "stout"}, {"chance": 0.02, "rarity": "sunday", "sewn": 0.6}], "questFlag": "beat_drowned_town_tough"},
+    {"id": "lower-harlow-meetinghouse", "boost": {"hp": 1.2, "atk": 1.2}, "area": "lower-harlow", "circle": 0, "icefloor": true, "creatures": ["lh_floe", "lh_mink", "lh_loon"], "gear": {"chance": 0.15, "rarity": "stout", "sewn": 0.3}, "questFlag": "beat_lower_harlow_meetinghouse"},
+    {"id": "lower-harlow-main-street", "boost": {"hp": 1.21, "atk": 1.21}, "area": "lower-harlow", "circle": 1, "icefloor": true, "creatures": ["lh_frostheave", "lh_floe", "lh_mink"], "gear": {"chance": 0.15, "rarity": "stout", "sewn": 0.3}, "questFlag": "beat_lower_harlow_main_street"},
+    {"id": "lower-harlow-old-mill", "boost": {"hp": 1.2, "atk": 1.2}, "area": "lower-harlow", "circle": 2, "icefloor": true, "creatures": ["lh_floe", "lh_loon", "lh_mink"], "gear": {"chance": 0.15, "rarity": "stout", "sewn": 0.3}, "questFlag": "beat_lower_harlow_old_mill"},
+    {"id": "lower-harlow-drowned-wall", "boost": {"hp": 1.22, "atk": 1.22}, "area": "lower-harlow", "circle": 3, "icefloor": true, "creatures": ["lh_frostheave", "lh_floe", "lh_loon"], "gear": [{"chance": 0.3, "rarity": "stout", "sewn": 0.4}, {"chance": 0.04, "rarity": "sunday", "sewn": 0.6}], "questFlag": "beat_lower_harlow_drowned_wall"},
+    {"id": "lower-harlow-end", "boost": {"hp": 1.35, "atk": 1.33}, "area": "lower-harlow", "circle": 5, "icefloor": true, "forParty": {"2": {"hp": 1.7, "damage": 1.4}}, "creatures": ["lh_loon", "lh_frostheave", "lh_floe"], "gear": [{"chance": 0.7, "rarity": "stout", "sewn": 0.75}, {"chance": 0.067, "rarity": "sunday", "sewn": 0.6}], "questFlag": "beat_lower_harlow_end"},
+    {"id": "lower-harlow-gran", "area": "lower-harlow", "circle": 4, "icefloor": true, "still": true, "until": "beat_old_gran", "forParty": {"2": {"hp": 1.5, "damage": 1.2}, "3": {"hp": 2, "damage": 1.5}, "4": {"hp": 2.5, "damage": 1.5}}, "banner": ["Old Gran", "She goes down into the dark water, and stays down."], "creatures": ["old_gran"], "gear": {"chance": 1, "rarity": "stout", "sewn": 0.6}, "questFlag": "beat_old_gran"}
   ]
 }

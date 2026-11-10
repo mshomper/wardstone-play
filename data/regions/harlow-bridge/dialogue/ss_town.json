@@ -1,0 +1,370 @@
+{
+ "_note": "The Singing School's townsfolk (decision 0434): Clarissa Sprague, Deacon Pratt, Hannah Corliss, Whipple, Rhoda Cobb, Fessenden, Widow Ames, Tom Nason and Submit Tolman. Each singer's last line sets their flag, then ss_enough once four of the six have said yes. Drafts for Matt or his writer friend.",
+ "conversations": [
+  {
+   "id": "ss_clarissa_books",
+   "lines": [
+    {
+     "who": "clarissa_sprague",
+     "text": "Sing from what? The books went into a box under the master's desk the winter the school stopped, and nobody's opened it since."
+    },
+    {
+     "who": "clarissa_sprague",
+     "text": "Including me. I'm not proud of it."
+    }
+   ]
+  },
+  {
+   "id": "ss_clarissa_plain",
+   "lines": [
+    {
+     "who": "clarissa_sprague",
+     "text": "We filled that meetinghouse every winter. Then the man who led it stopped, and so did we. That's the town's fault, not his."
+    },
+    {
+     "who": "clarissa_sprague",
+     "if": {
+      "party": [
+       "thadeous"
+      ]
+     },
+     "text": "I'll be there, Mr. Burnbottom. Front pew. Don't look at me if you lose your place."
+    }
+   ]
+  },
+  {
+   "id": "ss_pratt_doubt",
+   "lines": [
+    {
+     "who": "moses_pratt",
+     "text": "A singing school. On a weeknight. Led by that man."
+    },
+    {
+     "who": "moses_pratt",
+     "text": "Show me what you mean to sing, and I'll tell you if I'm coming."
+    }
+   ]
+  },
+  {
+   "id": "ss_pratt_comes",
+   "lines": [
+    {
+     "who": "",
+     "text": "He reads the printed parts through, every page, slowly."
+    },
+    {
+     "who": "moses_pratt",
+     "text": "Old Hundredth. Mear. Windham. These are hymns."
+    },
+    {
+     "who": "moses_pratt",
+     "text": "I'll come. Someone ought to see it's done decently."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_singer_pratt"
+    },
+    {
+     "if": {
+      "atLeast": {
+       "flags": [
+        "ss_singer_pratt",
+        "ss_singer_whipple",
+        "ss_singer_cobb",
+        "ss_singer_ames",
+        "ss_singer_nason",
+        "ss_singer_submit"
+       ],
+       "n": 4
+      }
+     },
+     "setFlag": "ss_enough"
+    }
+   ]
+  },
+  {
+   "id": "ss_corliss_order",
+   "lines": [
+    {
+     "who": "hannah_corliss",
+     "text": "One book won't do for a room. Leave it with me. I'll set the parts, every voice."
+    },
+    {
+     "who": "hannah_corliss",
+     "text": "It'll take the day. Go and find somebody to hand them to."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_parts_ordered"
+    }
+   ]
+  },
+  {
+   "id": "ss_corliss_setting",
+   "lines": [
+    {
+     "who": "hannah_corliss",
+     "text": "Setting it now. Come back when you've found a few people to sing from them."
+    }
+   ]
+  },
+  {
+   "id": "ss_corliss_ready",
+   "lines": [
+    {
+     "who": "hannah_corliss",
+     "text": "Thirty copies, every part. The ink's still wet. Don't hold them by the face."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_parts"
+    }
+   ]
+  },
+  {
+   "id": "ss_whipple_bring",
+   "lines": [
+    {
+     "who": "phineas_whipple",
+     "text": "I'll hear it from him. Not from you."
+    }
+   ]
+  },
+  {
+   "id": "ss_whipple_word",
+   "lines": [
+    {
+     "who": "phineas_whipple",
+     "text": "Burnbottom. Will you be sober?"
+    },
+    {
+     "who": "thadeous",
+     "text": "I will."
+    },
+    {
+     "who": "phineas_whipple",
+     "text": "Look at me when you say it."
+    },
+    {
+     "who": "thadeous",
+     "text": "I will, Phineas."
+    },
+    {
+     "who": "phineas_whipple",
+     "text": "Then I'll come. I'll bring horehound, for after."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_singer_whipple"
+    },
+    {
+     "if": {
+      "atLeast": {
+       "flags": [
+        "ss_singer_pratt",
+        "ss_singer_whipple",
+        "ss_singer_cobb",
+        "ss_singer_ames",
+        "ss_singer_nason",
+        "ss_singer_submit"
+       ],
+       "n": 4
+      }
+     },
+     "setFlag": "ss_enough"
+    }
+   ]
+  },
+  {
+   "id": "ss_cobb_wool",
+   "lines": [
+    {
+     "who": "rhoda_cobb",
+     "text": "I can't sit still in a pew with my hands empty. I'd come if I had something to knit, and I'm out of wool."
+    },
+    {
+     "who": "rhoda_cobb",
+     "text": "Fessenden's got grey. He won't give it me on tick."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_cobb_asked"
+    }
+   ]
+  },
+  {
+   "id": "ss_fessenden_skein",
+   "lines": [
+    {
+     "who": "asahel_fessenden",
+     "text": "Wool, for Rhoda Cobb. To knit through the singing."
+    },
+    {
+     "who": "asahel_fessenden",
+     "text": "One skein. I've measured it twice. Tell her it's on the Reverend."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_skein"
+    }
+   ]
+  },
+  {
+   "id": "ss_cobb_comes",
+   "lines": [
+    {
+     "who": "rhoda_cobb",
+     "text": "Grey. Good. I'll sit at the back where the Deacon can't see my needles."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_singer_cobb"
+    },
+    {
+     "if": {
+      "atLeast": {
+       "flags": [
+        "ss_singer_pratt",
+        "ss_singer_whipple",
+        "ss_singer_cobb",
+        "ss_singer_ames",
+        "ss_singer_nason",
+        "ss_singer_submit"
+       ],
+       "n": 4
+      }
+     },
+     "setFlag": "ss_enough"
+    }
+   ]
+  },
+  {
+   "id": "ss_ames_chair",
+   "lines": [
+    {
+     "who": "lydia_ames",
+     "text": "I'd come. I can't climb that hill and then stand an hour at the top of it."
+    },
+    {
+     "who": "lydia_ames",
+     "text": "Unless somebody carries my chair. It's by my window."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_ames_asked"
+    }
+   ]
+  },
+  {
+   "id": "ss_nason_bring",
+   "lines": [
+    {
+     "who": "tom_nason",
+     "text": "Burnbottom, singing hymns, sober? Bring him in here and let me watch him say no to one. Then I'll come."
+    }
+   ]
+  },
+  {
+   "id": "ss_nason_refused",
+   "lines": [
+    {
+     "who": "",
+     "text": "Tom Nason has the cup on the counter before Thadeous is through the door."
+    },
+    {
+     "who": "tom_nason",
+     "text": "Your usual."
+    },
+    {
+     "who": "",
+     "text": "Thadeous looks at it a while."
+    },
+    {
+     "who": "thadeous",
+     "text": "Not tonight, Tom."
+    },
+    {
+     "who": "tom_nason",
+     "text": "Well. That's the first time. I'll shut early and come and hear the second."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_singer_nason"
+    },
+    {
+     "if": {
+      "atLeast": {
+       "flags": [
+        "ss_singer_pratt",
+        "ss_singer_whipple",
+        "ss_singer_cobb",
+        "ss_singer_ames",
+        "ss_singer_nason",
+        "ss_singer_submit"
+       ],
+       "n": 4
+      }
+     },
+     "setFlag": "ss_enough"
+    }
+   ]
+  },
+  {
+   "id": "ss_submit_tower",
+   "lines": [
+    {
+     "who": "submit_tolman",
+     "text": "I'll come if he comes. Thirty years I've sat in that pew by myself, because he's up a tower."
+    }
+   ]
+  },
+  {
+   "id": "ss_submit_comes",
+   "lines": [
+    {
+     "who": "submit_tolman",
+     "text": "He's coming down? Then I'm coming up."
+    }
+   ],
+   "onEnd": [
+    {
+     "setFlag": "ss_singer_submit"
+    },
+    {
+     "if": {
+      "atLeast": {
+       "flags": [
+        "ss_singer_pratt",
+        "ss_singer_whipple",
+        "ss_singer_cobb",
+        "ss_singer_ames",
+        "ss_singer_nason",
+        "ss_singer_submit"
+       ],
+       "n": 4
+      }
+     },
+     "setFlag": "ss_enough"
+    }
+   ]
+  },
+  {
+   "id": "ss_chair_carried",
+   "lines": [
+    {
+     "who": "",
+     "text": "You carry the chair up Meetinghouse Street and set it at the end of a pew, where she can see."
+    }
+   ]
+  }
+ ]
+}

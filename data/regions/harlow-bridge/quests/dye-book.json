@@ -1,0 +1,5 @@
+{"id":"dye-book","title":"The Dye Book","side":true,"blurb":"Euphemia Lord won't cut for a stranger. Her grandmother's dye book went under with the family's dye house when the valley was drowned.","steps":[
+  {"id":"unasked","title":"The Dye Book","objective":"","done":{"flags":["dye_book_asked"]},"sets":["dye_book_asked"]},
+  {"id":"find","title":"The Dye Book","objective":"Comfort Lord's dye book went under with the Lords' dye house. Lower Harlow, Main Street, the blue door: a tin box on the sill. Don't open it.","done":{"flags":["has_dye_book"]},"sets":["has_dye_book"]},
+  {"id":"back","title":"The Dye Book","objective":"Take the tin box back to Euphemia Lord, on Market Square.","done":{"flags":["dye_book_returned"]},"sets":["dye_book_returned"]}
+]}

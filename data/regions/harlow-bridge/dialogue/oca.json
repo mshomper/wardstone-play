@@ -1,0 +1,256 @@
+{
+  "_note": "Old Country Airs, Harlow Bridge's main beat (docs/regions/harlow-bridge.md, decision 0433): the town in the morning, the Tankard in the evening (tankard.json), the North Lots by day and by night, the Watcher, the verse, the answer, and Thadeous joining. Every line is a draft for Matt or his writer friend. Keep the brief's rules: a town tired of one man's grief and never cruel; Thadeous loud when he feels worst, and stopping dead at Hattie.",
+  "conversations": [
+    {
+      "id": "oca_ask_frost",
+      "lines": [
+        { "who": "harlow_millhand", "text": "Wheels go round about noon. Stop again at dark. We've took up quoits." },
+        { "who": "eldwin", "text": "Where's the cold coming from?" },
+        { "who": "harlow_millhand", "text": "Off the North Lots. Up past the meetinghouse. Comes down that lane like water." },
+        { "who": "harlow_millhand", "text": "Ask Burnbottom. He's up there every night." },
+        { "who": "", "text": "He thinks about it." },
+        { "who": "harlow_millhand", "text": "Don't, actually." }
+      ],
+      "onEnd": [{ "setFlag": "heard_burnbottom" }]
+    },
+    {
+      "id": "oca_millhand",
+      "lines": [
+        { "who": "harlow_millhand", "if": { "notFlags": ["harlow_stone_woke"] }, "text": "Noon, they'll go round. You'll hear it from anywhere in town." },
+        { "who": "harlow_millhand", "if": { "flags": ["harlow_stone_woke"] }, "text": "Race ran all night. First time since the frost. Nobody can say why, and nobody's asking." }
+      ]
+    },
+    {
+      "id": "oca_goodwife",
+      "lines": [
+        { "who": "harlow_goodwife", "if": { "notFlags": ["joined:thadeous"] }, "text": "If you see Thadeous, tell him there's soup. He won't come. Tell him anyway." },
+        { "who": "harlow_goodwife", "if": { "flags": ["joined:thadeous"] }, "text": "Gone with you, is he? Well. Somebody should feed him." }
+      ]
+    },
+    {
+      "id": "oca_farmer",
+      "lines": [
+        { "who": "harlow_farmer", "if": { "notFlags": ["harlow_stone_woke"] }, "text": "Frost on the North Lots by August. My father would've said the hill's sick. I just say it's cold." },
+        { "who": "harlow_farmer", "if": { "flags": ["harlow_stone_woke"] }, "text": "Went up to the Lots this morning. Grass is green in a ring round the old stone. I went home again." }
+      ]
+    },
+    {
+      "id": "oca_penhallow_first",
+      "lines": [
+        { "who": "cyrus_penhallow", "text": "Every hour that race is froze is forty men stood about my square." },
+        { "who": "cyrus_penhallow", "text": "Ask anyone what's wrong and they say the North Lots, and then they say Burnbottom, as if that settled it." },
+        { "who": "eldwin", "text": "Does it?" },
+        { "who": "cyrus_penhallow", "text": "It settles nothing. He sings at walls." }
+      ],
+      "onEnd": [{ "setFlag": ["met_penhallow", "heard_burnbottom"] }]
+    },
+    {
+      "id": "oca_penhallow",
+      "lines": [
+        { "who": "cyrus_penhallow", "if": { "notFlags": ["harlow_stone_woke"] }, "text": "My father gave this town a clock so it would know the hour. It knows it's ten past two." },
+        { "who": "cyrus_penhallow", "if": { "flags": ["harlow_stone_woke"] }, "text": "Half past two. Then three. I stood at my window and counted them. I don't know what you did up there, and I'd rather not." }
+      ]
+    },
+    {
+      "id": "oca_tolman_first",
+      "lines": [
+        { "who": "ebenezer_tolman", "text": "Ten past two. She's said ten past two since the first frost." },
+        { "who": "ebenezer_tolman", "text": "The room's warm. I put my hand on the works every morning, and they're cold as a well rope." },
+        { "who": "eldwin", "text": "Cold from the inside." },
+        { "who": "ebenezer_tolman", "text": "That's what I'd say, if I were the kind to say things like that." }
+      ],
+      "onEnd": [{ "setFlag": "met_tolman" }]
+    },
+    {
+      "id": "oca_tolman",
+      "lines": [
+        { "who": "ebenezer_tolman", "if": { "flags": ["harlow_stone_woke"] }, "text": "Ten past two. She held it all that time, and then she let it go." },
+        { "who": "ebenezer_tolman", "if": { "flags": ["asa_letters"], "notFlags": ["harlow_stone_woke"] }, "text": "Springs, from a maker downriver. I sent for them in October. Springs aren't what's wrong with her." },
+        { "who": "ebenezer_tolman", "if": { "notFlags": ["asa_letters", "harlow_stone_woke"] }, "text": "I go up every morning. I don't do anything. I just go up." }
+      ]
+    },
+    {
+      "id": "oca_kent",
+      "lines": [
+        { "who": "asher_kent", "if": { "notFlags": ["joined:thadeous"] }, "text": "They tell me Mr. Burnbottom sang under Hiram Prentice. They tell me the way you'd tell someone there used to be a church where the tavern is." },
+        { "who": "asher_kent", "if": { "notFlags": ["joined:thadeous"] }, "text": "I want the singing school back. It filled the meetinghouse every winter. I haven't anyone to lead it." },
+        { "who": "asher_kent", "if": { "flags": ["joined:thadeous"] }, "text": "I hear he's going with you. I'd hoped to ask him something first. Perhaps when you come back through." }
+      ]
+    },
+    {
+      "id": "oca_doane",
+      "lines": [
+        { "who": "hezekiah_doane", "text": "Ferry's froze in. Don't ask me when." },
+        { "who": "hezekiah_doane", "text": "Downriver to Fallow Bend, when the river lets me. Till then I'm a man standing next to a boat." }
+      ]
+    },
+    {
+      "id": "oca_asa_first",
+      "lines": [
+        { "who": "asa_kimball", "text": "Three letters for Harlow Bridge. Two of them are for people who'll be cross about it." },
+        { "who": "eldwin", "text": "And the third?" },
+        { "who": "asa_kimball", "text": "The third's been in my bag a long time. It can wait a little more." }
+      ],
+      "onEnd": [{ "setFlag": "asa_letters" }]
+    },
+    {
+      "id": "oca_asa",
+      "lines": [
+        { "who": "asa_kimball", "if": { "notFlags": ["got_prentice_letter"] }, "text": "Patience doesn't care for the hill. We'll go round by the lane, when we go." },
+        { "who": "asa_kimball", "if": { "flags": ["got_prentice_letter"] }, "text": "Empty bag. Feels wrong. We'll find something to carry." }
+      ]
+    },
+    {
+      "id": "oca_asa_letter",
+      "lines": [
+        { "who": "asa_kimball", "text": "Mr. Burnbottom. This came back." },
+        { "who": "", "text": "Thadeous reads the front. His own hand, to Master Hiram Prentice, Concord. Across the corner someone has written: Deceased." },
+        { "who": "", "text": "He puts it inside his coat." },
+        { "who": "thadeous", "text": "Thank you, Asa." },
+        { "who": "asa_kimball", "text": "No charge." }
+      ],
+      "onEnd": [{ "setFlag": "got_prentice_letter" }]
+    },
+    {
+      "id": "oca_after_meeting",
+      "lines": [
+        { "who": "oren_whitcomb", "text": "There's rooms upstairs. Two left. Paid by the night, unlike some." },
+        { "who": "thadeous", "text": "I heard that, Oren." },
+        { "who": "oren_whitcomb", "text": "You were meant to." }
+      ]
+    },
+    {
+      "id": "oca_morning",
+      "lines": [
+        { "who": "obed", "text": "The cold's coming off the high pastures. If there's a wall up there, I want to look at it." },
+        { "who": "eldwin", "text": "There's a wall." }
+      ]
+    },
+    {
+      "id": "oca_wall_day",
+      "lines": [
+        { "who": "", "text": "Obed walks the ring wall from the stone to the gap and back, slowly, with a hand on the top course." },
+        { "who": "obed", "text": "Thayer work. My grandfather's, or his father's. Batter's right. Hearting's right. Hand's gap facing north, the way it should." },
+        { "who": "obed", "text": "Nothing wrong with it." },
+        { "who": "", "text": "The wardstone is cold under his palm." },
+        { "who": "obed", "text": "And it's not working." },
+        { "who": "", "if": { "flags": ["joined:applegate"] }, "text": "Mrs. Applegate stands at the gap with her neck out, looking at the owl. The owl looks back." },
+        { "who": "eldwin", "text": "It was never just the stones." },
+        { "who": "obed", "text": "You'll tell me what that means." },
+        { "who": "eldwin", "text": "Tonight, maybe." }
+      ],
+      "onEnd": [{ "setFlag": "walked_the_wall" }]
+    },
+    {
+      "id": "oca_watcher_day",
+      "lines": [
+        { "who": "", "text": "A great white owl on the gap stones. It turns its head to follow you the whole way along the wall, and doesn't blink." }
+      ]
+    },
+    {
+      "id": "oca_watcher_asleep",
+      "lines": [
+        { "who": "", "text": "The owl sleeps on the gap stones, its head down in its shoulders. It doesn't stir." }
+      ]
+    },
+    {
+      "id": "oca_ask_to_come",
+      "lines": [
+        { "who": "thadeous", "text": "You're the one who wanted the verse. All of it. Nobody's wanted all of it since I was twenty." },
+        { "who": "eldwin", "text": "You go up to the Lots." },
+        { "who": "thadeous", "text": "Every night. The whole town knows. It's the second-best joke in Harlow Bridge, after my name." },
+        { "who": "thadeous", "text": "You can come, if you like. You'll be the first who's asked." },
+        { "who": "", "text": "He takes his fiddle off the bar." }
+      ],
+      "onEnd": [{ "setFlag": "went_up" }]
+    },
+    {
+      "id": "oca_thadeous_up",
+      "lines": [
+        { "who": "thadeous", "text": "Go on ahead. I know the way. I could walk it asleep, and some nights I have." }
+      ]
+    },
+    {
+      "id": "oca_at_gap",
+      "lines": [
+        { "who": "", "text": "The gap is white with frost. On the tumbled stones the owl sits, and turns its head." },
+        { "who": "thadeous", "text": "She went through about here." },
+        { "who": "", "text": "He says nothing else about it." },
+        { "who": "thadeous", "text": "That bird's been on these stones five years, on and off. Won't let anyone near. I've sung to it. It just looks at me." },
+        { "who": "obed", "if": { "flags": ["joined:obed"] }, "text": "Let's see it look at me." }
+      ],
+      "onEnd": [{ "fight": "nl-watcher" }]
+    },
+    {
+      "id": "oca_after_hush",
+      "lines": [
+        { "who": "thadeous", "text": "Hush now. That's the one she liked." },
+        { "who": "", "text": "He lowers the fiddle and looks at it as if somebody else had been playing." }
+      ]
+    },
+    {
+      "id": "oca_reset",
+      "lines": [
+        { "who": "", "text": "Obed lifts the tumbled top course back, stone by stone, the Thayer way: long ones across, the hearting packed tight, a hand's gap left facing north." },
+        { "who": "obed", "text": "There. That's right." },
+        { "who": "", "text": "The wardstone stays cold." },
+        { "who": "obed", "text": "That's right, and it's still not working." },
+        { "who": "eldwin", "text": "Sing the verse." },
+        { "who": "thadeous", "text": "Which?" },
+        { "who": "eldwin", "text": "The one they laugh at." },
+        { "who": "thadeous", "text": "It's nonsense. You know it's nonsense. My grandmother didn't know what it meant, and she knew everything." },
+        { "who": "eldwin", "text": "Sing it anyway." }
+      ]
+    },
+    {
+      "id": "oca_clock_square",
+      "lines": [
+        { "who": "", "text": "Down in the valley, the tower clock strikes. Late, and slow, and then again." },
+        { "who": "ebenezer_tolman", "text": "Ten past two. She held it all that time." }
+      ]
+    },
+    {
+      "id": "oca_reveal",
+      "lines": [
+        { "who": "thadeous", "text": "That was the clock." },
+        { "who": "thadeous", "text": "That was me. That was the song. That was the song doing something." },
+        { "who": "thadeous", "text": "You've had the whole county living next to magic for forty years and you never thought to mention it?" },
+        { "who": "eldwin", "text": "I mentioned it to the walls. They're good listeners." }
+      ]
+    },
+    {
+      "id": "oca_answer",
+      "lines": [
+        { "who": "", "text": "Thadeous goes along to the hand's gap and stands there a while. Then, quietly, he plays the lullaby." }
+      ],
+      "onEnd": [{ "scene": "answer_at_gap" }]
+    },
+    {
+      "id": "oca_answer_owl",
+      "lines": [
+        { "who": "", "text": "On the gap stones the owl wakes. It turns its head north, and calls once." }
+      ]
+    },
+    {
+      "id": "oca_answer_back",
+      "lines": [
+        { "who": "", "text": "Far off on the cold side, something calls back." },
+        { "who": "thadeous", "text": "Did you hear that?" },
+        { "who": "eldwin", "text": "I heard something." },
+        { "who": "", "if": { "flags": ["joined:obed"] }, "text": "Obed takes his cap off." },
+        { "who": "", "text": "Thadeous sits down on the wall. Nobody makes him leave." }
+      ]
+    },
+    {
+      "id": "oca_join",
+      "lines": [
+        { "who": "thadeous", "text": "Five years I walked every wall in this county. You never once told me what was on the other side." },
+        { "who": "", "text": "Eldwin doesn't defend it." },
+        { "who": "thadeous", "text": "You're going round. All the way round." },
+        { "who": "eldwin", "text": "Eventually." },
+        { "who": "thadeous", "text": "Then you'll want someone who knows the words." }
+      ],
+      "onEnd": [{ "join": "thadeous" }]
+    }
+  ]
+}

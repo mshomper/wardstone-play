@@ -1,0 +1,3118 @@
+{
+ "version": 1,
+ "name": "north-lots",
+ "seed": 4312,
+ "size": {
+  "w": 88,
+  "h": 48
+ },
+ "mood": {
+  "baseHeight": 0,
+  "edgeRise": 3.0,
+  "edgeWidth": 5,
+  "roll": 0.6,
+  "pathMargin": 0.8,
+  "tiles": {
+   "open": "grass_leaves",
+   "under": "grass_leaves",
+   "road": "road",
+   "path": "path",
+   "cobble": "cobble",
+   "brookBed": "brook_bed"
+  },
+  "species": [
+   {
+    "props": [
+     "birch_bare_0",
+     "white_pine_0",
+     "bare_tree_0",
+     "birch_bare_1",
+     "white_pine_1",
+     "bare_tree_1"
+    ],
+    "density": 0.75,
+    "spacing": 2.0,
+    "scale": [
+     0.95,
+     1.2
+    ],
+    "within": [
+     [
+      -44,
+      -24
+     ],
+     [
+      44,
+      -24
+     ],
+     [
+      44,
+      -19.0
+     ],
+     [
+      24,
+      -20.5
+     ],
+     [
+      18.0,
+      -19.6
+     ],
+     [
+      14.0,
+      -21.0
+     ],
+     [
+      10.0,
+      -19.4
+     ],
+     [
+      -10,
+      -19.0
+     ],
+     [
+      -30,
+      -19.8
+     ],
+     [
+      -44,
+      -18.8
+     ]
+    ],
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "birch_bare_1",
+     "birch_bare_0",
+     "bare_tree_1"
+    ],
+    "density": 0.12,
+    "spacing": 3.2,
+    "scale": [
+     0.8,
+     1.0
+    ],
+    "within": [
+     [
+      -44,
+      -24
+     ],
+     [
+      44,
+      -24
+     ],
+     [
+      44,
+      -13.7
+     ],
+     [
+      30,
+      -14.9
+     ],
+     [
+      20,
+      -13.9
+     ],
+     [
+      10,
+      -14.7
+     ],
+     [
+      0,
+      -13.7
+     ],
+     [
+      -10,
+      -14.5
+     ],
+     [
+      -20,
+      -13.5
+     ],
+     [
+      -32,
+      -14.3
+     ],
+     [
+      -44,
+      -13.3
+     ]
+    ],
+    "collide": 0.35,
+    "tall": true
+   },
+   {
+    "props": [
+     "juniper_frost_0",
+     "frost_tussock_0",
+     "snow_hollow_1"
+    ],
+    "density": 0.18,
+    "spacing": 1.8,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      -44,
+      -24
+     ],
+     [
+      44,
+      -24
+     ],
+     [
+      44,
+      -13.7
+     ],
+     [
+      30,
+      -14.9
+     ],
+     [
+      20,
+      -13.9
+     ],
+     [
+      10,
+      -14.7
+     ],
+     [
+      0,
+      -13.7
+     ],
+     [
+      -10,
+      -14.5
+     ],
+     [
+      -20,
+      -13.5
+     ],
+     [
+      -32,
+      -14.3
+     ],
+     [
+      -44,
+      -13.3
+     ]
+    ]
+   },
+   {
+    "props": [
+     "juniper_0",
+     "juniper_1",
+     "juniper_0",
+     "juniper_frost_0"
+    ],
+    "density": 0.35,
+    "spacing": 1.9,
+    "scale": [
+     0.85,
+     1.15
+    ],
+    "within": [
+     [
+      -44,
+      -12.0
+     ],
+     [
+      44,
+      -12.4
+     ],
+     [
+      44,
+      -1.0
+     ],
+     [
+      38,
+      0.5
+     ],
+     [
+      28,
+      -3.0
+     ],
+     [
+      16,
+      -4.6
+     ],
+     [
+      0,
+      -6.0
+     ],
+     [
+      -16,
+      -5.0
+     ],
+     [
+      -30,
+      -6.6
+     ],
+     [
+      -44,
+      -4.0
+     ]
+    ],
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "birch_bare_1",
+     "birch_1",
+     "birch_bare_1"
+    ],
+    "density": 0.09,
+    "spacing": 3.0,
+    "scale": [
+     0.7,
+     0.9
+    ],
+    "within": [
+     [
+      -44,
+      -12.0
+     ],
+     [
+      44,
+      -12.4
+     ],
+     [
+      44,
+      -1.0
+     ],
+     [
+      38,
+      0.5
+     ],
+     [
+      28,
+      -3.0
+     ],
+     [
+      16,
+      -4.6
+     ],
+     [
+      0,
+      -6.0
+     ],
+     [
+      -16,
+      -5.0
+     ],
+     [
+      -30,
+      -6.6
+     ],
+     [
+      -44,
+      -4.0
+     ]
+    ],
+    "collide": 0.3,
+    "tall": true
+   },
+   {
+    "props": [
+     "bare_tree_0",
+     "maple_red_1",
+     "birch_bare_0",
+     "white_pine_0",
+     "bare_tree_1"
+    ],
+    "density": 0.45,
+    "spacing": 2.2,
+    "scale": [
+     0.9,
+     1.15
+    ],
+    "near": "edge",
+    "collide": 0.42,
+    "tall": true
+   },
+   {
+    "props": [
+     "juniper_0",
+     "juniper_1"
+    ],
+    "density": 0.05,
+    "spacing": 4.5,
+    "scale": [
+     0.8,
+     1.0
+    ],
+    "near": "open",
+    "collide": 0.3
+   },
+   {
+    "props": [
+     "goldenrod_1",
+     "asters_1",
+     "goldenrod_0",
+     "grass_tuft_0",
+     "grass_tuft_2",
+     "frost_grass_0"
+    ],
+    "density": 0.14,
+    "spacing": 1.4,
+    "scale": [
+     0.8,
+     1.05
+    ],
+    "within": [
+     [
+      -44,
+      24
+     ],
+     [
+      44,
+      24
+     ],
+     [
+      44,
+      -11.9
+     ],
+     [
+      30,
+      -13.1
+     ],
+     [
+      20,
+      -12.1
+     ],
+     [
+      10,
+      -12.9
+     ],
+     [
+      0,
+      -11.9
+     ],
+     [
+      -10,
+      -12.7
+     ],
+     [
+      -20,
+      -11.7
+     ],
+     [
+      -32,
+      -12.5
+     ],
+     [
+      -44,
+      -11.5
+     ]
+    ]
+   },
+   {
+    "props": [
+     "frost_tussock_0",
+     "snow_hollow_0",
+     "frost_grass_1"
+    ],
+    "density": 0.08,
+    "spacing": 2.2,
+    "scale": [
+     0.85,
+     1.1
+    ],
+    "within": [
+     [
+      -44,
+      -24
+     ],
+     [
+      44,
+      -24
+     ],
+     [
+      44,
+      -13.7
+     ],
+     [
+      30,
+      -14.9
+     ],
+     [
+      20,
+      -13.9
+     ],
+     [
+      10,
+      -14.7
+     ],
+     [
+      0,
+      -13.7
+     ],
+     [
+      -10,
+      -14.5
+     ],
+     [
+      -20,
+      -13.5
+     ],
+     [
+      -32,
+      -14.3
+     ],
+     [
+      -44,
+      -13.3
+     ]
+    ]
+   }
+  ]
+ },
+ "paths": [
+  {
+   "points": [
+    [
+     -4.6,
+     24
+    ],
+    [
+     -5.0,
+     16
+    ],
+    [
+     -7.4,
+     8
+    ],
+    [
+     -10.0,
+     0
+    ],
+    [
+     -11.6,
+     -6
+    ],
+    [
+     -12.0,
+     -10.6
+    ]
+   ],
+   "width": 1.3,
+   "kind": "path"
+  },
+  {
+   "points": [
+    [
+     -9.6,
+     -2
+    ],
+    [
+     -2,
+     -5.4
+    ],
+    [
+     6,
+     -7.4
+    ],
+    [
+     12,
+     -9.4
+    ],
+    [
+     14.0,
+     -11.0
+    ]
+   ],
+   "width": 1.0,
+   "kind": "path"
+  }
+ ],
+ "walls": [
+  {
+   "points": [
+    [
+     -44,
+     -12.4
+    ],
+    [
+     -32,
+     -13.4
+    ],
+    [
+     -20,
+     -12.6
+    ],
+    [
+     -10,
+     -13.6
+    ],
+    [
+     0,
+     -12.8
+    ],
+    [
+     10,
+     -13.8
+    ],
+    [
+     20,
+     -13.0
+    ],
+    [
+     30,
+     -14.0
+    ],
+    [
+     44,
+     -12.8
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 58.21,
+     "width": 0.5
+    }
+   ],
+   "ward": true,
+   "handGap": 65.24,
+   "until": "joined:thadeous"
+  },
+  {
+   "points": [
+    [
+     -44,
+     -12.4
+    ],
+    [
+     -32,
+     -13.4
+    ],
+    [
+     -20,
+     -12.6
+    ],
+    [
+     -10,
+     -13.6
+    ],
+    [
+     0,
+     -12.8
+    ],
+    [
+     10,
+     -13.8
+    ],
+    [
+     20,
+     -13.0
+    ],
+    [
+     30,
+     -14.0
+    ],
+    [
+     44,
+     -12.8
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 58.21,
+     "width": 2.6
+    }
+   ],
+   "ward": true,
+   "handGap": 65.24,
+   "after": "joined:thadeous"
+  },
+  {
+   "points": [
+    [
+     -33.4,
+     21
+    ],
+    [
+     -33.8,
+     12
+    ],
+    [
+     -32.6,
+     2
+    ],
+    [
+     -33.2,
+     -6
+    ],
+    [
+     -32.6,
+     -12.4
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 9.0,
+     "width": 2.4
+    },
+    {
+     "at": 25.0,
+     "width": 2.2
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     -17.4,
+     21
+    ],
+    [
+     -18.4,
+     10
+    ],
+    [
+     -17.2,
+     0
+    ],
+    [
+     -18.0,
+     -12.0
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 13.0,
+     "width": 2.4
+    },
+    {
+     "at": 27.0,
+     "width": 2.2
+    }
+   ]
+  },
+  {
+   "points": [
+    [
+     22.6,
+     21
+    ],
+    [
+     21.6,
+     11
+    ],
+    [
+     22.8,
+     1
+    ],
+    [
+     22.2,
+     -12.6
+    ]
+   ],
+   "gaps": [
+    {
+     "at": 6.0,
+     "width": 2.4
+    },
+    {
+     "at": 19.0,
+     "width": 2.4
+    }
+   ]
+  }
+ ],
+ "buildings": [],
+ "landmarks": [
+  {
+   "kind": "mound",
+   "x": 0,
+   "z": -30,
+   "radius": 40,
+   "height": 2.6
+  },
+  {
+   "kind": "mound",
+   "x": -30,
+   "z": 8,
+   "radius": 9,
+   "height": 0.8
+  },
+  {
+   "kind": "mound",
+   "x": 32,
+   "z": -4,
+   "radius": 9,
+   "height": 1.1
+  },
+  {
+   "kind": "hollow",
+   "x": 8,
+   "z": 12,
+   "radius": 8,
+   "height": 0.5
+  },
+  {
+   "kind": "hollow",
+   "x": 18,
+   "z": -19.5,
+   "radius": 3.5,
+   "height": 0.5
+  },
+  {
+   "kind": "hollow",
+   "x": 6,
+   "z": -18.5,
+   "radius": 3,
+   "height": 0.4
+  }
+ ],
+ "arenas": [
+  {
+   "x": -26.0,
+   "z": 6.0,
+   "radius": 2.8
+  },
+  {
+   "x": -6.0,
+   "z": 11.0,
+   "radius": 2.8
+  },
+  {
+   "x": 9.0,
+   "z": 3.0,
+   "radius": 2.8
+  },
+  {
+   "x": 30.0,
+   "z": 9.0,
+   "radius": 2.8
+  },
+  {
+   "x": 14.0,
+   "z": -8.2,
+   "radius": 3.0
+  },
+  {
+   "x": 34.0,
+   "z": -6.4,
+   "radius": 2.6
+  }
+ ],
+ "placements": [
+  {
+   "prop": "wardstone_whole",
+   "x": -12.0,
+   "z": -12.5,
+   "collide": 0.6,
+   "tall": true
+  },
+  {
+   "prop": "rock_2",
+   "x": -10.4,
+   "z": -12.8,
+   "collide": 0
+  },
+  {
+   "prop": "rock_0",
+   "x": -13.7,
+   "z": -12.7,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 12.0,
+   "z": -12.58,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_2",
+   "x": 16.2,
+   "z": -12.48,
+   "collide": 0.35
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 12.3,
+   "z": -14.48,
+   "collide": 0.25
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 16.0,
+   "z": -14.58,
+   "collide": 0.3
+  },
+  {
+   "prop": "rock_2",
+   "x": 17.0,
+   "z": -11.88,
+   "collide": 0.2
+  },
+  {
+   "prop": "rock_0",
+   "x": 11.0,
+   "z": -11.98,
+   "collide": 0.2
+  },
+  {
+   "prop": "stone_wall_tumbled",
+   "x": 18.4,
+   "z": -12.08,
+   "collide": 0.6
+  },
+  {
+   "prop": "birch_ribbons",
+   "x": 8.6,
+   "z": -11.88,
+   "collide": 0.35,
+   "tall": true
+  },
+  {
+   "prop": "searchers_cairn",
+   "x": 10.2,
+   "z": -11.78,
+   "collide": 0.45
+  },
+  {
+   "prop": "rock_1",
+   "x": 11.4,
+   "z": -11.48,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_0",
+   "x": 17.6,
+   "z": -19.0,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_0",
+   "x": 6.4,
+   "z": -18.4,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 12.0,
+   "z": -17.6,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 20.6,
+   "z": -17.4,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_0",
+   "x": -2,
+   "z": -17.0,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 28,
+   "z": -18.6,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_0",
+   "x": -20,
+   "z": -17.2,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_0",
+   "x": 36,
+   "z": -17.6,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": -34,
+   "z": -18.0,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 9.4,
+   "z": -16.4,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 16.8,
+   "z": -16.2,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 15.4,
+   "z": -18.6,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_0",
+   "x": 10.6,
+   "z": -17.4,
+   "collide": 0.35,
+   "tall": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 18.4,
+   "z": -16.8,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 7.6,
+   "z": -16.0,
+   "collide": 0.3,
+   "tall": true,
+   "flip": true
+  },
+  {
+   "prop": "boulder_large_2",
+   "x": 21.4,
+   "z": -18.0,
+   "collide": 0.6
+  },
+  {
+   "prop": "rock_2",
+   "x": -7.0,
+   "z": -12.46,
+   "collide": 0.2
+  },
+  {
+   "prop": "sheep_pen_rails",
+   "x": -24.4,
+   "z": 14.0,
+   "collide": 0.5
+  },
+  {
+   "prop": "sheep_pen_rails",
+   "x": -22.4,
+   "z": 14.0,
+   "collide": 0.5,
+   "flip": true
+  },
+  {
+   "prop": "stone_trough",
+   "x": -27.0,
+   "z": 13.4,
+   "collide": 0.5
+  },
+  {
+   "prop": "sheep_hurdle",
+   "x": 14.4,
+   "z": 14.6,
+   "collide": 0.5
+  },
+  {
+   "prop": "haycock_1",
+   "x": 30.6,
+   "z": 16.0,
+   "collide": 0.45
+  },
+  {
+   "prop": "haycock_0",
+   "x": 33.4,
+   "z": 15.0,
+   "collide": 0.55,
+   "flip": true
+  },
+  {
+   "prop": "haycock_1",
+   "x": -38.0,
+   "z": 16.4,
+   "collide": 0.45
+  },
+  {
+   "prop": "boulder_large_0",
+   "x": -38,
+   "z": 0,
+   "collide": 0.6
+  },
+  {
+   "prop": "boulder_large_1",
+   "x": -12,
+   "z": 4,
+   "collide": 0.6
+  },
+  {
+   "prop": "boulder_large_2",
+   "x": 4,
+   "z": 14,
+   "collide": 0.6
+  },
+  {
+   "prop": "boulder_large_0",
+   "x": 18,
+   "z": 4,
+   "collide": 0.6
+  },
+  {
+   "prop": "boulder_large_1",
+   "x": 38,
+   "z": 2,
+   "collide": 0.6
+  },
+  {
+   "prop": "rock_ledge_mossy_0",
+   "x": -26,
+   "z": -4,
+   "collide": 1.1
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": 26,
+   "z": -6,
+   "collide": 0.8
+  },
+  {
+   "prop": "juniper_0",
+   "x": -35.55,
+   "z": -0.42,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -39.53,
+   "z": -1.13,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -37.42,
+   "z": -3.26,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -35.75,
+   "z": -2.55,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -38.33,
+   "z": -2.59,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -23.39,
+   "z": -3.23,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -22.72,
+   "z": -1.77,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -22.54,
+   "z": -2.78,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -25.32,
+   "z": -2.47,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -5.06,
+   "z": -0.13,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -6.74,
+   "z": -1.45,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -4.23,
+   "z": -0.5,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 5.79,
+   "z": -2.62,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 3.88,
+   "z": -4.99,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 6.34,
+   "z": -4.69,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 1.58,
+   "z": -2.98,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 18.26,
+   "z": -2.03,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 19.05,
+   "z": -2.95,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 19.7,
+   "z": -2.55,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 19.98,
+   "z": -0.5,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 19.25,
+   "z": -1.37,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 35.85,
+   "z": 3.77,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 36.37,
+   "z": 2.68,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 35.2,
+   "z": 2.73,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 33.62,
+   "z": 2.41,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -32.51,
+   "z": 15.38,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -31.42,
+   "z": 16.33,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -29.48,
+   "z": 15.66,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 17.29,
+   "z": 15.0,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 14.67,
+   "z": 16.28,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 17.47,
+   "z": 17.23,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 39.34,
+   "z": 12.72,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 37.73,
+   "z": 13.13,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 40.47,
+   "z": 13.44,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 3.57,
+   "z": 7.21,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 2.64,
+   "z": 8.68,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 0.96,
+   "z": 7.2,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "oak_bare_0",
+   "x": -12,
+   "z": 16,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "maple_red_1",
+   "x": 16,
+   "z": 10,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "bare_tree_0",
+   "x": -38,
+   "z": 8,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "oak_bare_0",
+   "x": 38,
+   "z": -2,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "birch_bare_0",
+   "x": -24,
+   "z": -8,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 4,
+   "z": -9,
+   "collide": 0.5,
+   "tall": true
+  },
+  {
+   "prop": "rest_stone",
+   "x": -9.4,
+   "z": -8.0,
+   "collide": 0.35
+  },
+  {
+   "prop": "rock_2",
+   "x": 28.79,
+   "z": -12.28,
+   "collide": 0.2,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": -26.2,
+   "z": -10.49,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 29.67,
+   "z": -4.76,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -20.71,
+   "z": -8.33,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -6.5,
+   "z": -6.85,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 1.71,
+   "z": -9.05,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -39.05,
+   "z": -4.66,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 30.42,
+   "z": -10.7,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 5.54,
+   "z": -10.0,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": -31.21,
+   "z": -11.16,
+   "collide": 0.3
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -38.12,
+   "z": -11.55,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -15.67,
+   "z": -9.7,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 24.77,
+   "z": -9.09,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": -30.62,
+   "z": -7.62,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -19.48,
+   "z": -3.1,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 26.38,
+   "z": -8.29,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": -29.91,
+   "z": -4.26,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "rock_2",
+   "x": -22.44,
+   "z": -7.02,
+   "collide": 0.2
+  },
+  {
+   "prop": "juniper_1",
+   "x": -33.94,
+   "z": -9.71,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 19.68,
+   "z": -7.2,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -41.4,
+   "z": -5.15,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 37.2,
+   "z": -9.45,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -34.39,
+   "z": -3.98,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -0.35,
+   "z": -8.45,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_large_2",
+   "x": -36.08,
+   "z": -8.75,
+   "collide": 0.6,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 38.0,
+   "z": -4.39,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": -40.12,
+   "z": -7.72,
+   "collide": 0.3
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 42.07,
+   "z": -4.28,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": 35.08,
+   "z": -12.47,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 38.48,
+   "z": -7.85,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -4.25,
+   "z": -7.97,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 30.23,
+   "z": -8.5,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 39.71,
+   "z": -10.35,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -5.59,
+   "z": -9.39,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": -13.54,
+   "z": -8.88,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 0.35,
+   "z": -10.56,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 32.75,
+   "z": -11.56,
+   "collide": 0.3
+  },
+  {
+   "prop": "rock_2",
+   "x": -26.66,
+   "z": -5.76,
+   "collide": 0.2
+  },
+  {
+   "prop": "juniper_0",
+   "x": -21.42,
+   "z": -11.55,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -29.26,
+   "z": -9.26,
+   "collide": 0.3
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -13.58,
+   "z": -4.52,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -24.27,
+   "z": -11.81,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 15.93,
+   "z": -3.75,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -2.3,
+   "z": -3.72,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 25.58,
+   "z": -3.09,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": -26.37,
+   "z": -8.42,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 1.82,
+   "z": -11.87,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -21.83,
+   "z": -4.99,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 8.53,
+   "z": -5.52,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -2.19,
+   "z": -9.08,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 36.85,
+   "z": -11.93,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 41.95,
+   "z": -10.8,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 10.27,
+   "z": -3.54,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -7.65,
+   "z": -9.74,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 39.41,
+   "z": -5.8,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -4.55,
+   "z": -6.12,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -19.03,
+   "z": -7.66,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": -37.23,
+   "z": -7.19,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -32.22,
+   "z": -3.63,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -29.39,
+   "z": -6.2,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -15.2,
+   "z": -6.44,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 27.01,
+   "z": -11.18,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 27.92,
+   "z": -3.38,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 19.97,
+   "z": -9.82,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -18.85,
+   "z": -5.24,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 11.0,
+   "z": -5.41,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -28.25,
+   "z": -11.3,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -40.79,
+   "z": -10.66,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -8.53,
+   "z": -4.49,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 17.99,
+   "z": -5.85,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -35.08,
+   "z": 16.44,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -34.24,
+   "z": 19.67,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 25.13,
+   "z": -1.36,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -20.26,
+   "z": 10.88,
+   "collide": 0
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": -29.13,
+   "z": 4.78,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_1",
+   "x": 6.42,
+   "z": 17.1,
+   "collide": 0.3
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 3.04,
+   "z": -0.01,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 26.15,
+   "z": 19.81,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -7.36,
+   "z": 2.38,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -14.85,
+   "z": 14.64,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -8.91,
+   "z": 17.23,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 27.5,
+   "z": 0.53,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": -11.06,
+   "z": 20.86,
+   "collide": 0.2,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 13.35,
+   "z": 12.8,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": 42.43,
+   "z": 9.6,
+   "collide": 0.2
+  },
+  {
+   "prop": "asters_1",
+   "x": -1.28,
+   "z": 11.64,
+   "collide": 0
+  },
+  {
+   "prop": "rock_0",
+   "x": 3.53,
+   "z": 1.83,
+   "collide": 0.2
+  },
+  {
+   "prop": "rock_0",
+   "x": 41.57,
+   "z": 11.36,
+   "collide": 0.2
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -39.6,
+   "z": 6.27,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 19.45,
+   "z": 2.02,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 29.08,
+   "z": 17.38,
+   "collide": 0.3
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 11.08,
+   "z": 19.68,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -30.05,
+   "z": 7.66,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": 4.54,
+   "z": 3.77,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 38.14,
+   "z": 15.3,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 38.52,
+   "z": -0.27,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 7.56,
+   "z": 10.46,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 38.97,
+   "z": 20.4,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -9.1,
+   "z": 14.69,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -38.57,
+   "z": 2.18,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_0",
+   "x": 21.12,
+   "z": 20.63,
+   "collide": 0.3
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -0.51,
+   "z": 8.61,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 4.61,
+   "z": 21.53,
+   "collide": 0.3
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": 32.67,
+   "z": 4.09,
+   "collide": 0.8
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 29.23,
+   "z": 1.14,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 21.04,
+   "z": 8.65,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -23.1,
+   "z": 22.46,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_1",
+   "x": -23.19,
+   "z": 20.51,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -29.48,
+   "z": 10.55,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 5.89,
+   "z": 7.12,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "boulder_large_0",
+   "x": -11.18,
+   "z": 1.79,
+   "collide": 0.6,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 13.11,
+   "z": 18.25,
+   "collide": 0.3
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": -1.06,
+   "z": -1.78,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -40.66,
+   "z": 15.98,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 31.91,
+   "z": 12.02,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 42.23,
+   "z": 3.03,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_0",
+   "x": 12.38,
+   "z": 10.03,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -5.22,
+   "z": 3.82,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": -36.89,
+   "z": 10.93,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": 15.59,
+   "z": 13.3,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 19.88,
+   "z": 10.01,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 40.78,
+   "z": 15.34,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": 29.5,
+   "z": 22.46,
+   "collide": 0.8
+  },
+  {
+   "prop": "juniper_0",
+   "x": 28.13,
+   "z": 19.54,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -20.03,
+   "z": 17.56,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 9.58,
+   "z": 9.68,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_1",
+   "x": 1.85,
+   "z": 4.88,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": 12.02,
+   "z": 21.76,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -30.95,
+   "z": 20.09,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -42.44,
+   "z": 14.27,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -38.54,
+   "z": 11.95,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 42.18,
+   "z": -1.55,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": 14.21,
+   "z": 1.14,
+   "collide": 0.2,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 9.78,
+   "z": 6.3,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 3.27,
+   "z": 17.2,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 13.85,
+   "z": 8.24,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -23.88,
+   "z": 18.29,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "asters_1",
+   "x": -2.65,
+   "z": 1.04,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -40.03,
+   "z": 3.49,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -27.68,
+   "z": 15.32,
+   "collide": 0.3
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 25.56,
+   "z": 11.69,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 39.77,
+   "z": 6.06,
+   "collide": 0.3
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -14.49,
+   "z": 20.76,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -11.48,
+   "z": 11.56,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 17.77,
+   "z": 0.68,
+   "collide": 0
+  },
+  {
+   "prop": "asters_1",
+   "x": 34.51,
+   "z": 19.1,
+   "collide": 0
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -34.62,
+   "z": 13.96,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "haycock_1",
+   "x": 34.24,
+   "z": 9.9,
+   "collide": 0.45,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": -41.33,
+   "z": 20.55,
+   "collide": 0.2
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 33.14,
+   "z": 21.94,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 23.03,
+   "z": 12.94,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": 26.97,
+   "z": 22.23,
+   "collide": 0
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": 37.3,
+   "z": 19.01,
+   "collide": 0.8
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -3.03,
+   "z": 7.48,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": -16.6,
+   "z": 12.8,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -11.35,
+   "z": -0.86,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 37.38,
+   "z": 10.15,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 17.01,
+   "z": 6.76,
+   "collide": 0
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -41.56,
+   "z": 5.63,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -28.45,
+   "z": 1.33,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 20.36,
+   "z": 17.53,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": -35.95,
+   "z": 3.61,
+   "collide": 0.3
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": -41.8,
+   "z": 17.93,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 0.39,
+   "z": 14.0,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -18.87,
+   "z": 15.63,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -41.38,
+   "z": 10.93,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 10.38,
+   "z": 22.35,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -23.52,
+   "z": 2.82,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 18.85,
+   "z": 11.65,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 9.83,
+   "z": 16.65,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 21.38,
+   "z": -1.81,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": 6.65,
+   "z": 0.26,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 31.69,
+   "z": 1.93,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -37.86,
+   "z": 20.34,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "asters_1",
+   "x": 5.59,
+   "z": 10.66,
+   "collide": 0
+  },
+  {
+   "prop": "asters_1",
+   "x": -15.9,
+   "z": 9.61,
+   "collide": 0
+  },
+  {
+   "prop": "haycock_1",
+   "x": 38.85,
+   "z": 7.85,
+   "collide": 0.45,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -27.94,
+   "z": -2.86,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 6.26,
+   "z": 14.41,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -36.57,
+   "z": 13.8,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": 33.85,
+   "z": 13.15,
+   "collide": 0
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 31.11,
+   "z": -0.36,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": -13.97,
+   "z": 12.66,
+   "collide": 0
+  },
+  {
+   "prop": "rock_0",
+   "x": 40.7,
+   "z": 20.25,
+   "collide": 0.2
+  },
+  {
+   "prop": "juniper_1",
+   "x": -31.31,
+   "z": -0.14,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": 42.48,
+   "z": 12.81,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": 23.61,
+   "z": 10.87,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -20.26,
+   "z": 19.85,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 19.32,
+   "z": 14.28,
+   "collide": 0
+  },
+  {
+   "prop": "asters_1",
+   "x": -30.24,
+   "z": -2.14,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": -31.25,
+   "z": 9.16,
+   "collide": 0.2,
+   "flip": true
+  },
+  {
+   "prop": "juniper_0",
+   "x": 6.56,
+   "z": 12.15,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -19.12,
+   "z": 1.5,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "rock_0",
+   "x": -27.54,
+   "z": 9.34,
+   "collide": 0.2
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -39.51,
+   "z": 14.54,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -39.88,
+   "z": 8.97,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_0",
+   "x": -29.39,
+   "z": 22.19,
+   "collide": 0.3
+  },
+  {
+   "prop": "grass_tuft_2",
+   "x": -37.85,
+   "z": 6.1,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -31.13,
+   "z": 13.16,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 35.9,
+   "z": 5.79,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -15.9,
+   "z": 7.01,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_0",
+   "x": 35.63,
+   "z": -2.61,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": 32.4,
+   "z": -2.87,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "goldenrod_1",
+   "x": -13.18,
+   "z": 9.1,
+   "collide": 0
+  },
+  {
+   "prop": "grass_tuft_0",
+   "x": 26.04,
+   "z": 8.09,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": -34.94,
+   "z": 6.95,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_grass_1",
+   "x": -27.88,
+   "z": 18.96,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 18.68,
+   "z": 22.42,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 12.03,
+   "z": 15.99,
+   "collide": 0.3
+  },
+  {
+   "prop": "juniper_1",
+   "x": 24.95,
+   "z": 18.27,
+   "collide": 0.3
+  },
+  {
+   "prop": "asters_1",
+   "x": -25.81,
+   "z": 19.32,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_1",
+   "x": 41.74,
+   "z": 22.12,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_1",
+   "x": -10.31,
+   "z": 10.15,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": 15.86,
+   "z": 20.59,
+   "collide": 0.8
+  },
+  {
+   "prop": "rock_0",
+   "x": -39.33,
+   "z": 19.02,
+   "collide": 0.2,
+   "flip": true
+  },
+  {
+   "prop": "juniper_1",
+   "x": 1.85,
+   "z": 16.09,
+   "collide": 0.3
+  },
+  {
+   "prop": "rock_ledge_mossy_1",
+   "x": -27.06,
+   "z": 20.67,
+   "collide": 0.8
+  },
+  {
+   "prop": "asters_1",
+   "x": 37.59,
+   "z": 17.08,
+   "collide": 0
+  },
+  {
+   "prop": "birch_bare_1",
+   "x": -3.25,
+   "z": 3.46,
+   "collide": 0.3,
+   "tall": true
+  },
+  {
+   "prop": "fern_brown_0",
+   "x": -21.29,
+   "z": 21.79,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 3.68,
+   "z": -16.85,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 4.42,
+   "z": -22.39,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": -39.36,
+   "z": -19.87,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 9.51,
+   "z": -19.62,
+   "collide": 0
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 16.43,
+   "z": -20.69,
+   "collide": 0.3,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -0.25,
+   "z": -15.97,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 32.73,
+   "z": -18.3,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "boulder_mossy_0",
+   "x": 0.37,
+   "z": -19.25,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -23.28,
+   "z": -15.99,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 23.37,
+   "z": -14.84,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 2.53,
+   "z": -19.92,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": -16.83,
+   "z": -19.86,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 1.51,
+   "z": -14.69,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": 13.43,
+   "z": -22.48,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": -13.55,
+   "z": -18.09,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": 20.38,
+   "z": -14.97,
+   "collide": 0.3
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -37.05,
+   "z": -15.69,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": -6.84,
+   "z": -20.17,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": -41.67,
+   "z": -17.82,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -21.12,
+   "z": -22.42,
+   "collide": 0
+  },
+  {
+   "prop": "snow_hollow_1",
+   "x": 30.27,
+   "z": -19.53,
+   "collide": 0,
+   "flip": true
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -34.94,
+   "z": -20.4,
+   "collide": 0
+  },
+  {
+   "prop": "frost_tussock_0",
+   "x": -29.7,
+   "z": -15.6,
+   "collide": 0
+  },
+  {
+   "prop": "juniper_frost_0",
+   "x": 36.87,
+   "z": -15.73,
+   "collide": 0.3
+  }
+ ],
+ "frost": {
+  "within": [
+   [
+    -44,
+    -24
+   ],
+   [
+    44,
+    -24
+   ],
+   [
+    44,
+    -13.7
+   ],
+   [
+    30,
+    -14.9
+   ],
+   [
+    20,
+    -13.9
+   ],
+   [
+    10,
+    -14.7
+   ],
+   [
+    0,
+    -13.7
+   ],
+   [
+    -10,
+    -14.5
+   ],
+   [
+    -20,
+    -13.5
+   ],
+   [
+    -32,
+    -14.3
+   ],
+   [
+    -44,
+    -13.3
+   ]
+  ],
+  "spacing": 2.0
+ },
+ "keepClear": [
+  {
+   "points": [
+    [
+     14.0,
+     -9.48
+    ],
+    [
+     14.0,
+     -18.48
+    ]
+   ],
+   "radius": 1.6
+  },
+  {
+   "points": [
+    [
+     -13.2,
+     -12.200000000000001
+    ],
+    [
+     -10.8,
+     -12.200000000000001
+    ]
+   ],
+   "radius": 1.4
+  },
+  {
+   "points": [
+    [
+     21.0,
+     -12.5
+    ],
+    [
+     21.0,
+     -11.1
+    ]
+   ],
+   "radius": 1.0
+  }
+ ],
+ "spots": [
+  {
+   "name": "From the lane",
+   "x": -4.6,
+   "z": 18.6,
+   "note": "Up from the Pasture Lane."
+  },
+  {
+   "name": "The gap",
+   "x": 14.0,
+   "z": -11.48,
+   "note": "Before the gap in the ring wall: its top courses tumbled. \"She went through about here.\""
+  },
+  {
+   "name": "The Watcher",
+   "x": 15.6,
+   "z": -13.35,
+   "note": "On the gap stones, on top of the wall: the great snowy owl from the cold side."
+  },
+  {
+   "name": "The wardstone",
+   "x": -12.0,
+   "z": -11.4,
+   "note": "In front of the wardstone in the ring wall. Wakes (harlow_stone_woke) when the verse is sung at the gap; then a stone for stone-to-stone travel."
+  },
+  {
+   "name": "Obed at the wall",
+   "x": -8.4,
+   "z": -12.17,
+   "note": "By day, a few paces along the wall from the stone: old Thayer work, sound."
+  },
+  {
+   "name": "Thadeous at the gap",
+   "x": 12.6,
+   "z": -11.88,
+   "note": "At night, at the gap, with the fiddle."
+  },
+  {
+   "name": "On the wall",
+   "x": 17.6,
+   "z": -13.19,
+   "note": "Where Thadeous sits on the wall till morning, beside the gap."
+  },
+  {
+   "name": "The searchers' cairn",
+   "x": 10.2,
+   "z": -10.88,
+   "note": "The cairn the searchers left, and the birch with their faded ribbons."
+  },
+  {
+   "name": "The cold side",
+   "x": 14.0,
+   "z": -17.08,
+   "note": "A few paces through the gap: frost, bare birches, snow in the hollows. Open after Thadeous joins."
+  },
+  {
+   "name": "The hand's gap",
+   "x": 21.0,
+   "z": -11.9,
+   "note": "A hand-sized gap through the ring wall, facing north, the Thayer way. Where Thadeous sings the lullaby once more."
+  }
+ ],
+ "start": [
+  -4.6,
+  18.6
+ ],
+ "exits": [
+  {
+   "rect": [
+    -6.6,
+    20.0,
+    -2.6,
+    21.0
+   ],
+   "to": "pasture-lane",
+   "at": [
+    2.9,
+    -15.6
+   ],
+   "dir": 0
+  }
+ ]
+}
